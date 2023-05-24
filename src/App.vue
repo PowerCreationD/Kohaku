@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/service">Service</router-link>
+    <router-link to="/work">Work</router-link>
   </nav>
   <router-view />
 </template>
@@ -33,12 +34,6 @@ nav a.router-link-exact-active {
   background: #2c3e50;;
 }
 
-button {
-  margin: 0 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-}
 button {
   margin: 0 10px;
   padding: 10px;
