@@ -55,6 +55,23 @@ export default {
   padding: 0;
   margin: 0;
 }
+
+h1,
+h2 {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+}
+// --------------------
 .milestone {
   margin-top: 76px;
   &-wrap {
@@ -75,6 +92,20 @@ export default {
       flex-grow: 1;
       p + p {
         margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .milestone {
+    margin-top: 36px;
+    &-wrap {
+      margin-top: 76px;
+    }
+    .phase {
+      &__date {
+        margin-right: 36px;
       }
     }
   }

@@ -79,15 +79,32 @@ $gray: #777;
 .about {
   width: min(1200px, 90%, calc(100% - 32px));
   margin: auto;
-  padding: 120px 0;
+  padding: 120px 0 140px 0;
+}
+h1,
+h2 {
+  font-size: 36px;
 }
 
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about {
+    padding: 56px 0;
+  }
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+}
 // --------------------
 .intro {
   display: flex;
   flex-direction: column;
   margin-bottom: 96px;
-
+  margin-top: 60px;
   > div {
     display: flex;
 
@@ -109,11 +126,42 @@ $gray: #777;
     margin-right: 56px;
     img {
       width: 100%;
+      vertical-align: middle;
     }
   }
   &__desc {
-    width: max(auto, 27%);
+    width: auto;
+    min-width: 27%;
     flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    margin: 0;
+    > div {
+      flex-wrap: wrap;
+
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
+    &-tittle-and-logo {
+      flex-direction: column-reverse;
+    }
+    &__logo {
+      align-self: flex-end;
+      margin-bottom: 24px;
+    }
+    &__banner {
+      margin-right: 0;
+      // position: absolute;
+      // left: 0;
+    }
+    &__desc {
+      margin: 36px auto;
+      text-align: center;
+    }
   }
 }
 
@@ -164,6 +212,15 @@ $gray: #777;
       right: 0;
       bottom: 13%;
       z-index: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand {
+    &__wrap {
+      width: 100%;
+      height: 400px;
     }
   }
 }

@@ -24,7 +24,6 @@ $gray: #777;
 
 .header {
   display: flex;
-  margin-bottom: 60px;
   &__title {
     margin-right: 40px;
   }
