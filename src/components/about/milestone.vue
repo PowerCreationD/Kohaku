@@ -87,6 +87,7 @@ h2 {
     &__date {
       width: 61px;
       margin-right: 51px;
+      flex-shrink: 0;
     }
     &__things {
       flex-grow: 1;

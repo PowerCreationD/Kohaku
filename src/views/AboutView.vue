@@ -50,6 +50,8 @@
         <article class="brand__desc">
           <p>
             琥珀，是液態的松脂，化石化的結晶，包裹著千萬年前的古生物遺跡，形成了動人的時光膠囊。我們猶如琥珀，以才能為基底，包覆著人們的想法，色調時而溫潤柔美、時而神秘幽邃，最終凝結成一顆顆獨一無二的寶石
+          </p>
+          <p>
             白，是留白，設計中空白未填滿的空間，也是能給予人喘息的空間。留白隱喻的並非取代人，而是讓人在沉澱中自由發揮，得以更好地思考與創造
           </p>
         </article>
@@ -155,8 +157,10 @@ h2 {
     }
     &__banner {
       margin-right: 0;
-      // position: absolute;
-      // left: 0;
+      img {
+        width: 100vw;
+        margin-left: min(-16px, calc(100vw * -0.05));
+      }
     }
     &__desc {
       margin: 36px auto;
@@ -186,8 +190,10 @@ h2 {
     text-align: justify;
   }
   &__amber {
+    z-index: -1;
     img {
       position: absolute;
+      transition: .5s;
     }
     &--left-top {
       width: 315px;
@@ -211,7 +217,6 @@ h2 {
       width: 304px;
       right: 0;
       bottom: 13%;
-      z-index: -1;
     }
   }
 }
@@ -221,6 +226,37 @@ h2 {
     &__wrap {
       width: 100%;
       height: 400px;
+    }
+
+    &__amber {
+      img {
+        position: absolute;
+      }
+      &--left-top {
+        width: 248px;
+        transform: rotate(145.33deg);
+        top: -83px;
+        left: -22px;
+      }
+      &--right-top {
+        width: 109px;
+        transform: rotate(-118.88deg);
+        right: 2%;
+        top: -60px;
+        opacity: 60%;
+      }
+      &--left-bottom {
+        width: 275px;
+        transform: rotate(39.77deg);
+        left: -17px;
+        bottom: -148px;
+        opacity: 60%;
+      }
+      &--right-bottom {
+        width: 159px;
+        right: 23px;
+        bottom: 2%;
+      }
     }
   }
 }
