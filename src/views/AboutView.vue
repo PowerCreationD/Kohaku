@@ -1,9 +1,7 @@
 <template>
   <div class="about">
-    <div class="header">
-      <h1 class="header__title">ABOUT</h1>
-      <div class="header__space"></div>
-    </div>
+    <!-- * Header -->
+    <page-header>ABOUT</page-header>
 
     <!-- * Intro -->
     <div class="intro">
@@ -66,7 +64,6 @@
 
     <!-- * Milestone -->
     <milestone></milestone>
-
   </div>
 </template>
 
@@ -86,19 +83,6 @@ $gray: #777;
 }
 
 // --------------------
-
-.header {
-  display: flex;
-  margin-bottom: 60px;
-  &__title {
-    margin-right: 40px;
-  }
-  &__space {
-    border-top: 1px solid $gray;
-    flex-grow: 1;
-    margin-top: 7px;
-  }
-}
 .intro {
   display: flex;
   flex-direction: column;
@@ -187,8 +171,9 @@ $gray: #777;
 
 <script>
 import milestone from '../components/about/milestone.vue'
+import pageHeader from '../components/global/PageHeader.vue'
 export default {
-  components: { milestone },
+  components: { milestone, pageHeader },
   data() {
     return {
       banner: {
