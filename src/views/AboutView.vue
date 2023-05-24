@@ -271,7 +271,7 @@ h2 {
 </style>
 
 <script>
-import milestone from '../components/about/milestone.vue'
+import milestone from '../components/about/Milestone.vue'
 import pageHeader from '../components/global/PageHeader.vue'
 export default {
   components: { milestone, pageHeader },
