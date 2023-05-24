@@ -19,6 +19,8 @@
 }
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
   padding: 30px;
 }
 
