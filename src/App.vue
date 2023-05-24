@@ -3,6 +3,8 @@
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/service">Service</router-link>
+    <router-link to="/member">Member</router-link>
+    <router-link to="/contact">Contact</router-link>
   </nav>
   <router-view />
 </template>
@@ -30,7 +32,7 @@ nav a {
 
 nav a.router-link-exact-active {
   color: white;
-  background: #2c3e50;;
+  background: #2c3e50;
 }
 
 button {
