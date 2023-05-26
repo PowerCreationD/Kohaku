@@ -57,11 +57,141 @@ $gray: #777;
   opacity: 0.4;
 }
 
-@for $i from 1 through 20 {
-  .amber-#{$i} {
-    left: calc((random(140) - 20) * 1%);
-    top: calc(random(100) * 1%);
-    width: random(4) * 100px;
+.amber {
+  &-1 {
+    left: 82%;
+    top: 2%;
+    width: 250px;
+    transform: rotate(45deg);
+  }
+
+  &-2 {
+    left: -4%;
+    top: 13%;
+    width: 120px;
+    transform: rotate(134deg);
+    @media (max-width: 600px) {
+      top: 8%;
+    }
+  }
+  &-3 {
+    left: 54%;
+    top: 12%;
+    width: 278px;
+    transform: rotate(24deg);
+    @media (max-width: 600px) {
+      top: 11%;
+    }
+  }
+  &-4 {
+    left: 77%;
+    top: 44%;
+    width: 310px;
+    transform: rotate(94deg);
+  }
+  &-5 {
+    left: 60%;
+    top: 29%;
+    width: 230px;
+    transform: rotate(189deg);
+  }
+  &-6 {
+    left: 80%;
+    top: 90%;
+    width: 332px;
+    transform: rotate(144deg);
+  }
+  &-7 {
+    left: 40%;
+    top: 81%;
+    width: 170px;
+    transform: rotate(54deg);
+    @media (max-width: 600px) {
+      left: -10%;
+      top: 88%;
+    }
+  }
+  &-8 {
+    left: -17%;
+    top: 35%;
+    width: 350px;
+    transform: rotate(84deg);
+  }
+  &-9 {
+    left: 29%;
+    top: 23%;
+    width: 170px;
+    transform: rotate(23deg);
+    @media (max-width: 600px) {
+      left: 20%;
+      top: 40%;
+    }
+  }
+  &-10 {
+    left: 6%;
+    top: 66%;
+    width: 330px;
+    transform: rotate(170deg);
+  }
+  &-11 {
+    left: -26%;
+    top: 59%;
+    width: 270px;
+    transform: rotate(123deg);
+  }
+  &-12 {
+    left: -19%;
+    top: 49%;
+    width: 320px;
+    transform: rotate(339deg);
+  }
+  &-13 {
+    left: -10%;
+    top: 27%;
+    width: 150px;
+    transform: rotate(264deg);
+  }
+  &-14 {
+    left: 71%;
+    top: 71%;
+    width: 180px;
+    transform: rotate(143deg);
+  }
+  &-15 {
+    left: 78%;
+    top: 55%;
+    width: 230px;
+    transform: rotate(124deg);
+  }
+  &-16 {
+    left: -10%;
+    top: 98%;
+    width: 290px;
+    transform: rotate(234deg);
+  }
+  &-17 {
+    left: 100%;
+    top: 63%;
+    width: 100px;
+    transform: rotate(236deg);
+  }
+  &-18 {
+    left: -14%;
+    top: 16%;
+    width: 300px;
+    transform: rotate(196deg);
+  }
+  &-19 {
+    left: 67%;
+    top: 85%;
+    width: 237px;
+    transform: rotate(204deg);
+  }
+  &-20 {
+    left: -10%;
+    top: 78%;
+    width: 304px;
+    transform: rotate(14deg);
   }
 }
 </style>
@@ -185,10 +315,8 @@ export default {
   computed: {
     amberNum() {
       let width = this.windowWidth
-      if (width > 1000) {
+      if (width > 600) {
         return 10
-      } else if (width > 600) {
-        return 15
       } else {
         return 20
       }
