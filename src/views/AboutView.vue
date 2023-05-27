@@ -286,7 +286,7 @@ export default {
         alt: 'logo_kohaku'
       },
       amber: {
-        src: '/src/assets/about/image_amber.png',
+        src: '/src/assets/global/image_amber.png',
         alt: 'image_amber'
       }
     }
