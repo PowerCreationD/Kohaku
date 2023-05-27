@@ -15,7 +15,9 @@
         </div>
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
-                <img :src="work.img_url" alt="">
+                <router-link :to="{ name: 'WorkDetail', params: { id: work.id } }">
+                    <img :src="work.img_url" alt="" >
+                </router-link>
                 <p>{{ work.name }}</p>
             </div>
         </div>
@@ -138,6 +140,9 @@ export default {
                 // console.log(filtered)
             }
         }
+    },
+    mounted () {
+        window.scrollTo(0, 0)
     }
 }
 </script>
@@ -195,6 +200,7 @@ export default {
                 width: 100%;
                 height: 256px;
                 object-fit: cover;
+                cursor: pointer;
             }
         }
         div.item-between {
