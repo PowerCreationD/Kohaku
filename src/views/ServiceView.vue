@@ -292,6 +292,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
   -webkit-font-smoothing: antialiased;

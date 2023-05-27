@@ -6,50 +6,17 @@
             <div class="section__line-top"></div>
         </div>
         <div class="work__button_filter">
-            <h4>範圍</h4>
-            <button class="work__nav_button all" @click="activeBtn = 'all'" :class="{active: activeBtn === 'all' }">全部</button>
-            <button class="work__nav_button" @click="activeBtn = 'system'" :class="{active: activeBtn === 'system' }">系統設計 / 開發與維運</button>
-            <button class="work__nav_button" @click="activeBtn = 'trade'" :class="{active: activeBtn === 'trade' }">國內 / 國際貿易服務</button>
-            <button class="work__nav_button" @click="activeBtn = 'product'" :class="{active: activeBtn === 'product' }">產品設計與量產開發</button>
-            <button class="work__nav_button" @click="activeBtn = 'commercial'" :class="{active: activeBtn === 'commercial' }">品牌形象與視覺設計</button>
-            <button class="work__nav_button" @click="activeBtn = 'event'" :class="{active: activeBtn === 'event' }">企劃發想與活動策劃</button>
+            <button class="work__nav_button all" @click="selectCategory('all')" :class="{active: activeBtn === 'all' }">全部</button>
+            <button class="work__nav_button" @click="selectCategory('system_development')" :class="{active: activeBtn === 'system_development' }">系統設計 / 開發與維運</button>
+            <button class="work__nav_button" @click="selectCategory('trading')" :class="{active: activeBtn === 'trading' }">國內 / 國際貿易服務</button>
+            <button class="work__nav_button" @click="selectCategory('product_design')" :class="{active: activeBtn === 'product_design' }">產品設計與量產開發</button>
+            <button class="work__nav_button" @click="selectCategory('commercial_design')" :class="{active: activeBtn === 'commercial_design' }">品牌形象與視覺設計</button>
+            <button class="work__nav_button" @click="selectCategory('event_planning')" :class="{active: activeBtn === 'event_planning' }">企劃發想與活動策劃</button>
         </div>
         <div class="work__display_area">
-            <div class="work__item">
-                <img src="src/assets/works/system_development/vegibus/img_vegibus_system.png" alt="">
-                <p>Vegibus 農產品電商系統</p>
-            </div>
-            <div class="work__item">
-                <img src="src/assets/works/system_development/mobilemover/img_mobilemover_app.png" alt="">
-                <p>Mobile Mover 自主行走機器人控制平台 (MM App)</p>
-            </div>
-            <div class="work__item">
-                <img src="src/assets/works/commercial_design/book/img_woodwork_1.jpeg" alt="">
-                <p>木工基本機械操作工具書</p>
-            </div>
-            <div class="work__item item-2">
-                <img src="src/assets/works/product_design/img_kizuna_1.png" alt="">
-                <p>慕．廂</p>
-            </div>
-            <div class="work__item item-2">
-                <img src="src/assets/works/commercial_design/kimchi/img_kimchi_1.jpeg" alt="">
-                <p>ニラたっぷりキムチ 韭菜泡菜包裝設計</p>
-            </div>
-            <div class="work__item">
-                <img src="src/assets/works/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg" alt="">
-                <p>廣島三原車站 快閃自助蔬果攤</p>
-            </div>
-            <div class="work__item">
-                <img src="src/assets/works/commercial_design/takahata/img_takahata_business_card_1.jpeg" alt="">
-                <p>高畠市役場 名片設計</p>
-            </div>
-            <div class="work__item">
-                <img src="src/assets/works/commercial_design/power_creation/img_power_creation_business_card_1.jpeg" alt="">
-                <p>創次方股份有限公司 名片設計</p>
-            </div>
-            <div class="work__item item-4">
-                <img src="src/assets/works/trading/img_pineapple_1.jpeg" alt="">
-                <p>屏東台農17號金鑽鳳梨外銷日本</p>
+            <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
+                <img :src="work.img_url" alt="">
+                <p>{{ work.name }}</p>
             </div>
         </div>
     </div>
@@ -57,63 +24,126 @@
 </template>
 
 <script>
+import { computed } from 'vue'
 export default {
     data() {
         return {
             activeBtn: 'all',
+            filteredWorkList: [],
             workList: [
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 1,
+                    "name": "Vegibus 農產品電商系統",
+                    "img_url": "src/assets/works/system_development/vegibus/img_vegibus_system.png",
+                    "tag": ["system_development"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 2,
+                    "name": "Mobile Mover 自主行走機器人控制平台 (MM App)",
+                    "img_url": "src/assets/works/system_development/mobilemover/img_mobilemover_app.png",
+                    "tag": ["system_development"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 3,
+                    "name": "木工基本機械操作工具書",
+                    "img_url": "src/assets/works/commercial_design/book/img_woodwork_1.jpeg",
+                    "tag": ["commercial_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 4,
+                    "name": "慕．廂",
+                    "img_url": "src/assets/works/product_design/img_kizuna_1.png",
+                    "tag": ["product_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 5,
+                    "name": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
+                    "img_url": "src/assets/works/commercial_design/kimchi/img_kimchi_1.jpeg",
+                    "tag": ["commercial_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 6,
+                    "name": "廣島三原車站 快閃自助蔬果攤",
+                    "img_url": "src/assets/works/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg",
+                    "tag": ["commercial_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 7,
+                    "name": "高畠市役場 名片設計",
+                    "img_url": "src/assets/works/commercial_design/takahata/img_takahata_business_card_1.jpeg",
+                    "tag": ["commercial_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 8,
+                    "name": "創次方股份有限公司 名片設計",
+                    "img_url": "src/assets/works/commercial_design/power_creation/img_power_creation_business_card_1.jpeg",
+                    "tag": ["commercial_design"]
                 },
                 {
-                    "work_id": "",
-                    "img_url": "",
-                    "tag": [""]
+                    "id": 9,
+                    "name": "屏東台農17號金鑽鳳梨外銷日本",
+                    "img_url": "src/assets/works/trading/img_pineapple_1.jpeg",
+                    "tag": ["trading"]
                 }
             ]
+        }
+    },
+    methods: {
+        selectCategory(type) {
+            this.activeBtn = type
+            console.log(this.activeBtn)
+        },
+        addStyle(workList){
+            workList.forEach((work, index) => {
+                const remainder = (index + 1) % 12
+                if (remainder == 1 || remainder == 2 || remainder == 3){
+                    work["style"] = ""
+                    if (remainder == 1 || remainder == 2){
+                        work["style"] += "item-between"
+                    }
+                }
+                else if (remainder == 4 || remainder == 5) {
+                    work["style"] = "item-2"
+                    if (remainder == 4){
+                        work["style"] += " item-between"
+                    }
+                }
+                else if (remainder == 6 || remainder == 7 || remainder == 8) {
+                    work["style"] = ""
+                    if (remainder == 6 || remainder == 7){
+                        work["style"] += " item-between"
+                    }
+                }
+                else {
+                    work["style"] = "item-4"
+                    if (remainder == 9 || remainder == 10 || remainder == 11){
+                        work["style"] += " item-between"
+                    }
+                }
+
+            })
+            return workList
+        }
+    },
+    computed: {
+        filteredWork() {
+            if(this.activeBtn === "all") {
+                const addStyleWorkList = this.addStyle(this.workList)
+                return addStyleWorkList
+            }
+            else {
+                const filteredWorkList = this.workList.filter(work => work.tag.includes(this.activeBtn))
+                const addStyleFilteredWorkList = this.addStyle(filteredWorkList)
+                return addStyleFilteredWorkList
+                // console.log(filtered)
+            }
         }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
   -webkit-font-smoothing: antialiased;
@@ -128,30 +158,27 @@ export default {
     flex-direction: column;
     margin: 0 auto;
     padding: 140px 0;
-    width: 1200px;
+    width: calc(100% - 240px);
     .work__description-top {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
         .title {
-            width: 10%;
+            margin: 0;
+            margin-right: 40px;
             font-size: 36px;
             font-weight: bold;
-            margin: 0;
-            line-height: 28px;
         }
         .section__line-top {
-            width: 87.5%;
+            flex-grow: 1;
             border-top: 1px solid #777777;
+            margin-top: 7px;
         }
     }
     .work__button_filter{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         align-items: center;
-        margin-top: 12px;
         margin-bottom: 48px;
         
     }
@@ -159,17 +186,24 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         .work__item {
-            width: 32%;
+            width: calc( (100% - 48px) / 3);
+            // height: auto;
+            // object-fit: contain;
             img {
                 width: 100%;
                 height: 256px;
                 object-fit: cover;
             }
         }
+        div.item-between {
+            margin-right: 24px;
+        }
         div.item-2 {
-            width: 49%;
+            width: calc( (100% - 24px) / 2);
+            // height: auto;
+            // object-fit: contain;
             img {
                 width: 100%;
                 height: 390px;
@@ -177,7 +211,9 @@ export default {
             }
         }
         div.item-4 {
-            width: 24.5%;
+            width: calc( (100% - 72px) / 4);
+            // height: auto;
+            // object-fit: contain;
             img {
                 width: 100%;
                 height: 188px;
@@ -190,6 +226,8 @@ export default {
     font-size: 16px;
     height: 46px;
     width: 192px;
+    margin-right: 20px;
+    margin-top: 12px;
     border-style: none;
     border-radius: 71px;
     background: #FFFFFF;
