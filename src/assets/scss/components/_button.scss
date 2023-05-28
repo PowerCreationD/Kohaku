@@ -1,0 +1,183 @@
+@use 'variable' as var;
+@use 'typography' as typography;
+
+.button {
+  &--primary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 38px;
+    color: map-get(var.$color--primary, white);
+    background-color: map-get(var.$color--primary, gold);
+    border: 1px solid map-get(var.$color--primary, gold);
+    box-sizing: border-box;
+    border-radius: map-get(var.$border-radius, 1);
+
+    &:hover {
+      color: map-get(var.$color--primary, black);
+      background-color: map-get(var.$color--primary, white);
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, white);
+      background-color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--thumbnail-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: map-get(var.$color--primary, white);
+    box-shadow: map-get(var.$box-shadow, 1);
+    border: none;
+
+    &__arrow-icon {
+      width: 20px;
+      height: 20px;
+      stroke: map-get(var.$color--primary, gold);
+    }
+
+    &:hover & {
+      background-color: map-get(var.$color--primary, gold);
+
+      &__arrow-icon {
+        stroke: map-get(var.$color--primary, white);
+      }
+    }
+
+    &:active & {
+      background-color: map-get(var.$color--primary, white);
+
+      &__arrow-icon {
+        path {
+          stroke: map-get(var.$color--primary, gold);
+        }
+      }
+    }
+  }
+
+  &--more {
+    @include typography.font($index: 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    color: map-get(var.$color--primary, gold);
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    margin: 7px 8px;
+
+    &__arrow-icon {
+      width: 13px;
+      height: 17px;
+      margin: 0 0 0 8px;
+
+      path {
+        stroke: map-get(var.$color--primary, gold);
+      }
+    }
+
+    &:hover {
+      border-bottom-color: map-get(var.$color--primary, gold);
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &--sidebar {
+    @include typography.font($index: 7);
+    width: fit-content;
+    height: fit-content;
+    color: map-get(var.$color--primary, black);
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:active {
+      @include typography.font($index: 6);
+      color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--top-selection {
+    @include typography.font($index: 5);
+    width: fit-content;
+    height: fit-content;
+    color: map-get(var.$color--primary, black);
+    text-align: left;
+    background-color: transparent;
+    border: none;
+
+    &::after {
+      content: ' ';
+      display: block;
+      width: 100%;
+      height: 12px;
+      background-color: map-get(var.$color--primary, charcoal);
+      border: 1px solid map-get(var.$color--primary, charcoal);
+      box-sizing: border-box;
+      position: relative;
+      top: 12px;
+    }
+
+    &:hover {
+      color: map-get(var.$color--primary, gold);
+
+      &::after {
+        background-color: transparent;
+        border-color: map-get(var.$color--primary, gold);
+      }
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, gold);
+
+      &::after {
+        background-color: map-get(var.$color--primary, gold);
+        border-color: map-get(var.$color--primary, gold);
+      }
+    }
+  }
+
+  &--service {
+    @include typography.font($index: 7);
+    width: fit-content;
+    height: fit-content;
+    color: map-get(var.$color--primary, black);
+    background-color: map-get(var.$color--primary, white);
+    border: 1px solid map-get(var.$color--primary, white);
+    border-radius: map-get(var.$border-radius, 2);
+    box-shadow: map-get(var.$box-shadow, 1);
+    padding: 12px 17px;
+
+    &:hover {
+      border-color: map-get(var.$color--primary, gold);
+    }
+
+    &:active {
+      @include typography.font($index: 6);
+      border-color: map-get(var.$color--primary, gold);
+      color: map-get(var.$color--primary, white);
+      background-color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--logo {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

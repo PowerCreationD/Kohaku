@@ -1,0 +1,13 @@
+@use 'variable' as var;
+
+.container {
+  &--body {
+    width: var.$body-width;
+    min-height: calc(
+      100vh -
+        (var.$footer-height + var.$header-height + var.$body-top-margin + var.$body-bottom-margin)
+    );
+    margin: 0 auto;
+    padding: (var.$header-height + var.$body-top-margin) 0 var.$body-bottom-margin 0;
+  }
+}

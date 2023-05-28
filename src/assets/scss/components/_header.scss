@@ -1,0 +1,36 @@
+@use 'variable' as var;
+@use 'typography' as typography;
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var.$header-height;
+  background-color: map-get(var.$color--primary, white);
+  box-shadow: map-get(var.$box-shadow, 1);
+  margin: 0;
+  padding: 0;
+
+  &__section {
+    height: fit-content;
+    width: fit-content;
+
+    &--left {
+      padding: 0 0 0 var.$header-both-sides-padding;
+    }
+
+    &--right {
+      padding: 0 var.$header-both-sides-padding 0 0;
+    }
+  }
+
+  &__navigation-link {
+    @include typography.font($index: 7);
+    color: map-get(var.$color--primary, black);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 64px 0 0;
+  }
+}

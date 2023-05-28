@@ -1,0 +1,12 @@
+@use 'variable' as var;
+
+@mixin font($index) {
+  font-family: 'Ubuntu';
+  font-size: map-get(var.$font-size, $index);
+  font-weight: map-get(var.$font-weight, $index);
+
+  @media (max-width: 767px) {
+    font-size: map-get(var.$font-size--mobile, $index);
+    font-weight: map-get(var.$font-weight--mobile, $index);
+  }
+}
