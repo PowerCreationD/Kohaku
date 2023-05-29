@@ -12,6 +12,8 @@
   </div>
 </template>
 
+<style src="@/assets/scss/components/_milestone.scss" scoped></style>
+
 <script>
 export default {
   name: 'milestoneComponent',
@@ -48,67 +50,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-* {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2 {
-  font-size: 36px;
-}
-
-@media screen and (max-width: 767px) {
-  p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  h1,
-  h2 {
-    font-size: 22px;
-  }
-}
-// --------------------
-.milestone {
-  margin-top: 76px;
-  &-wrap {
-    display: flex;
-    flex-direction: column;
-    margin-top: 164px;
-    width: min(900px, 100%);
-    margin-left: auto;
-  }
-  .phase {
-    display: flex;
-    margin-bottom: 16px;
-    &__date {
-      width: 61px;
-      margin-right: 51px;
-      flex-shrink: 0;
-    }
-    &__things {
-      flex-grow: 1;
-      p + p {
-        margin-top: 16px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .milestone {
-    margin-top: 36px;
-    &-wrap {
-      margin-top: 76px;
-    }
-    .phase {
-      &__date {
-        margin-right: 36px;
-      }
-    }
-  }
-}
-</style>

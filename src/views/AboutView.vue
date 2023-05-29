@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <!-- * Header -->
-    <page-header>ABOUT</page-header>
+    <page-title>ABOUT</page-title>
 
     <!-- * Intro -->
     <div class="intro">
@@ -77,216 +77,25 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-* {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 0;
-  margin: 0;
-}
-$gray: #777;
-
-.about {
-  width: min(1200px, 90%, calc(100% - 32px));
-  margin: auto;
-  padding: 120px 0 140px 0;
-}
-h1,
-h2 {
-  font-size: 36px;
-}
-
-@media screen and (max-width: 767px) {
-  p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .about {
-    padding: 56px 0;
-  }
-  h1,
-  h2 {
-    font-size: 22px;
-  }
-}
-// --------------------
-.intro {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 96px;
-  margin-top: 60px;
-  > div {
-    display: flex;
-
-    &:first-child {
-      margin-bottom: 56px;
-    }
-  }
-  &__title {
-    flex-grow: 1;
-  }
-  &__logo {
-    height: 88px;
-    img {
-      height: 100%;
-    }
-  }
-  &__banner {
-    flex-grow: 1;
-    margin-right: 56px;
-    img {
-      width: 100%;
-      vertical-align: middle;
-    }
-  }
-  &__desc {
-    width: auto;
-    min-width: 27%;
-    flex-shrink: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .intro {
-    margin: 0;
-    > div {
-      flex-wrap: wrap;
-
-      &:first-child {
-        margin-bottom: 16px;
-      }
-    }
-    &-tittle-and-logo {
-      flex-direction: column-reverse;
-    }
-    &__logo {
-      align-self: flex-end;
-      margin-bottom: 24px;
-    }
-    &__banner {
-      margin-right: 0;
-      img {
-        width: 100vw;
-        margin-left: min(-16px, calc(100vw * -0.05));
-      }
-    }
-    &__desc {
-      margin: 36px auto;
-      text-align: center;
-    }
-  }
-}
-
-.brand {
-  border-top: 1px solid $gray;
-  border-bottom: 1px solid $gray;
-  overflow: hidden;
-  position: relative;
-  &__wrap {
-    width: min(65%, 786px);
-    margin: auto;
-    height: 512px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  &__name {
-    margin-bottom: 20px;
-  }
-  &__desc {
-    text-align: justify;
-  }
-  &__amber {
-    z-index: -1;
-    img {
-      position: absolute;
-      transition: 0.5s;
-    }
-    &--left-top {
-      width: 315px;
-      transform: rotate(145.33deg);
-      top: -167px;
-      left: -26px;
-    }
-    &--right-top {
-      width: 218px;
-      transform: rotate(39.77deg);
-      right: 10%;
-      top: -155px;
-    }
-    &--left-bottom {
-      width: 281px;
-      transform: rotate(39.77deg);
-      left: 20%;
-      bottom: -193px;
-    }
-    &--right-bottom {
-      width: 304px;
-      right: 0;
-      bottom: 13%;
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .brand {
-    &__wrap {
-      width: 100%;
-      height: 400px;
-    }
-
-    &__amber {
-      img {
-        position: absolute;
-      }
-      &--left-top {
-        width: 248px;
-        transform: rotate(145.33deg);
-        top: -83px;
-        left: -22px;
-      }
-      &--right-top {
-        width: 109px;
-        transform: rotate(-118.88deg);
-        right: 2%;
-        top: -60px;
-        opacity: 60%;
-      }
-      &--left-bottom {
-        width: 275px;
-        transform: rotate(39.77deg);
-        left: -17px;
-        bottom: -148px;
-        opacity: 60%;
-      }
-      &--right-bottom {
-        width: 159px;
-        right: 23px;
-        bottom: 2%;
-      }
-    }
-  }
-}
-</style>
+<style src="@/assets/scss/about.scss" scoped></style>
 
 <script>
-import milestone from '../components/about/Milestone.vue'
-import pageHeader from '../components/global/PageHeader.vue'
+import milestone from '@/components/about/Milestone.vue'
+import pageTitle from '@/components/global/PageTitle.vue'
 export default {
-  components: { milestone, pageHeader },
+  components: { milestone, pageTitle },
   data() {
     return {
       banner: {
-        src: '/src/assets/about/banner_image.jpg',
+        src: '/src/assets/img/about/banner_image.jpg',
         alt: 'banner_image'
       },
       logo: {
-        src: '/src/assets/about/logo_kohaku_small.png',
+        src: '/src/assets/img/about/logo_kohaku_small.png',
         alt: 'logo_kohaku'
       },
       amber: {
-        src: '/src/assets/global/image_amber.png',
+        src: '/src/assets/img/global/image_amber.png',
         alt: 'image_amber'
       }
     }

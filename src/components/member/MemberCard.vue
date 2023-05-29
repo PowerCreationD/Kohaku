@@ -1,7 +1,6 @@
 <template>
   <div class="member-card">
     <svg
-      width="100%"
       viewBox="0 0 362 354"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -68,40 +67,10 @@ export default {
       return `#${this.person.id}`
     },
     imageSrc() {
-      return `/src/assets/member/image_profile_${this.person.id}.jpg`
+      return `/src/assets/img/member/image_profile_${this.person.id}.jpg`
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-* {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 0;
-  margin: 0;
-}
-/* ----------- */
-.member {
-  &-card {
-    width: 100%;
-  }
-  p:nth-child(2) {
-    margin-top: 28px;
-  }
-  p:not(:last-child),
-  h3 {
-    margin-bottom: 8px;
-  }
-  p:first {
-    margin-top: 38px;
-  }
-  p{
-    text-align: justify;
-  }
-  span {
-    margin-right: 8px;
-    color: #e6ae4a;
-    font-weight: bold;
-  }
-}
-</style>
+<style src="@/assets/scss/components/_memberCard.scss" scoped></style>
