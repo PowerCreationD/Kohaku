@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <BigLogo class="footer__logo" />
+    <KohakuAndM2Logo class="footer__logo" />
     <div class="footer__navigation-link-row">
       <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
         <router-link class="footer__navigation-link" :to="navigationLink.link">
@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import BigLogo from './BigLogo.vue'
+import KohakuAndM2Logo from './KohakuAndM2Logo.vue'
 import CommaIcon from './CommaIcon.vue'
 
 export default {
   name: 'PageFooter',
-  components: { BigLogo, CommaIcon },
+  components: { KohakuAndM2Logo, CommaIcon },
   data() {
     return {
       navigationLinks: [
