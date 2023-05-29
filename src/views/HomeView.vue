@@ -9,10 +9,10 @@
       <LeftArrowIcon class="button--thumbnail-navigation__arrow-icon" />
     </button>
     <button class="button button--more">
-      More
+      查看所有專案
       <MoreArrowIcon class="button--more__arrow-icon" />
     </button>
-    <button class="button button--sidebar">Software Engineering</button>
+    <button class="button button--sidebar">企劃發想與數位行銷</button>
     <button class="button button--service">Software Engineering</button>
     <button class="button button--top-selection">Software Engineering</button>
     <CommaIcon class="comma--test" />

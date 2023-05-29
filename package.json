@@ -8,8 +8,8 @@
     "dev:scss": "sass src/assets/scss/style.scss src/assets/style.css --style=compressed -w",
     "dev:css": "postcss src/assets/style.css -o src/assets/style.css -w --use autoprefixer --verbose",
     "build": "run-s -sln build:scss build:css build:server",
-		"build:server": "vite build",
-		"build:scss": "sass src/assets/scss/style.scss src/assets/style.css --style=compressed",
+    "build:server": "vite build",
+    "build:scss": "sass src/assets/scss/style.scss src/assets/style.css --style=compressed",
     "build:css": "postcss src/assets/style.css -o src/assets/style.css --use autoprefixer",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
@@ -32,6 +32,7 @@
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
+    "scss-reset": "^1.4.2",
     "vite": "^4.3.4"
   }
 }

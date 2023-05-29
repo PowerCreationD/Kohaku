@@ -9,7 +9,6 @@
     color: map-get(var.$color--primary, white);
     background-color: map-get(var.$color--primary, gold);
     border: 1px solid map-get(var.$color--primary, gold);
-    box-sizing: border-box;
     border-radius: map-get(var.$border-radius, 1);
 
     &:hover {
@@ -39,17 +38,21 @@
       stroke: map-get(var.$color--primary, gold);
     }
 
-    &:hover & {
+    &:hover {
       background-color: map-get(var.$color--primary, gold);
+    }
 
+    &:hover & {
       &__arrow-icon {
         stroke: map-get(var.$color--primary, white);
       }
     }
 
-    &:active & {
+    &:active {
       background-color: map-get(var.$color--primary, white);
+    }
 
+    &:active & {
       &__arrow-icon {
         path {
           stroke: map-get(var.$color--primary, gold);
@@ -68,8 +71,7 @@
     color: map-get(var.$color--primary, gold);
     background-color: transparent;
     border: 1px solid transparent;
-    box-sizing: border-box;
-    margin: 7px 8px;
+    padding: 7px 8px;
 
     &__arrow-icon {
       width: 13px;
@@ -121,7 +123,6 @@
       height: 12px;
       background-color: map-get(var.$color--primary, charcoal);
       border: 1px solid map-get(var.$color--primary, charcoal);
-      box-sizing: border-box;
       position: relative;
       top: 12px;
     }
@@ -151,9 +152,9 @@
     height: fit-content;
     color: map-get(var.$color--primary, black);
     background-color: map-get(var.$color--primary, white);
+    box-shadow: map-get(var.$box-shadow, 1);
     border: 1px solid map-get(var.$color--primary, white);
     border-radius: map-get(var.$border-radius, 2);
-    box-shadow: map-get(var.$box-shadow, 1);
     padding: 12px 17px;
 
     &:hover {
