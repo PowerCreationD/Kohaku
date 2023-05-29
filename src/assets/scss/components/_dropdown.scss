@@ -20,10 +20,6 @@
     background-color: transparent;
     margin: auto 0 0 0;
     padding: 3px 19px 3px 8px;
-
-    &--black-text {
-      color: map-get(var.$color--primary, black);
-    }
   }
 
   &__options {

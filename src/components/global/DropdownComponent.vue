@@ -1,10 +1,6 @@
 <template>
   <div class="dropdown">
-    <div
-      class="dropdown__selected-option"
-      :class="{ 'dropdown__selected-option--black-text': blackText }"
-      @click="clickDropdown"
-    >
+    <div class="dropdown__selected-option" @click="clickDropdown">
       {{ selectedOption.text }}
     </div>
     <DropdownArrowIcon class="dropdown__down-arrow" @click="clickDropdown" />
@@ -32,10 +28,6 @@ export default {
     options: {
       type: Object,
       default: null
-    },
-    blackText: {
-      type: Boolean,
-      default: false
     }
   },
   created() {

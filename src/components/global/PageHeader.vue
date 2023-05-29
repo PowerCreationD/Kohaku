@@ -14,7 +14,7 @@
       >
         {{ navigationLink.text }}
       </router-link>
-      <DropdownComponent class="header__dropdown" :options="languageOptions" :blackText="true" />
+      <DropdownComponent class="header__dropdown" :options="languageOptions" />
     </div>
   </div>
 </template>
