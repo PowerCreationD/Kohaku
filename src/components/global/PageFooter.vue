@@ -11,11 +11,11 @@
     </div>
     <div
       class="footer__information-section"
-      v-for="(informationValue, informationLabel) in companyInformation"
-      :key="informationLabel"
+      v-for="information in companyInformation"
+      :key="information.label"
     >
-      <p class="footer__information-label">{{ informationLabel }}</p>
-      <p class="footer__information-value">{{ informationValue }}</p>
+      <p class="footer__information-label">{{ information.label }}</p>
+      <p class="footer__information-value">{{ information.value }}</p>
     </div>
   </div>
 </template>
@@ -51,11 +51,20 @@ export default {
           link: '/contact'
         }
       ],
-      companyInformation: {
-        mail: 'kohakucasatw@gmail.com',
-        businessTime: 'Mon~Fri / 10:00-19:00',
-        address: '高雄市鹽埕區大勇路11號3樓507室'
-      }
+      companyInformation: [
+        {
+          label: 'Mail',
+          value: 'kohakucasatw@gmail.com'
+        },
+        {
+          label: 'Business Time',
+          value: 'Mon~Fri / 10:00-19:00'
+        },
+        {
+          label: 'Address',
+          value: '高雄市鹽埕區大勇路11號3樓507室'
+        }
+      ]
     }
   }
 }
