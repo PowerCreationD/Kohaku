@@ -7,7 +7,7 @@
       100vh -
         (var.$footer-height + var.$header-height + var.$body-top-margin + var.$body-bottom-margin)
     );
-    margin: 0 auto;
-    padding: (var.$header-height + var.$body-top-margin) 0 var.$body-bottom-margin 0;
+    margin: 0;
+    padding: (var.$header-height + var.$body-top-margin) 100% var.$body-bottom-margin 100%;
   }
 }
