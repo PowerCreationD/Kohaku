@@ -10,3 +10,9 @@
     font-weight: map-get(var.$font-weight--mobile, $index);
   }
 }
+
+@for $i from 1 through 7 {
+  .font-#{$i} {
+    @include font($i);
+  }
+}
