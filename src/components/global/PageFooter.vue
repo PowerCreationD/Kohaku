@@ -1,46 +1,51 @@
 <template>
   <div class="footer">
     <KohakuAndM2Logo class="footer__logo" />
-    <template v-if="isMobileDevice">
-      <div class="footer__navigation-link-row">
-        <template
-          v-for="(navigationLink, index) in firstHalfOfNavigationLinks"
-          :key="navigationLink.text"
-        >
-          <router-link class="footer__navigation-link" :to="navigationLink.link">
-            {{ navigationLink.text }}
-          </router-link>
-          <CommaIcon
-            class="footer__navigation-comma"
-            v-if="index != firstHalfOfNavigationLinks.length - 1"
-          />
-        </template>
-      </div>
-      <div class="footer__navigation-link-row">
-        <template
-          v-for="(navigationLink, index) in secondHalfOfNavigationLinks"
-          :key="navigationLink.text"
-        >
-          <router-link class="footer__navigation-link" :to="navigationLink.link">
-            {{ navigationLink.text }}
-          </router-link>
-          <CommaIcon
-            class="footer__navigation-comma"
-            v-if="index != secondHalfOfNavigationLinks.length - 1"
-          />
-        </template>
-      </div>
-    </template>
-    <template v-else>
-      <div class="footer__navigation-link-row">
-        <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
-          <router-link class="footer__navigation-link" :to="navigationLink.link">
-            {{ navigationLink.text }}
-          </router-link>
-          <CommaIcon class="footer__navigation-comma" v-if="index != navigationLinks.length - 1" />
-        </template>
-      </div>
-    </template>
+    <div class="footer__navigation-link-section">
+      <template v-if="isMobileDevice">
+        <div class="footer__navigation-link-row">
+          <template
+            v-for="(navigationLink, index) in firstHalfOfNavigationLinks"
+            :key="navigationLink.text"
+          >
+            <router-link class="footer__navigation-link" :to="navigationLink.link">
+              {{ navigationLink.text }}
+            </router-link>
+            <CommaIcon
+              class="footer__navigation-comma"
+              v-if="index != firstHalfOfNavigationLinks.length - 1"
+            />
+          </template>
+        </div>
+        <div class="footer__navigation-link-row">
+          <template
+            v-for="(navigationLink, index) in secondHalfOfNavigationLinks"
+            :key="navigationLink.text"
+          >
+            <router-link class="footer__navigation-link" :to="navigationLink.link">
+              {{ navigationLink.text }}
+            </router-link>
+            <CommaIcon
+              class="footer__navigation-comma"
+              v-if="index != secondHalfOfNavigationLinks.length - 1"
+            />
+          </template>
+        </div>
+      </template>
+      <template v-else>
+        <div class="footer__navigation-link-row">
+          <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
+            <router-link class="footer__navigation-link" :to="navigationLink.link">
+              {{ navigationLink.text }}
+            </router-link>
+            <CommaIcon
+              class="footer__navigation-comma"
+              v-if="index != navigationLinks.length - 1"
+            />
+          </template>
+        </div>
+      </template>
+    </div>
     <div
       class="footer__information-section"
       v-for="information in companyInformation"
