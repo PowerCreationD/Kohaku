@@ -1,0 +1,199 @@
+@use 'typography' as typography;
+@use 'variable' as var;
+
+$gray: #C4C4C4;
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=date] {
+    border: 1px solid $gray;
+    border-radius: 4px;
+    height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+
+input[type=checkbox] {
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    background: map-get(var.$color, white);
+    border: 1px solid $gray;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        left: 4px;
+        width: 6px;
+        height: 10px;
+        border-bottom: 2px solid map-get(var.$color, white);
+        border-right: 2px solid map-get(var.$color, white);
+        -webkit-transform: rotate(45deg);
+
+        @media (max-width:767px) {
+            top: -3px;
+        }
+    }
+
+    &:checked {
+        background: map-get(var.$color, gold);
+        outline: none;
+        border: 1px solid map-get(var.$color, gold);
+    }
+}
+
+input[type=checkbox i] {
+    margin-right: 10px;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+textarea:hover,
+input:hover {
+    border: 1px solid map-get(var.$color, gold);
+    transition: .1s;
+}
+
+input {
+    @include typography.font($index: 7);
+}
+
+textarea {
+    padding: 12px;
+    @include typography.font($index: 7);
+    border: 1px solid $gray;
+    border-radius: 4px;
+}
+
+.error {
+
+    input,
+    textarea {
+        border: 1px solid map-get(var.$color, red);
+    }
+
+    &::after {
+        // content: '＊此處不可為空白';
+        content: '＊' attr(errorMsg);
+        @include typography.font($index: 7);
+        color: map-get(var.$color, red);
+        margin-top: 8px;
+    }
+}
+
+// --------------------
+
+.form {
+    flex-grow: 1;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 12px;
+        @include typography.font($index: 3);
+    }
+
+
+    &__type-checkbox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width:1180px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:820px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width:767px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width:580px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:380px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    &__date {
+        @include typography.font($index: 7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--dash {
+            margin: 0 8px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+
+        :last-child {
+            margin-left: 12px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .form {
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__section {
+            &:not(:last-child) {
+                margin-bottom: 36px;
+            }
+        }
+
+        &__date--dash {
+            margin: 0 5px;
+        }
+    }
+}
+
+.checkbox {
+    @include typography.font($index: 7);
+
+    &__box,
+    &__label {
+        cursor: pointer;
+    }
+
+    &__label {
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+}

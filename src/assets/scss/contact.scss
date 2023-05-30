@@ -1,0 +1,50 @@
+@use 'components/typography';
+$gray: #777;
+
+p,
+h2 {
+    margin: 0;
+}
+
+// --------------------
+
+.contact-wrap {
+    display: flex;
+    margin-top: 54px;
+
+    @media (max-width:767px) {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+
+.intro {
+    width: 37.5%;
+    margin-right: 72px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 24px;
+        @include typography.font($index: 3);
+    }
+
+    &__desc {
+        @include typography.font($index: 7);
+    }
+
+    &__background {
+        width: 100%;
+        margin-top: auto;
+    }
+
+}
+
+@media (max-width:767px) {
+    .intro {
+        width: 100%;
+        &__background{
+            margin: 16px 0;
+        }
+    }
+}
