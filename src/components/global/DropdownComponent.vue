@@ -30,15 +30,15 @@ export default {
       default: null
     }
   },
-  created() {
-    if (this.options) {
-      this.selectedOption = this.options[0]
-    }
-  },
   data() {
     return {
       selectedOption: {},
       open: false
+    }
+  },
+  created() {
+    if (this.options) {
+      this.selectedOption = this.options[0]
     }
   },
   methods: {

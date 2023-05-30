@@ -1,9 +1,13 @@
 @use '../../../node_modules/scss-reset/src/scss/_reset.scss';
 @use 'components/app';
 @use 'components/body';
-@use 'components/button';
 @use 'components/typography';
+@use 'components/button';
+@use 'components/link';
+@use 'components/dropdown';
+@use 'components/main-content';
+@use 'components/thumbnail.scss';
+@use 'components/hamburger-menu';
+@use 'components/sidebar';
 @use 'components/header';
 @use 'components/footer';
-@use 'components/dropdown';
-@use 'components/container';

@@ -82,13 +82,23 @@ $border-radius: (
 );
 
 // Header
-$header-height: 96px;
-$header-both-sides-padding: 36px;
+$large-header-height: 96px;
+$large-header-left-padding: 36px;
+$large-header-right-padding: 36px;
+$small-header-height: 66px;
+$small-header-left-padding: 16px;
+$small-header-right-padding: 21px;
 
 // Footer
-$footer-height: 380px;
+$large-footer-height: 380px;
+$small-footer-height: 304px;
 
-// Body
-$body-width: min(1200px, 90%, calc(100% - 32px));
-$body-top-margin: 140px;
-$body-bottom-margin: 140px;
+// Main Content
+$main-content-width: min(1200px, 90%, calc(100% - 32px));
+$large-main-content-top-margin: 140px;
+$large-main-content-bottom-margin: 140px;
+$small-main-content-top-margin: 56px;
+$small-main-content-bottom-margin: 0px;
+
+// Mobile Device
+$mobile-device-max-width: 767px;

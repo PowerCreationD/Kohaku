@@ -2,6 +2,12 @@
 @use 'typography' as typography;
 
 .button {
+  @include typography.font($index: 7);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+
   &--primary {
     @include typography.font($index: 6);
     width: 156px;
@@ -10,6 +16,11 @@
     background-color: map-get(var.$color--primary, gold);
     border: 1px solid map-get(var.$color--primary, gold);
     border-radius: map-get(var.$border-radius, 1);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
 
     &:hover {
       color: map-get(var.$color--primary, black);
@@ -22,89 +33,16 @@
     }
   }
 
-  &--thumbnail-navigation {
+  &--icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: map-get(var.$color--primary, white);
-    box-shadow: map-get(var.$box-shadow, 1);
     border: none;
-
-    &__arrow-icon {
-      width: 20px;
-      height: 20px;
-      stroke: map-get(var.$color--primary, gold);
-    }
-
-    &:hover {
-      background-color: map-get(var.$color--primary, gold);
-    }
-
-    &:hover & {
-      &__arrow-icon {
-        stroke: map-get(var.$color--primary, white);
-      }
-    }
-
-    &:active {
-      background-color: map-get(var.$color--primary, white);
-    }
-
-    &:active & {
-      &__arrow-icon {
-        path {
-          stroke: map-get(var.$color--primary, gold);
-        }
-      }
-    }
   }
 
-  &--more {
-    @include typography.font($index: 6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-    color: map-get(var.$color--primary, gold);
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 7px 8px;
-
-    &__arrow-icon {
-      width: 13px;
-      height: 17px;
-      margin: 0 0 0 8px;
-
-      path {
-        stroke: map-get(var.$color--primary, gold);
-      }
-    }
-
-    &:hover {
-      border-bottom-color: map-get(var.$color--primary, gold);
-    }
-
-    &:active {
-      border-bottom-color: transparent;
-    }
-  }
-
-  &--sidebar {
-    @include typography.font($index: 7);
-    width: fit-content;
-    height: fit-content;
-    color: map-get(var.$color--primary, black);
-    background-color: transparent;
-    border: none;
-
-    &:hover,
-    &:active {
-      @include typography.font($index: 6);
-      color: map-get(var.$color--primary, gold);
-    }
+  &__icon {
+    width: 20px;
+    height: 20px;
   }
 
   &--top-selection {
@@ -146,16 +84,9 @@
     }
   }
 
-  &--service {
-    @include typography.font($index: 7);
-    width: fit-content;
-    height: fit-content;
-    color: map-get(var.$color--primary, black);
+  &--background-white {
     background-color: map-get(var.$color--primary, white);
-    box-shadow: map-get(var.$box-shadow, 1);
     border: 1px solid map-get(var.$color--primary, white);
-    border-radius: map-get(var.$border-radius, 2);
-    padding: 12px 17px;
 
     &:hover {
       border-color: map-get(var.$color--primary, gold);
@@ -163,10 +94,17 @@
 
     &:active {
       @include typography.font($index: 6);
-      border-color: map-get(var.$color--primary, gold);
       color: map-get(var.$color--primary, white);
       background-color: map-get(var.$color--primary, gold);
+      border-color: map-get(var.$color--primary, gold);
     }
+  }
+
+  &--round {
+    width: fit-content;
+    height: fit-content;
+    border-radius: map-get(var.$border-radius, 2);
+    padding: 12px 17px;
   }
 
   &--logo {
@@ -174,8 +112,6 @@
     height: fit-content;
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 0;
   }
 
   &:hover {

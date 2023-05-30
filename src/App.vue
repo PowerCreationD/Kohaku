@@ -1,7 +1,7 @@
 <template>
-  <PageHeader />
-  <router-view class="container--body" />
+  <router-view class="main-content" />
   <PageFooter />
+  <PageHeader />
 </template>
 
 <script>

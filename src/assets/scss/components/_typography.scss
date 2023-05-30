@@ -5,7 +5,7 @@
   font-size: map-get(var.$font-size, $index);
   font-weight: map-get(var.$font-weight, $index);
 
-  @media (max-width: 767px) {
+  @media (max-width: #{var.$mobile-device-max-width}) {
     font-size: map-get(var.$font-size--mobile, $index);
     font-weight: map-get(var.$font-weight--mobile, $index);
   }

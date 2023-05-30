@@ -1,14 +1,46 @@
 <template>
   <div class="footer">
     <KohakuAndM2Logo class="footer__logo" />
-    <div class="footer__navigation-link-row">
-      <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
-        <router-link class="footer__navigation-link" :to="navigationLink.link">
-          {{ navigationLink.text }}
-        </router-link>
-        <CommaIcon class="footer__navigation-comma" v-if="index != navigationLinks.length - 1" />
-      </template>
-    </div>
+    <template v-if="isMobileDevice">
+      <div class="footer__navigation-link-row">
+        <template
+          v-for="(navigationLink, index) in firstHalfOfNavigationLinks"
+          :key="navigationLink.text"
+        >
+          <router-link class="footer__navigation-link" :to="navigationLink.link">
+            {{ navigationLink.text }}
+          </router-link>
+          <CommaIcon
+            class="footer__navigation-comma"
+            v-if="index != firstHalfOfNavigationLinks.length - 1"
+          />
+        </template>
+      </div>
+      <div class="footer__navigation-link-row">
+        <template
+          v-for="(navigationLink, index) in secondHalfOfNavigationLinks"
+          :key="navigationLink.text"
+        >
+          <router-link class="footer__navigation-link" :to="navigationLink.link">
+            {{ navigationLink.text }}
+          </router-link>
+          <CommaIcon
+            class="footer__navigation-comma"
+            v-if="index != secondHalfOfNavigationLinks.length - 1"
+          />
+        </template>
+      </div>
+    </template>
+    <template v-else>
+      <div class="footer__navigation-link-row">
+        <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
+          <router-link class="footer__navigation-link" :to="navigationLink.link">
+            {{ navigationLink.text }}
+          </router-link>
+          <CommaIcon class="footer__navigation-comma" v-if="index != navigationLinks.length - 1" />
+        </template>
+      </div>
+    </template>
     <div
       class="footer__information-section"
       v-for="information in companyInformation"
@@ -29,6 +61,7 @@ export default {
   components: { KohakuAndM2Logo, CommaIcon },
   data() {
     return {
+      isMobileDevice: false,
       navigationLinks: [
         {
           text: 'about',
@@ -65,6 +98,28 @@ export default {
           value: '高雄市鹽埕區大勇路11號3樓507室'
         }
       ]
+    }
+  },
+  computed: {
+    firstHalfOfNavigationLinks() {
+      var halfLength = Math.ceil(this.navigationLinks.length / 2)
+      return this.navigationLinks.slice(0, halfLength)
+    },
+    secondHalfOfNavigationLinks() {
+      var halfLength = Math.ceil(this.navigationLinks.length / 2)
+      return this.navigationLinks.slice(halfLength)
+    }
+  },
+  mounted() {
+    this.checkViewportSize()
+    window.addEventListener('resize', this.checkViewportSize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkViewportSize)
+  },
+  methods: {
+    checkViewportSize() {
+      this.isMobileDevice = window.innerWidth < this.$mobileDeviceMaxWidth
     }
   }
 }
