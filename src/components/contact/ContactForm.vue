@@ -63,7 +63,9 @@
           ></textarea>
         </div>
         <div class="form__btns">
-          <button type="button" class="button button--primary" @click="validate()">下一步</button>
+          <button type="button" class="button button--primary form__btns--next" @click="validate()">
+            下一步
+          </button>
         </div>
       </div>
       <div class="form__page--2" v-show="formPage == 2">
@@ -100,15 +102,55 @@
           <input id="email" type="text" v-model="email.value" />
         </div>
         <div class="form__btns">
-          <button type="button" class="button button--primary" @click="formPage--, scroll()">
+          <button
+            type="button"
+            class="button button--primary form__btns--prev"
+            @click="formPage--, scroll()"
+          >
             上一步
           </button>
-          <button type="submit" class="button button--primary" @click="sendEmail()">
+          <button
+            type="submit"
+            class="button button--primary form__btns--submit"
+            @click="validate()"
+          >
             送出表單
           </button>
         </div>
       </div>
     </form>
+  </div>
+
+  <div class="background" v-show="popup == 1">
+    <div class="popup">
+      <div class="popup__header font-4">確認送出</div>
+      <div class="popup__content font-7">確定要送出表單嗎？</div>
+      <div class="popup__buttons">
+        <button class="button button--primary popup__buttons--back" @click="popup = 0">返回</button>
+        <button
+          class="button button--primary popup__buttons--submit"
+          :disabled="sending"
+          :class="{ 'popup__buttons--disabled': sending }"
+          @click="sendEmail()"
+        >
+          送出表單
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="background" v-show="popup == 2">
+    <div class="popup">
+      <div class="popup__header font-4">謝謝您！</div>
+      <div class="popup__content font-7">
+        我們已收到您的回覆，並將確認信寄送到您填寫的聯絡信箱。
+      </div>
+      <div class="popup__buttons">
+        <button class="button button--primary popup__buttons--close" @click="popup = 0">
+          關閉
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -120,6 +162,8 @@ export default {
   data() {
     return {
       formPage: 1,
+      popup: 0,
+      sending: 0,
       selectedProjectTypes: {
         value: [],
         error: undefined,
@@ -290,6 +334,14 @@ export default {
             email.msg = ''
           }
         }
+
+        // validate
+        if (!person.error && !company.error && !phone.error && !email.error) {
+          this.popup = 1
+        } else {
+          // scroll to top
+          this.scroll()
+        }
       }
     },
     handleSubmit() {
@@ -395,11 +447,18 @@ export default {
         </div>
         `
       }
+
+      this.sending = 1
       emailjs.send('smtpmail', 'contact_form', templateParams, 'mwaTjvTw4wztWGKUq').then(
         (result) => {
+          this.sending = 0
+          this.popup = 2
           console.log('SUCCESS!', result.text)
         },
         (error) => {
+          this.sending = 0
+          this.popup = 0
+          alert('FAILED...')
           console.log('FAILED...', error.text)
         }
       )
@@ -416,6 +475,16 @@ export default {
         this.$nextTick(() => (this.budget.value = result))
       },
       deep: true
+    },
+    popup: {
+      handler(newValue) {
+        if (newValue == 0) {
+          document.getElementsByTagName('body')[0].style.overflowY = 'auto'
+        } else {
+          document.getElementsByTagName('body')[0].style.overflowY = 'hidden'
+        }
+      },
+      immediate: true
     }
   }
 }
