@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       img: {
-        src: '/src/assets/contact/image-contact.png',
+        src: '/src/assets/image/global/image_amber.png',
         alt: 'contact us'
       }
     }

@@ -23,7 +23,7 @@ export default {
     return {
       windowWidth: 0,
       amber: {
-        src: '/src/assets/img/global/image_amber.png',
+        src: '/src/assets/image/global/image_amber.png',
         alt: 'image_amber'
       },
       members: [

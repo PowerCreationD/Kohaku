@@ -87,15 +87,15 @@ export default {
   data() {
     return {
       banner: {
-        src: '/src/assets/img/about/banner_image.jpg',
+        src: '/src/assets/image/about/banner_image.jpg',
         alt: 'banner_image'
       },
       logo: {
-        src: '/src/assets/img/about/logo_kohaku_small.png',
+        src: '/src/assets/image/about/logo_kohaku_small.png',
         alt: 'logo_kohaku'
       },
       amber: {
-        src: '/src/assets/img/global/image_amber.png',
+        src: '/src/assets/image/global/image_amber.png',
         alt: 'image_amber'
       }
     }

@@ -67,7 +67,7 @@ export default {
       return `#${this.person.id}`
     },
     imageSrc() {
-      return `/src/assets/img/member/image_profile_${this.person.id}.jpg`
+      return `/src/assets/image/member/image_profile_${this.person.id}.jpg`
     }
   }
 }
