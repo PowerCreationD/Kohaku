@@ -1,5 +1,5 @@
 @use 'components/typography' as typography;
-$gray: #777777;
+@use 'components/variable' as var;
 
 .about {
     p {
@@ -89,8 +89,8 @@ $gray: #777777;
 }
 
 .brand {
-    border-top: 1px solid $gray;
-    border-bottom: 1px solid $gray;
+    border-top: 1px solid map-get(var.$color, grey);
+    border-bottom: 1px solid map-get(var.$color, grey);
     overflow: hidden;
     position: relative;
     z-index: -1;
