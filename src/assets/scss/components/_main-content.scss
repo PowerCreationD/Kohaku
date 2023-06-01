@@ -1,7 +1,7 @@
 @use 'variable' as var;
 
 .main-content {
-  width: var.$main-content-width;
+  width: 100%;
   min-height: calc(
     100vh -
       (
@@ -9,10 +9,10 @@
           var.$large-main-content-bottom-margin
       )
   );
-  box-sizing: content-box;
   margin: 0;
-  padding: (var.$large-header-height + var.$large-main-content-top-margin) 100%
-    var.$large-main-content-bottom-margin 100%;
+  padding: (var.$large-header-height + var.$large-main-content-top-margin)
+    var.$main-content-right-and-left-padding var.$large-main-content-bottom-margin
+    var.$main-content-right-and-left-padding;
 
   @media (max-width: var.$mobile-device-max-width) {
     min-height: calc(
@@ -22,7 +22,8 @@
             var.$small-main-content-bottom-margin
         )
     );
-    padding: (var.$small-header-height + var.$small-main-content-top-margin) 100%
-      var.$small-main-content-bottom-margin 100%;
+    padding: (var.$small-header-height + var.$small-main-content-top-margin)
+      var.$main-content-right-and-left-padding var.$small-main-content-bottom-margin
+      var.$main-content-right-and-left-padding;
   }
 }
