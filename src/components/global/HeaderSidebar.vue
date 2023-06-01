@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <img class="sidebar__background" :src="backgroundImageLink" />
+    <img class="background-image" :src="backgroundImageLink" />
     <button class="button button--icon sidebar__hamburger-menu" @click="closeSidebar">
       <div class="hamburger-menu hamburger-menu--rotated">
         <div class="hamburger-menu__line" v-for="n in 3" :key="n"></div>
