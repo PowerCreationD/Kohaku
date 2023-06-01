@@ -36,7 +36,7 @@ input[type=checkbox] {
         transform: rotate(45deg);
 
         @media (max-width:767px) {
-            top: -3px;
+            top: -1px;
         }
     }
 
@@ -149,6 +149,13 @@ textarea {
         justify-content: center;
         align-items: center;
 
+        &--picker {
+            flex-grow: 1;
+            background-color: map-get(var.$color, white);
+            color: map-get(var.$color, black);;
+            @include typography.font($index: 7);
+        }
+
         &--dash {
             margin: 0 8px;
         }
@@ -176,8 +183,12 @@ textarea {
             }
         }
 
-        &__date--dash {
-            margin: 0 5px;
+        &__date {
+            width: 100%;
+
+            &--dash {
+                margin: 0 5px;
+            }
         }
     }
 }
@@ -245,9 +256,9 @@ textarea {
             background-color: $gray;
             border-color: $gray;
 
-            &:hover{
-            background-color: $gray;
-            color: map-get(var.$color, white);
+            &:hover {
+                background-color: $gray;
+                color: map-get(var.$color, white);
             }
         }
     }

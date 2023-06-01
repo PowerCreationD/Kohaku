@@ -34,7 +34,7 @@
           :errorMsg="budget.msg"
         >
           <label class="form__title" for="budget">預算</label>
-          <input id="budget" type="text" v-model="budget.value" />
+          <input id="budget" type="text" inputmode="numeric" v-model="budget.value" />
         </div>
         <div
           class="form__section form__date-wrap"
@@ -43,9 +43,19 @@
         >
           <label class="form__title" for="date">預估專案時間</label>
           <div id="date" class="form__date">
-            <input type="date" v-model="date.value.startDate" :max="date.value.endDate" />
+            <input
+              class="form__date--picker"
+              type="date"
+              v-model="date.value.startDate"
+              :max="date.value.endDate"
+            />
             <span class="form__date--dash">~</span>
-            <input type="date" v-model="date.value.endDate" :min="date.value.startDate" />
+            <input
+              class="form__date--picker"
+              type="date"
+              v-model="date.value.endDate"
+              :min="date.value.startDate"
+            />
           </div>
         </div>
         <div
