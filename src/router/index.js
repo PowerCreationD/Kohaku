@@ -4,46 +4,58 @@ import ServiceView from '../views/ServiceView.vue'
 import WorkView from '../views/WorkView.vue'
 import WorkDetailView from '../views/WorkDetailView.vue'
 
+const KOHAKU = '琥白Kohaku'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: { title: `${KOHAKU}` }
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/AboutView.vue'),
+      meta: { title: `${KOHAKU} | About` }
     },
     {
       path: '/service',
       name: 'Service',
-      component: ServiceView
+      component: ServiceView,
+      meta: { title: `${KOHAKU} | Services` }
     },
     {
       path: '/work',
       name: 'Work',
-      component: WorkView
+      component: WorkView,
+      meta: { title: `${KOHAKU} | Work` }
     },
     {
       path: '/work/:id',
       name: 'WorkDetail',
       component: WorkDetailView,
-      props: true
+      props: true,
+      meta: { title: `${KOHAKU} | Work` }
     },
     {
       path: '/member',
       name: 'member',
-      component: () => import('../views/MemberView.vue')
+      component: () => import('../views/MemberView.vue'),
+      meta: { title: `${KOHAKU} | Member` }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/ContactView.vue')
+      component: () => import('../views/ContactView.vue'),
+      meta: { title: `${KOHAKU} | Contact` }
     },
   ]
 })
+
+router.afterEach(async (to) => {
+  document.title = to.meta.title;
+});
 
 export default router
