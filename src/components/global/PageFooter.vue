@@ -74,7 +74,7 @@ export default {
         },
         {
           text: 'services',
-          link: '/service'
+          link: '/services'
         },
         {
           text: 'work',
