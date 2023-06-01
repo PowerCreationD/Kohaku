@@ -46,6 +46,7 @@
   }
 
   &__option {
+    @include typography.font($index: 7);
     color: map-get(var.$color--primary, black);
     background-color: map-get(var.$color--primary, white);
     padding: 18px 0 0 17px;
