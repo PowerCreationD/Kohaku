@@ -36,7 +36,7 @@ input[type=checkbox] {
         transform: rotate(45deg);
 
         @media (max-width:767px) {
-            top: -1px;
+            top: -2px;
         }
     }
 
@@ -66,26 +66,30 @@ input:hover {
     transition: .1s;
 }
 
-input {
-    @include typography.font($index: 7);
-}
-
 textarea {
     padding: 12px;
-    @include typography.font($index: 7);
     border: 1px solid $gray;
     border-radius: 4px;
 }
 
-.error {
 
+input,
+textarea {
+    font-family: 'Ubuntu';
+    font-size: initial;
+}
+
+label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.error {
     input,
     textarea {
         border: 1px solid map-get(var.$color, red);
     }
 
     &::after {
-        // content: '＊此處不可為空白';
         content: '＊' attr(errorMsg);
         @include typography.font($index: 7);
         color: map-get(var.$color, red);
@@ -152,8 +156,12 @@ textarea {
         &--picker {
             flex-grow: 1;
             background-color: map-get(var.$color, white);
-            color: map-get(var.$color, black);;
+            color: map-get(var.$color, black);
             @include typography.font($index: 7);
+
+            @media (max-width:340px) {
+                font-size: 13px;
+            }
         }
 
         &--dash {
