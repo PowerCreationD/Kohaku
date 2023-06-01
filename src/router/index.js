@@ -51,7 +51,10 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
       meta: { title: `${KOHAKU} | Contact` }
     },
-  ]
+  ],
+  scrollBehavior() {
+    return { top: 0 }
+  },
 })
 
 router.afterEach(async (to) => {
