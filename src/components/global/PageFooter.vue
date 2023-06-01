@@ -8,7 +8,10 @@
             v-for="(navigationLink, index) in firstHalfOfNavigationLinks"
             :key="navigationLink.text"
           >
-            <router-link class="footer__navigation-link" :to="navigationLink.link">
+            <router-link
+              class="link link--no-underline link--text-white link--uppercase footer__navigation-link"
+              :to="navigationLink.link"
+            >
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon
@@ -22,7 +25,10 @@
             v-for="(navigationLink, index) in secondHalfOfNavigationLinks"
             :key="navigationLink.text"
           >
-            <router-link class="footer__navigation-link" :to="navigationLink.link">
+            <router-link
+              class="link link--no-underline link--text-white link--uppercase footer__navigation-link"
+              :to="navigationLink.link"
+            >
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon
@@ -35,7 +41,10 @@
       <template v-else>
         <div class="footer__navigation-link-row">
           <template v-for="(navigationLink, index) in navigationLinks" :key="navigationLink.text">
-            <router-link class="footer__navigation-link" :to="navigationLink.link">
+            <router-link
+              class="link link--no-underline link--text-white link--uppercase footer__navigation-link"
+              :to="navigationLink.link"
+            >
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon

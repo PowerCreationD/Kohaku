@@ -36,16 +36,7 @@
   }
 
   &__navigation-link {
-    @include typography.font($index: 7);
-    color: map-get(var.$color--primary, white);
-    text-decoration: none;
-    text-transform: uppercase;
     margin: 0 31px 0 25px;
-
-    &:hover,
-    &:active {
-      color: map-get(var.$color--primary, gold);
-    }
 
     &:first-child {
       margin: 0 31px 0 0;

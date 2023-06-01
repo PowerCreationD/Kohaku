@@ -28,6 +28,7 @@
   }
 
   &--no-underline {
+    padding: 0;
     border: none;
 
     &:hover,
@@ -39,6 +40,16 @@
   &--text-black {
     @include typography.font($index: 7);
     color: map-get(var.$color--primary, black);
+
+    &:hover,
+    &:active {
+      color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--text-white {
+    @include typography.font($index: 7);
+    color: map-get(var.$color--primary, white);
 
     &:hover,
     &:active {
