@@ -69,14 +69,14 @@ $gray: #777777;
 
         &__logo {
             align-self: flex-end;
-            margin: -28px 0 -24px 0;
+            margin: -28px 0 24px 0;
         }
 
         &__banner {
             margin-right: 0;
 
             img {
-                width: 100vw;
+                min-width: 100vw;
                 margin-left: min(-16px, calc(100vw * -0.05));
             }
         }
