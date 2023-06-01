@@ -20,10 +20,10 @@
 
   &__section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: baseline;
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
 
     &--left {
       padding: 0 0 0 var.$large-header-left-padding;
@@ -34,6 +34,7 @@
     }
 
     &--right {
+      flex-grow: 1;
       padding: 0 var.$large-header-right-padding 0 0;
 
       @media (max-width: var.$mobile-device-max-width) {
@@ -43,7 +44,7 @@
   }
 
   &__navigation-link {
-    margin: 0 64px 0 0;
+    margin: 0 min(64px, 6% - 10px) 0 0;
   }
 
   &__big-logo {
