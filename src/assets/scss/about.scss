@@ -89,8 +89,8 @@
 }
 
 .brand {
-    border-top: 1px solid map-get(var.$color, grey);
-    border-bottom: 1px solid map-get(var.$color, grey);
+    border-top: 1px solid map-get(var.$color, grey-3);
+    border-bottom: 1px solid map-get(var.$color, grey-3);
     overflow: hidden;
     position: relative;
     z-index: -1;

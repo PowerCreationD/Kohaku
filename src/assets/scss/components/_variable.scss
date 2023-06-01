@@ -10,8 +10,9 @@ $color: (
   red: hsla(0, 100%, 50%, 1),
   white: hsla(0, 0%, 100%, 1),
   black: hsla(0, 0%, 0%, 1),
-  grey: hsla(0, 0%, 47%, 1),
-  light-grey: hsla(0, 0%, 96%, 1)
+  grey-1: hsla(0, 0%, 96%, 1),
+  grey-2: hsla(0, 0%, 77%, 1),
+  grey-3: hsla(0, 0%, 47%, 1)
 );
 
 $color--primary: (
@@ -19,8 +20,9 @@ $color--primary: (
   gold: map-get($color, gold),
   white: map-get($color, white),
   black: map-get($color, black),
-  grey: map-get($color, grey),
-  light-grey: hsla(0, 0%, 96%, 1)
+  grey-1: map-get($color, grey-1),
+  grey-2: map-get($color, grey-2),
+  grey-3: map-get($color, grey-3)
 );
 $color--accent: (
   cyan: map-get($color, cyan),
