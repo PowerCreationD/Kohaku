@@ -114,7 +114,7 @@
         <div class="form__btns">
           <button
             type="button"
-            class="button button--primary form__btns--prev"
+            class="button button--secondary form__btns--prev"
             @click="formPage--, scroll()"
           >
             上一步
@@ -136,7 +136,7 @@
       <div class="popup__header font-4">確認送出</div>
       <div class="popup__content font-7">確定要送出表單嗎？</div>
       <div class="popup__buttons">
-        <button class="button button--primary popup__buttons--back" @click="popup = 0">返回</button>
+        <button class="button button--secondary popup__buttons--back" @click="popup = 0">返回</button>
         <button
           class="button button--primary popup__buttons--submit"
           :disabled="sending"
@@ -156,9 +156,7 @@
         我們已收到您的回覆，並將確認信寄送到您填寫的聯絡信箱。
       </div>
       <div class="popup__buttons">
-        <button class="button button--primary popup__buttons--close" @click="popup = 0">
-          關閉
-        </button>
+        <button class="button button--secondary popup__buttons--close" @click="popup = 0">關閉</button>
       </div>
     </div>
   </div>

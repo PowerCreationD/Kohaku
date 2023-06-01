@@ -33,6 +33,31 @@
     }
   }
 
+  &--secondary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 38px;
+    color: map-get(var.$color--primary, gold);
+    background-color: map-get(var.$color--primary, white);
+    border: 1px solid map-get(var.$color--primary, gold);
+    border-radius: map-get(var.$border-radius, 1);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      color: map-get(var.$color--primary, black);
+      background-color: map-get(var.$color--primary, white);
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, gold);
+      background-color: map-get(var.$color--primary, white);
+    }
+  }
+
   &--icon {
     display: flex;
     justify-content: center;
