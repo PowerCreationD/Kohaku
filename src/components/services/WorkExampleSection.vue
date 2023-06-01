@@ -39,15 +39,11 @@ export default {
     }
 }
 .work_example {
-    // width: 100%;
     height: 447px;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    // right: 0;
-    cursor: pointer;
     .example_col {
         display: flex;
         flex-direction: column;
@@ -62,6 +58,7 @@ export default {
         }
         img {
             width: 80%;
+            cursor: pointer;
         }
         p {
             margin: 10px 0;

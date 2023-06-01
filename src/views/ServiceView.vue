@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import ServiceHeaderSection from "../components/service/ServiceHeaderSection.vue"
-import ServiceCardType1 from "../components/service/ServiceCardType1.vue"
-import ServiceCardType2 from "../components/service/ServiceCardType2.vue"
-import WorkExampleSection from "../components/service/WorkExampleSection.vue"
+import ServiceHeaderSection from "../components/services/ServiceHeaderSection.vue"
+import ServiceCardType1 from "../components/services/ServiceCardType1.vue"
+import ServiceCardType2 from "../components/services/ServiceCardType2.vue"
+import WorkExampleSection from "../components/services/WorkExampleSection.vue"
 
 export default {
   components: { ServiceCardType1, ServiceCardType2, WorkExampleSection, ServiceHeaderSection },
@@ -43,12 +43,12 @@ export default {
                 {
                   "subtitle": "前端開發",
                   "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
-                  "img_url": "src/assets/service/system_development/img_frontend.jpeg"
+                  "img_url": "src/assets/services/system_development/img_frontend.jpeg"
                 },
                 {
                   "subtitle": "後端開發",
                   "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
-                  "img_url": "src/assets/service/system_development/img_backend.jpeg"
+                  "img_url": "src/assets/services/system_development/img_backend.jpeg"
                 }
               ]
             },
@@ -58,7 +58,7 @@ export default {
                 {
                   "subtitle": "商業資料探勘",
                   "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-                  "img_url": "src/assets/service/system_development/img_data_analysis.jpeg"
+                  "img_url": "src/assets/services/system_development/img_data_analysis.jpeg"
                 }
               ]
             },
@@ -68,7 +68,7 @@ export default {
                 {
                   "subtitle": "嵌入式系統開發",
                   "items": ["物聯網裝置整合開發"],
-                  "img_url": "src/assets/service/system_development/img_embedded_system.jpeg"
+                  "img_url": "src/assets/services/system_development/img_embedded_system.jpeg"
                 }
               ]
             }
@@ -76,11 +76,11 @@ export default {
           "works_example": [
           {
             "title": "Vegibus 農產品電商系統",
-            "img_url": "src/assets/works/system_development/vegibus/img_vegibus_system.png"
+            "img_url": "src/assets/work/system_development/vegibus/img_vegibus_system.png"
           },
           {
             "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
-            "img_url": "src/assets/works/system_development/mobilemover/img_mobilemover_app.png"
+            "img_url": "src/assets/work/system_development/mobilemover/img_mobilemover_app.png"
           }]
         },
         {
@@ -94,7 +94,7 @@ export default {
                 {
                   "subtitle": "進出口單一窗口服務",
                   "items": ["報關手續代理", "貿易文件與法規協助", "市場調查與選品", "通路對接與媒合", "產品代理與行銷"],
-                  "img_url": "src/assets/service/trading/img_trading_cover.png"
+                  "img_url": "src/assets/services/trading/img_trading_cover.png"
                 }
               ]
             }
@@ -102,7 +102,7 @@ export default {
           "works_example": [
           {
             "title": "屏東台農17號金鑽鳳梨外銷日本",
-            "img_url": "src/assets/works/trading/img_pineapple_1.jpeg"
+            "img_url": "src/assets/work/trading/img_pineapple_1.jpeg"
           }]
         },
         {
@@ -116,7 +116,7 @@ export default {
                 {
                   "subtitle": "研發與設計服務",
                   "items": ["問題研究", "概念提案", "參與式設計過程", "產品外觀設計", "3D模型建構", "模型製作"],
-                  "img_url": "src/assets/service/product_design/img_product_cover.png"
+                  "img_url": "src/assets/services/product_design/img_product_cover.png"
                 }
               ]
             }
@@ -124,7 +124,7 @@ export default {
           "works_example": [
           {
             "title": "慕．廂",
-            "img_url": "src/assets/works/product_design/img_kizuna_1.png"
+            "img_url": "src/assets/work/product_design/img_kizuna_1.png"
           }]
         },
         {
@@ -138,7 +138,7 @@ export default {
                 {
                   "subtitle": "視覺設計",
                   "items": ["品牌形象設計", "裝幀設計", "平面設計", "包裝設計", "網站介面設計"],
-                  "img_url": "src/assets/service/commercial_design/img_commercial_design_cover.jpeg"
+                  "img_url": "src/assets/services/commercial_design/img_commercial_design_cover.jpeg"
                 }
               ]
             }
@@ -146,11 +146,11 @@ export default {
           "works_example": [
           {
             "title": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
-            "img_url": "src/assets/works/commercial_design/kimchi/img_kimchi_1.jpeg"
+            "img_url": "src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
           }, 
           {
             "title": "創次方股份有限公司 名片設計",
-            "img_url": "src/assets/works/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
+            "img_url": "src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
           }]
         },
         {
@@ -164,7 +164,7 @@ export default {
                 {
                   "subtitle": "活動策劃服務",
                   "items": ["專案流程優化", "活動內容企劃", "活動視覺及推廣品", "主持人、司儀及燈音廠商"],
-                  "img_url": "src/assets/service/event_planning/img_event_planning_cover.jpeg"
+                  "img_url": "src/assets/services/event_planning/img_event_planning_cover.jpeg"
                 }
               ]
             }
@@ -183,12 +183,12 @@ export default {
                 {
                   "subtitle": "前端開發",
                   "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
-                  "img_url": "src/assets/service/system_development/img_frontend.jpeg"
+                  "img_url": "src/assets/services/system_development/img_frontend.jpeg"
                 },
                 {
                   "subtitle": "後端開發",
                   "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
-                  "img_url": "src/assets/service/system_development/img_backend.jpeg"
+                  "img_url": "src/assets/services/system_development/img_backend.jpeg"
                 }
               ]
             },
@@ -198,7 +198,7 @@ export default {
                 {
                   "subtitle": "商業資料探勘",
                   "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-                  "img_url": "src/assets/service/system_development/img_data_analysis.jpeg"
+                  "img_url": "src/assets/services/system_development/img_data_analysis.jpeg"
                 }
               ]
             },
@@ -208,7 +208,7 @@ export default {
                 {
                   "subtitle": "嵌入式系統開發",
                   "items": ["物聯網裝置整合開發"],
-                  "img_url": "src/assets/service/system_development/img_embedded_system.jpeg"
+                  "img_url": "src/assets/services/system_development/img_embedded_system.jpeg"
                 }
               ]
             }
@@ -216,11 +216,11 @@ export default {
           "works_example": [
           {
             "title": "Vegibus 農產品電商系統",
-            "img_url": "src/assets/works/system_development/vegibus/img_vegibus_system.png"
+            "img_url": "src/assets/work/system_development/vegibus/img_vegibus_system.png"
           },
           {
             "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
-            "img_url": "src/assets/works/system_development/mobilemover/img_mobilemover_app.png"
+            "img_url": "src/assets/work/system_development/mobilemover/img_mobilemover_app.png"
           }]
       },
       dataCard1: [
@@ -230,12 +230,12 @@ export default {
             {
               "subtitle": "前端開發",
               "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
-              "img_url": "src/assets/service/system_development/img_frontend.jpeg"
+              "img_url": "src/assets/services/system_development/img_frontend.jpeg"
             },
             {
               "subtitle": "後端開發",
               "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
-              "img_url": "src/assets/service/system_development/img_backend.jpeg"
+              "img_url": "src/assets/services/system_development/img_backend.jpeg"
             }
           ]
         }
@@ -247,7 +247,7 @@ export default {
             {
               "subtitle": "商業資料探勘",
               "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-              "img_url": "src/assets/service/system_development/img_data_analysis.jpeg"
+              "img_url": "src/assets/services/system_development/img_data_analysis.jpeg"
             }
           ]
         },
@@ -257,7 +257,7 @@ export default {
             {
               "subtitle": "嵌入式系統開發",
               "items": ["物聯網裝置整合開發"],
-              "img_url": "src/assets/service/system_development/img_embedded_system.jpeg"
+              "img_url": "src/assets/services/system_development/img_embedded_system.jpeg"
             }
           ]
         }
@@ -301,8 +301,6 @@ export default {
 .service {
     display: flex;
     flex-direction: row;
-    margin: 140px auto;
-    width: 1200px;
 }
 #service__side_navbar {
     width: 20%;
