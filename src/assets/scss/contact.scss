@@ -1,11 +1,10 @@
 @use 'components/typography';
 
-p,
-h2 {
-  margin: 0;
+.contact {
+  @media (max-width: 767px) {
+    padding-bottom: 56px;
+  }
 }
-
-// --------------------
 
 .contact-wrap {
   display: flex;
