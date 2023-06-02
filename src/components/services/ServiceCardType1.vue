@@ -7,12 +7,16 @@
         <h4 class="service-card__title-text">{{ cardData.title }}</h4>
     </div>
     <div class="service-card__content-row">
-        <div class="service-card__main-content" v-for="data in cardData.services" :key="data">
+        <div class="service-card__main-content 
+                    service-card__content-row--space" 
+            v-for="data in cardData.services" :key="data">
             <h5>{{ data.subtitle }}</h5>
             <ul>
                 <li v-for="itm in data.items" :key="itm">{{ itm }}</li>
             </ul>
-            <img :src="data.img_url" alt="">
+            <div class="service-card__image">
+                <img :src="data.img_url" alt="">
+            </div>
         </div>
     </div>
   </div>
@@ -26,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .service-card {
-    width: 924px;
+    width: 100%;
 
     &__title-row {
         display: flex;
@@ -43,12 +47,16 @@ export default {
     &__content-row {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
+
+        &--space {
+            margin-right: 68px;
+        }
     }
     &__main-content {
         display: flex;
         flex-direction: column;
-
+        width: calc( (100% - 68px) / 2);
         h5 {
             font-size: 20px;
             font-weight: bold;
@@ -64,10 +72,17 @@ export default {
                 list-style: disc;
             }
         }
+        
+    }
+    &__image {
+        
+        // margin: 10px 0;
+        // object-fit: contain;
+        // height: auto;
         img {
-            width: 428px;
+            width: 100%;
             height: 285px;
-            margin: 10px 0;
+            object-fit: cover;
         }
     }
     

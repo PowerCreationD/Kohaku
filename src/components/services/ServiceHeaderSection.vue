@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .service__intro {
-  width: 924px;
+  width: 100%;
   
   p {
     padding: 40px 0;
@@ -33,15 +33,18 @@ export default {
   }
 
   &__line-top {
-    width: 75%;
+    flex-grow: 1;
+    // width: 75%;
+    margin-right: 40px;
     border-top: 1px solid #777777;
   }
 
   &__title {
-    width: 20%;
+    // width: 20%;
     font-size: 36px;
     font-weight: bold;
     text-align: end;
+    margin-top: -7px;
   }
 
   &__line-bottom {

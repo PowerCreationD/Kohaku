@@ -16,6 +16,7 @@
         <div class="service__section-line" ></div>
       </div>
       <WorkExampleSection v-if="dataToBeRendered.works_example.length" :workData="dataToBeRendered.works_example"/>
+      <div class="service__blank-area"></div>
     </div>
   </div>
 </template>
@@ -35,7 +36,8 @@ export default {
         {
           "id": "system_development",
           "name": "系統設計 / 開發與維運",
-          "description": "以 SaaS （Software as a Service）軟體服務出發，專注於提供客制化系統開發、跨系統整合、終端設備串接與開發服務，並提供資料分析導入服務，協助客戶洞悉自身產業、產出決策，找到商業上更上一層的突破口．",
+          "slogan": "客製資訊系統導入產業\n協助趨勢洞察建立遠見",
+          "description": "以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。",
           "content": [
             {
               "title": "系統開發",
@@ -94,7 +96,7 @@ export default {
                 {
                   "subtitle": "進出口單一窗口服務",
                   "items": ["報關手續代理", "貿易文件與法規協助", "市場調查與選品", "通路對接與媒合", "產品代理與行銷"],
-                  "img_url": "src/assets/services/trading/img_trading_cover.png"
+                  "img_url": "src/assets/services/trading/img_trading_cover.jpeg"
                 }
               ]
             }
@@ -306,6 +308,7 @@ export default {
       width: 20%;
       display: flex;
       flex-direction: column;
+      margin-right: 56px;
     }
 
     &__navbar-button {
@@ -313,7 +316,7 @@ export default {
       font-size: 16px;
       padding: 12px 0px;
       margin-bottom: 6px;
-      width: 220px;
+      width: 100%;
       border: none;
       text-align: left;
       border-top: 1px solid #FFFFFF;
@@ -340,9 +343,14 @@ export default {
     }
 
     &__section-line {
-      width: 924px;
+      width: 100%;
       border-bottom: 1px solid #777777;
       margin: 50px 0;
     }
+
+    // &__blank-area {
+    //   height: 450px;
+    //   width: 100%;
+    // }
 }
 </style>

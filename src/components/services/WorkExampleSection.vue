@@ -35,26 +35,30 @@ export default {
         }
         svg {
             position: absolute;
-            z-index: 2;
+            z-index: 0;
             margin: 12px 0 0 120px;
         }
     }
 
     &__main-content {
-        height: 447px;
         background-color: #F5F5F5;
         display: flex;
         flex-direction: row;
         align-items: center; 
+        padding: 74px 0;
+        // position: absolute;
+        // z-index: -1;
     }
 
     &__display {
         display: flex;
         flex-direction: column;
+        width: calc( (100% - 68px) / 2);
         margin-left: 75px;
         
         img {
-            width: 80%;
+            width: 100%;
+            max-width: 390px;
             cursor: pointer;
         }
         p {
@@ -63,9 +67,6 @@ export default {
     }
 
     &__example-item {
-        width: 390px;
-        height: 260px;
-        background-color: #FFFFFF;
         display: flex;
         justify-content: center;
         align-items: center;
