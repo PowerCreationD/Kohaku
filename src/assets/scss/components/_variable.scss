@@ -117,10 +117,10 @@ $small-footer-height: 304px;
 
 // Main Content
 $main-content-right-and-left-padding: max(16px, 5%, (100% - 1200px) / 2);
-$large-main-content-top-margin: 140px;
-$large-main-content-bottom-margin: 140px;
-$small-main-content-top-margin: 56px;
-$small-main-content-bottom-margin: 0px;
+$large-main-content-top-padding: 140px;
+$large-main-content-bottom-padding: 140px;
+$small-main-content-top-padding: 56px;
+$small-main-content-bottom-padding: 0px;
 
 // Mobile Device
 $mobile-device-max-width: 767px;
