@@ -34,6 +34,12 @@
   }
 }
 
+.member {
+  &__intro {
+    white-space: pre-wrap;
+  }
+}
+
 @media (max-width: 767px) {
   .member-card {
     svg {

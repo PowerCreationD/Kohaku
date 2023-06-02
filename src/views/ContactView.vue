@@ -3,10 +3,14 @@
     <page-title>CONTACT</page-title>
     <div class="contact-wrap">
       <div class="intro">
-        <h2 class="intro__title">承載傳統智慧，設計全新感受</h2>
+        <h2 class="intro__title">
+          歡迎與琥白分享你的天馬行空，<br />
+          我們將為您從微小的點子打造亮眼解方！
+        </h2>
         <article class="intro__desc">
           <p>
-            歡迎和我們聊聊您的想法，協助我們了解您的產業需求與期望創造的價值．送出表單後，我們將會有專人與您接洽．期待與您一同合作！
+            來信說明您的產業需求與價值願景，<br />
+            我們會儘速與您聯繫！
           </p>
         </article>
         <img class="intro__background" :src="img.src" :alt="img.alt" />
