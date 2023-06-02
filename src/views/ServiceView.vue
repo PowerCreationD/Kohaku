@@ -1,19 +1,19 @@
 <template>
   <div class="service">
-    <div id="service__side_navbar">
-        <button class="navbar_button" v-for="service in getServiceNames" :key="service.id" @click="selectService(service.id)">
+    <div class="service__side-navbar">
+        <button class="service__navbar-button" v-for="service in getServiceNames" :key="service.id" @click="selectService(service.id)">
           {{ service.name }}
         </button>
     </div>
-    <div id="service__main_content">
+    <div class="service__main-content">
       <ServiceHeaderSection :headerData="dataToBeRendered"/>
       <div v-show="dataCard1.length" v-for="data in dataCard1" :key="data">
         <ServiceCardType1 :cardData="data"/>
-        <div class="section__line"></div>
+        <div class="service__section-line"></div>
       </div>
       <div v-show="dataCard2.length" v-for="data in dataCard2" :key="data">
         <ServiceCardType2 :cardData="data"/>
-        <div class="section__line" ></div>
+        <div class="service__section-line" ></div>
       </div>
       <WorkExampleSection v-if="dataToBeRendered.works_example.length" :workData="dataToBeRendered.works_example"/>
     </div>
@@ -301,41 +301,48 @@ export default {
 .service {
     display: flex;
     flex-direction: row;
-}
-#service__side_navbar {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
 
-}
-#service__main_content {
-    width: 80%;
-}
-.navbar_button {
-  background-color: #FFFFFF;
-  font-size: 16px;
-  padding: 12px 0px;
-  margin-bottom: 6px;
-  width: 220px;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  .active {
-    color: #E6AE4A;
-    font-weight: bold;
-    border-top: 1px solid #E6AE4A;
-    border-bottom: 1px solid #E6AE4A;
-  }
-}
-.navbar_button:hover {
-  color: #E6AE4A;
-  font-weight: bold;
-  border-top: 1px solid #E6AE4A;
-  border-bottom: 1px solid #E6AE4A;
-}
-.section__line {
-  width: 924px;
-  border-bottom: 1px solid #777777;
-  margin: 50px 0;
+    &__side-navbar {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__navbar-button {
+      background-color: #FFFFFF;
+      font-size: 16px;
+      padding: 12px 0px;
+      margin-bottom: 6px;
+      width: 220px;
+      border: none;
+      text-align: left;
+      border-top: 1px solid #FFFFFF;
+      border-bottom: 1px solid #FFFFFF;
+      cursor: pointer;
+
+      &:active {
+        color: #E6AE4A;
+        font-weight: bold;
+        border-top: 1px solid #E6AE4A;
+        border-bottom: 1px solid #E6AE4A;
+      }
+
+      &:hover {
+        color: #E6AE4A;
+        font-weight: bold;
+        border-top: 1px solid #E6AE4A;
+        border-bottom: 1px solid #E6AE4A;
+      }
+    }
+
+    &__main-content {
+      width: 80%;
+    }
+
+    &__section-line {
+      width: 924px;
+      border-bottom: 1px solid #777777;
+      margin: 50px 0;
+    }
 }
 </style>
