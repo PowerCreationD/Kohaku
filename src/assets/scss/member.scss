@@ -4,10 +4,6 @@
   position: relative;
   z-index: -1;
 
-  p {
-    margin: 0;
-  }
-
   @media (max-width: 767px) {
     padding-bottom: 56px;
   }
@@ -43,181 +39,150 @@
 
 .amber {
   &-1 {
-    left: 62%;
-    top: 5%;
+    left: 82%;
+    top: 2%;
     width: 250px;
     transform: rotate(45deg);
-
-    @media (max-width: 600px) {
-      top: 2%;
-    }
   }
 
   &-2 {
-    left: 54%;
-    top: 13%;
+    left: -4%;
+    top: 8%;
     width: 120px;
     transform: rotate(134deg);
-
-    @media (max-width: 600px) {
-      top: 8%;
-    }
   }
 
   &-3 {
-    left: 32%;
+    left: 54%;
     top: 12%;
     width: 278px;
     transform: rotate(24deg);
-
-    @media (max-width: 600px) {
-      top: 11%;
-    }
   }
 
   &-4 {
-    left: 57%;
+    left: 77%;
     top: 44%;
     width: 310px;
     transform: rotate(94deg);
-
-    @media (max-width: 600px) {
-      left: 53%;
-      top: 38%;
-    }
   }
 
   &-5 {
-    left: 40%;
+    left: 60%;
     top: 29%;
     width: 230px;
     transform: rotate(189deg);
-
-    @media (max-width: 600px) {
-      left: 28%;
-      top: 31%;
-    }
   }
 
   &-6 {
-    left: 60%;
-    top: 85%;
+    left: 80%;
+    top: 90%;
     width: 332px;
     transform: rotate(144deg);
-
-    @media (max-width: 600px) {
-      top: 90%;
-    }
   }
 
   &-7 {
-    left: 30%;
+    left: 40%;
     top: 81%;
     width: 170px;
     transform: rotate(54deg);
 
     @media (max-width: 600px) {
-      left: 30%;
+      left: -10%;
       top: 88%;
     }
   }
 
   &-8 {
-    left: 29%;
-    top: 51%;
+    left: -17%;
+    top: 33%;
     width: 350px;
     transform: rotate(84deg);
   }
 
   &-9 {
-    left: 59%;
+    left: 29%;
     top: 23%;
     width: 170px;
     transform: rotate(23deg);
 
     @media (max-width: 600px) {
-      left: 25%;
-      top: 42%;
+      left: 20%;
+      top: 40%;
     }
   }
 
   &-10 {
-    left: 64%;
-    top: 63%;
+    left: 6%;
+    top: 66%;
     width: 330px;
     transform: rotate(170deg);
-
-    @media (max-width: 600px) {
-      left: 12%;
-      top: 61%;
-    }
   }
 
   &-11 {
-    left: 17%;
-    top: 20%;
+    left: -26%;
+    top: 59%;
     width: 270px;
     transform: rotate(123deg);
   }
 
   &-12 {
-    left: 59%;
-    top: 47%;
+    left: -19%;
+    top: 49%;
     width: 320px;
     transform: rotate(339deg);
   }
 
   &-13 {
-    left: 51%;
+    left: -10%;
     top: 27%;
     width: 150px;
     transform: rotate(264deg);
   }
 
   &-14 {
-    left: 51%;
+    left: 71%;
     top: 71%;
     width: 180px;
     transform: rotate(143deg);
   }
 
   &-15 {
-    left: 48%;
+    left: 78%;
     top: 55%;
     width: 230px;
     transform: rotate(124deg);
   }
 
   &-16 {
-    left: 57%;
-    top: 63%;
-    width: 119px;
+    left: -10%;
+    top: 98%;
+    width: 290px;
     transform: rotate(234deg);
   }
 
   &-17 {
-    left: 29%;
-    top: 69%;
+    left: 100%;
+    top: 63%;
     width: 100px;
     transform: rotate(236deg);
   }
 
   &-18 {
-    left: 50%;
+    left: -14%;
     top: 16%;
-    width: 203px;
+    width: 300px;
     transform: rotate(196deg);
   }
 
   &-19 {
-    left: 47%;
+    left: 67%;
     top: 85%;
     width: 237px;
     transform: rotate(204deg);
   }
 
   &-20 {
-    left: 30%;
+    left: -10%;
     top: 78%;
     width: 304px;
     transform: rotate(14deg);
