@@ -9,7 +9,7 @@
     <div class="work-example-section__main-content">
         <div class="work-example-section__display" v-for="itm in workData" :key="itm.title">
             <div class="work-example-section__example-item">
-                <img :src="itm.img_url"/>
+                <img :src="itm.img_url" @click="goToDetailPage(itm.id)"/>
             </div>
             <p>{{ itm.title }}</p>
         </div>
@@ -19,7 +19,12 @@
 
 <script>
 export default {
-    props: ["workData"]
+    props: ["workData"],
+    methods: {
+        goToDetailPage(itmId) {
+            this.$router.push({ name: 'WorkDetail', params: { id: itmId } })
+        }
+    }
 }
 </script>
 

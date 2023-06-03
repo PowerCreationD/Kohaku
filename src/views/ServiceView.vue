@@ -1,7 +1,9 @@
 <template>
   <div class="service">
     <div class="service__side-navbar">
-        <button class="service__navbar-button" v-for="service in getServiceNames" :key="service.id" @click="selectService(service.id)">
+        <button class="service__navbar-button" v-for="service in getServiceNames" 
+                :key="service.id" @click="selectService(service.id)" 
+                :class="{ 'service__navbar-button--active': activeBtn === service.id }">
           {{ service.name }}
         </button>
     </div>
@@ -31,6 +33,7 @@ export default {
   components: { ServiceCardType1, ServiceCardType2, WorkExampleSection, ServiceHeaderSection },
   data() {
     return {
+      activeBtn: "system_development",
       selectedService: "system_development",
       serviceData: [
         {
@@ -77,10 +80,12 @@ export default {
           ],
           "works_example": [
           {
+            "id": 1, 
             "title": "Vegibus 農產品電商系統",
             "img_url": "src/assets/work/system_development/vegibus/img_vegibus_system.png"
           },
           {
+            "id": 2,
             "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
             "img_url": "src/assets/work/system_development/mobilemover/img_mobilemover_app.png"
           }]
@@ -103,6 +108,7 @@ export default {
           ],
           "works_example": [
           {
+            "id": 9,
             "title": "屏東台農17號金鑽鳳梨外銷日本",
             "img_url": "src/assets/work/trading/img_pineapple_1.jpeg"
           }]
@@ -125,6 +131,7 @@ export default {
           ],
           "works_example": [
           {
+            "id": 4,
             "title": "慕．廂",
             "img_url": "src/assets/work/product_design/img_kizuna_1.png"
           }]
@@ -147,10 +154,12 @@ export default {
           ],
           "works_example": [
           {
+            "id": 5,
             "title": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
             "img_url": "src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
           }, 
           {
+            "id": 8,
             "title": "創次方股份有限公司 名片設計",
             "img_url": "src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
           }]
@@ -217,10 +226,12 @@ export default {
           ],
           "works_example": [
           {
+            "id": 1,
             "title": "Vegibus 農產品電商系統",
             "img_url": "src/assets/work/system_development/vegibus/img_vegibus_system.png"
           },
           {
+            "id": 2,
             "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
             "img_url": "src/assets/work/system_development/mobilemover/img_mobilemover_app.png"
           }]
@@ -268,6 +279,7 @@ export default {
   },
   methods: {
     selectService(id) {
+      this.activeBtn = id
       const result = this.serviceData.filter(data => data["id"] === id)
       this.dataToBeRendered = result[0]
       this.dataCard1 = result[0].content.filter(data => data["services"].length == 2)
@@ -323,7 +335,7 @@ export default {
       border-bottom: 1px solid #FFFFFF;
       cursor: pointer;
 
-      &:active {
+      &--active {
         color: #E6AE4A;
         font-weight: bold;
         border-top: 1px solid #E6AE4A;
