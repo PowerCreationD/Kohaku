@@ -1,0 +1,15 @@
+.list {
+  list-style-position: inside;
+  padding-left: 20px;
+
+  &--disc {
+    list-style-type: disc;
+  }
+
+  &--circle {
+    list-style-type: circle;
+  }
+
+  &__item {
+  }
+}

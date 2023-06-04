@@ -4,11 +4,20 @@
 @use 'components/button';
 @use 'components/container';
 @use 'components/link';
+@use 'components/list';
 @use 'components/background-image';
 @use 'components/image';
 @use 'components/dropdown';
+
 @use 'components/main-content';
 @use 'components/hamburger-menu';
 @use 'components/sidebar';
 @use 'components/header';
 @use 'components/footer';
+@use 'components/home/home';
+@use 'components/home/home-title-section';
+@use 'components/home/home-research-section';
+@use 'components/home/home-concept-section';
+@use 'components/home/home-solution-section';
+@use 'components/home/home-work-section';
+@use 'components/home/home-contact-section';

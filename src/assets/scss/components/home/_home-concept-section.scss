@@ -1,0 +1,56 @@
+@use '../variable' as var;
+
+.home-concept-section {
+  $section-height: min(48vw, 688px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: $section-height;
+
+  &__pin-and-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 2vw;
+  }
+
+  &__step-line-and-context-and-image-container {
+    display: flex;
+    width: 100%;
+    height: calc($section-height - 48px);
+  }
+
+  &__step-line {
+    top: -24px;
+    height: $section-height;
+    margin-left: 8px;
+    z-index: -1;
+  }
+
+  &__context-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: calc(2vw + 8px);
+  }
+
+  &__subtitle {
+    margin-bottom: 1vw;
+  }
+
+  &__text {
+  }
+
+  &__image {
+    flex-grow: 1;
+    width: calc(118% - 550px);
+    height: 100%;
+    padding-left: calc(12vw - 87px);
+    z-index: -1;
+  }
+}

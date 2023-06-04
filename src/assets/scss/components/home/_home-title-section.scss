@@ -1,0 +1,28 @@
+@use '../variable' as var;
+
+.home-title-section {
+  $section-height: 48vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: $section-height;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+  }
+
+  &__background-image {
+    width: 100%;
+    height: unset;
+    top: -6vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      top: -5vw;
+    }
+  }
+}

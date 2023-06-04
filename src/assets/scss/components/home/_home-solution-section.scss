@@ -1,0 +1,179 @@
+@use '../variable' as var;
+@use '../typography' as typography;
+
+.home-solution-section {
+  $section-height: min(55vw, 688px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: $section-height;
+
+  &__pin-and-title-and-small-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 2vw;
+  }
+
+  &__small-title {
+    margin-left: 2vw;
+  }
+
+  &__step-line-and-context-and-image-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+
+  &__step-line {
+    position: relative;
+    top: -24px;
+    height: calc($section-height - 24px);
+    margin-left: 8px;
+    z-index: -1;
+  }
+
+  &__step-line-arrow-tip-icon {
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    width: 17px;
+    height: 13px;
+    stroke: map-get(var.$color--primary, grey-3);
+  }
+
+  &__context-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc($section-height - 48px);
+    padding-top: 2vw;
+    margin-left: calc(2vw + 8px);
+  }
+
+  &__service-button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__service-button {
+    flex-grow: 1;
+    text-wrap: balance;
+
+    @media (max-width: 1153px) {
+      @include typography.font($index: 6);
+    }
+
+    &::after {
+      content: ' ';
+      position: relative;
+      top: 12px;
+      display: block;
+      width: 100%;
+      height: 12px;
+      background-color: map-get(var.$color--primary, charcoal);
+      border: 1px solid map-get(var.$color--primary, charcoal);
+      margin-bottom: 12px;
+    }
+
+    &:hover {
+      &::after {
+        background-color: transparent;
+        border-color: map-get(var.$color--primary, gold);
+      }
+    }
+
+    &:active {
+      &::after {
+        background-color: map-get(var.$color--primary, gold);
+        border-color: map-get(var.$color--primary, gold);
+      }
+    }
+
+    &--selected {
+      color: map-get(var.$color--primary, gold);
+
+      &::after {
+        background-color: map-get(var.$color--primary, gold);
+        border-color: map-get(var.$color--primary, gold);
+      }
+    }
+  }
+
+  &__information-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__subtitle-container {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  &__subtitle {
+  }
+
+  &__text-container {
+    max-width: 677px;
+    margin-bottom: calc(8vw - 58px);
+  }
+
+  &__text {
+  }
+
+  &__keyword-container {
+    display: flex;
+    margin-bottom: calc(8vw - 58px);
+  }
+
+  &__left-keyword-list {
+  }
+
+  &__right-keyword-list {
+    margin-left: 4vw;
+  }
+
+  &__left-vertical-texts {
+    font-family: 'Ubuntu';
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    writing-mode: vertical-rl;
+    text-stroke: 1px map-get(var.$color--primary, grey-3);
+    -webkit-text-stroke: 1px map-get(var.$color--primary, grey-3);
+  }
+
+  &__right-vertical-texts {
+    font-family: 'Ubuntu';
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    bottom: 7vw;
+    right: 0;
+    color: transparent;
+    writing-mode: vertical-rl;
+    text-stroke: 1px map-get(var.$color--primary, grey-3);
+    -webkit-text-stroke: 1px map-get(var.$color--primary, grey-3);
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 83px;
+    width: 21vw;
+    height: unset;
+    z-index: -1;
+  }
+}

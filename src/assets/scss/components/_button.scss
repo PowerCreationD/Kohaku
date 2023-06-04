@@ -70,7 +70,7 @@
     height: 20px;
   }
 
-  &--top-selection {
+  &--text-only {
     @include typography.font($index: 5);
     width: fit-content;
     height: fit-content;
@@ -79,33 +79,12 @@
     background-color: transparent;
     border: none;
 
-    &::after {
-      content: ' ';
-      display: block;
-      width: 100%;
-      height: 12px;
-      background-color: map-get(var.$color--primary, charcoal);
-      border: 1px solid map-get(var.$color--primary, charcoal);
-      position: relative;
-      top: 12px;
-    }
-
     &:hover {
       color: map-get(var.$color--primary, gold);
-
-      &::after {
-        background-color: transparent;
-        border-color: map-get(var.$color--primary, gold);
-      }
     }
 
     &:active {
       color: map-get(var.$color--primary, gold);
-
-      &::after {
-        background-color: map-get(var.$color--primary, gold);
-        border-color: map-get(var.$color--primary, gold);
-      }
     }
   }
 
