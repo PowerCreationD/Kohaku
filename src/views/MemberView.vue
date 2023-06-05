@@ -1,3 +1,7 @@
+<script setup>
+import imgAmber from '@/assets/image/global/image_amber.png'
+</script>
+
 <template>
   <div class="member">
     <page-title>MEMBER</page-title>
@@ -17,7 +21,6 @@
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'
 import memberCard from '@/components/member/MemberCard.vue'
-import imgAmber from '@/assets/image/global/image_amber.png'
 export default {
   components: { pageTitle, memberCard },
   data() {

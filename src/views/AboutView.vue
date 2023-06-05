@@ -1,3 +1,9 @@
+<script setup>
+import imgAmber from '@/assets/image/global/image_amber.png'
+import imgLogo from '@/assets/image/about/logo_kohaku_small.png'
+import imgBanner from '@/assets/image/about/banner_image.jpg'
+</script>
+
 <template>
   <div class="about">
     <!-- * Header -->
@@ -86,10 +92,6 @@
 <script>
 import milestone from '@/components/about/Milestone.vue'
 import pageTitle from '@/components/global/PageTitle.vue'
-import imgAmber from '@/components/global/PageTitle.vue'
-import imgLogo from '@/components/global/PageTitle.vue'
-import imgBanner from '@/components/global/PageTitle.vue'
-
 export default {
   components: { milestone, pageTitle },
   data() {

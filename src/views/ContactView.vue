@@ -1,3 +1,7 @@
+<script setup>
+import imgAmber from '@/assets/image/global/image_amber.png'
+</script>
+
 <template>
   <div class="contact">
     <page-title>CONTACT</page-title>
@@ -25,7 +29,6 @@
 <script>
 import pageTitle from '../components/global/PageTitle.vue'
 import contactForm from '../components/contact/ContactForm.vue'
-import imgAmber from '@/assets/image/global/image_amber.png'
 export default {
   components: { pageTitle, contactForm },
   data() {
