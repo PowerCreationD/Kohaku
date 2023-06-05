@@ -48,6 +48,7 @@ export default {
     selectOption(option) {
       this.selectedOption = option
       this.clickDropdown()
+      this.$emit('selectOption', this.selectedOption)
     }
   }
 }

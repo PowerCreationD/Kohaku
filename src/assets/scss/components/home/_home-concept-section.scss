@@ -2,12 +2,18 @@
 
 .home-concept-section {
   $section-height: min(48vw, 688px);
+  $section-height--mobile: calc(60vw + 220px);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   height: $section-height;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    height: $section-height--mobile;
+    margin-bottom: 7vw;
+  }
 
   &__pin-and-title-container {
     display: flex;
@@ -16,19 +22,29 @@
 
   &__title {
     margin-left: 2vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-left: 3vw;
+    }
   }
 
   &__step-line-and-context-and-image-container {
     display: flex;
     width: 100%;
     height: calc($section-height - 48px);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: calc($section-height--mobile - 36px);
+    }
   }
 
   &__step-line {
-    top: -24px;
     height: $section-height;
-    margin-left: 8px;
     z-index: -1;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: calc($section-height--mobile + 7vw);
+    }
   }
 
   &__context-container {
@@ -37,13 +53,27 @@
     justify-content: center;
     height: 100%;
     margin-left: calc(2vw + 8px);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      justify-content: flex-start;
+      width: 100%;
+      margin-left: calc(3vw + 8px);
+      padding-top: 10vw;
+    }
   }
 
   &__subtitle {
     margin-bottom: 1vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 4vw;
+    }
   }
 
   &__text {
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 7vw;
+    }
   }
 
   &__image {
@@ -51,6 +81,11 @@
     width: calc(118% - 550px);
     height: 100%;
     padding-left: calc(12vw - 87px);
-    z-index: -1;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 100%;
+      height: unset;
+      padding: 0;
+    }
   }
 }

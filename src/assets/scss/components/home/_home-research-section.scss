@@ -2,12 +2,17 @@
 
 .home-research-section {
   $section-height: 48vw;
+  $section-height--mobile: 114vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   height: $section-height;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    height: $section-height--mobile;
+  }
 
   &__pin-and-title-container {
     display: flex;
@@ -16,19 +21,29 @@
 
   &__title {
     margin-left: 2vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-left: 3vw;
+    }
   }
 
   &__step-line-and-context-container {
     display: flex;
     width: 100%;
     height: calc($section-height - 48px);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: calc($section-height--mobile - 36px);
+    }
   }
 
   &__step-line {
-    top: -24px;
     height: $section-height;
-    margin-left: 8px;
     z-index: -1;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: $section-height--mobile;
+    }
   }
 
   &__context-container {
@@ -37,10 +52,20 @@
     justify-content: center;
     height: 100%;
     margin-left: calc(2vw + 8px);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      justify-content: flex-start;
+      margin-left: calc(3vw + 8px);
+      padding-top: 10vw;
+    }
   }
 
   &__subtitle {
     margin-bottom: 1vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 4vw;
+    }
   }
 
   &__text {
@@ -50,5 +75,9 @@
     width: 100%;
     height: unset;
     top: -5vw;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      top: 45vw; // original: 51vw
+    }
   }
 }

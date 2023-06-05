@@ -39,6 +39,7 @@
     margin: 0;
     padding: 0;
     box-shadow: map-get(var.$box-shadow, 1);
+    z-index: 1;
 
     &--open {
       display: block;

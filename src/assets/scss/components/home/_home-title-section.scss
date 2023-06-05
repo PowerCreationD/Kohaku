@@ -2,6 +2,7 @@
 
 .home-title-section {
   $section-height: 48vw;
+  $section-height--mobile: 77vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,8 +10,16 @@
   align-items: center;
   height: $section-height;
 
+  @media (max-width: var.$mobile-device-max-width) {
+    height: $section-height--mobile;
+  }
+
   &__title {
     margin-bottom: 12px;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 8px;
+    }
   }
 
   &__text {
@@ -23,7 +32,7 @@
     top: -6vw;
 
     @media (max-width: var.$mobile-device-max-width) {
-      top: -5vw;
+      top: -18vw;
     }
   }
 }

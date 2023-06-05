@@ -1,7 +1,10 @@
 <script setup>
 import titleSectionBackgroundImageUrl from '@/assets/home_title_section_background.png'
+import titleSectionMobileBackgroundImageUrl from '@/assets/home_title_section_background_mobile_version.png'
 import researchSectionBackgroundImageUrl from '@/assets/home_research_section_background.png'
+import researchSectionMobileBackgroundImageUrl from '@/assets/home_research_section_background_mobile_version.png'
 import conceptSectionImageUrl from '@/assets/home_concept_section_image.png'
+import conceptSectionMobileImageUrl from '@/assets/home_concept_section_image_mobile_version.png'
 import solutionSectionImageUrl from '@/assets/home_solution_section_image.png'
 import contactSectionImageUrl from '@/assets/home_contact_section_image.jpg'
 import vegibusCoverImageUrl from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
@@ -25,7 +28,9 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
       </p>
       <img
         class="background-image home-title-section__background-image"
-        :src="titleSectionBackgroundImageUrl"
+        :src="
+          isMobileDevice ? titleSectionMobileBackgroundImageUrl : titleSectionBackgroundImageUrl
+        "
       />
     </div>
     <div class="home__section home-research-section">
@@ -49,7 +54,11 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
       </div>
       <img
         class="background-image home-research-section__background-image"
-        :src="researchSectionBackgroundImageUrl"
+        :src="
+          isMobileDevice
+            ? researchSectionMobileBackgroundImageUrl
+            : researchSectionBackgroundImageUrl
+        "
       />
     </div>
     <div class="home__section home-concept-section">
@@ -69,15 +78,24 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
             跨越資訊、機工、設計、貿易、創新領域的專業，<br />
             將既有條件共構出開創性的新解。
           </p>
+          <img
+            class="image home-concept-section__image"
+            :src="conceptSectionMobileImageUrl"
+            v-if="isMobileDevice"
+          />
         </div>
-        <img class="image home-concept-section__image" :src="conceptSectionImageUrl" />
+        <img
+          class="image home-concept-section__image"
+          :src="conceptSectionImageUrl"
+          v-if="!isMobileDevice"
+        />
       </div>
     </div>
     <div class="home__section home-solution-section">
       <div class="container home-solution-section__pin-and-title-and-small-title-container">
         <div class="home__step-pin"></div>
         <p class="font-1 home-solution-section__title">SOLUTION</p>
-        <p class="font-7 home-solution-section__small-title">
+        <p class="font-7 home-solution-section__small-title" v-if="!isMobileDevice">
           精金百煉的縝密洞見&nbsp;&nbsp;成就傳產革新的寬闊局面
         </p>
       </div>
@@ -88,6 +106,9 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
           ></StepLineArrowTipIcon>
         </div>
         <div class="container home-solution-section__context-container">
+          <p class="font-7 home-solution-section__small-title" v-if="isMobileDevice">
+            精金百煉的縝密洞見&nbsp;&nbsp;成就傳產革新的寬闊局面
+          </p>
           <div class="container home-solution-section__service-button-container">
             <button
               class="button button--text-only home-solution-section__service-button"
@@ -98,7 +119,7 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
               :key="index"
               @click="selectSolution(index)"
             >
-              {{ solution.name }}
+              {{ isMobileDevice ? solution.shortName : solution.name }}
             </button>
           </div>
           <div class="container home-solution-section__information-container">
@@ -166,10 +187,10 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
         </div>
         <img class="image home-solution-section__image" :src="solutionSectionImageUrl" />
       </div>
-      <p class="home-solution-section__left-vertical-texts">三大語言</p>
-      <p class="home-solution-section__right-vertical-texts">五大領域</p>
+      <p class="home-solution-section__left-vertical-texts" v-if="!isMobileDevice">三大語言</p>
+      <p class="home-solution-section__right-vertical-texts" v-if="!isMobileDevice">五大領域</p>
     </div>
-    <div class="home__section home-work-section">
+    <div class="home__section home-work-section" v-if="!isMobileDevice">
       <p class="font-1 home-work-section__title">WORK</p>
       <div class="container home-work-section__context-container">
         <div class="container home-work-section__description-and-category-container">
@@ -215,13 +236,17 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
             class="button button--icon home-work-section__left-navigation-button"
             @click="changeToPreviousProject"
           >
-            <LeftArrowIcon class="button__icon"></LeftArrowIcon>
+            <LeftArrowIcon
+              class="button__icon home-work-section__navigation-button-icon"
+            ></LeftArrowIcon>
           </button>
           <button
             class="button button--icon home-work-section__right-navigation-button"
             @click="changeToNextProject"
           >
-            <RightArrowIcon class="button__icon"></RightArrowIcon>
+            <RightArrowIcon
+              class="button__icon home-work-section__navigation-button-icon"
+            ></RightArrowIcon>
           </button>
           <p class="font-6 home-work-section__work-name">
             {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].name }}
@@ -229,17 +254,60 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
         </div>
       </div>
     </div>
-  </div>
-  <div class="home__section home-contact-section">
-    <p class="font-1 home-contact-section__title">CONTACT US</p>
-    <div class="container home-contact-section__image-and-context-container">
-      <img class="image home-contact-section__image" :src="contactSectionImageUrl" />
-      <div class="container home-contact-section__context-container">
-        <p class="font-3 home-contact-section__subtitle">承載傳統智慧，設計全新感受</p>
-        <p class="font-7 home-contact-section__text">
-          琥白擅長將結合設計力、資訊力，從微小的點子打造亮眼解方！ 歡迎聯繫我們拓展產業的無限可能！
-        </p>
-        <button class="button button--primary" @click="goToContactPage">聯絡我們</button>
+    <div class="home__section home-work-section" v-else>
+      <div class="container home-work-section__title-and-more-button-container">
+        <p class="font-1 home-work-section__title">WORK</p>
+        <router-link class="link" to="/work">
+          查看所有專案
+          <MoreArrowIcon class="link__icon" />
+        </router-link>
+      </div>
+      <DropdownComponent
+        class="home-work-section__dropdown"
+        :options="work"
+        @selectOption="selectWorkOption"
+      />
+      <div class="container home-work-section__cover-image-and-navigation-button-container">
+        <img
+          class="image home-work-section__cover-image"
+          :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
+        />
+        <button
+          class="button button--icon home-work-section__left-navigation-button"
+          @click="changeToPreviousProject"
+        >
+          <LeftArrowIcon
+            class="button__icon home-work-section__navigation-button-icon"
+          ></LeftArrowIcon>
+        </button>
+        <button
+          class="button button--icon home-work-section__right-navigation-button"
+          @click="changeToNextProject"
+        >
+          <RightArrowIcon
+            class="button__icon home-work-section__navigation-button-icon"
+          ></RightArrowIcon>
+        </button>
+      </div>
+      <p class="font-6 home-work-section__work-name">
+        {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].name }}
+      </p>
+      <p class="font-7 home-work-section__description">
+        {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].description }}
+      </p>
+    </div>
+    <div class="home__section home-contact-section">
+      <p class="font-1 home-contact-section__title">CONTACT US</p>
+      <div class="container home-contact-section__image-and-context-container">
+        <img class="image home-contact-section__image" :src="contactSectionImageUrl" />
+        <div class="container home-contact-section__context-container">
+          <p class="font-3 home-contact-section__subtitle">承載傳統智慧，設計全新感受</p>
+          <p class="font-7 home-contact-section__text">
+            琥白擅長將結合設計力、資訊力，從微小的點子打造亮眼解方！
+            歡迎聯繫我們拓展產業的無限可能！
+          </p>
+          <button class="button button--primary" @click="goToContactPage">聯絡我們</button>
+        </div>
       </div>
     </div>
   </div>
@@ -251,6 +319,7 @@ import StepLineArrowTipIcon from '@/components/global/StepLineArrowTipIcon.vue'
 import CategoryButtonArrowTipIcon from '@/components/global/CategoryButtonArrowTipIcon.vue'
 import LeftArrowIcon from '@/components/global/LeftArrowIcon.vue'
 import RightArrowIcon from '@/components/global/RightArrowIcon.vue'
+import DropdownComponent from '@/components/global/DropdownComponent.vue'
 
 export default {
   components: {
@@ -258,16 +327,19 @@ export default {
     StepLineArrowTipIcon,
     CategoryButtonArrowTipIcon,
     LeftArrowIcon,
-    RightArrowIcon
+    RightArrowIcon,
+    DropdownComponent
   },
   data() {
     return {
+      isMobileDevice: false,
       currentSolutionIndex: 0,
       currentWorkCategoryIndex: 1,
       currentWorkProjectIndex: 0,
       solutions: [
         {
           name: '系統設計 / 開發與維運',
+          shortName: '系統開發',
           subtitleSentences: ['客製資訊系統導入產業', '協助趨勢洞察建立遠見'],
           textSentences: [
             '以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。'
@@ -290,6 +362,7 @@ export default {
         },
         {
           name: '國內 / 國際貿易服務',
+          shortName: '貿易服務',
           subtitleSentences: ['發現台灣在地美味食力', '打造全新面貌走向國際'],
           textSentences: [
             '專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。',
@@ -316,6 +389,7 @@ export default {
         },
         {
           name: '產品設計與量產開發',
+          shortName: '產品設計',
           subtitleSentences: ['剖析未被留心的不便利', '用美學將痛點優雅轉譯'],
           textSentences: [
             '深究物件與人的夥伴關係，刻畫機能、型態與互動上的優質體驗。',
@@ -345,6 +419,7 @@ export default {
         },
         {
           name: '品牌形象與視覺設計',
+          shortName: '視覺設計',
           subtitleSentences: ['直指人心的視覺傳達', '昇華品牌與客戶的關係'],
           textSentences: [
             '一頁書、一件包裝、一套專業完整的品牌形象，由量身定制的設計精準傳達願景，',
@@ -371,6 +446,7 @@ export default {
         },
         {
           name: '企劃發想與活動策劃',
+          shortName: '企劃發想',
           subtitleSentences: ['羽量團隊效能無限', '超高動能協助靈活策展'],
           textSentences: [
             '設計起家的創意人才加上打破框架的企業文化，為您的企劃提供意想不到的創新解方，',
@@ -399,10 +475,12 @@ export default {
       work: [
         {
           name: '企劃發想與數位行銷',
+          text: '企劃發想與數位行銷',
           projects: []
         },
         {
           name: '系統設計、開發與維運',
+          text: '系統設計、開發與維運',
           projects: [
             {
               name: '產銷系統設計｜Vegibus - 小農電商物流配送系統',
@@ -422,6 +500,7 @@ export default {
         },
         {
           name: '國內、國際貿易服務',
+          text: '國內、國際貿易服務',
           projects: [
             {
               name: '日本外銷｜出口屏東台農金鑽鳳梨',
@@ -434,6 +513,7 @@ export default {
         },
         {
           name: '產品設計與量產開發',
+          text: '產品設計與量產開發',
           projects: [
             {
               name: '傢俱設計｜慕廂－優雅收移的實木家具',
@@ -446,6 +526,7 @@ export default {
         },
         {
           name: '品牌形象與視覺設計',
+          text: '品牌形象與視覺設計',
           projects: [
             {
               name: '書籍與裝幀｜木工藝工具書',
@@ -506,7 +587,17 @@ export default {
       return this.solutions[this.currentSolutionIndex].keywordList.slice(halfLength)
     }
   },
+  mounted() {
+    this.checkViewportSize()
+    window.addEventListener('resize', this.checkViewportSize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkViewportSize)
+  },
   methods: {
+    checkViewportSize() {
+      this.isMobileDevice = window.innerWidth < this.$mobileDeviceMaxWidth
+    },
     selectSolution(index) {
       this.currentSolutionIndex = index
       this.currentWorkProjectIndex = 0
@@ -531,6 +622,10 @@ export default {
     },
     goToContactPage() {
       this.$router.push('/contact')
+    },
+    selectWorkOption(selectedOption) {
+      this.currentWorkCategoryIndex = this.work.indexOf(selectedOption)
+      this.currentWorkProjectIndex = 0
     }
   }
 }
