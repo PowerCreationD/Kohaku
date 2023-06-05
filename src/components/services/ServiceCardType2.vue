@@ -25,20 +25,13 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/components/typography' as typography;
+@use '../../assets/scss/components/variable' as var;
 .service-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
-    &__box {
-        width: 32%;
-    }
-    img {
-        width: 68%;
-        height: 285px;
-        object-fit: cover;
-    }
 
     &__title-row {
         display: flex;
@@ -48,8 +41,7 @@
     }
 
     &__title-text {
-        font-size: 24px;
-        font-weight: bold;
+        @include typography.font($index: 3);
         margin: 0 0 0 16px;
     }
 
@@ -57,14 +49,11 @@
         display: flex;
         flex-direction: column;
         h5 {
-            font-size: 20px;
-            font-weight: bold;
-            color: #E6AE4A;;
-            margin: 10px 0;
+            @include typography.font($index: 4);
+            color: map-get(var.$color, gold);
         }
         ul {
-            font-size: 16px;
-            margin: 10px 0;
+            @include typography.font($index: 7);
             padding: 0 16px;
 
             li {
@@ -72,5 +61,71 @@
             }
         }
     }
+}
+@media screen and (min-width: 767px) {
+    .service-card {
+
+        &__box {
+            width: 32%;
+        }
+        img {
+            width: 68%;
+            height: 285px;
+            object-fit: cover;
+        }
+
+        &__main-content{
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                margin: 10px 0;
+            }
+            ul {
+                margin: 10px 0;
+                li {
+                    list-style: disc;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service-card {
+        flex-wrap: wrap;
+
+        &__box {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 285px;
+            object-fit: cover;
+        }
+        &__title-text {
+            margin-top: -6px;
+        }
+
+        &__main-content{
+            display: flex;
+            flex-direction: column;
+            h5 {
+                @include typography.font($index: 4);
+                color: map-get(var.$color, gold);
+                margin-bottom: 8px;
+            }
+            ul {
+                @include typography.font($index: 7);
+                margin-bottom: 16px;
+                padding: 0 16px;
+
+                li {
+                    list-style: disc;
+                }
+            }
+        }
+}
 }
 </style>

@@ -1,24 +1,34 @@
 <template>
   <div class="service">
-    <div class="service__side-navbar">
-        <button class="service__navbar-button" v-for="service in getServiceNames" 
-                :key="service.id" @click="selectService(service.id)" 
-                :class="{ 'service__navbar-button--active': activeBtn === service.id }">
-          {{ service.name }}
-        </button>
-    </div>
+    <template v-if="!isMobile">
+      <div class="service__side-navbar">
+          <button class="service__navbar-button" v-for="service in getServiceNames" 
+                  :key="service.id" @click="selectService(service.id)" 
+                  :class="{ 'service__navbar-button--active': activeBtn === service.id }">
+            {{ service.name }}
+          </button>
+      </div>
+    </template>
     <div class="service__main-content">
+      <template v-if="isMobile">
+        <div class="service-intro">
+          <div class="service-intro__title">SERVICES</div>
+          <div class="service-intro__line-top"></div>
+        </div>
+        <ServiceDropdown :options="serviceOptions" @select="selectService"/>
+      </template>
       <ServiceHeaderSection :headerData="dataToBeRendered"/>
       <div v-show="dataCard1.length" v-for="data in dataCard1" :key="data">
         <ServiceCardType1 :cardData="data"/>
-        <div class="service__section-line"></div>
+        <div class="service__section-line" ></div>
       </div>
       <div v-show="dataCard2.length" v-for="data in dataCard2" :key="data">
         <ServiceCardType2 :cardData="data"/>
-        <div class="service__section-line" ></div>
+        <div v-if="!(dataCard2.indexOf(data)+1 == dataCard2.length) && isMobile" class="service__section-line" ></div>
+        <div v-if="!isMobile" class="service__section-line" ></div>
       </div>
       <WorkExampleSection v-if="dataToBeRendered.works_example.length" :workData="dataToBeRendered.works_example"/>
-      <div class="service__blank-area"></div>
+      <div v-if="!isMobile" class="service__blank-area"></div>
     </div>
   </div>
 </template>
@@ -28,11 +38,13 @@ import ServiceHeaderSection from "../components/services/ServiceHeaderSection.vu
 import ServiceCardType1 from "../components/services/ServiceCardType1.vue"
 import ServiceCardType2 from "../components/services/ServiceCardType2.vue"
 import WorkExampleSection from "../components/services/WorkExampleSection.vue"
+import ServiceDropdown from '../components/services/ServiceDropdown.vue'
 
 export default {
-  components: { ServiceCardType1, ServiceCardType2, WorkExampleSection, ServiceHeaderSection },
+  components: { ServiceCardType1, ServiceCardType2, WorkExampleSection, ServiceHeaderSection, ServiceDropdown },
   data() {
     return {
+      isMobile: false,
       activeBtn: "system_development",
       selectedService: "system_development",
       serviceData: [
@@ -137,7 +149,7 @@ export default {
           }]
         },
         {
-          "id": "commmercial_design",
+          "id": "commercial_design",
           "name": "品牌形象與視覺設計",
           "description": "整合每位客戶需求，為客戶品牌量身定製專屬設計，串連品牌與消費者之間的連結。",
           "content": [
@@ -274,6 +286,28 @@ export default {
             }
           ]
         }
+      ],
+      serviceOptions: [
+        {
+          text: '系統設計 / 開發與維運',
+          value: 'system_development'
+        },
+        {
+          text: '國內 / 國際貿易服務',
+          value: 'trading'
+        },
+        {
+          text: '產品設計與量產開發',
+          value: 'product_design'
+        },
+        {
+          text: '品牌形象與視覺設計',
+          value: 'commercial_design'
+        },
+        {
+          text: '企劃發想與活動策劃',
+          value: 'event_planning'
+        }
       ]
     }
   },
@@ -284,6 +318,9 @@ export default {
       this.dataToBeRendered = result[0]
       this.dataCard1 = result[0].content.filter(data => data["services"].length == 2)
       this.dataCard2 = result[0].content.filter(data => data["services"].length == 1)
+    },
+    checkViewportSize() {
+      this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
     }
   },
   computed: {
@@ -294,18 +331,20 @@ export default {
           navList.push(itm)
       })
       return navList
-    },
-    getRenderData() {
-      // return result
     }
   },
   mounted() {
-    // this.dataToBeRendered = this.serviceData[0]
+    this.checkViewportSize()
+    window.addEventListener('resize', this.checkViewportSize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkViewportSize)
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/scss/components/typography' as typography;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
@@ -360,9 +399,38 @@ export default {
       margin: 50px 0;
     }
 
-    // &__blank-area {
-    //   height: 450px;
-    //   width: 100%;
-    // }
+    &__blank-area {
+      height: 450px;
+      width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+
+    &__main-content {
+      width: 100%;
+    }
+  }
+  .service-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 36px;
+    
+    &__title {
+      @include typography.font($index: 1);
+      text-align: start;
+      margin-top: -4px;
+    }
+
+    &__line-top {
+      flex-grow: 1;
+      margin-left: 12px;
+      border-top: 1px solid #777777;
+    }
+  }
 }
 </style>

@@ -29,6 +29,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/components/typography' as typography;
+@use '../../assets/scss/components/variable' as var;
+
 .service-card {
     width: 100%;
 
@@ -36,18 +39,15 @@ export default {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 30px;
     }
     &__title-text {
-        font-size: 24px;
-        font-weight: bold;
+        @include typography.font($index: 3);
         margin: 0 0 0 16px;
     }
 
     &__content-row {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
 
         &--space {
             margin-right: 68px;
@@ -58,14 +58,11 @@ export default {
         flex-direction: column;
         width: calc( (100% - 68px) / 2);
         h5 {
-            font-size: 20px;
-            font-weight: bold;
-            color: #E6AE4A;;
-            margin: 10px 0;
+            @include typography.font($index: 4);
+            color: map-get(var.$color, gold);
         }
         ul {
-            font-size: 16px;
-            margin: 10px 0;
+            @include typography.font($index: 7);
             padding: 0 16px;
 
             li {
@@ -76,9 +73,6 @@ export default {
     }
     &__image {
         
-        // margin: 10px 0;
-        // object-fit: contain;
-        // height: auto;
         img {
             width: 100%;
             height: 285px;
@@ -86,6 +80,65 @@ export default {
         }
     }
     
+}
+@media screen and (min-width: 767px) {
+    .service-card {
+        &__title-row {
+            margin-bottom: 30px;
+        }
+        &__main-content {
+            h5 {
+                margin: 10px 0;
+            }
+            ul {
+                margin: 10px 0;
+                li {
+                    list-style: disc;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service-card {
+        &__title-row {
+            margin-bottom: 35px;
+        }
+        &__title-text {
+            margin-top: -6px;
+        }
+        &__content-row {
+            flex-wrap: wrap;
+            &--space {
+                margin-right: 0px;
+            }
+        }
+        &__main-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &:last-child {
+                margin-top: 36px;
+            }
+            h5 {
+                @include typography.font($index: 4);
+                color: map-get(var.$color, gold);
+                margin-bottom: 8px;
+            }
+            ul {
+                @include typography.font($index: 7);
+                margin-bottom: 16px;
+                padding: 0 16px;
+
+                li {
+                    list-style: disc;
+                }
+            }
+        }
+        
+    }
 }
 
 
