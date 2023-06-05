@@ -312,6 +312,7 @@ export default {
   },
   methods: {
     selectService(id) {
+      window.scrollTo(0, 0)
       this.activeBtn = id
       const result = this.serviceData.filter(data => data["id"] === id)
       this.dataToBeRendered = result[0]
