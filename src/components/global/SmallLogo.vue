@@ -1,14 +1,13 @@
+<script setup>
+import smallLogoUrl from '@/assets/small_logo.png'
+</script>
+
 <template>
-  <img :src="link" />
+  <img :src="smallLogoUrl" />
 </template>
 
 <script>
 export default {
-  name: 'SmallLogo',
-  data() {
-    return {
-      link: 'src/assets/small_logo.png'
-    }
-  }
+  name: 'SmallLogo'
 }
 </script>

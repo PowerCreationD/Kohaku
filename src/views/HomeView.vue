@@ -1,3 +1,20 @@
+<script setup>
+import titleSectionBackgroundImageUrl from '@/assets/home_title_section_background.png'
+import researchSectionBackgroundImageUrl from '@/assets/home_research_section_background.png'
+import conceptSectionImageUrl from '@/assets/home_concept_section_image.png'
+import solutionSectionImageUrl from '@/assets/home_solution_section_image.png'
+import contactSectionImageUrl from '@/assets/home_contact_section_image.jpg'
+import vegibusCoverImageUrl from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
+import mobileMoverCoverImageUrl from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
+import pineappleTradingCoverImageUrl from '@/assets/work/trading/img_pineapple_1.jpeg'
+import kizunaFurnitureDesignCoverImageUrl from '@/assets/work/product_design/img_kizuna_1.png'
+import woodWorkBookCoverImageUrl from '@/assets/work/commercial_design/book/img_woodwork_1.jpeg'
+import m2LaboBusinessCardDesignCoverImageUrl from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
+import takahataBusinessCardDesignCoverImageUrl from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
+import kimchiPackageDesignCoverImageUrl from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
+import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
+</script>
+
 <template>
   <div class="home">
     <div class="home__section home-title-section">
@@ -8,7 +25,7 @@
       </p>
       <img
         class="background-image home-title-section__background-image"
-        :src="titleSectionBackgroundLink"
+        :src="titleSectionBackgroundImageUrl"
       />
     </div>
     <div class="home__section home-research-section">
@@ -32,7 +49,7 @@
       </div>
       <img
         class="background-image home-research-section__background-image"
-        :src="researchSectionBackgroundLink"
+        :src="researchSectionBackgroundImageUrl"
       />
     </div>
     <div class="home__section home-concept-section">
@@ -53,7 +70,7 @@
             將既有條件共構出開創性的新解。
           </p>
         </div>
-        <img class="image home-concept-section__image" :src="conceptSectionImageLink" />
+        <img class="image home-concept-section__image" :src="conceptSectionImageUrl" />
       </div>
     </div>
     <div class="home__section home-solution-section">
@@ -147,7 +164,7 @@
             </router-link>
           </div>
         </div>
-        <img class="image home-solution-section__image" :src="solutionSectionImageLink" />
+        <img class="image home-solution-section__image" :src="solutionSectionImageUrl" />
       </div>
       <p class="home-solution-section__left-vertical-texts">三大語言</p>
       <p class="home-solution-section__right-vertical-texts">五大領域</p>
@@ -192,7 +209,7 @@
         <div class="container home-work-section__cover-image-and-navigation-button-container">
           <img
             class="image home-work-section__cover-image"
-            :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageLink"
+            :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
           />
           <button
             class="button button--icon home-work-section__left-navigation-button"
@@ -216,7 +233,7 @@
   <div class="home__section home-contact-section">
     <p class="font-1 home-contact-section__title">CONTACT US</p>
     <div class="container home-contact-section__image-and-context-container">
-      <img class="image home-contact-section__image" :src="contactSectionImageLink" />
+      <img class="image home-contact-section__image" :src="contactSectionImageUrl" />
       <div class="container home-contact-section__context-container">
         <p class="font-3 home-contact-section__subtitle">承載傳統智慧，設計全新感受</p>
         <p class="font-7 home-contact-section__text">
@@ -229,11 +246,11 @@
 </template>
 
 <script>
-import MoreArrowIcon from '../components/global/MoreArrowIcon.vue'
-import StepLineArrowTipIcon from '../components/global/StepLineArrowTipIcon.vue'
-import CategoryButtonArrowTipIcon from '../components/global/CategoryButtonArrowTipIcon.vue'
-import LeftArrowIcon from '../components/global/LeftArrowIcon.vue'
-import RightArrowIcon from '../components/global/RightArrowIcon.vue'
+import MoreArrowIcon from '@/components/global/MoreArrowIcon.vue'
+import StepLineArrowTipIcon from '@/components/global/StepLineArrowTipIcon.vue'
+import CategoryButtonArrowTipIcon from '@/components/global/CategoryButtonArrowTipIcon.vue'
+import LeftArrowIcon from '@/components/global/LeftArrowIcon.vue'
+import RightArrowIcon from '@/components/global/RightArrowIcon.vue'
 
 export default {
   components: {
@@ -245,11 +262,6 @@ export default {
   },
   data() {
     return {
-      titleSectionBackgroundLink: 'src/assets/home_title_section_background.png',
-      researchSectionBackgroundLink: 'src/assets/home_research_section_background.png',
-      conceptSectionImageLink: 'src/assets/home_concept_section_image.png',
-      solutionSectionImageLink: 'src/assets/home_solution_section_image.png',
-      contactSectionImageLink: 'src/assets/home_contact_section_image.jpg',
       currentSolutionIndex: 0,
       currentWorkCategoryIndex: 1,
       currentWorkProjectIndex: 0,
@@ -396,15 +408,14 @@ export default {
               name: '產銷系統設計｜Vegibus - 小農電商物流配送系統',
               description:
                 '與農產經銷日商Vegibus合作，致力於推廣農產品地產地銷的供應永續，為既有概念「蔬菜巴士」開發專屬資訊系統，一站整合產地供應、配送貨態、消費訂單與金流資訊，協助實現物流端自多站農家取貨、集運、沿線配送到府之複雜流程。\n落地營運的Vegibus蔬菜巴士，成功建立日本靜岡縣、茨城縣、千葉縣、大阪府等縣的在地農產物流網，讓消費者享受到低碳足跡、高新鮮度的蔬果，並建立友善永續的在地食農關係。',
-              coverImageLink: '/src/assets/work/system_development/vegibus/img_vegibus_system.png',
+              coverImageUrl: vegibusCoverImageUrl,
               workLink: '/work/1'
             },
             {
               name: '機電整合開發｜M2labo - Mobile Mover 農用自走車控制平台 (MM App)',
               description:
                 '因應農村高齡化勞動力短缺、農業精緻化管理繁瑣等情境，提出農用自走車——Mobile Mover，以智慧農機作為未來解方，配合作物管理週期搭載特定配件，實現壓草、除草、投藥、收成搬運等全功能農務支援。\n農用機電整合技術同時考量農場地域模型建構、地圖路徑分析、便利易用的掌上操作系統，並設計以銀髮農戶為對象適應系統的轉型服務流，為農場主減輕經營負擔。',
-              coverImageLink:
-                '/src/assets/work/system_development/mobilemover/img_mobilemover_app.png',
+              coverImageUrl: mobileMoverCoverImageUrl,
               workLink: '/work/2'
             }
           ]
@@ -416,7 +427,7 @@ export default {
               name: '日本外銷｜出口屏東台農金鑽鳳梨',
               description:
                 '協助屏東縣綠地農特產品生產合作社與農產經銷日商Vegibus對接合作，出口台農17號金鑽鳳梨，直送日本當地大型超市Kasumiカスミ。\n此為民間推動之農產外銷革新，由農家直送終端消費者，大幅提升產品新鮮度與價格競爭力，縮短外銷途徑提升農民收益，也讓日本民眾享用更新鮮、更便宜的台灣鳳梨。',
-              coverImageLink: '/src/assets/work/trading/img_pineapple_1.jpeg',
+              coverImageUrl: pineappleTradingCoverImageUrl,
               workLink: '/work/9'
             }
           ]
@@ -428,7 +439,7 @@ export default {
               name: '傢俱設計｜慕廂－優雅收移的實木家具',
               description:
                 '回應當代對室內工作空間靈活、共享等流動性訴求，慕廂收束實木家具的量體，以逐一靠攏的動作取代拆裝，輕鬆的收合桌、椅與邊櫃，並實現優雅不費力的平面推移。',
-              coverImageLink: '/src/assets/work/product_design/img_kizuna_1.png',
+              coverImageUrl: kizunaFurnitureDesignCoverImageUrl,
               workLink: '/work/4'
             }
           ]
@@ -442,46 +453,42 @@ export default {
                 '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，並執行編印出版，完成上架國家書店納入政府出版品。',
               /*'國家書店政府出版品連結：',
                 'https://www.govbooks.com.tw/books/137952'*/
-              coverImageLink: '/src/assets/work/commercial_design/book/img_woodwork_1.jpeg',
+              coverImageUrl: woodWorkBookCoverImageUrl,
               workLink: '/work/3'
             },
             {
               name: '視覺與包裝｜M2Labo名片設計',
               description:
                 '與日本公司「エムスクエア・ラボ」合作，火紅的朝陽和夕陽也代表著日本的國旗，兩面圖像象徵企業日出而作，日落不息之精進精神。',
-              coverImageLink:
-                '/src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg',
+              coverImageUrl: m2LaboBusinessCardDesignCoverImageUrl,
               workLink: '/work/8'
             },
             {
               name: '高畠市役場名片設計',
               description:
                 '為日本高畠市地區公所設計機關公務名片。\nLOGO結合市內之國家有形文化資產「舊高畠車站」，背面雅緻紋理則取自特色礦產「高畠石」。\n圍繞地方風情的細節增強基層機關與在地的連結，也使初見面的交換名片富饒更多驚喜話題。\n*畠：音田',
-              coverImageLink:
-                '/src/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg',
+              coverImageUrl: takahataBusinessCardDesignCoverImageUrl,
               workLink: '/work/7'
             },
             {
               name: '日本韭菜泡菜包裝設計',
               description:
                 '輔導農家運用地產優勢研製韭菜泡菜特產，並協助設計包裝利供銷，增加農產加工增值的效益。',
-              coverImageLink: '/src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg',
+              coverImageUrl: kimchiPackageDesignCoverImageUrl,
               workLink: '/work/5'
             },
             {
               name: '商空與展櫃｜廣島三原車站無人商店',
               description:
                 '於西日本JR地方車站建置無人商店，自陳設、空間、至店內視覺經一致性統籌規劃，兼具舒適感及實用的平衡，達到自在便利的購物體驗。',
-              coverImageLink:
-                '/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg',
+              coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
               workLink: '/work/6'
             },
             {
               name: '廣島Fresta與SOGO超市攤位設計',
               description:
                 '於西日本JR地方車站建置無人商店，自陳設、空間、至店內視覺經一致性統籌規劃，兼具舒適感及實用的平衡，達到自在便利的購物體驗。',
-              coverImageLink:
-                '/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg',
+              coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
               workLink: '/work/6'
             }
           ]

@@ -1,6 +1,10 @@
+<script setup>
+import backgroundImageUrl from '@/assets/sidebar.png'
+</script>
+
 <template>
   <div class="sidebar">
-    <img class="background-image" :src="backgroundImageLink" />
+    <img class="background-image" :src="backgroundImageUrl" />
     <button class="button button--icon sidebar__hamburger-menu" @click="closeSidebar">
       <div class="hamburger-menu hamburger-menu--rotated">
         <div class="hamburger-menu__line" v-for="n in 3" :key="n"></div>
@@ -44,11 +48,6 @@ export default {
     }
   },
   emits: ['update:sidebarOpen'],
-  data() {
-    return {
-      backgroundImageLink: 'src/assets/sidebar.png'
-    }
-  },
   methods: {
     goHome() {
       this.closeSidebar()

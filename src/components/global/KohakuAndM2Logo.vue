@@ -1,14 +1,13 @@
+<script setup>
+import kohakuAndM2LogoUrl from '@/assets/kohaku_and_m2_logo.png'
+</script>
+
 <template>
-  <img :src="link" />
+  <img :src="kohakuAndM2LogoUrl" />
 </template>
 
 <script>
 export default {
-  name: 'KohakuAndM2Logo',
-  data() {
-    return {
-      link: 'src/assets/kohaku_and_m2_logo.png'
-    }
-  }
+  name: 'KohakuAndM2Logo'
 }
 </script>
