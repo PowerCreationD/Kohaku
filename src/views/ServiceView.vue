@@ -365,7 +365,6 @@ export default {
       background-color: #FFFFFF;
       font-size: 16px;
       padding: 12px 0px;
-      margin-bottom: 6px;
       width: 100%;
       border: none;
       text-align: left;
@@ -385,6 +384,14 @@ export default {
         font-weight: bold;
         border-top: 1px solid #E6AE4A;
         border-bottom: 1px solid #E6AE4A;
+      }
+
+      &:hover + &--active {
+        border-top: 1px solid #FFFFFF;
+      }
+
+      &--active + &:hover {
+        border-top: 1px solid #FFFFFF;
       }
     }
 
