@@ -9,7 +9,6 @@
             <path d="M12.3281 1.66187C14.6751 -0.60213 18.4304 -0.552909 20.728 1.80953C27.6455 8.94606 18.1586 19.454 0.518834 37L0 36.4586C0 36.4586 18.2327 19.4048 17.7633 13.4495C17.6398 11.7022 15.3669 12.096 13.761 11.2101C13.1681 10.9148 12.6492 10.521 12.1551 10.0288C9.88222 7.69101 9.93163 3.95048 12.3034 1.66187H12.3281Z" fill="#E6AE4A"/>
         </svg>
     </div>
-    <div v-if="isMobile" class="work-example-section__blank-area"></div>
     <div class="work-example-section__main-content">
         <div class="work-example-section__display" v-for="itm in workData" :key="itm.title">
             <div class="work-example-section__example-item">
@@ -57,7 +56,6 @@ export default {
         }
         svg {
             position: absolute;
-            z-index: 1;
         }
     }
     &__display {
@@ -81,20 +79,16 @@ export default {
             background-color: #F5F5F5;
             display: flex;
             flex-direction: row;
-            align-items: center; 
-            padding: 74px 0;
-            position: absolute;
-            z-index: 0;
-            width: 70%;
+            align-items: flex-start;
+            padding: min(76px , 5vw);
+            width: max((100% + 5vw),(100% + (100vw - 1200px)/2));
         }
 
         &__display {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            width: calc( (100% - 68px - 150px) / 2);
-            margin-left: 75px;
-            
+
             img {
                 width: 100%;
                 max-width: 390px;
@@ -102,6 +96,10 @@ export default {
             }
             p {
                 margin: 10px 0;
+            }
+
+            &:not(:first-child){
+                margin-left: 66px;
             }
         }
 
@@ -123,14 +121,6 @@ export default {
                 margin: 8px 0 0 74px;
             }
         }
-        &__blank-area {
-            background-color: #F5F5F5;
-            position: absolute;
-            right: 0;
-            z-index: -1;
-            width: 100%;
-            height: 690px;
-        }
 
         &__main-content {
             
@@ -138,20 +128,16 @@ export default {
             flex-direction: column;
             align-items: center;
             
+            background-color: #F5F5F5;
+            width: 100vw;
+            padding: 36px max(16px , 5vw);
+            margin-left: min(-16px, -5vw);
+            
         }
 
         &__display {
             display: flex;
             flex-direction: column;
-            width: calc(100% - 32px);
-            margin-top: 24px;
-    
-            &:first-child {
-                margin-top: 36px;
-            }
-            &:last-child {
-                margin-bottom: 36px;
-            }
             
             img {
                 width: 100%;

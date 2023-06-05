@@ -28,7 +28,6 @@
         <div v-if="!isMobile" class="service__section-line" ></div>
       </div>
       <WorkExampleSection v-if="dataToBeRendered.works_example.length" :workData="dataToBeRendered.works_example"/>
-      <div v-if="!isMobile" class="service__blank-area"></div>
     </div>
   </div>
 </template>
@@ -397,11 +396,6 @@ export default {
       width: 100%;
       border-bottom: 1px solid #777777;
       margin: 50px 0;
-    }
-
-    &__blank-area {
-      height: 450px;
-      width: 100%;
     }
 }
 @media screen and (max-width: 767px) {
