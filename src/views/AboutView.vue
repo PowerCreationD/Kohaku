@@ -86,20 +86,24 @@
 <script>
 import milestone from '@/components/about/Milestone.vue'
 import pageTitle from '@/components/global/PageTitle.vue'
+import imgAmber from '@/components/global/PageTitle.vue'
+import imgLogo from '@/components/global/PageTitle.vue'
+import imgBanner from '@/components/global/PageTitle.vue'
+
 export default {
   components: { milestone, pageTitle },
   data() {
     return {
       banner: {
-        src: '/src/assets/image/about/banner_image.jpg',
+        src: imgBanner,
         alt: 'banner_image'
       },
       logo: {
-        src: '/src/assets/image/about/logo_kohaku_small.png',
+        src: imgLogo,
         alt: 'logo_kohaku'
       },
       amber: {
-        src: '/src/assets/image/global/image_amber.png',
+        src: imgAmber,
         alt: 'image_amber'
       }
     }

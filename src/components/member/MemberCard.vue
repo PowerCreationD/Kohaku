@@ -67,7 +67,11 @@ export default {
       return `#${this.person.id}`
     },
     imageSrc() {
-      return `/src/assets/image/member/image_profile_${this.person.id}.jpg`
+      const imageUrl = new URL(
+        `../../assets/image/member/image_profile_${this.person.id}.jpg`,
+        import.meta.url
+      ).href
+      return imageUrl
     }
   }
 }

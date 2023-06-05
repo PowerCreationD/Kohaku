@@ -17,13 +17,14 @@
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'
 import memberCard from '@/components/member/MemberCard.vue'
+import imgAmber from '@/assets/image/global/image_amber.png'
 export default {
   components: { pageTitle, memberCard },
   data() {
     return {
       windowWidth: 0,
       amber: {
-        src: '/src/assets/image/global/image_amber.png',
+        src: imgAmber,
         alt: 'image_amber'
       },
       members: [

@@ -25,12 +25,13 @@
 <script>
 import pageTitle from '../components/global/PageTitle.vue'
 import contactForm from '../components/contact/ContactForm.vue'
+import imgAmber from '@/assets/image/global/image_amber.png'
 export default {
   components: { pageTitle, contactForm },
   data() {
     return {
       img: {
-        src: '/src/assets/image/global/image_amber.png',
+        src: imgAmber,
         alt: 'contact us'
       }
     }
