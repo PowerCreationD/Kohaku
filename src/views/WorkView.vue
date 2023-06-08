@@ -40,55 +40,55 @@ export default {
                 {
                     "id": 1,
                     "name": "Vegibus 農產品電商系統",
-                    "img_url": "src/assets/work/system_development/vegibus/img_vegibus_system.png",
+                    "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system.png",
                     "tag": ["system_development"]
                 },
                 {
                     "id": 2,
                     "name": "Mobile Mover 自主行走機器人控制平台 (MM App)",
-                    "img_url": "src/assets/work/system_development/mobilemover/img_mobilemover_app.png",
+                    "img_url": "/src/assets/work/system_development/mobilemover/img_mobilemover_app.png",
                     "tag": ["system_development"]
                 },
                 {
                     "id": 3,
                     "name": "木工基本機械操作工具書",
-                    "img_url": "src/assets/work/commercial_design/book/img_woodwork_1.jpeg",
+                    "img_url": "/src/assets/work/commercial_design/book/img_woodwork_1.jpeg",
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 4,
                     "name": "慕．廂",
-                    "img_url": "src/assets/work/product_design/img_kizuna_1.png",
+                    "img_url": "/src/assets/work/product_design/img_kizuna_1.png",
                     "tag": ["product_design"]
                 },
                 {
                     "id": 5,
                     "name": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
-                    "img_url": "src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg",
+                    "img_url": "/src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg",
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 6,
                     "name": "廣島三原車站 快閃自助蔬果攤",
-                    "img_url": "src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg",
+                    "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg",
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 7,
                     "name": "高畠市役場 名片設計",
-                    "img_url": "src/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg",
+                    "img_url": "/src/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg",
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 8,
                     "name": "創次方股份有限公司 名片設計",
-                    "img_url": "src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg",
+                    "img_url": "/src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg",
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 9,
                     "name": "屏東台農17號金鑽鳳梨外銷日本",
-                    "img_url": "src/assets/work/trading/img_pineapple_1.jpeg",
+                    "img_url": "/src/assets/work/trading/img_pineapple_1.jpeg",
                     "tag": ["trading"]
                 }
             ],
