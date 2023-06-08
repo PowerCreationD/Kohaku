@@ -145,6 +145,13 @@ export default {
             }
             p {
                 margin-top: 12px;
+                margin-bottom: 24px;
+            }
+            
+        }
+        &__display:last-child {
+            p {
+                margin-bottom: 0px;
             }
         }
 

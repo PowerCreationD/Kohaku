@@ -5,7 +5,8 @@
             <h1 class="title">WORK</h1>
             <div class="section__line-top"></div>
         </div>
-        <div class="work__button_filter">
+        <ServiceDropdown class="service-dropdown" v-if="isMobile" :options="serviceOptions" @select="selectService"/>
+        <div v-else class="work__button_filter">
             <button class="work__nav_button all" @click="selectCategory('all')" :class="{active: activeBtn === 'all' }">全部</button>
             <button class="work__nav_button" @click="selectCategory('system_development')" :class="{active: activeBtn === 'system_development' }">系統設計 / 開發與維運</button>
             <button class="work__nav_button" @click="selectCategory('trading')" :class="{active: activeBtn === 'trading' }">國內 / 國際貿易服務</button>
@@ -27,9 +28,12 @@
 
 <script>
 import { computed } from 'vue'
+import ServiceDropdown from '../components/services/ServiceDropdown.vue'
 export default {
+    components: { ServiceDropdown },
     data() {
         return {
+            isMobile: false,
             activeBtn: 'all',
             filteredWorkList: [],
             workList: [
@@ -87,13 +91,38 @@ export default {
                     "img_url": "src/assets/work/trading/img_pineapple_1.jpeg",
                     "tag": ["trading"]
                 }
+            ],
+            serviceOptions: [
+                {
+                    text: '全部',
+                    value: 'all'
+                },
+                {
+                    text: '系統設計 / 開發與維運',
+                    value: 'system_development'
+                },
+                {
+                    text: '國內 / 國際貿易服務',
+                    value: 'trading'
+                },
+                {
+                    text: '產品設計與量產開發',
+                    value: 'product_design'
+                },
+                {
+                    text: '品牌形象與視覺設計',
+                    value: 'commercial_design'
+                },
+                {
+                    text: '企劃發想與活動策劃',
+                    value: 'event_planning'
+                }
             ]
         }
     },
     methods: {
         selectCategory(type) {
             this.activeBtn = type
-            console.log(this.activeBtn)
         },
         addStyle(workList){
             workList.forEach((work, index) => {
@@ -125,7 +154,16 @@ export default {
 
             })
             return workList
+        },
+        checkViewportSize() {
+            this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
+        },
+        selectService(id) {
+            window.scrollTo(0, 0)
+            this.activeBtn = id
+            this.filteredWork()
         }
+
     },
     computed: {
         filteredWork() {
@@ -141,13 +179,19 @@ export default {
             }
         }
     },
-    mounted () {
+    mounted() {
         window.scrollTo(0, 0)
+        this.checkViewportSize()
+        window.addEventListener('resize', this.checkViewportSize)
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.checkViewportSize)
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/scss/components/typography' as typography;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
@@ -156,7 +200,6 @@ export default {
 }
 .work__background {
     background: #F5F5F5;
-    // position: absolute;
 }
 .work {
     display: flex;
@@ -166,8 +209,7 @@ export default {
         .title {
             margin: 0;
             margin-right: 40px;
-            font-size: 36px;
-            font-weight: bold;
+            @include typography.font($index: 1);
         }
         .section__line-top {
             flex-grow: 1;
@@ -184,6 +226,8 @@ export default {
         margin-bottom: 48px;
         
     }
+}
+@media screen and (min-width: 767px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -191,6 +235,7 @@ export default {
         justify-content: flex-start;
         .work__item {
             width: calc( (100% - 48px) / 3);
+            margin-bottom: 36px;
             // height: auto;
             // object-fit: contain;
             img {
@@ -199,12 +244,17 @@ export default {
                 object-fit: cover;
                 cursor: pointer;
             }
+            p {
+                margin-top: 12px;
+                @include typography.font($index: 7);
+            }
         }
         div.item-between {
             margin-right: 24px;
         }
         div.item-2 {
             width: calc( (100% - 24px) / 2);
+            margin-bottom: 36px;
             // height: auto;
             // object-fit: contain;
             img {
@@ -215,6 +265,7 @@ export default {
         }
         div.item-4 {
             width: calc( (100% - 72px) / 4);
+            margin-bottom: 36px;
             // height: auto;
             // object-fit: contain;
             img {
@@ -248,7 +299,68 @@ export default {
     width: 80px;
 }
 
-
-
+@media screen and (max-width: 767px) {
+    .service-dropdown {
+        
+        position: sticky;
+        top: 66px;
+        z-index: 0;
+        background-color: #F5F5F5;
+        padding: 16px 0 0 0;
+        margin-bottom: 36px;
+        box-shadow: 0px 20px 0px 0px #F5F5F5, // down
+            5vw 0px 0px 0px #F5F5F5, // right
+            5vw 4px 0px 0px #F5F5F5,
+            5vw 20px 0px 0px #F5F5F5,
+            -5vw 0px 0px 0px #F5F5F5, // left
+            -5vw 4px 0px 0px #F5F5F5,
+            -5vw 20px 0px 0px #F5F5F5;         
+    }
+    .work__display_area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+        .work__item {
+            width: 100%;
+            margin-bottom: 24px;
+            // height: auto;
+            // object-fit: contain;
+            img {
+                width: 100%;
+                height: 256px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            p {
+                margin-top: 12px;
+                @include typography.font($index: 7);
+            }
+        }
+        div.item-between {
+            margin-right: 0;
+        }
+        div.item-2 {
+            width: 100%;
+            margin-bottom: 24px;
+            
+            img {
+                width: 100%;
+                height: 228px;
+                object-fit: cover;
+            }
+        }
+        div.item-4 {
+            width: 100%;
+            margin-bottom: 24px;
+            
+            img {
+                width: 100%;
+                height: 228px;
+                object-fit: cover;
+            }
+        }
+    }
+}
 
 </style>

@@ -15,7 +15,8 @@
           <div class="service-intro__title">SERVICES</div>
           <div class="service-intro__line-top"></div>
         </div>
-        <ServiceDropdown :options="serviceOptions" @select="selectService"/>
+        <ServiceDropdown class="service-dropdown" 
+                         :options="serviceOptions" @select="selectService"/>
       </template>
       <ServiceHeaderSection :headerData="dataToBeRendered"/>
       <div v-show="dataCard1.length" v-for="data in dataCard1" :key="data">
@@ -433,6 +434,22 @@ export default {
       margin-left: 12px;
       border-top: 1px solid #777777;
     }
+  }
+  .service-dropdown {
+    
+    position: sticky;
+    top: 66px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    padding: 16px 0 0 0;
+    // border-top: 1px solid #C4C4C4;
+    box-shadow: 0px 20px 0px 0px #FFFFFF, // down
+                5vw 0px 0px 0px #FFFFFF, // right
+                5vw 4px 0px 0px #FFFFFF,
+                5vw 20px 0px 0px #FFFFFF,
+                -5vw 0px 0px 0px #FFFFFF, // left
+                -5vw 4px 0px 0px #FFFFFF,
+                -5vw 20px 0px 0px #FFFFFF;
   }
 }
 </style>

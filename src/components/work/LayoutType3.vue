@@ -29,17 +29,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/components/typography' as typography;
 .work_detail__img-item-1 {
     margin-bottom: 24px;
     img {
         width: 100%;
     }
     p {
+        @include typography.font($index: 7);
         margin: 24px 0 0 0;
     }
-    div.item-bottom {
-        margin-bottom: 48px;
-    }
+}
+div.item-bottom img:last-child{
+    margin-bottom: 24px;
 }
 .work_detail__img-item-2 {
     display: flex;
@@ -50,11 +52,46 @@ export default {
             width: 100%;
         }
         p {
+            @include typography.font($index: 7);
             margin: 24px 0 0 0;
         }
     }
     .item-gap {
         margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .work_detail__img-item-1 {
+        margin-bottom: 0px;
+        img {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        p {
+            margin: 0 0 16px 0;
+        }
+    }
+    div.item-bottom img:last-child{
+        margin-bottom: 24px;
+    }
+    .work_detail__img-item-2 {
+        display: flex;
+        flex-wrap: wrap;
+        .item-2 {
+            width: 100%;
+            margin-bottom: 0px;
+            img {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            p {
+                margin: 0 0 16px 0;
+            }
+        }
+        .item-gap {
+            margin-right: 0px;
+        }
     }
 }
 </style>

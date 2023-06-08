@@ -2,7 +2,7 @@
   <div class="work_detail__background">
     <div class="work_detail">
         <WorkDetailHeader :headerData="workDetail[id]" />
-        <component :is="type" :contentData="workDetail[id].content" />
+        <component :is="type" :contentData="selectContentData" />
         <button class="work_detail__return-btn" @click="returnWorkPage">返回</button>
     </div>
   </div>
@@ -19,6 +19,7 @@ export default {
     components: { WorkDetailHeader, LayoutType1, LayoutType2, LayoutType3 },
     data() {
         return {
+            isMobile: false,
             workDetail: {
                 1: {
                     "type": "LayoutType2",
@@ -51,6 +52,29 @@ export default {
                             "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_8.jpeg"
                         }
                     ],
+                    "mobileContent": [
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_1.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_2.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_3.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_4.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_5.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_6.jpeg"
+                        },
+                        {
+                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_7.jpeg"
+                        }
+                    ]
                 },
                 2: {
                     "type": "LayoutType1",
@@ -181,21 +205,36 @@ export default {
     methods: {
         returnWorkPage() {
             this.$router.push({ name: 'Work' })
+        },
+        checkViewportSize() {
+            this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
         }
     },
     computed: {
         type() {
-            console.log(this.workDetail[this.id].type)
             return this.workDetail[this.id].type
+        },
+        selectContentData(){
+            if (this.id == 1 && this.isMobile) {
+                return this.workDetail[this.id].mobileContent
+            }
+            return this.workDetail[this.id].content
         }
     },
-    mounted () {
+    mounted() {
         window.scrollTo(0, 0)
+        this.checkViewportSize()
+        window.addEventListener('resize', this.checkViewportSize)
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.checkViewportSize)
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/scss/components/typography' as typography;
+@use '../assets/scss/components/variable' as var;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
@@ -204,25 +243,27 @@ export default {
 }
 .work_detail__background {
     background: #F5F5F5;
-    // position: absolute;
 }
 .work_detail {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 140px 0;
-    width: calc(100% - 240px);
-
+    width: 100%;
+}
+.work_detail__return-btn {
+    width: 156px;
+    color: #FFFFFF;
+    background-color: map-get(var.$color, gold);
+    padding: 8px 0px;
+    @include typography.font($index: 6);
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
     .work_detail__return-btn {
-        width: 156px;
-        color: #FFFFFF;
-        background-color: #E6AE4A;
-        padding: 8px 0px;
-        font-weight: bold;
-        font-size: 16px;
-        border-style: none;
-        border-radius: 4px;
-        cursor: pointer;
+        width: 128px;
+        margin-bottom: 56px;
     }
 }
 </style>
