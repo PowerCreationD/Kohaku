@@ -72,10 +72,6 @@ export default {
         {
           text: '中',
           value: 'ch'
-        },
-        {
-          text: '日',
-          value: 'jp'
         }
       ]
     }
