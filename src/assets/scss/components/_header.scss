@@ -13,6 +13,7 @@
   box-shadow: map-get(var.$box-shadow, 1);
   margin: 0;
   padding: 0;
+  z-index: 10;
 
   @media (max-width: var.$mobile-device-max-width) {
     height: var.$small-header-height;
