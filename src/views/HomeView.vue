@@ -474,11 +474,6 @@ export default {
       ],
       work: [
         {
-          name: '企劃發想與數位行銷',
-          text: '企劃發想與數位行銷',
-          projects: []
-        },
-        {
           name: '系統設計、開發與維運',
           text: '系統設計、開發與維運',
           projects: [
@@ -573,6 +568,11 @@ export default {
               workLink: '/work/6'
             }
           ]
+        },
+        {
+          name: '企劃發想與數位行銷',
+          text: '企劃發想與數位行銷',
+          projects: []
         }
       ]
     }
