@@ -480,14 +480,14 @@ export default {
           text: '系統設計、開發與維運',
           projects: [
             {
-              name: '產銷系統設計｜Vegibus - 小農電商物流配送系統',
+              name: '產銷系統設計｜日本農產電商物流系統',
               description:
                 '與農產經銷日商Vegibus合作，致力於推廣農產品地產地銷的供應永續，為既有概念「蔬菜巴士」開發專屬資訊系統，一站整合產地供應、配送貨態、消費訂單與金流資訊，協助實現物流端自多站農家取貨、集運、沿線配送到府之複雜流程。\n落地營運的Vegibus蔬菜巴士，成功建立日本靜岡縣、茨城縣、千葉縣、大阪府等縣的在地農產物流網，讓消費者享受到低碳足跡、高新鮮度的蔬果，並建立友善永續的在地食農關係。',
               coverImageUrl: vegibusCoverImageUrl,
               workLink: '/work/1'
             },
             {
-              name: '機電整合開發｜M2labo - Mobile Mover 農用自走車控制平台 (MM App)',
+              name: '機電整合開發｜農用自走車控制平台',
               description:
                 '因應農村高齡化勞動力短缺、農業精緻化管理繁瑣等情境，提出農用自走車——Mobile Mover，以智慧農機作為未來解方，配合作物管理週期搭載特定配件，實現壓草、除草、投藥、收成搬運等全功能農務支援。\n農用機電整合技術同時考量農場地域模型建構、地圖路徑分析、便利易用的掌上操作系統，並設計以銀髮農戶為對象適應系統的轉型服務流，為農場主減輕經營負擔。',
               coverImageUrl: mobileMoverCoverImageUrl,
@@ -549,7 +549,7 @@ export default {
               workLink: '/work/7'
             },
             {
-              name: '日本韭菜泡菜包裝設計',
+              name: '日本高級超市 韭菜泡菜包裝設計',
               description:
                 '輔導農家運用地產優勢研製韭菜泡菜特產，並協助設計包裝利供銷，增加農產加工增值的效益。',
               coverImageUrl: kimchiPackageDesignCoverImageUrl,
