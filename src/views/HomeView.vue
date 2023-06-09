@@ -265,6 +265,8 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
       <DropdownComponent
         class="home-work-section__dropdown"
         :options="work"
+        :defaultIndex="0"
+        :emitSelectOptionEventOnMounted="true"
         @selectOption="selectWorkOption"
       />
       <div class="container home-work-section__cover-image-and-navigation-button-container">
@@ -334,7 +336,7 @@ export default {
     return {
       isMobileDevice: false,
       currentSolutionIndex: 0,
-      currentWorkCategoryIndex: 1,
+      currentWorkCategoryIndex: 0,
       currentWorkProjectIndex: 0,
       solutions: [
         {

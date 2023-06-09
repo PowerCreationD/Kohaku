@@ -28,6 +28,14 @@ export default {
     options: {
       type: Object,
       default: null
+    },
+    defaultIndex: {
+      type: Number,
+      default: 0
+    },
+    emitSelectOptionEventOnMounted: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -38,7 +46,13 @@ export default {
   },
   created() {
     if (this.options) {
-      this.selectedOption = this.options[0]
+      this.selectedOption = this.options[this.defaultIndex]
+    }
+  },
+  mounted() {
+    if (this.emitSelectOptionEventOnMounted) {
+      this.selectOption(this.options[this.defaultIndex])
+      this.clickDropdown()
     }
   },
   methods: {
