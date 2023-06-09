@@ -28,51 +28,51 @@ export default {
                     "paragraph": "Vegibus 是 2017 年開始在日本營運的農產電商與物流系統，目標致力於推廣農產品的地產地銷生態．透過區域性組成的「蔬菜巴士」站點，讓生產者及購買者在固定站點進行交貨、拿貨，再由物流司機依照固定路線配送貨物，形成區域相連的物流網．購買者可以在配送效率提高、訂單物流費降低的受益下，享用到碳足跡里程低、新鮮度最高的蔬果。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_1.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_2.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_3.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_3.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_4.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_4.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_5.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_5.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_6.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_6.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_7.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_7.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_8.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_8.jpeg"
                         }
                     ],
                     "mobileContent": [
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_1.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_2.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_3.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_3.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_4.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_4.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_5.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_5.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_6.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_6.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/system_development/vegibus/img_vegibus_system_mobile_7.jpeg"
+                            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system_mobile_7.jpeg"
                         }
                     ]
                 },
@@ -89,16 +89,16 @@ export default {
                     "paragraph": "與國立台灣工藝研究發展中心合作，將匠人50年的工藝精華化為實體，讓有心想從事木工的後勁能有務實的參考資料。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/commercial_design/book/img_woodwork_1.jpeg"
+                            "img_url": "../../assets/work/commercial_design/book/img_woodwork_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/book/img_woodwork_2.jpeg"
+                            "img_url": "../../assets/work/commercial_design/book/img_woodwork_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/book/img_woodwork_3.jpeg"
+                            "img_url": "../../assets/work/commercial_design/book/img_woodwork_3.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/book/img_woodwork_4.jpeg"
+                            "img_url": "../../assets/work/commercial_design/book/img_woodwork_4.jpeg"
                         }
                     ],
                 },
@@ -115,13 +115,13 @@ export default {
                     "paragraph": "與在地農家合作，使用農家產地直送韭菜研發泡菜，並製作其包裝。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
+                            "img_url": "../../assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/kimchi/img_kimchi_2.jpeg"
+                            "img_url": "../../assets/work/commercial_design/kimchi/img_kimchi_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/kimchi/img_kimchi_3.jpeg"
+                            "img_url": "../../assets/work/commercial_design/kimchi/img_kimchi_3.jpeg"
                         }
                     ]
                 },
@@ -132,22 +132,22 @@ export default {
                     "paragraph": "於西日本JR地方車站建置無人商店，並負責服務、視覺及空間設計，在整合空間人與物的同時，達到兼具舒適感及實用的平衡。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_2.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_3.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_3.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_4.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_4.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_5.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_5.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_6.jpeg"
+                            "img_url": "../../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_6.jpeg"
                         }
                     ]
                 },
@@ -158,10 +158,10 @@ export default {
                     "paragraph": "LOGO結合高畠市內被指定回國家登錄有形文化財的「舊高畠車站」外型，名片背面紋路則是以高畠當地石材「高畠石」紋路作為發想，讓市役場的人可以在初次見面時與收取名片的人有更多跟當地的話題，為兩方接下來的溝通拋磚引玉。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg"
+                            "img_url": "../../assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/takahata/img_takahata_business_card_2.jpeg"
+                            "img_url": "../../assets/work/commercial_design/takahata/img_takahata_business_card_2.jpeg"
                         }
                     ]
                 },
@@ -172,10 +172,10 @@ export default {
                     "paragraph": "母公司「エムスクエア・ラボ」與本公司名片，兩面圖像象徵日出而作，日落不息，火紅的朝陽和夕陽也代表著日本的國旗。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
+                            "img_url": "../../assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/commercial_design/power_creation/img_power_creation_business_card_2.jpeg"
+                            "img_url": "../../assets/work/commercial_design/power_creation/img_power_creation_business_card_2.jpeg"
                         }
                     ]
                 },
@@ -186,16 +186,16 @@ export default {
                     "paragraph": "本公司於2022年5月，為日本Vegibus公司及屏東縣綠地農特產品生產合作社牽線鏈結，將共22公噸的屏東台農17號金鑽鳳梨，直送日本超市(Kasumiカスミ)，省去了中間通路，大幅縮短供應鏈，減少運輸時間與成本，讓日本民眾可以享受到更新鮮便宜的台灣鳳梨，此舉是由民間主導，台日產地直銷的一大創新。",
                     "content": [
                         {
-                            "img_url": "/src/assets/work/trading/img_pineapple_1.jpeg"
+                            "img_url": "../../assets/work/trading/img_pineapple_1.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/trading/img_pineapple_2.jpeg"
+                            "img_url": "../../assets/work/trading/img_pineapple_2.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/trading/img_pineapple_3.jpeg"
+                            "img_url": "../../assets/work/trading/img_pineapple_3.jpeg"
                         },
                         {
-                            "img_url": "/src/assets/work/trading/img_pineapple_4.jpeg"
+                            "img_url": "../../assets/work/trading/img_pineapple_4.jpeg"
                         }
                     ]
                 }

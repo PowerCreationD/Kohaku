@@ -26,8 +26,9 @@
 export default {
     props: ["cardData"],
     methods: {
-        getImageUrl(url) {
-            return new URL(url, import.meta.url)
+        getImageUrl(img) {
+            const imageUrl = new URL(img, import.meta.url).href
+            return imageUrl
         }
     }
 }
