@@ -1,12 +1,17 @@
 <template>
     <div class="work_detail__img-wall">
-        <img class="img_wall_item" v-for="img in styledContentData" :key="img.id" :src="img.img_url" :class="img.style" alt="img.id">
+        <img class="img_wall_item" v-for="img in styledContentData" :key="img.id" :src="getImageUrl(img.img_url)" :class="img.style" alt="img.id">
     </div>
 </template>
 
 <script>
 export default {
     props: ["contentData"],
+    methods: {
+        getImageUrl(url) {
+            return new URL(url, import.meta.url)
+        }
+    },
     computed: {
         styledContentData() {
             let length = this.contentData.length

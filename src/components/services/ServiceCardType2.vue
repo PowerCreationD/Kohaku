@@ -14,13 +14,18 @@
             </ul>
         </div>
     </div>
-    <img :src="cardData.services[0].img_url" />
+    <img :src="getImageUrl(cardData.services[0].img_url)" />
 </div>
 </template>
 
 <script>
     export default {
-        props: ['cardData']
+        props: ['cardData'],
+        methods: {
+            getImageUrl(url) {
+                return new URL(url, import.meta.url)
+            }
+        }
     }
 </script>
 

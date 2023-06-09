@@ -12,7 +12,7 @@
     <div class="work-example-section__main-content">
         <div class="work-example-section__display" v-for="itm in workData" :key="itm.title">
             <div class="work-example-section__example-item">
-                <img :src="itm.img_url" @click="goToDetailPage(itm.id)"/>
+                <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.id)"/>
             </div>
             <p>{{ itm.title }}</p>
         </div>
@@ -34,6 +34,9 @@ export default {
         },
         checkViewportSize() {
             this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
+        },
+        getImageUrl(url) {
+            return new URL(url, import.meta.url)
         }
     },
     mounted() {

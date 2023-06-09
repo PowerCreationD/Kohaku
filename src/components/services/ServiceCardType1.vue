@@ -15,7 +15,7 @@
                 <li v-for="itm in data.items" :key="itm">{{ itm }}</li>
             </ul>
             <div class="service-card__image">
-                <img :src="data.img_url" alt="">
+                <img :src="getImageUrl(data.img_url)" alt="">
             </div>
         </div>
     </div>
@@ -24,7 +24,12 @@
 
 <script>
 export default {
-    props: ["cardData"]
+    props: ["cardData"],
+    methods: {
+        getImageUrl(url) {
+            return new URL(url, import.meta.url)
+        }
+    }
 }
 </script>
 
