@@ -235,6 +235,7 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
           <button
             class="button button--icon home-work-section__left-navigation-button"
             @click="changeToPreviousProject"
+            v-if="work[currentWorkCategoryIndex].projects.length > 1"
           >
             <LeftArrowIcon
               class="button__icon home-work-section__navigation-button-icon"
@@ -243,6 +244,7 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
           <button
             class="button button--icon home-work-section__right-navigation-button"
             @click="changeToNextProject"
+            v-if="work[currentWorkCategoryIndex].projects.length > 1"
           >
             <RightArrowIcon
               class="button__icon home-work-section__navigation-button-icon"
@@ -277,6 +279,7 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
         <button
           class="button button--icon home-work-section__left-navigation-button"
           @click="changeToPreviousProject"
+          v-if="work[currentWorkCategoryIndex].projects.length > 1"
         >
           <LeftArrowIcon
             class="button__icon home-work-section__navigation-button-icon"
@@ -285,6 +288,7 @@ import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial
         <button
           class="button button--icon home-work-section__right-navigation-button"
           @click="changeToNextProject"
+          v-if="work[currentWorkCategoryIndex].projects.length > 1"
         >
           <RightArrowIcon
             class="button__icon home-work-section__navigation-button-icon"
