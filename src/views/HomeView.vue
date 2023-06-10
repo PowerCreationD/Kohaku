@@ -360,7 +360,7 @@ export default {
               children: ['嵌入式系統開發']
             }
           ],
-          serviceLink: '/'
+          serviceLink: '/services/system_development'
         },
         {
           name: '國內 / 國際貿易服務',
@@ -387,7 +387,7 @@ export default {
               name: '異國品牌包裝Redesign'
             }
           ],
-          serviceLink: '/'
+          serviceLink: '/services/trading'
         },
         {
           name: '產品設計與量產開發',
@@ -417,7 +417,7 @@ export default {
               name: '模型製作'
             }
           ],
-          serviceLink: '/'
+          serviceLink: '/services/product_design'
         },
         {
           name: '品牌形象與視覺設計',
@@ -444,7 +444,7 @@ export default {
               name: '網站介面設計'
             }
           ],
-          serviceLink: '/'
+          serviceLink: '/services/commercial_design'
         },
         {
           name: '企劃發想與活動策劃',
@@ -471,7 +471,7 @@ export default {
               name: '活動視覺及媒體代操'
             }
           ],
-          serviceLink: '/'
+          serviceLink: '/services/event_planning'
         }
       ],
       work: [
