@@ -1,15 +1,3 @@
-<script setup>
-import img_vegibus_system from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
-import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
-import img_woodwork_1 from '@/assets/work/commercial_design/book/img_woodwork_1.jpeg'
-import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
-import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
-import img_hiroshima_station_1 from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
-import img_takahata_business_card_1 from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
-import img_power_creation_business_card_1 from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
-import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
-</script>
-
 <template>
   <div class="work__background">
     <div class="work">
@@ -106,7 +94,7 @@ export default {
                 {
                     "id": 10,
                     "name": "活動紀錄｜車床技術轉譯研究工作坊",
-                    "img_url": "../assets/work/event_planning/img_wood_workshop_1.jpeg",
+                    "img_url": img_wood_workshop_1,
                     "tag": ["event_planning"]
                 }
             ],
@@ -384,3 +372,16 @@ export default {
 }
 
 </style>
+
+<script setup>
+import img_vegibus_system from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
+import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
+import img_woodwork_1 from '@/assets/work/commercial_design/book/img_woodwork_1.jpeg'
+import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
+import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
+import img_hiroshima_station_1 from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
+import img_takahata_business_card_1 from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
+import img_power_creation_business_card_1 from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
+import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
+import img_wood_workshop_1 from '@/assets/work/event_planning/img_wood_workshop_1.jpeg'
+</script>

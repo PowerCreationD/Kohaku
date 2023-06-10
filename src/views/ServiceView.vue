@@ -60,12 +60,12 @@ export default {
                 {
                   "subtitle": "前端開發",
                   "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
-                  "img_url": "../../assets/services/system_development/img_frontend.jpeg"
+                  "img_url": img_frontend
                 },
                 {
                   "subtitle": "後端開發",
                   "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
-                  "img_url": "../../assets/services/system_development/img_backend.jpeg"
+                  "img_url": img_backend
                 }
               ]
             },
@@ -75,7 +75,7 @@ export default {
                 {
                   "subtitle": "商業資料探勘",
                   "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-                  "img_url": "../../assets/services/system_development/img_data_analysis.jpeg"
+                  "img_url": img_data_analysis
                 }
               ]
             },
@@ -85,7 +85,7 @@ export default {
                 {
                   "subtitle": "嵌入式系統開發",
                   "items": ["物聯網裝置整合開發"],
-                  "img_url": "../../assets/services/system_development/img_embedded_system.jpeg"
+                  "img_url": img_embedded_system
                 }
               ]
             }
@@ -94,12 +94,12 @@ export default {
           {
             "id": 1, 
             "title": "產銷系統設計｜日本農產電商物流系統",
-            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system.png"
+            "img_url": img_vegibus_system
           },
           {
             "id": 2,
             "title": "機電整合開發｜自主移動機器人控制平台",
-            "img_url": "../../assets/work/system_development/mobilemover/img_mobilemover_app.png"
+            "img_url": img_mobilemover_app
           }]
         },
         {
@@ -114,7 +114,7 @@ export default {
                 {
                   "subtitle": "進出口單一窗口服務",
                   "items": ["進出口選品諮詢", "市場風向探勘", "行銷企劃與代操", "中／英／日三語言窗口", "異國品牌包裝Redesign"],
-                  "img_url": "../../assets/services/trading/img_trading_cover.jpeg"
+                  "img_url": img_trading_cover
                 }
               ]
             }
@@ -123,7 +123,7 @@ export default {
           {
             "id": 9,
             "title": "日本外銷｜出口屏東台農金鑽鳳梨",
-            "img_url": "../../assets/work/trading/img_pineapple_1.jpeg"
+            "img_url": img_pineapple_1
           }]
         },
         {
@@ -138,7 +138,7 @@ export default {
                 {
                   "subtitle": "研發與設計服務",
                   "items": ["問題研究", "概念提案", "參與式設計過程", "產品外觀設計", "3D模型建構", "模型製作"],
-                  "img_url": "../../assets/services/product_design/img_product_cover.png"
+                  "img_url": img_product_cover
                 }
               ]
             }
@@ -147,7 +147,7 @@ export default {
           {
             "id": 4,
             "title": "傢俱設計｜慕廂－優雅收移的實木家具",
-            "img_url": "../../assets/work/product_design/img_kizuna_1.png"
+            "img_url": img_kizuna_1
           }]
         },
         {
@@ -162,7 +162,7 @@ export default {
                 {
                   "subtitle": "視覺設計",
                   "items": ["品牌形象設計", "裝幀設計", "平面設計", "包裝設計", "網站介面設計"],
-                  "img_url": "../../assets/services/commercial_design/img_commercial_design_cover.jpeg"
+                  "img_url": img_commercial_design_cover
                 }
               ]
             }
@@ -171,12 +171,12 @@ export default {
           {
             "id": 5,
             "title": "日本高級超市 韭菜泡菜包裝設計",
-            "img_url": "../../assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
+            "img_url": img_kimchi_1
           }, 
           {
             "id": 8,
             "title": "視覺與包裝｜創次方股份有限公司 名片設計",
-            "img_url": "../../assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
+            "img_url": img_power_creation_business_card_1
           }]
         },
         {
@@ -191,7 +191,7 @@ export default {
                 {
                   "subtitle": "活動策劃服務",
                   "items": ["課程、活動、展覽題材開發", "內容企劃", "執行統籌", "現場主持與場務", "活動視覺及媒體代操"],
-                  "img_url": "../../assets/services/event_planning/img_event_planning_cover.jpeg"
+                  "img_url": img_event_planning_cover
                 }
               ]
             }
@@ -200,7 +200,7 @@ export default {
             {
               "id": 10, 
               "title": "活動紀錄｜車床技術轉譯研究工作坊",
-              "img_url": "../../assets/work/event_planning/img_wood_workshop_1.jpeg"
+              "img_url": img_wood_workshop_1
             }
           ]
         }
@@ -217,12 +217,12 @@ export default {
               {
                 "subtitle": "前端開發",
                 "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
-                "img_url": "../../assets/services/system_development/img_frontend.jpeg"
+                "img_url": img_frontend
               },
               {
                 "subtitle": "後端開發",
                 "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
-                "img_url": "../../assets/services/system_development/img_backend.jpeg"
+                "img_url": img_backend
               }
             ]
           },
@@ -232,7 +232,7 @@ export default {
               {
                 "subtitle": "商業資料探勘",
                 "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-                "img_url": "../../assets/services/system_development/img_data_analysis.jpeg"
+                "img_url": img_data_analysis
               }
             ]
           },
@@ -242,7 +242,7 @@ export default {
               {
                 "subtitle": "嵌入式系統開發",
                 "items": ["物聯網裝置整合開發"],
-                "img_url": "../../assets/services/system_development/img_embedded_system.jpeg"
+                "img_url": img_embedded_system
               }
             ]
           }
@@ -251,12 +251,12 @@ export default {
         {
           "id": 1, 
           "title": "產銷系統設計｜日本農產電商物流系統",
-          "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system.png"
+          "img_url": img_vegibus_system
         },
         {
           "id": 2,
           "title": "機電整合開發｜自主移動機器人控制平台",
-          "img_url": "../../assets/work/system_development/mobilemover/img_mobilemover_app.png"
+          "img_url": img_mobilemover_app
         }]
       },
       dataCard1: [
@@ -266,12 +266,12 @@ export default {
             {
               "subtitle": "前端開發",
               "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
-              "img_url": "../../assets/services/system_development/img_frontend.jpeg"
+              "img_url": img_frontend
             },
             {
               "subtitle": "後端開發",
               "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
-              "img_url": "../../assets/services/system_development/img_backend.jpeg"
+              "img_url": img_backend
             }
           ]
         }
@@ -283,7 +283,7 @@ export default {
             {
               "subtitle": "商業資料探勘",
               "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-              "img_url": "../../assets/services/system_development/img_data_analysis.jpeg"
+              "img_url": img_data_analysis
             }
           ]
         },
@@ -293,7 +293,7 @@ export default {
             {
               "subtitle": "嵌入式系統開發",
               "items": ["物聯網裝置整合開發"],
-              "img_url": "../../assets/services/system_development/img_embedded_system.jpeg"
+              "img_url": img_embedded_system
             }
           ]
         }
@@ -468,3 +468,21 @@ export default {
   }
 }
 </style>
+
+<script setup>
+import img_frontend from '@/assets/services/system_development/img_frontend.jpeg'
+import img_backend from '@/assets/services/system_development/img_backend.jpeg'
+import img_data_analysis from '@/assets/services/system_development/img_data_analysis.jpeg'
+import img_embedded_system from '@/assets/services/system_development/img_embedded_system.jpeg'
+import img_vegibus_system from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
+import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
+import img_trading_cover from '@/assets/services/trading/img_trading_cover.jpeg'
+import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
+import img_product_cover from '@/assets/services/product_design/img_product_cover.png'
+import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
+import img_commercial_design_cover from '@/assets/services/commercial_design/img_commercial_design_cover.jpeg'
+import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
+import img_power_creation_business_card_1 from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
+import img_event_planning_cover from '@/assets/services/event_planning/img_event_planning_cover.jpeg'
+import img_wood_workshop_1 from '@/assets/work/event_planning/img_wood_workshop_1.jpeg'
+</script>
