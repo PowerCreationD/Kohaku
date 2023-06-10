@@ -487,7 +487,7 @@ export default {
               workLink: '/work/1'
             },
             {
-              name: '機電整合開發｜農用自走車控制平台',
+              name: '機電整合開發｜自主移動機器人控制平台',
               description:
                 '因應農村高齡化勞動力短缺、農業精緻化管理繁瑣等情境，提出農用自走車——Mobile Mover，以智慧農機作為未來解方，配合作物管理週期搭載特定配件，實現壓草、除草、投藥、收成搬運等全功能農務支援。',
               coverImageUrl: mobileMoverCoverImageUrl,
