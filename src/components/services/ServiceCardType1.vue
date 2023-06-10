@@ -10,12 +10,12 @@
         <div class="service-card__main-content 
                     service-card__content-row--space" 
             v-for="data in cardData.services" :key="data">
-            <h5>{{ processData(data) }}</h5>
+            <h5>{{ data.subtitle }}</h5>
             <ul>
                 <li v-for="itm in data.items" :key="itm">{{ itm }}</li>
             </ul>
             <div class="service-card__image">
-                <img :src="ImageUrlSrc" alt="">
+                <img :src="getImageUrl(data.img_url)" alt="">
             </div>
         </div>
     </div>
@@ -25,21 +25,10 @@
 <script>
 export default {
     props: ["cardData"],
-    data() {
-        return {
-            imgPath: ""
-        }
-    },
-    computed: {
-        ImageUrlSrc() {
-            const imageUrl = new URL(this.imgPath, import.meta.url).href
-            return imageUrl
-        }
-    },
     methods: {
-        processData(data) {
-            this.imgPath = data.img_url
-            return data.subtitle
+        getImageUrl(img) {
+            const imageUrl = new URL(img, import.meta.url).href
+            return imageUrl
         }
     }
 }
