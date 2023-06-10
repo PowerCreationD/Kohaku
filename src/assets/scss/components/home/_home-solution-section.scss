@@ -208,6 +208,10 @@
     writing-mode: vertical-rl;
     text-stroke: 1px map-get(var.$color--primary, grey-3);
     -webkit-text-stroke: 1px map-get(var.$color--primary, grey-3);
+
+    @media (max-width: 1350px) {
+      display: none;
+    }
   }
 
   &__right-vertical-texts {
@@ -221,6 +225,10 @@
     writing-mode: vertical-rl;
     text-stroke: 1px map-get(var.$color--primary, grey-3);
     -webkit-text-stroke: 1px map-get(var.$color--primary, grey-3);
+
+    @media (max-width: 1350px) {
+      display: none;
+    }
   }
 
   &__image {
