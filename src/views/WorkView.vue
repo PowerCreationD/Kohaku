@@ -1,3 +1,15 @@
+<script setup>
+import img_vegibus_system from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
+import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
+import img_woodwork_1 from '@/assets/work/commercial_design/book/img_woodwork_1.jpeg'
+import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
+import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
+import img_hiroshima_station_1 from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
+import img_takahata_business_card_1 from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
+import img_power_creation_business_card_1 from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
+import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
+</script>
+
 <template>
   <div class="work__background">
     <div class="work">
@@ -17,7 +29,7 @@
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
                 <router-link :to="{ name: 'WorkDetail', params: { id: work.id } }">
-                    <img :src="getImageUrl(work.img_url)" alt="" >
+                    <img :src="work.img_url" alt="" >
                 </router-link>
                 <p>{{ work.name }}</p>
             </div>
@@ -40,55 +52,55 @@ export default {
                 {
                     "id": 1,
                     "name": "Vegibus 農產品電商系統",
-                    "img_url": "../assets/work/system_development/vegibus/img_vegibus_system.png",
+                    "img_url": img_vegibus_system,
                     "tag": ["system_development"]
                 },
                 {
                     "id": 2,
                     "name": "Mobile Mover 自主行走機器人控制平台 (MM App)",
-                    "img_url": "../assets/work/system_development/mobilemover/img_mobilemover_app.png",
+                    "img_url": img_mobilemover_app,
                     "tag": ["system_development"]
                 },
                 {
                     "id": 3,
                     "name": "木工基本機械操作工具書",
-                    "img_url": "../assets/work/commercial_design/book/img_woodwork_1.jpeg",
+                    "img_url": img_woodwork_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 4,
                     "name": "慕．廂",
-                    "img_url": "../assets/work/product_design/img_kizuna_1.png",
+                    "img_url": img_kizuna_1,
                     "tag": ["product_design"]
                 },
                 {
                     "id": 5,
                     "name": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
-                    "img_url": "../assets/work/commercial_design/kimchi/img_kimchi_1.jpeg",
+                    "img_url": img_kimchi_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 6,
                     "name": "廣島三原車站 快閃自助蔬果攤",
-                    "img_url": "../assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg",
+                    "img_url": img_hiroshima_station_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 7,
                     "name": "高畠市役場 名片設計",
-                    "img_url": "../assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg",
+                    "img_url": img_takahata_business_card_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 8,
                     "name": "創次方股份有限公司 名片設計",
-                    "img_url": "../assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg",
+                    "img_url": img_power_creation_business_card_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 9,
                     "name": "屏東台農17號金鑽鳳梨外銷日本",
-                    "img_url": "../assets/work/trading/img_pineapple_1.jpeg",
+                    "img_url": img_pineapple_1,
                     "tag": ["trading"]
                 }
             ],
@@ -163,10 +175,6 @@ export default {
             this.activeBtn = id
             this.filteredWork()
         },
-        getImageUrl(img) {
-            const imageUrl = new URL(img, import.meta.url).href
-            return imageUrl
-        }
     },
     computed: {
         filteredWork() {
