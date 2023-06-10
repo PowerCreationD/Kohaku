@@ -98,6 +98,7 @@ export default {
             }
             ul {
                 margin: 10px 0;
+                margin-bottom: 24px;
                 li {
                     list-style: disc;
                 }

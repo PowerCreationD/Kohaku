@@ -51,7 +51,7 @@ export default {
         {
           "id": "system_development",
           "name": "系統設計 / 開發與維運",
-          "slogan": "客製資訊系統導入產業\n協助趨勢洞察建立遠見",
+          "slogan": ["客製資訊系統導入產業", "協助趨勢洞察建立遠見"],
           "description": "以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。",
           "content": [
             {
@@ -59,12 +59,12 @@ export default {
               "services": [
                 {
                   "subtitle": "前端開發",
-                  "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
+                  "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
                   "img_url": "../../assets/services/system_development/img_frontend.jpeg"
                 },
                 {
                   "subtitle": "後端開發",
-                  "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
+                  "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
                   "img_url": "../../assets/services/system_development/img_backend.jpeg"
                 }
               ]
@@ -93,26 +93,27 @@ export default {
           "works_example": [
           {
             "id": 1, 
-            "title": "Vegibus 農產品電商系統",
+            "title": "產銷系統設計｜日本農產電商物流系統",
             "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system.png"
           },
           {
             "id": 2,
-            "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
+            "title": "機電整合開發｜自主移動機器人控制平台",
             "img_url": "../../assets/work/system_development/mobilemover/img_mobilemover_app.png"
           }]
         },
         {
           "id": "trading",
           "name": "國內 / 國際貿易服務",
-          "description": "因應各地市場需求，考量地方飲食購買文化，定義最符合供需雙方之產品規格，將最好的食品供應給最需要的人。",
+          "slogan": ["發現台灣在地美味食力", "打造全新面貌走向國際"],
+          "description": "專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。具備專業的中、英、日語窗口，提供選品諮詢與外銷代辦，並有依目標地區消費習慣的品牌包裝再造服務，幫助MIT產品走向世界。",
           "content": [
             {
               "title": "進出口貿易",
               "services": [
                 {
                   "subtitle": "進出口單一窗口服務",
-                  "items": ["報關手續代理", "貿易文件與法規協助", "市場調查與選品", "通路對接與媒合", "產品代理與行銷"],
+                  "items": ["進出口選品諮詢", "市場風向探勘", "行銷企劃與代操", "中／英／日三語言窗口", "異國品牌包裝Redesign"],
                   "img_url": "../../assets/services/trading/img_trading_cover.jpeg"
                 }
               ]
@@ -121,14 +122,15 @@ export default {
           "works_example": [
           {
             "id": 9,
-            "title": "屏東台農17號金鑽鳳梨外銷日本",
+            "title": "日本外銷｜出口屏東台農金鑽鳳梨",
             "img_url": "../../assets/work/trading/img_pineapple_1.jpeg"
           }]
         },
         {
           "id": "product_design",
           "name": "產品設計與量產開發",
-          "description": "藉觀察與深談剖析未被留心的問題，以美學乘載機能，將不便利優雅轉譯為日常驚喜。發掘並了解使用者痛點，透過加深與產品互動上、視覺上連結所帶來的感受，提供更貼近使用者期待的設計。",
+          "slogan": ["剖析未被留心的不便利", "用美學將痛點優雅轉譯"],
+          "description": "深究物件與人的夥伴關係，刻畫機能、型態與互動上的優質體驗以細膩的設計雕琢產品，回應使用者對生活的期待。",
           "content": [
             {
               "title": "產品研發",
@@ -144,14 +146,15 @@ export default {
           "works_example": [
           {
             "id": 4,
-            "title": "慕．廂",
+            "title": "傢俱設計｜慕廂－優雅收移的實木家具",
             "img_url": "../../assets/work/product_design/img_kizuna_1.png"
           }]
         },
         {
           "id": "commercial_design",
           "name": "品牌形象與視覺設計",
-          "description": "整合每位客戶需求，為客戶品牌量身定製專屬設計，串連品牌與消費者之間的連結。",
+          "slogan": ["直指人心的視覺傳達", "昇華品牌與客戶的關係"],
+          "description": "一頁書、一件包裝、一套專業完整的品牌形象，由量身定制的設計精準傳達願景，讓您的客戶體驗品牌無微不至的用心，加深信任您的服務與產品。",
           "content": [
             {
               "title": "商業設計",
@@ -167,86 +170,94 @@ export default {
           "works_example": [
           {
             "id": 5,
-            "title": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
+            "title": "日本高級超市 韭菜泡菜包裝設計",
             "img_url": "../../assets/work/commercial_design/kimchi/img_kimchi_1.jpeg"
           }, 
           {
             "id": 8,
-            "title": "創次方股份有限公司 名片設計",
+            "title": "視覺與包裝｜創次方股份有限公司 名片設計",
             "img_url": "../../assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg"
           }]
         },
         {
           "id": "event_planning",
           "name": "企劃發想與活動策劃",
-          "description": "從台灣大型專業展覽（工具機展、智慧城市展）起家，擁有主持人、設備、專業人員團隊統籌經驗，從需求討論至影音紀錄回顧皆可一手包辦。",
+          "slogan": ["羽量團隊效能無限", "超高動能協助靈活策展"],
+          "description": "設計起家的創意人才加上打破框架的企業文化，為您的企劃提供意想不到的創新解方，熟悉外部團隊協作，與您迅速對接需求，自課程設計到會展活動，皆能提供專業的執行統籌。",
           "content": [
             {
               "title": "企劃活動",
               "services": [
                 {
                   "subtitle": "活動策劃服務",
-                  "items": ["專案流程優化", "活動內容企劃", "活動視覺及推廣品", "主持人、司儀及燈音廠商"],
+                  "items": ["課程、活動、展覽題材開發", "內容企劃", "執行統籌", "現場主持與場務", "活動視覺及媒體代操"],
                   "img_url": "../../assets/services/event_planning/img_event_planning_cover.jpeg"
                 }
               ]
             }
           ],
-          "works_example": []
+          "works_example": [
+            {
+              "id": 10, 
+              "title": "活動紀錄｜車床技術轉譯研究工作坊",
+              "img_url": "../../assets/work/event_planning/img_wood_workshop_1.jpeg"
+            }
+          ]
         }
       ],
       dataToBeRendered: {
-          "id": "system_development",
-          "name": "系統設計 / 開發與維運",
-          "description": "以 SaaS （Software as a Service）軟體服務出發，專注於提供客制化系統開發、跨系統整合、終端設備串接與開發服務，並提供資料分析導入服務，協助客戶洞悉自身產業、產出決策，找到商業上更上一層的突破口．",
-          "content": [
-            {
-              "title": "系統開發",
-              "services": [
-                {
-                  "subtitle": "前端開發",
-                  "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
-                  "img_url": "../../assets/services/system_development/img_frontend.jpeg"
-                },
-                {
-                  "subtitle": "後端開發",
-                  "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
-                  "img_url": "../../assets/services/system_development/img_backend.jpeg"
-                }
-              ]
-            },
-            {
-              "title": "資料分析",
-              "services": [
-                {
-                  "subtitle": "商業資料探勘",
-                  "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
-                  "img_url": "../../assets/services/system_development/img_data_analysis.jpeg"
-                }
-              ]
-            },
-            {
-              "title": "設備開發",
-              "services": [
-                {
-                  "subtitle": "嵌入式系統開發",
-                  "items": ["物聯網裝置整合開發"],
-                  "img_url": "../../assets/services/system_development/img_embedded_system.jpeg"
-                }
-              ]
-            }
-          ],
-          "works_example": [
+        "id": "system_development",
+        "name": "系統設計 / 開發與維運",
+        "slogan": ["客製資訊系統導入產業", "協助趨勢洞察建立遠見"],
+        "description": "以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。",
+        "content": [
           {
-            "id": 1,
-            "title": "Vegibus 農產品電商系統",
-            "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system.png"
+            "title": "系統開發",
+            "services": [
+              {
+                "subtitle": "前端開發",
+                "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
+                "img_url": "../../assets/services/system_development/img_frontend.jpeg"
+              },
+              {
+                "subtitle": "後端開發",
+                "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
+                "img_url": "../../assets/services/system_development/img_backend.jpeg"
+              }
+            ]
           },
           {
-            "id": 2,
-            "title": "Mobile Mover 自主行走機器人控制平台 (MM App)",
-            "img_url": "../../assets/work/system_development/mobilemover/img_mobilemover_app.png"
-          }]
+            "title": "資料分析",
+            "services": [
+              {
+                "subtitle": "商業資料探勘",
+                "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
+                "img_url": "../../assets/services/system_development/img_data_analysis.jpeg"
+              }
+            ]
+          },
+          {
+            "title": "設備開發",
+            "services": [
+              {
+                "subtitle": "嵌入式系統開發",
+                "items": ["物聯網裝置整合開發"],
+                "img_url": "../../assets/services/system_development/img_embedded_system.jpeg"
+              }
+            ]
+          }
+        ],
+        "works_example": [
+        {
+          "id": 1, 
+          "title": "產銷系統設計｜日本農產電商物流系統",
+          "img_url": "../../assets/work/system_development/vegibus/img_vegibus_system.png"
+        },
+        {
+          "id": 2,
+          "title": "機電整合開發｜自主移動機器人控制平台",
+          "img_url": "../../assets/work/system_development/mobilemover/img_mobilemover_app.png"
+        }]
       },
       dataCard1: [
         {
@@ -254,12 +265,12 @@ export default {
           "services": [
             {
               "subtitle": "前端開發",
-              "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站"],
+              "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
               "img_url": "../../assets/services/system_development/img_frontend.jpeg"
             },
             {
               "subtitle": "後端開發",
-              "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署"],
+              "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
               "img_url": "../../assets/services/system_development/img_backend.jpeg"
             }
           ]

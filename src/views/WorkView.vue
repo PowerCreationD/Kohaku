@@ -51,57 +51,63 @@ export default {
             workList: [
                 {
                     "id": 1,
-                    "name": "Vegibus 農產品電商系統",
+                    "name": "產銷系統設計｜日本農產電商物流系統",
                     "img_url": img_vegibus_system,
                     "tag": ["system_development"]
                 },
                 {
                     "id": 2,
-                    "name": "Mobile Mover 自主行走機器人控制平台 (MM App)",
+                    "name": "機電整合開發｜自主移動機器人控制平台",
                     "img_url": img_mobilemover_app,
                     "tag": ["system_development"]
                 },
                 {
                     "id": 3,
-                    "name": "木工基本機械操作工具書",
+                    "name": "書籍與裝幀｜木工藝工具書",
                     "img_url": img_woodwork_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 4,
-                    "name": "慕．廂",
+                    "name": "傢俱設計｜慕廂－優雅收移的實木家具",
                     "img_url": img_kizuna_1,
                     "tag": ["product_design"]
                 },
                 {
                     "id": 5,
-                    "name": "ニラたっぷりキムチ 韭菜泡菜包裝設計",
+                    "name": "日本高級超市 韭菜泡菜包裝設計",
                     "img_url": img_kimchi_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 6,
-                    "name": "廣島三原車站 快閃自助蔬果攤",
+                    "name": "商空與展櫃｜廣島三原車站無人商店",
                     "img_url": img_hiroshima_station_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 7,
-                    "name": "高畠市役場 名片設計",
+                    "name": "高畠市役場名片設計",
                     "img_url": img_takahata_business_card_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 8,
-                    "name": "創次方股份有限公司 名片設計",
+                    "name": "視覺與包裝｜創次方股份有限公司 名片設計",
                     "img_url": img_power_creation_business_card_1,
                     "tag": ["commercial_design"]
                 },
                 {
                     "id": 9,
-                    "name": "屏東台農17號金鑽鳳梨外銷日本",
+                    "name": "日本外銷｜出口屏東台農金鑽鳳梨",
                     "img_url": img_pineapple_1,
                     "tag": ["trading"]
+                },
+                {
+                    "id": 10,
+                    "name": "活動紀錄｜車床技術轉譯研究工作坊",
+                    "img_url": "../assets/work/event_planning/img_wood_workshop_1.jpeg",
+                    "tag": ["event_planning"]
                 }
             ],
             serviceOptions: [
@@ -238,6 +244,28 @@ export default {
         
     }
 }
+.work__nav_button {
+    font-size: 16px;
+    height: 46px;
+    width: 192px;
+    margin-right: 20px;
+    margin-top: 12px;
+    border-style: none;
+    border-radius: 71px;
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+ 
+}
+.active {
+    background: #E6AE4A;
+    color: white;
+    font-weight: bold;
+}
+.work__nav_button.all {
+    width: 80px;
+}
 @media screen and (min-width: 767px) {
     .work__display_area {
         display: flex;
@@ -287,27 +315,8 @@ export default {
         }
     }
 }
-.work__nav_button {
-    font-size: 16px;
-    height: 46px;
-    width: 192px;
-    margin-right: 20px;
-    margin-top: 12px;
-    border-style: none;
-    border-radius: 71px;
-    background: #FFFFFF;
-    color: #000000;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
- 
-}
-.active {
-    background: #E6AE4A;
-    color: white;
-    font-weight: bold;
-}
-.work__nav_button.all {
-    width: 80px;
+
+@media screen and (min-width: 768px) and (max-width: 834px) {
 }
 
 @media screen and (max-width: 767px) {

@@ -1,11 +1,14 @@
 <template>
     <div class="service__intro">
-        <div v-if="!isMobile" class="service__intro__description">
+        <div v-if="!isMobile" class="service__intro__header">
           <div class="service__intro__line-top"></div>
           <div class="service__intro__title">SERVICES</div>
         </div>
         <h1 v-else>{{ headerData.name }}</h1>
-        <p>{{ headerData.description }}</p>
+        <div v-if="!isMobile" class="service__intro__slogan">
+          <p v-for="item in headerData.slogan" :key="item">{{ item }}</p>
+        </div>
+        <p class="service__intro__description">{{ headerData.description }}</p>
         <div class="service__intro__line-bottom"></div>
     </div>
 </template>
@@ -38,7 +41,7 @@ export default {
 .service__intro {
   width: 100%;
   
-  &__description {
+  &__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,12 +70,18 @@ export default {
 @media screen and (min-width: 767px) {
   .service__intro {
     
-    p {
-      padding: 40px 0;
+    &__description {
+      padding-bottom: 40px;
       font-size: 16px;
       line-height: 22px;
       text-align: justify;  
     }
+
+    &__slogan {
+      @include typography.font($index: 6);
+      margin-bottom: 12px;
+    }
+
   }
 }
 
@@ -83,7 +92,8 @@ export default {
     h1 {
       @include typography.font($index: 1);
     }
-    p {
+  
+    &__description {
       padding-top: 16px;
       padding-bottom: 36px;
       @include typography.font($index: 7);

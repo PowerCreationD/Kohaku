@@ -9,11 +9,11 @@
     <div class="work_detail__img-item-2">
         <div class="item-2 item-gap">
             <img src="/src/assets/work/product_design/img_kizuna_3.png" alt="" />
-            <p>選用堅硬的梣木加工彎曲結構、以三段工法進行榫接<br>輕軟的松木作為桌板與抽屜立面，並以牛皮包覆</p>
+            <p>考量工法精選木料，梣木堅韌負以彎曲結構，松木輕軟使桌面細膩合用。牛皮桌面，回應辦公長時間操作鍵鼠、執筆書寫時置腕處的絕對舒適，並輕柔回饋筆觸。</p>
         </div>
         <div class="item-2">
             <img src="/src/assets/work/product_design/img_kizuna_4.png" alt="" />
-            <p>三件一組的家具不需工具就能收合<br>優雅自然體現在組裝、移動等流程之中</p>
+            <p>將桌面折合、座椅靠攏，不需拆裝即可收納三件傢俱組合。收束實木傢俱的量體，空間轉換時實現優雅推移，定位再輕巧展開，旋即重啟生產力。</p>
         </div>
     </div>
     <div class="work_detail__img-item-1 item-bottom">
