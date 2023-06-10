@@ -335,6 +335,10 @@ export default {
     }
   },
   mounted() {
+    if (this.$route.params.id !== "") {
+      this.selectService(this.$route.params.id)
+      this.activeBtn = this.$route.params.id
+    }
     this.checkViewportSize()
     window.addEventListener('resize', this.checkViewportSize)
   },

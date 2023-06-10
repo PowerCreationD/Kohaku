@@ -21,9 +21,10 @@ const router = createRouter({
       meta: { title: `${KOHAKU} | About` }
     },
     {
-      path: '/services',
+      path: '/services/:id?',
       name: 'Services',
       component: ServiceView,
+      props: true,
       meta: { title: `${KOHAKU} | Services` }
     },
     {
