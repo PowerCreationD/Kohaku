@@ -10,6 +10,9 @@ jobs:
   build_vue:
     runs-on: ubuntu-latest
     name: Build Vue
+    environment: github-pages
+    env:
+      BASE: ${{ vars.BASE }}
     steps:
     - uses: actions/checkout@v3
     - name: Vue to Github Pages

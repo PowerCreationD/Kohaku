@@ -30,3 +30,6 @@ coverage
 # Generated CSS related files
 *style.css
 *style.css.map
+
+# Envionment Files
+*.env
