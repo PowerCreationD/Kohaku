@@ -224,7 +224,7 @@ export default {
     },
     methods: {
         returnWorkPage() {
-            this.$router.push({ name: 'Work' })
+            this.$router.push({ name: 'Work', params: { workType: "" } })
         },
         checkViewportSize() {
             this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
