@@ -86,8 +86,6 @@ export default {
         }
         .item-3{
             width: calc((100% - 48px) / 3);
-            height: 291px;
-            object-fit: cover;
         }
         img.item-end {
             margin-right: 0;
@@ -108,8 +106,6 @@ export default {
         flex-wrap: wrap;
         .img_wall_item {
             width: 100%;
-            height: 228px;
-            object-fit: cover;
             margin-bottom: 16px;
         }
         img:last-child {
