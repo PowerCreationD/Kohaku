@@ -364,7 +364,7 @@ export default {
               children: ['嵌入式系統開發']
             }
           ],
-          serviceLink: '/services/system_development'
+          serviceLink: '/services/system-development'
         },
         {
           name: '國內 / 國際貿易服務',
@@ -421,7 +421,7 @@ export default {
               name: '模型製作'
             }
           ],
-          serviceLink: '/services/product_design'
+          serviceLink: '/services/product-design'
         },
         {
           name: '品牌形象與視覺設計',
@@ -448,7 +448,7 @@ export default {
               name: '網站介面設計'
             }
           ],
-          serviceLink: '/services/commercial_design'
+          serviceLink: '/services/commercial-design'
         },
         {
           name: '企劃發想與活動策劃',
@@ -475,7 +475,7 @@ export default {
               name: '活動視覺及媒體代操'
             }
           ],
-          serviceLink: '/services/event_planning'
+          serviceLink: '/services/event-planning'
         }
       ],
       work: [
