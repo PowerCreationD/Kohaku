@@ -254,7 +254,7 @@ export default {
 .work__nav_button.all {
     width: 80px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 834px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -305,6 +305,27 @@ export default {
 }
 
 @media screen and (min-width: 768px) and (max-width: 834px) {
+    .work__display_area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .work__item {
+            width: calc( (100% - 24px) / 2);
+            margin-bottom: 36px;
+            
+            img {
+                width: 100%;
+                height: 234px;
+                object-fit: cover;
+            }
+            p {
+                margin-top: 12px;
+                @include typography.font($index: 7);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -336,36 +357,13 @@ export default {
             // object-fit: contain;
             img {
                 width: 100%;
-                height: 256px;
+                height: 228px;
                 object-fit: cover;
                 cursor: pointer;
             }
             p {
                 margin-top: 12px;
                 @include typography.font($index: 7);
-            }
-        }
-        div.item-between {
-            margin-right: 0;
-        }
-        div.item-2 {
-            width: 100%;
-            margin-bottom: 24px;
-            
-            img {
-                width: 100%;
-                height: 228px;
-                object-fit: cover;
-            }
-        }
-        div.item-4 {
-            width: 100%;
-            margin-bottom: 24px;
-            
-            img {
-                width: 100%;
-                height: 228px;
-                object-fit: cover;
             }
         }
     }
