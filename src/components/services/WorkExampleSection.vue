@@ -9,19 +9,28 @@
             <path d="M12.3281 1.66187C14.6751 -0.60213 18.4304 -0.552909 20.728 1.80953C27.6455 8.94606 18.1586 19.454 0.518834 37L0 36.4586C0 36.4586 18.2327 19.4048 17.7633 13.4495C17.6398 11.7022 15.3669 12.096 13.761 11.2101C13.1681 10.9148 12.6492 10.521 12.1551 10.0288C9.88222 7.69101 9.93163 3.95048 12.3034 1.66187H12.3281Z" fill="#E6AE4A"/>
         </svg>
     </div>
-    <div class="work-example-section__main-content">
-        <div class="work-example-section__display" v-for="itm in workData" :key="itm.title">
-            <div class="work-example-section__example-item">
-                <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.id)"/>
+    <div class="work-example-section__main">
+        <div class="work-example-section__main-content">
+            <div class="work-example-section__display" v-for="itm in workData.exampleList" :key="itm.title">
+                <div class="work-example-section__example-item">
+                    <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.id)"/>
+                </div>
+                <p>{{ itm.title }}</p>
             </div>
-            <p>{{ itm.title }}</p>
         </div>
+        <router-link v-if="workData['workNumber'] > 2" 
+                    class="link work-example-section__more-arrow" 
+                    :to="{ name: 'Work', params: { workType: workData.type }  }">
+            查看更多<MoreArrowIcon class="link__icon"/>
+        </router-link>
     </div>
   </div>
 </template>
 
 <script>
+import MoreArrowIcon from '@/components/global/MoreArrowIcon.vue'
 export default {
+    components: { MoreArrowIcon },
     props: ["workData"],
     data() {
       return {
@@ -79,13 +88,19 @@ export default {
             }
         }
 
+        &__main {
+            background-color: #F5F5F5;
+            display: flex;
+            flex-direction: column;
+            padding: min(76px , 5vw);
+            width: max((100% + 5vw),(100% + (100vw - 1200px)/2));
+        }
+
         &__main-content {
             background-color: #F5F5F5;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            padding: min(76px , 5vw);
-            width: max((100% + 5vw),(100% + (100vw - 1200px)/2));
         }
 
         &__display {
@@ -112,6 +127,11 @@ export default {
             justify-content: center;
             align-items: center;
         }
+
+        &__more-arrow {
+            width: 103px;
+            margin-left: min(calc(100% - 103px), 746px);
+        }
     }
 }
 @media screen and (max-width: 767px) { 
@@ -126,16 +146,21 @@ export default {
             }
         }
 
+        &__main {
+            background-color: #F5F5F5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            padding: 36px max(16px , 5vw);
+            margin-left: min(-16px, -5vw);
+        }
+
         &__main-content {
             
             display: flex;
             flex-direction: column;
             align-items: center;
-            
-            background-color: #F5F5F5;
-            width: 100vw;
-            padding: 36px max(16px , 5vw);
-            margin-left: min(-16px, -5vw);
             
         }
 
@@ -158,12 +183,11 @@ export default {
                 margin-bottom: 0px;
             }
         }
+        &__more-arrow {
+            margin-top: 16px;
+            align-self: flex-end;
+        }
 
-        // &__example-item {
-        //     // display: flex;
-        //     // justify-content: center;
-        //     // align-items: center;
-        // }
     }
 }
 

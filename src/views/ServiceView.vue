@@ -28,7 +28,7 @@
         <div v-if="!(dataCard2.indexOf(data)+1 == dataCard2.length) && isMobile" class="service__section-line" ></div>
         <div v-if="!isMobile" class="service__section-line" ></div>
       </div>
-      <WorkExampleSection v-if="dataToBeRendered.works_example.length" :workData="dataToBeRendered.works_example"/>
+      <WorkExampleSection v-if="dataToBeRendered.works_example.exampleList.length" :workData="dataToBeRendered.works_example"/>
     </div>
   </div>
 </template>
@@ -90,17 +90,20 @@ export default {
               ]
             }
           ],
-          "works_example": [
-          {
-            "id": 1, 
-            "title": "產銷系統設計｜日本農產電商物流系統",
-            "img_url": img_vegibus_system
-          },
-          {
-            "id": 2,
-            "title": "機電整合開發｜自主移動機器人控制平台",
-            "img_url": img_mobilemover_app
-          }]
+          "works_example": {
+            "type": "system-development",
+            "workNumber": 2,
+            "exampleList": [{
+              "id": 1, 
+              "title": "產銷系統設計｜日本農產電商物流系統",
+              "img_url": img_vegibus_system
+            },
+            {
+              "id": 2,
+              "title": "機電整合開發｜自主移動機器人控制平台",
+              "img_url": img_mobilemover_app
+            }]
+          }
         },
         {
           "id": "trading",
@@ -119,12 +122,15 @@ export default {
               ]
             }
           ],
-          "works_example": [
-          {
-            "id": 9,
-            "title": "日本外銷｜出口屏東台農金鑽鳳梨",
-            "img_url": img_pineapple_1
-          }]
+          "works_example": {
+            "type": "trading",
+            "workNumber": 1,
+            "exampleList": [{
+              "id": 9,
+              "title": "日本外銷｜出口屏東台農金鑽鳳梨",
+              "img_url": img_pineapple_1
+            }]
+          }
         },
         {
           "id": "product_design",
@@ -143,12 +149,15 @@ export default {
               ]
             }
           ],
-          "works_example": [
-          {
-            "id": 4,
-            "title": "傢俱設計｜慕廂－優雅收移的實木家具",
-            "img_url": img_kizuna_1
-          }]
+          "works_example": {
+            "type": "product-design",
+            "workNumber": 1,
+            "exampleList": [{
+              "id": 4,
+              "title": "傢俱設計｜慕廂－優雅收移的實木家具",
+              "img_url": img_kizuna_1
+            }]
+          }
         },
         {
           "id": "commercial_design",
@@ -167,17 +176,20 @@ export default {
               ]
             }
           ],
-          "works_example": [
-          {
-            "id": 5,
-            "title": "日本高級超市 韭菜泡菜包裝設計",
-            "img_url": img_kimchi_1
-          }, 
-          {
-            "id": 8,
-            "title": "視覺與包裝｜創次方股份有限公司 名片設計",
-            "img_url": img_power_creation_business_card_1
-          }]
+          "works_example": {
+            "type": "commercial-design",
+            "workNumber": 5,
+            "exampleList": [{
+              "id": 5,
+              "title": "日本高級超市 韭菜泡菜包裝設計",
+              "img_url": img_kimchi_1
+            }, 
+            {
+              "id": 8,
+              "title": "視覺與包裝｜創次方股份有限公司 名片設計",
+              "img_url": img_power_creation_business_card_1
+            }]
+          }
         },
         {
           "id": "event_planning",
@@ -196,13 +208,15 @@ export default {
               ]
             }
           ],
-          "works_example": [
-            {
-              "id": 10, 
-              "title": "活動紀錄｜車床技術轉譯研究工作坊",
-              "img_url": img_wood_workshop_1
-            }
-          ]
+          "works_example": {
+            "type": "event-planning",
+            "workNumber": 1,
+            "exampleList": [{
+                "id": 10, 
+                "title": "活動紀錄｜車床技術轉譯研究工作坊",
+                "img_url": img_wood_workshop_1
+            }]
+          }
         }
       ],
       dataToBeRendered: {
@@ -247,17 +261,20 @@ export default {
             ]
           }
         ],
-        "works_example": [
-        {
-          "id": 1, 
-          "title": "產銷系統設計｜日本農產電商物流系統",
-          "img_url": img_vegibus_system
-        },
-        {
-          "id": 2,
-          "title": "機電整合開發｜自主移動機器人控制平台",
-          "img_url": img_mobilemover_app
-        }]
+        "works_example": {
+          "type": "system-development",
+          "workNumber": 2,
+          "exampleList": [{
+            "id": 1, 
+            "title": "產銷系統設計｜日本農產電商物流系統",
+            "img_url": img_vegibus_system
+          },
+          {
+            "id": 2,
+            "title": "機電整合開發｜自主移動機器人控制平台",
+            "img_url": img_mobilemover_app
+          }]
+        }
       },
       dataCard1: [
         {

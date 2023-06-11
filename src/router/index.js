@@ -28,13 +28,14 @@ const router = createRouter({
       meta: { title: `${KOHAKU} | Services` }
     },
     {
-      path: '/work',
+      path: '/work/:workType?',
       name: 'Work',
       component: WorkView,
+      props: true,
       meta: { title: `${KOHAKU} | Work` }
     },
     {
-      path: '/work/:id',
+      path: '/work/detail/:id',
       name: 'WorkDetail',
       component: WorkDetailView,
       props: true,

@@ -167,7 +167,6 @@ export default {
         selectService(id) {
             window.scrollTo(0, 0)
             this.activeBtn = id
-            this.filteredWork()
         },
     },
     computed: {
@@ -185,6 +184,11 @@ export default {
         }
     },
     mounted() {
+        if (this.$route.params.workType !== "") {
+            const filterType = this.$route.params.workType.replace("-", "_")
+            console.log(filterType)
+            this.activeBtn = filterType
+        }
         window.scrollTo(0, 0)
         this.checkViewportSize()
         window.addEventListener('resize', this.checkViewportSize)
