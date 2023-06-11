@@ -16,6 +16,7 @@ import m2LaboBusinessCardDesignCoverImageUrl from '@/assets/work/commercial_desi
 import takahataBusinessCardDesignCoverImageUrl from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
 import kimchiPackageDesignCoverImageUrl from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
 import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
+import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_workshop_1.jpeg'
 </script>
 
 <template>
@@ -578,7 +579,15 @@ export default {
         {
           name: '企劃發想與數位行銷',
           text: '企劃發想與數位行銷',
-          projects: []
+          projects: [
+            {
+              name: '活動紀錄｜車床技術轉譯研究工作坊',
+              description:
+                '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，執行影片剪輯、影像紀錄，並於活動結束當日上映，作為活動結尾。',
+              coverImageUrl: woodWorkshopCoverImageUrl,
+              workLink: '/work/10'
+            }
+          ]
         }
       ]
     }
