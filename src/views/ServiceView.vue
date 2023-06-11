@@ -496,7 +496,7 @@ import img_vegibus_system from '@/assets/work/system_development/vegibus/img_veg
 import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
 import img_trading_cover from '@/assets/services/trading/img_trading_cover.jpeg'
 import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
-import img_product_cover from '@/assets/services/product_design/img_product_cover.png'
+import img_product_cover from '@/assets/services/product_design/img_product_cover.jpeg'
 import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
 import img_commercial_design_cover from '@/assets/services/commercial_design/img_commercial_design_cover.jpeg'
 import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
