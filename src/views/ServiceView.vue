@@ -347,8 +347,9 @@ export default {
   },
   mounted() {
     if (this.$route.params.id !== "") {
-      this.selectService(this.$route.params.id)
-      this.activeBtn = this.$route.params.id
+      const serviceId = this.$route.params.id.replace("-", "_")
+      this.selectService(serviceId)
+      this.activeBtn = serviceId
     }
     this.checkViewportSize()
     window.addEventListener('resize', this.checkViewportSize)
