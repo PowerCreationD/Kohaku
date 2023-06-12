@@ -104,7 +104,7 @@ export default {
           value: 'info@kohakulab.com'
         },
         {
-          label: 'Business Time',
+          label: 'Business Hours',
           value: 'Mon~Fri / 10:00-19:00'
         },
         {
