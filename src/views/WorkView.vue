@@ -278,7 +278,7 @@ export default {
         -5vw 4px 0px 0px #F5F5F5,
         -5vw 20px 0px 0px #F5F5F5;         
 }
-@media screen and (width >= 1024px) {
+@media screen and (min-width: 1024px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -328,7 +328,7 @@ export default {
     }
 }
 
-@media screen and (767px <= width < 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -352,7 +352,7 @@ export default {
     }
 }
 
-@media screen and (width < 767px) {
+@media screen and (max-width: 766px) {
     .service-dropdown {
         
         position: sticky;

@@ -77,7 +77,7 @@ export default {
         }
     }
 }
-@media screen and (width >= 767px) { 
+@media screen and (min-width: 767px) { 
     .work-example-section {
         &__title {
             h1 {
@@ -136,7 +136,7 @@ export default {
         }
     }
 }
-@media screen and (width < 767px) { 
+@media screen and (max-width: 766px) { 
     .work-example-section {
         margin-top: 36px;
         &__title {
