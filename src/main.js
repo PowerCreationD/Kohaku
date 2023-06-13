@@ -6,6 +6,7 @@ import router from './router'
 
 const app = createApp(App)
 app.config.globalProperties.$mobileDeviceMaxWidth = 767
+app.config.globalProperties.$mobileTabletDeviceMaxWidth = 1267
 
 app.use(router)
 

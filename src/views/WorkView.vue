@@ -5,7 +5,7 @@
             <h1 class="title">WORK</h1>
             <div class="section__line-top"></div>
         </div>
-        <ServiceDropdown class="service-dropdown" v-if="isMobile" :options="serviceOptions" @select="selectService"/>
+        <ServiceDropdown class="service-dropdown" v-if="isMobile || isTablet" :options="serviceOptions" @select="selectService"/>
         <div v-else class="work__button_filter">
             <button class="work__nav_button all" @click="selectCategory('all')" :class="{active: activeBtn === 'all' }">全部</button>
             <button class="work__nav_button" @click="selectCategory('system_development')" :class="{active: activeBtn === 'system_development' }">系統設計 / 開發與維運</button>
@@ -34,6 +34,7 @@ export default {
     data() {
         return {
             isMobile: false,
+            isTablet: false,
             activeBtn: 'all',
             filteredWorkList: [],
             workList: [
@@ -163,6 +164,7 @@ export default {
         },
         checkViewportSize() {
             this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
+            this.isTablet = window.innerWidth < this.$mobileTabletDeviceMaxWidth
         },
         selectService(id) {
             window.scrollTo(0, 0)
@@ -240,7 +242,7 @@ export default {
     font-size: 16px;
     height: 46px;
     width: 192px;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 12px;
     border-style: none;
     border-radius: 71px;
@@ -248,6 +250,10 @@ export default {
     color: #000000;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+
+    &:first-child {
+        margin-left: 0px;
+    }
  
 }
 .active {
@@ -258,7 +264,23 @@ export default {
 .work__nav_button.all {
     width: 80px;
 }
-@media screen and (min-width: 834px) {
+.service-dropdown {
+        
+    position: sticky;
+    top: 96px;
+    z-index: 0;
+    background-color: #F5F5F5;
+    padding: 16px 0 0 0;
+    margin-bottom: 36px;
+    box-shadow: 0px 20px 0px 0px #F5F5F5, // down
+        5vw 0px 0px 0px #F5F5F5, // right
+        5vw 4px 0px 0px #F5F5F5,
+        5vw 20px 0px 0px #F5F5F5,
+        -5vw 0px 0px 0px #F5F5F5, // left
+        -5vw 4px 0px 0px #F5F5F5,
+        -5vw 20px 0px 0px #F5F5F5;         
+}
+@media screen and (width >= 1024px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -308,7 +330,7 @@ export default {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 834px) {
+@media screen and (767px < width < 1024px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -332,7 +354,7 @@ export default {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
     .service-dropdown {
         
         position: sticky;
