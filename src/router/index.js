@@ -26,76 +26,82 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
-      meta: { title: `${KOHAKU} | About` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '琥白我們珍惜人事物的原貌與初衷，保留價值核心、並為其增添輝光'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | About`, metaTags: [
+          {
+            property: 'og:description',
+            content: '琥白我們珍惜人事物的原貌與初衷，保留價值核心、並為其增添輝光'
+          }
+        ]
+      },
     },
     {
       path: '/services/:id?',
       name: 'Services',
       component: ServiceView,
       props: true,
-      meta: { title: `${KOHAKU} | Services` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '三大語言五大領域，以跨域整合思維，串連所有端點，匯聚不同服務的影響力'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | Services`, metaTags: [
+          {
+            property: 'og:description',
+            content: '三大語言五大領域，以跨域整合思維，串連所有端點，匯聚不同服務的影響力'
+          }
+        ]
+      },
     },
     {
       path: '/work/:workType?',
       name: 'Work',
       component: WorkView,
       props: true,
-      meta: { title: `${KOHAKU} | Work` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | Work`, metaTags: [
+          {
+            property: 'og:description',
+            content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
+          }
+        ]
+      },
     },
     {
       path: '/work/detail/:id',
       name: 'WorkDetail',
       component: WorkDetailView,
       props: true,
-      meta: { title: `${KOHAKU} | Work` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | Work`, metaTags: [
+          {
+            property: 'og:description',
+            content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
+          }
+        ]
+      },
     },
     {
       path: '/member',
       name: 'member',
       component: () => import('../views/MemberView.vue'),
-      meta: { title: `${KOHAKU} | Member` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '琥白的團隊組成從傳產到資訊、設計到科技，提供最全面且獨到的見解'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | Member`, metaTags: [
+          {
+            property: 'og:description',
+            content: '琥白的團隊組成從傳產到資訊、設計到科技，提供最全面且獨到的見解'
+          }
+        ]
+      },
     },
     {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
-      meta: { title: `${KOHAKU} | Contact` },
-      metaTags: [
-        {
-          property: 'og:description',
-          content: '琥白擅於結合設計力與資訊力！歡迎聯繫我們拓展產業的無限可能！'
-        }
-      ]
+      meta: {
+        title: `${KOHAKU} | Contact`, metaTags: [
+          {
+            property: 'og:description',
+            content: '琥白擅於結合設計力與資訊力！歡迎聯繫我們拓展產業的無限可能！'
+          }
+        ]
+      },
     },
   ],
   scrollBehavior() {
@@ -103,16 +109,33 @@ const router = createRouter({
   },
 })
 
-router.afterEach(async (to) => {
+router.beforeEach(async (to) => {
   document.title = to.meta.title;
   const metaTags = to.meta.metaTags
   metaTags.map((tagDef) => {
-    let meta = document.createElement('meta');
-    Object.keys(tagDef).forEach(key => {
-      meta.setAttribute(key, tagDef[key]);
-      document.getElementsByTagName('head')[0].appendChild(meta);
-    })
+    const metas = document.getElementsByTagName('meta');
+    let metaFlag = false;
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('property') === 'og:description') {
+        if (metas[i].getAttribute('content')) {
+          metaFlag = true;
+        }
+      }
+    }
+    if (!metaFlag) {
+      let meta = document.createElement('meta');
+      Object.keys(tagDef).forEach(key => {
+        meta.setAttribute(key, tagDef[key]);
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      })
+    } else {
+      Object.keys(tagDef).forEach(key => {
+        document.head.querySelector('meta[property="og:description"]').content = tagDef[key]
+      })
+    }
+
   });
-});
+})
+
 
 export default router
