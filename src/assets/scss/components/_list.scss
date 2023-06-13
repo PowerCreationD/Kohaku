@@ -1,0 +1,23 @@
+@use 'variable' as var;
+@use 'typography' as typography;
+
+.list {
+  @include typography.font($index: 7);
+  list-style-position: inside;
+  padding-left: 20px;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    padding-left: 8px;
+  }
+
+  &--disc {
+    list-style-type: disc;
+  }
+
+  &--circle {
+    list-style-type: circle;
+  }
+
+  &__item {
+  }
+}

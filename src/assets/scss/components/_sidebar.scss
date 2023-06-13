@@ -1,0 +1,47 @@
+@use 'variable' as var;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 128px 40px 0 40px;
+
+  &__big-logo {
+    height: 48px;
+    margin-bottom: 46px;
+  }
+
+  &__link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 38px;
+  }
+
+  &__link-divider {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid map-get(var.$color--primary, gold);
+    margin-bottom: 18px;
+  }
+
+  &__navigation-link {
+    margin: 0 0 18px 0;
+  }
+
+  &__hamburger-menu {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+  }
+}
