@@ -1,0 +1,76 @@
+@use 'variable' as var;
+@use 'typography' as typography;
+
+.link {
+  @include typography.font($index: 6);
+  line-height: unset;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  color: map-get(var.$color--primary, gold);
+  word-break: keep-all;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 7px 8px;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    padding: 5px 6px;
+  }
+
+  &:hover {
+    border-bottom-color: map-get(var.$color--primary, gold);
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
+
+  &--no-underline {
+    padding: 0;
+    border: none;
+
+    &:hover,
+    &:active {
+      border: none;
+    }
+  }
+
+  &--text-black {
+    @include typography.font($index: 7);
+    color: map-get(var.$color--primary, black);
+
+    &:hover,
+    &:active {
+      color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--text-white {
+    @include typography.font($index: 7);
+    color: map-get(var.$color--primary, white);
+
+    &:hover,
+    &:active {
+      color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: auto;
+    height: 17px;
+    margin: 0 0 0 8px;
+    stroke: map-get(var.$color--primary, gold);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: 12px;
+    }
+  }
+}

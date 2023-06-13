@@ -1,0 +1,58 @@
+@use 'variable' as var;
+@use 'typography' as typography;
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: var.$large-header-height;
+  background-color: map-get(var.$color--primary, white);
+  box-shadow: map-get(var.$box-shadow, 1);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    height: var.$small-header-height;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: fit-content;
+    height: fit-content;
+
+    &--left {
+      padding: 0 0 0 var.$large-header-left-padding;
+
+      @media (max-width: var.$mobile-device-max-width) {
+        padding: 0 0 0 var.$small-header-left-padding;
+      }
+    }
+
+    &--right {
+      flex-grow: 1;
+      padding: 0 var.$large-header-right-padding 0 0;
+
+      @media (max-width: var.$mobile-device-max-width) {
+        padding: 0 var.$small-header-right-padding 0 0;
+      }
+    }
+  }
+
+  &__navigation-link {
+    margin: 0 min(64px, 6% - 10px) 0 0;
+  }
+
+  &__big-logo {
+    height: 48px;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: 34px;
+    }
+  }
+}

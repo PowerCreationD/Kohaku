@@ -1,0 +1,22 @@
+@use 'typography' as typography;
+@use 'variable' as var;
+
+.page-title {
+  display: flex;
+  margin-bottom: 60px;
+
+  &__name {
+    margin: 0 40px 0 0;
+    @include typography.font($index: 1);
+  }
+
+  &__space {
+    border-top: 1px solid map-get(var.$color, grey-3);
+    flex-grow: 1;
+    margin-top: 7px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+}

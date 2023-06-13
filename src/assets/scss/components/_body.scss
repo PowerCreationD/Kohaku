@@ -1,0 +1,6 @@
+@use 'variable' as var;
+
+body {
+  background-color: map-get(var.$color, white);
+  margin: 0;
+}

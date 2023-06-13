@@ -3,13 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "run-p -slrn dev:server dev:scss dev:css",
+    "dev:server": "vite",
+    "dev:scss": "sass src/assets/scss/style.scss src/assets/style.css --style=compressed -w",
+    "dev:css": "postcss src/assets/style.css -o src/assets/style.css -w --use autoprefixer --verbose",
+    "build": "run-s -sln build:scss build:css build:server",
+    "build:server": "vite build",
+    "build:scss": "sass src/assets/scss/style.scss src/assets/style.css --style=compressed",
+    "build:css": "postcss src/assets/style.css -o src/assets/style.css --use autoprefixer",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
@@ -17,9 +24,17 @@
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.2.1",
     "@vue/eslint-config-prettier": "^7.1.0",
+    "autoprefixer": "^10.4.14",
+    "dotenv": "^16.1.4",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
     "prettier": "^2.8.8",
-    "vite": "^4.3.4"
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.0",
+    "scss-reset": "^1.4.2",
+    "vite": "^4.3.9"
   }
 }

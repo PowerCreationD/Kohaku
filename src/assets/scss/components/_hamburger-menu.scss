@@ -1,0 +1,29 @@
+@use 'variable' as var;
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--rotated {
+    transform: rotate(90deg);
+  }
+
+  &__line {
+    width: 12px;
+    height: 1px;
+    background-color: map-get(var.$color--primary, charcoal);
+    border-radius: 1px;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
