@@ -19,7 +19,7 @@
                 <router-link :to="{ name: 'WorkDetail', params: { id: work.id } }">
                     <img :src="work.img_url" alt="" >
                 </router-link>
-                <p>{{ work.name }}</p>
+                <p @click="goToDetailPage(work.id)">{{ work.name }}</p>
             </div>
         </div>
     </div>
@@ -170,6 +170,9 @@ export default {
             window.scrollTo(0, 0)
             this.activeBtn = id
         },
+        goToDetailPage(itmId) {
+            this.$router.push({ name: 'WorkDetail', params: { id: itmId } })
+        }
     },
     computed: {
         filteredWork() {
@@ -298,6 +301,7 @@ export default {
             p {
                 margin-top: 12px;
                 @include typography.font($index: 7);
+                cursor: pointer;
             }
         }
         div.item-between {
@@ -347,6 +351,7 @@ export default {
             p {
                 margin-top: 12px;
                 @include typography.font($index: 7);
+                cursor: pointer;
             }
         }
     }
@@ -388,6 +393,7 @@ export default {
             p {
                 margin-top: 12px;
                 @include typography.font($index: 7);
+                cursor: pointer;
             }
         }
     }

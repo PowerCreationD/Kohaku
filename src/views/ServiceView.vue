@@ -379,6 +379,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/components/typography' as typography;
+@use '../assets/scss/components/variable' as var;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
   font-family: 'Ubuntu', Helvetica;
@@ -397,8 +398,9 @@ export default {
     }
 
     &__navbar-button {
+      @include typography.font($index: 7);
+      color: map-get(var.$color, black);
       background-color: #FFFFFF;
-      font-size: 16px;
       padding: 12px 0px;
       width: 100%;
       border: none;

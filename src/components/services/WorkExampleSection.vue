@@ -15,7 +15,7 @@
                 <div class="work-example-section__example-item">
                     <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.id)"/>
                 </div>
-                <p>{{ itm.title }}</p>
+                <p @click="goToDetailPage(itm.id)">{{ itm.title }}</p>
             </div>
         </div>
         <router-link v-if="workData['workNumber'] > 2" 
@@ -74,6 +74,7 @@ export default {
     &__display {
         p {
             @include typography.font($index: 7);
+            cursor: pointer;
         }
     }
 }
