@@ -186,7 +186,7 @@ export default {
             }, 
             {
               "id": 8,
-              "title": "視覺與包裝｜創次方股份有限公司 名片設計",
+              "title": "視覺與包裝｜M2Labo名片設計",
               "img_url": img_power_creation_business_card_1
             }]
           }
