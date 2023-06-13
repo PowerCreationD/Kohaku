@@ -85,11 +85,9 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
             v-if="isMobileDevice"
           />
         </div>
-        <img
-          class="image home-concept-section__image"
-          :src="conceptSectionImageUrl"
-          v-if="!isMobileDevice"
-        />
+        <div class="container home-concept-section__image-container" v-if="!isMobileDevice">
+          <img class="image home-concept-section__image" :src="conceptSectionImageUrl" />
+        </div>
       </div>
     </div>
     <div class="home__section home-solution-section">
