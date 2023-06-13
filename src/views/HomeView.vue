@@ -566,13 +566,6 @@ export default {
                 '於西日本JR地方車站建置無人商店，自陳設、空間、至店內視覺經一致性統籌規劃，兼具舒適感及實用的平衡，達到自在便利的購物體驗。',
               coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
               workLink: '/work/6'
-            },
-            {
-              name: '廣島Fresta與SOGO超市攤位設計',
-              description:
-                '於西日本JR地方車站建置無人商店，自陳設、空間、至店內視覺經一致性統籌規劃，兼具舒適感及實用的平衡，達到自在便利的購物體驗。',
-              coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
-              workLink: '/work/6'
             }
           ]
         },
