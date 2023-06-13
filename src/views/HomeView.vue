@@ -1,6 +1,6 @@
 <script setup>
 import titleSectionBackgroundImageUrl from '@/assets/home_title_section_background.png'
-import titleSectionMobileBackgroundImageUrl from '@/assets/home_title_section_background_mobile_version.png'
+import titleSectionMobileBackgroundImageUrl from '@/assets/home_title_section_background_mobile_version.svg'
 import researchSectionBackgroundImageUrl from '@/assets/home_research_section_background.png'
 import researchSectionMobileBackgroundImageUrl from '@/assets/home_research_section_background_mobile_version.png'
 import conceptSectionImageUrl from '@/assets/home_concept_section_image.png'
