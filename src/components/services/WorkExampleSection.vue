@@ -77,7 +77,7 @@ export default {
         }
     }
 }
-@media screen and (min-width: 767px) { 
+@media screen and (width >= 767px) { 
     .work-example-section {
         &__title {
             h1 {
@@ -129,12 +129,14 @@ export default {
         }
 
         &__more-arrow {
-            width: 103px;
-            margin-left: min(calc(100% - 103px), 746px);
+            width: max-content;
+            padding: 0;
+            margin-top: 6px;
+            margin-left: min(calc(100% - 87px), 759px);
         }
     }
 }
-@media screen and (max-width: 767px) { 
+@media screen and (width < 767px) { 
     .work-example-section {
         margin-top: 36px;
         &__title {
@@ -185,7 +187,9 @@ export default {
         }
         &__more-arrow {
             margin-top: 16px;
-            align-self: flex-end;
+            padding: 0;
+            width: max-content;
+            margin-left: calc(100% - 75px);
         }
 
     }

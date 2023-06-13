@@ -181,14 +181,12 @@ export default {
                 const filteredWorkList = this.workList.filter(work => work.tag.includes(this.activeBtn))
                 const addStyleFilteredWorkList = this.addStyle(filteredWorkList)
                 return addStyleFilteredWorkList
-                // console.log(filtered)
             }
         }
     },
     mounted() {
         if (this.$route.params.workType !== "") {
             const filterType = this.$route.params.workType.replace("-", "_")
-            console.log(filterType)
             this.activeBtn = filterType
         }
         window.scrollTo(0, 0)
@@ -330,7 +328,7 @@ export default {
     }
 }
 
-@media screen and (767px < width < 1024px) {
+@media screen and (767px <= width < 1024px) {
     .work__display_area {
         display: flex;
         flex-direction: row;
@@ -354,7 +352,7 @@ export default {
     }
 }
 
-@media screen and (width <= 767px) {
+@media screen and (width < 767px) {
     .service-dropdown {
         
         position: sticky;
