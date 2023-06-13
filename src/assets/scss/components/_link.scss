@@ -10,6 +10,7 @@
   width: fit-content;
   height: fit-content;
   color: map-get(var.$color--primary, gold);
+  word-break: keep-all;
   text-decoration: none;
   background-color: transparent;
   border: 1px solid transparent;
