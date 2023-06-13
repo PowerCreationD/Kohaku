@@ -50,7 +50,9 @@
 
   &__image {
     flex-shrink: 1;
+    align-self: flex-start;
     width: min(35vw, 514px);
+    height: auto;
     object-fit: cover;
 
     @media (max-width: var.$mobile-device-max-width) {

@@ -64,6 +64,7 @@
   }
 
   &__icon {
+    width: auto;
     height: 17px;
     margin: 0 0 0 8px;
     stroke: map-get(var.$color--primary, gold);
