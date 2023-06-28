@@ -16,6 +16,10 @@ const router = createRouter({
         title: `${KOHAKU}`,
         metaTags: [
           {
+            property: 'og:title',
+            content: '琥白Kohaku'
+          },
+          {
             property: 'og:description',
             content: '琥白為跨領域團隊，擅於提供科技設計的跨域解方。從系統設計開發、國內國際貿易、產品設計量產、品牌形象與視覺設計、企劃發想與活動策劃，解決客戶最真實的需求'
           }
@@ -27,7 +31,12 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: `${KOHAKU} | About`, metaTags: [
+        title: `${KOHAKU} | About`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | About'
+          },
           {
             property: 'og:description',
             content: '琥白我們珍惜人事物的原貌與初衷，保留價值核心、並為其增添輝光'
@@ -41,7 +50,12 @@ const router = createRouter({
       component: ServiceView,
       props: true,
       meta: {
-        title: `${KOHAKU} | Services`, metaTags: [
+        title: `${KOHAKU} | Services`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | Services'
+          },
           {
             property: 'og:description',
             content: '三大語言五大領域，以跨域整合思維，串連所有端點，匯聚不同服務的影響力'
@@ -55,7 +69,12 @@ const router = createRouter({
       component: WorkView,
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`, metaTags: [
+        title: `${KOHAKU} | Work`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | Work'
+          },
           {
             property: 'og:description',
             content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
@@ -69,7 +88,12 @@ const router = createRouter({
       component: WorkDetailView,
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`, metaTags: [
+        title: `${KOHAKU} | Work`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | Work'
+          },
           {
             property: 'og:description',
             content: '從電商系統開發、書籍裝幀設計、傢俱產品設計到農產品進出口都有琥白的實績'
@@ -82,7 +106,12 @@ const router = createRouter({
       name: 'member',
       component: () => import('../views/MemberView.vue'),
       meta: {
-        title: `${KOHAKU} | Member`, metaTags: [
+        title: `${KOHAKU} | Member`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | Member'
+          },
           {
             property: 'og:description',
             content: '琥白的團隊組成從傳產到資訊、設計到科技，提供最全面且獨到的見解'
@@ -95,7 +124,12 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
       meta: {
-        title: `${KOHAKU} | Contact`, metaTags: [
+        title: `${KOHAKU} | Contact`,
+        metaTags: [
+          {
+            property: 'og:title',
+            content: '琥白Kohaku | Contact'
+          },
           {
             property: 'og:description',
             content: '琥白擅於結合設計力與資訊力！歡迎聯繫我們拓展產業的無限可能！'
@@ -130,7 +164,7 @@ router.beforeEach(async (to) => {
       })
     } else {
       Object.keys(tagDef).forEach(key => {
-        document.head.querySelector('meta[property="og:description"]').content = tagDef[key]
+        document.head.querySelector(`meta[property="${tagDef.property}"]`).content = tagDef[key]
       })
     }
 
