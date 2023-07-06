@@ -6,6 +6,11 @@
   font-weight: map-get(var.$font-weight, $index);
   line-height: map-get(var.$line-height, $index);
 
+  &::selection {
+    color: map-get(var.$color--primary, white);
+    background: map-get(var.$color--primary, gold);
+  }
+
   @media (max-width: #{var.$mobile-device-max-width}) {
     font-size: map-get(var.$font-size--mobile, $index);
     font-weight: map-get(var.$font-weight--mobile, $index);
