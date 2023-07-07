@@ -86,14 +86,14 @@
       -webkit-line-clamp: 4;
     }
 
-    @media (max-width: 1000px) {
-      height: 65px;
-      -webkit-line-clamp: 3;
+    @media (max-width: 942px) {
+      height: 80px;
+      -webkit-line-clamp: 4;
     }
 
-    @media (max-width: 860px) {
-      height: 42px;
-      -webkit-line-clamp: 2;
+    @media (max-width: 800px) {
+      height: 62px;
+      -webkit-line-clamp: 3;
     }
 
     @media (max-width: var.$mobile-device-max-width) {
