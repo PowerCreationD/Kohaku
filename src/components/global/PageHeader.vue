@@ -22,6 +22,13 @@
         >
           {{ navigationLink.text }}
         </router-link>
+
+        <select v-model="$i18n.locale">
+          <option v-for="lang in languageOptions" :key="`Lang-${lang.value}`" :value="lang.value">
+            {{ lang.text }}
+          </option>
+        </select>
+
         <DropdownComponent :options="languageOptions" />
       </template>
     </div>
@@ -70,10 +77,18 @@ export default {
       ],
       languageOptions: [
         {
-          text: '中',
-          value: 'ch'
+          value: 'zh',
+          text: '中'
+        },
+        {
+          value: 'ja',
+          text: '日'
+        },
+        {
+          value: 'en',
+          text: 'En'
         }
-      ]
+      ],
     }
   },
   mounted() {
