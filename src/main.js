@@ -11,7 +11,7 @@ import errorimage from './assets/img_loading-background.jpg'
 // i18n
 import { createI18n } from 'vue-i18n/dist/vue-i18n.cjs'
 import zh from './locale/zh'
-import jp from './locale/jp'
+import ja from './locale/ja'
 import en from './locale/en'
 
 const app = createApp(App)
@@ -23,7 +23,7 @@ const i18n = createI18n({
   fallbackLocale: 'en',
   messages: {
     zh: zh,
-    jp: jp,
+    ja: ja,
     en: en
   }
 })
