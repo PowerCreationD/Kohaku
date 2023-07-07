@@ -91,12 +91,9 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
       </div>
     </div>
     <div class="home__section home-solution-section">
-      <div class="container home-solution-section__pin-and-title-and-small-title-container">
+      <div class="container home-solution-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-solution-section__title">SOLUTION</p>
-        <p class="font-7 home-solution-section__small-title" v-if="!isMobileDevice">
-          精金百煉的縝密洞見&nbsp;&nbsp;成就傳產革新的寬闊局面
-        </p>
+        <p class="font-1 home-solution-section__title">SOLUTION&nbsp;&nbsp;大格局的解方</p>
       </div>
       <div class="container home-solution-section__step-line-and-context-and-image-container">
         <div class="home__step-line home-solution-section__step-line">
@@ -105,9 +102,6 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
           ></StepLineArrowTipIcon>
         </div>
         <div class="container home-solution-section__context-container">
-          <p class="font-7 home-solution-section__small-title" v-if="isMobileDevice">
-            精金百煉的縝密洞見&nbsp;&nbsp;成就傳產革新的寬闊局面
-          </p>
           <div class="container home-solution-section__service-button-container">
             <button
               class="button button--text-only home-solution-section__service-button"
