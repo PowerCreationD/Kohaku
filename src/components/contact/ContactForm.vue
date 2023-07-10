@@ -447,8 +447,8 @@ export default {
                     </p>
                     <p style=" font-size:12px; margin:0;">
                         <span style="margin-right: 12px;">Homepage</span>
-                        <a href="https://kohakulab.com"
-                            style="text-decoration: none; color: #FFFFFF;">https://kohakulab.com</a>
+                        <a href="https://kohakustudio.co"
+                            style="text-decoration: none; color: #FFFFFF;">https://kohakustudio.co</a>
                     </p>
                 </footer>
             </div>
