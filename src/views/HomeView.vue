@@ -22,10 +22,10 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
 <template>
   <div class="home">
     <div class="home__section home-title-section">
-      <p class="font-2 home-title-section__title">RESEARCH x CONCEPT = SOLUTION</p>
+      <p class="font-2 home-title-section__title">想像 × 創造 × 未來</p>
       <p class="font-7 home-title-section__text">
-        如琥珀包覆萬物、經高壓而璀燦<br />
-        並以留白包容所有可能——
+        我們透過跨領域的技術服務<br />
+        在食農、工藝、製造與地方課題創造企業的永續價值
       </p>
       <img
         class="background-image home-title-section__background-image"
@@ -37,19 +37,15 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
     <div class="home__section home-research-section">
       <div class="container home-research-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-research-section__title">RESEARCH&nbsp;&nbsp;大量的研究</p>
+        <p class="font-1 home-research-section__title">RESEARCH&nbsp;&nbsp;深度</p>
       </div>
       <div class="container home-research-section__step-line-and-context-container">
         <div class="home__step-line home-research-section__step-line"></div>
         <div class="container home-research-section__context-container">
-          <p class="font-3 home-research-section__subtitle">
-            凝練條件、經驗與遠見<br />
-            鎖定真實的需求啟動改變
-          </p>
+          <p class="font-3 home-research-section__subtitle">洞察真實問題與需求</p>
           <p class="font-7 home-research-section__text">
-            如松脂包覆萬物、預備成就寶石<br />
-            琥白以大量的研究、跨域的思維支持客戶的初衷，<br />
-            為您的創新概念，考量落地發光的完備條件。
+            琥白以大量研究支持客戶的初衷，<br />
+            為您想要的改變，考量落地發光的完備條件。
           </p>
         </div>
       </div>
@@ -65,19 +61,15 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
     <div class="home__section home-concept-section">
       <div class="container home-concept-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-concept-section__title">CONCEPT&nbsp;&nbsp;大膽的概念</p>
+        <p class="font-1 home-concept-section__title">CONCEPT&nbsp;&nbsp;廣度</p>
       </div>
       <div class="container home-concept-section__step-line-and-context-and-image-container">
         <div class="home__step-line home-concept-section__step-line"></div>
         <div class="container home-concept-section__context-container">
-          <p class="font-3 home-concept-section__subtitle">
-            跳躍的思維打破成見<br />
-            五大專業的連結無遠弗屆
-          </p>
+          <p class="font-3 home-concept-section__subtitle">跨領域思維不落俗套</p>
           <p class="font-7 home-concept-section__text">
-            以寬廣的留白，包容對可能未來的一切想像，<br />
-            跨越資訊、機工、設計、貿易、創新領域的專業，<br />
-            將既有條件共構出開創性的新解。
+            琥白團隊成員來自不同專業知識背景<br />
+            與客戶從多元視角討論創新的雛形。
           </p>
           <img
             class="image home-concept-section__image"
@@ -93,7 +85,7 @@ import woodWorkshopCoverImageUrl from '@/assets/work/event_planning/img_wood_wor
     <div class="home__section home-solution-section">
       <div class="container home-solution-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-solution-section__title">SOLUTION&nbsp;&nbsp;大格局的解方</p>
+        <p class="font-1 home-solution-section__title">SOLUTION&nbsp;&nbsp;最佳解</p>
       </div>
       <div class="container home-solution-section__step-line-and-context-and-image-container">
         <div class="home__step-line home-solution-section__step-line">
