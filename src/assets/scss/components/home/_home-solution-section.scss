@@ -15,7 +15,7 @@
     height: $section-height--mobile;
   }
 
-  &__pin-and-title-and-small-title-container {
+  &__pin-and-title-container {
     display: flex;
     align-items: center;
   }
@@ -25,15 +25,6 @@
 
     @media (max-width: var.$mobile-device-max-width) {
       margin-left: 3vw;
-    }
-  }
-
-  &__small-title {
-    margin-left: 2vw;
-
-    @media (max-width: var.$mobile-device-max-width) {
-      margin-left: 0;
-      margin-bottom: 4vw;
     }
   }
 
