@@ -101,7 +101,7 @@ export default {
       companyInformation: [
         {
           label: 'Mail',
-          value: 'info@kohakulab.com'
+          value: 'info@kohakustudio.co'
         },
         {
           label: 'Business Hours',
