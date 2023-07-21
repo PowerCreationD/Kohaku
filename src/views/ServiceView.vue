@@ -341,6 +341,8 @@ export default {
   },
   methods: {
     selectService(id) {
+      let url_id = id.replace('_','-')
+      this.$router.replace(`/services/${url_id}`)
       window.scrollTo(0, 0)
       this.activeBtn = id
       const result = this.serviceData.filter(data => data["id"] === id)
