@@ -16,10 +16,10 @@
         </div>
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
-                <router-link :to="{ name: 'WorkDetail', params: { id: work.id } }">
+                <router-link :to="{ name: 'WorkDetail', params: { project: work.project } }">
                     <img :src="work.img_url" alt="" >
                 </router-link>
-                <p @click="goToDetailPage(work.id)">{{ work.name }}</p>
+                <p @click="goToDetailPage(work)">{{ work.name }}</p>
             </div>
         </div>
     </div>
@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import { computed } from 'vue'
 import ServiceDropdown from '../components/services/ServiceDropdown.vue'
 export default {
     components: { ServiceDropdown },
@@ -42,61 +41,71 @@ export default {
                     "id": 1,
                     "name": "產銷系統設計｜日本農產電商物流系統",
                     "img_url": img_vegibus_system,
-                    "tag": ["system_development"]
+                    "tag": ["system_development"],
+                    "project": "e-commerce-and-logistics-system"
                 },
                 {
                     "id": 2,
                     "name": "機電整合開發｜自主移動機器人控制平台",
                     "img_url": img_mobilemover_app,
-                    "tag": ["system_development"]
+                    "tag": ["system_development"],
+                    "project": "autonomous-mobile-robot"
                 },
                 {
                     "id": 3,
                     "name": "書籍與裝幀｜木工藝工具書",
                     "img_url": img_woodwork_1,
-                    "tag": ["commercial_design"]
+                    "tag": ["commercial_design"],
+                    "project": "woodworking-craft-tool-guide"
                 },
                 {
                     "id": 4,
                     "name": "傢俱設計｜慕廂－優雅收移的實木家具",
                     "img_url": img_kizuna_1,
-                    "tag": ["product_design"]
+                    "tag": ["product_design"],
+                    "project": "mu-maison"
                 },
                 {
                     "id": 5,
                     "name": "日本高級超市 韭菜泡菜包裝設計",
                     "img_url": img_kimchi_1,
-                    "tag": ["commercial_design"]
+                    "tag": ["commercial_design"],
+                    "project": "leek-kimchi"
                 },
                 {
                     "id": 6,
                     "name": "商空與展櫃｜廣島三原車站無人商店",
                     "img_url": img_hiroshima_station_1,
-                    "tag": ["commercial_design"]
+                    "tag": ["commercial_design"],
+                    "project": "hiroshima-miyajima-station"
                 },
                 {
                     "id": 7,
                     "name": "高畠市役場名片設計",
                     "img_url": img_takahata_business_card_1,
-                    "tag": ["commercial_design"]
+                    "tag": ["commercial_design"],
+                    "project": "takahata-business-card-design"
                 },
                 {
                     "id": 8,
                     "name": "視覺與包裝｜M2Labo名片設計",
                     "img_url": img_power_creation_business_card_1,
-                    "tag": ["commercial_design"]
+                    "tag": ["commercial_design"],
+                    "project": "m2labo-business-card-design"
                 },
                 {
                     "id": 9,
                     "name": "日本外銷｜出口屏東台農金鑽鳳梨",
                     "img_url": img_pineapple_1,
-                    "tag": ["trading"]
+                    "tag": ["trading"],
+                    "project": "exporting-pineapples"
                 },
                 {
                     "id": 10,
                     "name": "活動紀錄｜車床技術轉譯研究工作坊",
                     "img_url": img_wood_workshop_1,
-                    "tag": ["event_planning"]
+                    "tag": ["event_planning"],
+                    "project": "lathe-machine-workshop"
                 }
             ],
             serviceOptions: [
@@ -130,6 +139,12 @@ export default {
     methods: {
         selectCategory(type) {
             this.activeBtn = type
+            if(type === 'all') {
+                this.$router.push({ name: 'Work'})
+            }else{
+                type = type.replace('_',"-")
+                this.$router.replace({query: { type: type }})
+            }
         },
         addStyle(workList){
             workList.forEach((work, index) => {
@@ -170,8 +185,8 @@ export default {
             window.scrollTo(0, 0)
             this.activeBtn = id
         },
-        goToDetailPage(itmId) {
-            this.$router.push({ name: 'WorkDetail', params: { id: itmId } })
+        goToDetailPage(work) {
+            this.$router.push({ name: 'WorkDetail', params: { project: work.project }})
         }
     },
     computed: {
@@ -188,8 +203,8 @@ export default {
         }
     },
     mounted() {
-        if (this.$route.params.workType !== "") {
-            const filterType = this.$route.params.workType.replace("-", "_")
+        if (this.$route.query.type) {
+            const filterType = this.$route.query.type.replace("-", "_")
             this.activeBtn = filterType
         }
         window.scrollTo(0, 0)

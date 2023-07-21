@@ -64,7 +64,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/work/:workType?',
+      path: '/work/:type?',
       name: 'Work',
       component: WorkView,
       props: true,
@@ -83,7 +83,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/work/detail/:id',
+      path: '/work/:project',
       name: 'WorkDetail',
       component: WorkDetailView,
       props: true,

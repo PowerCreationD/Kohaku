@@ -1,7 +1,7 @@
 <template>
   <div class="work_detail__background">
     <div class="work_detail">
-        <WorkDetailHeader :headerData="workDetail[id]" />
+        <WorkDetailHeader :headerData="workDetail[project]" />
         <component :is="type" :contentData="selectContentData" />
         <button class="work_detail__return-btn" @click="returnWorkPage">返回</button>
     </div>
@@ -15,13 +15,13 @@ import LayoutType2 from "../components/work/LayoutType2.vue"
 import LayoutType3 from "../components/work/LayoutType3.vue"
 
 export default {
-    props: ["id"],
+    props: ['project'],
     components: { WorkDetailHeader, LayoutType1, LayoutType2, LayoutType3 },
     data() {
         return {
             isMobile: false,
             workDetail: {
-                1: {
+                'e-commerce-and-logistics-system': {
                     "type": "LayoutType2",
                     "name": "產銷系統設計｜日本農產電商物流系統",
                     "tags": ["#系統開發", "#前端開發", "#網站介面設計"],
@@ -76,13 +76,13 @@ export default {
                         }
                     ]
                 },
-                2: {
+                "autonomous-mobile-robot": {
                     "type": "LayoutType1",
                     "name": "機電整合開發｜自主移動機器人控制平台",
                     "tags": ["#嵌入式系統開發", "#前端開發", "#網站介面設計"],
                     "paragraph": "因應農村高齡化勞動力短缺、農業精緻化管理繁瑣等情境，提出農用自走車 —— Mobile Mover，以智慧農機作為未來解方，配合作物管理週期，實現壓草、除草、投藥、收成搬運等全功能農務支援。農用機電整合技術同時考量農場地域模型建構、地圖路徑分析、便利易用的掌上操作系統，並設計以銀髮農戶為對象適應系統的轉型服務流，為農場主減輕經營負擔。"
                 },
-                3: {
+                "woodworking-craft-tool-guide": {
                     "type": "LayoutType2",
                     "name": "書籍與裝幀｜木工藝工具書",
                     "tags": ["#裝幀設計", "#視覺設計", "#插畫設計"],
@@ -102,13 +102,13 @@ export default {
                         }
                     ],
                 },
-                4: {
+                "mu-maison": {
                     "type": "LayoutType3",
                     "name": "傢俱設計｜慕廂－優雅收移的實木家具",
                     "tags": ["#家具設計", "#產品設計"],
                     "paragraph": "回應當代對室內工作空間靈活、共享等流動性訴求，慕廂收束實木家具的量體，以逐一靠攏的動作取代拆裝，輕鬆的收合桌、椅與邊櫃，並實現優雅不費力的平面推移。"
                 },
-                5: {
+                "leek-kimchi": {
                     "type": "LayoutType2",
                     "name": "日本高級超市 韭菜泡菜包裝設計",
                     "tags": ["#包裝設計", "#視覺設計"],
@@ -125,7 +125,7 @@ export default {
                         }
                     ]
                 },
-                6: {
+                "hiroshima-miyajima-station": {
                     "type": "LayoutType2",
                     "name": "商空與展櫃｜廣島三原車站無人商店",
                     "tags": ["#空間設計", "#視覺設計"],
@@ -151,7 +151,7 @@ export default {
                         }
                     ]
                 },
-                7: {
+                "takahata-business-card-design": {
                     "type": "LayoutType2",
                     "name": "高畠市役場名片設計",
                     "tags": ["#名片設計", "#視覺設計"],
@@ -165,7 +165,7 @@ export default {
                         }
                     ]
                 },
-                8: {
+                "m2labo-business-card-design": {
                     "type": "LayoutType2",
                     "name": "視覺與包裝｜M2Labo名片設計",
                     "tags": ["#名片設計", "#視覺設計"],
@@ -179,7 +179,7 @@ export default {
                         }
                     ]
                 },
-                9: {
+                "exporting-pineapples": {
                     "type": "LayoutType2",
                     "name": "日本外銷｜出口屏東台農金鑽鳳梨",
                     "tags": ["#國際貿易", "#外銷服務"],
@@ -199,7 +199,7 @@ export default {
                         }
                     ]
                 },
-                10: {
+                "lathe-machine-workshop": {
                     "type": "LayoutType2",
                     "name": "活動紀錄｜車床技術轉譯研究工作坊",
                     "tags": ["#活動紀錄", "#影片剪輯", "#腳本企劃"],
@@ -224,7 +224,7 @@ export default {
     },
     methods: {
         returnWorkPage() {
-            this.$router.push({ name: 'Work', params: { workType: "" } })
+            this.$router.push({ name: 'Work'})
         },
         checkViewportSize() {
             this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth
@@ -232,13 +232,13 @@ export default {
     },
     computed: {
         type() {
-            return this.workDetail[this.id].type
+            return this.workDetail[this.project].type
         },
         selectContentData(){
-            if (this.id == 1 && this.isMobile) {
-                return this.workDetail[this.id].mobileContent
+            if (this.project === 'e-commerce-and-logistics-system' && this.isMobile) {
+                return this.workDetail[this.project].mobileContent
             }
-            return this.workDetail[this.id].content
+            return this.workDetail[this.project].content
         }
     },
     mounted() {

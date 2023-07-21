@@ -20,7 +20,7 @@
         </div>
         <router-link v-if="workData['workNumber'] > 2" 
                     class="link work-example-section__more-arrow" 
-                    :to="{ name: 'Work', params: { workType: workData.type }  }">
+                    :to="{ name: 'Work', params: { type: workData.type }  }">
             查看更多<MoreArrowIcon class="link__icon"/>
         </router-link>
     </div>
