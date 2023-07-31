@@ -1,4 +1,13 @@
 const locale = {
+    global: {
+        buttons: {
+            next: 'Next',
+            prev: 'Previous',
+            back: "Back",
+            close: "Close",
+            submit_form: 'Submit Form'
+        }
+    },
     about: {
         description: {
             introduction: `Kohaku Studio was founded between 2021 and 2022.
@@ -58,6 +67,41 @@ const locale = {
                 content: [`We collaborated with "株式会社CuboRex" and acquired product distribution rights.`]
             }
         ]
+    },
+    contact: {
+        introduction: {
+            title: `Welcome to share your wildest ideas with Kohaku.
+            We will transform your small sparks of inspiration into brilliant solutions!`,
+            description: `Please provide us with detailed information about your industry needs and your provision.
+            We will get in touch with you asap!`
+        },
+        form: {
+            project_type: 'Project Type',
+            project_types: {
+                planning: 'Event Planning and Proposal',
+                system: 'System Design / Development and Maintenance',
+                trade: 'Domestic / International Trading',
+                product: 'Product Design and Production',
+                design: 'Brand Identity and Visual Design',
+            },
+            budget: 'Budget',
+            estimated_project_time: 'Estimated Project Time',
+            project_content_overview: 'Project Content Overview',
+            contact_person: 'Contact Person',
+            company_brand_name: 'Company / Brand Name',
+            contact_number: 'Contact Number',
+            contact_email: 'Contact Email',
+            validation: {
+                required: "This field is required",
+                mail_format: "Please enter a valid email format"
+            }
+        },
+        popup: {
+            confirm_submit: "Confirm Submit",
+            submit_form_confirmation: "Are you sure you want to submit the form?",
+            thank_you: "Thank You!",
+            form_confirmation_message: "We have received your response and will send a confirmation to the contact email you provided."
+        }
     }
 }
 export default locale
