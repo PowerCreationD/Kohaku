@@ -15,37 +15,21 @@
 <style src="@/assets/scss/components/_milestone.scss" scoped></style>
 
 <script>
+import zh from '@/locale/zh'
+import ja from '@/locale/ja'
+import en from '@/locale/en'
+
 export default {
   name: 'milestoneComponent',
-  data() {
-    return {
-      milestone: [
-        {
-          date: '2021/09',
-          content: [
-            '與「株式会社エムスクエア・ラボ（m2labo）」、「株式会社やさいバス（Vegibus）」合作並獲其投資',
-            '成立創次方股份有限公司'
-          ]
-        },
-        {
-          date: '2022/04',
-          content: ['獲111年度教育部「U-start創新創業計畫」第一階段補助']
-        },
-        {
-          date: '2022/07',
-          content: ['成立琥白股份有限公司']
-        },
-        {
-          date: '2022/08',
-          content: [
-            '與「スズキ株式会社（Suzuki）」、「株式会社エムスクエア・ラボ（m2labo）」合作，共同開發MobileMover'
-          ]
-        },
-        {
-          date: '2023/03',
-          content: ['與「株式会社CuboRex」合作，取得產品代理權']
-        }
-      ]
+  computed: {
+    milestone() {
+      if (this.$i18n.locale === 'zh') {
+        return zh.about.milestone
+      } else if (this.$i18n.locale === 'ja') {
+        return ja.about.milestone
+      } else {
+        return en.about.milestone
+      }
     }
   }
 }
