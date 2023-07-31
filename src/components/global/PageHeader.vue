@@ -22,14 +22,7 @@
         >
           {{ navigationLink.text }}
         </router-link>
-
-        <select v-model="$i18n.locale">
-          <option v-for="lang in languageOptions" :key="`Lang-${lang.value}`" :value="lang.value">
-            {{ lang.text }}
-          </option>
-        </select>
-
-        <DropdownComponent :options="languageOptions" />
+        <DropdownComponent @selectOption="selectLanguageOption" :options="languageOptions" />
       </template>
     </div>
     <HeaderSidebar
@@ -88,7 +81,7 @@ export default {
           value: 'en',
           text: 'En'
         }
-      ],
+      ]
     }
   },
   mounted() {
@@ -110,6 +103,9 @@ export default {
     },
     closeSidebar() {
       this.sidebarOpen = false
+    },
+    selectLanguageOption(selectedOption) {
+      this.$i18n.locale = selectedOption.value
     }
   }
 }
