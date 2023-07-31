@@ -21,13 +21,16 @@
   margin-right: 72px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 
   &__title {
     margin-bottom: 24px;
+    white-space: pre-line;
     @include typography.font($index: 3);
   }
 
   &__desc {
+    white-space: pre-line;
     @include typography.font($index: 7);
   }
 

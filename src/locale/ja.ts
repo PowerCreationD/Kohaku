@@ -1,4 +1,13 @@
 const locale = {
+    global: {
+        buttons: {
+            next: "次へ",
+            prev: "前へ",
+            back: "戻る",
+            close: "閉じる",
+            submit_form: "送信する"
+        }
+    },
     about: {
         description: {
             introduction: `琥白（コハク）の物語は、2021と2022の間に、分野横断の若者達から始まりました
@@ -58,6 +67,40 @@ const locale = {
                 content: ['「株式会社雨風太陽」と業務連携し、ポケットマルシェのデザインを受託']
             }
         ]
+    },
+    contact: {
+        introduction: {
+            title: `どんな要望でも大歓迎！
+            私たちにお気軽にお問い合わせください。`,
+            description: `ご要望やりクエスト等ございましたら、下記フォームにご記入いただき、担当者よりご連絡いたします。`
+        },
+        form: {
+            project_type: 'プロジェクトタイプ',
+            project_types: {
+                planning: '企画発想とイベント実行',
+                system: 'システム設計 / 開発と運用',
+                trade: '国際貿易サービス',
+                product: 'プロダクトデザイン',
+                design: 'グラフィックデザイン',
+            },
+            budget: '予算',
+            estimated_project_time: 'プロジェクト予定期間',
+            project_content_overview: '内容説明',
+            contact_person: '担当者',
+            company_brand_name: '会社名',
+            contact_number: '電話番号',
+            contact_email: 'メールアドレス',
+            validation: {
+                required: '入力されていません',
+                mail_format: "メールアドレスが正しくありません"
+            },
+        },
+        popup: {
+            confirm_submit: "確認送信",
+            submit_form_confirmation: "フォームを送信してもよろしいですか？",
+            thank_you: "ありがとうございます！",
+            form_confirmation_message: "ご返信を受け取りました。入力された連絡先のメールアドレスに確認メールを送信します。"
+        }
     }
 }
 export default locale
