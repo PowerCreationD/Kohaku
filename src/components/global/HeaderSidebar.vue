@@ -25,7 +25,11 @@ import backgroundImageUrl from '@/assets/sidebar.png'
         <hr class="sidebar__link-divider" />
       </template>
     </div>
-    <DropdownComponent :options="languageOptions" />
+    <DropdownComponent
+      @selectOption="changeLanguageHandler"
+      :options="languageOptions"
+      :defaultIndex="defaultLocal"
+    />
   </div>
 </template>
 
@@ -45,6 +49,9 @@ export default {
     },
     languageOptions: {
       type: Object
+    },
+    defaultLocal:{
+      type: Number
     }
   },
   emits: ['update:sidebarOpen'],
@@ -55,6 +62,10 @@ export default {
     },
     closeSidebar() {
       this.$emit('update:sidebarOpen', false)
+    },
+    changeLanguageHandler(selectedOption) {
+      this.$emit('changeLanguage', selectedOption);
+      this.closeSidebar()
     }
   }
 }

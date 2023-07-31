@@ -23,7 +23,7 @@
           {{ navigationLink.text }}
         </router-link>
         <DropdownComponent
-          @selectOption="selectLanguageOption"
+          @selectOption="changeLanguageHandler"
           :options="languageOptions"
           :defaultIndex="defaultLocal"
         />
@@ -32,6 +32,8 @@
     <HeaderSidebar
       :navigationLinks="navigationLinks"
       :languageOptions="languageOptions"
+      :defaultLocal="defaultLocal"
+      @changeLanguage="changeLanguageHandler"
       v-show="sidebarOpen"
       v-model:sidebarOpen="sidebarOpen"
     />
@@ -122,7 +124,7 @@ export default {
         this.defaultLocal = 0
       }
     },
-    selectLanguageOption(selectedOption) {
+    changeLanguageHandler(selectedOption) {
       this.$i18n.locale = selectedOption.value
       localStorage.setItem('LOCALE_KEY', selectedOption.value)
     }
