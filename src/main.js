@@ -14,12 +14,12 @@ import zh from './locale/zh'
 import ja from './locale/ja'
 import en from './locale/en'
 
-const app = createApp(App)
-app.config.globalProperties.$mobileDeviceMaxWidth = 767
-app.config.globalProperties.$mobileTabletDeviceMaxWidth = 1267
+const LOCALE_KEY = 'LOCALE_KEY'
+const defaultLocale = 'zh'
+const savedLocale = localStorage.getItem(LOCALE_KEY)
 
 const i18n = createI18n({
-  locale: 'zh',
+  locale: savedLocale || defaultLocale,
   fallbackLocale: 'en',
   messages: {
     zh: zh,
@@ -27,6 +27,10 @@ const i18n = createI18n({
     en: en
   }
 })
+
+const app = createApp(App)
+app.config.globalProperties.$mobileDeviceMaxWidth = 767
+app.config.globalProperties.$mobileTabletDeviceMaxWidth = 1267
 
 app.use(i18n)
 app.use(router)

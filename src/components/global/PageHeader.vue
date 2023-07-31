@@ -22,7 +22,11 @@
         >
           {{ navigationLink.text }}
         </router-link>
-        <DropdownComponent @selectOption="selectLanguageOption" :options="languageOptions" />
+        <DropdownComponent
+          @selectOption="selectLanguageOption"
+          :options="languageOptions"
+          :defaultIndex="defaultLocal"
+        />
       </template>
     </div>
     <HeaderSidebar
@@ -68,6 +72,7 @@ export default {
           link: '/contact'
         }
       ],
+      defaultLocal: undefined,
       languageOptions: [
         {
           value: 'zh',
@@ -83,6 +88,9 @@ export default {
         }
       ]
     }
+  },
+  beforeMount(){
+    this.setDefaultLocal()
   },
   mounted() {
     this.checkViewportSize()
@@ -104,8 +112,19 @@ export default {
     closeSidebar() {
       this.sidebarOpen = false
     },
+    setDefaultLocal() {
+      const LOCALE_KEY = localStorage.getItem('LOCALE_KEY')
+      if (LOCALE_KEY === 'ja') {
+        this.defaultLocal = 1
+      } else if (LOCALE_KEY === 'en') {
+        this.defaultLocal = 2
+      } else {
+        this.defaultLocal = 0
+      }
+    },
     selectLanguageOption(selectedOption) {
       this.$i18n.locale = selectedOption.value
+      localStorage.setItem('LOCALE_KEY', selectedOption.value)
     }
   }
 }
