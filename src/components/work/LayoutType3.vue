@@ -1,23 +1,23 @@
 <template>
     <div class="work_detail__img-item-1">
-        <img src="/src/assets/work/product_design/img_kizuna_1.png" alt="">
+        <img src="/src/assets/image/work/product_design/img_kizuna_1.jpg" alt="">
     </div>
     <div class="work_detail__img-item-1">
-        <img src="/src/assets/work/product_design/img_kizuna_2.png" alt="">
+        <img src="/src/assets/image/work/product_design/img_kizuna_2.jpg" alt="">
         <p>三步驟展開使用不需工具組合</p>
     </div>
     <div class="work_detail__img-item-2">
         <div class="item-2 item-gap">
-            <img src="/src/assets/work/product_design/img_kizuna_3.png" alt="" />
+            <img src="/src/assets/image/work/product_design/img_kizuna_3.jpg" alt="" />
             <p>考量工法精選木料，梣木堅韌負以彎曲結構，松木輕軟使桌面細膩合用。牛皮桌面，回應辦公長時間操作鍵鼠、執筆書寫時置腕處的絕對舒適，並輕柔回饋筆觸。</p>
         </div>
         <div class="item-2">
-            <img src="/src/assets/work/product_design/img_kizuna_4.png" alt="" />
+            <img src="/src/assets/image/work/product_design/img_kizuna_4.jpg" alt="" />
             <p>將桌面折合、座椅靠攏，不需拆裝即可收納三件傢俱組合。收束實木傢俱的量體，空間轉換時實現優雅推移，定位再輕巧展開，旋即重啟生產力。</p>
         </div>
     </div>
     <div class="work_detail__img-item-1 item-bottom">
-        <img src="/src/assets/work/product_design/img_kizuna_5.png" alt="">
+        <img src="/src/assets/image/work/product_design/img_kizuna_5.png" alt="">
     </div>
     
 </template>
