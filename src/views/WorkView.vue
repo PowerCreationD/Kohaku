@@ -7,12 +7,12 @@
         </div>
         <ServiceDropdown class="service-dropdown" v-if="isMobile || isTablet" :options="serviceOptions" @select="selectService"/>
         <div v-else class="work__button_filter">
-            <button class="work__nav_button all" @click="selectCategory('all')" :class="{active: activeBtn === 'all' }">全部</button>
-            <button class="work__nav_button" @click="selectCategory('system_development')" :class="{active: activeBtn === 'system_development' }">系統設計 / 開發與維運</button>
-            <button class="work__nav_button" @click="selectCategory('trading')" :class="{active: activeBtn === 'trading' }">國內 / 國際貿易服務</button>
-            <button class="work__nav_button" @click="selectCategory('product_design')" :class="{active: activeBtn === 'product_design' }">產品設計與量產開發</button>
-            <button class="work__nav_button" @click="selectCategory('commercial_design')" :class="{active: activeBtn === 'commercial_design' }">品牌形象與視覺設計</button>
-            <button class="work__nav_button" @click="selectCategory('event_planning')" :class="{active: activeBtn === 'event_planning' }">企劃發想與活動策劃</button>
+            <button class="work__nav_button all" @click="selectCategory('all')" :class="{active: activeBtn === 'all' }">{{ $t('work.project_types.all') }}</button>
+            <button class="work__nav_button" @click="selectCategory('system_development')" :class="{active: activeBtn === 'system_development' }">{{ $t('work.project_types.system') }}</button>
+            <button class="work__nav_button" @click="selectCategory('trading')" :class="{active: activeBtn === 'trading' }">{{ $t('work.project_types.trading') }}</button>
+            <button class="work__nav_button" @click="selectCategory('product_design')" :class="{active: activeBtn === 'product_design' }">{{ $t('work.project_types.product') }}</button>
+            <button class="work__nav_button" @click="selectCategory('commercial_design')" :class="{active: activeBtn === 'commercial_design' }">{{ $t('work.project_types.design') }}</button>
+            <button class="work__nav_button" @click="selectCategory('event_planning')" :class="{active: activeBtn === 'event_planning' }">{{ $t('work.project_types.planning') }}</button>
         </div>
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
@@ -39,70 +39,70 @@ export default {
             workList: [
                 {
                     "id": 1,
-                    "name": "產銷系統設計｜日本農產電商物流系統",
+                    "name": this.$t('work.vegibus.name'),
                     "img_url": img_vegibus_system,
                     "tag": ["system_development"],
                     "project": "e-commerce-and-logistics-system"
                 },
                 {
                     "id": 2,
-                    "name": "機電整合開發｜自主移動機器人控制平台",
+                    "name": this.$t('work.mobile_mover.name'),
                     "img_url": img_mobilemover_app,
                     "tag": ["system_development"],
                     "project": "autonomous-mobile-robot"
                 },
                 {
                     "id": 3,
-                    "name": "書籍與裝幀｜木工藝工具書",
+                    "name": this.$t('work.woodworking_book.name'),
                     "img_url": img_woodwork_1,
                     "tag": ["commercial_design"],
                     "project": "woodworking-craft-tool-guide"
                 },
                 {
                     "id": 4,
-                    "name": "傢俱設計｜慕廂－優雅收移的實木家具",
+                    "name": this.$t('work.mu_maison.name'),
                     "img_url": img_kizuna_1,
                     "tag": ["product_design"],
                     "project": "mu-maison"
                 },
                 {
                     "id": 5,
-                    "name": "日本高級超市 韭菜泡菜包裝設計",
+                    "name": this.$t('work.leek_kimchi.name'),
                     "img_url": img_kimchi_1,
                     "tag": ["commercial_design"],
                     "project": "leek-kimchi"
                 },
                 {
                     "id": 6,
-                    "name": "商空與展櫃｜廣島三原車站無人商店",
+                    "name": this.$t('work.hiroshima_station.name'),
                     "img_url": img_hiroshima_station_1,
                     "tag": ["commercial_design"],
                     "project": "hiroshima-miyajima-station"
                 },
                 {
                     "id": 7,
-                    "name": "高畠市役場名片設計",
+                    "name": this.$t('work.takahata_business_card.name'),
                     "img_url": img_takahata_business_card_1,
                     "tag": ["commercial_design"],
                     "project": "takahata-business-card-design"
                 },
                 {
                     "id": 8,
-                    "name": "視覺與包裝｜M2Labo名片設計",
+                    "name": this.$t('work.m2labo_business_card.name'),
                     "img_url": img_power_creation_business_card_1,
                     "tag": ["commercial_design"],
                     "project": "m2labo-business-card-design"
                 },
                 {
                     "id": 9,
-                    "name": "日本外銷｜出口屏東台農金鑽鳳梨",
+                    "name": this.$t('work.pineapples.name'),
                     "img_url": img_pineapple_1,
                     "tag": ["trading"],
                     "project": "exporting-pineapples"
                 },
                 {
                     "id": 10,
-                    "name": "活動紀錄｜車床技術轉譯研究工作坊",
+                    "name": this.$t('work.lathe_machine_workshop.name'),
                     "img_url": img_wood_workshop_1,
                     "tag": ["event_planning"],
                     "project": "lathe-machine-workshop"
@@ -110,27 +110,27 @@ export default {
             ],
             serviceOptions: [
                 {
-                    text: '全部',
+                    text: this.$t('work.project_types.all'),
                     value: 'all'
                 },
                 {
-                    text: '系統設計 / 開發與維運',
+                    text: this.$t('work.project_types.system'),
                     value: 'system_development'
                 },
                 {
-                    text: '國內 / 國際貿易服務',
+                    text: this.$t('work.project_types.trading'),
                     value: 'trading'
                 },
                 {
-                    text: '產品設計與量產開發',
+                    text: this.$t('work.project_types.product'),
                     value: 'product_design'
                 },
                 {
-                    text: '品牌形象與視覺設計',
+                    text: this.$t('work.project_types.design'),
                     value: 'commercial_design'
                 },
                 {
-                    text: '企劃發想與活動策劃',
+                    text: this.$t('work.project_types.planning'),
                     value: 'event_planning'
                 }
             ]
