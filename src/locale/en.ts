@@ -170,7 +170,7 @@ const locale = {
             project_types: {
                 planning: 'Event Planning and Proposal',
                 system: 'System Design / Development and Maintenance',
-                trade: 'Domestic / International Trading',
+                trading: 'Domestic / International Trading',
                 product: 'Product Design and Production',
                 design: 'Brand Identity and Visual Design',
             },

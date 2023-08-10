@@ -173,7 +173,7 @@ const locale = {
             project_types: {
                 planning: '企画発想とイベント実行',
                 system: 'システム設計 / 開発と運用',
-                trade: '国際貿易サービス',
+                trading: '国際貿易サービス',
                 product: 'プロダクトデザイン',
                 design: 'グラフィックデザイン',
             },
