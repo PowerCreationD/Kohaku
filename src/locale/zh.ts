@@ -169,7 +169,7 @@ const locale = {
             project_types: {
                 planning: '企劃發想與數位行銷',
                 system: '系統設計 / 開發與維運',
-                trade: '國內 / 國際貿易服務',
+                trading: '國內 / 國際貿易服務',
                 product: '產品設計與量產開發',
                 design: '品牌形象與視覺設計',
             },

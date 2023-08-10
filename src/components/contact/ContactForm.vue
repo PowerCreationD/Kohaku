@@ -176,11 +176,6 @@
 
 <script>
 import emailjs from '@emailjs/browser'
-
-import zh from '@/locale/zh'
-import ja from '@/locale/ja'
-import en from '@/locale/en'
-
 export default {
   name: 'formComponent',
   data() {
@@ -230,46 +225,27 @@ export default {
         value: undefined,
         error: undefined,
         msg: undefined
-      }
-    }
-  },
-  computed: {
-    formLocale() {
-      if (this.$i18n.locale === 'zh') {
-        return zh.contact.form
-      } else if (this.$i18n.locale === 'ja') {
-        return ja.contact.form
-      } else {
-        return en.contact.form
-      }
-    },
-    validationText() {
-      return {
-        required: this.formLocale.validation.required,
-        mail_format: this.formLocale.validation.mail_format
-      }
-    },
-    projectTypes() {
-      return [
+      },
+      projectTypes: [
         {
           id: 'planning',
-          name: this.formLocale.project_types.planning
+          name: this.$t('contact.form.project_types.planning')
         },
         {
           id: 'system',
-          name: this.formLocale.project_types.planning
+          name: this.$t('contact.form.project_types.system')
         },
         {
           id: 'trade',
-          name: this.formLocale.project_types.trade
+          name: this.$t('contact.form.project_types.trading')
         },
         {
           id: 'product',
-          name: this.formLocale.project_types.product
+          name: this.$t('contact.form.project_types.product')
         },
         {
           id: 'design',
-          name: this.formLocale.project_types.design
+          name: this.$t('contact.form.project_types.design')
         }
       ]
     }
@@ -294,7 +270,7 @@ export default {
         // project type
         if (!type.value.length) {
           type.error = true
-          type.msg = this.validationText.required
+          type.msg = this.$t('contact.form.validation.required')
         } else {
           type.error = false
           type.msg = ''
@@ -303,7 +279,7 @@ export default {
         // budget
         if (!budget.value || budget.value == '0') {
           budget.error = true
-          budget.msg = this.validationText.required
+          budget.msg = this.$t('contact.form.validation.required')
         } else {
           budget.error = false
           budget.msg = ''
@@ -312,7 +288,7 @@ export default {
         // date
         if (!startDate | !endDate) {
           date.error = true
-          date.msg = this.validationText.required
+          date.msg = this.$t('contact.form.validation.required')
         } else {
           date.error = false
           date.msg = ''
@@ -321,7 +297,7 @@ export default {
         // description
         if (!description.value) {
           description.error = true
-          description.msg = this.validationText.required
+          description.msg = this.$t('contact.form.validation.required')
         } else {
           description.error = false
           description.msg = ''
@@ -338,7 +314,7 @@ export default {
         // person
         if (!person.value) {
           person.error = true
-          person.msg = this.formLocale.validation.required
+          person.msg = this.$t('contact.form.validation.required')
         } else {
           person.error = false
           person.msg = ''
@@ -347,7 +323,7 @@ export default {
         // company
         if (!company.value) {
           company.error = true
-          company.msg = this.validationText.required
+          company.msg = this.$t('contact.form.validation.required')
         } else {
           company.error = false
           company.msg = ''
@@ -356,7 +332,7 @@ export default {
         // phone
         if (!phone.value) {
           phone.error = true
-          phone.msg = this.validationText.required
+          phone.msg = this.$t('contact.form.validation.required')
         } else {
           phone.error = false
           phone.msg = ''
@@ -365,13 +341,13 @@ export default {
         // email
         if (!email.value) {
           email.error = true
-          email.msg = this.validationText.required
+          email.msg = this.$t('contact.form.validation.required')
         } else {
           const mailRe = /\S+@\S+\.\S+/
 
           if (!String(email.value).match(mailRe)) {
             email.error = true
-            email.msg = this.validationText.mail_format
+            email.msg = this.$t('contact.form.validation.mail_format')
           } else {
             email.error = false
             email.msg = ''
@@ -384,48 +360,6 @@ export default {
         } else {
           // scroll to top
           this.scroll()
-        }
-      }
-    },
-    updateErrorMessages() {
-      // Page 1
-      const type = this.selectedProjectTypes
-      const budget = this.budget
-      const date = this.date
-      const description = this.description
-
-      // Page 2
-      const person = this.person
-      const company = this.company
-      const phone = this.phone
-      const email = this.email
-
-      // New Error Message
-      const required = this.formLocale.validation.required
-      const mail_format = this.formLocale.validation.mail_format
-
-      if (this.formPage === 1) {
-        type.msg = required
-        budget.msg = required
-        date.msg = required
-        description.msg = required
-      } else {
-        person.msg = required
-        company.msg = required
-        phone.msg = required
-
-        const emailMsg = email.msg
-        const zhRequiredMsg = 'zh.contact.form.validation.required'
-        const jaRequiredMsg = 'ja.contact.form.validation.required'
-        const enRequiredMsg = 'en.contact.form.validation.required'
-        if (
-          emailMsg === zhRequiredMsg ||
-          emailMsg === jaRequiredMsg ||
-          emailMsg === enRequiredMsg
-        ) {
-          email.msg = required
-        } else {
-          email.msg = mail_format
         }
       }
     },
@@ -570,12 +504,6 @@ export default {
         }
       },
       immediate: true
-    },
-    '$i18n.locale': {
-      immediate: true,
-      handler() {
-        this.updateErrorMessages()
-      }
     }
   }
 }
