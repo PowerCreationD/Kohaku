@@ -5,11 +5,11 @@
     <div class="work_detail__img-row-2">
         <div class="row-2 row-gap">
             <img v-lazy="img_mobilemover_2" alt="" />
-            <p>Mobile Mover App 可為農機設定任務排程、路線、執行內容，並於執行中即時監控載具的工作情況</p>
+            <p>{{$t('work.mobile_mover.detail.description.desc_1')}}</p>
         </div>
         <div class="row-2">
             <img v-lazy="img_mobilemover_3" alt="" />
-            <p>考量田間操作情境，Mobile Mover 首重移動裝置 App 開發，以平板控制並以虛擬搖桿以靈活操作</p>
+            <p>{{$t('work.mobile_mover.detail.description.desc_2')}}</p>
         </div>
     </div>
     <div class="work_detail__img-row-3">
@@ -18,7 +18,7 @@
             <img class="row-3-gap" v-lazy="img_mobilemover_5" alt="" />
             <img v-lazy="img_mobilemover_6" alt="" />
         </div>
-        <p>針對載具的執行路線、狀態、電量、速度、位置回報，即時監控載具，使用者可依照不同任務需求設定、編輯與儲存路徑，建立標準化工作內容。App 可管理多張地圖的多條路徑，簡明化田間管理工作內容，並透過綁定、置換使 Mobile Mover 彈性規劃任務路徑</p>
+        <p>{{$t('work.mobile_mover.detail.description.desc_3')}}</p>
     </div>
     <div class="work_detail__img-row-4">
         <div class="row-4">
