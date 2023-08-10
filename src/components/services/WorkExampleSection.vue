@@ -13,7 +13,7 @@
         <div class="work-example-section__main-content">
             <div class="work-example-section__display" v-for="itm in workData.exampleList" :key="itm.title">
                 <div class="work-example-section__example-item">
-                    <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.id)"/>
+                    <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.project)"/>
                 </div>
                 <p @click="goToDetailPage(itm.id)">{{ itm.title }}</p>
             </div>
@@ -38,8 +38,8 @@ export default {
       }
     },
     methods: {
-        goToDetailPage(itmId) {
-            this.$router.push({ name: 'WorkDetail', params: { id: itmId } })
+        goToDetailPage(projectId) {
+            this.$router.push({ name: 'WorkDetail', params: { project: projectId } })
         },
         checkViewportSize() {
             this.isMobile = window.innerWidth < this.$mobileDeviceMaxWidth

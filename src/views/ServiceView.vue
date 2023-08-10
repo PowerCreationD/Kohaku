@@ -95,11 +95,13 @@ export default {
             "workNumber": 2,
             "exampleList": [{
               "id": 1, 
+              "project": "e-commerce-and-logistics-system",
               "title": "產銷系統設計｜日本農產電商物流系統",
               "img_url": img_vegibus_system
             },
             {
               "id": 2,
+              "project": "autonomous-mobile-robot",
               "title": "機電整合開發｜自主移動機器人控制平台",
               "img_url": img_mobilemover_app
             }]
@@ -127,6 +129,7 @@ export default {
             "workNumber": 1,
             "exampleList": [{
               "id": 9,
+              "project": "exporting-pineapples",
               "title": "日本外銷｜出口屏東台農金鑽鳳梨",
               "img_url": img_pineapple_1
             }]
@@ -154,6 +157,7 @@ export default {
             "workNumber": 1,
             "exampleList": [{
               "id": 4,
+              "project": "mu-maison",
               "title": "傢俱設計｜慕廂－優雅收移的實木家具",
               "img_url": img_kizuna_1
             }]
@@ -181,11 +185,13 @@ export default {
             "workNumber": 5,
             "exampleList": [{
               "id": 5,
+              "project": "leek-kimchi",
               "title": "日本高級超市 韭菜泡菜包裝設計",
               "img_url": img_kimchi_1
             }, 
             {
               "id": 8,
+              "project": "m2labo-business-card-design",
               "title": "視覺與包裝｜M2Labo名片設計",
               "img_url": img_power_creation_business_card_1
             }]
@@ -213,6 +219,7 @@ export default {
             "workNumber": 1,
             "exampleList": [{
                 "id": 10, 
+                "project": "lathe-machine-workshop",
                 "title": "活動紀錄｜車床技術轉譯研究工作坊",
                 "img_url": img_wood_workshop_1
             }]
@@ -266,11 +273,13 @@ export default {
           "workNumber": 2,
           "exampleList": [{
             "id": 1, 
+            "project": "e-commerce-and-logistics-system",
             "title": "產銷系統設計｜日本農產電商物流系統",
             "img_url": img_vegibus_system
           },
           {
             "id": 2,
+            "project": "autonomous-mobile-robot",
             "title": "機電整合開發｜自主移動機器人控制平台",
             "img_url": img_mobilemover_app
           }]
