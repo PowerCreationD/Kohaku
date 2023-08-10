@@ -127,6 +127,7 @@ export default {
     changeLanguageHandler(selectedOption) {
       this.$i18n.locale = selectedOption.value
       localStorage.setItem('LOCALE_KEY', selectedOption.value)
+      window.location.reload();
     }
   }
 }
