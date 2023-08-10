@@ -43,7 +43,7 @@ const router = createRouter({
           },
           {
             property: 'og:description',
-            content: '琥白我們珍惜人事物的原貌與初衷，保留價值核心、並為其增添輝光'
+            content: '在琥白我們珍惜人事物的原貌與初衷，保留價值核心、並為其增添輝光'
           }
         ],
         canonicalUrl: () => {
@@ -167,37 +167,52 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  // delete existing canonicalLink
-  const prevCanonicalLink = document.querySelector('link[rel="canonical"]');
+  // Remove existing canonicalLink
+  const prevCanonicalLink = document.querySelector('link[rel="canonical"]')
   if (prevCanonicalLink) {
-    prevCanonicalLink.remove();
+    prevCanonicalLink.remove()
   }
 
-  // create a new rel="canonical"
-  const canonicalLink = document.createElement('link');
-  canonicalLink.setAttribute('rel', 'canonical');
-  canonicalLink.setAttribute('href', to.meta.canonicalUrl(to));
-  document.head.appendChild(canonicalLink);
+  // Create a new rel="canonical"
+  const canonicalLink = document.createElement('link')
+  canonicalLink.setAttribute('rel', 'canonical')
+  canonicalLink.setAttribute('href', to.meta.canonicalUrl(to))
+  document.head.appendChild(canonicalLink)
 
-  // set meta tags
-  document.title = to.meta.title;
-  const metaTags = to.meta.metaTags;
-  metaTags.map((tagDef) => {
-    const existingMeta = document.head.querySelector(`meta[property="${tagDef.property}"]`);
+  // Set meta tags
+  document.title = to.meta.title
+  const metaTags = to.meta.metaTags
+  metaTags.forEach((tagDef) => {
+    const existingMeta = document.head.querySelector(`meta[property="${tagDef.property}"]`)
     if (!existingMeta) {
-      // If the meta tag does not exist, create a new one
-      let meta = document.createElement('meta');
+      // If meta tag doesn't exist, create a new one
+      const meta = document.createElement('meta')
       Object.keys(tagDef).forEach((key) => {
-        meta.setAttribute(key, tagDef[key]);
-      });
-      document.head.appendChild(meta);
+        meta.setAttribute(key, tagDef[key])
+      })
+      document.head.appendChild(meta)
     } else {
-      // If the meta tag already exists, update its content
-      existingMeta.content = tagDef.content;
+      // If meta tag already exists, update its content
+      existingMeta.content = tagDef.content
     }
-  });
+  })
 
-  next();
-});
+  // Set meta name="description" tag
+  const ogDescriptionTag = to.meta.metaTags.find((tag) => tag.property === 'og:description')
+  if (ogDescriptionTag) {
+    const existingDescriptionMeta = document.head.querySelector('meta[name="description"]')
+    if (existingDescriptionMeta) {
+      // If meta name="description" tag already exists, update its content
+      existingDescriptionMeta.content = ogDescriptionTag.content
+    } else {
+      // Otherwise, create a new meta name="description" tag
+      const descriptionMeta = document.createElement('meta')
+      descriptionMeta.setAttribute('name', 'description')
+      descriptionMeta.setAttribute('content', ogDescriptionTag.content)
+      document.head.appendChild(descriptionMeta)
+    }
+  }
 
+  next()
+})
 export default router
