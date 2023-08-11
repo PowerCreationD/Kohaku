@@ -17,7 +17,7 @@
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
                 <router-link :to="{ name: 'WorkDetail', params: { project: work.project } }">
-                    <img :src="work.img_url" alt="" >
+                    <img v-lazy="work.img_url" alt="" >
                 </router-link>
                 <p @click="goToDetailPage(work)">{{ work.name }}</p>
             </div>
@@ -417,14 +417,14 @@ export default {
 </style>
 
 <script setup>
-import img_vegibus_system from '@/assets/work/system_development/vegibus/img_vegibus_system.png'
-import img_mobilemover_app from '@/assets/work/system_development/mobilemover/img_mobilemover_app.png'
-import img_woodwork_1 from '@/assets/work/commercial_design/book/img_woodwork_1.jpeg'
-import img_kizuna_1 from '@/assets/work/product_design/img_kizuna_1.png'
-import img_kimchi_1 from '@/assets/work/commercial_design/kimchi/img_kimchi_1.jpeg'
-import img_hiroshima_station_1 from '@/assets/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpeg'
-import img_takahata_business_card_1 from '@/assets/work/commercial_design/takahata/img_takahata_business_card_1.jpeg'
-import img_power_creation_business_card_1 from '@/assets/work/commercial_design/power_creation/img_power_creation_business_card_1.jpeg'
-import img_pineapple_1 from '@/assets/work/trading/img_pineapple_1.jpeg'
-import img_wood_workshop_1 from '@/assets/work/event_planning/img_wood_workshop_1.jpeg'
+import img_vegibus_system from '@/assets/image/work/system_development/vegibus/img_vegibus_system.jpeg'
+import img_mobilemover_app from '@/assets/image/work/system_development/mobilemover/img_mobilemover_app.png'
+import img_woodwork_1 from '@/assets/image/work/commercial_design/book/img_woodwork_1.jpg'
+import img_kizuna_1 from '@/assets/image/work/product_design/img_kizuna_1.jpg'
+import img_kimchi_1 from '@/assets/image/work/commercial_design/kimchi/img_kimchi_1.jpg'
+import img_hiroshima_station_1 from '@/assets/image/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpg'
+import img_takahata_business_card_1 from '@/assets/image/work/commercial_design/takahata/img_takahata_business_card_1.jpg'
+import img_power_creation_business_card_1 from '@/assets/image/work/commercial_design/power_creation/img_power_creation_business_card_1.jpg'
+import img_pineapple_1 from '@/assets/image/work/trading/img_pineapple_1.jpg'
+import img_wood_workshop_1 from '@/assets/image/work/event_planning/img_wood_workshop_1.jpg'
 </script>

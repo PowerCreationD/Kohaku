@@ -13,9 +13,9 @@
         <div class="work-example-section__main-content">
             <div class="work-example-section__display" v-for="itm in workData.exampleList" :key="itm.title">
                 <div class="work-example-section__example-item">
-                    <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.project)"/>
+                    <img v-lazy="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.project)"/>
                 </div>
-                <p @click="goToDetailPage(itm.id)">{{ itm.title }}</p>
+                <p @click="goToDetailPage(itm.project)">{{ itm.title }}</p>
             </div>
         </div>
         <router-link v-if="workData['workNumber'] > 2" 
