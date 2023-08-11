@@ -1,6 +1,6 @@
 <template>
   <div class="member-card">
-    <svg
+    <svg class="member-card__image"
       viewBox="0 0 362 354"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -35,11 +35,13 @@
       </defs>
     </svg>
 
-    <p class="member__position">{{ person.position }}</p>
-    <h3 class="member__name">{{ person.name }}</h3>
-    <p class="member__intro">{{ person.intro }}</p>
-    <p class="member__skills">
-      <span class="member__skill" v-for="skill in person.skills" :key="skill">#{{ skill }}</span>
+    <p class="font-7 member-card__position">{{ person.position }}</p>
+    <h3 class="font-3 member-card__name">{{ person.name }}</h3>
+    <h5 class="font-4 member-card__description">#{{ person.description }}</h5>
+    <p class="member-card__skills">
+      <span class="font-6 member-card__skill" v-for="skill in person.skills" :key="skill"
+        >#{{ skill }}</span
+      >
     </p>
   </div>
 </template>
