@@ -3,7 +3,7 @@ import bigLogoUrl from '@/assets/big_logo.png'
 </script>
 
 <template>
-  <img :src="bigLogoUrl" />
+  <img :src="bigLogoUrl" alt="Kohaku"/>
 </template>
 
 <script>
