@@ -14,7 +14,7 @@
             </ul>
         </div>
     </div>
-    <img :src="getImageUrl(cardData.services[0].img_url)" />
+    <img v-lazy="getImageUrl(cardData.services[0].img_url)" />
 </div>
 </template>
 

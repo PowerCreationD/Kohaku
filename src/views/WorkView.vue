@@ -17,7 +17,7 @@
         <div class="work__display_area">
             <div class="work__item" v-for="work in filteredWork" :key="work.id" :class="work.style">
                 <router-link :to="{ name: 'WorkDetail', params: { project: work.project } }">
-                    <img :src="work.img_url" alt="" >
+                    <img v-lazy="work.img_url" alt="" >
                 </router-link>
                 <p @click="goToDetailPage(work)">{{ work.name }}</p>
             </div>

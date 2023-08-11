@@ -15,7 +15,7 @@
                 <li v-for="itm in data.items" :key="itm">{{ itm }}</li>
             </ul>
             <div class="service-card__image">
-                <img :src="getImageUrl(data.img_url)" alt="">
+                <img v-lazy="getImageUrl(data.img_url)" alt="">
             </div>
         </div>
     </div>
