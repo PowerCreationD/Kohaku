@@ -3,7 +3,7 @@
     <div class="work_detail">
         <WorkDetailHeader :headerData="workDetail[project]" />
         <component :is="type" :contentData="selectContentData" />
-        <button class="work_detail__return-btn" @click="returnWorkPage">返回</button>
+        <button class="work_detail__return-btn" @click="returnWorkPage">{{$t('global.buttons.back')}}</button>
     </div>
   </div>
 </template>
