@@ -5,7 +5,246 @@ const locale = {
             prev: 'Previous',
             back: "Back",
             close: "Close",
-            submit_form: 'Submit Form'
+            submit_form: 'Submit Form',
+            contact_us: 'Contact Us',
+            view_the_service: 'View The Service',
+            view_all_project: 'View All Projects',
+        }
+    },
+    homepage: {
+        slogan: 'Imagine × Create × Future',
+        description: ['Design transformation (DX) leads not to the best but better and better', ''],
+        research: {
+            title: 'RESEARCH  Depth',
+            subtitle: 'Crafting excellence with precision, passion, and foresight',
+            text: ["By harnessing extensive research and interdisciplinary thinking, we empower our clients' original intentions,",
+                "Creating the ideal conditions for your innovative concepts to thrive, and ensuring successful implementation with brilliance."]
+        },
+        concept: {
+            title: 'CONCEPT  Breadth',
+            subtitle: 'Unleashing boundless thinking to shatter preconceptions,',
+            text: ["Spanning the realms of InfoSci, Engineering, Design, Trade, and Innovation,",
+                'We co-create pioneering solutions from extensive research and ample experience.']
+        },
+        solutions: {
+            title: 'SOLUTION  Optimal Solution',
+            subtitle: ['Three Languages', 'Five Expertise'],
+            system: {
+                name: 'System Design / Development and Maintenance',
+                shortName: 'System Design',
+                subtitleSentences: ['Tailoring system to your business requirements', 'Offering insight into your industry’s trends'],
+                textSentences: [
+                    'As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development. We assist in collecting data to aid decision-making and optimize workflows to enhance supply and sales efficiency.'
+                ],
+                keywordList: [
+                    {
+                        name: 'System Development',
+                        children: ['Frontend Development', 'Backend Development']
+                    },
+                    {
+                        name: 'Data Analytics',
+                        children: ['Business Data Mining']
+                    },
+                    {
+                        name: 'End Device Development',
+                        children: ['Embedded System Development']
+                    }
+                ],
+            },
+            trading: {
+                name: 'Domestic / International Trading',
+                shortName: 'Trade Services',
+                subtitleSentences: ['Discovering delectable food from Taiwan', 'Building your brand and join the international market'],
+                textSentences: [
+                    `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.`,
+                    `With our team proficient in Chinese, English, and Japanese, we offer product selection consultations and export agency services. Additionally, we provide brand redesign services tailored to the consumption habits of target regions, helping MIT (Made in Taiwan) products reach the global market.`
+                ],
+                keywordList: [
+                    {
+                        name: 'Product selection consultation for import and export'
+                    },
+                    {
+                        name: 'Market trend research'
+                    },
+                    {
+                        name: 'Marketing planning and execution'
+                    },
+                    {
+                        name: 'Trilingual support in Chinese, English, and Japanese'
+                    },
+                    {
+                        name: 'Redesign of packaging for foreign brands'
+                    }
+                ],
+            },
+            product: {
+                name: 'Product Design and Production',
+                shortName: 'Product Design',
+                subtitleSentences: ['Analyzing the unnoticed inconvenience around', 'Interpreters the difficulties through aesthetic mindset'],
+                textSentences: [
+                    `Delving into the partnership between objects and people, we portray high-quality experiences in functionality, form, and interaction.`,
+                    `We intricately design products to meet users' expectations and respond to their desires for a fulfilling life.`
+                ],
+                keywordList: [
+                    {
+                        name: 'Problem research'
+                    },
+                    {
+                        name: 'Concept proposal'
+                    },
+                    {
+                        name: 'Participatory design process'
+                    },
+                    {
+                        name: 'Product visual design'
+                    },
+                    {
+                        name: '3D model construction'
+                    },
+                    {
+                        name: 'Prototype production'
+                    }
+                ],
+            },
+            design: {
+                name: 'Brand Identity and Visual Design',
+                shortName: 'Visual Design',
+                subtitleSentences: ['Visual communication that directly touches the hearts of people', 'Elevating the relationship between the brand and customers'],
+                textSentences: [
+                    'A single page of a book, a piece of packaging, a comprehensive and professionally crafted brand identity, all customized designs that precisely convey your vision.',
+                    'Allowing your customers to experience the attention to detail behind your brand, deepening their trust in your services and products.'
+                ],
+                keywordList: [
+                    {
+                        name: 'Brand identity design'
+                    },
+                    {
+                        name: 'Book cover design'
+                    },
+                    {
+                        name: 'Graphic design'
+                    },
+                    {
+                        name: 'Packaging design'
+                    },
+                    {
+                        name: 'Website interface design'
+                    }
+                ],
+            },
+            planning: {
+                name: 'Event Planning and Proposal',
+                shortName: 'Event Planning',
+                subtitleSentences: ['Dedicated team with efficiency', 'Flexibly organizing exhibition and other events'],
+                textSentences: [
+                    'With a team of creative talents rooted in design and a culture that breaks boundaries, we provide unexpected innovative solutions for your projects. ',
+                    'We are experienced in collaborating with external teams and quickly adapting to your requirements. From curriculum design to exhibition events, we offer professional execution and coordination.'
+                ],
+                keywordList: [
+                    {
+                        name: 'Development of curriculum, activities, and exhibition themes'
+                    },
+                    {
+                        name: 'Content planning'
+                    },
+                    {
+                        name: 'Execution and coordination'
+                    },
+                    {
+                        name: 'On-site hosting and management'
+                    },
+                    {
+                        name: 'Event visual design and social media marketing'
+                    }
+                ],
+            },
+
+        },
+        work: {
+            system: {
+                name: 'System Design / Development and Maintenance',
+                text: 'System Design / Development and Maintenance',
+                projects: [
+                    {
+                        name: 'Production and Distribution System Design | Japanese Agricultural E-commerce and Logistics System',
+                        description:
+                            `Collaborating with Vegibus, a Japanese agricultural distributor, which is committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of "Vegibus," which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
+                    },
+                    {
+                        name: 'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform',
+                        description:
+                            `In response to the challenges of labor shortage due to aging population in rural areas and the complexity of precision agriculture management, Mobile Mover appears as a solution, an agricultural autonomous vehicle. It serves as a smart agricultural machinery solution for the future, providing comprehensive support for crop management tasks such as mulching, weeding, spraying, and harvesting. Besides The mechatronics integration on the mover itself,  construction of farm map, map route planning, and a user-friendly mobile application are also been developed. Additionally, we have designed a service flow tailored to meet the needs of elderly farmers, aiming to alleviate their farming burdens.`,
+                    }
+                ]
+            },
+            trading: {
+                name: 'Domestic / International Trading',
+                text: 'Domestic / International Trading',
+                projects: [
+                    {
+                        name: "Export to Japan｜Exporting Pingtung's Tainung No. 17 Golden Diamond Pineapples",
+                        description:
+                            `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the Kasumi カスミ supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`,
+                    }
+                ]
+            },
+            product: {
+                name: 'Product Design and Production',
+                text: 'Product Design and Production',
+                projects: [
+                    {
+                        name: 'Furniture Design｜Kizuna - Elegant Solid Wood Furniture with Tranformable feature',
+                        description:
+                            `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`,
+                    }
+                ]
+            },
+            design: {
+                name: 'Brand Identity and Visual Design',
+                text: 'Brand Identity and Visual Design',
+                projects: [
+                    {
+                        name: 'Book and Bookbinding｜Woodworking Craft Tool Guide',
+                        description:
+                            `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`,
+                    },
+                    {
+                        name: 'Visual Design and Packaging｜M2Labo Business Card Design',
+                        description:
+                            `In collaboration with Japanese company "エムスクエア・ラボ”. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`,
+                    },
+                    {
+                        name: 'Takahata City Regional Office Business Card Design',
+                        description:
+                            `Design of official business cards for the Takahata City Regional Office in Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`,
+                    },
+                    {
+                        name: 'Packaging design for premium Japanese supermarket - Leek Kimchi',
+                        description:
+                            `We support farmers in leveraging their land advantages to create a unique product, leek kimchi. Additionally, we help them design appealing packaging to enhance sales and maximize the value of agricultural processing.`,
+                    },
+                    {
+                        name: 'Commercial Space and Display Cases｜Unmanned Store at Hiroshima Miyajima Station',
+                        description:
+                            `In order to enhance the shopping experience at Hiroshima Miyajima Station, we have designed commercial spaces and display cases for an unmanned store. The layout and design of the store have been meticulously planned to create an inviting and functional environment. Our goal is to provide customers with a seamless and enjoyable shopping experience at the station.`,
+                    }
+                ]
+            },
+            planning: {
+                name: 'Event Planning and Proposal',
+                text: 'Event Planning and Proposal',
+                projects: [
+                    {
+                        name: 'Event Documentation｜Lathe Machine Workshop',
+                        description:
+                            `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`,
+                    }
+                ]
+            },
+        },
+        contact: {
+            subtitle: 'Embracing Traditional Wisdom, Creating a Novel Experience',
+            text: 'If you have any requests or inquiries, please fill out the form below, and our representative will get in touch within business days.'
         }
     },
     about: {

@@ -22,10 +22,10 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
 <template>
   <div class="home">
     <div class="home__section home-title-section">
-      <p class="font-2 home-title-section__title">想像 × 創造 × 未來</p>
+      <p class="font-2 home-title-section__title">{{ $t('homepage.slogan') }}</p>
       <p class="font-7 home-title-section__text">
-        我們透過跨領域的技術服務<br />
-        在食農、工藝、製造與地方課題創造企業的永續價值
+        {{ $t('homepage.description[0]') }}<br />
+        {{ $t('homepage.description[1]') }}
       </p>
       <img
         class="background-image home-title-section__background-image"
@@ -37,15 +37,17 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
     <div class="home__section home-research-section">
       <div class="container home-research-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-research-section__title">RESEARCH&nbsp;&nbsp;深度</p>
+        <p class="font-1 home-research-section__title">{{ $t('homepage.research.title') }}</p>
       </div>
       <div class="container home-research-section__step-line-and-context-container">
         <div class="home__step-line home-research-section__step-line"></div>
         <div class="container home-research-section__context-container">
-          <p class="font-3 home-research-section__subtitle">洞察真實問題與需求</p>
+          <p class="font-3 home-research-section__subtitle">
+            {{ $t('homepage.research.subtitle') }}
+          </p>
           <p class="font-7 home-research-section__text">
-            琥白以大量研究支持客戶的初衷，<br />
-            為您想要的改變，考量落地發光的完備條件。
+            {{ $t('homepage.research.text[0]') }}<br />
+            {{ $t('homepage.research.text[1]') }}
           </p>
         </div>
       </div>
@@ -61,15 +63,15 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
     <div class="home__section home-concept-section">
       <div class="container home-concept-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-concept-section__title">CONCEPT&nbsp;&nbsp;廣度</p>
+        <p class="font-1 home-concept-section__title">{{ $t('homepage.concept.title') }}</p>
       </div>
       <div class="container home-concept-section__step-line-and-context-and-image-container">
         <div class="home__step-line home-concept-section__step-line"></div>
         <div class="container home-concept-section__context-container">
-          <p class="font-3 home-concept-section__subtitle">跨領域思維不落俗套</p>
+          <p class="font-3 home-concept-section__subtitle">{{ $t('homepage.concept.subtitle') }}</p>
           <p class="font-7 home-concept-section__text">
-            琥白團隊成員來自不同專業知識背景<br />
-            與客戶從多元視角討論創新的雛形。
+            {{ $t('homepage.concept.text[0]') }}<br />
+            {{ $t('homepage.concept.text[1]') }}
           </p>
           <img
             class="image home-concept-section__image"
@@ -85,7 +87,7 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
     <div class="home__section home-solution-section">
       <div class="container home-solution-section__pin-and-title-container">
         <div class="home__step-pin"></div>
-        <p class="font-1 home-solution-section__title">SOLUTION&nbsp;&nbsp;最佳解</p>
+        <p class="font-1 home-solution-section__title">{{ $t('homepage.solutions.title') }}</p>
       </div>
       <div class="container home-solution-section__step-line-and-context-and-image-container">
         <div class="home__step-line home-solution-section__step-line">
@@ -165,15 +167,19 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
               </ul>
             </div>
             <router-link class="link" :to="solutions[currentSolutionIndex].serviceLink">
-              查看詳細服務
+              {{ $t('global.buttons.view_the_service') }}
               <MoreArrowIcon class="link__icon" />
             </router-link>
           </div>
         </div>
         <img class="image home-solution-section__image" :src="solutionSectionImageUrl" />
       </div>
-      <p class="home-solution-section__left-vertical-texts" v-if="!isMobileDevice">三大語言</p>
-      <p class="home-solution-section__right-vertical-texts" v-if="!isMobileDevice">五大領域</p>
+      <p class="home-solution-section__left-vertical-texts" v-if="!isMobileDevice">
+        {{ $t('homepage.solutions.subtitle[0]') }}
+      </p>
+      <p class="home-solution-section__right-vertical-texts" v-if="!isMobileDevice">
+        {{ $t('homepage.solutions.subtitle[1]') }}
+      </p>
     </div>
     <div class="home__section home-work-section" v-if="!isMobileDevice">
       <p class="font-1 home-work-section__title">WORK</p>
@@ -184,7 +190,7 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
               {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].description }}
             </p>
             <router-link class="link" to="/work">
-              查看所有專案
+              {{ $t('global.buttons.view_all_project') }}
               <MoreArrowIcon class="link__icon" />
             </router-link>
           </div>
@@ -245,7 +251,7 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
       <div class="container home-work-section__title-and-more-button-container">
         <p class="font-1 home-work-section__title">WORK</p>
         <router-link class="link" to="/work">
-          查看所有專案
+          {{ $t('global.buttons.view_all_project') }}
           <MoreArrowIcon class="link__icon" />
         </router-link>
       </div>
@@ -292,12 +298,11 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
       <div class="container home-contact-section__image-and-context-container">
         <img class="image home-contact-section__image" :src="contactSectionImageUrl" />
         <div class="container home-contact-section__context-container">
-          <p class="font-3 home-contact-section__subtitle">承載傳統智慧，設計全新感受</p>
+          <p class="font-3 home-contact-section__subtitle">{{ $t('homepage.contact.subtitle') }}</p>
           <p class="font-7 home-contact-section__text">
-            琥白擅長將結合設計力、資訊力，從微小的點子打造亮眼解方！
-            歡迎聯繫我們拓展產業的無限可能！
+            {{ $t('homepage.contact.text') }}
           </p>
-          <button class="button button--primary" @click="goToContactPage">聯絡我們</button>
+          <button class="button button--primary" @click="goToContactPage">{{ $t('global.buttons.contact_us') }}</button>
         </div>
       </div>
     </div>
@@ -329,135 +334,151 @@ export default {
       currentWorkProjectIndex: 0,
       solutions: [
         {
-          name: '系統設計 / 開發與維運',
-          shortName: '系統開發',
-          subtitleSentences: ['客製資訊系統導入產業', '協助趨勢洞察建立遠見'],
-          textSentences: [
-            '以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。'
+          name: this.$t('homepage.solutions.system.name'),
+          shortName: this.$t('homepage.solutions.system.shortName'),
+          subtitleSentences: [
+            this.$t('homepage.solutions.system.subtitleSentences[0]'),
+            this.$t('homepage.solutions.system.subtitleSentences[1]')
           ],
+          textSentences: [this.$t('homepage.solutions.system.textSentences[0]')],
           keywordList: [
             {
-              name: '系統開發',
-              children: ['前端開發', '後端開發']
+              name: this.$t('homepage.solutions.system.keywordList[0].name'),
+              children: [
+                this.$t('homepage.solutions.system.keywordList[0].children[0]'),
+                this.$t('homepage.solutions.system.keywordList[0].children[1]')
+              ]
             },
             {
-              name: '資料分析',
-              children: ['商業資料探勘']
+              name: this.$t('homepage.solutions.system.keywordList[1].name'),
+              children: [this.$t('homepage.solutions.system.keywordList[1].children[0]')]
             },
             {
-              name: '設備開發',
-              children: ['嵌入式系統開發']
+              name: this.$t('homepage.solutions.system.keywordList[2].name'),
+              children: [this.$t('homepage.solutions.system.keywordList[2].children[0]')]
             }
           ],
           serviceLink: '/services/system-development'
         },
         {
-          name: '國內 / 國際貿易服務',
-          shortName: '貿易服務',
-          subtitleSentences: ['發現台灣在地美味食力', '打造全新面貌走向國際'],
+          name: this.$t('homepage.solutions.trading.name'),
+          shortName: this.$t('homepage.solutions.trading.shortName'),
+          subtitleSentences: [
+            this.$t('homepage.solutions.trading.subtitleSentences[0]'),
+            this.$t('homepage.solutions.trading.subtitleSentences[1]')
+          ],
           textSentences: [
-            '專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。',
-            '具備專業的中、英、日語窗口，提供選品諮詢與外銷代辦，並有依目標地區消費習慣的品牌包裝再造服務，幫助MIT產品走向世界。'
+            this.$t('homepage.solutions.trading.textSentences[0]'),
+            this.$t('homepage.solutions.trading.textSentences[1]')
           ],
           keywordList: [
             {
-              name: '進出口選品諮詢'
+              name: this.$t('homepage.solutions.trading.keywordList[0].name')
             },
             {
-              name: '市場風向探勘'
+              name: this.$t('homepage.solutions.trading.keywordList[1].name')
             },
             {
-              name: '行銷企劃與代操'
+              name: this.$t('homepage.solutions.trading.keywordList[2].name')
             },
             {
-              name: '中／英／日三語言窗口'
+              name: this.$t('homepage.solutions.trading.keywordList[3].name')
             },
             {
-              name: '異國品牌包裝Redesign'
+              name: this.$t('homepage.solutions.trading.keywordList[4].name')
             }
           ],
           serviceLink: '/services/trading'
         },
         {
-          name: '產品設計與量產開發',
-          shortName: '產品設計',
-          subtitleSentences: ['剖析未被留心的不便利', '用美學將痛點優雅轉譯'],
+          name: this.$t('homepage.solutions.product.name'),
+          shortName: this.$t('homepage.solutions.product.shortName'),
+          subtitleSentences: [
+            this.$t('homepage.solutions.product.subtitleSentences[0]'),
+            this.$t('homepage.solutions.product.subtitleSentences[1]')
+          ],
           textSentences: [
-            '深究物件與人的夥伴關係，刻畫機能、型態與互動上的優質體驗。',
-            '以細膩的設計雕琢產品，回應使用者對生活的期待。'
+            this.$t('homepage.solutions.product.textSentences[0]'),
+            this.$t('homepage.solutions.product.textSentences[1]')
           ],
           keywordList: [
             {
-              name: '問題研究'
+              name: this.$t('homepage.solutions.product.keywordList[0].name')
             },
             {
-              name: '概念提案'
+              name: this.$t('homepage.solutions.product.keywordList[1].name')
             },
             {
-              name: '參與式設計過程'
+              name: this.$t('homepage.solutions.product.keywordList[2].name')
             },
             {
-              name: '產品外觀設計'
+              name: this.$t('homepage.solutions.product.keywordList[3].name')
             },
             {
-              name: '3D模型建構'
+              name: this.$t('homepage.solutions.product.keywordList[4].name')
             },
             {
-              name: '模型製作'
+              name: this.$t('homepage.solutions.product.keywordList[5].name')
             }
           ],
           serviceLink: '/services/product-design'
         },
         {
-          name: '品牌形象與視覺設計',
-          shortName: '視覺設計',
-          subtitleSentences: ['直指人心的視覺傳達', '昇華品牌與客戶的關係'],
+          name: this.$t('homepage.solutions.design.name'),
+          shortName: this.$t('homepage.solutions.design.shortName'),
+          subtitleSentences: [
+            this.$t('homepage.solutions.design.subtitleSentences[0]'),
+            this.$t('homepage.solutions.design.subtitleSentences[1]')
+          ],
           textSentences: [
-            '一頁書、一件包裝、一套專業完整的品牌形象，由量身定制的設計精準傳達願景，',
-            '讓您的客戶體驗品牌無微不至的用心，加深信任您的服務與產品。'
+            this.$t('homepage.solutions.design.textSentences[0]'),
+            this.$t('homepage.solutions.design.textSentences[1]')
           ],
           keywordList: [
             {
-              name: '品牌形象設計'
+              name: this.$t('homepage.solutions.design.keywordList[0].name')
             },
             {
-              name: '裝幀設計'
+              name: this.$t('homepage.solutions.design.keywordList[1].name')
             },
             {
-              name: '平面設計'
+              name: this.$t('homepage.solutions.design.keywordList[2].name')
             },
             {
-              name: '包裝設計'
+              name: this.$t('homepage.solutions.design.keywordList[3].name')
             },
             {
-              name: '網站介面設計'
+              name: this.$t('homepage.solutions.design.keywordList[4].name')
             }
           ],
           serviceLink: '/services/commercial-design'
         },
         {
-          name: '企劃發想與活動策劃',
-          shortName: '企劃發想',
-          subtitleSentences: ['羽量團隊效能無限', '超高動能協助靈活策展'],
+          name: this.$t('homepage.solutions.planning.name'),
+          shortName: this.$t('homepage.solutions.planning.shortName'),
+          subtitleSentences: [
+            this.$t('homepage.solutions.planning.subtitleSentences[0]'),
+            this.$t('homepage.solutions.planning.subtitleSentences[1]')
+          ],
           textSentences: [
-            '設計起家的創意人才加上打破框架的企業文化，為您的企劃提供意想不到的創新解方，',
-            '熟悉外部團隊協作，與您迅速對接需求，自課程設計到會展活動，皆能提供專業的執行統籌。'
+            this.$t('homepage.solutions.planning.textSentences[0]'),
+            this.$t('homepage.solutions.planning.textSentences[1]')
           ],
           keywordList: [
             {
-              name: '課程、活動、展覽題材開發'
+              name: this.$t('homepage.solutions.planning.keywordList[0].name')
             },
             {
-              name: '內容企劃'
+              name: this.$t('homepage.solutions.planning.keywordList[1].name')
             },
             {
-              name: '執行統籌'
+              name: this.$t('homepage.solutions.planning.keywordList[2].name')
             },
             {
-              name: '現場主持與場務'
+              name: this.$t('homepage.solutions.planning.keywordList[3].name')
             },
             {
-              name: '活動視覺及媒體代操'
+              name: this.$t('homepage.solutions.planning.keywordList[4].name')
             }
           ],
           serviceLink: '/services/event-planning'
@@ -465,102 +486,92 @@ export default {
       ],
       work: [
         {
-          name: '系統設計、開發與維運',
-          text: '系統設計、開發與維運',
+          name: this.$t('homepage.work.system.name'),
+          text: this.$t('homepage.work.system.text'),
           projects: [
             {
-              name: '產銷系統設計｜日本農產電商物流系統',
-              description:
-                '與農產經銷日商Vegibus合作，致力於推廣農產品地產地銷的供應永續，為既有概念「蔬菜巴士」開發專屬資訊系統，一站整合產地供應、配送貨態、消費訂單與金流資訊，協助實現物流端自多站農家取貨、集運、沿線配送到府之複雜流程。',
+              name: this.$t('homepage.work.system.projects[0].name'),
+              description: this.$t('homepage.work.system.projects[0].description'),
               coverImageUrl: vegibusCoverImageUrl,
               workLink: '/work/1'
             },
             {
-              name: '機電整合開發｜自主移動機器人控制平台',
-              description:
-                '因應農村高齡化勞動力短缺、農業精緻化管理繁瑣等情境，提出農用自走車——Mobile Mover，以智慧農機作為未來解方，配合作物管理週期搭載特定配件，實現壓草、除草、投藥、收成搬運等全功能農務支援。',
+              name: this.$t('homepage.work.system.projects[1].name'),
+              description: this.$t('homepage.work.system.projects[1].description'),
               coverImageUrl: mobileMoverCoverImageUrl,
               workLink: '/work/2'
             }
           ]
         },
         {
-          name: '國內、國際貿易服務',
-          text: '國內、國際貿易服務',
+          name: this.$t('homepage.work.trading.name'),
+          text: this.$t('homepage.work.trading.text'),
           projects: [
             {
-              name: '日本外銷｜出口屏東台農金鑽鳳梨',
-              description:
-                '協助屏東縣綠地農特產品生產合作社與農產經銷日商Vegibus對接合作，出口台農17號金鑽鳳梨，直送日本當地大型超市Kasumiカスミ。',
+              name: this.$t('homepage.work.trading.projects[0].name'),
+              description: this.$t('homepage.work.trading.projects[0].description'),
               coverImageUrl: pineappleTradingCoverImageUrl,
               workLink: '/work/9'
             }
           ]
         },
         {
-          name: '產品設計與量產開發',
-          text: '產品設計與量產開發',
+          name: this.$t('homepage.work.product.name'),
+          text: this.$t('homepage.work.product.text'),
           projects: [
             {
-              name: '傢俱設計｜慕廂－優雅收移的實木家具',
-              description:
-                '回應當代對室內工作空間靈活、共享等流動性訴求，慕廂收束實木家具的量體，以逐一靠攏的動作取代拆裝，輕鬆的收合桌、椅與邊櫃，並實現優雅不費力的平面推移。',
+              name: this.$t('homepage.work.product.projects[0].name'),
+              description: this.$t('homepage.work.product.projects[0].description'),
               coverImageUrl: kizunaFurnitureDesignCoverImageUrl,
               workLink: '/work/4'
             }
           ]
         },
         {
-          name: '品牌形象與視覺設計',
-          text: '品牌形象與視覺設計',
+          name: this.$t('homepage.work.design.name'),
+          text: this.$t('homepage.work.design.text'),
           projects: [
             {
-              name: '書籍與裝幀｜木工藝工具書',
-              description:
-                '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，並執行編印出版，完成上架國家書店納入政府出版品。',
+              name: this.$t('homepage.work.design.projects[0].name'),
+              description: this.$t('homepage.work.design.projects[0].description'),
               /*'國家書店政府出版品連結：',
                 'https://www.govbooks.com.tw/books/137952'*/
               coverImageUrl: woodWorkBookCoverImageUrl,
               workLink: '/work/3'
             },
             {
-              name: '視覺與包裝｜M2Labo名片設計',
-              description:
-                '與日本公司「エムスクエア・ラボ」合作，火紅的朝陽和夕陽也代表著日本的國旗，兩面圖像象徵企業日出而作，日落不息之精進精神。',
+              name: this.$t('homepage.work.design.projects[1].name'),
+              description: this.$t('homepage.work.design.projects[1].description'),
               coverImageUrl: m2LaboBusinessCardDesignCoverImageUrl,
               workLink: '/work/8'
             },
             {
-              name: '高畠市役場名片設計',
-              description:
-                '為日本高畠市地區公所設計機關公務名片。\nLOGO結合市內之國家有形文化資產「舊高畠車站」，背面雅緻紋理則取自特色礦產「高畠石」。\n圍繞地方風情的細節增強基層機關與在地的連結，也使初見面的交換名片富饒更多驚喜話題。\n*畠：音田',
+              name: this.$t('homepage.work.design.projects[2].name'),
+              description: this.$t('homepage.work.design.projects[2].description'),
               coverImageUrl: takahataBusinessCardDesignCoverImageUrl,
               workLink: '/work/7'
             },
             {
-              name: '日本高級超市 韭菜泡菜包裝設計',
-              description:
-                '輔導農家運用地產優勢研製韭菜泡菜特產，並協助設計包裝利供銷，增加農產加工增值的效益。',
+              name: this.$t('homepage.work.design.projects[3].name'),
+              description: this.$t('homepage.work.design.projects[3].description'),
               coverImageUrl: kimchiPackageDesignCoverImageUrl,
               workLink: '/work/5'
             },
             {
-              name: '商空與展櫃｜廣島三原車站無人商店',
-              description:
-                '於西日本JR地方車站建置無人商店，自陳設、空間、至店內視覺經一致性統籌規劃，兼具舒適感及實用的平衡，達到自在便利的購物體驗。',
+              name: this.$t('homepage.work.design.projects[4].name'),
+              description: this.$t('homepage.work.design.projects[4].description'),
               coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
               workLink: '/work/6'
             }
           ]
         },
         {
-          name: '企劃發想與數位行銷',
-          text: '企劃發想與數位行銷',
+          name: this.$t('homepage.work.planning.name'),
+          text: this.$t('homepage.work.planning.text'),
           projects: [
             {
-              name: '活動紀錄｜車床技術轉譯研究工作坊',
-              description:
-                '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，執行影片剪輯、影像紀錄，並於活動結束當日上映，作為活動結尾。',
+              name: this.$t('homepage.work.planning.projects[0].name'),
+              description: this.$t('homepage.work.planning.projects[0].description'),
               coverImageUrl: woodWorkshopCoverImageUrl,
               workLink: '/work/10'
             }
