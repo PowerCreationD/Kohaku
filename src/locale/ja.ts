@@ -578,6 +578,107 @@ const locale = {
       works_example: ['イベント企画｜木工旋盤技術の研究ワークショップ']
     }
   },
+  member: {
+    charles: {
+      name: '凱元 Charles',
+      position: '最高経営責任者',
+      description: '水瓶座のロジック',
+      skills: [
+        '食農供給チェーン',
+        'ヒューマンインタラクション',
+        'インターナショナルプランニング',
+        'システムデザイン'
+      ],
+      intro: ``
+    },
+    hannah: {
+      name: '詩涵 Hannah',
+      position: 'フルスタックエンジニア',
+      description: 'あなたの質問をサプライズに変えてみましょう！',
+      skills: ['Web-Based 系統架構設計', '專案管理與品質控管', '數據分析與可視化'],
+      intro: ``
+    },
+    arthur: {
+      name: '柏維 Arthur',
+      position: 'フルスタックエンジニア',
+      description: '文科と理系のデュアルシステム',
+      skills: ['API建構與設計', '軟硬體整合開發', '機器人作業系統'],
+      intro: ``
+    },
+    albert: {
+      name: '書彥 Albert',
+      position: 'フルスタックエンジニア',
+      description: 'ユニコーン愛好者',
+      skills: ['伺服器配置', '網站效能優化', '資料庫設計', '資訊安全', 'AI導入'],
+      intro: ``
+    },
+    lily: {
+      name: '子涵 Lily',
+      position: 'ハードウェアエンジニア',
+      description: 'ボールを打っているか、コードを打っているかのどちらかです',
+      skills: ['嵌入式系統開發', '硬體架構設計', '硬體環境相容性評估'],
+      intro: ``
+    },
+    jozie: {
+      name: '趯瑾 Jozie',
+      position: 'フロントエンドエンジニア',
+      description: 'インディーロック探究者',
+      skills: ['前端框架開發', '商業模板建置與客製化', '可視化與互動設計', 'SEO優化'],
+      intro: ``
+    },
+    arien: {
+      name: '采蘋 Arien',
+      position: 'グラフィックデザイナー',
+      description: 'デザインの永久機関',
+      skills: ['使用者研究', '網站整體規劃', '網站介面設計', '品牌形象', '平面設計'],
+      intro: ``
+    },
+    ivy: {
+      name: '逸青 Ivy',
+      position: 'グラフィックデザイナー',
+      description: 'インスピレーションはコーヒーカップの底にあります',
+      skills: ['品牌形象', '參與式設計', '跨域企劃發想與共構', '平面設計', '圖像與插畫設計'],
+      intro: ``
+    },
+    lishin: {
+      name: '立心 Lishin',
+      position: 'プロダクトデザイナー',
+      description: '最終確定版.final.final.final.3dm',
+      skills: ['產品設計', '3D建模渲染', '模型製作', 'Rhinoceros 3D', 'KeyShot'],
+      intro: ``
+    },
+    brooke: {
+      name: '采倫 Brooke',
+      position: 'コンテンツ企画',
+      description: 'デザインを南極まで！',
+      skills: ['服務設計', '資料規劃', '內容企劃', '活動執行'],
+      intro: ``
+    },
+    andrew: {
+      name: '俊宇 Andrew',
+      position: 'ソフトウェアエンジニア',
+      description: '科学技術を活用して、デザインの巧妙なアイデアを実現しましょう',
+      skills: [
+        'ヒューマンインタラクション',
+        'スペースコンピューティング',
+        'コンピュータグラフィックス',
+        'プロダクトデザイン'
+      ],
+      intro: ``
+    },
+    ti: {
+      name: '彩緹 Ti',
+      position: 'ビジネス開発',
+      description: '変わった可愛さ、そして真面目',
+      skills: [
+        'プロポーザルとプレゼンテーション',
+        'コールドコール',
+        '企画立案と実行',
+        '製品の説明と紹介'
+      ],
+      intro: ``
+    }
+  },
   contact: {
     introduction: {
       title: `どんな要望でも大歓迎！
