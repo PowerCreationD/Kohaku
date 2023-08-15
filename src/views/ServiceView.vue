@@ -50,41 +50,60 @@ export default {
       serviceData: [
         {
           "id": "system_development",
-          "name": "系統設計 / 開發與維運",
-          "slogan": ["客製資訊系統導入產業", "協助趨勢洞察建立遠見"],
-          "description": "以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。",
+          "name": this.$t('services.system.name'),
+          "slogan": [
+            this.$t('services.system.slogan[0]'),
+            this.$t('services.system.slogan[1]')
+          ],
+          "description": this.$t('services.system.description'),
           "content": [
             {
-              "title": "系統開發",
+              "title": this.$t('services.system.content[0].title'),
               "services": [
                 {
-                  "subtitle": "前端開發",
-                  "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
+                  "subtitle": this.$t('services.system.content[0].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.system.content[0].services[0].items[0]'),
+                    this.$t('services.system.content[0].services[0].items[1]'),
+                    this.$t('services.system.content[0].services[0].items[2]'),
+                    this.$t('services.system.content[0].services[0].items[3]'),
+                  ],
                   "img_url": img_frontend
                 },
                 {
-                  "subtitle": "後端開發",
-                  "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
+                  "subtitle": this.$t('services.system.content[0].services[1].subtitle'),
+                  "items": [
+                    this.$t('services.system.content[0].services[1].items[0]'),
+                    this.$t('services.system.content[0].services[1].items[1]'),
+                    this.$t('services.system.content[0].services[1].items[2]'),
+                    this.$t('services.system.content[0].services[1].items[3]'),
+                  ],
                   "img_url": img_backend
                 }
               ]
             },
             {
-              "title": "資料分析",
+              "title": this.$t('services.system.content[1].title'),
               "services": [
                 {
-                  "subtitle": "商業資料探勘",
-                  "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
+                  "subtitle": this.$t('services.system.content[1].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.system.content[1].services[0].items[0]'),
+                    this.$t('services.system.content[1].services[0].items[1]'),
+                    this.$t('services.system.content[1].services[0].items[2]'),
+                  ],
                   "img_url": img_data_analysis
                 }
               ]
             },
             {
-              "title": "設備開發",
+              "title": this.$t('services.system.content[2].title'),
               "services": [
                 {
-                  "subtitle": "嵌入式系統開發",
-                  "items": ["物聯網裝置整合開發"],
+                  "subtitle": this.$t('services.system.content[2].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.system.content[2].services[0].items[0]')
+                  ],
                   "img_url": img_embedded_system
                 }
               ]
@@ -96,29 +115,36 @@ export default {
             "exampleList": [{
               "id": 1, 
               "project": "e-commerce-and-logistics-system",
-              "title": "產銷系統設計｜日本農產電商物流系統",
+              "title": this.$t('services.system.works_example[0]'),
               "img_url": img_vegibus_system
             },
             {
               "id": 2,
               "project": "autonomous-mobile-robot",
-              "title": "機電整合開發｜自主移動機器人控制平台",
+              "title": this.$t('services.system.works_example[1]'),
               "img_url": img_mobilemover_app
             }]
           }
         },
         {
           "id": "trading",
-          "name": "國內 / 國際貿易服務",
-          "slogan": ["發現台灣在地美味食力", "打造全新面貌走向國際"],
-          "description": "專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。具備專業的中、英、日語窗口，提供選品諮詢與外銷代辦，並有依目標地區消費習慣的品牌包裝再造服務，幫助MIT產品走向世界。",
+          "name": this.$t('services.trading.name'),
+          "slogan": [
+            this.$t('services.trading.slogan[0]'),
+            this.$t('services.trading.slogan[1]')
+          ],
+          "description": this.$t('services.trading.description'),
           "content": [
             {
-              "title": "進出口貿易",
+              "title": this.$t('services.trading.content[0].title'),
               "services": [
                 {
-                  "subtitle": "進出口單一窗口服務",
-                  "items": ["進出口選品諮詢", "市場風向探勘", "行銷企劃與代操", "中／英／日三語言窗口", "異國品牌包裝Redesign"],
+                  "subtitle": this.$t('services.trading.content[0].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.trading.content[0].services[0].items[0]'),
+                    this.$t('services.trading.content[0].services[0].items[1]'),
+                    this.$t('services.trading.content[0].services[0].items[2]'),
+                  ],
                   "img_url": img_trading_cover
                 }
               ]
@@ -130,23 +156,33 @@ export default {
             "exampleList": [{
               "id": 9,
               "project": "exporting-pineapples",
-              "title": "日本外銷｜出口屏東台農金鑽鳳梨",
+              "title": this.$t('services.trading.works_example[0]'),
               "img_url": img_pineapple_1
             }]
           }
         },
         {
           "id": "product_design",
-          "name": "產品設計與量產開發",
-          "slogan": ["剖析未被留心的不便利", "用美學將痛點優雅轉譯"],
-          "description": "深究物件與人的夥伴關係，刻畫機能、型態與互動上的優質體驗以細膩的設計雕琢產品，回應使用者對生活的期待。",
+          "name": this.$t('services.product.name'),
+          "slogan": [
+            this.$t('services.product.slogan[0]'),
+            this.$t('services.product.slogan[1]')
+          ],
+          "description": this.$t('services.product.description'),
           "content": [
             {
-              "title": "產品研發",
+              "title": this.$t('services.product.content[0].title'),
               "services": [
                 {
-                  "subtitle": "研發與設計服務",
-                  "items": ["問題研究", "概念提案", "參與式設計過程", "產品外觀設計", "3D模型建構", "模型製作"],
+                  "subtitle": this.$t('services.product.content[0].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.product.content[0].services[0].items[0]'),
+                    this.$t('services.product.content[0].services[0].items[1]'),
+                    this.$t('services.product.content[0].services[0].items[2]'),
+                    this.$t('services.product.content[0].services[0].items[3]'),
+                    this.$t('services.product.content[0].services[0].items[4]'),
+                    this.$t('services.product.content[0].services[0].items[5]'),
+                  ],
                   "img_url": img_product_cover
                 }
               ]
@@ -158,23 +194,32 @@ export default {
             "exampleList": [{
               "id": 4,
               "project": "mu-maison",
-              "title": "傢俱設計｜慕廂－優雅收移的實木家具",
+              "title": this.$t('services.product.works_example[0]'),
               "img_url": img_kizuna_1
             }]
           }
         },
         {
           "id": "commercial_design",
-          "name": "品牌形象與視覺設計",
-          "slogan": ["直指人心的視覺傳達", "昇華品牌與客戶的關係"],
-          "description": "一頁書、一件包裝、一套專業完整的品牌形象，由量身定制的設計精準傳達願景，讓您的客戶體驗品牌無微不至的用心，加深信任您的服務與產品。",
+          "name": this.$t('services.design.name'),
+          "slogan": [
+            this.$t('services.design.slogan[0]'),
+            this.$t('services.design.slogan[1]')
+          ],
+          "description": this.$t('services.design.description'),
           "content": [
             {
-              "title": "商業設計",
+              "title": this.$t('services.design.content[0].title'),
               "services": [
                 {
-                  "subtitle": "視覺設計",
-                  "items": ["品牌形象設計", "裝幀設計", "平面設計", "包裝設計", "網站介面設計"],
+                  "subtitle": this.$t('services.design.content[0].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.design.content[0].services[0].items[0]'),
+                    this.$t('services.design.content[0].services[0].items[1]'),
+                    this.$t('services.design.content[0].services[0].items[2]'),
+                    this.$t('services.design.content[0].services[0].items[3]'),
+                    this.$t('services.design.content[0].services[0].items[4]'),
+                  ],
                   "img_url": img_commercial_design_cover
                 }
               ]
@@ -186,29 +231,38 @@ export default {
             "exampleList": [{
               "id": 5,
               "project": "leek-kimchi",
-              "title": "日本高級超市 韭菜泡菜包裝設計",
+              "title": this.$t('services.design.works_example[0]'),
               "img_url": img_kimchi_1
             }, 
             {
               "id": 8,
               "project": "m2labo-business-card-design",
-              "title": "視覺與包裝｜M2Labo名片設計",
+              "title": this.$t('services.design.works_example[1]'),
               "img_url": img_power_creation_business_card_1
             }]
           }
         },
         {
           "id": "event_planning",
-          "name": "企劃發想與活動策劃",
-          "slogan": ["羽量團隊效能無限", "超高動能協助靈活策展"],
-          "description": "設計起家的創意人才加上打破框架的企業文化，為您的企劃提供意想不到的創新解方，熟悉外部團隊協作，與您迅速對接需求，自課程設計到會展活動，皆能提供專業的執行統籌。",
+          "name": this.$t('services.planning.name'),
+          "slogan": [
+            this.$t('services.planning.slogan[0]'),
+            this.$t('services.planning.slogan[1]')
+          ],
+          "description": this.$t('services.planning.description'),
           "content": [
             {
-              "title": "企劃活動",
+              "title": this.$t('services.planning.content[0].title'),
               "services": [
                 {
-                  "subtitle": "活動策劃服務",
-                  "items": ["課程、活動、展覽題材開發", "內容企劃", "執行統籌", "現場主持與場務", "活動視覺及媒體代操"],
+                  "subtitle": this.$t('services.planning.content[0].services[0].subtitle'),
+                  "items": [
+                    this.$t('services.planning.content[0].services[0].items[0]'),
+                    this.$t('services.planning.content[0].services[0].items[1]'),
+                    this.$t('services.planning.content[0].services[0].items[2]'),
+                    this.$t('services.planning.content[0].services[0].items[3]'),
+                    this.$t('services.planning.content[0].services[0].items[4]'),
+                  ],
                   "img_url": img_event_planning_cover
                 }
               ]
@@ -220,7 +274,7 @@ export default {
             "exampleList": [{
                 "id": 10, 
                 "project": "lathe-machine-workshop",
-                "title": "活動紀錄｜車床技術轉譯研究工作坊",
+                "title": this.$t('services.planning.works_example[0]'),
                 "img_url": img_wood_workshop_1
             }]
           }
@@ -228,41 +282,60 @@ export default {
       ],
       dataToBeRendered: {
         "id": "system_development",
-        "name": "系統設計 / 開發與維運",
-        "slogan": ["客製資訊系統導入產業", "協助趨勢洞察建立遠見"],
-        "description": "以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，並有終端設備串接與開發專業，協助收集數據幫助決策，優化流程提升供銷效能。",
+        "name": this.$t('services.system.name'),
+        "slogan": [
+          this.$t('services.system.slogan[0]'),
+          this.$t('services.system.slogan[1]')
+        ],
+        "description": this.$t('services.system.description'),
         "content": [
           {
-            "title": "系統開發",
+            "title": this.$t('services.system.content[0].title'),
             "services": [
               {
-                "subtitle": "前端開發",
-                "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
+                "subtitle": this.$t('services.system.content[0].services[0].subtitle'),
+                "items": [
+                  this.$t('services.system.content[0].services[0].items[0]'),
+                  this.$t('services.system.content[0].services[0].items[1]'),
+                  this.$t('services.system.content[0].services[0].items[2]'),
+                  this.$t('services.system.content[0].services[0].items[3]'),
+                ],
                 "img_url": img_frontend
               },
               {
-                "subtitle": "後端開發",
-                "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
+                "subtitle": this.$t('services.system.content[0].services[1].subtitle'),
+                "items": [
+                  this.$t('services.system.content[0].services[1].items[0]'),
+                  this.$t('services.system.content[0].services[1].items[1]'),
+                  this.$t('services.system.content[0].services[1].items[2]'),
+                  this.$t('services.system.content[0].services[1].items[3]'),
+                ],
                 "img_url": img_backend
               }
             ]
           },
           {
-            "title": "資料分析",
+            "title": this.$t('services.system.content[1].title'),
             "services": [
               {
-                "subtitle": "商業資料探勘",
-                "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
+                "subtitle": this.$t('services.system.content[1].services[0].subtitle'),
+                "items": [
+                  this.$t('services.system.content[1].services[0].items[0]'),
+                  this.$t('services.system.content[1].services[0].items[1]'),
+                  this.$t('services.system.content[1].services[0].items[2]'),
+                ],
                 "img_url": img_data_analysis
               }
             ]
           },
           {
-            "title": "設備開發",
+            "title": this.$t('services.system.content[2].title'),
             "services": [
               {
-                "subtitle": "嵌入式系統開發",
-                "items": ["物聯網裝置整合開發"],
+                "subtitle": this.$t('services.system.content[2].services[0].subtitle'),
+                "items": [
+                  this.$t('services.system.content[2].services[0].items[0]')
+                ],
                 "img_url": img_embedded_system
               }
             ]
@@ -274,51 +347,67 @@ export default {
           "exampleList": [{
             "id": 1, 
             "project": "e-commerce-and-logistics-system",
-            "title": "產銷系統設計｜日本農產電商物流系統",
+            "title": this.$t('services.system.works_example[0]'),
             "img_url": img_vegibus_system
           },
           {
             "id": 2,
             "project": "autonomous-mobile-robot",
-            "title": "機電整合開發｜自主移動機器人控制平台",
+            "title": this.$t('services.system.works_example[1]'),
             "img_url": img_mobilemover_app
           }]
         }
       },
       dataCard1: [
         {
-          "title": "系統開發",
-          "services": [
-            {
-              "subtitle": "前端開發",
-              "items": ["前端框架開發", "前端互動設計", "RWD 響應式網站", "漸進式網站應用程式 (PWA)"],
-              "img_url": img_frontend
-            },
-            {
-              "subtitle": "後端開發",
-              "items": ["資料庫設計與規劃", "API 開發 / 第三方 API 串接", "雲端整合部署", "CI / CD"],
-              "img_url": img_backend
-            }
-          ]
+          "title": this.$t('services.system.content[0].title'),
+            "services": [
+              {
+                "subtitle": this.$t('services.system.content[0].services[0].subtitle'),
+                "items": [
+                  this.$t('services.system.content[0].services[0].items[0]'),
+                  this.$t('services.system.content[0].services[0].items[1]'),
+                  this.$t('services.system.content[0].services[0].items[2]'),
+                  this.$t('services.system.content[0].services[0].items[3]'),
+                ],
+                "img_url": img_frontend
+              },
+              {
+                "subtitle": this.$t('services.system.content[0].services[1].subtitle'),
+                "items": [
+                  this.$t('services.system.content[0].services[1].items[0]'),
+                  this.$t('services.system.content[0].services[1].items[1]'),
+                  this.$t('services.system.content[0].services[1].items[2]'),
+                  this.$t('services.system.content[0].services[1].items[3]'),
+                ],
+                "img_url": img_backend
+              }
+            ]
         }
       ],
       dataCard2:[
         {
-          "title": "資料分析",
+          "title": this.$t('services.system.content[1].title'),
           "services": [
             {
-              "subtitle": "商業資料探勘",
-              "items": ["商業數據分析與可視化", "BI 工具導入", "資料收集、轉移與載入自動化"],
+              "subtitle": this.$t('services.system.content[1].services[0].subtitle'),
+              "items": [
+                this.$t('services.system.content[1].services[0].items[0]'),
+                this.$t('services.system.content[1].services[0].items[1]'),
+                this.$t('services.system.content[1].services[0].items[2]'),
+              ],
               "img_url": img_data_analysis
             }
           ]
         },
         {
-          "title": "設備開發",
+          "title": this.$t('services.system.content[2].title'),
           "services": [
             {
-              "subtitle": "嵌入式系統開發",
-              "items": ["物聯網裝置整合開發"],
+              "subtitle": this.$t('services.system.content[2].services[0].subtitle'),
+              "items": [
+                this.$t('services.system.content[2].services[0].items[0]')
+              ],
               "img_url": img_embedded_system
             }
           ]
@@ -326,23 +415,23 @@ export default {
       ],
       serviceOptions: [
         {
-          text: '系統設計 / 開發與維運',
+          text: this.$t('services.system.name'),
           value: 'system_development'
         },
         {
-          text: '國內 / 國際貿易服務',
+          text: this.$t('services.trading.name'),
           value: 'trading'
         },
         {
-          text: '產品設計與量產開發',
+          text: this.$t('services.product.name'),
           value: 'product_design'
         },
         {
-          text: '品牌形象與視覺設計',
+          text: this.$t('services.design.name'),
           value: 'commercial_design'
         },
         {
-          text: '企劃發想與活動策劃',
+          text: this.$t('services.planning.name'),
           value: 'event_planning'
         }
       ]
