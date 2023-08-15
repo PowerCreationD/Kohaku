@@ -536,6 +536,92 @@ const locale = {
       works_example: ['活動紀錄｜車床技術轉譯研究工作坊']
     }
   },
+  member: {
+    charles: {
+      name: '凱元 Charles',
+      position: '執行長',
+      description: '水瓶座邏輯',
+      skills: ['食農供應鏈', '人機互動', '國際企劃', '系統設計'],
+      intro: ``
+    },
+    hannah: {
+      name: '詩涵 Hannah',
+      position: '全端工程師',
+      description: '把你的問題變成驚喜',
+      skills: ['Web-Based 系統架構設計', '專案管理與品質控管', '數據分析與可視化'],
+      intro: ``
+    },
+    arthur: {
+      name: '柏維 Arthur',
+      position: '全端工程師',
+      description: '文科與理組雙作業系統',
+      skills: ['API建構與設計', '軟硬體整合開發', '機器人作業系統'],
+      intro: ``
+    },
+    albert: {
+      name: '書彥 Albert',
+      position: '全端工程師',
+      description: '獨角獸愛好者',
+      skills: ['伺服器配置', '網站效能優化', '資料庫設計', '資訊安全', 'AI導入'],
+      intro: ``
+    },
+    lily: {
+      name: '子涵 Lily',
+      position: '硬體工程師',
+      description: '我不是在打球就是在打Code',
+      skills: ['嵌入式系統開發', '硬體架構設計', '硬體環境相容性評估'],
+      intro: ``
+    },
+    jozie: {
+      name: '趯瑾 Jozie',
+      position: '前端工程師',
+      description: '獨立音樂探勘者',
+      skills: ['前端框架開發', '商業模板建置與客製化', '可視化與互動設計', 'SEO優化'],
+      intro: ``
+    },
+    arien: {
+      name: '采蘋 Arien',
+      position: '商業設計師',
+      description: '設計永動機',
+      skills: ['使用者研究', '網站整體規劃', '網站介面設計', '品牌形象', '平面設計'],
+      intro: ``
+    },
+    ivy: {
+      name: '逸青 Ivy',
+      position: '商業設計師',
+      description: '咖啡杯底 靈感在這裡！',
+      skills: ['品牌形象', '參與式設計', '跨域企劃發想與共構', '平面設計', '圖像與插畫設計'],
+      intro: ``
+    },
+    lishin: {
+      name: '立心 Lishin',
+      position: '產品設計師',
+      description: '最終確定版.final.final.final.3dm',
+      skills: ['產品設計', '3D建模渲染', '模型製作', 'Rhinoceros 3D', 'KeyShot'],
+      intro: ``
+    },
+    brooke: {
+      name: '采倫 Brooke',
+      position: '內容企劃師',
+      description: '想做南極的設計',
+      skills: ['服務設計', '資料規劃', '內容企劃', '活動執行'],
+      intro: ``
+    },
+    andrew: {
+      name: '俊宇 Andrew',
+      position: '軟體工程師',
+      description: '用科技發想實現設計巧思！',
+      skills: ['人機互動', '空間運算', '電腦圖學', '產品設計'],
+      intro: ``
+    },
+    ti: {
+      name: '彩緹 Ti',
+      position: '商務開發',
+      description: '奇怪可愛也認真專業',
+      skills: ['提案與簡報', '陌生開發', '跨域合作規劃與執行', '產品解說介紹'],
+      intro: ``
+    }
+  },
   contact: {
     introduction: {
       title: `歡迎與琥白分享你的天馬行空，

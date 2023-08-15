@@ -583,6 +583,138 @@ const locale = {
       works_example: ['Event Documentation｜Lathe Machine Workshop']
     }
   },
+  member: {
+    charles: {
+      name: '凱元 Charles',
+      position: 'Chief Executive Officer (CEO)',
+      description: 'ThinkingOfAquarius',
+      skills: ['FoodSupplyChain', 'HCI', 'InternationalPlanning', 'SystemDesign'],
+      intro: ``
+    },
+    hannah: {
+      name: '詩涵 Hannah',
+      position: 'Fullstack Engineer',
+      description: 'yourConcerns2Surprises',
+      skills: [
+        'Web-BasedSystemArchitectureDesign',
+        'ProjectManagementAndQualityControl',
+        'DataAnalysisAndVisualization'
+      ],
+      intro: ``
+    },
+    arthur: {
+      name: '柏維 Arthur',
+      position: 'Fullstack Engineer',
+      description: 'DualOsOfHumanity&Science',
+      skills: [
+        'APIConstructionAndDesign',
+        'Software-HardwareIntegrationDevelopment',
+        'RobotOperatingSystems'
+      ],
+      intro: ``
+    },
+    albert: {
+      name: '書彥 Albert',
+      position: 'Fullstack Engineer',
+      description: 'UnicornLover',
+      skills: [
+        'ServerConfiguration',
+        'WebsitePerformanceOptimization',
+        'DatabaseDesign',
+        'InformationSecurity',
+        'AIImplementation'
+      ],
+      intro: ``
+    },
+    lily: {
+      name: '子涵 Lily',
+      position: 'Hardware Engineer',
+      description: 'EitherPlaingBallOrCoding',
+      skills: [
+        'EmbeddedSystemDevelopment',
+        'HardwareArchitectureDesign',
+        'HardwareEnvironmentCompatibilityAssessment'
+      ],
+      intro: ``
+    },
+    jozie: {
+      name: '趯瑾 Jozie',
+      position: 'Frontend Engineer',
+      description: 'IndieMusicExplorer',
+      skills: [
+        'FrontendFrameworkDevelopment',
+        'BusinessTemplateSetupAndCustomization',
+        'VisualizationAndInteractionDesign',
+        'SEOOptimization'
+      ],
+      intro: ``
+    },
+    arien: {
+      name: '采蘋 Arien',
+      position: 'Business Designer',
+      description: 'PerpetualMotionMachineOfDesign',
+      skills: [
+        'UserResearch',
+        'ComprehensiveWebsitePlanning',
+        'WebsiteInterfaceDesign',
+        'BrandIdentity',
+        'GraphicDesign'
+      ],
+      intro: ``
+    },
+    ivy: {
+      name: '逸青 Ivy',
+      position: 'Business Designer',
+      description: 'CoffeeCupBottomInspirationIsHere',
+      skills: [
+        'BrandIdentity',
+        'ParticipatoryDesign',
+        'Cross-DomainPlanningAndCollaboration',
+        'GraphicDesign',
+        'ImageAndIllustrationDesign'
+      ],
+      intro: ``
+    },
+    lishin: {
+      name: '立心 Lishin',
+      position: 'Product Designer',
+      description: 'TheFinalVersion.final.final.final.3dm',
+      skills: [
+        'ProductDesign',
+        '3DModelingAndRendering',
+        'ModelFabrication',
+        'Rhinoceros3D',
+        'KeyShot'
+      ],
+      intro: ``
+    },
+    brooke: {
+      name: '采倫 Brooke',
+      position: 'Content Planner',
+      description: 'DesignInAntarctica',
+      skills: ['ServiceDesign', 'DataPlanning', 'ContentPlanning', 'EventExecution'],
+      intro: ``
+    },
+    andrew: {
+      name: '俊宇 Andrew',
+      position: 'Software Engineer',
+      description: 'EmbacingIngenuity',
+      skills: ['HCI', 'SpatialComputing', 'ComputerGraphics', 'ProductDesign'],
+      intro: ``
+    },
+    ti: {
+      name: '彩緹 Ti',
+      position: 'Business Development',
+      description: 'NovelAndInnovativeWeirdButProfessional',
+      skills: [
+        'BusinessProposalAndPresentation',
+        'ColdCalling',
+        'Cross-domainCollaborationExecution',
+        'ProductExplanationAndIntroduction'
+      ],
+      intro: ``
+    }
+  },
   contact: {
     introduction: {
       title: `Welcome to share your wildest ideas with Kohaku.
