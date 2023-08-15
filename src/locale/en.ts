@@ -166,7 +166,7 @@ const locale = {
                 text: 'System Design / Development and Maintenance',
                 projects: [
                     {
-                        name: 'Production and Distribution System Design | Japanese Agricultural E-commerce and Logistics System',
+                        name: 'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
                         description:
                             `Collaborating with Vegibus, a Japanese agricultural distributor, which is committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of "Vegibus," which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
                     },
@@ -395,6 +395,159 @@ const locale = {
                 tags: ["#Event Documentation", "#Video Editing", "#Script Planning"],
                 paragraph: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`,
             }
+        }
+    },
+    services: {
+        system: {
+            name: "System Design / Development and Maintenance",
+            slogan: ["Tailoring system to your business requirements", "Offering insight into your industry’s trends"],
+            description: "As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development. We assist in collecting data to aid decision-making and optimize workflows to enhance supply and sales efficiency.",
+            content: [
+                {
+                    title: "System Development",
+                    services: [
+                        {
+                            subtitle: "Frontend Development",
+                            items: [
+                                "Frameworks development",
+                                "Interaction design",
+                                "Responsive Web Design, RWD",
+                                "Progressive Web App, PWA",
+                            ],
+                        },
+                        {
+                            subtitle: "Backend Development",
+                            items: [
+                                "Database design and planning",
+                                "API development, Third party API implementation",
+                                "Cloud-based deployment",
+                                "Continuous Intergration and Delivery, CI/CD",
+                            ],
+                        }
+                    ]
+                },
+                {
+                    title: "Data Analytics",
+                    services: [
+                        {
+                            subtitle: "Business Data Mining",
+                            items: [
+                                "Data analysis and visualization",
+                                "BI tools implementation",
+                                "ETL automation",
+                            ],
+                        }
+                    ]
+                },
+                {
+                    title: "End Device Development",
+                    services: [
+                        {
+                            subtitle: "Embedded System Development",
+                            items: ["IoT device integration and design"],
+                        }
+                    ]
+                }
+            ],
+            works_example: [
+                "Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System",
+                "Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform"]
+        },
+        trading: {
+            name: "Domestic / International Trading",
+            slogan: ["Discovering delectable food from Taiwan", "Building your brand and join the international market"],
+            description: `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.
+            With our team proficient in Chinese, English, and Japanese, we offer product selection consultations and export agency services. Additionally, we provide brand redesign services tailored to the consumption habits of target regions, helping MIT (Made in Taiwan) products reach the global market.`,
+            content: [
+                {
+                    title: "Import and Export Trade",
+                    services: [
+                        {
+                            subtitle: "One-stop service for import and export",
+                            items: [
+                                "Product selection consultation for import and export",
+                                "Market trend research",
+                                "Marketing planning and execution",
+                                "Trilingual support in Chinese, English, and Japanese",
+                                "Redesign of packaging for foreign brands",
+                            ],
+                        }
+                    ]
+                },
+            ],
+            works_example: ["Export to Japan｜Exporting Pingtung's Tainung No. 17 Golden Diamond Pineapples"]
+        },
+        product: {
+            name: "Product Design and Production",
+            slogan: ["Analyzing the unnoticed inconvenience around", "interpreters the difficulties through aesthetic mindset"],
+            description: `Delving into the partnership between objects and people, we portray high-quality experiences in functionality, form, and interaction. 
+            We intricately design products to meet users' expectations and respond to their desires for a fulfilling life.`,
+            content: [
+                {
+                    title: "Product Research and Development",
+                    services: [
+                        {
+                            subtitle: "Research and Design Services",
+                            items: [
+                                "Problem research",
+                                "Concept proposal",
+                                "Participatory design process",
+                                "Product visual design",
+                                "3D model construction",
+                                "Prototype production",
+                            ],
+                        }
+                    ]
+                },
+            ],
+            works_example: ["Furniture Design｜Kizuna - Elegant Solid Wood Furniture with Tranformable feature"]
+        },
+        design: {
+            name: "Brand Identity and Visual Design",
+            slogan: ["Visual communication that directly touches the hearts of people", "Elevating the relationship between the brand and customers"],
+            description: `A single page of a book, a piece of packaging, a comprehensive and professionally crafted brand identity, all customized designs that precisely convey your vision. Allowing your customers to experience the attention to detail behind your brand, deepening their trust in your services and products.`,
+            content: [
+                {
+                    title: "Commercial Design",
+                    services: [
+                        {
+                            subtitle: "Visual Design",
+                            items: [
+                                "Brand identity design",
+                                "Book cover design",
+                                "Graphic design",
+                                "Packaging design",
+                                "Website interface design",
+                            ],
+                        }
+                    ]
+                },
+            ],
+            works_example: ["Packaging design for premium Japanese supermarket - Leek Kimchi", "Visual Design and Packaging｜M2Labo Business Card Design"]
+        },
+        planning: {
+            name: "Event Planning and Proposal",
+            slogan: ["Dedicated team with efficiency", "Flexibly organizing exhibition and other events"],
+            description: `With a team of creative talents rooted in design and a culture that breaks boundaries, we provide unexpected innovative solutions for your projects. 
+            We are experienced in collaborating with external teams and quickly adapting to your requirements. From curriculum design to exhibition events, we offer professional execution and coordination.`,
+            content: [
+                {
+                    title: "Event Planning",
+                    services: [
+                        {
+                            subtitle: "Event Planning Services",
+                            items: [
+                                "Development of curriculum, activities, and exhibition themes",
+                                "Content planning",
+                                "Execution and coordination",
+                                "On-site hosting and management",
+                                "Event visual design and social media marketing",
+                            ],
+                        }
+                    ]
+                },
+            ],
+            works_example: ["Event Documentation｜Lathe Machine Workshop"]
         }
     },
     contact: {
