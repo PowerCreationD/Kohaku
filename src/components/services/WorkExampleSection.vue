@@ -21,7 +21,7 @@
         <router-link v-if="workData['workNumber'] > 2" 
                     class="link work-example-section__more-arrow" 
                     :to="{ name: 'Work', params: { type: workData.type }  }">
-            查看更多<MoreArrowIcon class="link__icon"/>
+            {{$t('global.buttons.view_more')}}<MoreArrowIcon class="link__icon"/>
         </router-link>
     </div>
   </div>
@@ -108,6 +108,8 @@ export default {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            flex-basis: 0;
+            flex-grow: 1;
 
             img {
                 width: 100%;
@@ -120,6 +122,9 @@ export default {
 
             &:not(:first-child){
                 margin-left: 66px;
+            }
+            &:first-child{
+                max-width: calc((100% - 66px)/2);
             }
         }
 

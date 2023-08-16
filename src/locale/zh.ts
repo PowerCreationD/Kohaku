@@ -8,7 +8,8 @@ const locale = {
       submit_form: '送出表單',
       contact_us: '聯絡我們',
       view_the_service: '查看詳細服務',
-      view_all_project: '查看所有專案'
+      view_all_project: '查看所有專案',
+      view_more: '查看更多'
     }
   },
   homepage: {
@@ -54,8 +55,7 @@ const locale = {
         shortName: '貿易服務',
         subtitleSentences: ['發現台灣在地美味食力', '打造全新面貌走向國際'],
         textSentences: [
-          '專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。',
-          '具備專業的中、英、日語窗口，提供選品諮詢與外銷代辦，並有依目標地區消費習慣的品牌包裝再造服務，幫助MIT產品走向世界。'
+          '專營台、日農產與食品雙向供銷，以及農用機具代理進出口，致力於發揚台灣好食與精工。具備專業的中、英、日語窗口，提供選品諮詢與外銷代辦，並有依目標地區消費習慣的品牌包裝再造服務，幫助MIT產品走向世界。'
         ],
         keywordList: [
           {

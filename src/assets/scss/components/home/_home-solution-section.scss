@@ -2,8 +2,8 @@
 @use '../typography' as typography;
 
 .home-solution-section {
-  $section-height: min(55vw, 688px);
-  $section-height--mobile: calc(40vw + 375px);
+  $section-height: min(70vw, 688px);
+  $section-height--mobile: calc(50vw + 375px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,6 +76,7 @@
   &__service-button-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 20px;
     width: 100%;
 
@@ -85,6 +86,7 @@
   }
 
   &__service-button {
+    flex-basis: 0;
     flex-grow: 1;
     text-wrap: balance;
 
@@ -177,7 +179,7 @@
     margin-bottom: calc(8vw - 58px);
 
     @media (max-width: var.$mobile-device-max-width) {
-      margin-bottom: 25vw;
+      margin-bottom: 3vw;
     }
   }
 

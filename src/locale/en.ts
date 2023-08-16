@@ -8,7 +8,8 @@ const locale = {
       submit_form: 'Submit Form',
       contact_us: 'Contact Us',
       view_the_service: 'View The Service',
-      view_all_project: 'View All Projects'
+      view_all_project: 'View All Projects',
+      view_more: 'More'
     }
   },
   homepage: {
@@ -24,7 +25,7 @@ const locale = {
     },
     concept: {
       title: 'CONCEPT  Breadth',
-      subtitle: 'Unleashing boundless thinking to shatter preconceptions,',
+      subtitle: 'Unleashing boundless thinking to shatter preconceptions',
       text: [
         'Spanning the realms of InfoSci, Engineering, Design, Trade, and Innovation,',
         'We co-create pioneering solutions from extensive research and ample experience.'
@@ -41,7 +42,7 @@ const locale = {
           'Offering insight into your industry’s trends'
         ],
         textSentences: [
-          'As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development. We assist in collecting data to aid decision-making and optimize workflows to enhance supply and sales efficiency.'
+          'As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development.'
         ],
         keywordList: [
           {
@@ -66,8 +67,7 @@ const locale = {
           'Building your brand and join the international market'
         ],
         textSentences: [
-          `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.`,
-          `With our team proficient in Chinese, English, and Japanese, we offer product selection consultations and export agency services. Additionally, we provide brand redesign services tailored to the consumption habits of target regions, helping MIT (Made in Taiwan) products reach the global market.`
+          `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.`
         ],
         keywordList: [
           {
