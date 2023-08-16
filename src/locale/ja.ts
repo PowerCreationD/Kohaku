@@ -8,7 +8,8 @@ const locale = {
       submit_form: '送信する',
       contact_us: 'お問い合わせ',
       view_the_service: 'もっと詳しく',
-      view_all_project: 'もっと詳しく'
+      view_all_project: 'もっと詳しく',
+      view_more: 'もっと詳しく'
     }
   },
   homepage: {
@@ -38,7 +39,7 @@ const locale = {
       subtitle: ['五つの領域', '三つの言語'],
       system: {
         name: 'システム設計 / 開発と運用',
-        shortName: 'システム開発',
+        shortName: 'システム設計 / 開発と運用',
         subtitleSentences: [
           'お客様の要望によって、システム構築し、',
           '将来の展望を築くためのサポートを提供いたします'
@@ -63,11 +64,10 @@ const locale = {
       },
       trading: {
         name: '国際貿易サービス',
-        shortName: '貿易サービス',
+        shortName: '国際貿易サービス',
         subtitleSentences: ['台湾の美味しい食文化の発掘し', '国際を向けて歩み出す'],
         textSentences: [
-          '台湾と日本の農産物および食品の双方向の供給と販売、さらに農業機械の代理サービスを提供します。',
-          'MIT(Made in Taiwan)を世界に立ち上げるように、対象國の輸入輸出の商品相談 / 消費習慣に合わせたブランドパッケージ作成 / 輸出代行などのサービスを提供しています。'
+          '台湾と日本の農産物および食品の双方向の供給と販売、さらに農業機械の代理サービスを提供します。MIT(Made in Taiwan)を世界に立ち上げるように、対象國の輸入輸出の商品相談 / 消費習慣に合わせたブランドパッケージ作成 / 輸出代行などのサービスを提供しています。'
         ],
         keywordList: [
           {

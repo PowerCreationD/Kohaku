@@ -368,8 +368,7 @@ export default {
             this.$t('homepage.solutions.trading.subtitleSentences[1]')
           ],
           textSentences: [
-            this.$t('homepage.solutions.trading.textSentences[0]'),
-            this.$t('homepage.solutions.trading.textSentences[1]')
+            this.$t('homepage.solutions.trading.textSentences[0]')
           ],
           keywordList: [
             {

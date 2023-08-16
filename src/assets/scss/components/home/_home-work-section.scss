@@ -2,7 +2,7 @@
 @use '../typography' as typography;
 
 .home-work-section {
-  $section-height: min(38vw, 548px);
+  $section-height: min(45vw, 548px);
   $section-height--mobile: fit-content;
   position: relative;
   display: flex;
