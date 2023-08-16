@@ -10,6 +10,9 @@ const locale = {
       view_the_service: 'もっと詳しく',
       view_all_project: 'もっと詳しく',
       view_more: 'もっと詳しく'
+    },
+    footer: {
+      address: ' （803）臺灣高雄市鹽埕區大勇路11號3樓'
     }
   },
   homepage: {

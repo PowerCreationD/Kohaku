@@ -10,13 +10,17 @@ const locale = {
       view_the_service: 'View The Service',
       view_all_project: 'View All Projects',
       view_more: 'More'
+    },
+    footer: {
+      address:
+        '3F., No. 11, Qixian 2nd Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
     }
   },
   homepage: {
     slogan: 'Imagine × Create × Future',
     description: ['Design transformation (DX) leads not to the best but better and better', ''],
     research: {
-      title: 'RESEARCH  Depth',
+      title: 'RESEARCH － Depth',
       subtitle: 'Crafting excellence with precision, passion, and foresight',
       text: [
         "By harnessing extensive research and interdisciplinary thinking, we empower our clients' original intentions,",
@@ -24,7 +28,7 @@ const locale = {
       ]
     },
     concept: {
-      title: 'CONCEPT  Breadth',
+      title: 'CONCEPT － Breadth',
       subtitle: 'Unleashing boundless thinking to shatter preconceptions',
       text: [
         'Spanning the realms of InfoSci, Engineering, Design, Trade, and Innovation,',
@@ -32,7 +36,7 @@ const locale = {
       ]
     },
     solutions: {
-      title: 'SOLUTION  Optimal Solution',
+      title: 'SOLUTION － Optimal Solution',
       subtitle: ['Three Languages', 'Five Expertise'],
       system: {
         name: 'System Design / Development and Maintenance',
@@ -252,7 +256,7 @@ const locale = {
     },
     contact: {
       subtitle: 'Embracing Traditional Wisdom, Creating a Novel Experience',
-      text: 'If you have any requests or inquiries, please fill out the form below, and our representative will get in touch within business days.'
+      text: 'If you have any requests or inquiries, please fill out the form below, and our representative will get in touch with you.'
     }
   },
   about: {
@@ -284,7 +288,7 @@ const locale = {
       meaning: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
             白 represents the concept of margin in design, the freedom of leaving room for all possibilities.
 
-            In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your wildest ideas and explore bold possibilities.`
+            In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your ideas and explore bold possibilities.`
     },
 
     milestone: [
@@ -587,91 +591,91 @@ const locale = {
     charles: {
       name: '凱元 Charles',
       position: 'Chief Executive Officer (CEO)',
-      description: 'ThinkingOfAquarius',
-      skills: ['FoodSupplyChain', 'HCI', 'InternationalPlanning', 'SystemDesign'],
+      description: 'Thinking of Aquarius',
+      skills: ['Food Supply Chain', 'HCI', 'International Planning', 'System Design'],
       intro: ``
     },
     hannah: {
       name: '詩涵 Hannah',
       position: 'Fullstack Engineer',
-      description: 'YourConcerns2Surprises',
+      description: 'Your Concerns 2 Surprises',
       skills: [
-        'Web-BasedSystemArchitectureDesign',
-        'ProjectManagementAndQualityControl',
-        'DataAnalysisAndVisualization'
+        'Web-Based System Architecture Design',
+        'Project Management and Quality Control',
+        'Data Analysis and Visualization'
       ],
       intro: ``
     },
     arthur: {
       name: '柏維 Arthur',
       position: 'Fullstack Engineer',
-      description: 'DualOsOfHumanity&Science',
+      description: 'Dual OS of Humanity & Science',
       skills: [
-        'APIConstructionAndDesign',
-        'Software-HardwareIntegrationDevelopment',
-        'RobotOperatingSystems'
+        'API Construction and Design',
+        'Software-Hardware Integration Development',
+        'Robot Operating System'
       ],
       intro: ``
     },
     albert: {
       name: '書彥 Albert',
       position: 'Fullstack Engineer',
-      description: 'UnicornLover',
+      description: 'Unicorn Lover',
       skills: [
-        'ServerConfiguration',
-        'WebsitePerformanceOptimization',
-        'DatabaseDesign',
-        'InformationSecurity',
-        'AIImplementation'
+        'Server Configuration',
+        'Website Performance Optimization',
+        'Database Design',
+        'Information Security',
+        'AI Implementation'
       ],
       intro: ``
     },
     lily: {
       name: '子涵 Lily',
       position: 'Hardware Engineer',
-      description: 'EitherPlaingBallOrCoding',
+      description: 'Either Playing Ball or Coding',
       skills: [
-        'EmbeddedSystemDevelopment',
-        'HardwareArchitectureDesign',
-        'HardwareEnvironmentCompatibilityAssessment'
+        'Embedded System Development',
+        'Hardware Architecture Design',
+        'Hardware Environment Compatibility Assessment'
       ],
       intro: ``
     },
     jozie: {
       name: '趯瑾 Jozie',
       position: 'Frontend Engineer',
-      description: 'IndieMusicExplorer',
+      description: 'Indie Music Explorer',
       skills: [
-        'FrontendFrameworkDevelopment',
-        'BusinessTemplateSetupAndCustomization',
-        'VisualizationAndInteractionDesign',
-        'SEOOptimization'
+        'Frontend Framework Development',
+        'Website Template Setup and Customization',
+        'Visualization and Interaction Design',
+        'SEO Optimization'
       ],
       intro: ``
     },
     arien: {
       name: '采蘋 Arien',
       position: 'Business Designer',
-      description: 'PerpetualMotionMachineOfDesign',
+      description: 'Perpetual Motion Machine of Design',
       skills: [
-        'UserResearch',
-        'ComprehensiveWebsitePlanning',
-        'WebsiteInterfaceDesign',
-        'BrandIdentity',
-        'GraphicDesign'
+        'User Research',
+        'Comprehensive Website Planning',
+        'Website Interface Design',
+        'Brand Identity',
+        'Graphic Design'
       ],
       intro: ``
     },
     ivy: {
       name: '逸青 Ivy',
       position: 'Business Designer',
-      description: 'CoffeeCupBottomInspirationIsHere',
+      description: 'Coffee Cup Bottom Inspiration Is Here',
       skills: [
-        'BrandIdentity',
-        'ParticipatoryDesign',
-        'Cross-DomainPlanningAndCollaboration',
-        'GraphicDesign',
-        'ImageAndIllustrationDesign'
+        'Brand Identity',
+        'Participatory Design',
+        'Cross-Domain Planning and Collaboration',
+        'Graphic Design',
+        'Image and Illustration Design'
       ],
       intro: ``
     },
@@ -680,47 +684,47 @@ const locale = {
       position: 'Product Designer',
       description: 'TheFinalVersion.final.final.final.3dm',
       skills: [
-        'ProductDesign',
-        '3DModelingAndRendering',
-        'ModelFabrication',
-        'Rhinoceros3D',
+        'Product Design',
+        '3D Modeling And Rendering',
+        'Model Fabrication',
+        'Rhinoceros 3D',
         'KeyShot'
       ],
       intro: ``
     },
     brooke: {
       name: '采倫 Brooke',
-      position: 'Content Planner',
-      description: 'DesignInAntarctica',
-      skills: ['ServiceDesign', 'DataPlanning', 'ContentPlanning', 'EventExecution'],
+      position: 'Project Coordinator',
+      description: 'Design in Antarctica',
+      skills: ['Service Design', 'Content Planning', 'Event Planning', 'Event Execution'],
       intro: ``
     },
     andrew: {
       name: '俊宇 Andrew',
       position: 'Software Engineer',
-      description: 'EmbacingIngenuity',
-      skills: ['HCI', 'SpatialComputing', 'ComputerGraphics', 'ProductDesign'],
+      description: 'Embracing Ingenuity',
+      skills: ['HCI', 'Spatial Computing', 'Computer Graphics', 'Product Design'],
       intro: ``
     },
     ti: {
       name: '彩緹 Ti',
-      position: 'Business Development',
-      description: 'NovelAndInnovativeWeirdButProfessional',
+      position: 'Business Developer',
+      description: 'Novel and Innovative, Weird But Professional',
       skills: [
-        'BusinessProposalAndPresentation',
-        'ColdCalling',
-        'Cross-domainCollaborationExecution',
-        'ProductExplanationAndIntroduction'
+        'Business Proposal and Presentation',
+        'Cold Calling',
+        'Cross-Domain Collaboration Execution',
+        'Product Explanation and Introduction'
       ],
       intro: ``
     }
   },
   contact: {
     introduction: {
-      title: `Welcome to share your wildest ideas with Kohaku.
+      title: `Welcome to share your ideas with Kohaku.
             We will transform your small sparks of inspiration into brilliant solutions!`,
-      description: `Please provide us with detailed information about your industry needs and your provision.
-            We will get in touch with you asap!`
+      description: `Please provide us with detailed information about your industry needs and your vision.
+            We will get in touch with you ASAP!`
     },
     form: {
       project_type: 'Project Type',
@@ -732,7 +736,7 @@ const locale = {
         design: 'Brand Identity and Visual Design'
       },
       budget: 'Budget',
-      estimated_project_time: 'Estimated Project Time',
+      estimated_project_time: 'Estimated Project Timeline',
       project_content_overview: 'Project Content Overview',
       contact_person: 'Contact Person',
       company_brand_name: 'Company / Brand Name',
