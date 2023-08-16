@@ -10,6 +10,9 @@ const locale = {
       view_the_service: '查看詳細服務',
       view_all_project: '查看所有專案',
       view_more: '查看更多'
+    },
+    footer: {
+      address: '（803）高雄市鹽埕區大勇路11號3樓'
     }
   },
   homepage: {
@@ -576,7 +579,7 @@ const locale = {
       name: '趯瑾 Jozie',
       position: '前端工程師',
       description: '獨立音樂探勘者',
-      skills: ['前端框架開發', '商業模板建置與客製化', '可視化與互動設計', 'SEO優化'],
+      skills: ['前端框架開發', '網站模板建置與客製化', '可視化與互動設計', 'SEO優化'],
       intro: ``
     },
     arien: {
