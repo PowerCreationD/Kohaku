@@ -594,7 +594,7 @@ const locale = {
     hannah: {
       name: '詩涵 Hannah',
       position: 'Fullstack Engineer',
-      description: 'yourConcerns2Surprises',
+      description: 'YourConcerns2Surprises',
       skills: [
         'Web-BasedSystemArchitectureDesign',
         'ProjectManagementAndQualityControl',
