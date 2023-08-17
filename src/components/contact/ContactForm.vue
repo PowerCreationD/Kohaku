@@ -21,7 +21,7 @@
                 ><input
                   type="checkbox"
                   :id="project.id"
-                  :value="project.id"
+                  :value="project"
                   v-model="selectedProjectTypes.value"
                   class="checkbox__box"
                 />
