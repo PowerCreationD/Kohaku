@@ -79,6 +79,8 @@ export default {
     }
 }
 @media screen and (min-width: 767px) { 
+    $desktop-right-padding: calc((100vw - 1200px)/2);
+    $work-section-padding: min(76px , 5vw);
     .work-example-section {
         &__title {
             h1 {
@@ -93,8 +95,8 @@ export default {
             background-color: #F5F5F5;
             display: flex;
             flex-direction: column;
-            padding: min(76px , 5vw);
-            width: max((100% + 5vw),(100% + (100vw - 1200px)/2));
+            padding: $work-section-padding;
+            width: max((100% + 5vw),(100% + $desktop-right-padding));
         }
 
         &__main-content {
@@ -102,6 +104,7 @@ export default {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            width: min(100% , 100% - $desktop-right-padding + $work-section-padding);
         }
 
         &__display {
@@ -113,7 +116,6 @@ export default {
 
             img {
                 width: 100%;
-                max-width: 390px;
                 cursor: pointer;
             }
             p {
