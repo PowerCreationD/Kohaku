@@ -13,7 +13,7 @@ const locale = {
     },
     footer: {
       address:
-        '3F., No. 11, Qixian 2nd Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
+        '3F., No. 11, Dayong Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
     }
   },
   homepage: {
