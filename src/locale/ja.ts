@@ -360,7 +360,7 @@ const locale = {
       detail: {
         tags: ['#ブックデザイン', '#グラフィクデザイン', '#イラストデザイン'],
         paragraph: `国立台湾工芸研究開発センターとコラボし、職人にいる現場を実際に伺い、機械操作の映像や口述の情報を収集しました。そして職人の50年間の技術の粋をこの本にまとめ、政府の出版物として出版しました。
-                国家書店政府出版品のリンク：https://www.govbooks.com.tw/books/137952`
+                国家書店政府出版品のリンク：<a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://www.govbooks.com.tw/books/137952' target='_blank'>https://www.govbooks.com.tw/books/137952</a>`
       }
     },
     mu_maison: {
@@ -421,7 +421,7 @@ const locale = {
       detail: {
         tags: ['#イベント記録', '#映像編集', '#シナリオプランニング'],
         paragraph: `国立台湾工芸研究開発センターとコラボし、現地で映像や口述の情報を収集し、職人の50年間の技術の精華を記録させていただきました。映像編集や映像記録は、活動終了日に上映され、活動の締めくくりとして使用されていました。
-                旋盤のイベント記録のリンクはこちら：https://youtu.be/fygtvFBfvxU`
+                旋盤のイベント記録のリンクはこちら：<a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://youtu.be/fygtvFBfvxU' target='_blank'>https://youtu.be/fygtvFBfvxU</a>`
       }
     }
   },

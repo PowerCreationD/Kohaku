@@ -355,7 +355,7 @@ const locale = {
       name: 'Book and Bookbinding｜Woodworking Craft Tool Guide',
       detail: {
         tags: ['#Bookbinding Design', '#Visual Design', '#Illustration Design'],
-        paragraph: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`
+        paragraph: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: <a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://www.govbooks.com.tw/books/137952' target='_blank'>https://www.govbooks.com.tw/books/137952</a>`
       }
     },
     mu_maison: {
@@ -409,7 +409,7 @@ const locale = {
       name: 'Event Documentation｜Lathe Machine Workshop',
       detail: {
         tags: ['#Event Documentation', '#Video Editing', '#Script Planning'],
-        paragraph: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`
+        paragraph: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: <a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://youtu.be/fygtvFBfvxU' target='_blank'>https://youtu.be/fygtvFBfvxU</a>`
       }
     }
   },

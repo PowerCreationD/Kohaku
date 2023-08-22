@@ -341,7 +341,7 @@ const locale = {
       detail: {
         tags: ['#裝幀設計', '#視覺設計', '#插畫設計'],
         paragraph:
-          '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，並執行編印出版，完成上架國家書店納入政府出版品。國家書店政府出版品連結：https://www.govbooks.com.tw/books/137952'
+          "與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，並執行編印出版，完成上架國家書店納入政府出版品。國家書店政府出版品連結：<a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://www.govbooks.com.tw/books/137952' target='_blank'>https://www.govbooks.com.tw/books/137952</a>"
       }
     },
     mu_maison: {
@@ -402,7 +402,7 @@ const locale = {
       detail: {
         tags: ['#活動紀錄', '#影片剪輯', '#腳本企劃'],
         paragraph:
-          '與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，執行影片剪輯、影像紀錄，並於活動結束當日上映，作為活動結尾。車床活動紀錄連結：https://youtu.be/fygtvFBfvxU'
+          "與國立台灣工藝研究發展中心合作，實地採集影像、口述，細緻保存匠人50年技藝精華以傳承後勁，執行影片剪輯、影像紀錄，並於活動結束當日上映，作為活動結尾。車床活動紀錄連結：<a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://youtu.be/fygtvFBfvxU' target='_blank'>https://youtu.be/fygtvFBfvxU</a>"
       }
     }
   },
