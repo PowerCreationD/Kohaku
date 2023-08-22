@@ -109,7 +109,7 @@ export default {
         },
         {
           label: 'Address',
-          value: '高雄市鹽埕區大勇路11號3樓507室'
+          value: this.$t('global.footer.address')
         }
       ]
     }

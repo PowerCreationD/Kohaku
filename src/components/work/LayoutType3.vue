@@ -1,31 +1,33 @@
 <template>
     <div class="work_detail__img-item-1">
-        <img src="/src/assets/work/product_design/img_kizuna_1.png" alt="">
+        <img v-lazy="img_kizuna_1" alt="">
     </div>
     <div class="work_detail__img-item-1">
-        <img src="/src/assets/work/product_design/img_kizuna_2.png" alt="">
-        <p>三步驟展開使用不需工具組合</p>
+        <img v-lazy="img_kizuna_2" alt="">
+        <p>{{$t('work.mu_maison.detail.description.desc_1')}}</p>
     </div>
     <div class="work_detail__img-item-2">
         <div class="item-2 item-gap">
-            <img src="/src/assets/work/product_design/img_kizuna_3.png" alt="" />
-            <p>考量工法精選木料，梣木堅韌負以彎曲結構，松木輕軟使桌面細膩合用。牛皮桌面，回應辦公長時間操作鍵鼠、執筆書寫時置腕處的絕對舒適，並輕柔回饋筆觸。</p>
+            <img v-lazy="img_kizuna_3" alt="" />
+            <p>{{$t('work.mu_maison.detail.description.desc_2')}}</p>
         </div>
         <div class="item-2">
-            <img src="/src/assets/work/product_design/img_kizuna_4.png" alt="" />
-            <p>將桌面折合、座椅靠攏，不需拆裝即可收納三件傢俱組合。收束實木傢俱的量體，空間轉換時實現優雅推移，定位再輕巧展開，旋即重啟生產力。</p>
+            <img v-lazy="img_kizuna_4" alt="" />
+            <p>{{$t('work.mu_maison.detail.description.desc_3')}}</p>
         </div>
     </div>
     <div class="work_detail__img-item-1 item-bottom">
-        <img src="/src/assets/work/product_design/img_kizuna_5.png" alt="">
+        <img v-lazy="img_kizuna_5" alt="">
     </div>
     
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import img_kizuna_1 from '@/assets/image/work/product_design/img_kizuna_1.jpg'
+import img_kizuna_2 from '@/assets/image/work/product_design/img_kizuna_2.jpg'
+import img_kizuna_3 from '@/assets/image/work/product_design/img_kizuna_3.jpg'
+import img_kizuna_4 from '@/assets/image/work/product_design/img_kizuna_4.jpg'
+import img_kizuna_5 from '@/assets/image/work/product_design/img_kizuna_5.png'
 </script>
 
 <style lang="scss" scoped>

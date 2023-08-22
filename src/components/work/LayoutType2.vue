@@ -1,6 +1,6 @@
 <template>
     <div class="work_detail__img-wall">
-        <img class="img_wall_item" v-for="img in styledContentData" :key="img.id" :src="getImageUrl(img.img_url)" :class="img.style" alt="img.id">
+        <img class="img_wall_item" v-for="img in styledContentData" :key="img.id" v-lazy="getImageUrl(img.img_url)" :class="img.style" alt="img.id">
     </div>
 </template>
 
