@@ -266,6 +266,7 @@
     margin-right: auto;
     padding: 8px;
     box-shadow: map-get(var.$box-shadow, 1);
+    text-decoration: none;
 
     @media (max-width: var.$mobile-device-max-width) {
       position: static;

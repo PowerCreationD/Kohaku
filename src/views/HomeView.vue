@@ -219,10 +219,19 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
           </div>
         </div>
         <div class="container home-work-section__cover-image-and-navigation-button-container">
-          <img
-            class="image home-work-section__cover-image"
-            :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
-          />
+          <router-link
+            :to="{
+              name: 'WorkDetail',
+              params: {
+                project: work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].workLink
+              }
+            }"
+          >
+            <img
+              class="image home-work-section__cover-image"
+              :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
+            />
+          </router-link>
           <button
             class="button button--icon home-work-section__left-navigation-button"
             @click="changeToPreviousProject"
@@ -241,9 +250,17 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
               class="button__icon home-work-section__navigation-button-icon"
             ></RightArrowIcon>
           </button>
-          <p class="font-6 home-work-section__work-name">
+          <router-link
+            class="font-6 home-work-section__work-name"
+            :to="{
+              name: 'WorkDetail',
+              params: {
+                project: work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].workLink
+              }
+            }"
+          >
             {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].name }}
-          </p>
+          </router-link>
         </div>
       </div>
     </div>
@@ -263,10 +280,19 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
         @selectOption="selectWorkOption"
       />
       <div class="container home-work-section__cover-image-and-navigation-button-container">
-        <img
-          class="image home-work-section__cover-image"
-          :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
-        />
+        <router-link
+          :to="{
+            name: 'WorkDetail',
+            params: {
+              project: work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].workLink
+            }
+          }"
+        >
+          <img
+            class="image home-work-section__cover-image"
+            :src="work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].coverImageUrl"
+          />
+        </router-link>
         <button
           class="button button--icon home-work-section__left-navigation-button"
           @click="changeToPreviousProject"
@@ -286,9 +312,17 @@ import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wo
           ></RightArrowIcon>
         </button>
       </div>
-      <p class="font-6 home-work-section__work-name">
+      <router-link
+        class="font-6 home-work-section__work-name"
+        :to="{
+          name: 'WorkDetail',
+          params: {
+            project: work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].workLink
+          }
+        }"
+      >
         {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].name }}
-      </p>
+      </router-link>
       <p class="font-7 home-work-section__description">
         {{ work[currentWorkCategoryIndex].projects[currentWorkProjectIndex].description }}
       </p>
@@ -492,13 +526,13 @@ export default {
               name: this.$t('homepage.work.system.projects[0].name'),
               description: this.$t('homepage.work.system.projects[0].description'),
               coverImageUrl: vegibusCoverImageUrl,
-              workLink: '/work/1'
+              workLink: 'e-commerce-and-logistics-system'
             },
             {
               name: this.$t('homepage.work.system.projects[1].name'),
               description: this.$t('homepage.work.system.projects[1].description'),
               coverImageUrl: mobileMoverCoverImageUrl,
-              workLink: '/work/2'
+              workLink: 'autonomous-mobile-robot'
             }
           ]
         },
@@ -510,7 +544,7 @@ export default {
               name: this.$t('homepage.work.trading.projects[0].name'),
               description: this.$t('homepage.work.trading.projects[0].description'),
               coverImageUrl: pineappleTradingCoverImageUrl,
-              workLink: '/work/9'
+              workLink: 'exporting-pineapples'
             }
           ]
         },
@@ -522,7 +556,7 @@ export default {
               name: this.$t('homepage.work.product.projects[0].name'),
               description: this.$t('homepage.work.product.projects[0].description'),
               coverImageUrl: kizunaFurnitureDesignCoverImageUrl,
-              workLink: '/work/4'
+              workLink: 'mu-maison'
             }
           ]
         },
@@ -536,31 +570,31 @@ export default {
               /*'國家書店政府出版品連結：',
                 'https://www.govbooks.com.tw/books/137952'*/
               coverImageUrl: woodWorkBookCoverImageUrl,
-              workLink: '/work/3'
+              workLink: 'woodworking-craft-tool-guide'
             },
             {
               name: this.$t('homepage.work.design.projects[1].name'),
               description: this.$t('homepage.work.design.projects[1].description'),
               coverImageUrl: m2LaboBusinessCardDesignCoverImageUrl,
-              workLink: '/work/8'
+              workLink: 'm2labo-business-card-design'
             },
             {
               name: this.$t('homepage.work.design.projects[2].name'),
               description: this.$t('homepage.work.design.projects[2].description'),
               coverImageUrl: takahataBusinessCardDesignCoverImageUrl,
-              workLink: '/work/7'
+              workLink: 'takahata-business-card-design'
             },
             {
               name: this.$t('homepage.work.design.projects[3].name'),
               description: this.$t('homepage.work.design.projects[3].description'),
               coverImageUrl: kimchiPackageDesignCoverImageUrl,
-              workLink: '/work/5'
+              workLink: 'leek-kimchi'
             },
             {
               name: this.$t('homepage.work.design.projects[4].name'),
               description: this.$t('homepage.work.design.projects[4].description'),
               coverImageUrl: hiroshimaStationUnmannedStoreCoverImageUrl,
-              workLink: '/work/6'
+              workLink: 'hiroshima-miyajima-station'
             }
           ]
         },
@@ -572,7 +606,7 @@ export default {
               name: this.$t('homepage.work.planning.projects[0].name'),
               description: this.$t('homepage.work.planning.projects[0].description'),
               coverImageUrl: woodWorkshopCoverImageUrl,
-              workLink: '/work/10'
+              workLink: 'lathe-machine-workshop'
             }
           ]
         }
