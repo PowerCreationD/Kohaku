@@ -16,10 +16,14 @@
   &__description {
     margin-bottom: 8px;
     color: map-get(var.$color--primary, gold);
+    word-break: break-word;
+    hyphens: auto;
   }
   &__skill {
     color: map-get(var.$color--primary, gold);
     margin-right: 8px;
+    word-break: break-word;
+    hyphens: auto;
   }
   &__intro {
     white-space: pre-wrap;

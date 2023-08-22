@@ -203,11 +203,14 @@ label {
   &__label {
     cursor: pointer;
   }
-
+  &__box {
+    flex-shrink: 0;
+  }
   &__label {
     line-height: 16px;
     display: flex;
     align-items: center;
+    text-wrap: balance;
   }
 }
 

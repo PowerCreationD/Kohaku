@@ -28,6 +28,7 @@
 
   &__title {
     flex-grow: 1;
+    white-space: pre-line;
   }
 
   &__logo {
@@ -52,6 +53,7 @@
     width: auto;
     min-width: 27%;
     flex-shrink: 0;
+    white-space: pre-line;
   }
 }
 
@@ -86,6 +88,7 @@
     }
 
     &__desc {
+      width: 100%;
       margin: 36px auto;
       text-align: center;
     }
@@ -116,6 +119,7 @@
 
   &__desc {
     text-align: justify;
+    white-space: pre-line;
   }
 
   &__amber {

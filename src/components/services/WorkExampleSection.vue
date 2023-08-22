@@ -13,15 +13,15 @@
         <div class="work-example-section__main-content">
             <div class="work-example-section__display" v-for="itm in workData.exampleList" :key="itm.title">
                 <div class="work-example-section__example-item">
-                    <img :src="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.project)"/>
+                    <img v-lazy="getImageUrl(itm.img_url)" @click="goToDetailPage(itm.project)"/>
                 </div>
-                <p @click="goToDetailPage(itm.id)">{{ itm.title }}</p>
+                <p @click="goToDetailPage(itm.project)">{{ itm.title }}</p>
             </div>
         </div>
         <router-link v-if="workData['workNumber'] > 2" 
                     class="link work-example-section__more-arrow" 
                     :to="{ name: 'Work', params: { type: workData.type }  }">
-            查看更多<MoreArrowIcon class="link__icon"/>
+            {{$t('global.buttons.view_more')}}<MoreArrowIcon class="link__icon"/>
         </router-link>
     </div>
   </div>
@@ -79,6 +79,8 @@ export default {
     }
 }
 @media screen and (min-width: 767px) { 
+    $desktop-right-padding: calc((100vw - 1200px)/2);
+    $work-section-padding: min(76px , 5vw);
     .work-example-section {
         &__title {
             h1 {
@@ -93,8 +95,8 @@ export default {
             background-color: #F5F5F5;
             display: flex;
             flex-direction: column;
-            padding: min(76px , 5vw);
-            width: max((100% + 5vw),(100% + (100vw - 1200px)/2));
+            padding: $work-section-padding;
+            width: max((100% + 5vw),(100% + $desktop-right-padding));
         }
 
         &__main-content {
@@ -102,16 +104,18 @@ export default {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            width: min(100% , 100% - $desktop-right-padding + $work-section-padding);
         }
 
         &__display {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            flex-basis: 0;
+            flex-grow: 1;
 
             img {
                 width: 100%;
-                max-width: 390px;
                 cursor: pointer;
             }
             p {
@@ -120,6 +124,9 @@ export default {
 
             &:not(:first-child){
                 margin-left: 66px;
+            }
+            &:first-child{
+                max-width: calc((100% - 66px)/2);
             }
         }
 

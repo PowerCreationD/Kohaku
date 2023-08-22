@@ -22,12 +22,18 @@
         >
           {{ navigationLink.text }}
         </router-link>
-        <DropdownComponent :options="languageOptions" />
+        <DropdownComponent
+          @selectOption="changeLanguageHandler"
+          :options="languageOptions"
+          :defaultIndex="defaultLocal"
+        />
       </template>
     </div>
     <HeaderSidebar
       :navigationLinks="navigationLinks"
       :languageOptions="languageOptions"
+      :defaultLocal="defaultLocal"
+      @changeLanguage="changeLanguageHandler"
       v-show="sidebarOpen"
       v-model:sidebarOpen="sidebarOpen"
     />
@@ -68,13 +74,25 @@ export default {
           link: '/contact'
         }
       ],
+      defaultLocal: undefined,
       languageOptions: [
         {
-          text: '中',
-          value: 'ch'
+          value: 'zh',
+          text: '中'
+        },
+        {
+          value: 'ja',
+          text: '日'
+        },
+        {
+          value: 'en',
+          text: 'En'
         }
       ]
     }
+  },
+  beforeMount(){
+    this.setDefaultLocal()
   },
   mounted() {
     this.checkViewportSize()
@@ -95,6 +113,21 @@ export default {
     },
     closeSidebar() {
       this.sidebarOpen = false
+    },
+    setDefaultLocal() {
+      const LOCALE_KEY = localStorage.getItem('LOCALE_KEY')
+      if (LOCALE_KEY === 'ja') {
+        this.defaultLocal = 1
+      } else if (LOCALE_KEY === 'en') {
+        this.defaultLocal = 2
+      } else {
+        this.defaultLocal = 0
+      }
+    },
+    changeLanguageHandler(selectedOption) {
+      this.$i18n.locale = selectedOption.value
+      localStorage.setItem('LOCALE_KEY', selectedOption.value)
+      window.location.reload();
     }
   }
 }

@@ -73,9 +73,9 @@
   &__information-section {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 0 0 16px 0;
-
+    max-width: 80vw;
     &:last-child {
       margin: 0;
     }

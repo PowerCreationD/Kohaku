@@ -7,7 +7,9 @@
           :class="{ error: selectedProjectTypes.error }"
           :errorMsg="selectedProjectTypes.msg"
         >
-          <label class="form__title" for="project-type">專案類型</label>
+          <label class="form__title" for="project-type">{{
+            $t('contact.form.project_type')
+          }}</label>
           <div class="form__type-checkbox">
             <div
               id="project-type"
@@ -33,7 +35,7 @@
           :class="{ error: budget.error }"
           :errorMsg="budget.msg"
         >
-          <label class="form__title" for="budget">預算</label>
+          <label class="form__title" for="budget">{{ $t('contact.form.budget') }}</label>
           <input id="budget" type="text" inputmode="numeric" v-model="budget.value" />
         </div>
         <div
@@ -41,7 +43,9 @@
           :class="{ error: date.error }"
           :errorMsg="date.msg"
         >
-          <label class="form__title" for="date">預估專案時間</label>
+          <label class="form__title" for="date">{{
+            $t('contact.form.estimated_project_time')
+          }}</label>
           <div id="date" class="form__date">
             <input
               class="form__date--picker"
@@ -63,7 +67,9 @@
           :class="{ error: description.error }"
           :errorMsg="description.msg"
         >
-          <label class="form__title" for="desc">專案內容概述</label>
+          <label class="form__title" for="desc">{{
+            $t('contact.form.project_content_overview')
+          }}</label>
           <textarea
             id="desc"
             cols="30"
@@ -74,7 +80,7 @@
         </div>
         <div class="form__btns">
           <button type="button" class="button button--primary form__btns--next" @click="validate()">
-            下一步
+            {{ $t('global.buttons.next') }}
           </button>
         </div>
       </div>
@@ -84,7 +90,7 @@
           :class="{ error: person.error }"
           :errorMsg="person.msg"
         >
-          <label class="form__title" for="person">聯絡人</label>
+          <label class="form__title" for="person">{{ $t('contact.form.contact_person') }}</label>
           <input id="person" type="text" v-model="person.value" />
         </div>
         <div
@@ -92,7 +98,9 @@
           :class="{ error: company.error }"
           :errorMsg="company.msg"
         >
-          <label class="form__title" for="company">公司 / 品牌名稱</label>
+          <label class="form__title" for="company">{{
+            $t('contact.form.company_brand_name')
+          }}</label>
           <input id="company" type="text" v-model="company.value" />
         </div>
         <div
@@ -100,7 +108,7 @@
           :class="{ error: phone.error }"
           :errorMsg="phone.msg"
         >
-          <label class="form__title" for="phone">聯絡電話</label>
+          <label class="form__title" for="phone">{{ $t('contact.form.contact_number') }}</label>
           <input id="phone" type="text" v-model="phone.value" />
         </div>
         <div
@@ -108,7 +116,7 @@
           :class="{ error: email.error }"
           :errorMsg="email.msg"
         >
-          <label class="form__title" for="email">聯絡信箱</label>
+          <label class="form__title" for="email">{{ $t('contact.form.contact_email') }}</label>
           <input id="email" type="text" v-model="email.value" />
         </div>
         <div class="form__btns">
@@ -117,14 +125,14 @@
             class="button button--secondary form__btns--prev"
             @click="formPage--, scroll()"
           >
-            上一步
+            {{ $t('global.buttons.prev') }}
           </button>
           <button
             type="submit"
             class="button button--primary form__btns--submit"
             @click="validate()"
           >
-            送出表單
+            {{ $t('global.buttons.submit_form') }}
           </button>
         </div>
       </div>
@@ -133,17 +141,19 @@
 
   <div class="background" v-show="popup == 1">
     <div class="popup">
-      <div class="popup__header font-4">確認送出</div>
-      <div class="popup__content font-7">確定要送出表單嗎？</div>
+      <div class="popup__header font-4">{{ $t('contact.popup.confirm_submit') }}</div>
+      <div class="popup__content font-7">{{ $t('contact.popup.submit_form_confirmation') }}</div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--back" @click="popup = 0">返回</button>
+        <button class="button button--secondary popup__buttons--back" @click="popup = 0">
+          {{ $t('global.buttons.back') }}
+        </button>
         <button
           class="button button--primary popup__buttons--submit"
           :disabled="sending"
           :class="{ 'popup__buttons--disabled': sending }"
           @click="sendEmail()"
         >
-          送出表單
+          {{ $t('global.buttons.submit_form') }}
         </button>
       </div>
     </div>
@@ -151,12 +161,14 @@
 
   <div class="background" v-show="popup == 2">
     <div class="popup">
-      <div class="popup__header font-4">謝謝您！</div>
+      <div class="popup__header font-4">{{ $t('contact.popup.thank_you') }}</div>
       <div class="popup__content font-7">
-        我們已收到您的回覆，並將確認信寄送到您填寫的聯絡信箱。
+        {{ $t('contact.popup.form_confirmation_message') }}
       </div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--close" @click="popup = 0">關閉</button>
+        <button class="button button--secondary popup__buttons--close" @click="popup = 0">
+          {{ $t('global.buttons.close') }}
+        </button>
       </div>
     </div>
   </div>
@@ -164,7 +176,6 @@
 
 <script>
 import emailjs from '@emailjs/browser'
-
 export default {
   name: 'formComponent',
   data() {
@@ -175,12 +186,12 @@ export default {
       selectedProjectTypes: {
         value: [],
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       budget: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       date: {
         value: {
@@ -188,53 +199,53 @@ export default {
           endDate: undefined
         },
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       description: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       person: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       company: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       phone: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       email: {
         value: undefined,
         error: undefined,
-        mes: undefined
+        msg: undefined
       },
       projectTypes: [
         {
           id: 'planning',
-          name: '企劃發想與數位行銷'
+          name: this.$t('contact.form.project_types.planning')
         },
         {
           id: 'system',
-          name: '系統設計 / 開發與維運'
+          name: this.$t('contact.form.project_types.system')
         },
         {
           id: 'trade',
-          name: '國內 / 國際貿易服務'
+          name: this.$t('contact.form.project_types.trading')
         },
         {
           id: 'product',
-          name: '產品設計與量產開發'
+          name: this.$t('contact.form.project_types.product')
         },
         {
           id: 'design',
-          name: '品牌形象與視覺設計'
+          name: this.$t('contact.form.project_types.design')
         }
       ]
     }
@@ -259,7 +270,7 @@ export default {
         // project type
         if (!type.value.length) {
           type.error = true
-          type.msg = '此處不可為空白'
+          type.msg = this.$t('contact.form.validation.required')
         } else {
           type.error = false
           type.msg = ''
@@ -268,7 +279,7 @@ export default {
         // budget
         if (!budget.value || budget.value == '0') {
           budget.error = true
-          budget.msg = '此處不可為空白'
+          budget.msg = this.$t('contact.form.validation.required')
         } else {
           budget.error = false
           budget.msg = ''
@@ -277,7 +288,7 @@ export default {
         // date
         if (!startDate | !endDate) {
           date.error = true
-          date.msg = '此處不可為空白'
+          date.msg = this.$t('contact.form.validation.required')
         } else {
           date.error = false
           date.msg = ''
@@ -286,7 +297,7 @@ export default {
         // description
         if (!description.value) {
           description.error = true
-          description.msg = '此處不可為空白'
+          description.msg = this.$t('contact.form.validation.required')
         } else {
           description.error = false
           description.msg = ''
@@ -303,7 +314,7 @@ export default {
         // person
         if (!person.value) {
           person.error = true
-          person.msg = '此處不可為空白'
+          person.msg = this.$t('contact.form.validation.required')
         } else {
           person.error = false
           person.msg = ''
@@ -312,7 +323,7 @@ export default {
         // company
         if (!company.value) {
           company.error = true
-          company.msg = '此處不可為空白'
+          company.msg = this.$t('contact.form.validation.required')
         } else {
           company.error = false
           company.msg = ''
@@ -321,7 +332,7 @@ export default {
         // phone
         if (!phone.value) {
           phone.error = true
-          phone.msg = '此處不可為空白'
+          phone.msg = this.$t('contact.form.validation.required')
         } else {
           phone.error = false
           phone.msg = ''
@@ -330,13 +341,13 @@ export default {
         // email
         if (!email.value) {
           email.error = true
-          email.msg = '此處不可為空白'
+          email.msg = this.$t('contact.form.validation.required')
         } else {
           const mailRe = /\S+@\S+\.\S+/
 
           if (!String(email.value).match(mailRe)) {
             email.error = true
-            email.msg = '信箱格式錯誤'
+            email.msg = this.$t('contact.form.validation.mail_format')
           } else {
             email.error = false
             email.msg = ''

@@ -7,7 +7,7 @@
                 <div class="work-detail-header__tag">{{ tagList }}</div>
             </div>
             <div class="section__line"></div>
-            <p class="work-detail-header__paragraph">{{ headerData.paragraph }}</p>
+            <p class="work-detail-header__paragraph" v-html="headerData.paragraph"></p>
         </template>
         <template v-else>
             <div class="work-detail__description-top">
@@ -16,7 +16,7 @@
             </div>
             <div class="work-detail__description-bottom">
                 <div class="work-detail__tag">{{ tagList }}</div>
-                <p class="work-detail__paragraph">{{ headerData.paragraph }}</p>
+                <p class="work-detail__paragraph" v-html="headerData.paragraph"></p>
             </div>
             <div class="section__line--bottom"></div>
         </template>
