@@ -8,19 +8,34 @@
     "start_url": "/",
     "icons": [
         {
-            "src": "/src/assets/image/logo/logo72x72.png",
+            "src": "/src/assets/image/favicon/android-icon-72x72.png",
             "type": "image/png",
-            "sizes": "72x72"
+            "sizes": "72x72",
+            "purpose": "any maskable"
         },
         {
-            "src": "/src/assets/image/logo/logo96x96.png",
+            "src": "/src/assets/image/favicon/android-icon-96x96.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "96x96",
+            "purpose": "any maskable"
         },
         {
-            "src": "/src/assets/image/logo/logo144x144.png",
+            "src": "/src/assets/image/favicon/android-icon-144x144.png",
             "type": "image/png",
-            "sizes": "144x144"
+            "sizes": "144x144",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/src/assets/image/favicon/android-icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/src/assets/image/favicon/favicon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
         }
     ]
 }
