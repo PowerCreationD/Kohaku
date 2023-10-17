@@ -122,6 +122,46 @@ export default {
                         this.$t('work.mu_maison.detail.tags[1]')
                     ],
                     "paragraph": this.$t('work.mu_maison.detail.paragraph'),
+                    "content": [
+                        {
+                            "img_url": img_kizuna_intro_1
+                        },
+                        {
+                            "img_url": img_kizuna_intro_2
+                        },
+                        {
+                            "img_url": img_kizuna_intro_3
+                        },
+                        {
+                            "img_url": img_kizuna_intro_4
+                        },
+                        {
+                            "img_url": img_kizuna_intro_5
+                        },
+                        {
+                            "img_url": img_kizuna_intro_6
+                        }
+                    ],
+                    "mobileContent": [
+                        {
+                            "img_url": img_kizuna_intro_mobile_1
+                        },
+                        {
+                            "img_url": img_kizuna_intro_mobile_2
+                        },
+                        {
+                            "img_url": img_kizuna_intro_mobile_3
+                        },
+                        {
+                            "img_url": img_kizuna_intro_mobile_4
+                        },
+                        {
+                            "img_url": img_kizuna_intro_mobile_5
+                        },
+                        {
+                            "img_url": img_kizuna_intro_mobile_6
+                        }
+                    ]
                 },
                 "leek-kimchi": {
                     "type": "LayoutType2",
@@ -268,7 +308,8 @@ export default {
             return this.workDetail[this.project].type
         },
         selectContentData(){
-            if (this.project === 'e-commerce-and-logistics-system' && this.isMobile) {
+            if ((this.project === 'e-commerce-and-logistics-system' || 
+                 this.project === 'mu-maison') && this.isMobile) {
                 return this.workDetail[this.project].mobileContent
             }
             return this.workDetail[this.project].content
@@ -341,6 +382,18 @@ import img_woodwork_1 from '@/assets/image/work/commercial_design/book/img_woodw
 import img_woodwork_2 from '@/assets/image/work/commercial_design/book/img_woodwork_2.jpg'
 import img_woodwork_3 from '@/assets/image/work/commercial_design/book/img_woodwork_3.jpg'
 import img_woodwork_4 from '@/assets/image/work/commercial_design/book/img_woodwork_4.jpg'
+import img_kizuna_intro_1 from '@/assets/image/work/product_design/img_kizuna_intro_1.jpg'
+import img_kizuna_intro_2 from '@/assets/image/work/product_design/img_kizuna_intro_2.jpg'
+import img_kizuna_intro_3 from '@/assets/image/work/product_design/img_kizuna_intro_3.jpg'
+import img_kizuna_intro_4 from '@/assets/image/work/product_design/img_kizuna_intro_4.jpg'
+import img_kizuna_intro_5 from '@/assets/image/work/product_design/img_kizuna_intro_5.jpg'
+import img_kizuna_intro_6 from '@/assets/image/work/product_design/img_kizuna_intro_6.jpg'
+import img_kizuna_intro_mobile_1 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_1.jpg'
+import img_kizuna_intro_mobile_2 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_2.jpg'
+import img_kizuna_intro_mobile_3 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_3.jpg'
+import img_kizuna_intro_mobile_4 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_4.jpg'
+import img_kizuna_intro_mobile_5 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_5.jpg'
+import img_kizuna_intro_mobile_6 from '@/assets/image/work/product_design/img_kizuna_intro_mobile_6.jpg'
 import img_kimchi_1 from '@/assets/image/work/commercial_design/kimchi/img_kimchi_1.jpg'
 import img_kimchi_2 from '@/assets/image/work/commercial_design/kimchi/img_kimchi_2.jpg'
 import img_kimchi_3 from '@/assets/image/work/commercial_design/kimchi/img_kimchi_3.jpg'

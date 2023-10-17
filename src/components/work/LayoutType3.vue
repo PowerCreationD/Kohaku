@@ -1,4 +1,7 @@
 <template>
+    <div class="work_detail__img-wall">
+        <img v-for="img in contentData" :key="img.id" :src="getImageUrl(img.img_url)" class="item" :alt="img.id">
+    </div>
     <div class="work_detail__img-item-1">
         <img v-lazy="img_kizuna_1" alt="">
     </div>
@@ -22,6 +25,18 @@
     
 </template>
 
+<script>
+export default {
+    props: ["contentData"],
+    methods: {
+        getImageUrl(img) {
+            const imageUrl = new URL(img, import.meta.url).href
+            return imageUrl
+        }
+    }
+}
+</script>
+
 <script setup>
 import img_kizuna_1 from '@/assets/image/work/product_design/img_kizuna_1.jpg'
 import img_kizuna_2 from '@/assets/image/work/product_design/img_kizuna_2.jpg'
@@ -32,6 +47,17 @@ import img_kizuna_5 from '@/assets/image/work/product_design/img_kizuna_5.png'
 
 <style lang="scss" scoped>
 @use '../../assets/scss/components/typography' as typography;
+
+.work_detail__img-wall {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+        width: 100%;
+    }
+    img:last-child {
+        margin-bottom: 24px;
+    }
+}
 .work_detail__img-item-1 {
     margin-bottom: 24px;
     img {
@@ -93,6 +119,11 @@ div.item-bottom img:last-child{
         }
         .item-gap {
             margin-right: 0px;
+        }
+    }
+    .work_detail__img-wall {
+        img:last-child {
+            margin-bottom: 16px;
         }
     }
 }
