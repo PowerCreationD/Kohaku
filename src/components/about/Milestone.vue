@@ -1,11 +1,20 @@
+<script setup>
+import imgAmber from '@/assets/image/global/image_amber-line.png'
+</script>
+
 <template>
   <div class="milestone">
-    <h2 class="milestone__title">MILESTONE</h2>
+    <h2 class="milestone__title font-1">MILESTONE</h2>
+    <img :src="imgAmber" alt="amber" class="amber" />
     <div class="milestone-wrap">
       <div class="phase" v-for="item in milestone" :key="item.key">
-        <p class="phase__date">{{ item.date }}</p>
-        <div class="phase__things">
-          <p class="phase__thing" v-for="thing in item.content" :key="thing">{{ thing }}</p>
+        <div class="phase__date-and-thing">
+          <p class="phase__date font-7">{{ item.date }}</p>
+          <div class="phase__things">
+            <p class="phase__thing font-7" v-for="thing in item.content" :key="thing">
+              {{ thing }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
