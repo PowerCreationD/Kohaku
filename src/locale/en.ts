@@ -12,8 +12,7 @@ const locale = {
       view_more: 'More'
     },
     footer: {
-      address:
-        '3F., No. 11, Dayong Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
+      address: '3F., No. 11, Dayong Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
     }
   },
   homepage: {
@@ -721,19 +720,18 @@ const locale = {
   },
   contact: {
     introduction: {
-      title: `Welcome to share your ideas with Kohaku.
-            We will transform your small sparks of inspiration into brilliant solutions!`,
-      description: `Please provide us with detailed information about your industry needs and your vision.
-            We will get in touch with you ASAP!`
+      title: `Embracing Traditional Wisdom, Creating a Novel Experience`,
+      description: `Welcome to share your ideas with Kohaku.
+        We will transform your small sparks of inspiration into brilliant solutions!
+        Please provide us with detailed information about your industry needs and your vision.
+        We will get in touch with you ASAP!`
     },
     form: {
       project_type: 'Project Type',
       project_types: {
-        planning: 'Event Planning and Proposal',
         system: 'System Design / Development and Maintenance',
-        trading: 'Domestic / International Trading',
-        product: 'Product Design and Production',
-        design: 'Brand Identity and Visual Design'
+        design: 'Brand Identity and Visual Design',
+        content: 'Event Planning and Proposal'
       },
       budget: 'Budget',
       estimated_project_time: 'Estimated Project Timeline',

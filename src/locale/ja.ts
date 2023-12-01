@@ -721,18 +721,18 @@ const locale = {
   },
   contact: {
     introduction: {
-      title: `どんな要望でも大歓迎！
-            私たちにお気軽にお問い合わせください。`,
-      description: `ご要望やりクエスト等ございましたら、下記フォームにご記入いただき、担当者よりご連絡いたします。`
+      title: `どんな要望でも大歓迎！`,
+      description: `私たちにお気軽にお問い合わせください。
+      ご要望やりクエスト等ございましたら、
+      下記フォームにご記入いただき、
+      担当者よりご連絡いたします。`
     },
     form: {
       project_type: 'プロジェクトタイプ',
       project_types: {
-        planning: '企画発想とイベント実行',
         system: 'システム設計 / 開発と運用',
-        trading: '国際貿易サービス',
-        product: 'プロダクトデザイン',
-        design: 'グラフィックデザイン'
+        design: 'グラフィックデザイン',
+        content: '企画発想とイベント実行'
       },
       budget: '予算',
       estimated_project_time: 'プロジェクト予定期間',
