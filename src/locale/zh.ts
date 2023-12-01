@@ -599,7 +599,7 @@ const locale = {
     lishin: {
       name: '立心 Lishin',
       position: '產品設計師',
-      description: '最終確定版.final.final.final.3dm',
+      description: '最終確定版.final.final.3dm',
       skills: ['產品設計', '3D建模渲染', '模型製作', 'Rhinoceros 3D', 'KeyShot'],
       intro: ``
     },
