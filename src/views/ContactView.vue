@@ -1,21 +1,18 @@
-<script setup>
-import imgAmber from '@/assets/image/global/image_amber.png'
-</script>
-
 <template>
   <div class="contact">
     <page-title>CONTACT</page-title>
-    <div class="contact-wrap">
-      <div class="intro">
-        <h2 class="intro__title">
-          {{ $t('contact.introduction.title') }}
-        </h2>
-        <article class="intro__desc">
-          {{ $t('contact.introduction.description') }}
-        </article>
-        <img class="intro__background" :src="img.src" :alt="img.alt" />
+    <div class="contact-background-box">
+      <div class="contact-wrap">
+        <div class="intro">
+          <h2 class="intro__title font-3">
+            {{ $t('contact.introduction.title') }}
+          </h2>
+          <article class="intro__desc font-7">
+            {{ $t('contact.introduction.description') }}
+          </article>
+        </div>
+        <contact-form></contact-form>
       </div>
-      <contact-form></contact-form>
     </div>
   </div>
 </template>
@@ -28,12 +25,7 @@ import contactForm from '../components/contact/ContactForm.vue'
 export default {
   components: { pageTitle, contactForm },
   data() {
-    return {
-      img: {
-        src: imgAmber,
-        alt: 'contact us'
-      }
-    }
+    return {}
   }
 }
 </script>
