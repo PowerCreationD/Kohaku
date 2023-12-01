@@ -1,53 +1,17 @@
-@use 'components/typography' as typography;
 @use 'components/variable' as var;
 
 .about {
-  p {
-    @include typography.font($index: 7);
-    margin: 0;
-  }
-
   @media (max-width: 767px) {
-    padding-bottom: 56px;
+    padding-bottom: 80px;
   }
 }
 
 .intro {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 96px;
-  margin-top: 60px;
-
-  > div {
-    display: flex;
-
-    &:first-child {
-      margin-bottom: 56px;
-    }
-  }
-
-  &__title {
-    flex-grow: 1;
-    white-space: pre-line;
-  }
-
-  &__logo {
-    height: 88px;
-
-    img {
-      height: 100%;
-    }
-  }
-
-  &__banner {
-    flex-grow: 1;
-    margin-right: 56px;
-
-    img {
-      width: 100%;
-      vertical-align: middle;
-    }
-  }
+  justify-content: space-between;
+  align-items: center;
+  min-height: 404px;
+  margin-bottom: 36px;
 
   &__desc {
     width: auto;
@@ -55,38 +19,17 @@
     flex-shrink: 0;
     white-space: pre-line;
   }
+  &__video {
+    flex-grow: 1;
+    height: 100%;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .intro {
     margin: 0;
-
-    > div {
-      flex-wrap: wrap;
-
-      &:first-child {
-        margin-bottom: 16px;
-      }
-    }
-
-    &-tittle-and-logo {
-      flex-direction: column-reverse;
-    }
-
-    &__logo {
-      align-self: flex-end;
-      margin: -28px 0 24px 0;
-    }
-
-    &__banner {
-      margin-right: 0;
-
-      img {
-        min-width: 100vw;
-        margin-left: min(-16px, calc(100vw * -0.05));
-      }
-    }
-
+    flex-direction: column;
+    justify-content: center;
     &__desc {
       width: 100%;
       margin: 36px auto;
@@ -95,112 +38,90 @@
   }
 }
 
-.brand {
-  border-top: 1px solid map-get(var.$color, grey-3);
-  border-bottom: 1px solid map-get(var.$color, grey-3);
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
+.brand-section {
+  background-image: url('@/assets/image/about/background_ grass.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  margin-left: calc((100vw - 100%) / (-2));
+  min-height: 596px;
 
-  &__wrap {
-    width: min(65%, 786px);
-    margin: auto;
-    height: 512px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-wrap {
+  width: min(65%, 786px);
+  margin: auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__logo {
+    width: 100px;
+    height: 98px;
   }
 
   &__name {
-    @include typography.font($index: 1);
-    margin: 0 0 20px 0;
+    color: map-get(var.$color, white);
+    margin: 16px 0 36px 0;
+    text-align: center;
   }
 
   &__desc {
-    text-align: justify;
+    text-align: center;
     white-space: pre-line;
+    color: map-get(var.$color, white);
   }
+}
 
+.amber-wrap {
   &__amber {
-    z-index: -1;
-
-    img {
-      position: absolute;
-      transition: 0.5s;
+    position: absolute;
+    transition: 0.5s;
+    &--left {
+      left: -65px;
+      margin-top: -400px;
+      transform: rotate(-105deg);
     }
 
-    &--left-top {
-      width: 315px;
-      transform: rotate(145.33deg);
-      top: -167px;
-      left: -26px;
-    }
-
-    &--right-top {
-      width: 218px;
-      transform: rotate(39.77deg);
-      right: 10%;
-      top: -155px;
-    }
-
-    &--left-bottom {
-      width: 281px;
-      transform: rotate(39.77deg);
-      left: 20%;
-      bottom: -193px;
-    }
-
-    &--right-bottom {
-      width: 304px;
-      right: 0;
-      bottom: 13%;
+    &--right {
+      right: -65px;
+      margin-top: 150px;
+      transform: rotate(167.909deg);
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .brand {
-    &__wrap {
-      width: 100%;
-      height: 400px;
-    }
+  .brand-wrap {
+    width: 100%;
+    height: 596px;
 
     &__name {
-      margin: 0 0 16px 0;
+      margin: 12px 0;
     }
+  }
 
+  .amber-wrap {
     &__amber {
-      &--left-top {
-        width: 248px;
-        transform: rotate(145.33deg);
-        top: -83px;
-        left: -14px;
-        filter: blur(5px);
+      width: 180px;
+      &--left {
+        left: -45px;
+        margin-top: -370px;
+        transform: rotate(-105deg);
       }
 
-      &--right-top {
-        width: 109px;
-        transform: rotate(-118.88deg);
-        right: 2%;
-        top: -60px;
-        opacity: 60%;
-        filter: blur(5px);
-      }
-
-      &--left-bottom {
-        width: 275px;
-        transform: rotate(39.77deg);
-        left: 2px;
-        bottom: -148px;
-        opacity: 60%;
-        filter: blur(10px);
-      }
-
-      &--right-bottom {
-        width: 159px;
-        right: 23px;
-        bottom: 2%;
+      &--right {
+        right: -40px;
+        margin-top: 180px;
+        transform: rotate(60deg);
       }
     }
   }

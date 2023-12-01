@@ -1,12 +1,8 @@
 @use 'typography' as typography;
+@use 'variable' as var;
 
 .milestone {
   margin-top: 76px;
-
-  p,
-  h2 {
-    margin: 0;
-  }
 
   &-wrap {
     display: flex;
@@ -14,44 +10,77 @@
     margin-top: 152px;
     width: min(900px, 100%);
     margin-left: auto;
-    @include typography.font($index: 7);
-  }
-
-  &__title {
-    @include typography.font($index: 1);
   }
 
   .phase {
-    display: flex;
-    margin-bottom: 16px;
+    &:not(:first-child)::before {
+      content: '';
+      display: block;
+      height: 36px;
+      width: 42.5px;
+      border-right: 1px solid map-get(var.$color, grey-2);
+    }
+
+    &__date-and-thing {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
 
     &__date {
-      width: 61px;
-      margin-right: 51px;
+      margin-right: 36px;
       flex-shrink: 0;
+
+      height: 85px;
+      width: 85px;
+      line-height: 85px;
+      text-align: center;
+      border: 1px solid map-get(var.$color, grey-2);
+      border-radius: 50%;
     }
 
     &__things {
       flex-grow: 1;
+    }
 
-      p + p {
-        margin-top: 16px;
-      }
+    .phase__thing + .phase__thing {
+      margin-top: 16px;
+    }
+  }
+  .amber {
+    position: absolute;
+    left: 125px;
+    bottom: 442px;
+    z-index: -1;
+    @media (max-width: 1439px) {
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
   .milestone {
-    margin-top: 36px;
+    margin-top: 64px;
 
     &-wrap {
-      margin-top: 76px;
+      margin-top: 62px;
     }
 
+    &__title {
+      text-align: center;
+    }
     .phase {
+      &:not(:first-child)::before {
+        width: 38px;
+      }
       &__date {
-        margin-right: 36px;
+        margin-right: 12px;
+        line-height: 76px;
+        height: 76px;
+        width: 76px;
+      }
+      .phase__thing + .phase__thing {
+        margin-top: 8px;
       }
     }
   }
