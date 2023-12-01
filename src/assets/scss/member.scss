@@ -2,7 +2,6 @@
 
 .member {
   position: relative;
-  z-index: -1;
 
   @media (max-width: 767px) {
     padding-bottom: 56px;
@@ -16,17 +15,17 @@
 .member-wrap {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(3, calc(33.33% - 37.33px));
-  gap: 56px;
+  grid-template-columns: repeat(3, calc(33.33% - 24px));
+  gap: 36px;
 
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, calc(50% - 18px));
-    column-gap: 36px;
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, calc(50% - 12px));
+    gap: 24px;
   }
 
   @media (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
-    gap: 56px;
+    gap: 16px;
   }
 }
 
@@ -67,6 +66,7 @@
     top: 44%;
     width: 310px;
     transform: rotate(94deg);
+    filter: blur(3px);
   }
 
   &-5 {
@@ -81,6 +81,7 @@
     top: 90%;
     width: 332px;
     transform: rotate(144deg);
+    filter: blur(3px);
   }
 
   &-7 {
@@ -100,6 +101,7 @@
     top: 33%;
     width: 350px;
     transform: rotate(84deg);
+    filter: blur(3px);
   }
 
   &-9 {
@@ -119,6 +121,7 @@
     top: 66%;
     width: 330px;
     transform: rotate(170deg);
+    filter: blur(3px);
   }
 
   &-11 {
@@ -133,6 +136,7 @@
     top: 49%;
     width: 320px;
     transform: rotate(339deg);
+    filter: blur(3px);
   }
 
   &-13 {
@@ -175,6 +179,7 @@
     top: 16%;
     width: 300px;
     transform: rotate(196deg);
+    filter: blur(3px);
   }
 
   &-19 {
@@ -189,5 +194,6 @@
     top: 78%;
     width: 304px;
     transform: rotate(14deg);
+    filter: blur(3px);
   }
 }
