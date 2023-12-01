@@ -597,7 +597,7 @@ const locale = {
     hannah: {
       name: '詩涵 Hannah',
       position: 'フルスタックエンジニア',
-      description: 'あなたの質問をサプライズに変えてみましょう！',
+      description: 'あなたの質問をサプライズに！',
       skills: ['Web ベース アーキテクチャ設計', 'プロジェクト管理と品質管理', 'データ分析と可視化'],
       intro: ``
     },
@@ -628,7 +628,7 @@ const locale = {
     lily: {
       name: '子涵 Lily',
       position: 'ハードウェアエンジニア',
-      description: 'ボールを打っているか、コードを打っているかのどちらかです',
+      description: 'ボール打ってるか、コード打ってるんだ',
       skills: [
         'エンベデッドシステム開発',
         'ハードウェアアーキテクチャ設計',
@@ -664,7 +664,7 @@ const locale = {
     ivy: {
       name: '逸青 Ivy',
       position: 'グラフィックデザイナー',
-      description: 'インスピレーションはコーヒーカップの底にあります',
+      description: '発想源はコーヒーカップの底にある',
       skills: [
         'ブランドデザイン',
         'パーティシパトリーデザイン',
@@ -677,7 +677,7 @@ const locale = {
     lishin: {
       name: '立心 Lishin',
       position: 'プロダクトデザイナー',
-      description: '最終確定版.final.final.final.3dm',
+      description: '最終確定版.final.final.3dm',
       skills: [
         'プロダクトデザイン',
         '3Dモデリングとレンダリング',
@@ -697,7 +697,7 @@ const locale = {
     andrew: {
       name: '俊宇 Andrew',
       position: 'ソフトウェアエンジニア',
-      description: '科学技術を活用して、デザインの巧妙なアイデアを実現しましょう',
+      description: '創造力を抱く',
       skills: [
         'ヒューマンインタラクション',
         'スペースコンピューティング',

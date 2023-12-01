@@ -108,20 +108,6 @@ export default {
           ]
         },
         {
-          id: 'arien',
-          name: this.$t('member.arien.name'),
-          position: this.$t('member.arien.position'),
-          intro: this.$t('member.arien.intro'),
-          description: this.$t('member.arien.description'),
-          skills: [
-            this.$t('member.arien.skills[0]'),
-            this.$t('member.arien.skills[1]'),
-            this.$t('member.arien.skills[2]'),
-            this.$t('member.arien.skills[3]'),
-            this.$t('member.arien.skills[4]')
-          ]
-        },
-        {
           id: 'ivy',
           name: this.$t('member.ivy.name'),
           position: this.$t('member.ivy.position'),
