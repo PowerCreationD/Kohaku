@@ -627,25 +627,28 @@ const locale = {
   },
   contact: {
     introduction: {
-      title: `歡迎與琥白分享你的天馬行空，
-            我們將為您從微小的點子打造亮眼解方！`,
-      description: `來信說明您的產業需求與價值願景，
-            我們會儘速與您聯繫！`
+      title: `承載傳統智慧，設計全新感受`,
+      description: `歡迎與琥白分享你的天馬行空，
+      我們將為您從微小的點子打造亮眼解方！
+
+      來信說明您的產業需求與價值願景，
+      我們會儘速與您聯繫！`
     },
     form: {
       project_type: '專案類型',
       project_types: {
-        planning: '企劃發想與數位行銷',
-        system: '系統設計 / 開發與維運',
-        trading: '國內 / 國際貿易服務',
-        product: '產品設計與量產開發',
-        design: '品牌形象與視覺設計'
+        system: '系統設計與全端開發',
+        design: '商業設計與原型製作',
+        content: '內容設計與活動統籌'
       },
       budget: '預算',
+      budget_placeholder: '例：50000',
       estimated_project_time: '預估專案時間',
       project_content_overview: '專案內容概述',
+      project_content_overview_placeholder: '專案目標、初步概念、參考案例',
       contact_person: '聯絡人',
       company_brand_name: '公司 / 品牌名稱',
+      company_brand_name_placeholder: '如無請填寫個人',
       contact_number: '聯絡電話',
       contact_email: '聯絡信箱',
       validation: {

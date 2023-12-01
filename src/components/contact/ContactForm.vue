@@ -7,7 +7,7 @@
           :class="{ error: selectedProjectTypes.error }"
           :errorMsg="selectedProjectTypes.msg"
         >
-          <label class="form__title" for="project-type">{{
+          <label class="form__title font-3" for="project-type">{{
             $t('contact.form.project_type')
           }}</label>
           <div class="form__type-checkbox">
@@ -17,7 +17,7 @@
               :key="project.id"
               class="checkbox"
             >
-              <label :for="project.id" class="checkbox__label"
+              <label :for="project.id" class="checkbox__label font-7"
                 ><input
                   type="checkbox"
                   :id="project.id"
@@ -35,27 +35,34 @@
           :class="{ error: budget.error }"
           :errorMsg="budget.msg"
         >
-          <label class="form__title" for="budget">{{ $t('contact.form.budget') }}</label>
-          <input id="budget" type="text" inputmode="numeric" v-model="budget.value" />
+          <label class="form__title font-3" for="budget">{{ $t('contact.form.budget') }}</label>
+          <input
+            class="font-7"
+            id="budget"
+            type="text"
+            inputmode="numeric"
+            v-model="budget.value"
+            :placeholder="$t('contact.form.budget_placeholder')"
+          />
         </div>
         <div
           class="form__section form__date-wrap"
           :class="{ error: date.error }"
           :errorMsg="date.msg"
         >
-          <label class="form__title" for="date">{{
+          <label class="form__title font-3" for="date">{{
             $t('contact.form.estimated_project_time')
           }}</label>
           <div id="date" class="form__date">
             <input
-              class="form__date--picker"
+              class="form__date--picker font-7"
               type="date"
               v-model="date.value.startDate"
               :max="date.value.endDate"
             />
             <span class="form__date--dash">~</span>
             <input
-              class="form__date--picker"
+              class="form__date--picker font-7"
               type="date"
               v-model="date.value.endDate"
               :min="date.value.startDate"
@@ -67,7 +74,7 @@
           :class="{ error: description.error }"
           :errorMsg="description.msg"
         >
-          <label class="form__title" for="desc">{{
+          <label class="form__title font-3" for="desc">{{
             $t('contact.form.project_content_overview')
           }}</label>
           <textarea
@@ -75,7 +82,8 @@
             cols="30"
             rows="10"
             v-model="description.value"
-            class="form__desc"
+            class="form__desc font-7"
+            :placeholder="$t('contact.form.project_content_overview_placeholder')"
           ></textarea>
         </div>
         <div class="form__btns">
@@ -90,34 +98,46 @@
           :class="{ error: person.error }"
           :errorMsg="person.msg"
         >
-          <label class="form__title" for="person">{{ $t('contact.form.contact_person') }}</label>
-          <input id="person" type="text" v-model="person.value" />
+          <label class="form__title font-3" for="person">{{
+            $t('contact.form.contact_person')
+          }}</label>
+          <input class="font-7" id="person" type="text" v-model="person.value" />
         </div>
         <div
           class="form__section form__company"
           :class="{ error: company.error }"
           :errorMsg="company.msg"
         >
-          <label class="form__title" for="company">{{
+          <label class="form__title font-3" for="company">{{
             $t('contact.form.company_brand_name')
           }}</label>
-          <input id="company" type="text" v-model="company.value" />
+          <input
+            class="font-7"
+            id="company"
+            type="text"
+            v-model="company.value"
+            :placeholder="$t('contact.form.company_brand_name_placeholder')"
+          />
         </div>
         <div
           class="form__section form__phone"
           :class="{ error: phone.error }"
           :errorMsg="phone.msg"
         >
-          <label class="form__title" for="phone">{{ $t('contact.form.contact_number') }}</label>
-          <input id="phone" type="text" v-model="phone.value" />
+          <label class="form__title font-3" for="phone">{{
+            $t('contact.form.contact_number')
+          }}</label>
+          <input class="font-7" id="phone" type="text" v-model="phone.value" />
         </div>
         <div
           class="form__section form__email"
           :class="{ error: email.error }"
           :errorMsg="email.msg"
         >
-          <label class="form__title" for="email">{{ $t('contact.form.contact_email') }}</label>
-          <input id="email" type="text" v-model="email.value" />
+          <label class="form__title font-3" for="email">{{
+            $t('contact.form.contact_email')
+          }}</label>
+          <input class="font-7" id="email" type="text" v-model="email.value" />
         </div>
         <div class="form__btns">
           <button
@@ -228,24 +248,16 @@ export default {
       },
       projectTypes: [
         {
-          id: 'planning',
-          name: this.$t('contact.form.project_types.planning')
-        },
-        {
           id: 'system',
           name: this.$t('contact.form.project_types.system')
         },
         {
-          id: 'trade',
-          name: this.$t('contact.form.project_types.trading')
-        },
-        {
-          id: 'product',
-          name: this.$t('contact.form.project_types.product')
-        },
-        {
           id: 'design',
           name: this.$t('contact.form.project_types.design')
+        },
+        {
+          id: 'content',
+          name: this.$t('contact.form.project_types.content')
         }
       ]
     }
@@ -509,4 +521,4 @@ export default {
 }
 </script>
 
-<style src="../../assets/scss/components/_contactForm.scss"></style>
+<style src="../../assets/scss/components/_contactForm.scss" scoped></style>
