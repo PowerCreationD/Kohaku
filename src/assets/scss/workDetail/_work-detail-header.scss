@@ -1,0 +1,45 @@
+@use '../components/variable' as var;
+
+.work-detail-header-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid map-get(var.$color, gold);
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    width: fit-content;
+    padding: 0 24px;
+    background-color: map-get(var.$color, white);
+    margin: -18px 0 0 16px;
+    @media (max-width: 767px) {
+      padding: 0 8px;
+      margin: -14px 0 0 8px;
+    }
+  }
+  &__content {
+    padding: 22px 40px 28px 40px;
+    text-align: justify;
+    @media (max-width: 767px) {
+      padding: 8px 16px 8px 16px;
+    }
+  }
+  &__keywords-container {
+    display: flex;
+    gap: 8px;
+    width: fit-content;
+    padding: 0 24px;
+    color: map-get(var.$color, gold);
+    background-color: map-get(var.$color, white);
+    margin: 0 16px -12px auto;
+
+    @media (max-width: 767px) {
+      padding: 0 8px;
+      margin: 0 8px -12px auto;
+    }
+  }
+}
