@@ -1,0 +1,73 @@
+@use '../variable' as var;
+
+.work-card-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 36px;
+  column-gap: 24px;
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &__image-section {
+    margin-bottom: 12px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  &__image {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    @media (max-width: 767px) {
+      border-radius: 16px;
+    }
+  }
+
+  &:nth-child(12n + 1),
+  &:nth-child(12n + 2),
+  &:nth-child(12n + 3) {
+    grid-column: span 4;
+    @media (max-width: 1023px) {
+      grid-column: span 1;
+    }
+  }
+
+  &:nth-child(12n + 4),
+  &:nth-child(12n + 5) {
+    grid-column: span 6;
+    @media (max-width: 1023px) {
+      grid-column: span 1;
+    }
+  }
+
+  &:nth-child(12n + 6),
+  &:nth-child(12n + 7),
+  &:nth-child(12n + 8) {
+    grid-column: span 4;
+    @media (max-width: 1023px) {
+      grid-column: span 1;
+    }
+  }
+
+  &:nth-child(12n + 9),
+  &:nth-child(12n + 10),
+  &:nth-child(12n + 11),
+  &:nth-child(12n + 12) {
+    grid-column: span 3;
+    @media (max-width: 1023px) {
+      grid-column: span 1;
+    }
+  }
+}

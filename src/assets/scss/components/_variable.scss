@@ -4,6 +4,7 @@
 $color: (
   charcoal: hsla(12, 4%, 23%, 1),
   gold: hsla(38, 76%, 60%, 1),
+  cream: hsl(40, 66%, 92%, 1),
   cyan: hsla(191, 100%, 44%, 1),
   violet: hsla(284, 76%, 60%, 1),
   green: hsla(82, 56%, 47%, 1),
@@ -100,7 +101,8 @@ $box-shadow: (
 // Border radius
 $border-radius: (
   1: 4px,
-  2: 71px
+  2: 71px,
+  3: 25px
 );
 
 // Header
