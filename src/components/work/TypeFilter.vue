@@ -1,5 +1,4 @@
 <template>
-
   <div v-show="!mobileCheck.value" class="filter-section">
     <div class="filter-item" :class="{ 'filter-item--active': isSelectAll }">
       <button
@@ -114,6 +113,11 @@ export default {
     removeType(type) {
       this.checkedTypes = this.checkedTypes.filter((item) => item !== type)
       this.updateFilterWorkItems()
+    },
+    updateRoute() {
+      const shouldRemoveTypes = this.checkedTypes.length === 0
+      const query = shouldRemoveTypes ? {} : { types: this.checkedTypes.join(',') }
+      this.$router.replace({ path: '/work', query })
     }
   },
   computed: {
@@ -122,7 +126,22 @@ export default {
       return [defaultType, ...this.types]
     }
   },
-  mounted() {},
-  beforeUnmount() {}
+  mounted() {
+    const typesParam = this.$route.query.types
+    if (typesParam) {
+      this.checkedTypes = typesParam.split(',')
+    }
+  },
+  watch: {
+    checkedTypes: {
+      handler: 'updateRoute',
+      deep: true
+    }
+  },
+  beforeRouteUpdate(to, from, next) {
+    const types = to.query.types
+    this.checkedTypes = types ? types.split(',') : []
+    next()
+  }
 }
 </script>
