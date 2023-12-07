@@ -14,7 +14,6 @@ import workItems from '@/assets/data/work.js'
 </template>
 
 <style src="@/assets/scss/work.scss" scoped></style>
-<style src="@/assets/scss/components/work/_workCard.scss" scoped></style>
 
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'
@@ -28,12 +27,6 @@ export default {
       checkedTypes: [],
       isSelectAll: true,
       workItems: workItems
-    }
-  },
-  methods: {
-    goToPage(page) {
-      if (!page) return
-      this.$router.push({ name: 'WorkDetail', params: { project: page } })
     }
   },
   computed: {
