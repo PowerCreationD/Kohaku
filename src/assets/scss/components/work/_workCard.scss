@@ -1,19 +1,5 @@
 @use '../variable' as var;
 
-.work-card-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 36px;
-  column-gap: 24px;
-  @media (max-width: 1023px) {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 24px;
-  }
-  @media (max-width: 767px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .work-card {
   display: flex;
   flex-direction: column;
@@ -33,6 +19,10 @@
         opacity: 0.2;
         position: relative;
         margin-bottom: -75%;
+        border-radius: map-get(var.$border-radius, 3);
+        @media (max-width: 767px) {
+          border-radius: map-get(var.$border-radius, 4);
+        }
       }
     }
   }
@@ -43,7 +33,7 @@
     object-fit: cover;
     object-position: top;
     @media (max-width: 767px) {
-      border-radius: 16px;
+      border-radius: map-get(var.$border-radius, 4);
     }
   }
 
