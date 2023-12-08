@@ -1,13 +1,13 @@
 <template>
   <div class="work-detail">
     <WorkDetailHeader
-      :name="workInfo.name"
-      :content="workInfo.content"
-      :keywords="workInfo.keywords"
+      :name="workItem.name"
+      :content="workItem.content"
+      :keywords="workItem.keywords"
     ></WorkDetailHeader>
     <div
       class="work-detail-image-section"
-      :class="`work-detail-image-section--layout-type-${workInfo.layoutType}`"
+      :class="`work-detail-image-section--layout-type-${workItem.layoutType}`"
     >
       <picture
         v-for="img in images"
@@ -36,7 +36,7 @@
 import WorkDetailHeader from '@/components/workDetail/WorkDetailHeader.vue'
 
 import { importFolderImages } from '@/library/importFolderImages.js'
-import { getWorkItemInfo } from '@/library/getWorkItemInfo.js'
+import { getWorkItem } from '@/library/getWorkItem.js'
 import { mobileCheckSymbol } from '@/App.vue'
 
 export default {
@@ -52,7 +52,7 @@ export default {
   data() {
     return {
       images: undefined,
-      workInfo: undefined
+      workItem: undefined
     }
   },
   methods: {
@@ -80,8 +80,8 @@ export default {
     }
   },
   created() {
-    this.workInfo = getWorkItemInfo(this.project)
-    this.images = importFolderImages(this.workInfo.id)
+    this.workItem = getWorkItem(this.project)
+    this.images = importFolderImages(this.workItem.id)
 
     if (this.images[1].fileName.includes('web') || this.images[1].fileName.includes('app')) {
       this.images.splice(0, 1)
