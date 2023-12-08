@@ -24,7 +24,7 @@
       </picture>
     </div>
 
-    <button class="return-button button--primary" @click="returnWorkPage">
+    <button class="return-button button--primary" @click="returnPrevPage">
       {{ $t('global.buttons.back') }}
     </button>
   </div>
@@ -75,8 +75,13 @@ export default {
         }
       }
     },
-    returnWorkPage() {
-      this.$router.push({ name: 'Work' })
+    returnPrevPage() {
+      const fromRoute = this.$router.options.history.state.back
+      if (fromRoute) {
+        this.$router.go(-1)
+      } else {
+        this.$router.push('/work')
+      }
     }
   },
   created() {
