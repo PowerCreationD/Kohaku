@@ -1,19 +1,17 @@
 <template>
-  <div class="work-card-container">
-    <div v-for="(work, index) in workItems" :key="index" class="work-card" @click="goToPage(work)">
-      <picture class="work-card__image-section"
-        ><img loading="lazy" class="work-card__image" :src="work.mainImage" :alt="work.id"
-      /></picture>
-      <p class="font-7 work-card__name">{{ work.name }}</p>
-    </div>
+  <div class="work-card-grid">
+    <workCard v-for="(work, index) in workItems" :key="index" :work="work"></workCard>
   </div>
 </template>
 
-<style src="@/assets/scss/components/work/_workCard.scss" scoped></style>
+<style src="@/assets/scss/components/work/_workCardGrid.scss" scoped></style>
 
 <script>
+import workCard from './WorkCard.vue'
+
 export default {
   name: 'WorkCardGrid',
+  components: { workCard },
   props: {
     workItems: {
       type: Array,
