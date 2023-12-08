@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ServiceView from '../views/ServiceView.vue'
-import WorkView from '../views/WorkView.vue'
-import WorkDetailView from '../views/WorkDetailView.vue'
 
 const KOHAKU = '琥白Kohaku'
+const validTypes = ['system', 'design', 'content']
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -52,10 +51,18 @@ const router = createRouter({
       }
     },
     {
-      path: '/services/:id?',
+      path: '/services/:type?',
       name: 'Services',
-      component: ServiceView,
+      component: () => import('../views/ServiceView.vue'),
       props: true,
+      beforeEnter: (to, from, next) => {
+        const requestedType = to.params.type
+        if (requestedType && validTypes.includes(requestedType)) {
+          next()
+        } else {
+          next('/services/system')
+        }
+      },
       meta: {
         title: `${KOHAKU} | Services`,
         metaTags: [
@@ -69,15 +76,15 @@ const router = createRouter({
           }
         ],
         canonicalUrl: (to) => {
-          let servicesUrl = `/${to.params.id}`
-          return `https://kohakustudio.co/services${to.params.id ? servicesUrl : ''}`
+          let servicesUrl = `/${to.params.type}`
+          return `https://kohakustudio.co/services${to.params.type ? servicesUrl : ''}`
         }
       }
     },
     {
       path: '/work/:type?',
       name: 'Work',
-      component: WorkView,
+      component: () => import('../views/WorkView.vue'),
       props: true,
       meta: {
         title: `${KOHAKU} | Work`,
@@ -99,7 +106,7 @@ const router = createRouter({
     {
       path: '/work/:project',
       name: 'WorkDetail',
-      component: WorkDetailView,
+      component: () => import('../views/WorkDetailView.vue'),
       props: true,
       meta: {
         title: `${KOHAKU} | Work`,

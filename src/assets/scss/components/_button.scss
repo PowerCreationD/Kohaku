@@ -58,6 +58,31 @@
     }
   }
 
+  &--tertiary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 48px;
+    color: map-get(var.$color--primary, white);
+    background-color: map-get(var.$color--primary, charcoal);
+    border: 1px solid map-get(var.$color--primary, charcoal);
+    border-radius: map-get(var.$border-radius, 3);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      border: 1px solid map-get(var.$color--primary, white);
+      box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid map-get(var.$color--primary, charcoal);
+      box-shadow: none;
+    }
+  }
+
   &--icon {
     display: flex;
     justify-content: center;
