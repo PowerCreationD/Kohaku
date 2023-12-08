@@ -1,0 +1,148 @@
+@use '../components/variable' as var;
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 56px 0;
+  @media (max-width: 767px) {
+    margin: 36px 0 16px 0;
+  }
+
+  &__items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid map-get(var.$color, gold);
+    border-radius: map-get(var.$border-radius, $key: 3);
+    @media (max-width: 960px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+      border-radius: map-get(var.$border-radius, $key: 1);
+      padding: 0 16px;
+    }
+
+    &-wave-image {
+      width: 324px;
+      height: 12px;
+      margin-left: auto;
+      margin-right: 24px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 258px;
+  position: relative;
+
+  &:nth-child(3n + 1) {
+    padding: 0 48px;
+    margin: 48px 0;
+    border-right: 1px solid map-get(var.$color, grey-2);
+    @media (max-width: 960px) {
+      border-right: none;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+      padding: 16px 0 16px calc(11.6% + 48px);
+    }
+  }
+  &:nth-child(3n + 2) {
+    padding: 0 48px;
+    margin: 48px 0;
+    border-right: 1px solid map-get(var.$color, grey-2);
+    @media (max-width: 960px) {
+      border-right: none;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+      padding: 16px 0 16px calc(11.6% + 48px);
+      border-right: none;
+    }
+  }
+  &:nth-child(3n + 3) {
+    padding: 0 48px;
+    margin: 48px 0;
+    .item-box__icon-box {
+      right: 48px;
+    }
+    @media (max-width: 960px) {
+      border-right: none;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+      padding: 16px 0 16px calc(11.6% + 48px);
+    }
+  }
+  &:nth-child(3n + 4)::before {
+    content: '';
+    display: block;
+    width: calc(300% - 96px);
+    height: 1px;
+    background-color: map-get(var.$color, grey-2);
+    margin-top: -48px;
+    position: absolute;
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 960px) {
+    &:nth-child(odd) {
+      border-right: 1px solid map-get(var.$color, grey-2);
+    }
+    &:nth-child(2n + 3)::before {
+      content: '';
+      display: block;
+      width: calc(200% - 96px);
+      height: 1px;
+      background-color: map-get(var.$color, grey-2);
+      margin-top: -48px;
+      position: absolute;
+    }
+  }
+
+  @media (max-width: 767px) {
+    min-height: 168px;
+    justify-content: center;
+
+    & + .item-box {
+      border-top: 1px solid map-get(var.$color, grey-2);
+    }
+    &:nth-child(odd) {
+      border-right: none;
+    }
+    &:nth-child(2n + 3)::before {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__list {
+    list-style: disc;
+    margin-left: 24px;
+  }
+  &__icon-box {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 28px;
+    bottom: 0;
+    @media (max-width: 960px) {
+      right: 48px;
+    }
+    @media (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+      top: calc(50% - 16px);
+      left: 5.8%;
+    }
+  }
+}
