@@ -1,0 +1,9 @@
+@use '../components/variable' as var;
+.services {
+  padding-bottom: 0;
+}
+.services-section {
+  &__text {
+    white-space: pre-line;
+  }
+}
