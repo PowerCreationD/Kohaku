@@ -35,7 +35,7 @@
 <script>
 import WorkDetailHeader from '@/components/workDetail/WorkDetailHeader.vue'
 
-import { importFolderImages } from '@/library/importFolderImages.js'
+import { importWorkFolderImages } from '@/library/importWorkFolderImages.js'
 import { getWorkItem } from '@/library/getWorkItem.js'
 import { mobileCheckSymbol } from '@/App.vue'
 
@@ -81,7 +81,7 @@ export default {
   },
   created() {
     this.workItem = getWorkItem(this.project)
-    this.images = importFolderImages(this.workItem.id)
+    this.images = importWorkFolderImages(this.workItem.id)
 
     if (this.images[1].fileName.includes('web') || this.images[1].fileName.includes('app')) {
       this.images.splice(0, 1)
