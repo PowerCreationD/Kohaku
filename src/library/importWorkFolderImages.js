@@ -23,19 +23,18 @@ const imageModulesArray = [
 // Function to process the imported images
 const processImages = (imageModules) => {
   return Object.keys(imageModules).map((path, index) => {
-    // Assuming that the path contains the file name (e.g., "path/to/image.jpg")
-    const fileName = path.split('/').pop() // Extracting the file name from the path
+    const fileName = path.split('/').pop()
     return {
       index: index + 1,
       path,
-      fileName // Adding the file name to the object
+      fileName
     }
   })
 }
 
-const importFolderImages = (folderNumber) => {
+const importWorkFolderImages = (folderNumber) => {
   const imagesFromFolder = imageModulesArray[folderNumber - 1]
   return imagesFromFolder ? processImages(imagesFromFolder) : null
 }
 
-export { importFolderImages }
+export { importWorkFolderImages }
