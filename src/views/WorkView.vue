@@ -37,6 +37,13 @@ export default {
         return this.workItems.filter((work) => this.checkedTypes.includes(work.type))
       }
     }
+  },
+  mounted() {
+    const typesParam = this.$route.query.types
+    if (typesParam) {
+      this.checkedTypes = typesParam.split(',')
+      this.isSelectAll = false
+    }
   }
 }
 </script>
