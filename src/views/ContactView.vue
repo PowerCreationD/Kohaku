@@ -20,8 +20,8 @@
 <style src="@/assets/scss/contact.scss" scoped></style>
 
 <script>
-import pageTitle from '../components/global/PageTitle.vue'
-import contactForm from '../components/contact/ContactForm.vue'
+import pageTitle from '@/components/global/PageTitle.vue'
+import contactForm from '@/components/contact/ContactForm.vue'
 export default {
   components: { pageTitle, contactForm },
   data() {
