@@ -521,4 +521,4 @@ export default {
 }
 </script>
 
-<style src="../../assets/scss/components/_contactForm.scss" scoped></style>
+<style src="@/assets/scss/components/_contactForm.scss" scoped></style>
