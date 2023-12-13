@@ -11,10 +11,10 @@
 <style src="@/assets/scss/services/services.scss" scoped></style>
 
 <script>
-import pageTitle from '../components/global/PageTitle.vue'
-import servicesItemsSection from '../components/services/ServicesItemsSection.vue'
-import servicesToolsSection from '../components/services/ServicesToolsSection.vue'
-import workExampleSection from '../components/services/WorkExampleSection.vue'
+import pageTitle from '@/components/global/PageTitle.vue'
+import servicesItemsSection from '@/components/services/ServicesItemsSection.vue'
+import servicesToolsSection from '@/components/services/ServicesToolsSection.vue'
+import workExampleSection from '@/components/services/WorkExampleSection.vue'
 import { getServiceItem } from '@/library/getServiceItem.js'
 import { getWorkItem } from '@/library/getWorkItem.js'
 
