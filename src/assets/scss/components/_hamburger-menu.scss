@@ -21,7 +21,9 @@
     background-color: map-get(var.$color--primary, charcoal);
     border-radius: 1px;
     margin-bottom: 4px;
-
+    &--transparent-mode {
+      background-color: map-get(var.$color--primary, white);
+    }
     &:last-child {
       margin-bottom: 0;
     }

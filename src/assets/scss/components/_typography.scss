@@ -13,7 +13,7 @@
   }
 }
 
-@for $i from 1 through 7 {
+@for $i from 0 through 7 {
   .font-#{$i} {
     @include font($i);
   }
