@@ -55,7 +55,7 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
   </CurveWrap>
 </template>
 
-<style src="@/assets/scss/home/_home-title-section.scss"></style>
+<style src="@/assets/scss/home/_home-title-section.scss" scoped></style>
 
 <script>
 import CommaIcon from '@/components/global/CommaIcon.vue'
