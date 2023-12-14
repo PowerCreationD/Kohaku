@@ -11,7 +11,7 @@ import backgroundImageUrl from '@/assets/sidebar.png'
       </div>
     </button>
     <button class="button button-logo" @click="goHome">
-      <BigLogo class="sidebar__big-logo" />
+      <kohakuLogo :size="'big'" :color="'black'" class="sidebar__big-logo" />
     </button>
     <div class="sidebar__link-container">
       <template v-for="navigationLink in navigationLinks" :key="navigationLink.text">
@@ -19,9 +19,8 @@ import backgroundImageUrl from '@/assets/sidebar.png'
           class="link link--no-underline link--text-black link--uppercase sidebar__navigation-link"
           :to="navigationLink.link"
           @click="closeSidebar"
-        >
-          {{ navigationLink.text }}
-        </router-link>
+        />
+        {{ navigationLink.text }}
         <hr class="sidebar__link-divider" />
       </template>
     </div>
@@ -34,12 +33,12 @@ import backgroundImageUrl from '@/assets/sidebar.png'
 </template>
 
 <script>
-import BigLogo from './KohakuLogo.vue'
+import kohakuLogo from './KohakuLogo.vue'
 import DropdownComponent from './DropdownComponent.vue'
 
 export default {
   name: 'HeaderSidebar',
-  components: { BigLogo, DropdownComponent },
+  components: { kohakuLogo, DropdownComponent },
   props: {
     sidebarOpen: {
       type: Boolean
@@ -50,7 +49,7 @@ export default {
     languageOptions: {
       type: Object
     },
-    defaultLocal:{
+    defaultLocal: {
       type: Number
     }
   },
@@ -64,7 +63,7 @@ export default {
       this.$emit('update:sidebarOpen', false)
     },
     changeLanguageHandler(selectedOption) {
-      this.$emit('changeLanguage', selectedOption);
+      this.$emit('changeLanguage', selectedOption)
       this.closeSidebar()
     }
   }

@@ -23,10 +23,12 @@
 .words-section {
   display: flex;
   flex-direction: column;
-  padding: 0 var.$main-content-right-and-left-padding;
+  padding: 0 var.$large-header-padding;
+  @media (max-width: var.$pad-device-max-width) {
+    padding: 0 var.$medium-header-padding;
+  }
   @media (max-width: var.$mobile-device-max-width) {
-    padding-top: 96px;
-    padding-bottom: 56px;
+    padding: 96px var.$small-header-padding 56px var.$small-header-padding;
   }
   &__wave-image {
     height: 24px;
