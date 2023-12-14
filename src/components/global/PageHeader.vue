@@ -4,7 +4,8 @@
     ref="header"
     :class="[
       { 'header--transparent-mode': isTransparentMode },
-      { 'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 }
+      { 'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 },
+      { 'header--hidden-mode': isHeaderHidden && !isTransparentMode }
     ]"
   >
     <div class="header__section header__section--logo">
@@ -75,6 +76,7 @@ export default {
     return {
       headerHeight: 0,
       scrollPosition: 0,
+      isHeaderHidden: false,
       isMobileDevice: false,
       sidebarOpen: false,
       navigationLinks: [
@@ -164,7 +166,15 @@ export default {
       this.headerHeight = this.$refs.header.clientHeight
     },
     handleScroll() {
-      this.scrollPosition = window.scrollY
+      const currentScrollPosition = window.scrollY
+
+      if (currentScrollPosition > this.scrollPosition) {
+        this.isHeaderHidden = true
+      } else if (currentScrollPosition < this.scrollPosition) {
+        this.isHeaderHidden = false
+      }
+
+      this.scrollPosition = currentScrollPosition
     }
   },
   computed: {

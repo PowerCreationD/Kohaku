@@ -49,6 +49,11 @@
   &--full-screen-mode {
     opacity: 0;
   }
+
+  &--hidden-mode {
+    opacity: 0;
+  }
+
   &__section {
     display: flex;
     justify-content: flex-end;
