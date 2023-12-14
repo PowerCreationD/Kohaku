@@ -15,6 +15,7 @@
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon
+              color="gold"
               class="footer__navigation-comma"
               v-if="index != firstHalfOfNavigationLinks.length - 1"
             />
@@ -32,6 +33,7 @@
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon
+              color="gold"
               class="footer__navigation-comma"
               v-if="index != secondHalfOfNavigationLinks.length - 1"
             />
@@ -48,6 +50,7 @@
               {{ navigationLink.text }}
             </router-link>
             <CommaIcon
+              color="gold"
               class="footer__navigation-comma"
               v-if="index != navigationLinks.length - 1"
             />

@@ -1,6 +1,6 @@
 <script setup>
 import imgAmber from '@/assets/image/global/image_amber-circle.png'
-import imgLogo from '@/assets/image/global/logo_kohaku_white.png'
+import imgLogo from '@/assets/image/global/logo_kohaku-small-white.png'
 import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
 </script>
 
