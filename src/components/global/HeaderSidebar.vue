@@ -34,7 +34,7 @@ import backgroundImageUrl from '@/assets/sidebar.png'
 </template>
 
 <script>
-import BigLogo from './BigLogo.vue'
+import BigLogo from './KohakuLogo.vue'
 import DropdownComponent from './DropdownComponent.vue'
 
 export default {

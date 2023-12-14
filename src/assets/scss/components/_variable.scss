@@ -34,6 +34,7 @@ $color--warning: map-get($color, red);
 
 // Font sizes and weights
 $font-size: (
+  0: 80px,
   1: 36px,
   2: 36px,
   3: 24px,
@@ -44,6 +45,7 @@ $font-size: (
 );
 
 $font-weight: (
+  0: 700,
   1: 700,
   2: 700,
   3: 700,
@@ -54,6 +56,7 @@ $font-weight: (
 );
 
 $line-height: (
+  0: 100px,
   1: 48px,
   2: 48px,
   3: 36px,
@@ -64,6 +67,7 @@ $line-height: (
 );
 
 $font-size--mobile: (
+  0: 40px,
   1: 22px,
   2: 18px,
   3: 18px,
@@ -74,6 +78,7 @@ $font-size--mobile: (
 );
 
 $font-weight--mobile: (
+  0: 700,
   1: 700,
   2: 700,
   3: 700,
@@ -84,6 +89,7 @@ $font-weight--mobile: (
 );
 
 $line-height--mobile: (
+  0: 50px,
   1: 36px,
   2: 28px,
   3: 28px,
@@ -107,12 +113,12 @@ $border-radius: (
 );
 
 // Header
-$large-header-height: 96px;
-$large-header-left-padding: 36px;
-$large-header-right-padding: 36px;
+$large-header-height: 100px;
 $small-header-height: 66px;
-$small-header-left-padding: 16px;
-$small-header-right-padding: 21px;
+
+$large-header-padding: 40px;
+$medium-header-padding: 20px;
+$small-header-padding: 16px;
 
 // Footer
 $large-footer-height: 380px;
@@ -127,3 +133,4 @@ $small-main-content-bottom-padding: 0px;
 
 // Mobile Device
 $mobile-device-max-width: 767px;
+$pad-device-max-width: 960px;

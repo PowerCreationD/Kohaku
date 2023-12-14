@@ -1,33 +1,54 @@
 <template>
-  <div class="header">
-    <div class="header__section header__section--left">
+  <div
+    class="header"
+    ref="header"
+    :class="[
+      { 'header--transparent-mode': isTransparentMode },
+      { 'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 }
+    ]"
+  >
+    <div class="header__section header__section--logo">
       <button class="button button--logo" @click="goHome">
-        <BigLogo class="header__big-logo" />
+        <KohakuLogo
+          :size="'big'"
+          :color="isTransparentMode ? 'white' : 'black'"
+          class="header__big-logo"
+        />
       </button>
     </div>
-    <div class="header__section header__section--right">
+    <div class="header__section header__section--navigation">
       <template v-if="isMobileDevice">
         <button class="button button--logo" @click="openSidebar">
           <div class="hamburger-menu">
-            <div class="hamburger-menu__line" v-for="n in 3" :key="n"></div>
+            <div
+              class="hamburger-menu__line"
+              :class="{ 'hamburger-menu__line--transparent-mode': isTransparentMode }"
+              v-for="n in 3"
+              :key="n"
+            ></div>
           </div>
         </button>
       </template>
       <template v-else>
         <router-link
-          class="link link--no-underline link--text-black link--uppercase header__navigation-link"
+          class="link link--no-underline link--uppercase header__navigation-link font-7"
+          :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
           v-for="navigationLink in navigationLinks"
           :key="navigationLink.text"
           :to="navigationLink.link"
         >
           {{ navigationLink.text }}
         </router-link>
-        <DropdownComponent
-          @selectOption="changeLanguageHandler"
-          :options="languageOptions"
-          :defaultIndex="defaultLocal"
-        />
       </template>
+    </div>
+    <div v-if="!isMobileDevice" class="header__section header__section--buttons">
+      <DropdownComponent
+        @selectOption="changeLanguageHandler"
+        :options="languageOptions"
+        :defaultIndex="defaultLocal"
+        :color="isTransparentMode ? 'white' : 'gold'"
+      />
+      <button class="button--tertiary header__contact-button">聯絡我們</button>
     </div>
     <HeaderSidebar
       :navigationLinks="navigationLinks"
@@ -40,16 +61,20 @@
   </div>
 </template>
 
+<style src="@/assets/scss/components/header-and-footer/header.scss"></style>
+
 <script>
-import BigLogo from './BigLogo.vue'
+import KohakuLogo from './KohakuLogo.vue'
 import DropdownComponent from './DropdownComponent.vue'
 import HeaderSidebar from './HeaderSidebar.vue'
 
 export default {
   name: 'PageHeader',
-  components: { BigLogo, DropdownComponent, HeaderSidebar },
+  components: { KohakuLogo, DropdownComponent, HeaderSidebar },
   data() {
     return {
+      headerHeight: 0,
+      scrollPosition: 0,
       isMobileDevice: false,
       sidebarOpen: false,
       navigationLinks: [
@@ -91,15 +116,21 @@ export default {
       ]
     }
   },
-  beforeMount(){
+  beforeMount() {
     this.setDefaultLocal()
   },
   mounted() {
     this.checkViewportSize()
     window.addEventListener('resize', this.checkViewportSize)
+
+    this.catchHeaderHeight()
+    window.addEventListener('resize', this.catchHeaderHeight)
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.checkViewportSize)
+    window.removeEventListener('resize', this.catchHeaderHeight)
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     checkViewportSize() {
@@ -127,7 +158,22 @@ export default {
     changeLanguageHandler(selectedOption) {
       this.$i18n.locale = selectedOption.value
       localStorage.setItem('LOCALE_KEY', selectedOption.value)
-      window.location.reload();
+      window.location.reload()
+    },
+    catchHeaderHeight() {
+      this.headerHeight = this.$refs.header.clientHeight
+    },
+    handleScroll() {
+      this.scrollPosition = window.scrollY
+    }
+  },
+  computed: {
+    isTransparentMode() {
+      if (this.$route['name'] !== 'home') {
+        return false
+      } else {
+        return this.scrollPosition < window.innerHeight - this.headerHeight / 2
+      }
     }
   }
 }

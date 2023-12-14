@@ -1,5 +1,6 @@
 <script setup>
-import titleSectionBackgroundImageUrl from '@/assets/image/home/background_homepage.png'
+import titleSectionBackgroundImageUrl from '@/assets/home_title_section_background.png'
+import titleSectionMobileBackgroundImageUrl from '@/assets/home_title_section_background_mobile_version.svg'
 import researchSectionBackgroundImageUrl from '@/assets/home_research_section_background.png'
 import researchSectionMobileBackgroundImageUrl from '@/assets/home_research_section_background_mobile_version.png'
 import conceptSectionImageUrl from '@/assets/home_concept_section_image.png'
@@ -16,62 +17,23 @@ import takahataBusinessCardDesignCoverImageUrl from '@/assets/image/work/commerc
 import kimchiPackageDesignCoverImageUrl from '@/assets/image/work/commercial_design/kimchi/img_kimchi_1.jpg'
 import hiroshimaStationUnmannedStoreCoverImageUrl from '@/assets/image/work/commercial_design/hiroshima_station/img_hiroshima_station_1.jpg'
 import woodWorkshopCoverImageUrl from '@/assets/image/work/event_planning/img_wood_workshop_1.jpg'
-
-import imageCube from '../assets/image/home/image_cube.png'
-import imagePentagon from '../assets/image/home/image_pentagon.png'
-import imagKohakuAndSphere from '../assets/image/home/image_kohaku-and-sphere.png'
 </script>
 
 <template>
   <div class="home">
-    <CurveWrap>
-      <div class="home__section home-title-section">
-        <div class="home-title-section__title-box">
-          <p class="font-0 home-title-section__title">設計驅動永續</p>
-          <div class="home-title-section__comma">
-            <CommaIcon color="'white'" />
-          </div>
-        </div>
-        <div class="home-title-section__title-box">
-          <p class="font-0 home-title-section__title">Design for Nature</p>
-          <div class="home-title-section__comma">
-            <CommaIcon color="'white'" />
-          </div>
-        </div>
-        <p class="font-6 home-title-section__text">
-          我們致力於食農、工藝、社群和地方議題<br />
-          由In-house的設計研究與工程技術團隊，持續實現對永續的無限可能
-        </p>
-        <img
-          class="background-image home-title-section__background-image"
-          :src="titleSectionBackgroundImageUrl"
-        />
-      </div>
-
-      <div class="home-title-section__geometries">
-        <img
-          class="home-title-section__geometry home-title-section__geometry--translucent"
-          :src="imageCube"
-          alt="imageCube"
-        />
-        <img
-          class="home-title-section__geometry home-title-section__geometry--translucent"
-          :src="imagePentagon"
-          alt="imagePentagon"
-        />
-        <img
-          class="home-title-section__geometry"
-          :src="imagKohakuAndSphere"
-          alt="imagKohakuAndSphere"
-        />
-        <img
-          class="home-title-section__geometry home-title-section__geometry--translucent"
-          :src="imagePentagon"
-          alt="imagePentagon"
-        />
-      </div>
-    </CurveWrap>
-
+    <div class="home__section home-title-section">
+      <p class="font-2 home-title-section__title">{{ $t('homepage.slogan') }}</p>
+      <p class="font-7 home-title-section__text">
+        {{ $t('homepage.description[0]') }}<br />
+        {{ $t('homepage.description[1]') }}
+      </p>
+      <img
+        class="background-image home-title-section__background-image"
+        :src="
+          isMobileDevice ? titleSectionMobileBackgroundImageUrl : titleSectionBackgroundImageUrl
+        "
+      />
+    </div>
     <div class="home__section home-research-section">
       <div class="container home-research-section__pin-and-title-container">
         <div class="home__step-pin"></div>
@@ -374,9 +336,7 @@ import imagKohakuAndSphere from '../assets/image/home/image_kohaku-and-sphere.pn
           <p class="font-7 home-contact-section__text">
             {{ $t('homepage.contact.text') }}
           </p>
-          <button class="button button--primary" @click="goToContactPage">
-            {{ $t('global.buttons.contact_us') }}
-          </button>
+          <button class="button button--primary" @click="goToContactPage">{{ $t('global.buttons.contact_us') }}</button>
         </div>
       </div>
     </div>
@@ -390,8 +350,6 @@ import CategoryButtonArrowTipIcon from '@/components/global/CategoryButtonArrowT
 import LeftArrowIcon from '@/components/global/LeftArrowIcon.vue'
 import RightArrowIcon from '@/components/global/RightArrowIcon.vue'
 import DropdownComponent from '@/components/global/DropdownComponent.vue'
-import CommaIcon from '@/components/global/CommaIcon.vue'
-import CurveWrap from '@/components/home/CurveWrap.vue'
 
 export default {
   components: {
@@ -400,9 +358,7 @@ export default {
     CategoryButtonArrowTipIcon,
     LeftArrowIcon,
     RightArrowIcon,
-    DropdownComponent,
-    CommaIcon,
-    CurveWrap
+    DropdownComponent
   },
   data() {
     return {
@@ -445,7 +401,9 @@ export default {
             this.$t('homepage.solutions.trading.subtitleSentences[0]'),
             this.$t('homepage.solutions.trading.subtitleSentences[1]')
           ],
-          textSentences: [this.$t('homepage.solutions.trading.textSentences[0]')],
+          textSentences: [
+            this.$t('homepage.solutions.trading.textSentences[0]')
+          ],
           keywordList: [
             {
               name: this.$t('homepage.solutions.trading.keywordList[0].name')

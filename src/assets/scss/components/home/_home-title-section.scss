@@ -1,38 +1,91 @@
 @use '../variable' as var;
 
 .home-title-section {
-  $section-height: 48vw;
-  $section-height--mobile: 77vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: $section-height;
+  height: 100vh;
+  margin-top: calc(var.$large-header-height / -2);
 
   @media (max-width: var.$mobile-device-max-width) {
-    height: $section-height--mobile;
+    margin-top: calc(var.$small-header-height / -2);
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: flex-end;
+    z-index: 10;
   }
 
   &__title {
-    margin-bottom: 12px;
+    color: map-get(var.$color, $key: white);
 
     @media (max-width: var.$mobile-device-max-width) {
       margin-bottom: 8px;
     }
   }
+  &__comma {
+    position: relative;
+    top: 28px;
+    margin-left: 16px;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      .commaIcon {
+        width: 19px;
+      }
+      margin-left: 4px;
+    }
+  }
 
   &__text {
-    text-align: center;
+    color: map-get(var.$color, $key: white);
+    margin-top: 64px;
   }
 
   &__background-image {
-    width: 100%;
-    height: unset;
-    top: -6vw;
+    height: calc(100% + 100px);
+    top: -100px;
+  }
+
+  &__geometries {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-top: calc(-50vh - 9%);
+    @media (max-width: var.$mobile-device-max-width) {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      margin-top: -90vh;
+    }
+  }
+
+  &__geometry {
+    width: 18%;
 
     @media (max-width: var.$mobile-device-max-width) {
-      top: -18vw;
+      width: min(200px, 35%);
+    }
+    &--translucent {
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      width: 9%;
+      object-fit: cover;
+      object-position: left;
+      @media (max-width: var.$mobile-device-max-width) {
+        display: none;
+      }
+    }
+    @media (max-width: var.$mobile-device-max-width) {
+      &:first-child {
+        width: 15%;
+        object-fit: cover;
+        object-position: left;
+      }
     }
   }
 }

@@ -1,9 +1,9 @@
 <template>
-  <div class="dropdown">
+  <div class="dropdown" :class="{ 'dropdown--white': color == 'white' }">
     <div class="dropdown__selected-option" @click="clickDropdown">
       {{ selectedOption.text }}
     </div>
-    <DropdownArrowIcon class="dropdown__down-arrow" @click="clickDropdown" />
+    <DropdownArrowIcon class="dropdown__down-arrow" @click="clickDropdown" :color="'white'" />
     <ul class="dropdown__options" :class="{ 'dropdown__options--open': open }">
       <li
         class="dropdown__option"
@@ -36,6 +36,10 @@ export default {
     emitSelectOptionEventOnMounted: {
       type: Boolean,
       default: false
+    },
+    color: {
+      type: String,
+      default: null
     }
   },
   data() {

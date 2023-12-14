@@ -1,6 +1,5 @@
 @use 'variable' as var;
 @use 'typography' as typography;
-
 .dropdown {
   display: inline-flex;
   justify-content: center;
@@ -85,5 +84,17 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.dropdown--white {
+  &.dropdown {
+    border-bottom: 1px solid map-get(var.$color--primary, white);
+  }
+  .dropdown__selected-option {
+    color: map-get(var.$color--primary, white);
+  }
+  .dropdown__down-arrow {
+    stroke: map-get(var.$color--primary, white);
   }
 }
