@@ -59,7 +59,7 @@
   </div>
 </template>
 
-<style src="@/assets/scss/home/_home-curve-section.scss"></style>
+<style src="@/assets/scss/home/_home-curve-section.scss" scoped></style>
 
 <script>
 export default {
