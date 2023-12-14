@@ -1,0 +1,70 @@
+@use '../components/variable' as var;
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid map-get(var.$color, grey-2);
+
+  @media (max-width: var.$mobile-device-max-width) {
+    flex-direction: column;
+  }
+
+  &__container {
+    width: 50%;
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 100%;
+    }
+  }
+}
+.words-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var.$main-content-right-and-left-padding;
+  @media (max-width: var.$mobile-device-max-width) {
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+  &__wave-image {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  &__title {
+    z-index: 1;
+  }
+  &__text {
+    white-space: pre-line;
+    z-index: 1;
+  }
+  &__background {
+    &-amber {
+      position: absolute;
+      opacity: 0.4;
+      &--left {
+        width: 300px;
+        top: -100px;
+        left: -60px;
+        transform: rotate(170deg);
+      }
+      &--right {
+        width: 365px;
+        right: calc(50% - 80px);
+        bottom: -100px;
+        filter: blur(5px);
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.image-section {
+  height: 100%;
+  z-index: 1;
+  &__background-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
