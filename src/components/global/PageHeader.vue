@@ -4,8 +4,10 @@
     ref="header"
     :class="[
       { 'header--transparent-mode': isTransparentMode },
-      { 'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 },
-      { 'header--hidden-mode': isHeaderHidden && !isTransparentMode }
+      {
+        'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 && !sidebarOpen
+      },
+      { 'header--hidden-mode': isHeaderHidden && !isTransparentMode && !sidebarOpen }
     ]"
   >
     <div class="header__section header__section--logo">
@@ -86,7 +88,21 @@ export default {
         },
         {
           text: 'services',
-          link: '/services'
+          link: '/services',
+          subPages: [
+            {
+              text: 'system',
+              link: '/services/system'
+            },
+            {
+              text: 'design',
+              link: '/services/design'
+            },
+            {
+              text: 'content',
+              link: '/services/content'
+            }
+          ]
         },
         {
           text: 'work',
