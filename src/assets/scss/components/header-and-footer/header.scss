@@ -48,6 +48,7 @@
 
   &--full-screen-mode {
     opacity: 0;
+    pointer-events: none;
   }
 
   &--hidden-mode {
