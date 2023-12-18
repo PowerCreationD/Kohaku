@@ -4,6 +4,7 @@
   <div class="home">
     <HomeTitleSection />
     <HomeAboutSection />
+    <HomeServiceSection />
   </div>
 </template>
 
@@ -12,11 +13,13 @@
 <script>
 import HomeTitleSection from '../components/home/HomeTitleSection.vue'
 import HomeAboutSection from '../components/home/HomeAboutSection.vue'
+import HomeServiceSection from '../components/home/HomeServiceSection.vue'
 
 export default {
   components: {
     HomeTitleSection,
-    HomeAboutSection
+    HomeAboutSection,
+    HomeServiceSection
   },
   data() {
     return {}
