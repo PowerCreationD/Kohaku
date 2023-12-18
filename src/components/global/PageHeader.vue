@@ -184,12 +184,21 @@ export default {
     handleScroll() {
       const currentScrollPosition = window.scrollY
 
-      if (currentScrollPosition > this.scrollPosition) {
+      if (
+        this.$route['name'] !== 'home' &&
+        (this.currentScrollPosition <= 0 || this.scrollPosition <= 0)
+      ) {
+        this.isHeaderHidden = false
+      } else if (
+        this.$route['name'] == 'home' &&
+        (this.currentScrollPosition <= 0 || this.scrollPosition <= 0)
+      ) {
+        this.isHeaderHidden = true
+      } else if (currentScrollPosition > this.scrollPosition) {
         this.isHeaderHidden = true
       } else if (currentScrollPosition < this.scrollPosition) {
         this.isHeaderHidden = false
       }
-
       this.scrollPosition = currentScrollPosition
     }
   },

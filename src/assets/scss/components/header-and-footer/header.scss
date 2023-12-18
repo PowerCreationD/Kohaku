@@ -16,6 +16,7 @@
   box-shadow: map-get(var.$box-shadow, 1);
   z-index: 10;
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 
