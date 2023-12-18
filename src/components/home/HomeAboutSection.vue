@@ -34,3 +34,9 @@ import amberImage from '@/assets/image/global/image_amber.png'
 </template>
 
 <style src="@/assets/scss/home/_home-about-section.scss"></style>
+
+<script>
+export default {
+  name: 'HomeAboutSection'
+}
+</script>
