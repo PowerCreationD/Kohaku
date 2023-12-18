@@ -23,6 +23,10 @@
       flex-basis: 0;
       flex-grow: 1;
       color: map-get(var.$color, white);
+
+      @media (max-width: 767px) {
+        flex: 1;
+      }
     }
 
     @media (max-width: 767px) {
