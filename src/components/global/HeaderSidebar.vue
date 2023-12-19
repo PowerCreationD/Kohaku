@@ -16,11 +16,39 @@ import backgroundImageUrl from '@/assets/sidebar.png'
     <div class="sidebar__link-container">
       <template v-for="navigationLink in navigationLinks" :key="navigationLink.text">
         <router-link
+          v-if="navigationLink.link"
           class="link link--no-underline link--text-black link--uppercase sidebar__navigation-link"
           :to="navigationLink.link"
           @click="closeSidebar"
-        />
-        {{ navigationLink.text }}
+        >
+          {{ navigationLink.text }}
+        </router-link>
+        <div
+          v-else
+          class="link link--no-underline link--text-black link--uppercase sidebar__navigation-container"
+        >
+          <div class="sidebar__navigation-link" @click="drawerOpen = !drawerOpen">
+            {{ navigationLink.text }}
+            <DropdownArrowIcon
+              class="dropdown__down-arrow sidebar__navigation-arrow"
+              :class="{ 'sidebar__navigation-arrow--open': drawerOpen }"
+            />
+          </div>
+          <div class="sidebar__sub-link-container" v-show="drawerOpen">
+            <template v-for="(item, index) in navigationLink.subPages" :key="item.link">
+              <hr
+                class="sidebar__link-divider"
+                :class="{ 'sidebar__link-divider--grey': index !== 0 }"
+              />
+              <router-link
+                :to="item.link"
+                class="link link--no-underline link--text-black link--uppercase sidebar__navigation-sub-link"
+              >
+                {{ item.text }}
+              </router-link>
+            </template>
+          </div>
+        </div>
         <hr class="sidebar__link-divider" />
       </template>
     </div>
@@ -35,6 +63,7 @@ import backgroundImageUrl from '@/assets/sidebar.png'
 <script>
 import kohakuLogo from './KohakuLogo.vue'
 import DropdownComponent from './DropdownComponent.vue'
+import DropdownArrowIcon from './DropdownArrowIcon.vue'
 
 export default {
   name: 'HeaderSidebar',
@@ -54,6 +83,11 @@ export default {
     }
   },
   emits: ['update:sidebarOpen'],
+  data() {
+    return {
+      drawerOpen: false
+    }
+  },
   methods: {
     goHome() {
       this.closeSidebar()
@@ -64,6 +98,11 @@ export default {
     },
     changeLanguageHandler(selectedOption) {
       this.$emit('changeLanguage', selectedOption)
+      this.closeSidebar()
+    }
+  },
+  watch: {
+    $route() {
       this.closeSidebar()
     }
   }

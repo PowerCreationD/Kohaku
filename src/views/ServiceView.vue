@@ -31,47 +31,57 @@ export default {
     }
   },
   created() {
-    const typeParam = this.$route.params.type
-    const defaultType = 'system'
-    let service
-    if (typeParam) {
-      this.workType = typeParam
-      service = getServiceItem(typeParam)
-      switch (typeParam) {
-        case 'system':
-          this.workExample = [
-            getWorkItem('japan-agri-ecom-logistics'),
-            getWorkItem('auto-robot-control-platform'),
-            getWorkItem('koko-bot')
-          ]
-          break
+    this.fetchData()
+  },
+  methods: {
+    fetchData() {
+      const typeParam = this.$route.params.type
+      const defaultType = 'system'
+      let service
+      if (typeParam) {
+        this.workType = typeParam
+        service = getServiceItem(typeParam)
+        switch (typeParam) {
+          case 'system':
+            this.workExample = [
+              getWorkItem('japan-agri-ecom-logistics'),
+              getWorkItem('auto-robot-control-platform'),
+              getWorkItem('koko-bot')
+            ]
+            break
 
-        case 'design':
-          this.workExample = [
-            getWorkItem('mu-maison'),
-            getWorkItem('recycled-pottery-furniture'),
-            getWorkItem('woodworking-craft-tool-guide')
-          ]
-          break
+          case 'design':
+            this.workExample = [
+              getWorkItem('mu-maison'),
+              getWorkItem('recycled-pottery-furniture'),
+              getWorkItem('woodworking-craft-tool-guide')
+            ]
+            break
 
-        case 'content':
-          this.workExample = [
-            getWorkItem('sustainable-agri-mover'),
-            getWorkItem('tech-agri-workshop'),
-            getWorkItem('lathe-tech-workshop')
-          ]
-          break
-        default:
-          break
+          case 'content':
+            this.workExample = [
+              getWorkItem('sustainable-agri-mover'),
+              getWorkItem('tech-agri-workshop'),
+              getWorkItem('lathe-tech-workshop')
+            ]
+            break
+          default:
+            break
+        }
+      } else {
+        this.workType = defaultType
+        service = getServiceItem(defaultType).items
       }
-    } else {
-      this.workType = defaultType
-      service = getServiceItem(defaultType).items
+      this.serviceTitle = service.title
+      this.serviceText = service.text
+      this.serviceItem = service.items
+      this.serviceTool = service.tools
     }
-    this.serviceTitle = service.title
-    this.serviceText = service.text
-    this.serviceItem = service.items
-    this.serviceTool = service.tools
+  },
+  watch: {
+    $route() {
+      this.fetchData()
+    }
   }
 }
 </script>
