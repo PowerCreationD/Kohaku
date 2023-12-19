@@ -33,15 +33,37 @@
         </button>
       </template>
       <template v-else>
-        <router-link
-          class="link link--no-underline link--uppercase header__navigation-link font-7"
-          :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
-          v-for="navigationLink in navigationLinks"
-          :key="navigationLink.text"
-          :to="navigationLink.link"
-        >
-          {{ navigationLink.text }}
-        </router-link>
+        <template v-for="navigationLink in navigationLinks" :key="navigationLink.text">
+          <router-link
+            v-if="navigationLink.link"
+            class="link link--no-underline link--uppercase header__navigation-link font-7"
+            :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
+            :to="navigationLink.link"
+          >
+            {{ navigationLink.text }}
+          </router-link>
+          <div
+            v-else
+            class="link link--no-underline link--uppercase header__navigation-link font-7"
+            :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
+            @mouseover="drawerOpen = true"
+            @mouseleave="drawerOpen = false"
+          >
+            {{ navigationLink.text }}
+            <div class="header__navigation-drawer" v-show="drawerOpen">
+              <router-link
+                v-for="item in navigationLink.subPages"
+                :key="item.link"
+                :to="item.link"
+                class="link link--no-underline link--uppercase font-7 header__navigation-sub-link"
+                :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
+              >
+                {{ item.text }}
+              </router-link>
+              <span> {{ item }}</span>
+            </div>
+          </div>
+        </template>
       </template>
     </div>
     <div v-if="!isMobileDevice" class="header__section header__section--buttons">
@@ -81,6 +103,8 @@ export default {
       isHeaderHidden: false,
       isMobileDevice: false,
       sidebarOpen: false,
+      drawerOpen: false,
+
       navigationLinks: [
         {
           text: 'about',
@@ -88,18 +112,18 @@ export default {
         },
         {
           text: 'services',
-          link: '/services',
+          link: '',
           subPages: [
             {
-              text: 'system',
+              text: '系統設計與全端開發',
               link: '/services/system'
             },
             {
-              text: 'design',
+              text: '商業設計與原型製作',
               link: '/services/design'
             },
             {
-              text: 'content',
+              text: '內容設計與活動統籌',
               link: '/services/content'
             }
           ]
@@ -209,6 +233,11 @@ export default {
       } else {
         return this.scrollPosition < window.innerHeight - this.headerHeight / 2
       }
+    }
+  },
+  watch: {
+    $route() {
+      this.$forceUpdate()
     }
   }
 }

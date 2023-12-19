@@ -96,10 +96,33 @@
     }
   }
 
-  &__navigation-link {
-    margin: 0 min(64px, 6% - 10px) 0 0;
-    &--white {
-      color: map-get(var.$color--primary, white);
+  &__navigation {
+    &-link {
+      cursor: pointer;
+      position: relative;
+      margin: 0 min(64px, 6% - 10px) 0 0;
+      padding: 12px 0;
+      &--white {
+        color: map-get(var.$color--primary, white);
+      }
+    }
+
+    &-drawer {
+      display: flex;
+      flex-direction: column;
+      background-color: map-get(var.$color, white);
+      position: absolute;
+      top: 46px;
+      left: 0;
+      box-shadow: map-get(var.$box-shadow, 1);
+    }
+
+    &-sub-link {
+      padding: 16px 0;
+      margin: 0 16px;
+      & + .header__navigation-sub-link {
+        border-top: 1px solid map-get(var.$color, gold);
+      }
     }
   }
 

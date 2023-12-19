@@ -33,16 +33,50 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid map-get(var.$color--primary, gold);
-    margin-bottom: 18px;
+    &--grey {
+      border-bottom: 1px solid map-get(var.$color--primary, grey-2);
+    }
   }
 
   &__navigation-link {
-    margin: 0 0 18px 0;
+    cursor: pointer;
+    line-height: 56px;
+    width: 100%;
+    text-align: center;
   }
 
   &__hamburger-menu {
     position: absolute;
     top: 21px;
     right: 21px;
+  }
+
+  &__navigation-container {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  &__sub-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  &__navigation-sub-link {
+    width: 100%;
+    line-height: 56px;
+  }
+  &__navigation-arrow {
+    position: absolute;
+    right: 0;
+    top: 23.5px;
+    transform: rotate(-90deg);
+    &--open {
+      transform: rotate(0deg);
+    }
   }
 }
