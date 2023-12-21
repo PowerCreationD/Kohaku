@@ -1,3 +1,6 @@
+<script setup>
+import IconFB from '../../assets/image/global/icon_facebook.png'
+</script>
 <template>
   <div class="footer">
     <KohakuAndM2Logo class="footer__logo" />
@@ -66,6 +69,11 @@
       <p class="footer__information-label">{{ information.label }}</p>
       <p class="footer__information-value">{{ information.value }}</p>
     </div>
+    <div class="footer__information-section">
+      <a class="footer__information-social-software" href="https://www.facebook.com/kohakustudiotw" target="_blank"
+        ><img :src="IconFB" alt="FB"
+      /></a>
+    </div>
   </div>
 </template>
 
@@ -107,7 +115,7 @@ export default {
           value: 'info@kohakustudio.co'
         },
         {
-          label: 'Business Hours',
+          label: 'Time',
           value: 'Mon~Fri / 10:00-19:00'
         },
         {
