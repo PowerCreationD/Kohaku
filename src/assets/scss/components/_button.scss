@@ -16,6 +16,10 @@
     background-color: map-get(var.$color--primary, gold);
     border: 1px solid map-get(var.$color--primary, gold);
     border-radius: map-get(var.$border-radius, 1);
+    &-round {
+      border-radius: map-get(var.$border-radius, 3);
+      height: 48px;
+    }
 
     @media (max-width: var.$mobile-device-max-width) {
       width: 128px;
