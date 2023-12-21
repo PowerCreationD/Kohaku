@@ -95,4 +95,12 @@
     color: map-get(var.$color--primary, white);
     margin: 0;
   }
+  &__information-social-software {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-top: 12px;
+    }
+  }
 }
