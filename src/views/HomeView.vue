@@ -6,6 +6,7 @@
     <HomeAboutSection />
     <HomeServiceSection />
     <HomeSolutionSection />
+    <HomeContactSection />
   </div>
 </template>
 
@@ -16,13 +17,15 @@ import HomeTitleSection from '../components/home/HomeTitleSection.vue'
 import HomeAboutSection from '../components/home/HomeAboutSection.vue'
 import HomeServiceSection from '../components/home/HomeServiceSection.vue'
 import HomeSolutionSection from '../components/home/HomeSolutionSection.vue'
+import HomeContactSection from '../components/home/HomeContactSection.vue'
 
 export default {
   components: {
     HomeTitleSection,
     HomeAboutSection,
     HomeServiceSection,
-    HomeSolutionSection
+    HomeSolutionSection,
+    HomeContactSection
   },
   data() {
     return {}
