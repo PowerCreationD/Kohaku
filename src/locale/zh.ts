@@ -549,7 +549,7 @@ const locale = {
     },
     hannah: {
       name: '詩涵 Hannah',
-      position: '全端工程師',
+      position: '資訊長',
       description: '把你的問題變成驚喜',
       skills: ['Web-Based 系統架構設計', '專案管理與品質控管', '數據分析與可視化'],
       intro: ``
@@ -577,16 +577,9 @@ const locale = {
     },
     jozie: {
       name: '趯瑾 Jozie',
-      position: '前端工程師',
+      position: '設計工程師',
       description: '獨立音樂探勘者',
       skills: ['前端框架開發', '網站模板建置與客製化', '可視化與互動設計', 'SEO優化'],
-      intro: ``
-    },
-    arien: {
-      name: '采蘋 Arien',
-      position: '商業設計師',
-      description: '設計永動機',
-      skills: ['使用者研究', '網站整體規劃', '網站介面設計', '品牌形象', '平面設計'],
       intro: ``
     },
     ivy: {
@@ -605,7 +598,7 @@ const locale = {
     },
     brooke: {
       name: '采倫 Brooke',
-      position: '內容企劃師',
+      position: '營運長',
       description: '想做南極的設計',
       skills: ['服務設計', '資料規劃', '內容企劃', '活動執行'],
       intro: ``

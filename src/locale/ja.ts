@@ -596,7 +596,7 @@ const locale = {
     },
     hannah: {
       name: '詩涵 Hannah',
-      position: 'フルスタックエンジニア',
+      position: '最高技術責任者',
       description: 'あなたの質問をサプライズに！',
       skills: ['Web ベース アーキテクチャ設計', 'プロジェクト管理と品質管理', 'データ分析と可視化'],
       intro: ``
@@ -638,26 +638,13 @@ const locale = {
     },
     jozie: {
       name: '趯瑾 Jozie',
-      position: 'フロントエンドエンジニア',
+      position: '設計エンジニア',
       description: 'インディーロック探究者',
       skills: [
         'フロントエンドフレームワーク開発',
         'テンプレートサイト構築とカスタマイズサイト構築',
         'データ可視化とインタラクションデザイン',
         'SEO 最適化'
-      ],
-      intro: ``
-    },
-    arien: {
-      name: '采蘋 Arien',
-      position: 'グラフィックデザイナー',
-      description: 'デザインの永久機関',
-      skills: [
-        'ユーザー研究',
-        'Webサイト全体像と計画',
-        'ユーザインタフェース設計',
-        'ブランドデザイン',
-        'グラフィックデザイン'
       ],
       intro: ``
     },
@@ -689,7 +676,7 @@ const locale = {
     },
     brooke: {
       name: '采倫 Brooke',
-      position: 'コンテンツ企画',
+      position: '最高執行役員',
       description: 'デザインを南極まで！',
       skills: ['サービスデザイン', 'データプランニング', 'コンテンツ企画', 'イベント実行'],
       intro: ``
