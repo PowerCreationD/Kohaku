@@ -596,7 +596,7 @@ const locale = {
     },
     hannah: {
       name: '詩涵 Hannah',
-      position: 'Fullstack Engineer',
+      position: 'Chief Technology Officer (CTO)',
       description: 'Your Concerns 2 Surprises',
       skills: [
         'Web-Based System Architecture Design',
@@ -642,26 +642,13 @@ const locale = {
     },
     jozie: {
       name: '趯瑾 Jozie',
-      position: 'Frontend Engineer',
+      position: 'Design Engineer',
       description: 'Indie Music Explorer',
       skills: [
         'Frontend Framework Development',
         'Website Template Setup and Customization',
         'Visualization and Interaction Design',
         'SEO Optimization'
-      ],
-      intro: ``
-    },
-    arien: {
-      name: '采蘋 Arien',
-      position: 'Business Designer',
-      description: 'Perpetual Motion Machine of Design',
-      skills: [
-        'User Research',
-        'Comprehensive Website Planning',
-        'Website Interface Design',
-        'Brand Identity',
-        'Graphic Design'
       ],
       intro: ``
     },
@@ -693,7 +680,7 @@ const locale = {
     },
     brooke: {
       name: '采倫 Brooke',
-      position: 'Project Coordinator',
+      position: 'Chief Operating Officer (COO)',
       description: 'Design in Antarctica',
       skills: ['Service Design', 'Content Planning', 'Event Planning', 'Event Execution'],
       intro: ``

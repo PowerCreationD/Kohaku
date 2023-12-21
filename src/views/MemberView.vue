@@ -45,6 +45,19 @@ export default {
           ]
         },
         {
+          id: 'brooke',
+          name: this.$t('member.brooke.name'),
+          position: this.$t('member.brooke.position'),
+          intro: this.$t('member.brooke.intro'),
+          description: this.$t('member.brooke.description'),
+          skills: [
+            this.$t('member.brooke.skills[0]'),
+            this.$t('member.brooke.skills[1]'),
+            this.$t('member.brooke.skills[2]'),
+            this.$t('member.brooke.skills[3]')
+          ]
+        },
+        {
           id: 'hannah',
           name: this.$t('member.hannah.name'),
           position: this.$t('member.hannah.position'),
@@ -54,6 +67,19 @@ export default {
             this.$t('member.hannah.skills[0]'),
             this.$t('member.hannah.skills[1]'),
             this.$t('member.hannah.skills[2]')
+          ]
+        },
+        {
+          id: 'jozie',
+          name: this.$t('member.jozie.name'),
+          position: this.$t('member.jozie.position'),
+          intro: this.$t('member.jozie.intro'),
+          description: this.$t('member.jozie.description'),
+          skills: [
+            this.$t('member.jozie.skills[0]'),
+            this.$t('member.jozie.skills[1]'),
+            this.$t('member.jozie.skills[2]'),
+            this.$t('member.jozie.skills[3]')
           ]
         },
         {
@@ -83,28 +109,17 @@ export default {
           ]
         },
         {
-          id: 'lily',
-          name: this.$t('member.lily.name'),
-          position: this.$t('member.lily.position'),
-          intro: this.$t('member.lily.intro'),
-          description: this.$t('member.lily.description'),
+          id: 'lishin',
+          name: this.$t('member.lishin.name'),
+          position: this.$t('member.lishin.position'),
+          intro: this.$t('member.lishin.intro'),
+          description: this.$t('member.lishin.description'),
           skills: [
-            this.$t('member.lily.skills[0]'),
-            this.$t('member.lily.skills[1]'),
-            this.$t('member.lily.skills[2]')
-          ]
-        },
-        {
-          id: 'jozie',
-          name: this.$t('member.jozie.name'),
-          position: this.$t('member.jozie.position'),
-          intro: this.$t('member.jozie.intro'),
-          description: this.$t('member.jozie.description'),
-          skills: [
-            this.$t('member.jozie.skills[0]'),
-            this.$t('member.jozie.skills[1]'),
-            this.$t('member.jozie.skills[2]'),
-            this.$t('member.jozie.skills[3]')
+            this.$t('member.lishin.skills[0]'),
+            this.$t('member.lishin.skills[1]'),
+            this.$t('member.lishin.skills[2]'),
+            this.$t('member.lishin.skills[3]'),
+            this.$t('member.lishin.skills[4]')
           ]
         },
         {
@@ -122,30 +137,15 @@ export default {
           ]
         },
         {
-          id: 'lishin',
-          name: this.$t('member.lishin.name'),
-          position: this.$t('member.lishin.position'),
-          intro: this.$t('member.lishin.intro'),
-          description: this.$t('member.lishin.description'),
+          id: 'lily',
+          name: this.$t('member.lily.name'),
+          position: this.$t('member.lily.position'),
+          intro: this.$t('member.lily.intro'),
+          description: this.$t('member.lily.description'),
           skills: [
-            this.$t('member.lishin.skills[0]'),
-            this.$t('member.lishin.skills[1]'),
-            this.$t('member.lishin.skills[2]'),
-            this.$t('member.lishin.skills[3]'),
-            this.$t('member.lishin.skills[4]')
-          ]
-        },
-        {
-          id: 'brooke',
-          name: this.$t('member.brooke.name'),
-          position: this.$t('member.brooke.position'),
-          intro: this.$t('member.brooke.intro'),
-          description: this.$t('member.brooke.description'),
-          skills: [
-            this.$t('member.brooke.skills[0]'),
-            this.$t('member.brooke.skills[1]'),
-            this.$t('member.brooke.skills[2]'),
-            this.$t('member.brooke.skills[3]')
+            this.$t('member.lily.skills[0]'),
+            this.$t('member.lily.skills[1]'),
+            this.$t('member.lily.skills[2]')
           ]
         },
         {
