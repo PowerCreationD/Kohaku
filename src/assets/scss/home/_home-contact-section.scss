@@ -1,0 +1,100 @@
+@use '../components/variable' as var;
+
+.contact-section {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  &__photo-container {
+    width: 58%;
+    position: relative;
+    z-index: 1;
+  }
+  &__info-container {
+    width: 42%;
+    padding: 5%;
+    margin: auto;
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 100%;
+      padding: 5% max(16px, 5vw, (100vw - 1200px) / 2);
+    }
+  }
+  &__wave-and-title {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    @media (max-width: var.$mobile-device-max-width) {
+      margin: auto;
+    }
+  }
+  &__wave {
+    margin-bottom: 4px;
+    z-index: 1;
+  }
+  &__title {
+    max-width: 100%;
+    width: max-content;
+    margin-bottom: 16px;
+    z-index: 1;
+    @media (max-width: var.$mobile-device-max-width) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &__slogan {
+    margin-bottom: 16px;
+    z-index: 1;
+    @media (max-width: var.$mobile-device-max-width) {
+      text-align: center;
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+    z-index: 1;
+    @media (max-width: var.$mobile-device-max-width) {
+      text-align: center;
+    }
+  }
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__amber {
+    position: absolute;
+    &--left {
+      width: 320px;
+      left: calc(58% - 89px);
+      top: -61px;
+      opacity: 0.4;
+      filter: blur(5px);
+      @media (max-width: var.$mobile-device-max-width) {
+        left: -120px;
+      }
+    }
+    &--right {
+      width: 295px;
+      right: -100px;
+      bottom: -80px;
+      opacity: 0.5;
+    }
+  }
+
+  &__button {
+    position: relative;
+    left: 0%;
+    transform: translate(0%);
+    z-index: 1;
+    @media (max-width: var.$mobile-device-max-width) {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+}
