@@ -56,7 +56,14 @@
                 :key="item.link"
                 :to="item.link"
                 class="link link--no-underline link--uppercase font-7 header__navigation-sub-link"
-                :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
+                :class="
+                  isTransparentMode &&
+                  $route['name'] === 'home' &&
+                  scrollPosition == 0 &&
+                  !sidebarOpen
+                    ? 'link--text-white'
+                    : 'link--text-black'
+                "
               >
                 {{ item.text }}
               </router-link>
