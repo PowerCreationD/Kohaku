@@ -246,6 +246,11 @@ export default {
   watch: {
     $route() {
       this.$forceUpdate()
+    },
+    sidebarOpen(newValue) {
+      console.log(newValue);
+      const body = document.body
+      body.style.overflow = newValue ? 'hidden' : 'auto'
     }
   }
 }
