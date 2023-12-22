@@ -49,7 +49,7 @@
   </div>
 </template>
 
-<style src="@/assets/scss/components/work/_typeFilter.scss" scoped></style>
+<style src="@/assets/scss/work/_type-filter.scss" scoped></style>
 
 <script>
 import DropdownComponent from '@/components/global/DropdownComponent.vue'

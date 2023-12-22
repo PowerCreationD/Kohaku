@@ -13,7 +13,7 @@ import workItems from '@/assets/data/work.js'
   </div>
 </template>
 
-<style src="@/assets/scss/work.scss" scoped></style>
+<style src="@/assets/scss/work/work.scss" scoped></style>
 
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'

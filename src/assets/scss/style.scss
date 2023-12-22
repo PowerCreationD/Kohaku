@@ -1,15 +1,12 @@
 @use '../../../node_modules/scss-reset/src/scss/_reset.scss';
-@use 'components/body';
-@use 'components/typography';
-@use 'components/button';
-@use 'components/container';
-@use 'components/link';
-@use 'components/list';
-@use 'components/background-image';
-@use 'components/image';
-@use 'components/dropdown';
-
-@use 'components/main-content';
-@use 'components/hamburger-menu';
-@use 'components/sidebar';
-@use 'components/footer';
+@use '_base/typography';
+@use '_components/background-image';
+@use '_components/body';
+@use '_components/button';
+@use '_components/container';
+@use '_components/dropdown';
+@use '_components/image';
+@use '_components/kohaku-logo';
+@use '_components/link';
+@use '_components/list';
+@use '_components/page-title';

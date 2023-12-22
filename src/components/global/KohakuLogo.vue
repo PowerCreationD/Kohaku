@@ -34,8 +34,6 @@ import smallBlack from '@/assets/image/global/logo_kohaku-small-black.png'
   </div>
 </template>
 
-<style src="@/assets/scss/global/_kohaku-logo.scss" scoped></style>
-
 <script>
 export default {
   name: 'KohakuLogo',

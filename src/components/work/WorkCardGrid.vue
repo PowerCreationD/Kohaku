@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style src="@/assets/scss/components/work/_workCardGrid.scss" scoped></style>
+<style src="@/assets/scss/work/_work-card-grid.scss" scoped></style>
 
 <script>
 import workCard from './WorkCard.vue'
