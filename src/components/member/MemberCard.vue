@@ -58,4 +58,4 @@ export default {
 }
 </script>
 
-<style src="@/assets/scss/components/_memberCard.scss" scoped></style>
+<style src="@/assets/scss/member/_member-card.scss" scoped></style>

@@ -44,7 +44,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
   </div>
 </template>
 
-<style src="@/assets/scss/about.scss" scoped></style>
+<style src="@/assets/scss/about/about.scss" scoped></style>
 
 <script>
 import milestone from '@/components/about/Milestone.vue'

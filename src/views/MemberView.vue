@@ -16,7 +16,7 @@ import imgAmber from '@/assets/image/global/image_amber.png'
   </div>
 </template>
 
-<style src="@/assets/scss/member.scss" scoped></style>
+<style src="@/assets/scss/member/member.scss" scoped></style>
 
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'

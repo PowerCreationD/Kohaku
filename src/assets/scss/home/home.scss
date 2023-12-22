@@ -1,4 +1,4 @@
-@use '../components/variable' as var;
+@use '../_base/variable' as var;
 
 .home {
   padding: var.$large-header-height 0 0 0;
