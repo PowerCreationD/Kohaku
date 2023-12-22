@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style src="@/assets/scss/components/work/_workCard.scss" scoped></style>
+<style src="@/assets/scss/work/_work-card.scss" scoped></style>
 
 <script>
 export default {

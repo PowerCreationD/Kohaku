@@ -21,7 +21,7 @@ import imgAmber from '@/assets/image/global/image_amber-line.png'
   </div>
 </template>
 
-<style src="@/assets/scss/components/_milestone.scss" scoped></style>
+<style src="@/assets/scss/about/_milestone.scss" scoped></style>
 
 <script>
 import zh from '@/locale/zh'

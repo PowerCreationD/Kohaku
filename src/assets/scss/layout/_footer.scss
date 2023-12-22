@@ -1,0 +1,106 @@
+@use '../_base/variable' as var;
+@use '../_base/typography' as typography;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var.$large-footer-height;
+  background-color: map-get(var.$color--primary, charcoal);
+
+  @media (max-width: var.$mobile-device-max-width) {
+    height: var.$small-footer-height;
+  }
+
+  &__logo {
+    height: 67px;
+    margin: 0 0 34px 0;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: 35px;
+    }
+  }
+
+  &__navigation-link-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 11px 0;
+  }
+
+  &__navigation-link-row {
+    margin: 0 0 18px 0;
+  }
+
+  &__navigation-link {
+    margin: 0 31px 0 25px;
+
+    &:first-child {
+      margin: 0 31px 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 25px;
+    }
+
+    @media (max-width: var.$mobile-device-max-width) {
+      margin: 0 8px;
+
+      &:first-child {
+        margin: 0 8px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+
+  &__navigation-comma {
+    position: relative;
+    top: 9px;
+    height: 18px;
+    fill: map-get(var.$color--primary, gold);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      height: 12px;
+    }
+  }
+
+  &__information-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 16px 0;
+    max-width: 80vw;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__information-label {
+    @include typography.font($index: 7);
+    height: fit-content;
+    color: map-get(var.$color--primary, white);
+    text-transform: capitalize;
+    margin: 0 16px 0 0;
+  }
+
+  &__information-value {
+    @include typography.font($index: 7);
+    height: fit-content;
+    color: map-get(var.$color--primary, white);
+    margin: 0;
+  }
+  &__information-social-software {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-top: 12px;
+    }
+  }
+}

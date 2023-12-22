@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<style src="@/assets/scss/contact.scss" scoped></style>
+<style src="@/assets/scss/contact/contact.scss" scoped></style>
 
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'
