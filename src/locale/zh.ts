@@ -549,7 +549,7 @@ const locale = {
     },
     hannah: {
       name: '詩涵 Hannah',
-      position: '資訊長',
+      position: '技術長',
       description: '把你的問題變成驚喜',
       skills: ['Web-Based 系統架構設計', '專案管理與品質控管', '數據分析與可視化'],
       intro: ``
@@ -605,7 +605,7 @@ const locale = {
     },
     andrew: {
       name: '俊宇 Andrew',
-      position: '軟體工程師',
+      position: '技術顧問',
       description: '用科技發想實現設計巧思！',
       skills: ['人機互動', '空間運算', '電腦圖學', '產品設計'],
       intro: ``
