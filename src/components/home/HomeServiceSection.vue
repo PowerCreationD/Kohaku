@@ -12,14 +12,14 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
         <h2 class="title-section__title font-1 scroll-animation-slide-and-fade-in">SERVICE</h2>
       </div>
       <p class="title-section__text font-7 scroll-animation-slide-and-fade-in">
-        你的創新概念準備起跑了嗎？讓琥白幫助您的願景步伐穩健的實現！
+        {{ $t('home.service.text') }}
       </p>
     </div>
 
     <div class="service-section__content content-section">
       <div v-for="item in steps" :key="item.step" class="content-section__container">
         <div class="content-section__image-and-line">
-          <img :src="item.image" :alt="item.title" class="content-section__image " />
+          <img :src="item.image" :alt="item.title" class="content-section__image" />
           <div v-if="item.step === 1" class="content-section__line"></div>
         </div>
 
@@ -43,20 +43,20 @@ export default {
       steps: [
         {
           step: 1,
-          title: '需求研究',
-          text: '首先深入了解需求，從場域、使用者與現實情境，找出問題核心！根據這些發現，為您量身打造解決方案。',
+          title: this.$t('home.service.steps[0].title'),
+          text: this.$t('home.service.steps[0].text'),
           image: imageCube
         },
         {
           step: 2,
-          title: '概念設計',
-          text: '進行腦力激盪，構建精彩的原型，接著持續調整與改良，確保這些點子能夠真正幫助您實現目標。',
+          title: this.$t('home.service.steps[1].title'),
+          text: this.$t('home.service.steps[1].text'),
           image: imagePentagon
         },
         {
           step: 3,
-          title: '落地實現',
-          text: '此刻，是時候付諸實踐了！我們整合數位技術，提供全端工程服務，確保每個細節，讓概念完美落地。',
+          title: this.$t('home.service.steps[2].title'),
+          text: this.$t('home.service.steps[2].text'),
           image: imagKohakuAndSphere
         }
       ]

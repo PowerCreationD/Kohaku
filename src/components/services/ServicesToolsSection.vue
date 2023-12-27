@@ -1,6 +1,6 @@
 <template>
   <div class="tool-section">
-    <h2 class="tool-section__title font-1">客製化開發工具</h2>
+    <h2 class="tool-section__title font-1">{{ $t('services.tool_title') }}</h2>
     <div class="tool-section__grid">
       <div v-for="tool in serviceTool" :key="tool.title" class="tool-item">
         <h3 class="tool-item__title font-3">{{ tool.title }}</h3>

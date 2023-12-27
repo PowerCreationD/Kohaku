@@ -42,6 +42,8 @@
   &__text {
     white-space: pre-line;
     z-index: 1;
+    text-align: justify;
+    hyphens: auto;
   }
   &__background {
     &-amber {

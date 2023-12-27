@@ -16,154 +16,239 @@ import icon_course_event from '@/assets/image/services/icon/icon_course_event.pn
 import icon_exhibition from '@/assets/image/services/icon/icon_exhibition.png'
 import icon_digital_transformation from '@/assets/image/services/icon/icon_digital_transformation.png'
 
+import i18n from '@/main'
+
 const serviceItem = {
   system: {
-    title: '系統設計與全端開發',
-    text: '以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，串接系統及終端設備，協助收集數據幫助決策，優化流程提升供銷效能。',
+    title: i18n.global.t('services.system.title'),
+    text: i18n.global.t('services.system.text'),
     items: [
       {
-        title: '前端設計開發',
+        title: i18n.global.t('services.system.items[0].title'),
         icon: icon_frontend,
-        list: ['前端框架開發', '前端互動設計', 'RWD 響應式網站']
-      },
-      {
-        title: '後端整合部署',
-        icon: icon_backend,
         list: [
-          '資料庫設計與規劃',
-          'API 開發 / 第三方 API 串接',
-          '雲端架構設計',
-          'CI / CD',
-          'CMS開發'
+          i18n.global.t('services.system.items[0].list[0]'),
+          i18n.global.t('services.system.items[0].list[1]'),
+          i18n.global.t('services.system.items[0].list[2]')
         ]
       },
       {
-        title: '應用程式開發',
+        title: i18n.global.t('services.system.items[1].title'),
+        icon: icon_backend,
+        list: [
+          i18n.global.t('services.system.items[1].list[0]'),
+          i18n.global.t('services.system.items[1].list[1]'),
+          i18n.global.t('services.system.items[1].list[2]'),
+          i18n.global.t('services.system.items[1].list[3]'),
+          i18n.global.t('services.system.items[1].list[4]')
+        ]
+      },
+      {
+        title: i18n.global.t('services.system.items[2].title'),
         icon: icon_app,
-        list: ['漸進式網站應用程式 (PWA)', '跨平台 (Hybrid) 應用程式開發']
+        list: [
+          i18n.global.t('services.system.items[2].list[0]'),
+          i18n.global.t('services.system.items[2].list[1]')
+        ]
       },
       {
-        title: '商業資料探勘與分析',
+        title: i18n.global.t('services.system.items[3].title'),
         icon: icon_data,
-        list: ['商業數據分析與可視化', 'BI 工具導入', '資料收集、轉移與載入自動化']
+        list: [
+          i18n.global.t('services.system.items[3].list[0]'),
+          i18n.global.t('services.system.items[3].list[1]'),
+          i18n.global.t('services.system.items[3].list[2]'),
+          i18n.global.t('services.system.items[3].list[3]')
+        ]
       },
       {
-        title: '軟硬體整合設計',
+        title: i18n.global.t('services.system.items[4].title'),
         icon: icon_integration,
-        list: ['物聯網裝置開發', '嵌入式系統']
+        list: [
+          i18n.global.t('services.system.items[4].list[0]'),
+          i18n.global.t('services.system.items[4].list[1]')
+        ]
       }
     ],
     tools: [
       {
-        title: '前端框架',
-        list: ['Vue', 'React', 'jQuery']
+        title: i18n.global.t('services.system.tools[0].title'),
+        list: [
+          i18n.global.t('services.system.tools[0].list[0]'),
+          i18n.global.t('services.system.tools[0].list[1]'),
+          i18n.global.t('services.system.tools[0].list[2]')
+        ]
       },
       {
-        title: '前端 UI 框架',
-        list: ['Vuetify', 'PrimeVue', 'BootstrapVue']
+        title: i18n.global.t('services.system.tools[1].title'),
+        list: [
+          i18n.global.t('services.system.tools[1].list[0]'),
+          i18n.global.t('services.system.tools[1].list[1]'),
+          i18n.global.t('services.system.tools[1].list[2]')
+        ]
       },
       {
-        title: '前端互動及視覺化',
-        list: ['D3.js', 'p5.js', 'Three.js', 'Chart.js']
+        title: i18n.global.t('services.system.tools[2].title'),
+        list: [
+          i18n.global.t('services.system.tools[2].list[0]'),
+          i18n.global.t('services.system.tools[2].list[1]'),
+          i18n.global.t('services.system.tools[2].list[2]'),
+          i18n.global.t('services.system.tools[2].list[3]')
+        ]
       },
       {
-        title: 'Server端開發工具',
-        list: ['Python', 'Flask', 'Django', 'NodeJS']
+        title: i18n.global.t('services.system.tools[3].title'),
+        list: [
+          i18n.global.t('services.system.tools[3].list[0]'),
+          i18n.global.t('services.system.tools[3].list[1]'),
+          i18n.global.t('services.system.tools[3].list[2]'),
+          i18n.global.t('services.system.tools[3].list[3]')
+        ]
       },
       {
-        title: '資料庫開發',
-        list: ['MySQL', 'PostgreSQL', 'MongoDB']
+        title: i18n.global.t('services.system.tools[4].title'),
+        list: [
+          i18n.global.t('services.system.tools[4].list[0]'),
+          i18n.global.t('services.system.tools[4].list[1]'),
+          i18n.global.t('services.system.tools[4].list[2]')
+        ]
       },
 
       {
-        title: 'API 開發',
-        list: ['客製化 API 開發', '整合串接 金流/物流 API', '整合串接 ERP/CRM API']
+        title: i18n.global.t('services.system.tools[5].title'),
+        list: [
+          i18n.global.t('services.system.tools[5].list[0]'),
+          i18n.global.t('services.system.tools[5].list[1]'),
+          i18n.global.t('services.system.tools[5].list[2]')
+        ]
       },
       {
-        title: 'App 開發',
-        list: ['React Native 開發 (Hybrid)', 'Ionic 開發 (Hybrid)']
+        title: i18n.global.t('services.system.tools[6].title'),
+        list: [
+          i18n.global.t('services.system.tools[6].list[0]'),
+          i18n.global.t('services.system.tools[6].list[1]')
+        ]
       },
       {
-        title: '雲端架構部署',
-        list: ['Amazon Web Services (AWS)']
+        title: i18n.global.t('services.system.tools[7].title'),
+        list: [i18n.global.t('services.system.tools[7].list[0]')]
       },
       {
-        title: '部署工具',
-        list: ['Docker']
+        title: i18n.global.t('services.system.tools[8].title'),
+        list: [i18n.global.t('services.system.tools[8].list[0]')]
       },
       {
-        title: '網站數據分析工具',
-        list: ['Google Analytics']
+        title: i18n.global.t('services.system.tools[9].title'),
+        list: [i18n.global.t('services.system.tools[9].list[0]')]
       },
       {
-        title: '第三方應用開發',
-        list: ['LINE BOT', 'Google App Script']
+        title: i18n.global.t('services.system.tools[10].title'),
+        list: [
+          i18n.global.t('services.system.tools[10].list[0]'),
+          i18n.global.t('services.system.tools[10].list[1]')
+        ]
       }
     ]
   },
   design: {
-    title: '商業設計與原型製作',
-    text: `由美學切入探究，重新詮釋被忽視的不便之處，展現出優雅的產品與服務。
-    一頁視覺、一件包裝，甚至一套服務體驗，都將是您精確地傳達願景的載體。
-
-    我們的著重於探討與人之間的默契連結，透過設計轉譯，讓您的客戶對企業願景感同身受，並增加對產品、服務的信任感。`,
+    title: i18n.global.t('services.design.title'),
+    text: i18n.global.t('services.design.text'),
     items: [
       {
-        title: '商業視覺設計',
+        title: i18n.global.t('services.design.items[0].title'),
         icon: icon_visual,
-        list: ['裝幀設計', '插畫設計', '平面排版與美術', '永續包裝設計']
+        list: [
+          i18n.global.t('services.design.items[0].list[0]'),
+          i18n.global.t('services.design.items[0].list[1]'),
+          i18n.global.t('services.design.items[0].list[2]'),
+          i18n.global.t('services.design.items[0].list[3]')
+        ]
       },
       {
-        title: '企業識別系統',
+        title: i18n.global.t('services.design.items[1].title'),
         icon: icon_corporate,
-        list: ['VI 視覺識別', 'BI 行為識別', 'MI 理念識別']
+        list: [
+          i18n.global.t('services.design.items[1].list[0]'),
+          i18n.global.t('services.design.items[1].list[1]'),
+          i18n.global.t('services.design.items[1].list[2]')
+        ]
       },
       {
-        title: '複合媒材與產品設計',
+        title: i18n.global.t('services.design.items[2].title'),
         icon: icon_media_product,
-        list: ['產品外觀設計', '3D模型建構', '模型製作', '多媒材應用']
+        list: [
+          i18n.global.t('services.design.items[2].list[0]'),
+          i18n.global.t('services.design.items[2].list[1]'),
+          i18n.global.t('services.design.items[2].list[2]'),
+          i18n.global.t('services.design.items[2].list[3]')
+        ]
       },
       {
-        title: '空間展示設計',
+        title: i18n.global.t('services.design.items[3].title'),
         icon: icon_space,
-        list: ['空間視覺', '攤位設計', '展場互動設計']
+        list: [
+          i18n.global.t('services.design.items[3].list[0]'),
+          i18n.global.t('services.design.items[3].list[1]'),
+          i18n.global.t('services.design.items[3].list[2]')
+        ]
       },
       {
-        title: '介面與互動設計',
+        title: i18n.global.t('services.design.items[4].title'),
         icon: icon_interface,
-        list: ['人機介面設計', '網頁互動設計']
+        list: [
+          i18n.global.t('services.design.items[4].list[0]'),
+          i18n.global.t('services.design.items[4].list[1]')
+        ]
       }
     ],
     tools: []
   },
   content: {
-    title: '內容設計與活動統籌',
-    text: '以永續為核心，搭配設計驅動轉型與數位策略，重視轉換率與內容，打造人事物更高層次的形象、溝通與體驗，使產業的面貌煥然一新。',
+    title: i18n.global.t('services.content.title'),
+    text: i18n.global.t('services.content.text'),
     items: [
       {
-        title: '永續與循環企劃',
+        title: i18n.global.t('services.content.items[0].title'),
         icon: icon_sustainable,
-        list: ['ESG減碳規劃', '永續供應鏈', '循環經濟策略']
+        list: [
+          i18n.global.t('services.content.items[0].list[0]'),
+          i18n.global.t('services.content.items[0].list[1]'),
+          i18n.global.t('services.content.items[0].list[2]')
+        ]
       },
       {
-        title: '服務與體驗設計',
+        title: i18n.global.t('services.content.items[1].title'),
         icon: icon_service_experience,
-        list: ['使用者研究', '客戶體驗', '市場與數據分析']
+        list: [
+          i18n.global.t('services.content.items[1].list[0]'),
+          i18n.global.t('services.content.items[1].list[1]'),
+          i18n.global.t('services.content.items[1].list[2]')
+        ]
       },
       {
-        title: '課程與活動設計',
+        title: i18n.global.t('services.content.items[2].title'),
         icon: icon_course_event,
-        list: ['技術課程規劃', '設計工作坊']
+        list: [
+          i18n.global.t('services.content.items[2].list[0]'),
+          i18n.global.t('services.content.items[2].list[1]')
+        ]
       },
       {
-        title: '展覽策劃與執行',
+        title: i18n.global.t('services.content.items[3].title'),
         icon: icon_exhibition,
-        list: ['品牌形象展演', '展覽互動體驗']
+        list: [
+          i18n.global.t('services.content.items[3].list[0]'),
+          i18n.global.t('services.content.items[3].list[1]')
+        ]
       },
       {
-        title: '數位轉型與再造',
+        title: i18n.global.t('services.content.items[4].title'),
         icon: icon_digital_transformation,
-        list: ['數位典藏與轉譯', '數位工具評估與導入', '作業流程轉型']
+        list: [
+          i18n.global.t('services.content.items[4].list[0]'),
+          i18n.global.t('services.content.items[4].list[1]'),
+          i18n.global.t('services.content.items[4].list[2]')
+        ]
       }
     ],
     tools: []

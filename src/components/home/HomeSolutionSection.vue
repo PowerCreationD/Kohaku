@@ -18,7 +18,9 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
     </div>
     <div class="solution-section__carousel">
       <div class="carousel-section carousel-section-top">
-        <h2 class="carousel-section-top__title font-1 scroll-animation-slide-and-fade-in">SOLUTION</h2>
+        <h2 class="carousel-section-top__title font-1 scroll-animation-slide-and-fade-in">
+          SOLUTION
+        </h2>
         <div class="carousel-section-top__menu">
           <div class="carousel-section-top__menu-divider">|</div>
           <template v-for="(item, idx) in solution" :key="item.title">
@@ -37,14 +39,18 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
             :color="mobileCheck.value ? 'gold' : 'white'"
             class="carousel-section-middle__wave"
           />
-          <h3 class="carousel-section-middle__title font-1 scroll-animation-slide-and-fade-in">{{ solution[index].title }}</h3>
+          <h3 class="carousel-section-middle__title font-1 scroll-animation-slide-and-fade-in">
+            {{ solution[index].title }}
+          </h3>
         </div>
         <pre class="carousel-section-middle__text font-7 scroll-animation-slide-and-fade-in">{{
           solution[index].text.join('\n')
         }}</pre>
       </div>
       <div class="carousel-section carousel-section-bottom">
-        <button class="button button--quaternary" @click="viewService()">查看服務</button>
+        <button class="button button--quaternary" @click="viewService()">
+          {{ $t('global.buttons.view_more') }}
+        </button>
         <div class="carousel-section-bottom__keywords-container">
           <span
             class="carousel-section-bottom__keyword font-7"
@@ -78,43 +84,43 @@ export default {
   },
   data() {
     return {
-      index: 1,
+      index: 0,
       solution: [
         {
-          title: '系統設計與全端開發',
-          text: ['客製資訊系統導入產業', '數位產品服務全端開發'],
+          title: this.$t('home.solution[0].title'),
+          text: [this.$t('home.solution[0].text[0]'), this.$t('home.solution[0].text[1]')],
           keywords: [
-            '前端設計開發',
-            '後端整合部署',
-            '商業資料探勘',
-            '軟硬體整合設計',
-            '應用程式開發'
+            this.$t('home.solution[0].keywords[0]'),
+            this.$t('home.solution[0].keywords[1]'),
+            this.$t('home.solution[0].keywords[2]'),
+            this.$t('home.solution[0].keywords[3]'),
+            this.$t('home.solution[0].keywords[4]')
           ],
           webImage: systemWeb,
           appImage: systemApp
         },
         {
-          title: '商業設計與原型製作',
-          text: ['美學轉譯優雅品牌形象', '量身定制精準傳達願景'],
+          title: this.$t('home.solution[1].title'),
+          text: [this.$t('home.solution[1].text[0]'), this.$t('home.solution[1].text[1]')],
           keywords: [
-            '商業視覺設計',
-            '企業識別系統',
-            '空間展示設計',
-            '介面與互動設計',
-            '複合媒材與產品設計'
+            this.$t('home.solution[1].keywords[0]'),
+            this.$t('home.solution[1].keywords[1]'),
+            this.$t('home.solution[1].keywords[2]'),
+            this.$t('home.solution[1].keywords[3]'),
+            this.$t('home.solution[1].keywords[4]')
           ],
           webImage: designWeb,
           appImage: designApp
         },
         {
-          title: '內容設計與活動統籌',
-          text: ['以設計研究和永續為核心', '重視實質效益的策略創意'],
+          title: this.$t('home.solution[2].title'),
+          text: [this.$t('home.solution[2].text[0]'), this.$t('home.solution[2].text[1]')],
           keywords: [
-            '永續與循環企劃',
-            '服務與體驗設計',
-            '課程與活動設計',
-            '展覽策劃與執行',
-            '數位轉型與再造'
+            this.$t('home.solution[2].keywords[0]'),
+            this.$t('home.solution[2].keywords[1]'),
+            this.$t('home.solution[2].keywords[2]'),
+            this.$t('home.solution[2].keywords[3]'),
+            this.$t('home.solution[2].keywords[4]')
           ],
           webImage: contentWeb,
           appImage: contentApp
