@@ -42,3 +42,5 @@ app.use(VueLazyload, {
 })
 
 app.mount('#app')
+
+export default i18n

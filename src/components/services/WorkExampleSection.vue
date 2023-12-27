@@ -1,12 +1,12 @@
 <template>
   <div class="work-example-section">
-    <h3 class="work-example-section__title font-1">作品案例</h3>
+    <h3 class="work-example-section__title font-1">{{ $t('services.example_title') }}</h3>
     <div class="work-example-section__container">
       <workCard v-for="(work, index) in workExample" :key="index" :work="work"></workCard>
     </div>
     <div class="button-section">
       <button class="button-section__see-more-button button--tertiary" @click="goToWork()">
-        查看更多
+        {{$t('global.buttons.view_more')}}
       </button>
     </div>
   </div>

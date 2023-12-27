@@ -6,7 +6,7 @@
         :class="isSelectAll ? 'filter-item__all--active font-6' : 'font-7'"
         @click="filterAll"
       >
-        全部
+        {{ $t('work.project_types.all') }}
       </button>
     </div>
 
@@ -34,11 +34,7 @@
   </div>
 
   <div v-show="mobileCheck.value" class="filter-section-mobile">
-    <DropdownComponent
-      @selectOption="addTypeOption"
-      :options="dropdownOptions"
-      :placeholder="'選擇服務'"
-    />
+    <DropdownComponent @selectOption="addTypeOption" :options="dropdownOptions" />
 
     <div class="selected-option-container">
       <div v-for="checkedType in checkedTypes" :key="checkedType" class="selected-option">
@@ -64,9 +60,9 @@ export default {
   data() {
     return {
       types: [
-        { id: 'system', text: '系統設計與全端開發' },
-        { id: 'design', text: '商業設計與原型製作' },
-        { id: 'content', text: '內容設計與活動統籌' }
+        { id: 'system', text: this.$t('work.project_types.system') },
+        { id: 'design', text: this.$t('work.project_types.design') },
+        { id: 'content', text: this.$t('work.project_types.content') }
       ],
       checkedTypes: [],
       isSelectAll: true
@@ -122,7 +118,7 @@ export default {
   },
   computed: {
     dropdownOptions() {
-      const defaultType = { id: 'default', text: '選擇服務' }
+      const defaultType = { id: 'default', text: this.$t('work.project_types.placeholder') }
       return [defaultType, ...this.types]
     }
   },

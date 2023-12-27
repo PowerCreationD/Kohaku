@@ -44,18 +44,18 @@
           </router-link>
           <div
             v-else
-            class="link link--no-underline link--uppercase header__navigation-link font-7"
+            class="link link--no-underline header__navigation-link font-7"
             :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
             @mouseover="drawerOpen = true"
             @mouseleave="drawerOpen = false"
           >
-            {{ navigationLink.text }}
+            <div class="link--uppercase">{{ navigationLink.text }}</div>
             <div class="header__navigation-drawer" v-show="drawerOpen">
               <router-link
                 v-for="item in navigationLink.subPages"
                 :key="item.link"
                 :to="item.link"
-                class="link link--no-underline link--uppercase font-7 header__navigation-sub-link"
+                class="link link--no-underline font-7 header__navigation-sub-link"
                 :class="
                   isTransparentMode &&
                   $route['name'] === 'home' &&
@@ -80,7 +80,9 @@
         :defaultIndex="defaultLocal"
         :color="isTransparentMode ? 'white' : 'gold'"
       />
-      <button class="button--tertiary header__contact-button">聯絡我們</button>
+      <button class="button--tertiary header__contact-button">
+        {{ $t('global.buttons.contact_us') }}
+      </button>
     </div>
     <HeaderSidebar
       :navigationLinks="navigationLinks"
@@ -123,15 +125,15 @@ export default {
           link: '',
           subPages: [
             {
-              text: '系統設計與全端開發',
+              text: this.$t('global.project_types.system'),
               link: '/services/system'
             },
             {
-              text: '商業設計與原型製作',
+              text: this.$t('global.project_types.design'),
               link: '/services/design'
             },
             {
-              text: '內容設計與活動統籌',
+              text: this.$t('global.project_types.content'),
               link: '/services/content'
             }
           ]
@@ -248,7 +250,7 @@ export default {
       this.$forceUpdate()
     },
     sidebarOpen(newValue) {
-      console.log(newValue);
+      console.log(newValue)
       const body = document.body
       body.style.overflow = newValue ? 'hidden' : 'auto'
     }

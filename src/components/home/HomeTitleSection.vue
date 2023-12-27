@@ -9,20 +9,24 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
   <CurveWrap>
     <div class="home__section home-title-section">
       <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title animation-gradient-text">設計驅動永續</p>
+        <p class="font-0 home-title-section__title animation-gradient-text">
+          {{ $t('home.title.name') }}
+        </p>
         <div class="home-title-section__comma animation-fade-in-delay">
           <CommaIcon color="'white'" />
         </div>
       </div>
       <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title animation-gradient-text">Design for Nature</p>
+        <p class="font-0 home-title-section__title animation-gradient-text">
+          {{ $t('home.title.slogan') }}
+        </p>
         <div class="home-title-section__comma animation-fade-in-delay">
           <CommaIcon color="'white'" />
         </div>
       </div>
       <p class="font-6 home-title-section__text animation-fade-in-background">
-        我們致力於食農、工藝、社群和地方議題<br />
-        由In-house的設計研究與工程技術團隊，持續實現對永續的無限可能
+        {{ $t('home.title.text[0]') }}<br />
+        {{ $t('home.title.text[1]') }}
       </p>
       <img
         class="background-image home-title-section__background-image"

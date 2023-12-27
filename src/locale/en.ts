@@ -7,255 +7,101 @@ const locale = {
       close: 'Close',
       submit_form: 'Submit Form',
       contact_us: 'Contact Us',
-      view_the_service: 'View The Service',
-      view_all_project: 'View All Projects',
       view_more: 'More'
+    },
+    project_types: {
+      system: 'System Design and Full-Stack Development',
+      design: 'Commercial Design and Prototype Fabrication',
+      content: 'Content Design and Event Coordination'
     },
     footer: {
       address: '3F., No. 11, Dayong Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
     }
   },
-  homepage: {
-    slogan: 'Imagine × Create × Future',
-    description: ['Design transformation (DX) leads not to the best but better and better', ''],
-    research: {
-      title: 'RESEARCH － Depth',
-      subtitle: 'Crafting excellence with precision, passion, and foresight',
+  home: {
+    title: {
+      name: 'Design-Driven Sustainability',
+      slogan: 'Design for Nature',
       text: [
-        "By harnessing extensive research and interdisciplinary thinking, we empower our clients' original intentions,",
-        'Creating the ideal conditions for your innovative concepts to thrive, and ensuring successful implementation with brilliance.'
+        'We are dedicated to addressing issues related to agriculture, craftsmanship, community, and locality.',
+        'Our in-house design research and engineering teams are continually working to realize infinite possibilities for sustainability.'
       ]
     },
-    concept: {
-      title: 'CONCEPT － Breadth',
-      subtitle: 'Unleashing boundless thinking to shatter preconceptions',
-      text: [
-        'Spanning the realms of InfoSci, Engineering, Design, Trade, and Innovation,',
-        'We co-create pioneering solutions from extensive research and ample experience.'
+    about: {
+      name: '琥白',
+      brand: 'Kohaku Studio',
+      text: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
+            白 represents the concept of margin in design, the freedom of leaving room for all possibilities.
+
+            In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your ideas and explore bold possibilities.`
+    },
+    service: {
+      text: 'Is your innovative concept ready to take off? Let Kohaku assist you in realizing your vision with a steady stride!',
+      steps: [
+        {
+          title: 'Needs Research',
+          text: 'Delve deep into understanding requirements, examining the field, users, and real-world scenarios to identify the core issues. Based on these insights, we tailor solutions to fit your specific needs.'
+        },
+        {
+          title: 'Conceptual Design',
+          text: 'At this stage, we engage in brainstorming, constructing compelling prototypes, and continuously refining them to ensure these ideas truly contribute to achieving your goals.'
+        },
+        {
+          title: 'Implementation',
+          text: 'Now is the time to put plans into action! We integrate digital technologies, providing end-to-end engineering services to ensure every detail is meticulously addressed, allowing the concept to land perfectly.'
+        }
       ]
     },
-    solutions: {
-      title: 'SOLUTION － Optimal Solution',
-      subtitle: ['Three Languages', 'Five Expertise'],
-      system: {
-        name: 'System Design / Development and Maintenance',
-        shortName: 'System Design',
-        subtitleSentences: [
-          'Tailoring system to your business requirements',
-          'Offering insight into your industry’s trends'
+    solution: [
+      {
+        title: 'System Design and Full-Stack Development',
+        text: [
+          'Implementing customized information systems for industries.',
+          'Delivering end-to-end digital product services.'
         ],
-        textSentences: [
-          'As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development.'
-        ],
-        keywordList: [
-          {
-            name: 'System Development',
-            children: ['Frontend Development', 'Backend Development']
-          },
-          {
-            name: 'Data Analytics',
-            children: ['Business Data Mining']
-          },
-          {
-            name: 'End Device Development',
-            children: ['Embedded System Development']
-          }
+        keywords: [
+          'Frontend Design and Development',
+          'Backend Integration and Deployment',
+          'Business Data Mining',
+          'Software-Hardware Integration Design',
+          'Application Development'
         ]
       },
-      trading: {
-        name: 'Domestic / International Trading',
-        shortName: 'Trade Services',
-        subtitleSentences: [
-          'Discovering delectable food from Taiwan',
-          'Building your brand and join the international market'
+      {
+        title: 'Commercial Design and Prototype Fabrication',
+        text: [
+          'Translating aesthetics to craft an elegant brand image',
+          'Tailored to precisely convey the envisioned message.'
         ],
-        textSentences: [
-          `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.`
-        ],
-        keywordList: [
-          {
-            name: 'Product selection consultation for import and export'
-          },
-          {
-            name: 'Market trend research'
-          },
-          {
-            name: 'Marketing planning and execution'
-          },
-          {
-            name: 'Trilingual support in Chinese, English, and Japanese'
-          },
-          {
-            name: 'Redesign of packaging for foreign brands'
-          }
+        keywords: [
+          'Commercial Visual Design',
+          'Corporate Identity Systems',
+          'Spatial Display Design',
+          'Interface and Interaction Design',
+          'Mixed Media and Product Design'
         ]
       },
-      product: {
-        name: 'Product Design and Production',
-        shortName: 'Product Design',
-        subtitleSentences: [
-          'Analyzing the unnoticed inconvenience around',
-          'Interpreters the difficulties through aesthetic mindset'
+      {
+        title: 'Content Design and Event Coordination',
+        text: [
+          'Centered on design research and sustainability',
+          'Strategic creativity that prioritizes tangible benefit'
         ],
-        textSentences: [
-          `Delving into the partnership between objects and people, we portray high-quality experiences in functionality, form, and interaction.`,
-          `We intricately design products to meet users' expectations and respond to their desires for a fulfilling life.`
-        ],
-        keywordList: [
-          {
-            name: 'Problem research'
-          },
-          {
-            name: 'Concept proposal'
-          },
-          {
-            name: 'Participatory design process'
-          },
-          {
-            name: 'Product visual design'
-          },
-          {
-            name: '3D model construction'
-          },
-          {
-            name: 'Prototype production'
-          }
-        ]
-      },
-      design: {
-        name: 'Brand Identity and Visual Design',
-        shortName: 'Visual Design',
-        subtitleSentences: [
-          'Visual communication that directly touches the hearts of people',
-          'Elevating the relationship between the brand and customers'
-        ],
-        textSentences: [
-          'A single page of a book, a piece of packaging, a comprehensive and professionally crafted brand identity, all customized designs that precisely convey your vision.',
-          'Allowing your customers to experience the attention to detail behind your brand, deepening their trust in your services and products.'
-        ],
-        keywordList: [
-          {
-            name: 'Brand identity design'
-          },
-          {
-            name: 'Book cover design'
-          },
-          {
-            name: 'Graphic design'
-          },
-          {
-            name: 'Packaging design'
-          },
-          {
-            name: 'Website interface design'
-          }
-        ]
-      },
-      planning: {
-        name: 'Event Planning and Proposal',
-        shortName: 'Event Planning',
-        subtitleSentences: [
-          'Dedicated team with efficiency',
-          'Flexibly organizing exhibition and other events'
-        ],
-        textSentences: [
-          'With a team of creative talents rooted in design and a culture that breaks boundaries, we provide unexpected innovative solutions for your projects. ',
-          'We are experienced in collaborating with external teams and quickly adapting to your requirements. From curriculum design to exhibition events, we offer professional execution and coordination.'
-        ],
-        keywordList: [
-          {
-            name: 'Development of curriculum, activities, and exhibition themes'
-          },
-          {
-            name: 'Content planning'
-          },
-          {
-            name: 'Execution and coordination'
-          },
-          {
-            name: 'On-site hosting and management'
-          },
-          {
-            name: 'Event visual design and social media marketing'
-          }
+        keywords: [
+          'Sustainable and Circular Business Planning',
+          'Service and Experience Design',
+          'Curriculum and Event Design',
+          'Exhibition Planning and Execution',
+          'Digital Transformation and Reengineering'
         ]
       }
-    },
-    work: {
-      system: {
-        name: 'System Design / Development and Maintenance',
-        text: 'System Design / Development and Maintenance',
-        projects: [
-          {
-            name: 'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
-            description: `Collaborating with Vegibus, a Japanese agricultural distributor, which is committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of "Vegibus," which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`
-          },
-          {
-            name: 'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform',
-            description: `In response to the challenges of labor shortage due to aging population in rural areas and the complexity of precision agriculture management, Mobile Mover appears as a solution, an agricultural autonomous vehicle. It serves as a smart agricultural machinery solution for the future, providing comprehensive support for crop management tasks such as mulching, weeding, spraying, and harvesting. Besides The mechatronics integration on the mover itself,  construction of farm map, map route planning, and a user-friendly mobile application are also been developed. Additionally, we have designed a service flow tailored to meet the needs of elderly farmers, aiming to alleviate their farming burdens.`
-          }
-        ]
-      },
-      trading: {
-        name: 'Domestic / International Trading',
-        text: 'Domestic / International Trading',
-        projects: [
-          {
-            name: "Export to Japan｜Exporting Pingtung's Tainung No. 17 Golden Diamond Pineapples",
-            description: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the Kasumi カスミ supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`
-          }
-        ]
-      },
-      product: {
-        name: 'Product Design and Production',
-        text: 'Product Design and Production',
-        projects: [
-          {
-            name: 'Furniture Design｜Kizuna - Elegant Solid Wood Furniture with Tranformable feature',
-            description: `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`
-          }
-        ]
-      },
-      design: {
-        name: 'Brand Identity and Visual Design',
-        text: 'Brand Identity and Visual Design',
-        projects: [
-          {
-            name: 'Book and Bookbinding｜Woodworking Craft Tool Guide',
-            description: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`
-          },
-          {
-            name: 'Visual Design and Packaging｜M2Labo Business Card Design',
-            description: `In collaboration with Japanese company "エムスクエア・ラボ”. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`
-          },
-          {
-            name: 'Takahata City Regional Office Business Card Design',
-            description: `Design of official business cards for the Takahata City Regional Office in Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`
-          },
-          {
-            name: 'Packaging design for premium Japanese supermarket - Leek Kimchi',
-            description: `We support farmers in leveraging their land advantages to create a unique product, leek kimchi. Additionally, we help them design appealing packaging to enhance sales and maximize the value of agricultural processing.`
-          },
-          {
-            name: 'Commercial Space and Display Cases｜Unmanned Store at Hiroshima Miyajima Station',
-            description: `In order to enhance the shopping experience at Hiroshima Miyajima Station, we have designed commercial spaces and display cases for an unmanned store. The layout and design of the store have been meticulously planned to create an inviting and functional environment. Our goal is to provide customers with a seamless and enjoyable shopping experience at the station.`
-          }
-        ]
-      },
-      planning: {
-        name: 'Event Planning and Proposal',
-        text: 'Event Planning and Proposal',
-        projects: [
-          {
-            name: 'Event Documentation｜Lathe Machine Workshop',
-            description: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`
-          }
-        ]
-      }
-    },
+    ],
     contact: {
-      subtitle: 'Embracing Traditional Wisdom, Creating a Novel Experience',
-      text: 'If you have any requests or inquiries, please fill out the form below, and our representative will get in touch with you.'
+      title:
+        ' Initiate a journey towards sustainability from the very first contact, unlocking limitless possibilities!',
+      text: `→ Got ideas? Share them with us!
+      → Have a budget? Leave it to us!
+      → Have goals? Let's achieve them together!`
     }
   },
   about: {
@@ -284,7 +130,7 @@ const locale = {
 
     brand: {
       name: '琥白 Kohaku',
-      meaning: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
+      text: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
             白 represents the concept of margin in design, the freedom of leaving room for all possibilities.
 
             In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your ideas and explore bold possibilities.`
@@ -325,279 +171,296 @@ const locale = {
   work: {
     project_types: {
       all: 'All',
-      planning: 'Event Planning and Proposal',
-      system: 'System Design / Development and Maintenance',
-      trading: 'Domestic / International Trading',
-      product: 'Product Design and Production',
-      design: 'Brand Identity and Visual Design'
+      system: 'System Design and Full-Stack Development',
+      design: 'Commercial Design and Prototype Fabrication',
+      content: 'Content Design and Event Coordination',
+      placeholder: 'Please select'
     },
-    vegibus: {
-      name: 'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
-      detail: {
-        tags: ['#System Development', '#Frontend Development', '#Web Interface Design'],
-        paragraph: `Collaborating with Vegibus, a Japanese agricultural distributor, which is committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of "Vegibus," which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`
-      }
-    },
-    mobile_mover: {
-      name: 'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform',
-      detail: {
-        tags: ['#Embedded System Development', '#Frontend Development', '#Web Interface Design'],
-        paragraph: `In response to the challenges of labor shortage due to aging population in rural areas and the complexity of precision agriculture management, Mobile Mover appears as a solution, an agricultural autonomous vehicle. It serves as a smart agricultural machinery solution for the future, providing comprehensive support for crop management tasks such as mulching, weeding, spraying, and harvesting. Besides The mechatronics integration on the mover itself,  construction of farm map, map route planning, and a user-friendly mobile application are also been developed. Additionally, we have designed a service flow tailored to meet the needs of elderly farmers, aiming to alleviate their farming burdens.`,
-        description: {
-          desc_1: `The Mobile Mover App allows users to schedule tasks, set routes, and monitor the progress of the vehicle in real-time.`,
-          desc_2: `Considering the operating scenarios in the field, the Mobile Mover emphasizes the development of a mobile app, enabling flexible control through a virtual joystick on a tablet.`,
-          desc_3: `The app provides real-time monitoring of the vehicle's execution routes, status, battery level, speed, and location. Users can set, edit, and save paths based on different task requirements, establishing standardized work procedures. The app manages multiple maps with multiple paths, streamlining field management tasks and allowing for flexible planning of task routes through binding and swapping features for the Mobile Mover.`
-        }
-      }
-    },
-    woodworking_book: {
-      name: 'Book and Bookbinding｜Woodworking Craft Tool Guide',
-      detail: {
-        tags: ['#Bookbinding Design', '#Visual Design', '#Illustration Design'],
-        paragraph: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: <a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://www.govbooks.com.tw/books/137952' target='_blank'>https://www.govbooks.com.tw/books/137952</a>`
-      }
-    },
-    mu_maison: {
-      name: 'Furniture Design｜Kizuna - Elegant Solid Wood Furniture with Tranformable feature',
-      detail: {
-        tags: ['#Furniture Design', '#Product Design'],
-        paragraph: `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`,
-        description: {
-          desc_1: `Three simple steps to set up without the need for any tools.`,
-          desc_2: `Taking into consideration of construction methods and carefully chosen high-quality wood materials, the resilient nature of elm wood is employed for its curved structures, while the softness of pine wood complements the delicate tabletop. The leather surface of the desk provides absolute comfort for extended periods of operating keyboards, using a mouse, or writing, with a gentle response to the touch.`,
-          desc_3: `Folding the desktop, pulling the seats close together, and storing the three pieces of furniture as a set without disassembly. The storage of the solid wood furniture body enables graceful transformation of space, effortless positioning, and immediate reactivation of productivity.`
-        }
-      }
-    },
-    leek_kimchi: {
-      name: 'Packaging design for premium Japanese supermarket - Leek Kimchi',
-      detail: {
-        tags: ['#Packaging Design', '#Visual Design'],
-        paragraph: `We support farmers in leveraging their land advantages to create a unique product, leek kimchi. Additionally, we help them design appealing packaging to enhance sales and maximize the value of agricultural processing.`
-      }
-    },
-    hiroshima_station: {
-      name: 'Commercial Space and Display Cases｜Unmanned Store at Hiroshima Miyajima Station',
-      detail: {
-        tags: ['#Commercial Space Design', '#Visual Design'],
-        paragraph: `In order to enhance the shopping experience at Hiroshima Miyajima Station, we have designed commercial spaces and display cases for an unmanned store. The layout and design of the store have been meticulously planned to create an inviting and functional environment. Our goal is to provide customers with a seamless and enjoyable shopping experience at the station.`
-      }
-    },
-    takahata_business_card: {
-      name: 'Takahata City Regional Office Business Card Design',
-      detail: {
-        tags: ['#Business Card Design', '#Visual Design'],
-        paragraph: `Design of official business cards for the Takahata City Regional Office in Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`
-      }
-    },
-    m2labo_business_card: {
-      name: 'Visual Design and Packaging｜M2Labo Business Card Design',
-      detail: {
-        tags: ['#Business Card Design', '#Visual Design'],
-        paragraph: `In collaboration with Japanese company "エムスクエア・ラボ”. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`
-      }
-    },
-    pineapples: {
-      name: "Export to Japan｜Exporting Pingtung's Tainung No. 17 Golden Diamond Pineapples",
-      detail: {
-        tags: ['#International Trade', '#Export Services'],
-        paragraph: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the Kasumi カスミ supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`
-      }
-    },
-    lathe_machine_workshop: {
-      name: 'Event Documentation｜Lathe Machine Workshop',
-      detail: {
-        tags: ['#Event Documentation', '#Video Editing', '#Script Planning'],
-        paragraph: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered  photographs  on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: <a style='color: hsla(38, 76%, 60%, 1);text-decoration: none;' href='https://youtu.be/fygtvFBfvxU' target='_blank'>https://youtu.be/fygtvFBfvxU</a>`
+    projects: {
+      1: {
+        name: 'Sustainable and Circular Business Planning｜Small-Scale Agriculture Autonomous Vehicle',
+        content: `In collaboration with a Japanese automotive company, we address the issue of aging agricultural labor by proposing a user experience design for a small-scale autonomous agricultural vehicle. The design process takes into account the diverse tasks in agricultural settings, ensuring a simple and intuitive operational workflow and interface for farmers. Additionally, we evaluate the environmental sustainability of hardware consumables.`,
+        keywords: ['Experience Design', 'Service Design', 'Corporate Image Positioning']
+      },
+      2: {
+        name: 'Curriculum and Event Design｜Agricultural Technology Workshop',
+        content: `In collaboration with the Southern Taiwan Maker Center (STMC Fablab) of Workforce Development Agency, we partnered to focus on applications in the agricultural field. We planned and executed a month-long series of three major thematic courses, namely “Smart Transactions”, “Smart Management”, and “Smart Production”. The overall event guided participants through a comprehensive journey from design thinking and technical practices to business applications. This initiative achieved the integrated application of hardware and software devices.`,
+        keywords: ['Curriculum Design', 'Event Planning', 'Technical Guidance', 'Design Thinking']
+      },
+      3: {
+        name: 'Curriculum and Event Design｜Lathe Machine Workshop',
+        content: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered photographs on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`,
+        keywords: ['Event Documentation', 'Video Editing', 'Script Planning']
+      },
+      4: {
+        name: 'Digital Transformation and Reengineering｜Craft Learning Platform',
+        content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we collaborated to plan an inclusive and comprehensive craft learning platform. This initiative integrated both online and offline craft learning, exhibition events, and project resources. Throughout the process, considerations were made for the functional permissions of multiple users and the website usage workflow, enabling the intuitive transmission of the essence of craftsmanship.`,
+        keywords: ['Service Design', 'Process Planning', 'Interface Design', 'Event Planning']
+      },
+      5: {
+        name: 'Commercial Space Design｜CEATEC & Agriculture Week',
+        content: `In 2022, we collaborated with a Japanese company to design exhibition booths at CEATEC, followed by participation in the 2023 Agricultural WEEK exhibition. Our approach involved a clear understanding of the exhibition objectives and a deep comprehension of the showcased products. We strategically pondered on how to capture the attention of visitors in the information-rich exhibition environment, ensuring the accurate communication of the value of participating companies and showcased products.`,
+        keywords: ['Commercial Space Design', 'Booth Design', 'Print Design']
+      },
+      6: {
+        name: 'Commercial Space Design｜Supermarket & Japanese Shinkansen Train Station',
+        content: `Establishing unmanned stores at local JR train stations in Western Japan involves comprehensive planning, ensuring consistency from the interior layout, spatial arrangement, to the visual elements within the store. The coordinated approach strikes a balance between comfort and practicality, aiming to achieve a seamless and convenient shopping experience.`,
+        keywords: ['Commercial Space Design', 'Visual Design']
+      },
+      7: {
+        name: `Export of Agricultural Products｜Pingtung's Tainung No. 17 Golden Diamond Pineapples`,
+        content: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the premium supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`,
+        keywords: ['International Trade', 'Export Services']
+      },
+      8: {
+        name: 'Mixed Media and Product Design｜Kizuna - Elegant Solid Wood Furniture with Transformable feature',
+        content: `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`,
+        keywords: ['Furniture Design', 'Product Design']
+      },
+      9: {
+        name: 'Mixed Media and Product Design｜Repurposing Ceramic Waste into Tableware Sets and Furniture',
+        content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we leverage recycled ceramic waste in a circular fashion, exploring the unique textures and qualities of various ceramic waste material formulations. This has led to the development of “淳次 (Puffer)”, a ceramic coffee filter cup that eliminates the need for paper filters, “沉次 (Paltain)”, vessels ergonomically designed to fit the palm, and “方角 (Posible)”, a series of tables and chairs symbolizing the soft power of circularity. These designs usher in a new era for sustainable materials.`,
+        keywords: [
+          'Sustainable Design',
+          'Sustainable Materials',
+          'Product Design',
+          'Product Development'
+        ]
+      },
+      10: {
+        name: 'Commercial Visual Design｜Woodworking Craft Tool Handbook',
+        content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`,
+        keywords: ['Bookbinding Design', 'Visual Design', 'Illustration Design']
+      },
+      11: {
+        name: 'Commercial Visual Design｜Japanese Company Business Card Design',
+        content: `In collaboration with a Japanese company. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`,
+        keywords: ['Business Card Design', 'Visual Design']
+      },
+      12: {
+        name: 'Commercial Visual Design｜Japanese Regional Office Business Card Design',
+        content: `Design of official business cards for the Takahata City Regional Office in Yamagata Prefecture, Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`,
+        keywords: ['Business Card Design', 'Visual Design']
+      },
+      13: {
+        name: 'Brand Identity and Recognition｜Graphic Design for Breakfast and Late-Night Snack Shop',
+        content: `Collaborating with local breakfast and late-night snack shops in Kaohsiung, we incorporated the thematic elements of “ingot” and the character “妤” from the shop's name. Adopting an overall style that is “plump” and “distinct”, we present a down-to-earth design concept of “Wealth through Fullness, Goldfish Swimming”. We have developed various application arrangements, considering the diverse needs within the shop.`,
+        keywords: ['LOGO Design', 'Menu Design', 'Signage Design', 'Corporate Image Positioning']
+      },
+      14: {
+        name: 'Brand Identity and Recognition｜Packaging Design for Leek Kimchi',
+        content: `Available in premium Japanese supermarkets, this initiative involves guiding local farmers in leveraging their geographical advantages to develop a specialty product – leek kimchi. We also assist in designing packaging that meets the shelf standards, enhancing the value-added benefits of agricultural processing.`,
+        keywords: ['Packaging Design', 'Visual Design']
+      },
+      15: {
+        name: 'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
+        content: `Collaborating with a Japanese logistics company, we are committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of “Vegibus”, which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
+        keywords: ['System Development', 'Frontend Development', 'Web Interface Design']
+      },
+      16: {
+        name: 'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform',
+        content: `n response to challenges such as the shortage of labor due to the aging workforce in rural areas and the intricate management involved in precision agriculture, smart farming machinery is envisioned as the future solution. Aligned with crop management cycles, it provides comprehensive support for agricultural tasks such as grass pressing, weeding, pesticide application, and harvest transportation. The integration of agricultural machinery and electrical technologies takes into account the construction of farm-specific models, map path analysis, and a user-friendly handheld operating system. The transformational service flow is designed to cater to aging farmers, alleviating the operational burden for farm owners.`,
+        keywords: ['Embedded System Development', 'Frontend Development', 'Web Interface Design']
+      },
+      17: {
+        name: 'Fast Order Capture Tool｜KOKO BOT',
+        content: `LINE is not just a social communication tool for maintaining connections but also a handy ordering assistant for many fresh produce retailers and restaurants in Taiwan. However, the daily process of ordering through LINE lacks systematic calculation capabilities, leading to additional manual efforts for both parties in terms of “order organization” and “financial settlement”. With KOKO LINE, a one-stop development by Kohaku, these daily tasks are streamlined in three simple steps, saving approximately thirty minutes of daily work!`,
+        keywords: ['Tool Development', 'Interface Design']
+      },
+      18: {
+        name: 'Cloud-Based Production and Sales Tool｜KOKO SCALE',
+        content: `The traditional scales in the market can only weigh the products and calculate the total amount. Subsequently, there is a need for manual recording, summarizing daily sales information, and printing product labels. It is challenging to have a clear understanding of daily sales records, and during the sales process, each sale needs to be calculated individually for the total sales amount. KOKO SCALE, a one-stop development by Kohaku, integrates cloud and Bluetooth to manage sales data in the market effectively!`,
+        keywords: ['Tool Development', 'Interface Design']
+      },
+      19: {
+        name: 'Commercial Visual Design｜Kohaku Business Card Design',
+        content: `Business cards design for Kohaku Co., Ltd. The glossy contours on a portion of the card symbolize the process of transforming a cube into a sphere, representing the expertise of Kohaku's meticulous polishing. This signifies that, through Kohaku's professional polishing process, the final result will emerge as a brilliant amber-like finish.`,
+        keywords: ['Business Card Design', 'Visual Design']
       }
     }
   },
   services: {
+    tool_title: 'Custom Development Tools',
+    example_title: 'Work',
     system: {
-      name: 'System Design / Development and Maintenance',
-      slogan: [
-        'Tailoring system to your business requirements',
-        'Offering insight into your industry’s trends'
-      ],
-      description:
-        'As a SaaS （Software as a Service）provider, we provide industry-specific system customization, cross-system integration services, and expertise in device integration and development. We assist in collecting data to aid decision-making and optimize workflows to enhance supply and sales efficiency.',
-      content: [
+      title: 'System Design and Full-Stack Development',
+      text: 'Starting from Software as a Service (SaaS), we offer tailored industry system customization and cross-system integration services. We integrate systems and terminal devices, assisting in data collection for decision-making, and optimizing processes to enhance supply and distribution efficiency.',
+      items: [
         {
-          title: 'System Development',
-          services: [
-            {
-              subtitle: 'Frontend Development',
-              items: [
-                'Frameworks development',
-                'Interaction design',
-                'Responsive Web Design, RWD',
-                'Progressive Web App, PWA'
-              ]
-            },
-            {
-              subtitle: 'Backend Development',
-              items: [
-                'Database design and planning',
-                'API development, Third party API implementation',
-                'Cloud-based deployment',
-                'Continuous Intergration and Delivery, CI/CD'
-              ]
-            }
+          title: 'Frontend Design and Development',
+          list: [
+            'Frontend Framework Development',
+            'Frontend Interaction Design',
+            'Responsive Web Design (RWD)'
           ]
         },
         {
-          title: 'Data Analytics',
-          services: [
-            {
-              subtitle: 'Business Data Mining',
-              items: [
-                'Data analysis and visualization',
-                'BI tools implementation',
-                'ETL automation'
-              ]
-            }
+          title: 'Backend Integration and Deployment',
+          list: [
+            'Database Design and Planning',
+            'API Development / Third-Party API Integration',
+            'Cloud Architecture Design',
+            'Continuous Integration / Continuous Deployment (CI/CD)',
+            'Content Management System (CMS) Development'
           ]
         },
         {
-          title: 'End Device Development',
-          services: [
-            {
-              subtitle: 'Embedded System Development',
-              items: ['IoT device integration and design']
-            }
+          title: 'Application Development',
+          list: [
+            'Progressive Web Applications (PWA)',
+            'Cross-Platform (Hybrid) Application Development'
           ]
-        }
-      ],
-      works_example: [
-        'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
-        'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform'
-      ]
-    },
-    trading: {
-      name: 'Domestic / International Trading',
-      slogan: [
-        'Discovering delectable food from Taiwan',
-        'Building your brand and join the international market'
-      ],
-      description: `We specialize in the bilateral distribution of agricultural products and food from Taiwan and Japan, as well as acting as agents for the import and export of agricultural machinery. We are committed to promoting the excellence of Taiwan's food and craftsmanship.
-            With our team proficient in Chinese, English, and Japanese, we offer product selection consultations and export agency services. Additionally, we provide brand redesign services tailored to the consumption habits of target regions, helping MIT (Made in Taiwan) products reach the global market.`,
-      content: [
+        },
         {
-          title: 'Import and Export Trade',
-          services: [
-            {
-              subtitle: 'One-stop service for import and export',
-              items: [
-                'Product selection consultation for import and export',
-                'Market trend research',
-                'Marketing planning and execution',
-                'Trilingual support in Chinese, English, and Japanese',
-                'Redesign of packaging for foreign brands'
-              ]
-            }
+          title: 'Business Data Mining and Analysis',
+          list: [
+            'Business Data Analysis and Visualization',
+            'Business Intelligence (BI) Tool Implementation',
+            'Data Collection, Transfer, and Loading Automation]'
           ]
-        }
-      ],
-      works_example: [
-        "Export to Japan｜Exporting Pingtung's Tainung No. 17 Golden Diamond Pineapples"
-      ]
-    },
-    product: {
-      name: 'Product Design and Production',
-      slogan: [
-        'Analyzing the unnoticed inconvenience around',
-        'interpreters the difficulties through aesthetic mindset'
-      ],
-      description: `Delving into the partnership between objects and people, we portray high-quality experiences in functionality, form, and interaction. 
-            We intricately design products to meet users' expectations and respond to their desires for a fulfilling life.`,
-      content: [
+        },
         {
-          title: 'Product Research and Development',
-          services: [
-            {
-              subtitle: 'Research and Design Services',
-              items: [
-                'Problem research',
-                'Concept proposal',
-                'Participatory design process',
-                'Product visual design',
-                '3D model construction',
-                'Prototype production'
-              ]
-            }
-          ]
+          title: 'Software-Hardware Integration Design',
+          list: ['Internet of Things (IoT) Device Development', 'Embedded Systems']
         }
       ],
-      works_example: [
-        'Furniture Design｜Kizuna - Elegant Solid Wood Furniture with Tranformable feature'
+      tools: [
+        {
+          title: 'Frontend Frameworks',
+          list: ['Vue', 'React', 'jQuery']
+        },
+        {
+          title: 'Frontend UI Frameworks',
+          list: ['Vuetify', 'PrimeVue', 'BootstrapVue']
+        },
+        {
+          title: 'Frontend Interaction and Visualization',
+          list: ['D3.js', 'p5.js', 'Three.js', 'Chart.js']
+        },
+        {
+          title: 'Server-Side Development Tools',
+          list: ['Python', 'Flask', 'Django', 'NodeJS']
+        },
+        {
+          title: 'Database Development',
+          list: ['MySQL', 'PostgreSQL', 'MongoDB']
+        },
+
+        {
+          title: 'API Development',
+          list: [
+            'Custom API Development',
+            'Integration with Payment/Logistics APIs',
+            'Integration with ERP/CRM APIs'
+          ]
+        },
+        {
+          title: 'APP Development',
+          list: ['React Native Development (Hybrid)', 'Ionic Development (Hybrid)']
+        },
+        {
+          title: 'Cloud Architecture Deployment',
+          list: ['Amazon Web Services (AWS)']
+        },
+        {
+          title: 'Deployment Tools',
+          list: ['Docker']
+        },
+        {
+          title: 'Website Data Analysis Tools',
+          list: ['Google Analytics']
+        },
+        {
+          title: 'Third-Party Application Development',
+          list: ['LINE BOT', 'Google App Script']
+        }
       ]
     },
     design: {
-      name: 'Brand Identity and Visual Design',
-      slogan: [
-        'Visual communication that directly touches the hearts of people',
-        'Elevating the relationship between the brand and customers'
-      ],
-      description: `A single page of a book, a piece of packaging, a comprehensive and professionally crafted brand identity, all customized designs that precisely convey your vision. Allowing your customers to experience the attention to detail behind your brand, deepening their trust in your services and products.`,
-      content: [
+      title: 'Commercial Design and Prototype Fabrication',
+      text: `Approaching from an aesthetic standpoint, we delve into reinterpretation, highlighting overlooked inconveniences to showcase elegant products and services. Whether it's a visual page, a packaging item, or an entire service experience, each serves as a medium for conveying your vision.
+
+      Our focus lies in exploring the subtle connections between people. Through design translation, we enable your customers to empathize with your corporate vision, fostering increased trust in your products and services.`,
+      items: [
         {
-          title: 'Commercial Design',
-          services: [
-            {
-              subtitle: 'Visual Design',
-              items: [
-                'Brand identity design',
-                'Book cover design',
-                'Graphic design',
-                'Packaging design',
-                'Website interface design'
-              ]
-            }
+          title: 'Commercial Visual Design',
+          list: [
+            'Layout Design',
+            'Illustration Design',
+            'Graphic Layout and Arts',
+            'Sustainable Packaging Design'
           ]
+        },
+        {
+          title: 'Corporate Identity Systems',
+          list: ['Visual Identity (VI)', 'Behavioral Identity (BI)', 'Conceptual Identity (MI)']
+        },
+        {
+          title: 'Mixed Media and Product Design',
+          list: [
+            'Product Appearance Design',
+            '3D Model Construction',
+            'Model Production',
+            'Mixed Media Applications'
+          ]
+        },
+        {
+          title: 'Spatial Display Design',
+          list: ['Visual Spatial Design', 'Booth Design', 'Exhibition Interactive Design']
+        },
+        {
+          title: 'Interface and Interaction Design',
+          list: ['Human-Computer Interface Design', 'Web Interaction Design']
         }
-      ],
-      works_example: [
-        'Packaging design for premium Japanese supermarket - Leek Kimchi',
-        'Visual Design and Packaging｜M2Labo Business Card Design'
       ]
     },
-    planning: {
-      name: 'Event Planning and Proposal',
-      slogan: ['Dedicated team with efficiency', 'Flexibly organizing exhibition and other events'],
-      description: `With a team of creative talents rooted in design and a culture that breaks boundaries, we provide unexpected innovative solutions for your projects. 
-            We are experienced in collaborating with external teams and quickly adapting to your requirements. From curriculum design to exhibition events, we offer professional execution and coordination.`,
-      content: [
+    content: {
+      title: 'Content Design and Event Coordination',
+      text: 'At the core of our approach is sustainability, complemented by design-driven transformation and digital strategies. We prioritize conversion rates and content to elevate the image, communication, and experience of people and things, giving the industry a refreshed appearance.',
+      items: [
         {
-          title: 'Event Planning',
-          services: [
-            {
-              subtitle: 'Event Planning Services',
-              items: [
-                'Development of curriculum, activities, and exhibition themes',
-                'Content planning',
-                'Execution and coordination',
-                'On-site hosting and management',
-                'Event visual design and social media marketing'
-              ]
-            }
+          title: 'Sustainable and Circular Business Planning',
+          list: [
+            'ESG Carbon Reduction Planning',
+            'Sustainable Supply Chain',
+            'Circular Economy Strategies'
+          ]
+        },
+        {
+          title: 'Service and Experience Design',
+          list: ['User Research', 'Customer Experience', 'Market and Data Analysis']
+        },
+        {
+          title: 'Curriculum and Event Design',
+          list: ['Technical Course Planning', 'Design Workshops']
+        },
+        {
+          title: 'Exhibition Planning and Execution',
+          list: ['Brand Image Showcases', 'Exhibition Interactive Experiences']
+        },
+        {
+          title: 'Digital Transformation and Reengineering',
+          list: [
+            'Digital Archiving and Translation',
+            'Digital Tool Evaluation and Implementation',
+            'Operational Process Transformation'
           ]
         }
-      ],
-      works_example: ['Event Documentation｜Lathe Machine Workshop']
+      ]
     }
   },
   member: {
     charles: {
       name: '凱元 Charles',
       position: 'Chief Executive Officer (CEO)',
-      description: 'Thinking of Aquarius',
+      description: 'Aquarius Logic',
       skills: ['Food Supply Chain', 'HCI', 'International Planning', 'System Design'],
       intro: ``
     },
     hannah: {
       name: '詩涵 Hannah',
       position: 'Chief Technology Officer (CTO)',
-      description: 'Your Concerns 2 Surprises',
+      description: 'Transform Your Concerns to Surprises',
       skills: [
         'Web-Based System Architecture Design',
         'Project Management and Quality Control',
@@ -607,7 +470,7 @@ const locale = {
     },
     arthur: {
       name: '柏維 Arthur',
-      position: 'Fullstack Engineer',
+      position: 'Full-stack Engineer',
       description: 'Dual OS of Humanity & Science',
       skills: [
         'API Construction and Design',
@@ -618,7 +481,7 @@ const locale = {
     },
     albert: {
       name: '書彥 Albert',
-      position: 'Fullstack Engineer',
+      position: 'Full-stack Engineer',
       description: 'Unicorn Lover',
       skills: [
         'Server Configuration',
@@ -632,7 +495,7 @@ const locale = {
     lily: {
       name: '子涵 Lily',
       position: 'Hardware Engineer',
-      description: 'Either Playing Ball or Coding',
+      description: 'Either Playing Volleyball or Coding',
       skills: [
         'Embedded System Development',
         'Hardware Architecture Design',
@@ -655,7 +518,7 @@ const locale = {
     ivy: {
       name: '逸青 Ivy',
       position: 'Business Designer',
-      description: 'Coffee Cup Bottom Inspiration Is Here',
+      description: 'Coffee Cup Bottom, Where Inspiration Is Found',
       skills: [
         'Brand Identity',
         'Participatory Design',
@@ -687,7 +550,7 @@ const locale = {
     },
     andrew: {
       name: '俊宇 Andrew',
-      position: 'Software Engineer',
+      position: 'Technical Consultant',
       description: 'Embracing Ingenuity',
       skills: ['HCI', 'Spatial Computing', 'Computer Graphics', 'Product Design'],
       intro: ``
@@ -695,7 +558,7 @@ const locale = {
     ti: {
       name: '彩緹 Ti',
       position: 'Business Developer',
-      description: 'Novel and Innovative, Weird But Professional',
+      description: 'Imaginative and Professional',
       skills: [
         'Business Proposal and Presentation',
         'Cold Calling',
@@ -710,21 +573,25 @@ const locale = {
       title: `Embracing Traditional Wisdom, Creating a Novel Experience`,
       description: `Welcome to share your ideas with Kohaku.
         We will transform your small sparks of inspiration into brilliant solutions!
+
         Please provide us with detailed information about your industry needs and your vision.
         We will get in touch with you ASAP!`
     },
     form: {
       project_type: 'Project Type',
       project_types: {
-        system: 'System Design / Development and Maintenance',
-        design: 'Brand Identity and Visual Design',
-        content: 'Event Planning and Proposal'
+        system: 'System Design and Full-Stack Development',
+        design: 'Commercial Design and Prototype Fabrication',
+        content: 'Content Design and Event Coordination'
       },
       budget: 'Budget',
+      budget_placeholder: 'Ex：NTD. 50000',
       estimated_project_time: 'Estimated Project Timeline',
       project_content_overview: 'Project Content Overview',
+      project_content_overview_placeholder: 'Project Objectives, Initial Concepts, Reference Cases',
       contact_person: 'Contact Person',
       company_brand_name: 'Company / Brand Name',
+      company_brand_name_placeholder: 'If unavailable, please provide personal information',
       contact_number: 'Contact Number',
       contact_email: 'Contact Email',
       validation: {

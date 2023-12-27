@@ -36,7 +36,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
           What is Kohaku Studio ?
         </h2>
         <article class="brand-wrap__desc scroll-animation-slide-and-fade-in">
-          <p class="font-7">{{ $t('about.brand.meaning') }}</p>
+          <p class="font-7">{{ $t('about.brand.text') }}</p>
         </article>
       </div>
       <div class="amber-wrap">

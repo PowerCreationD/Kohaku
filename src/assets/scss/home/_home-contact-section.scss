@@ -51,6 +51,7 @@
   &__text {
     margin-bottom: 40px;
     z-index: 1;
+    white-space: pre-line;
     @media (max-width: var.$mobile-device-max-width) {
       text-align: center;
     }
