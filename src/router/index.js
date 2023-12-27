@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const KOHAKU = '琥白Kohaku'
+const KOHAKU = '琥白 Kohaku - 設計驅動永續 Design for Nature'
 const validTypes = ['system', 'design', 'content']
 
 const router = createRouter({
@@ -34,11 +34,11 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: `${KOHAKU} | About`,
+        title: `About｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | About'
+            content: `About｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -64,11 +64,11 @@ const router = createRouter({
         }
       },
       meta: {
-        title: `${KOHAKU} | Services`,
+        title: `Services｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Services'
+            content: `Services｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -87,11 +87,11 @@ const router = createRouter({
       component: () => import('../views/WorkView.vue'),
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`,
+        title: `Work｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Work'
+            content: `Work｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -109,11 +109,11 @@ const router = createRouter({
       component: () => import('../views/WorkDetailView.vue'),
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`,
+        title: `Work｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Work'
+            content: `Work｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -130,11 +130,11 @@ const router = createRouter({
       name: 'member',
       component: () => import('../views/MemberView.vue'),
       meta: {
-        title: `${KOHAKU} | Member`,
+        title: `Member｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Member'
+            content: `Member｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -151,11 +151,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
       meta: {
-        title: `${KOHAKU} | Contact`,
+        title: `Contact｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Contact'
+            content: `Contact｜${KOHAKU}`
           },
           {
             property: 'og:description',
