@@ -121,6 +121,10 @@
     &-sub-link {
       padding: 16px 0;
       margin: 0 16px;
+      width: calc(100% - 32px);
+      justify-content: flex-start;
+      white-space: nowrap;
+
       & + .header__navigation-sub-link {
         border-top: 1px solid map-get(var.$color, gold);
       }

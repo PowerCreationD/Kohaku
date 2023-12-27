@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 324 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 324 28" fill="none" preserveAspectRatio="none">
     <path
       d="M0.310059 27C28.8588 27 70.9953 27 102.838 27C142.641 27 153.792 17.5255 176.094 17.5255C198.396 17.5255 208.308 27 251.054 27C285.25 27 288.017 27 324 27"
       :stroke="color == 'white' ? '#fff' : '#E6AE4A'"
