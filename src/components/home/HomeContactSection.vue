@@ -19,16 +19,16 @@ import imgAmber from '@/assets/image/global/image_amber.png'
         alt="group image"
         class="contact-section__photo"
       />
-      <p class="contact-section__slogan font-3 scroll-animation-slide-and-fade-in">從聯繫開始，拓展永續的無限可能！</p>
-      <pre class="contact-section__text font-7 scroll-animation-slide-and-fade-in">
-→ 有想法？告訴我們！
-→ 有預算？交給我們！
-→ 有目標？一起實現吧！</pre
-      >
+      <p class="contact-section__slogan font-3 scroll-animation-slide-and-fade-in">
+        {{ $t('home.contact.title') }}
+      </p>
+      <p class="contact-section__text font-7 scroll-animation-slide-and-fade-in">
+        {{ $t('home.contact.text') }}
+      </p>
 
       <router-link to="/contact">
         <button class="button--primary button--primary-round contact-section__button">
-          聯絡我們
+          {{ $t('global.buttons.contact_us') }}
         </button>
       </router-link>
 
