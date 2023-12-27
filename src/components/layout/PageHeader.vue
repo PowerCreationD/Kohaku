@@ -80,7 +80,7 @@
         :defaultIndex="defaultLocal"
         :color="isTransparentMode ? 'white' : 'gold'"
       />
-      <button class="button--tertiary header__contact-button">
+      <button class="button--tertiary header__contact-button" @click="goToContact">
         {{ $t('global.buttons.contact_us') }}
       </button>
     </div>
@@ -190,6 +190,9 @@ export default {
     },
     goHome() {
       this.$router.push('/')
+    },
+    goToContact() {
+      this.$router.push('/contact')
     },
     openSidebar() {
       this.sidebarOpen = true
