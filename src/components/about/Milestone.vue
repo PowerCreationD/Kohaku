@@ -4,9 +4,9 @@ import imgAmber from '@/assets/image/global/image_amber-line.png'
 
 <template>
   <div class="milestone">
-    <h2 class="milestone__title font-1">MILESTONE</h2>
+    <h2 class="milestone__title font-1 scroll-animation-slide-and-fade-in">MILESTONE</h2>
     <img :src="imgAmber" alt="amber" class="amber" />
-    <div class="milestone-wrap">
+    <div class="milestone-wrap scroll-animation-slide-and-fade-in">
       <div class="phase" v-for="item in milestone" :key="item.key">
         <div class="phase__date-and-thing">
           <p class="phase__date font-7">{{ item.date }}</p>

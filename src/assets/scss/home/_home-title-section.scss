@@ -21,8 +21,6 @@
   }
 
   &__title {
-    color: map-get(var.$color, $key: white);
-
     @media (max-width: var.$mobile-device-max-width) {
       margin-bottom: 8px;
     }
