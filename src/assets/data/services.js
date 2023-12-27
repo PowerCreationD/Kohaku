@@ -58,7 +58,6 @@ const serviceItem = {
           i18n.global.t('services.system.items[3].list[0]'),
           i18n.global.t('services.system.items[3].list[1]'),
           i18n.global.t('services.system.items[3].list[2]'),
-          i18n.global.t('services.system.items[3].list[3]')
         ]
       },
       {
