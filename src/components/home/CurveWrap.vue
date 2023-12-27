@@ -1,6 +1,6 @@
 <template>
   <div class="home-curve">
-    <div class="home-curve-section home-curve-section--top">
+    <div class="home-curve-section home-curve-section--top animation-fade-in-background">
       <svg
         class="home-curve-section__curve home-curve-section__curve--top"
         viewBox="0 0 1376 56"
@@ -24,7 +24,7 @@
       </svg>
     </div>
     <slot></slot>
-    <div class="home-curve-section home-curve-section--bottom">
+    <div class="home-curve-section home-curve-section--bottom animation-fade-in-background">
       <svg
         class="home-curve-section__curve home-curve-section__curve--bottom"
         viewBox="0 0 1036 63"

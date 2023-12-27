@@ -11,7 +11,7 @@ import imgAmber from '@/assets/image/global/image_amber.png'
     <div class="contact-section__info-container">
       <div class="contact-section__wave-and-title">
         <WaveImage :color="'gold'" class="contact-section__wave" />
-        <h2 class="contact-section__title font-1">CONTACT US</h2>
+        <h2 class="contact-section__title font-1 scroll-animation-slide-and-fade-in">CONTACT US</h2>
       </div>
       <img
         v-show="mobileCheck.value"
@@ -19,8 +19,8 @@ import imgAmber from '@/assets/image/global/image_amber.png'
         alt="group image"
         class="contact-section__photo"
       />
-      <p class="contact-section__slogan font-3">從聯繫開始，拓展永續的無限可能！</p>
-      <pre class="contact-section__text font-7">
+      <p class="contact-section__slogan font-3 scroll-animation-slide-and-fade-in">從聯繫開始，拓展永續的無限可能！</p>
+      <pre class="contact-section__text font-7 scroll-animation-slide-and-fade-in">
 → 有想法？告訴我們！
 → 有預算？交給我們！
 → 有目標？一起實現吧！</pre
