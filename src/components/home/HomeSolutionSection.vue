@@ -18,7 +18,7 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
     </div>
     <div class="solution-section__carousel">
       <div class="carousel-section carousel-section-top">
-        <h2 class="carousel-section-top__title font-1">SOLUTION</h2>
+        <h2 class="carousel-section-top__title font-1 scroll-animation-slide-and-fade-in">SOLUTION</h2>
         <div class="carousel-section-top__menu">
           <div class="carousel-section-top__menu-divider">|</div>
           <template v-for="(item, idx) in solution" :key="item.title">
@@ -37,9 +37,9 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
             :color="mobileCheck.value ? 'gold' : 'white'"
             class="carousel-section-middle__wave"
           />
-          <h3 class="carousel-section-middle__title font-1">{{ solution[index].title }}</h3>
+          <h3 class="carousel-section-middle__title font-1 scroll-animation-slide-and-fade-in">{{ solution[index].title }}</h3>
         </div>
-        <pre class="carousel-section-middle__text font-7">{{
+        <pre class="carousel-section-middle__text font-7 scroll-animation-slide-and-fade-in">{{
           solution[index].text.join('\n')
         }}</pre>
       </div>

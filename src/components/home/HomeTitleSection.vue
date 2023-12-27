@@ -9,18 +9,18 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
   <CurveWrap>
     <div class="home__section home-title-section">
       <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title">設計驅動永續</p>
-        <div class="home-title-section__comma">
+        <p class="font-0 home-title-section__title animation-gradient-text">設計驅動永續</p>
+        <div class="home-title-section__comma animation-fade-in-delay">
           <CommaIcon color="'white'" />
         </div>
       </div>
       <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title">Design for Nature</p>
-        <div class="home-title-section__comma">
+        <p class="font-0 home-title-section__title animation-gradient-text">Design for Nature</p>
+        <div class="home-title-section__comma animation-fade-in-delay">
           <CommaIcon color="'white'" />
         </div>
       </div>
-      <p class="font-6 home-title-section__text">
+      <p class="font-6 home-title-section__text animation-fade-in-background">
         我們致力於食農、工藝、社群和地方議題<br />
         由In-house的設計研究與工程技術團隊，持續實現對永續的無限可能
       </p>
@@ -30,7 +30,7 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
       />
     </div>
 
-    <div class="home-title-section__geometries">
+    <div class="home-title-section__geometries animation-fade-in-background">
       <img
         class="home-title-section__geometry home-title-section__geometry--translucent"
         :src="imageCube"
@@ -42,7 +42,7 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
         alt="imagePentagon"
       />
       <img
-        class="home-title-section__geometry"
+        class="home-title-section__geometry animation-rotation"
         :src="imagKohakuAndSphere"
         alt="imagKohakuAndSphere"
       />

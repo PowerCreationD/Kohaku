@@ -10,26 +10,32 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
     <page-title>ABOUT</page-title>
 
     <!-- * Intro -->
-    <div class="intro">
+    <div class="intro show-on-scroll">
       <article class="intro__desc">
-        <p class="font-7">{{ $t('about.description.introduction') }}</p>
+        <p class="font-7 scroll-animation-slide-and-fade-in">
+          {{ $t('about.description.introduction') }}
+        </p>
       </article>
 
-      <video class="intro__video" width="320" height="240" type="video/mp4" autoplay muted loop>
+      <video class="intro__video scroll-animation-slide-and-fade-in" width="320" height="240" type="video/mp4" autoplay muted loop>
         <source :src="videoSrc" />
       </video>
 
       <article class="intro__desc">
-        <p class="font-7">{{ $t('about.description.mission_values') }}</p>
+        <p class="font-7 scroll-animation-slide-and-fade-in">
+          {{ $t('about.description.mission_values') }}
+        </p>
       </article>
     </div>
 
     <!-- * Kohaku -->
-    <div class="brand-section">
+    <div class="brand-section show-on-scroll">
       <div class="brand-wrap">
-        <img class="brand-wrap__logo" :src="imgLogo" alt="kohaku" />
-        <h2 class="brand-wrap__name font-1">What is Kohaku Studio ?</h2>
-        <article class="brand-wrap__desc">
+        <img class="brand-wrap__logo scroll-animation-slide-and-fade-in" :src="imgLogo" alt="kohaku" />
+        <h2 class="brand-wrap__name font-1 scroll-animation-slide-and-fade-in">
+          What is Kohaku Studio ?
+        </h2>
+        <article class="brand-wrap__desc scroll-animation-slide-and-fade-in">
           <p class="font-7">{{ $t('about.brand.meaning') }}</p>
         </article>
       </div>
@@ -40,7 +46,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
     </div>
 
     <!-- * Milestone -->
-    <milestone></milestone>
+    <milestone class="show-on-scroll"></milestone>
   </div>
 </template>
 

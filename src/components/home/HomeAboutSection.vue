@@ -6,11 +6,11 @@ import amberImage from '@/assets/image/global/image_amber.png'
 <template>
   <div class="home__section about-section">
     <div class="about-section__container words-section">
-      <p class="font-1 words-section__title">琥白</p>
-      <p class="font-1 words-section__title">Kohaku Studio</p>
+      <p class="font-1 words-section__title scroll-animation-slide-and-fade-in">琥白</p>
+      <p class="font-1 words-section__title scroll-animation-slide-and-fade-in">Kohaku Studio</p>
       <img class="words-section__wave-image" :src="waveImage" alt="wave" />
       <article class="words-section__text">
-        <p class="font-7">{{ $t('about.brand.meaning') }}</p>
+        <p class="font-7 scroll-animation-slide-and-fade-in">{{ $t('about.brand.meaning') }}</p>
       </article>
       <div class="words-section__background">
         <img

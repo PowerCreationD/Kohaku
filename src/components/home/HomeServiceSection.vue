@@ -9,9 +9,9 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
     <div class="service-section__title title-section">
       <div class="title-section__image-and-title">
         <img class="title-section__image" :src="waveImage" alt="wave" />
-        <h2 class="title-section__title font-1">SERVICE</h2>
+        <h2 class="title-section__title font-1 scroll-animation-slide-and-fade-in">SERVICE</h2>
       </div>
-      <p class="title-section__text font-7">
+      <p class="title-section__text font-7 scroll-animation-slide-and-fade-in">
         你的創新概念準備起跑了嗎？讓琥白幫助您的願景步伐穩健的實現！
       </p>
     </div>
@@ -19,11 +19,11 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
     <div class="service-section__content content-section">
       <div v-for="item in steps" :key="item.step" class="content-section__container">
         <div class="content-section__image-and-line">
-          <img :src="item.image" :alt="item.title" class="content-section__image" />
+          <img :src="item.image" :alt="item.title" class="content-section__image " />
           <div v-if="item.step === 1" class="content-section__line"></div>
         </div>
 
-        <div class="content-section__description">
+        <div class="content-section__description scroll-animation-slide-and-fade-in">
           <span class="description-section__step font-3">STEP{{ item.step }}</span>
           <span class="description-section__title font-3">{{ item.title }}</span>
           <span class="description-section__text font-7">{{ item.text }}</span>
