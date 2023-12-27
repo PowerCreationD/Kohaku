@@ -152,18 +152,23 @@
     &__wave-and-title {
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: min-content;
+      max-width: 100%;
       @media (max-width: var.$mobile-device-max-width) {
         margin: auto;
       }
     }
     &__wave {
       margin-bottom: 12px;
+      height: 26px;
+      width: 100%;
     }
     &__title {
       max-width: 100%;
       width: max-content;
       margin-bottom: 16px;
+      text-wrap: pretty;
       @media (max-width: var.$mobile-device-max-width) {
         text-align: center;
         margin-bottom: 20px;
