@@ -48,7 +48,7 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
         </p>
       </div>
       <div class="carousel-section carousel-section-bottom">
-        <button class="button button--quaternary" @click="viewService()">
+        <button class="button button--quaternary" @click="viewService()" aria-label="View More">
           {{ $t('global.buttons.view_more') }}
         </button>
         <div class="carousel-section-bottom__keywords-container">
