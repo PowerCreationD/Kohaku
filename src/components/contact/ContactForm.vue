@@ -60,7 +60,7 @@
               v-model="date.value.startDate"
               :max="date.value.endDate"
             />
-            <span class="form__date--dash">~</span>
+            <span class="form__date--dash font-7">~</span>
             <input
               class="form__date--picker font-7"
               type="date"
