@@ -67,6 +67,7 @@
     width: 310px;
     transform: rotate(94deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-5 {
@@ -82,6 +83,7 @@
     width: 332px;
     transform: rotate(144deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-7 {
@@ -102,6 +104,7 @@
     width: 350px;
     transform: rotate(84deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-9 {
@@ -122,6 +125,7 @@
     width: 330px;
     transform: rotate(170deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-11 {
@@ -137,6 +141,7 @@
     width: 320px;
     transform: rotate(339deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-13 {
@@ -180,6 +185,7 @@
     width: 300px;
     transform: rotate(196deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   &-19 {
@@ -195,5 +201,6 @@
     width: 304px;
     transform: rotate(14deg);
     filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 }

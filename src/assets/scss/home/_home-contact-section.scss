@@ -51,6 +51,7 @@
   &__text {
     margin-bottom: 40px;
     z-index: 1;
+    position: relative;
     white-space: pre-line;
     @media (max-width: var.$mobile-device-max-width) {
       text-align: center;
@@ -76,6 +77,7 @@
       top: -61px;
       opacity: 0.4;
       filter: blur(5px);
+      -webkit-backdrop-filter: blur(6px);
       @media (max-width: var.$mobile-device-max-width) {
         left: -120px;
       }

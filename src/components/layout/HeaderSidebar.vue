@@ -25,10 +25,10 @@ import backgroundImageUrl from '@/assets/image/global/background_sidebar.png'
         </router-link>
         <div
           v-else
-          class="link link--no-underline link--text-black link--uppercase sidebar__navigation-container"
+          class="link link--no-underline link--text-black sidebar__navigation-container"
         >
           <div class="sidebar__navigation-link" @click="drawerOpen = !drawerOpen">
-            {{ navigationLink.text }}
+            <div class="link--uppercase">{{ navigationLink.text }}</div>
             <DropdownArrowIcon
               class="dropdown__down-arrow sidebar__navigation-arrow"
               :class="{ 'sidebar__navigation-arrow--open': drawerOpen }"
@@ -42,7 +42,7 @@ import backgroundImageUrl from '@/assets/image/global/background_sidebar.png'
               />
               <router-link
                 :to="item.link"
-                class="link link--no-underline link--text-black link--uppercase sidebar__navigation-sub-link"
+                class="link link--no-underline link--text-black sidebar__navigation-sub-link"
               >
                 {{ item.text }}
               </router-link>

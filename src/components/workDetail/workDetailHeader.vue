@@ -4,7 +4,7 @@
       <span class="font-3">{{ name }}</span>
     </div>
     <div class="work-detail-header-section__content">
-      <p class="font-7">{{ content }}</p>
+      <p class="work-detail-header-section__text font-7">{{ content }}</p>
     </div>
     <div class="work-detail-header-section__keywords-container">
       <span v-for="item in keywords" :key="item" class="work-detail-header-section__keyword font-6"
