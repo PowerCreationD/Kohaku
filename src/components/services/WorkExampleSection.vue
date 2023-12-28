@@ -5,8 +5,12 @@
       <workCard v-for="(work, index) in workExample" :key="index" :work="work"></workCard>
     </div>
     <div class="button-section">
-      <button class="button-section__see-more-button button--tertiary" @click="goToWork()">
-        {{$t('global.buttons.view_more')}}
+      <button
+        class="button-section__see-more-button button--tertiary"
+        @click="goToWork()"
+        aria-label="Go To Work"
+      >
+        {{ $t('global.buttons.view_more') }}
       </button>
     </div>
   </div>

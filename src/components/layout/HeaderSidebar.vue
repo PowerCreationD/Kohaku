@@ -4,13 +4,17 @@ import backgroundImageUrl from '@/assets/image/global/background_sidebar.png'
 
 <template>
   <div class="sidebar">
-    <img class="background-image" :src="backgroundImageUrl" />
-    <button class="button button--icon sidebar__hamburger-menu" @click="closeSidebar">
+    <img class="background-image" :src="backgroundImageUrl" alt="backgroundImage"/>
+    <button
+      class="button button--icon sidebar__hamburger-menu"
+      @click="closeSidebar"
+      aria-label="Close Sidebar"
+    >
       <div class="hamburger-menu hamburger-menu--rotated">
         <div class="hamburger-menu__line" v-for="n in 3" :key="n"></div>
       </div>
     </button>
-    <button class="button button-logo" @click="goHome">
+    <button class="button button-logo" @click="goHome" aria-label="Go Home">
       <kohakuLogo :size="'big'" :color="'black'" class="sidebar__big-logo" />
     </button>
     <div class="sidebar__link-container">
@@ -23,11 +27,11 @@ import backgroundImageUrl from '@/assets/image/global/background_sidebar.png'
         >
           {{ navigationLink.text }}
         </router-link>
-        <div
-          v-else
-          class="link link--no-underline link--text-black sidebar__navigation-container"
-        >
-          <div class="sidebar__navigation-link link--uppercase font-7" @click="drawerOpen = !drawerOpen">
+        <div v-else class="link link--no-underline link--text-black sidebar__navigation-container">
+          <div
+            class="sidebar__navigation-link link--uppercase font-7"
+            @click="drawerOpen = !drawerOpen"
+          >
             {{ navigationLink.text }}
             <DropdownArrowIcon
               class="dropdown__down-arrow sidebar__navigation-arrow"

@@ -11,7 +11,7 @@
     ]"
   >
     <div class="header__section header__section--logo">
-      <button class="button button--logo" @click="goHome">
+      <button class="button button--logo" aria-label="Go Home" @click="goHome">
         <KohakuLogo
           :size="'big'"
           :color="isTransparentMode ? 'white' : 'black'"
@@ -21,7 +21,7 @@
     </div>
     <div class="header__section header__section--navigation">
       <template v-if="isMobileDevice">
-        <button class="button button--logo" @click="openSidebar">
+        <button class="button button--logo" aria-label="Open Sidebar" @click="openSidebar">
           <div class="hamburger-menu">
             <div
               class="hamburger-menu__line"
@@ -80,7 +80,11 @@
         :defaultIndex="defaultLocal"
         :color="isTransparentMode ? 'white' : 'gold'"
       />
-      <button class="button--tertiary header__contact-button" @click="goToContact">
+      <button
+        class="button--tertiary header__contact-button"
+        @click="goToContact"
+        aria-label="Contact Us"
+      >
         {{ $t('global.buttons.contact_us') }}
       </button>
     </div>

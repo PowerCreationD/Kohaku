@@ -27,7 +27,10 @@ import imgAmber from '@/assets/image/global/image_amber.png'
       </p>
 
       <router-link to="/contact">
-        <button class="button--primary button--primary-round contact-section__button">
+        <button
+          class="button--primary button--primary-round contact-section__button"
+          aria-label="Contact Us"
+        >
           {{ $t('global.buttons.contact_us') }}
         </button>
       </router-link>

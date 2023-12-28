@@ -5,6 +5,7 @@
         class="filter-item__all"
         :class="isSelectAll ? 'filter-item__all--active font-6' : 'font-7'"
         @click="filterAll"
+        aria-label="All"
       >
         {{ $t('work.project_types.all') }}
       </button>
