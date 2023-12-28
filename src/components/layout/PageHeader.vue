@@ -253,7 +253,6 @@ export default {
       this.$forceUpdate()
     },
     sidebarOpen(newValue) {
-      console.log(newValue)
       const body = document.body
       body.style.overflow = newValue ? 'hidden' : 'auto'
     }

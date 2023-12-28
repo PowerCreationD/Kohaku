@@ -65,6 +65,7 @@
     color: map-get(var.$color--primary, white);
     word-break: break-word;
     hyphens: auto;
+    -webkit-hyphens: auto;
     text-align: center;
     flex-grow: 1;
   }
@@ -95,6 +96,7 @@
     margin-right: 8px;
     word-break: break-word;
     hyphens: auto;
+    -webkit-hyphens: auto;
   }
   &__intro {
     white-space: pre-wrap;

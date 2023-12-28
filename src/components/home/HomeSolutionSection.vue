@@ -43,9 +43,9 @@ import contentApp from '@/assets/image/home/image_solution-content-app.jpg'
             {{ solution[index].title }}
           </h3>
         </div>
-        <pre class="carousel-section-middle__text font-7 scroll-animation-slide-and-fade-in">{{
-          solution[index].text.join('\n')
-        }}</pre>
+        <p class="carousel-section-middle__text font-7 scroll-animation-slide-and-fade-in">
+          {{ solution[index].text.join('\n') }}
+        </p>
       </div>
       <div class="carousel-section carousel-section-bottom">
         <button class="button button--quaternary" @click="viewService()">
