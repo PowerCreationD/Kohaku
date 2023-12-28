@@ -44,18 +44,18 @@
           </router-link>
           <div
             v-else
-            class="link link--no-underline header__navigation-link font-7"
+            class="link link--no-underline link--uppercase header__navigation-link font-7"
             :class="isTransparentMode ? 'link--text-white' : 'link--text-black'"
             @mouseover="drawerOpen = true"
             @mouseleave="drawerOpen = false"
           >
-            <div class="link--uppercase">{{ navigationLink.text }}</div>
+            {{ navigationLink.text }}
             <div class="header__navigation-drawer" v-show="drawerOpen">
               <router-link
                 v-for="item in navigationLink.subPages"
                 :key="item.link"
                 :to="item.link"
-                class="link link--no-underline font-7 header__navigation-sub-link"
+                class="link link--no-underline link--capitalize font-7 header__navigation-sub-link"
                 :class="
                   isTransparentMode &&
                   $route['name'] === 'home' &&
