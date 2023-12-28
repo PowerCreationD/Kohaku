@@ -24,7 +24,7 @@
       </picture>
     </div>
 
-    <button class="return-button button--primary" @click="returnPrevPage">
+    <button class="return-button button--primary" @click="returnPrevPage" aria-label="Back">
       {{ $t('global.buttons.back') }}
     </button>
   </div>

@@ -87,7 +87,12 @@
           ></textarea>
         </div>
         <div class="form__btns">
-          <button type="button" class="button button--primary form__btns--next" @click="validate()">
+          <button
+            type="button"
+            class="button button--primary form__btns--next"
+            aria-label="Next"
+            @click="validate()"
+          >
             {{ $t('global.buttons.next') }}
           </button>
         </div>
@@ -144,6 +149,7 @@
             type="button"
             class="button button--secondary form__btns--prev"
             @click="formPage--, scroll()"
+            aria-label="Prev"
           >
             {{ $t('global.buttons.prev') }}
           </button>
@@ -151,6 +157,7 @@
             type="submit"
             class="button button--primary form__btns--submit"
             @click="validate()"
+            aria-label="Submit"
           >
             {{ $t('global.buttons.submit_form') }}
           </button>
@@ -164,7 +171,11 @@
       <div class="popup__header font-4">{{ $t('contact.popup.confirm_submit') }}</div>
       <div class="popup__content font-7">{{ $t('contact.popup.submit_form_confirmation') }}</div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--back" @click="popup = 0">
+        <button
+          class="button button--secondary popup__buttons--back"
+          @click="popup = 0"
+          aria-label="Back"
+        >
           {{ $t('global.buttons.back') }}
         </button>
         <button
@@ -172,6 +183,7 @@
           :disabled="sending"
           :class="{ 'popup__buttons--disabled': sending }"
           @click="sendEmail()"
+          aria-label="Send Email"
         >
           {{ $t('global.buttons.submit_form') }}
         </button>
@@ -186,7 +198,11 @@
         {{ $t('contact.popup.form_confirmation_message') }}
       </div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--close" @click="popup = 0">
+        <button
+          class="button button--secondary popup__buttons--close"
+          @click="popup = 0"
+          aria-label="Close"
+        >
           {{ $t('global.buttons.close') }}
         </button>
       </div>

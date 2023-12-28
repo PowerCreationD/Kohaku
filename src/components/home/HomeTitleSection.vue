@@ -31,6 +31,7 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
       <img
         class="background-image home-title-section__background-image"
         :src="titleSectionBackgroundImageUrl"
+        alt="titleSectionBackgroundImage"
       />
     </div>
 
