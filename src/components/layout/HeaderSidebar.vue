@@ -27,8 +27,8 @@ import backgroundImageUrl from '@/assets/image/global/background_sidebar.png'
           v-else
           class="link link--no-underline link--text-black sidebar__navigation-container"
         >
-          <div class="sidebar__navigation-link" @click="drawerOpen = !drawerOpen">
-            <div class="link--uppercase">{{ navigationLink.text }}</div>
+          <div class="sidebar__navigation-link link--uppercase font-7" @click="drawerOpen = !drawerOpen">
+            {{ navigationLink.text }}
             <DropdownArrowIcon
               class="dropdown__down-arrow sidebar__navigation-arrow"
               :class="{ 'sidebar__navigation-arrow--open': drawerOpen }"

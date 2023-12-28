@@ -63,6 +63,10 @@
     text-transform: uppercase;
   }
 
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
   &__icon {
     width: auto;
     height: 17px;

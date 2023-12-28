@@ -11,6 +11,15 @@
     font-weight: map-get(var.$font-weight--mobile, $index);
     line-height: map-get(var.$line-height--mobile, $index);
   }
+
+  &::selection {
+    background: map-get(var.$color, gold);
+    color: map-get(var.$color, white);
+  }
+  &::-moz-selection {
+    background: map-get(var.$color, gold);
+    color: map-get(var.$color, white);
+  }
 }
 
 @for $i from 0 through 7 {
