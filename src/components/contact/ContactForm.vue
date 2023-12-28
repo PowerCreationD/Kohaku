@@ -485,6 +485,7 @@ export default {
           this.sending = 0
           this.popup = 2
           console.log('SUCCESS!', result.text)
+          this.resetForm()
         },
         (error) => {
           this.sending = 0
@@ -493,6 +494,52 @@ export default {
           console.log('FAILED...', error.text)
         }
       )
+    },
+    resetForm() {
+      this.formPage = 1
+      this.selectedProjectTypes = {
+        value: [],
+        error: undefined,
+        msg: undefined
+      }
+      this.budget = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.date = {
+        value: {
+          startDate: undefined,
+          endDate: undefined
+        },
+        error: undefined,
+        msg: undefined
+      }
+      this.description = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.person = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.company = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.phone = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.email = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
     }
   },
   watch: {
