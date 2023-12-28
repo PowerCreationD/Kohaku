@@ -101,6 +101,7 @@
   }
   &__text {
     text-align: justify;
+    -webkit-hyphens: auto;
     hyphens: auto;
   }
 }
