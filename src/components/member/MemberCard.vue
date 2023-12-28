@@ -6,7 +6,7 @@ import decoImage from '@/assets/image/member/frame_decoration.png'
 <template>
   <div class="member-card">
     <div class="member-card__profile">
-      <img class="member-card__profile-image" :src="imageSrc" :alt="person.id" />
+      <img class="member-card__profile-image" loading="lazy" :src="imageSrc" :alt="person.id" />
       <img class="member-card__profile-deco" :src="decoImage" alt="deco" />
     </div>
     <img class="member-card__wave-image" :src="waveImage" alt="wave" />
