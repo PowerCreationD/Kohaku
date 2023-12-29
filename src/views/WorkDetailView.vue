@@ -407,26 +407,26 @@ export default {
             { index: 1, path: japan_gov_business_card_1, fileName: '1.jpg' }
           ]
         },
-        {
-          id: 13,
-          type: 'design',
-          project: 'breakfast-nightshop-branding',
-          name: this.$t('work.projects[13].name'),
-          layoutType: 3,
-          content: this.$t('work.projects[13].content'),
-          keywords: [
-            this.$t('work.projects[13].keywords[0]'),
-            this.$t('work.projects[13].keywords[1]'),
-            this.$t('work.projects[13].keywords[2]'),
-            this.$t('work.projects[13].keywords[3]')
-          ],
-          images: [
-            { index: 0, path: breakfast_nightshop_branding_0, fileName: '0.jpg' },
-            { index: 1, path: breakfast_nightshop_branding_1, fileName: '1.jpg' },
-            { index: 2, path: breakfast_nightshop_branding_2, fileName: '2.jpg' },
-            { index: 3, path: breakfast_nightshop_branding_3, fileName: '3.jpg' }
-          ]
-        },
+        // {
+        //   id: 13,
+        //   type: 'design',
+        //   project: 'breakfast-nightshop-branding',
+        //   name: this.$t('work.projects[13].name'),
+        //   layoutType: 3,
+        //   content: this.$t('work.projects[13].content'),
+        //   keywords: [
+        //     this.$t('work.projects[13].keywords[0]'),
+        //     this.$t('work.projects[13].keywords[1]'),
+        //     this.$t('work.projects[13].keywords[2]'),
+        //     this.$t('work.projects[13].keywords[3]')
+        //   ],
+        //   images: [
+        //     { index: 0, path: breakfast_nightshop_branding_0, fileName: '0.jpg' },
+        //     { index: 1, path: breakfast_nightshop_branding_1, fileName: '1.jpg' },
+        //     { index: 2, path: breakfast_nightshop_branding_2, fileName: '2.jpg' },
+        //     { index: 3, path: breakfast_nightshop_branding_3, fileName: '3.jpg' }
+        //   ]
+        // },
         {
           id: 14,
           type: 'design',
