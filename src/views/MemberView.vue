@@ -109,17 +109,17 @@ export default {
           ]
         },
         {
-          id: 'lishin',
-          name: this.$t('member.lishin.name'),
-          position: this.$t('member.lishin.position'),
-          intro: this.$t('member.lishin.intro'),
-          description: this.$t('member.lishin.description'),
+          id: 'lihsin',
+          name: this.$t('member.lihsin.name'),
+          position: this.$t('member.lihsin.position'),
+          intro: this.$t('member.lihsin.intro'),
+          description: this.$t('member.lihsin.description'),
           skills: [
-            this.$t('member.lishin.skills[0]'),
-            this.$t('member.lishin.skills[1]'),
-            this.$t('member.lishin.skills[2]'),
-            this.$t('member.lishin.skills[3]'),
-            this.$t('member.lishin.skills[4]')
+            this.$t('member.lihsin.skills[0]'),
+            this.$t('member.lihsin.skills[1]'),
+            this.$t('member.lihsin.skills[2]'),
+            this.$t('member.lihsin.skills[3]'),
+            this.$t('member.lihsin.skills[4]')
           ]
         },
         {
