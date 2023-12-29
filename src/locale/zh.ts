@@ -431,9 +431,9 @@ const locale = {
     },
     jozie: {
       name: '趯瑾 Jozie',
-      position: '設計工程師',
+      position: 'UX 工程師',
       description: '獨立音樂探勘者',
-      skills: ['前端框架開發', '網站模板建置與客製化', '可視化與互動設計', 'SEO優化'],
+      skills: ['UX', '前端框架開發', '網站模板建置與客製化', 'SEO優化'],
       intro: ``
     },
     ivy: {
@@ -443,8 +443,8 @@ const locale = {
       skills: ['品牌形象', '參與式設計', '跨域企劃發想與共構', '平面設計', '圖像與插畫設計'],
       intro: ``
     },
-    lishin: {
-      name: '立心 Lishin',
+    lihsin: {
+      name: '立心 Lihsin',
       position: '產品設計師',
       description: '最終確定版.final.final.3dm',
       skills: ['產品設計', '3D建模渲染', '模型製作', 'Rhinoceros 3D', 'KeyShot'],

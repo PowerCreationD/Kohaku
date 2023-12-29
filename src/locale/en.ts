@@ -505,12 +505,12 @@ const locale = {
     },
     jozie: {
       name: '趯瑾 Jozie',
-      position: 'Design Engineer',
+      position: 'UX Engineer',
       description: 'Indie Music Explorer',
       skills: [
+        'UX',
         'Frontend Framework Development',
         'Website Template Setup and Customization',
-        'Visualization and Interaction Design',
         'SEO Optimization'
       ],
       intro: ``
@@ -528,8 +528,8 @@ const locale = {
       ],
       intro: ``
     },
-    lishin: {
-      name: '立心 Lishin',
+    lihsin: {
+      name: '立心 Lihsin',
       position: 'Product Designer',
       description: 'TheFinalVersion.final.final.3dm',
       skills: [
