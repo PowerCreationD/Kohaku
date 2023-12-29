@@ -26,7 +26,7 @@ const locale = {
       slogan: 'Design for Nature',
       text: [
         '我們致力於食農、工藝、社群和地方議題',
-        '由In-house的設計研究與工程技術團隊，持續實現對永續的無限可能'
+        '由 In-house 的設計研究與工程技術團隊，持續實現對永續的無限可能'
       ]
     },
     about: {
