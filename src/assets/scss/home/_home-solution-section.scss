@@ -180,6 +180,7 @@
       text-align: left;
       text-wrap: pretty;
       -webkit-text-wrap: pretty;
+      white-space: pre-line;
       @media (max-width: var.$mobile-device-max-width) {
         text-align: center;
       }
