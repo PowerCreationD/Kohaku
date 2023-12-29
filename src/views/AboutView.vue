@@ -33,7 +33,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
       <div class="brand-wrap">
         <img class="brand-wrap__logo scroll-animation-slide-and-fade-in" :src="imgLogo" alt="kohaku" />
         <h2 class="brand-wrap__name font-1 scroll-animation-slide-and-fade-in">
-          What is Kohaku Studio ?
+          What is 琥白（Kohaku）？
         </h2>
         <article class="brand-wrap__desc scroll-animation-slide-and-fade-in">
           <p class="font-7">{{ $t('about.brand.text') }}</p>
