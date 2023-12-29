@@ -11,7 +11,7 @@ import mainImage9 from '@/assets/image/work/design/recycled-pottery-furniture/0.
 import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import mainImage11 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import mainImage12 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
-import mainImage13 from '@/assets/image/work/design/breakfast-nightshop-branding/0.jpg'
+// import mainImage13 from '@/assets/image/work/design/breakfast-nightshop-branding/0.jpg'
 import mainImage14 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
 import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/0.jpg'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
@@ -211,21 +211,21 @@ export default {
             this.$t('work.projects[12].keywords[1]')
           ]
         },
-        {
-          id: 13,
-          type: 'design',
-          project: 'breakfast-nightshop-branding',
-          mainImage: mainImage13,
-          name: this.$t('work.projects[13].name'),
-          layoutType: 3,
-          content: this.$t('work.projects[13].content'),
-          keywords: [
-            this.$t('work.projects[13].keywords[0]'),
-            this.$t('work.projects[13].keywords[1]'),
-            this.$t('work.projects[13].keywords[2]'),
-            this.$t('work.projects[13].keywords[3]')
-          ]
-        },
+        // {
+        //   id: 13,
+        //   type: 'design',
+        //   project: 'breakfast-nightshop-branding',
+        //   mainImage: mainImage13,
+        //   name: this.$t('work.projects[13].name'),
+        //   layoutType: 3,
+        //   content: this.$t('work.projects[13].content'),
+        //   keywords: [
+        //     this.$t('work.projects[13].keywords[0]'),
+        //     this.$t('work.projects[13].keywords[1]'),
+        //     this.$t('work.projects[13].keywords[2]'),
+        //     this.$t('work.projects[13].keywords[3]')
+        //   ]
+        // },
         {
           id: 14,
           type: 'design',
