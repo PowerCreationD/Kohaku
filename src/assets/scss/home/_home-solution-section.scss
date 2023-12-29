@@ -125,13 +125,13 @@
       justify-content: center;
     }
     &__title {
-      width: 50%;
+      width: 45%;
       @media (max-width: var.$mobile-device-max-width) {
         text-align: center;
       }
     }
     &__menu {
-      width: 50%;
+      width: 55%;
       display: flex;
       justify-content: center;
       align-items: center;
