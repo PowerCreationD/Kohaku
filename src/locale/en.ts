@@ -138,32 +138,73 @@ const locale = {
 
     milestone: [
       {
-        date: '2021/09',
-        content: [
-          `In collaboration with "株式会社エムスクエア・ラボ (m2labo)" and "株式会社やさいバス (Vegibus)".`,
-          `創次方 (Power Creation) was established with their investment.`
+        year: 2021,
+        title: 'Energetic Launch',
+        events: [
+          {
+            name: 'Established Power Creation Co., Ltd. with investment from a Japanese entity, emphasizing customized software and hardware system development'
+          },
+          { name: 'Established office in Kaohsiung' },
+          {
+            name: 'Engaged by Japanese company やさいバス (Vegibus) for system development and subsequent maintenance'
+          }
         ]
       },
       {
-        date: '2022/04',
-        content: [
-          `We received the first-stage grant from the Ministry of Education's "U-start創新創業計畫" for the 111th fiscal year.`
+        year: 2022,
+        title: 'Venturing into Craftsmanship',
+        events: [
+          {
+            name: `Secured funding from Taiwan's largest innovation and entrepreneurship competition, U-Start, leading to the establishment of Kohaku Co., Ltd., with a focus on content and design`
+          },
+          { name: 'Set up base in Taipei' },
+          {
+            name: 'Collaborated with Japanese companies スズキ (Suzuki) and エムスクエア・ラボ (M2Labo) to develop small mobile vehicle control software and service design'
+          },
+          {
+            name: 'Undertook projects with the National Taiwan Craft Research and Development Institute (NTCRI)',
+            detail: [
+              `Published Prof. Huang Jun Jie's "Fundamentals of Woodworking Tools Operation" book`,
+              'Conducted a lathe technology translation research workshop'
+            ]
+          }
         ]
       },
       {
-        date: '2022/07',
-        content: [`Kohaku was established.`]
-      },
-      {
-        date: '2022/08',
-        content: [
-          `We partnered with "スズキ株式会社 (Suzuki)" and "株式会社エムスクエア・ラボ (m2labo)" to develop “MobileMover”. `
-        ]
-      },
-      {
-        date: '2023/03',
-        content: [
-          `We collaborated with "株式会社CuboRex" and acquired product distribution rights.`
+        year: 2023,
+        title: 'Rooted in Taiwan',
+        events: [
+          {
+            name: 'Repurchased Japanese ownership, making Power Creation Co., Ltd. a fully-owned Taiwanese company'
+          },
+          {
+            name: 'Entrusted by Japanese アグリプロデュース (Agreproduce) for food design business'
+          },
+          {
+            name: 'Undertook projects with the National Taiwan Craft Research and Development Institute (NTCRI), working on the establishment of a craft gene database'
+          },
+          {
+            name: 'Collaborated with PanSci Knowledge Co., Ltd., for agricultural innovation course design and technical consultation at National Cheng Kung University (NCKU)'
+          },
+          {
+            name: 'Established a "Taiwan Booth" in a Japanese chain supermarket, showcasing selected products from Taiwanese agricultural associations'
+          },
+          {
+            name: 'Undertook projects for the Daxi Wood Art Ecomuseum in Taoyuan, conducting research and translating the work of woodcraft artists'
+          },
+          {
+            name: 'Managed overseas marketing for the Taiwan Banana Research Institute, setting up booths in Japanese supermarkets for promotion'
+          },
+          {
+            name: 'Received support from the Kaohsiung Smart Agriculture Subsidy Program, developing a mobile robot with sprayer feature'
+          },
+          {
+            name: 'Power Creation Co., Ltd. received funding from the Kaohsiung SBIR, conducting early-stage research on sustainable food and agriculture supply chains'
+          },
+          { name: 'Collaborated with Green 1 Specialized Organic Anana Farm in Taiwan, serving as a contact for innovative pineapple fiber technology applications' },
+          { name: 'Entrusted by Japanese company ユーアイシステムズ (UI Systems) for system design services' },
+          { name: 'Collaborated with Japanese company エムスクエア・ラボ (M2Labo), undertaking system design projects for NTT West Japan' },
+          { name: 'Entered into a comprehensive collaboration with the TAi Group, establishing an office at the TAi Urban Resort in Kaohsiung' }
         ]
       }
     ]

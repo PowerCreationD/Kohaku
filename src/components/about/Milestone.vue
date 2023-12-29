@@ -7,14 +7,20 @@ import imgAmber from '@/assets/image/global/image_amber-line.png'
     <h2 class="milestone__title font-1 scroll-animation-slide-and-fade-in">MILESTONE</h2>
     <img :src="imgAmber" alt="amber" class="amber" />
     <div class="milestone-wrap scroll-animation-slide-and-fade-in">
-      <div class="phase" v-for="item in milestone" :key="item.key">
-        <div class="phase__date-and-thing">
-          <p class="phase__date font-7">{{ item.date }}</p>
-          <div class="phase__things">
-            <p class="phase__thing font-7" v-for="thing in item.content" :key="thing">
-              {{ thing }}
-            </p>
-          </div>
+      <div class="phase" v-for="phase in milestone" :key="phase.year">
+        <div class="phase__year-and-title">
+          <p class="phase__year font-6">{{ phase.year }}</p>
+          <p class="phase__title font-6">{{ phase.title }}</p>
+        </div>
+        <div class="phase__contents">
+          <template v-for="event in phase.events" :key="event">
+            <p class="phase__contents-event font-7">{{ event.name }}</p>
+            <template v-if="event.detail"
+              ><p class="phase__contents-detail font-7" v-for="item in event.detail" :key="item">
+                {{ item }}
+              </p></template
+            >
+          </template>
         </div>
       </div>
     </div>
