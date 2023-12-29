@@ -257,7 +257,7 @@ const locale = {
   },
   services: {
     tool_title: '客製化開發工具',
-    example_title: '作品案例',
+    example_title: 'Work',
     system: {
       title: '系統設計與全端開發',
       text: '以 SaaS （Software as a Service）軟體服務出發，提供產業系統客製、跨系統整合服務，串接系統及終端設備，協助收集數據幫助決策，優化流程提升供銷效能。',
