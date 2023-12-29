@@ -433,7 +433,7 @@ const locale = {
   },
   member: {
     charles: {
-      name: '凱元 Charles',
+      name: 'Charles',
       position: '最高経営責任者',
       description: '水瓶座のロジック',
       skills: [
@@ -445,14 +445,14 @@ const locale = {
       intro: ``
     },
     hannah: {
-      name: '詩涵 Hannah',
+      name: 'Hannah',
       position: '最高技術責任者',
       description: 'あなたの質問をサプライズに！',
       skills: ['Web ベース アーキテクチャ設計', 'プロジェクト管理と品質管理', 'データ分析と可視化'],
       intro: ``
     },
     arthur: {
-      name: '柏維 Arthur',
+      name: 'Arthur',
       position: 'フルスタックエンジニア',
       description: '文科と理系のデュアルシステム',
       skills: [
@@ -463,7 +463,7 @@ const locale = {
       intro: ``
     },
     albert: {
-      name: '書彥 Albert',
+      name: 'Albert',
       position: 'フルスタックエンジニア',
       description: 'ユニコーン愛好者',
       skills: [
@@ -476,7 +476,7 @@ const locale = {
       intro: ``
     },
     lily: {
-      name: '子涵 Lily',
+      name: 'Lily',
       position: 'ハードウェアエンジニア',
       description: 'ボール打ってるか、コード打ってるんだ',
       skills: [
@@ -487,7 +487,7 @@ const locale = {
       intro: ``
     },
     jozie: {
-      name: '趯瑾 Jozie',
+      name: 'Jozie',
       position: 'UX エンジニア',
       description: 'インディーロック探究者',
       skills: [
@@ -499,7 +499,7 @@ const locale = {
       intro: ``
     },
     ivy: {
-      name: '逸青 Ivy',
+      name: 'Ivy',
       position: 'グラフィックデザイナー',
       description: '発想源はコーヒーカップの底にある',
       skills: [
@@ -512,7 +512,7 @@ const locale = {
       intro: ``
     },
     lihsin: {
-      name: '立心 Lihsin',
+      name: 'Lihsin',
       position: 'プロダクトデザイナー',
       description: '最終確定版.final.final.3dm',
       skills: [
@@ -525,14 +525,14 @@ const locale = {
       intro: ``
     },
     brooke: {
-      name: '采倫 Brooke',
+      name: 'Brooke',
       position: '最高執行役員',
       description: 'デザインを南極まで！',
       skills: ['サービスデザイン', 'データプランニング', 'コンテンツ企画', 'イベント実行'],
       intro: ``
     },
     andrew: {
-      name: '俊宇 Andrew',
+      name: 'Andrew',
       position: 'ソフトウェアエンジニア',
       description: '創造力を抱く',
       skills: [
@@ -544,7 +544,7 @@ const locale = {
       intro: ``
     },
     ti: {
-      name: '彩緹 Ti',
+      name: 'Ti',
       position: 'ビジネス開発',
       description: '変わった可愛さ、そして真面目',
       skills: [

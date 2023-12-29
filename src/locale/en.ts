@@ -451,14 +451,14 @@ const locale = {
   },
   member: {
     charles: {
-      name: '凱元 Charles',
+      name: 'Charles',
       position: 'Chief Executive Officer (CEO)',
       description: 'Aquarius Logic',
       skills: ['Food Supply Chain', 'HCI', 'International Planning', 'System Design'],
       intro: ``
     },
     hannah: {
-      name: '詩涵 Hannah',
+      name: 'Hannah',
       position: 'Chief Technology Officer (CTO)',
       description: 'Transform Your Concerns to Surprises',
       skills: [
@@ -469,7 +469,7 @@ const locale = {
       intro: ``
     },
     arthur: {
-      name: '柏維 Arthur',
+      name: 'Arthur',
       position: 'Full-stack Engineer',
       description: 'Dual OS of Humanity & Science',
       skills: [
@@ -480,7 +480,7 @@ const locale = {
       intro: ``
     },
     albert: {
-      name: '書彥 Albert',
+      name: 'Albert',
       position: 'Full-stack Engineer',
       description: 'Unicorn Lover',
       skills: [
@@ -493,7 +493,7 @@ const locale = {
       intro: ``
     },
     lily: {
-      name: '子涵 Lily',
+      name: 'Lily',
       position: 'Hardware Engineer',
       description: 'Either Playing Volleyball or Coding',
       skills: [
@@ -504,7 +504,7 @@ const locale = {
       intro: ``
     },
     jozie: {
-      name: '趯瑾 Jozie',
+      name: 'Jozie',
       position: 'UX Engineer',
       description: 'Indie Music Explorer',
       skills: [
@@ -516,7 +516,7 @@ const locale = {
       intro: ``
     },
     ivy: {
-      name: '逸青 Ivy',
+      name: 'Ivy',
       position: 'Business Designer',
       description: 'Coffee Cup Bottom, Where Inspiration Is Found',
       skills: [
@@ -529,7 +529,7 @@ const locale = {
       intro: ``
     },
     lihsin: {
-      name: '立心 Lihsin',
+      name: 'Lihsin',
       position: 'Product Designer',
       description: 'TheFinalVersion.final.final.3dm',
       skills: [
@@ -542,21 +542,21 @@ const locale = {
       intro: ``
     },
     brooke: {
-      name: '采倫 Brooke',
+      name: 'Brooke',
       position: 'Chief Operating Officer (COO)',
       description: 'Design in Antarctica',
       skills: ['Service Design', 'Content Planning', 'Event Planning', 'Event Execution'],
       intro: ``
     },
     andrew: {
-      name: '俊宇 Andrew',
+      name: 'Andrew',
       position: 'Technical Consultant',
       description: 'Embracing Ingenuity',
       skills: ['HCI', 'Spatial Computing', 'Computer Graphics', 'Product Design'],
       intro: ``
     },
     ti: {
-      name: '彩緹 Ti',
+      name: 'Ti',
       position: 'Business Developer',
       description: 'Imaginative and Professional',
       skills: [

@@ -395,77 +395,77 @@ const locale = {
   },
   member: {
     charles: {
-      name: '凱元 Charles',
+      name: 'Charles',
       position: '執行長',
       description: '水瓶座邏輯',
       skills: ['食農供應鏈', '人機互動', '國際企劃', '系統設計'],
       intro: ``
     },
     hannah: {
-      name: '詩涵 Hannah',
+      name: 'Hannah',
       position: '技術長',
       description: '把你的問題變成驚喜',
       skills: ['Web-Based 系統架構設計', '專案管理與品質控管', '數據分析與可視化'],
       intro: ``
     },
     arthur: {
-      name: '柏維 Arthur',
+      name: 'Arthur',
       position: '全端工程師',
       description: '文科與理組雙作業系統',
       skills: ['API建構與設計', '軟硬體整合開發', '機器人作業系統'],
       intro: ``
     },
     albert: {
-      name: '書彥 Albert',
+      name: 'Albert',
       position: '全端工程師',
       description: '獨角獸愛好者',
       skills: ['伺服器配置', '網站效能優化', '資料庫設計', '資訊安全', 'AI導入'],
       intro: ``
     },
     lily: {
-      name: '子涵 Lily',
+      name: 'Lily',
       position: '硬體工程師',
       description: '我不是在打球就是在打Code',
       skills: ['嵌入式系統開發', '硬體架構設計', '硬體環境相容性評估'],
       intro: ``
     },
     jozie: {
-      name: '趯瑾 Jozie',
+      name: 'Jozie',
       position: 'UX 工程師',
       description: '獨立音樂探勘者',
       skills: ['UX', '前端框架開發', '網站模板建置與客製化', 'SEO優化'],
       intro: ``
     },
     ivy: {
-      name: '逸青 Ivy',
+      name: 'Ivy',
       position: '商業設計師',
       description: '咖啡杯底 靈感在這裡！',
       skills: ['品牌形象', '參與式設計', '跨域企劃發想與共構', '平面設計', '圖像與插畫設計'],
       intro: ``
     },
     lihsin: {
-      name: '立心 Lihsin',
+      name: 'Lihsin',
       position: '產品設計師',
       description: '最終確定版.final.final.3dm',
       skills: ['產品設計', '3D建模渲染', '模型製作', 'Rhinoceros 3D', 'KeyShot'],
       intro: ``
     },
     brooke: {
-      name: '采倫 Brooke',
+      name: 'Brooke',
       position: '營運長',
       description: '想做南極的設計',
       skills: ['服務設計', '資料規劃', '內容企劃', '活動執行'],
       intro: ``
     },
     andrew: {
-      name: '俊宇 Andrew',
+      name: 'Andrew',
       position: '技術顧問',
       description: '用科技發想實現設計巧思！',
       skills: ['人機互動', '空間運算', '電腦圖學', '產品設計'],
       intro: ``
     },
     ti: {
-      name: '彩緹 Ti',
+      name: 'Ti',
       position: '商務開發',
       description: '奇怪可愛也認真專業',
       skills: ['提案與簡報', '陌生開發', '跨域合作規劃與執行', '產品解說介紹'],
