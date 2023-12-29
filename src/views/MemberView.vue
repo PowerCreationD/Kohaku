@@ -45,19 +45,6 @@ export default {
           ]
         },
         {
-          id: 'brooke',
-          name: this.$t('member.brooke.name'),
-          position: this.$t('member.brooke.position'),
-          intro: this.$t('member.brooke.intro'),
-          description: this.$t('member.brooke.description'),
-          skills: [
-            this.$t('member.brooke.skills[0]'),
-            this.$t('member.brooke.skills[1]'),
-            this.$t('member.brooke.skills[2]'),
-            this.$t('member.brooke.skills[3]')
-          ]
-        },
-        {
           id: 'hannah',
           name: this.$t('member.hannah.name'),
           position: this.$t('member.hannah.position'),
@@ -70,31 +57,16 @@ export default {
           ]
         },
         {
-          id: 'lishin',
-          name: this.$t('member.lishin.name'),
-          position: this.$t('member.lishin.position'),
-          intro: this.$t('member.lishin.intro'),
-          description: this.$t('member.lishin.description'),
+          id: 'brooke',
+          name: this.$t('member.brooke.name'),
+          position: this.$t('member.brooke.position'),
+          intro: this.$t('member.brooke.intro'),
+          description: this.$t('member.brooke.description'),
           skills: [
-            this.$t('member.lishin.skills[0]'),
-            this.$t('member.lishin.skills[1]'),
-            this.$t('member.lishin.skills[2]'),
-            this.$t('member.lishin.skills[3]'),
-            this.$t('member.lishin.skills[4]')
-          ]
-        },
-        {
-          id: 'ivy',
-          name: this.$t('member.ivy.name'),
-          position: this.$t('member.ivy.position'),
-          intro: this.$t('member.ivy.intro'),
-          description: this.$t('member.ivy.description'),
-          skills: [
-            this.$t('member.ivy.skills[0]'),
-            this.$t('member.ivy.skills[1]'),
-            this.$t('member.ivy.skills[2]'),
-            this.$t('member.ivy.skills[3]'),
-            this.$t('member.ivy.skills[4]')
+            this.$t('member.brooke.skills[0]'),
+            this.$t('member.brooke.skills[1]'),
+            this.$t('member.brooke.skills[2]'),
+            this.$t('member.brooke.skills[3]')
           ]
         },
         {
@@ -136,6 +108,35 @@ export default {
             this.$t('member.albert.skills[4]')
           ]
         },
+        {
+          id: 'lishin',
+          name: this.$t('member.lishin.name'),
+          position: this.$t('member.lishin.position'),
+          intro: this.$t('member.lishin.intro'),
+          description: this.$t('member.lishin.description'),
+          skills: [
+            this.$t('member.lishin.skills[0]'),
+            this.$t('member.lishin.skills[1]'),
+            this.$t('member.lishin.skills[2]'),
+            this.$t('member.lishin.skills[3]'),
+            this.$t('member.lishin.skills[4]')
+          ]
+        },
+        {
+          id: 'ivy',
+          name: this.$t('member.ivy.name'),
+          position: this.$t('member.ivy.position'),
+          intro: this.$t('member.ivy.intro'),
+          description: this.$t('member.ivy.description'),
+          skills: [
+            this.$t('member.ivy.skills[0]'),
+            this.$t('member.ivy.skills[1]'),
+            this.$t('member.ivy.skills[2]'),
+            this.$t('member.ivy.skills[3]'),
+            this.$t('member.ivy.skills[4]')
+          ]
+        },
+
         {
           id: 'lily',
           name: this.$t('member.lily.name'),
