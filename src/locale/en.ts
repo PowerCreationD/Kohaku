@@ -493,14 +493,14 @@ const locale = {
   member: {
     charles: {
       name: 'Charles',
-      position: 'Chief Executive Officer (CEO)',
+      position: 'CEO',
       description: 'Aquarius Logic',
       skills: ['Food Supply Chain', 'HCI', 'International Planning', 'System Design'],
       intro: ``
     },
     hannah: {
       name: 'Hannah',
-      position: 'Chief Technology Officer (CTO)',
+      position: 'CTO',
       description: 'Transform Your Concerns to Surprises',
       skills: [
         'Web-Based System Architecture Design',
@@ -584,7 +584,7 @@ const locale = {
     },
     brooke: {
       name: 'Brooke',
-      position: 'Chief Operating Officer (COO)',
+      position: 'COO',
       description: 'Design in Antarctica',
       skills: ['Service Design', 'Content Planning', 'Event Planning', 'Event Execution'],
       intro: ``
