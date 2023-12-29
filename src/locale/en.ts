@@ -23,7 +23,7 @@ const locale = {
       name: 'Design-Driven Sustainability',
       slogan: 'Design for Nature',
       text: [
-        'We are dedicated to addressing issues related to agriculture, craftsmanship, community, and locality.',
+        'We are dedicated to addressing issues related to agriculture, craftsmanship, and locality.',
         'Our in-house design research and engineering teams are continually working to realize infinite possibilities for sustainability.'
       ]
     },

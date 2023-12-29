@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const KOHAKU = '琥白 Kohaku - 設計驅動永續 Design for Nature'
+const KOHAKU = '琥白 Kohaku - Design for Nature'
 const validTypes = ['system', 'design', 'content']
 
 const router = createRouter({
