@@ -1,7 +1,7 @@
 <script setup>
-import imgAmber from '@/assets/image/global/image_amber.png'
-import imgLogo from '@/assets/image/about/logo_kohaku_small.png'
-import imgBanner from '@/assets/image/about/banner_image.jpg'
+import imgAmber from '@/assets/image/global/image_amber-circle.png'
+import imgLogo from '@/assets/image/global/logo_kohaku-small-white.png'
+import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
 </script>
 
 <template>
@@ -10,51 +10,47 @@ import imgBanner from '@/assets/image/about/banner_image.jpg'
     <page-title>ABOUT</page-title>
 
     <!-- * Intro -->
-    <div class="intro">
-      <div class="intro-tittle-and-logo">
-        <div class="intro__title">
-          <article>
-            <p>{{ $t('about.description.introduction') }}</p>
-          </article>
-        </div>
-        <div class="intro__logo">
-          <img :src="logo.src" :alt="logo.alt" />
-        </div>
-      </div>
-      <div class="intro-banner-and-desc">
-        <div class="intro__banner">
-          <img :src="banner.src" :alt="banner.alt" />
-        </div>
-        <div class="intro__desc">
-          <article>
-            <p>{{ $t('about.description.mission_values') }}</p>
-          </article>
-        </div>
-      </div>
+    <div class="intro show-on-scroll">
+      <article class="intro__desc">
+        <p class="font-7 scroll-animation-slide-and-fade-in">
+          {{ $t('about.description.introduction') }}
+        </p>
+      </article>
+
+      <video class="intro__video scroll-animation-slide-and-fade-in" width="320" height="240" type="video/mp4" autoplay muted loop>
+        <source :src="videoSrc" />
+      </video>
+
+      <article class="intro__desc">
+        <p class="font-7 scroll-animation-slide-and-fade-in">
+          {{ $t('about.description.mission_values') }}
+        </p>
+      </article>
     </div>
 
     <!-- * Kohaku -->
-    <div class="brand">
-      <div class="brand__wrap">
-        <h2 class="brand__name">{{ $t('about.brand.name') }}</h2>
-        <article class="brand__desc">
-          <p>{{ $t('about.brand.meaning') }}</p>
+    <div class="brand-section show-on-scroll">
+      <div class="brand-wrap">
+        <img class="brand-wrap__logo scroll-animation-slide-and-fade-in" :src="imgLogo" alt="kohaku" />
+        <h2 class="brand-wrap__name font-1 scroll-animation-slide-and-fade-in">
+          What is 琥白（Kohaku）？
+        </h2>
+        <article class="brand-wrap__desc scroll-animation-slide-and-fade-in">
+          <p class="font-7">{{ $t('about.brand.text') }}</p>
         </article>
-        <div class="brand__amber">
-          <img class="brand__amber--left-top" :src="amber.src" :alt="amber.alt" />
-          <img class="brand__amber--right-top" :src="amber.src" :alt="amber.alt" />
-          <img class="brand__amber--left-bottom" :src="amber.src" :alt="amber.alt" />
-          <img class="brand__amber--right-bottom" :src="amber.src" :alt="amber.alt" />
-        </div>
+      </div>
+      <div class="amber-wrap">
+        <img :src="imgAmber" alt="amber" class="amber-wrap__amber amber-wrap__amber--left" />
+        <img :src="imgAmber" alt="amber" class="amber-wrap__amber amber-wrap__amber--right" />
       </div>
     </div>
 
     <!-- * Milestone -->
-    <milestone></milestone>
+    <milestone class="show-on-scroll"></milestone>
   </div>
 </template>
 
-<style src="@/assets/scss/about.scss" scoped></style>
+<style src="@/assets/scss/about/about.scss" scoped></style>
 
 <script>
 import milestone from '@/components/about/Milestone.vue'
@@ -62,20 +58,7 @@ import pageTitle from '@/components/global/PageTitle.vue'
 export default {
   components: { milestone, pageTitle },
   data() {
-    return {
-      banner: {
-        src: imgBanner,
-        alt: 'banner_image'
-      },
-      logo: {
-        src: imgLogo,
-        alt: 'logo_kohaku'
-      },
-      amber: {
-        src: imgAmber,
-        alt: 'image_amber'
-      }
-    }
+    return {}
   }
 }
 </script>

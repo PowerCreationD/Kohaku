@@ -1,0 +1,39 @@
+@use '../_base/typography' as typography;
+@use '../_base/variable' as var;
+
+.page-title-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+
+  &__wave-and-title {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    @media (max-width: 767px) {
+      margin-right: 12px;
+    }
+  }
+
+  &__wave {
+    width: auto;
+    margin-bottom: 12px;
+    height: 12px;
+  }
+
+  &__title {
+    @include typography.font($index: 1);
+    width: fit-content;
+    text-wrap: pretty;
+  }
+
+  &__space {
+    border-top: 1px solid map-get(var.$color, grey-3);
+    flex-grow: 1;
+  }
+}

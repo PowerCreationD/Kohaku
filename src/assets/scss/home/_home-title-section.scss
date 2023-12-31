@@ -1,0 +1,91 @@
+@use '../_base/variable' as var;
+
+.home-title-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-top: calc(var.$large-header-height / -2);
+  padding-right: var.$main-content-right-and-left-padding;
+  padding-left: var.$main-content-right-and-left-padding;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    margin-top: calc(var.$small-header-height / -2);
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: flex-end;
+    z-index: 10;
+  }
+
+  &__title {
+    @media (max-width: var.$mobile-device-max-width) {
+      margin-bottom: 8px;
+    }
+  }
+  &__comma {
+    position: relative;
+    top: 28px;
+    margin-left: 16px;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      .commaIcon {
+        width: 19px;
+      }
+      margin-left: 4px;
+    }
+  }
+
+  &__text {
+    color: map-get(var.$color, $key: white);
+    margin-top: 64px;
+  }
+
+  &__background-image {
+    height: calc(100% + 100px);
+    top: -100px;
+  }
+
+  &__geometries {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    margin-top: calc(-50vh - 9%);
+    @media (max-width: var.$mobile-device-max-width) {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      margin-top: -90vh;
+    }
+  }
+
+  &__geometry {
+    width: 18%;
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: min(200px, 35%);
+    }
+    &--translucent {
+      opacity: 0.5;
+    }
+
+    &:last-child {
+      width: 9%;
+      object-fit: cover;
+      object-position: left;
+      @media (max-width: var.$mobile-device-max-width) {
+        display: none;
+      }
+    }
+    @media (max-width: var.$mobile-device-max-width) {
+      &:first-child {
+        width: 15%;
+        object-fit: cover;
+        object-position: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use '../_base/variable' as var;
+
+.home-curve-section {
+  width: 100%;
+
+  &--top {
+    position: absolute;
+    z-index: 2;
+    top: var.$large-header-height;
+    @media (max-width: var.$mobile-device-max-width) {
+      padding: 0 var.$small-header-height;
+      top: var.$small-header-height;
+    }
+  }
+
+  &--bottom {
+    position: absolute;
+  }
+
+  &__curve {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 var.$large-header-padding;
+
+    @media (max-width: var.$pad-device-max-width) {
+      padding: 0 var.$medium-header-padding;
+    }
+    @media (max-width: var.$mobile-device-max-width) {
+      padding: 0 var.$small-header-padding;
+    }
+
+    &--top {
+      top: 0;
+      left: 0;
+      @media (max-width: var.$mobile-device-max-width) {
+        top: 1px;
+      }
+    }
+
+    &--bottom {
+      bottom: var.$large-header-height;
+      @media (max-width: var.$mobile-device-max-width) {
+        bottom: var.$small-header-height;
+      }
+    }
+  }
+}

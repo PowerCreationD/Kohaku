@@ -1,0 +1,146 @@
+@use '../_base/typography' as typography;
+@use '../_base/variable' as var;
+
+.milestone {
+  margin-top: 76px;
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: min(1000px, 100%);
+    margin-left: auto;
+  }
+
+  .phase {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    @media (max-width: 768px) {
+      gap: 1rem;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    &__year-and-title {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align-last: left;
+      @media (max-width: 768px) {
+        flex-direction: row;
+        gap: 12px;
+      }
+    }
+    &__year {
+      margin-bottom: 1rem;
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+        margin-left: 1rem;
+      }
+    }
+    &__title {
+      width: 7rem;
+      text-wrap: pretty;
+      @media (max-width: 768px) {
+        width: 100%;
+        &::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 25px;
+          display: block;
+          background-color: map-get(var.$color, grey-2);
+          position: absolute;
+          top: 8px;
+          left: -3px;
+        }
+      }
+    }
+    &__contents {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: calc(100% - 1rem);
+        display: block;
+        background-color: map-get(var.$color, grey-2);
+        position: absolute;
+        top: 34px;
+        @media (max-width: 768px) {
+          height: 100%;
+          top: 0;
+        }
+      }
+      &::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 25px;
+        display: block;
+        background-color: map-get(var.$color, grey-2);
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      &-event {
+        margin-left: 2rem;
+        @media (max-width: 768px) {
+          margin-left: 1rem;
+        }
+      }
+      &-detail {
+        margin-left: 4rem;
+        margin-top: -0.5rem;
+        @media (max-width: 768px) {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+  .amber {
+    position: absolute;
+    left: 125px;
+    bottom: 442px;
+    z-index: -1;
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .milestone {
+    margin-top: 64px;
+
+    &-wrap {
+      margin-top: 62px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+    .phase {
+      &:not(:first-child)::before {
+        width: 38px;
+      }
+      &__date {
+        margin-right: 12px;
+        line-height: 76px;
+        height: 76px;
+        width: 76px;
+      }
+      .phase__thing + .phase__thing {
+        margin-top: 8px;
+      }
+    }
+  }
+}

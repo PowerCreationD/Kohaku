@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ServiceView from '../views/ServiceView.vue'
-import WorkView from '../views/WorkView.vue'
-import WorkDetailView from '../views/WorkDetailView.vue'
 
-const KOHAKU = '琥白Kohaku'
+const KOHAKU = '琥白 Kohaku - Design for Nature'
+const validTypes = ['system', 'design', 'content']
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -35,11 +34,11 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: `${KOHAKU} | About`,
+        title: `About｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | About'
+            content: `About｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -52,16 +51,24 @@ const router = createRouter({
       }
     },
     {
-      path: '/services/:id?',
+      path: '/services/:type?',
       name: 'Services',
-      component: ServiceView,
+      component: () => import('../views/ServiceView.vue'),
       props: true,
+      beforeEnter: (to, from, next) => {
+        const requestedType = to.params.type
+        if (requestedType && validTypes.includes(requestedType)) {
+          next()
+        } else {
+          next('/services/system')
+        }
+      },
       meta: {
-        title: `${KOHAKU} | Services`,
+        title: `Services｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Services'
+            content: `Services｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -69,22 +76,22 @@ const router = createRouter({
           }
         ],
         canonicalUrl: (to) => {
-          let servicesUrl = `/${to.params.id}`
-          return `https://kohakustudio.co/services${to.params.id ? servicesUrl : ''}`
+          let servicesUrl = `/${to.params.type}`
+          return `https://kohakustudio.co/services${to.params.type ? servicesUrl : ''}`
         }
       }
     },
     {
       path: '/work/:type?',
       name: 'Work',
-      component: WorkView,
+      component: () => import('../views/WorkView.vue'),
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`,
+        title: `Work｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Work'
+            content: `Work｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -99,14 +106,14 @@ const router = createRouter({
     {
       path: '/work/:project',
       name: 'WorkDetail',
-      component: WorkDetailView,
+      component: () => import('../views/WorkDetailView.vue'),
       props: true,
       meta: {
-        title: `${KOHAKU} | Work`,
+        title: `Work｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Work'
+            content: `Work｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -123,11 +130,11 @@ const router = createRouter({
       name: 'member',
       component: () => import('../views/MemberView.vue'),
       meta: {
-        title: `${KOHAKU} | Member`,
+        title: `Member｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Member'
+            content: `Member｜${KOHAKU}`
           },
           {
             property: 'og:description',
@@ -144,11 +151,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
       meta: {
-        title: `${KOHAKU} | Contact`,
+        title: `Contact｜${KOHAKU}`,
         metaTags: [
           {
             property: 'og:title',
-            content: '琥白Kohaku | Contact'
+            content: `Contact｜${KOHAKU}`
           },
           {
             property: 'og:description',

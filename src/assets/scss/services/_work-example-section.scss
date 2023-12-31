@@ -1,0 +1,44 @@
+@use '../_base/variable' as var;
+
+.work-example-section {
+  width: 100vw;
+  margin-left: calc((100vw - 100%) / -2);
+  background-color: map-get(var.$color, grey-3);
+  padding: 56px max(16px, 5vw, (100vw - 1200px)/2);
+  @media (max-width: 767px) {
+    padding: 64px max(16px, 5vw, (100vw - 1200px)/2);
+  }
+  &__title {
+    color: map-get(var.$color, white);
+    margin-bottom: 56px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    .work-card {
+      flex-basis: 0;
+      flex-grow: 1;
+      color: map-get(var.$color, white);
+
+      @media (max-width: 767px) {
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+
+.button-section {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

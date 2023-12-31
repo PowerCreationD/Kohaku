@@ -7,7 +7,7 @@
           :class="{ error: selectedProjectTypes.error }"
           :errorMsg="selectedProjectTypes.msg"
         >
-          <label class="form__title" for="project-type">{{
+          <label class="form__title font-3" for="project-type">{{
             $t('contact.form.project_type')
           }}</label>
           <div class="form__type-checkbox">
@@ -17,7 +17,7 @@
               :key="project.id"
               class="checkbox"
             >
-              <label :for="project.id" class="checkbox__label"
+              <label :for="project.id" class="checkbox__label font-7"
                 ><input
                   type="checkbox"
                   :id="project.id"
@@ -35,27 +35,34 @@
           :class="{ error: budget.error }"
           :errorMsg="budget.msg"
         >
-          <label class="form__title" for="budget">{{ $t('contact.form.budget') }}</label>
-          <input id="budget" type="text" inputmode="numeric" v-model="budget.value" />
+          <label class="form__title font-3" for="budget">{{ $t('contact.form.budget') }}</label>
+          <input
+            class="font-7"
+            id="budget"
+            type="text"
+            inputmode="numeric"
+            v-model="budget.value"
+            :placeholder="$t('contact.form.budget_placeholder')"
+          />
         </div>
         <div
           class="form__section form__date-wrap"
           :class="{ error: date.error }"
           :errorMsg="date.msg"
         >
-          <label class="form__title" for="date">{{
+          <label class="form__title font-3" for="date">{{
             $t('contact.form.estimated_project_time')
           }}</label>
           <div id="date" class="form__date">
             <input
-              class="form__date--picker"
+              class="form__date--picker font-7"
               type="date"
               v-model="date.value.startDate"
               :max="date.value.endDate"
             />
-            <span class="form__date--dash">~</span>
+            <span class="form__date--dash font-7">~</span>
             <input
-              class="form__date--picker"
+              class="form__date--picker font-7"
               type="date"
               v-model="date.value.endDate"
               :min="date.value.startDate"
@@ -67,7 +74,7 @@
           :class="{ error: description.error }"
           :errorMsg="description.msg"
         >
-          <label class="form__title" for="desc">{{
+          <label class="form__title font-3" for="desc">{{
             $t('contact.form.project_content_overview')
           }}</label>
           <textarea
@@ -75,11 +82,17 @@
             cols="30"
             rows="10"
             v-model="description.value"
-            class="form__desc"
+            class="form__desc font-7"
+            :placeholder="$t('contact.form.project_content_overview_placeholder')"
           ></textarea>
         </div>
         <div class="form__btns">
-          <button type="button" class="button button--primary form__btns--next" @click="validate()">
+          <button
+            type="button"
+            class="button button--primary form__btns--next"
+            aria-label="Next"
+            @click="validate()"
+          >
             {{ $t('global.buttons.next') }}
           </button>
         </div>
@@ -90,40 +103,53 @@
           :class="{ error: person.error }"
           :errorMsg="person.msg"
         >
-          <label class="form__title" for="person">{{ $t('contact.form.contact_person') }}</label>
-          <input id="person" type="text" v-model="person.value" />
+          <label class="form__title font-3" for="person">{{
+            $t('contact.form.contact_person')
+          }}</label>
+          <input class="font-7" id="person" type="text" v-model="person.value" />
         </div>
         <div
           class="form__section form__company"
           :class="{ error: company.error }"
           :errorMsg="company.msg"
         >
-          <label class="form__title" for="company">{{
+          <label class="form__title font-3" for="company">{{
             $t('contact.form.company_brand_name')
           }}</label>
-          <input id="company" type="text" v-model="company.value" />
+          <input
+            class="font-7"
+            id="company"
+            type="text"
+            v-model="company.value"
+            :placeholder="$t('contact.form.company_brand_name_placeholder')"
+          />
         </div>
         <div
           class="form__section form__phone"
           :class="{ error: phone.error }"
           :errorMsg="phone.msg"
         >
-          <label class="form__title" for="phone">{{ $t('contact.form.contact_number') }}</label>
-          <input id="phone" type="text" v-model="phone.value" />
+          <label class="form__title font-3" for="phone">{{
+            $t('contact.form.contact_number')
+          }}</label>
+          <input class="font-7" id="phone" type="text" v-model="phone.value" />
         </div>
         <div
           class="form__section form__email"
           :class="{ error: email.error }"
           :errorMsg="email.msg"
         >
-          <label class="form__title" for="email">{{ $t('contact.form.contact_email') }}</label>
-          <input id="email" type="text" v-model="email.value" />
+          <label class="form__title font-3" for="email">{{
+            $t('contact.form.contact_email')
+          }}</label>
+          <input class="font-7" id="email" type="text" v-model="email.value" />
         </div>
         <div class="form__btns">
           <button
             type="button"
             class="button button--secondary form__btns--prev"
             @click="formPage--, scroll()"
+            aria-label="Prev"
           >
             {{ $t('global.buttons.prev') }}
           </button>
@@ -131,6 +157,7 @@
             type="submit"
             class="button button--primary form__btns--submit"
             @click="validate()"
+            aria-label="Submit"
           >
             {{ $t('global.buttons.submit_form') }}
           </button>
@@ -144,7 +171,11 @@
       <div class="popup__header font-4">{{ $t('contact.popup.confirm_submit') }}</div>
       <div class="popup__content font-7">{{ $t('contact.popup.submit_form_confirmation') }}</div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--back" @click="popup = 0">
+        <button
+          class="button button--secondary popup__buttons--back"
+          @click="popup = 0"
+          aria-label="Back"
+        >
           {{ $t('global.buttons.back') }}
         </button>
         <button
@@ -152,6 +183,7 @@
           :disabled="sending"
           :class="{ 'popup__buttons--disabled': sending }"
           @click="sendEmail()"
+          aria-label="Send Email"
         >
           {{ $t('global.buttons.submit_form') }}
         </button>
@@ -166,7 +198,11 @@
         {{ $t('contact.popup.form_confirmation_message') }}
       </div>
       <div class="popup__buttons">
-        <button class="button button--secondary popup__buttons--close" @click="popup = 0">
+        <button
+          class="button button--secondary popup__buttons--close"
+          @click="popup = 0"
+          aria-label="Close"
+        >
           {{ $t('global.buttons.close') }}
         </button>
       </div>
@@ -228,24 +264,16 @@ export default {
       },
       projectTypes: [
         {
-          id: 'planning',
-          name: this.$t('contact.form.project_types.planning')
-        },
-        {
           id: 'system',
           name: this.$t('contact.form.project_types.system')
         },
         {
-          id: 'trade',
-          name: this.$t('contact.form.project_types.trading')
-        },
-        {
-          id: 'product',
-          name: this.$t('contact.form.project_types.product')
-        },
-        {
           id: 'design',
           name: this.$t('contact.form.project_types.design')
+        },
+        {
+          id: 'content',
+          name: this.$t('contact.form.project_types.content')
         }
       ]
     }
@@ -473,6 +501,7 @@ export default {
           this.sending = 0
           this.popup = 2
           console.log('SUCCESS!', result.text)
+          this.resetForm()
         },
         (error) => {
           this.sending = 0
@@ -481,6 +510,52 @@ export default {
           console.log('FAILED...', error.text)
         }
       )
+    },
+    resetForm() {
+      this.formPage = 1
+      this.selectedProjectTypes = {
+        value: [],
+        error: undefined,
+        msg: undefined
+      }
+      this.budget = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.date = {
+        value: {
+          startDate: undefined,
+          endDate: undefined
+        },
+        error: undefined,
+        msg: undefined
+      }
+      this.description = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.person = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.company = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.phone = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
+      this.email = {
+        value: undefined,
+        error: undefined,
+        msg: undefined
+      }
     }
   },
   watch: {
@@ -509,4 +584,4 @@ export default {
 }
 </script>
 
-<style src="../../assets/scss/components/_contactForm.scss"></style>
+<style src="@/assets/scss/contact/_contact-form.scss" scoped></style>

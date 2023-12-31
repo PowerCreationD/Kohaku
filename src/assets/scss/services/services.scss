@@ -1,0 +1,9 @@
+@use '../_base/variable' as var;
+.services {
+  padding-bottom: 0;
+}
+.services-section {
+  &__text {
+    white-space: pre-line;
+  }
+}

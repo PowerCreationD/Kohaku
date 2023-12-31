@@ -1,0 +1,132 @@
+.work-detail {
+  @media (max-width: 767px) {
+    padding-bottom: 64px;
+  }
+}
+.work-detail-image-section {
+  display: grid;
+  gap: 24px;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 16px;
+  }
+
+  &__image-box {
+    @media (max-width: 767px) {
+      grid-column: span 1 !important;
+    }
+  }
+
+  &__image {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    @media (max-width: 767px) {
+      border-radius: 16px;
+    }
+  }
+
+  &--layout-type-1 {
+    grid-template-columns: repeat(3, 1fr);
+
+    :nth-child(4n + 1) {
+      grid-column: span 3;
+    }
+    :nth-child(4n + 2),
+    :nth-child(4n + 3),
+    :nth-child(4n + 4) {
+      grid-column: span 1;
+    }
+  }
+
+  &--layout-type-2 {
+    grid-template-columns: repeat(6, 1fr);
+
+    :nth-child(5n + 1),
+    :nth-child(5n + 2) {
+      grid-column: span 3;
+    }
+    :nth-child(5n + 3),
+    :nth-child(5n + 4),
+    :nth-child(5n + 5) {
+      grid-column: span 2;
+    }
+  }
+
+  &--layout-type-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &--layout-type-4 {
+    grid-template-columns: repeat(6, 1fr);
+
+    :nth-child(9n + 1) {
+      grid-column: span 6;
+    }
+    :nth-child(9n + 2),
+    :nth-child(9n + 3) {
+      grid-column: span 3;
+    }
+    :nth-child(9n + 4),
+    :nth-child(9n + 5),
+    :nth-child(9n + 6) {
+      grid-column: span 2;
+    }
+    :nth-child(9n + 7) {
+      grid-column: span 6;
+    }
+    :nth-child(9n + 8),
+    :nth-child(9n + 9) {
+      grid-column: span 3;
+    }
+  }
+
+  &--layout-type-5 {
+    grid-template-columns: repeat(2, 1fr);
+
+    :nth-child(2n + 1),
+    :nth-child(2n + 2) {
+      grid-column: span 1;
+    }
+  }
+
+  &--layout-type-6 {
+    grid-template-columns: repeat(2, 1fr);
+    :nth-child(2n + 1) {
+      grid-column: span 2;
+    }
+    :nth-child(2n + 2),
+    :nth-child(2n + 3) {
+      grid-column: span 1;
+    }
+  }
+
+  &--layout-type-7 {
+    grid-template-columns: repeat(6, 1fr);
+    :nth-child(8n + 1) {
+      grid-column: span 6;
+    }
+    :nth-child(8n + 2),
+    :nth-child(8n + 3) {
+      grid-column: span 3;
+    }
+    :nth-child(8n + 4),
+    :nth-child(8n + 5),
+    :nth-child(8n + 6) {
+      grid-column: span 2;
+    }
+    :nth-child(8n + 7),
+    :nth-child(8n + 8) {
+      grid-column: span 3;
+    }
+  }
+}
+
+.return-button {
+  margin-top: 48px;
+  @media (max-width: 767px) {
+    margin-top: 24px;
+  }
+}

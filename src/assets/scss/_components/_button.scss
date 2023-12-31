@@ -1,0 +1,181 @@
+@use '../_base/variable' as var;
+@use '../_base/typography' as typography;
+
+.button {
+  @include typography.font($index: 7);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+
+  &--primary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 38px;
+    color: map-get(var.$color--primary, white);
+    background-color: map-get(var.$color--primary, gold);
+    border: 1px solid map-get(var.$color--primary, gold);
+    border-radius: map-get(var.$border-radius, 1);
+    &-round {
+      border-radius: map-get(var.$border-radius, 3);
+      height: 48px;
+    }
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      color: map-get(var.$color--primary, black);
+      background-color: map-get(var.$color--primary, white);
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, white);
+      background-color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--secondary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 38px;
+    color: map-get(var.$color--primary, gold);
+    background-color: map-get(var.$color--primary, white);
+    border: 1px solid map-get(var.$color--primary, gold);
+    border-radius: map-get(var.$border-radius, 1);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      color: map-get(var.$color--primary, black);
+      background-color: map-get(var.$color--primary, white);
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, gold);
+      background-color: map-get(var.$color--primary, white);
+    }
+  }
+
+  &--tertiary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 48px;
+    color: map-get(var.$color--primary, white);
+    background-color: map-get(var.$color--primary, charcoal);
+    border: 1px solid map-get(var.$color--primary, charcoal);
+    border-radius: map-get(var.$border-radius, 3);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      border: 1px solid map-get(var.$color--primary, white);
+      box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid map-get(var.$color--primary, charcoal);
+      box-shadow: none;
+    }
+  }
+
+  &--quaternary {
+    @include typography.font($index: 6);
+    width: 156px;
+    height: 48px;
+    color: map-get(var.$color--primary, white);
+    background-color: map-get(var.$color--primary, grey-3);
+    border: 1px solid map-get(var.$color--primary, grey-3);
+    border-radius: map-get(var.$border-radius, 3);
+
+    @media (max-width: var.$mobile-device-max-width) {
+      width: 128px;
+      height: 32px;
+    }
+
+    &:hover {
+      background-color: map-get(var.$color--primary, charcoal);
+      border: 1px solid map-get(var.$color--primary, charcoal);
+
+      box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      background-color: map-get(var.$color--primary, grey-3);
+      border: 1px solid map-get(var.$color--primary, grey-3);
+      box-shadow: none;
+    }
+  }
+
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--text-only {
+    @include typography.font($index: 5);
+    width: fit-content;
+    height: fit-content;
+    color: map-get(var.$color--primary, black);
+    text-align: left;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: map-get(var.$color--primary, gold);
+    }
+
+    &:active {
+      color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--background-white {
+    background-color: map-get(var.$color--primary, white);
+    border: 1px solid map-get(var.$color--primary, white);
+
+    &:hover {
+      border-color: map-get(var.$color--primary, gold);
+    }
+
+    &:active {
+      @include typography.font($index: 6);
+      color: map-get(var.$color--primary, white);
+      background-color: map-get(var.$color--primary, gold);
+      border-color: map-get(var.$color--primary, gold);
+    }
+  }
+
+  &--round {
+    width: fit-content;
+    height: fit-content;
+    border-radius: map-get(var.$border-radius, 2);
+    padding: 12px 17px;
+  }
+
+  &--logo {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

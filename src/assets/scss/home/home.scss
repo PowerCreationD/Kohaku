@@ -1,0 +1,14 @@
+@use '../_base/variable' as var;
+
+.home {
+  padding: var.$large-header-height 0 0 0;
+
+  @media (max-width: var.$mobile-device-max-width) {
+    min-height: calc(100vh - var.$small-footer-height);
+    padding: var.$small-header-height 0 0 0;
+  }
+
+  &__section {
+    width: 100%;
+  }
+}
