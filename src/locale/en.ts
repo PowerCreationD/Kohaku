@@ -35,7 +35,7 @@ const locale = {
 
             In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your ideas and explore bold possibilities.`
     },
-    service: {
+    methods: {
       text: 'Is your innovative concept ready to take off? Let Kohaku assist you in realizing your vision with a steady stride!',
       steps: [
         {
@@ -52,7 +52,7 @@ const locale = {
         }
       ]
     },
-    solution: [
+    services: [
       {
         title: 'System Design and Full-Stack Development',
         text: [
