@@ -26,7 +26,8 @@ import contentApp from '@/assets/image/home/image_services-content-app.jpg'
           <template v-for="(item, idx) in services" :key="item.title">
             <span
               class="carousel-section-top__menu-text"
-              :class="idx == index ? 'font-6' : 'font-7'"
+              :class="idx == index ? 'font-6 font-emphasis' : 'font-7 '"
+              @click="index = idx"
               >{{ item.title }}</span
             >
             <div class="carousel-section-top__menu-divider">|</div>
