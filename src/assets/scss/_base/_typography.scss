@@ -27,3 +27,7 @@
     @include font($i);
   }
 }
+
+.font-emphasis{
+  color: map-get(var.$color, gold);
+}
