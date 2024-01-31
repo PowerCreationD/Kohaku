@@ -35,7 +35,7 @@ const locale = {
 
             In Kohaku, talent and creativity flows freely, allowing us to embrace and nurture emerging ideas. Through the process of intense pressure and condensation, these ideas transform into unique gems, shining with either gentle elegance or dazzling brilliance. Kohaku is a place where dreams are nurtured, and we invite you to unleash your ideas and explore bold possibilities.`
     },
-    methods: {
+    service: {
       text: 'Is your innovative concept ready to take off? Let Kohaku assist you in realizing your vision with a steady stride!',
       steps: [
         {
@@ -52,7 +52,7 @@ const locale = {
         }
       ]
     },
-    services: [
+    solution: [
       {
         title: 'System Design and Full-Stack Development',
         text: [
@@ -201,18 +201,10 @@ const locale = {
           {
             name: 'Power Creation Co., Ltd. received funding from the Kaohsiung SBIR, conducting early-stage research on sustainable food and agriculture supply chains'
           },
-          {
-            name: 'Collaborated with Green 1 Specialized Organic Anana Farm in Taiwan, serving as a contact for innovative pineapple fiber technology applications'
-          },
-          {
-            name: 'Entrusted by Japanese company ユーアイシステムズ (UI Systems) for system design services'
-          },
-          {
-            name: 'Collaborated with Japanese company エムスクエア・ラボ (M2Labo), undertaking system design projects for NTT West Japan'
-          },
-          {
-            name: 'Entered into a comprehensive collaboration with the TAi Group, establishing an office at the TAi Urban Resort in Kaohsiung'
-          }
+          { name: 'Collaborated with Green 1 Specialized Organic Anana Farm in Taiwan, serving as a contact for innovative pineapple fiber technology applications' },
+          { name: 'Entrusted by Japanese company ユーアイシステムズ (UI Systems) for system design services' },
+          { name: 'Collaborated with Japanese company エムスクエア・ラボ (M2Labo), undertaking system design projects for NTT West Japan' },
+          { name: 'Entered into a comprehensive collaboration with the TAi Group, establishing an office at the TAi Urban Resort in Kaohsiung' }
         ]
       }
     ]
@@ -619,8 +611,12 @@ const locale = {
   },
   contact: {
     introduction: {
-      title: `Nature as philosophy, design for future. `,
-      description: `Feel free to share your industry needs with us. Let's embark on a journey of imagination together and co-create the future.`
+      title: `Embracing Traditional Wisdom, Creating a Novel Experience`,
+      description: `Welcome to share your ideas with Kohaku.
+        We will transform your small sparks of inspiration into brilliant solutions!
+
+        Please provide us with detailed information about your industry needs and your vision.
+        We will get in touch with you ASAP!`
     },
     form: {
       project_type: 'Project Type',
