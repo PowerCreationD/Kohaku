@@ -2,8 +2,8 @@
   <div class="home">
     <HomeTitleSection />
     <HomeAboutSection class="show-on-scroll" />
-    <HomeServiceSection class="show-on-scroll" />
-    <HomeSolutionSection class="show-on-scroll" />
+    <HomeMethodsSection class="show-on-scroll" />
+    <HomeServicesSection class="show-on-scroll" />
     <HomeContactSection class="show-on-scroll" />
   </div>
 </template>
@@ -13,8 +13,8 @@
 <script>
 import HomeTitleSection from '@/components/home/HomeTitleSection.vue'
 import HomeAboutSection from '@/components/home/HomeAboutSection.vue'
-import HomeServiceSection from '@/components/home/HomeServiceSection.vue'
-import HomeSolutionSection from '@/components/home/HomeSolutionSection.vue'
+import HomeMethodsSection from '@/components/home/HomeMethodsSection.vue'
+import HomeServicesSection from '@/components/home/HomeServicesSection.vue'
 import HomeContactSection from '@/components/home/HomeContactSection.vue'
 
 import '@/library/scrollAnimation.js'
@@ -23,8 +23,8 @@ export default {
   components: {
     HomeTitleSection,
     HomeAboutSection,
-    HomeServiceSection,
-    HomeSolutionSection,
+    HomeMethodsSection,
+    HomeServicesSection,
     HomeContactSection
   }
 }

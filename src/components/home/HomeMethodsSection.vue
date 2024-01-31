@@ -5,18 +5,18 @@ import imagePentagon from '@/assets/image/home/image_pentagon-white-background.p
 import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png'
 </script>
 <template>
-  <div class="home__section service-section">
-    <div class="service-section__title title-section">
+  <div class="home__section methods-section">
+    <div class="methods-section__title title-section">
       <div class="title-section__image-and-title">
         <img class="title-section__image" :src="waveImage" alt="wave" />
-        <h2 class="title-section__title font-1 scroll-animation-slide-and-fade-in">SERVICE</h2>
+        <h2 class="title-section__title font-1 scroll-animation-slide-and-fade-in">METHODS</h2>
       </div>
       <p class="title-section__text font-7 scroll-animation-slide-and-fade-in">
-        {{ $t('home.service.text') }}
+        {{ $t('home.methods.text') }}
       </p>
     </div>
 
-    <div class="service-section__content content-section">
+    <div class="methods-section__content content-section">
       <div v-for="item in steps" :key="item.step" class="content-section__container">
         <div class="content-section__image-and-line">
           <img :src="item.image" :alt="item.title" class="content-section__image" />
@@ -33,30 +33,30 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
   </div>
 </template>
 
-<style src="@/assets/scss/home/_home-service-section.scss"></style>
+<style src="@/assets/scss/home/_home-methods-section.scss"></style>
 
 <script>
 export default {
-  name: 'HomeServiceSection',
+  name: 'HomeMethodsSection',
   data() {
     return {
       steps: [
         {
           step: 1,
-          title: this.$t('home.service.steps[0].title'),
-          text: this.$t('home.service.steps[0].text'),
+          title: this.$t('home.methods.steps[0].title'),
+          text: this.$t('home.methods.steps[0].text'),
           image: imageCube
         },
         {
           step: 2,
-          title: this.$t('home.service.steps[1].title'),
-          text: this.$t('home.service.steps[1].text'),
+          title: this.$t('home.methods.steps[1].title'),
+          text: this.$t('home.methods.steps[1].text'),
           image: imagePentagon
         },
         {
           step: 3,
-          title: this.$t('home.service.steps[2].title'),
-          text: this.$t('home.service.steps[2].text'),
+          title: this.$t('home.methods.steps[2].title'),
+          text: this.$t('home.methods.steps[2].text'),
           image: imagKohakuAndSphere
         }
       ]
