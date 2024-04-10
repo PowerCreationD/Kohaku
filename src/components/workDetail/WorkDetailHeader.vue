@@ -6,13 +6,13 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
     <div class="work-detail-header-section__banner-section">
       <div class="work-detail-header-section__image-box">
         <img class="work-detail-header-section__image" :src="image" :alt="name" />
-        <img class="work-detail-header-section__light" :src="noiseLight" alt="">
+        <img class="work-detail-header-section__light" :src="noiseLight" alt="" />
       </div>
 
       <div class="work-detail-header-section__title-section">
         <p class="font-3">WORK</p>
         <p class="font-2 work-detail-header-section__name">{{ name }}</p>
-        <p class="font-6 work-detail-header-section__title">{{ title }}</p>
+        <p class="font-6 work-detail-header-section__title">{{ concept }}</p>
       </div>
     </div>
 
@@ -21,19 +21,13 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
         <div class="work-detail-header-section__raw">
           <span class="work-detail-header-section__raw-label font-6">Client</span>
           <div class="work-detail-header-section__raw-line"></div>
-          <p class="work-detail-header-section__raw-text font-7">西日本JR</p>
+          <p class="work-detail-header-section__raw-text font-7">{{ client }}</p>
         </div>
 
         <div class="work-detail-header-section__raw">
           <span class="work-detail-header-section__raw-label font-6">Category</span>
           <div class="work-detail-header-section__raw-line"></div>
-          <p class="work-detail-header-section__raw-text font-7">商業設計與原型製作</p>
-        </div>
-
-        <div class="work-detail-header-section__raw">
-          <span class="work-detail-header-section__raw-label font-6">Concept</span>
-          <div class="work-detail-header-section__raw-line"></div>
-          <p class="work-detail-header-section__raw-text font-7">{{ title }}</p>
+          <p class="work-detail-header-section__raw-text font-7">{{ typeText(type) }}</p>
         </div>
       </div>
 
@@ -60,12 +54,24 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
 export default {
   name: 'WorkDetailHeader',
   props: {
-    title: { type: String },
+    concept: { type: String },
     name: { type: String },
+    client: { type: String },
     type: { type: String },
     content: { type: String },
     keywords: { type: Array },
     image: { type: String }
+  },
+  methods: {
+    typeText(id) {
+      const types = [
+        { id: 'system', text: this.$t('work.project_types.system') },
+        { id: 'design', text: this.$t('work.project_types.design') },
+        { id: 'content', text: this.$t('work.project_types.content') }
+      ]
+      const type = types.find((item) => item.id === id)
+      return type ? type.text : ''
+    }
   }
 }
 </script>
