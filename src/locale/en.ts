@@ -314,7 +314,7 @@ const locale = {
       17: {
         name: 'Fast Order Capture Tool｜KOKO BOT',
         content: `LINE is not just a social communication tool for maintaining connections but also a handy ordering assistant for many fresh produce retailers and restaurants in Taiwan. However, the daily process of ordering through LINE lacks systematic calculation capabilities, leading to additional manual efforts for both parties in terms of “order organization” and “financial settlement”. With KOKO LINE, a one-stop development by Kohaku, these daily tasks are streamlined in three simple steps, saving approximately thirty minutes of daily work!`,
-        keywords: ['Tool Development', 'Interface Design']
+        keywords: ['Tool Development', 'Interface Design', 'LINE Bot']
       },
       18: {
         name: 'Cloud-Based Production and Sales Tool｜KOKO SCALE',

@@ -70,11 +70,6 @@ import power_creation_business_card_1 from '@/assets/image/work/design/power-cre
 import japan_gov_business_card_0 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
 import japan_gov_business_card_1 from '@/assets/image/work/design/japan-gov-business-card/1.jpg'
 
-// import breakfast_nightshop_branding_0 from '@/assets/image/work/design/breakfast-nightshop-branding/0.jpg'
-// import breakfast_nightshop_branding_1 from '@/assets/image/work/design/breakfast-nightshop-branding/1.jpg'
-// import breakfast_nightshop_branding_2 from '@/assets/image/work/design/breakfast-nightshop-branding/2.jpg'
-// import breakfast_nightshop_branding_3 from '@/assets/image/work/design/breakfast-nightshop-branding/3.jpg'
-
 import leek_kimchi_packaging_0 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
 import leek_kimchi_packaging_1 from '@/assets/image/work/design/leek-kimchi-packaging/1.jpg'
 import leek_kimchi_packaging_2 from '@/assets/image/work/design/leek-kimchi-packaging/2.jpg'
@@ -115,6 +110,53 @@ import koko_scale_3 from '@/assets/image/work/system/koko-scale/3.jpg'
 
 import kohaku_business_card_0 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-card/1.jpg'
+
+import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
+
+import rice_packaging_0 from '@/assets/image/work/design/act-japanese-rice-packaging/0.png'
+import rice_packaging_1 from '@/assets/image/work/design/act-japanese-rice-packaging/1.png'
+import rice_packaging_2 from '@/assets/image/work/design/act-japanese-rice-packaging/2.png'
+import rice_packaging_3 from '@/assets/image/work/design/act-japanese-rice-packaging/3.png'
+import rice_packaging_4 from '@/assets/image/work/design/act-japanese-rice-packaging/4.png'
+
+import banana_tasting_event_0 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/0.jpg'
+import banana_tasting_event_1 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/1.jpg'
+import banana_tasting_event_2 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/2.jpg'
+import banana_tasting_event_3 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/3.jpg'
+import banana_tasting_event_4 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/4.jpg'
+import banana_tasting_event_5 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/5.jpg'
+
+import circular_economy_workshop_0 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
+import circular_economy_workshop_1 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/1.jpg'
+import circular_economy_workshop_2 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/2.jpg'
+import circular_economy_workshop_3 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/3.jpg'
+
+import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpeg'
+import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpeg'
+import craft_gene_2 from '@/assets/image/work/content/craft-gene-construction/2.jpeg'
+import craft_gene_3 from '@/assets/image/work/content/craft-gene-construction/3.jpeg'
+import craft_gene_4 from '@/assets/image/work/content/craft-gene-construction/4.jpeg'
+import craft_gene_5 from '@/assets/image/work/content/craft-gene-construction/5.jpeg'
+import craft_gene_6 from '@/assets/image/work/content/craft-gene-construction/6.jpeg'
+
+import daxi_woodworker_0 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
+import daxi_woodworker_1 from '@/assets/image/work/content/daxi-woodworker-survey-record/1.jpeg'
+import daxi_woodworker_2 from '@/assets/image/work/content/daxi-woodworker-survey-record/2.jpeg'
+import daxi_woodworker_3 from '@/assets/image/work/content/daxi-woodworker-survey-record/3.jpeg'
+import daxi_woodworker_4 from '@/assets/image/work/content/daxi-woodworker-survey-record/4.jpeg'
+import daxi_woodworker_5 from '@/assets/image/work/content/daxi-woodworker-survey-record/5.jpeg'
+
+import act_rpa_0 from '@/assets/image/work/system/act-rpa-development/0.jpg'
+
+import smart_sprayer_0 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
+import smart_sprayer_1 from '@/assets/image/work/system/remote-control-smart-sprayer/1.jpeg'
+import smart_sprayer_2 from '@/assets/image/work/system/remote-control-smart-sprayer/2.jpeg'
+import smart_sprayer_3 from '@/assets/image/work/system/remote-control-smart-sprayer/3.jpeg'
+import smart_sprayer_4 from '@/assets/image/work/system/remote-control-smart-sprayer/4.jpeg'
+
+import plant_notification_line_bot_0 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/0.png'
+import plant_notification_line_bot_1 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/1.png'
+import plant_notification_line_bot_2 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/2.png'
 </script>
 
 <template>
@@ -521,7 +563,8 @@ export default {
           content: this.$t('work.projects[17].content'),
           keywords: [
             this.$t('work.projects[17].keywords[0]'),
-            this.$t('work.projects[17].keywords[1]')
+            this.$t('work.projects[17].keywords[1]'),
+            this.$t('work.projects[17].keywords[2]')
           ],
           images: [
             { index: 0, path: koko_bot_0, fileName: '0.jpg' },
@@ -566,6 +609,193 @@ export default {
           images: [
             { index: 0, path: kohaku_business_card_0, fileName: '0.jpg' },
             { index: 1, path: kohaku_business_card_1, fileName: '1.jpg' }
+          ]
+        },
+        {
+          id: 20,
+          type: 'design',
+          project: 'southern-island-daily-dried-fruit',
+          concept: this.$t('work.projects[20].concept'),
+          client: this.$t('work.projects[20].client'),
+          name: this.$t('work.projects[20].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[20].content'),
+          keywords: [
+            this.$t('work.projects[20].keywords[0]'),
+            this.$t('work.projects[20].keywords[1]'),
+            this.$t('work.projects[20].keywords[2]')
+          ],
+          images: [{ index: 0, path: southern_island_0, fileName: '0.png' }]
+        },
+        {
+          id: 21,
+          type: 'design',
+          project: 'act-japanese-rice-packaging',
+          concept: this.$t('work.projects[21].concept'),
+          client: this.$t('work.projects[21].client'),
+          name: this.$t('work.projects[21].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[21].content'),
+          keywords: [
+            this.$t('work.projects[21].keywords[0]'),
+            this.$t('work.projects[21].keywords[1]')
+          ],
+          images: [
+            { index: 0, path: rice_packaging_0, fileName: '0.png' },
+            { index: 1, path: rice_packaging_1, fileName: '1.png' },
+            { index: 2, path: rice_packaging_2, fileName: '2.png' },
+            { index: 3, path: rice_packaging_3, fileName: '3.png' },
+            { index: 4, path: rice_packaging_4, fileName: '4.png' }
+          ]
+        },
+        {
+          id: 22,
+          type: 'content',
+          project: 'taiwan-banana-japan-tasting-event',
+          concept: this.$t('work.projects[22].concept'),
+          client: this.$t('work.projects[22].client'),
+          name: this.$t('work.projects[22].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[22].content'),
+          keywords: [
+            this.$t('work.projects[22].keywords[0]'),
+            this.$t('work.projects[22].keywords[1]'),
+            this.$t('work.projects[22].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: banana_tasting_event_0, fileName: '0.jpg' },
+            { index: 1, path: banana_tasting_event_1, fileName: '1.jpg' },
+            { index: 2, path: banana_tasting_event_2, fileName: '2.jpg' },
+            { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
+            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
+            { index: 5, path: banana_tasting_event_5, fileName: '5.jpg' }
+          ]
+        },
+        {
+          id: 23,
+          type: 'content',
+          project: 'sustainability-and-circular-economy-workshop',
+          concept: this.$t('work.projects[23].concept'),
+          client: this.$t('work.projects[23].client'),
+          name: this.$t('work.projects[23].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[23].content'),
+          keywords: [
+            this.$t('work.projects[23].keywords[0]'),
+            this.$t('work.projects[23].keywords[1]'),
+            this.$t('work.projects[23].keywords[2]'),
+            this.$t('work.projects[23].keywords[3]')
+          ],
+          images: [
+            { index: 0, path: circular_economy_workshop_0, fileName: '0.jpg' },
+            { index: 1, path: circular_economy_workshop_1, fileName: '1.jpg' },
+            { index: 2, path: circular_economy_workshop_2, fileName: '2.jpg' },
+            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' }
+          ]
+        },
+        {
+          id: 24,
+          type: 'content',
+          project: 'craft-gene-construction',
+          concept: this.$t('work.projects[24].concept'),
+          client: this.$t('work.projects[24].client'),
+          name: this.$t('work.projects[24].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[24].content'),
+          keywords: [
+            this.$t('work.projects[24].keywords[0]'),
+            this.$t('work.projects[24].keywords[1]'),
+            this.$t('work.projects[24].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: craft_gene_0, fileName: '0.jpeg' },
+            { index: 1, path: craft_gene_1, fileName: '1.jpeg' },
+            { index: 2, path: craft_gene_2, fileName: '2.jpeg' },
+            { index: 3, path: craft_gene_3, fileName: '3.jpeg' },
+            { index: 4, path: craft_gene_4, fileName: '4.jpeg' },
+            { index: 5, path: craft_gene_5, fileName: '5.jpeg' },
+            { index: 6, path: craft_gene_6, fileName: '6.jpeg' }
+          ]
+        },
+        {
+          id: 25,
+          type: 'content',
+          project: 'daxi-woodworker-survey-record',
+          concept: this.$t('work.projects[25].concept'),
+          client: this.$t('work.projects[25].client'),
+          name: this.$t('work.projects[25].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[25].content'),
+          keywords: [
+            this.$t('work.projects[25].keywords[0]'),
+            this.$t('work.projects[25].keywords[1]'),
+            this.$t('work.projects[25].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: daxi_woodworker_0, fileName: '0.jpeg' },
+            { index: 1, path: daxi_woodworker_1, fileName: '1.jpeg' },
+            { index: 2, path: daxi_woodworker_2, fileName: '2.jpeg' },
+            { index: 3, path: daxi_woodworker_3, fileName: '3.jpeg' },
+            { index: 4, path: daxi_woodworker_4, fileName: '4.jpeg' },
+            { index: 5, path: daxi_woodworker_5, fileName: '5.jpeg' }
+          ]
+        },
+        {
+          id: 26,
+          type: 'system',
+          project: 'act-rpa-development',
+          concept: this.$t('work.projects[26].concept'),
+          client: this.$t('work.projects[26].client'),
+          name: this.$t('work.projects[26].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[26].content'),
+          keywords: [
+            this.$t('work.projects[26].keywords[0]'),
+            this.$t('work.projects[26].keywords[1]'),
+            this.$t('work.projects[26].keywords[2]')
+          ],
+          images: [{ index: 0, path: act_rpa_0, fileName: '0.jpg' }]
+        },
+        {
+          id: 27,
+          type: 'system',
+          project: 'remote-control-smart-sprayer',
+          concept: this.$t('work.projects[27].concept'),
+          client: this.$t('work.projects[27].client'),
+          name: this.$t('work.projects[27].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[27].content'),
+          keywords: [
+            this.$t('work.projects[27].keywords[0]'),
+            this.$t('work.projects[27].keywords[1]'),
+            this.$t('work.projects[27].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: smart_sprayer_0, fileName: '0.jpeg' },
+            { index: 1, path: smart_sprayer_1, fileName: '1.jpeg' },
+            { index: 2, path: smart_sprayer_2, fileName: '2.jpeg' },
+            { index: 3, path: smart_sprayer_3, fileName: '3.jpeg' },
+            { index: 4, path: smart_sprayer_4, fileName: '4.jpeg' }
+          ]
+        },
+        {
+          id: 28,
+          type: 'system',
+          project: 'plant-moisture-data-notification-line-bot',
+          concept: this.$t('work.projects[28].concept'),
+          client: this.$t('work.projects[28].client'),
+          name: this.$t('work.projects[28].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[28].content'),
+          keywords: [
+            this.$t('work.projects[28].keywords[0]'),
+            this.$t('work.projects[28].keywords[1]'),
+            this.$t('work.projects[28].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: plant_notification_line_bot_0, fileName: '0.png' },
+            { index: 1, path: plant_notification_line_bot_1, fileName: '1.png' },
+            { index: 2, path: plant_notification_line_bot_2, fileName: '2.png' }
           ]
         }
       ]

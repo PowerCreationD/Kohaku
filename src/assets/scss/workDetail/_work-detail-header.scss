@@ -25,6 +25,18 @@
     position: relative;
     overflow: hidden;
     clip-path: inset(0);
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 80%);
+    }
   }
   &__image {
     width: 100%;
@@ -33,14 +45,13 @@
     object-position: 50% 90%;
     position: fixed;
     left: 0;
-
-    filter: brightness(0.7);
   }
   &__light {
     width: 700px;
     position: absolute;
     left: -80px;
     bottom: -360px;
+    z-index: 2;
 
     @media (max-width: 767px) {
       width: 500px;
@@ -91,7 +102,6 @@
 
     &-text {
       min-width: 200px;
-      // text-wrap: stable;
     }
 
     &-label {
