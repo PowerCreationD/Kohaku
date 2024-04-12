@@ -1,5 +1,5 @@
 <script setup>
-import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-agri-mover/0.jpg'
+import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import sustainable_agri_mover_1 from '@/assets/image/work/content/sustainable-agri-mover/1.png'
 import sustainable_agri_mover_2 from '@/assets/image/work/content/sustainable-agri-mover/2.png'
 import sustainable_agri_mover_3 from '@/assets/image/work/content/sustainable-agri-mover/3.png'
@@ -19,7 +19,6 @@ import digital_craft_platform_0 from '@/assets/image/work/content/digital-craft-
 import digital_craft_platform_1 from '@/assets/image/work/content/digital-craft-platform/1.png'
 import digital_craft_platform_2 from '@/assets/image/work/content/digital-craft-platform/2.png'
 import digital_craft_platform_3 from '@/assets/image/work/content/digital-craft-platform/3.png'
-import digital_craft_platform_4 from '@/assets/image/work/content/digital-craft-platform/4.png'
 
 import ceatec_agri_week_0 from '@/assets/image/work/content/ceatec-agri-week/0.jpg'
 import ceatec_agri_week_1 from '@/assets/image/work/content/ceatec-agri-week/1.jpg'
@@ -94,9 +93,8 @@ import auto_robot_control_platform_1 from '@/assets/image/work/system/auto-robot
 import auto_robot_control_platform_2 from '@/assets/image/work/system/auto-robot-control-platform/2.png'
 import auto_robot_control_platform_3 from '@/assets/image/work/system/auto-robot-control-platform/3.png'
 import auto_robot_control_platform_4 from '@/assets/image/work/system/auto-robot-control-platform/4.png'
-import auto_robot_control_platform_5 from '@/assets/image/work/system/auto-robot-control-platform/5.png'
+import auto_robot_control_platform_5 from '@/assets/image/work/system/auto-robot-control-platform/5.jpg'
 import auto_robot_control_platform_6 from '@/assets/image/work/system/auto-robot-control-platform/6.jpg'
-import auto_robot_control_platform_7 from '@/assets/image/work/system/auto-robot-control-platform/7.jpg'
 
 import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.jpg'
 import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.jpg'
@@ -223,7 +221,7 @@ export default {
           concept: this.$t('work.projects[1].concept'),
           client: this.$t('work.projects[1].client'),
           name: this.$t('work.projects[1].name'),
-          layoutType: 1,
+          layoutType: 3,
           content: this.$t('work.projects[1].content'),
           keywords: [
             this.$t('work.projects[1].keywords[0]'),
@@ -267,7 +265,7 @@ export default {
           concept: this.$t('work.projects[3].concept'),
           client: this.$t('work.projects[3].client'),
           name: this.$t('work.projects[3].name'),
-          layoutType: 1,
+          layoutType: 6,
           content: this.$t('work.projects[3].content'),
           keywords: [
             this.$t('work.projects[3].keywords[0]'),
@@ -300,8 +298,7 @@ export default {
             { index: 0, path: digital_craft_platform_0, fileName: '0.png' },
             { index: 1, path: digital_craft_platform_1, fileName: '1.png' },
             { index: 2, path: digital_craft_platform_2, fileName: '2.png' },
-            { index: 3, path: digital_craft_platform_3, fileName: '3.png' },
-            { index: 4, path: digital_craft_platform_4, fileName: '4.png' }
+            { index: 3, path: digital_craft_platform_3, fileName: '3.png' }
           ]
         },
         {
@@ -311,7 +308,7 @@ export default {
           concept: this.$t('work.projects[5].concept'),
           client: this.$t('work.projects[5].client'),
           name: this.$t('work.projects[5].name'),
-          layoutType: 2,
+          layoutType: 6,
           content: this.$t('work.projects[5].content'),
           keywords: [
             this.$t('work.projects[5].keywords[0]'),
@@ -357,7 +354,7 @@ export default {
           concept: this.$t('work.projects[7].concept'),
           client: this.$t('work.projects[7].client'),
           name: this.$t('work.projects[7].name'),
-          layoutType: 1,
+          layoutType: 6,
           content: this.$t('work.projects[7].content'),
           keywords: [
             this.$t('work.projects[7].keywords[0]'),
@@ -427,7 +424,7 @@ export default {
           concept: this.$t('work.projects[10].concept'),
           client: this.$t('work.projects[10].client'),
           name: this.$t('work.projects[10].name'),
-          layoutType: 1,
+          layoutType: 6,
           content: this.$t('work.projects[10].content'),
           keywords: [
             this.$t('work.projects[10].keywords[0]'),
@@ -484,7 +481,7 @@ export default {
           concept: this.$t('work.projects[14].concept'),
           client: this.$t('work.projects[14].client'),
           name: this.$t('work.projects[14].name'),
-          layoutType: 6,
+          layoutType: 1,
           content: this.$t('work.projects[14].content'),
           keywords: [
             this.$t('work.projects[14].keywords[0]'),
@@ -503,7 +500,7 @@ export default {
           concept: this.$t('work.projects[15].concept'),
           client: this.$t('work.projects[15].client'),
           name: this.$t('work.projects[15].name'),
-          layoutType: 3,
+          layoutType: 5,
           content: this.$t('work.projects[15].content'),
           keywords: [
             this.$t('work.projects[15].keywords[0]'),
@@ -534,7 +531,7 @@ export default {
           concept: this.$t('work.projects[16].concept'),
           client: this.$t('work.projects[16].client'),
           name: this.$t('work.projects[16].name'),
-          layoutType: 7,
+          layoutType: 2,
           content: this.$t('work.projects[16].content'),
           keywords: [
             this.$t('work.projects[16].keywords[0]'),
@@ -547,9 +544,8 @@ export default {
             { index: 2, path: auto_robot_control_platform_2, fileName: '2.png' },
             { index: 3, path: auto_robot_control_platform_3, fileName: '3.png' },
             { index: 4, path: auto_robot_control_platform_4, fileName: '4.png' },
-            { index: 5, path: auto_robot_control_platform_5, fileName: '5.png' },
+            { index: 5, path: auto_robot_control_platform_5, fileName: '5.jpg' },
             { index: 6, path: auto_robot_control_platform_6, fileName: '6.jpg' },
-            { index: 7, path: auto_robot_control_platform_7, fileName: '7.jpg' }
           ]
         },
         {
@@ -559,7 +555,7 @@ export default {
           concept: this.$t('work.projects[17].concept'),
           client: this.$t('work.projects[17].client'),
           name: this.$t('work.projects[17].name'),
-          layoutType: 1,
+          layoutType: 3,
           content: this.$t('work.projects[17].content'),
           keywords: [
             this.$t('work.projects[17].keywords[0]'),
@@ -580,7 +576,7 @@ export default {
           concept: this.$t('work.projects[18].concept'),
           client: this.$t('work.projects[18].client'),
           name: this.$t('work.projects[18].name'),
-          layoutType: 1,
+          layoutType: 3,
           content: this.$t('work.projects[18].content'),
           keywords: [
             this.$t('work.projects[18].keywords[0]'),
@@ -618,7 +614,7 @@ export default {
           concept: this.$t('work.projects[20].concept'),
           client: this.$t('work.projects[20].client'),
           name: this.$t('work.projects[20].name'),
-          layoutType: 5,
+          layoutType: 7,
           content: this.$t('work.projects[20].content'),
           keywords: [
             this.$t('work.projects[20].keywords[0]'),
@@ -634,7 +630,7 @@ export default {
           concept: this.$t('work.projects[21].concept'),
           client: this.$t('work.projects[21].client'),
           name: this.$t('work.projects[21].name'),
-          layoutType: 5,
+          layoutType: 2,
           content: this.$t('work.projects[21].content'),
           keywords: [
             this.$t('work.projects[21].keywords[0]'),
@@ -678,7 +674,7 @@ export default {
           concept: this.$t('work.projects[23].concept'),
           client: this.$t('work.projects[23].client'),
           name: this.$t('work.projects[23].name'),
-          layoutType: 5,
+          layoutType: 6,
           content: this.$t('work.projects[23].content'),
           keywords: [
             this.$t('work.projects[23].keywords[0]'),
@@ -700,7 +696,7 @@ export default {
           concept: this.$t('work.projects[24].concept'),
           client: this.$t('work.projects[24].client'),
           name: this.$t('work.projects[24].name'),
-          layoutType: 5,
+          layoutType: 2,
           content: this.$t('work.projects[24].content'),
           keywords: [
             this.$t('work.projects[24].keywords[0]'),
@@ -724,7 +720,7 @@ export default {
           concept: this.$t('work.projects[25].concept'),
           client: this.$t('work.projects[25].client'),
           name: this.$t('work.projects[25].name'),
-          layoutType: 5,
+          layoutType: 4,
           content: this.$t('work.projects[25].content'),
           keywords: [
             this.$t('work.projects[25].keywords[0]'),
@@ -747,7 +743,7 @@ export default {
           concept: this.$t('work.projects[26].concept'),
           client: this.$t('work.projects[26].client'),
           name: this.$t('work.projects[26].name'),
-          layoutType: 5,
+          layoutType: 7,
           content: this.$t('work.projects[26].content'),
           keywords: [
             this.$t('work.projects[26].keywords[0]'),
@@ -763,7 +759,7 @@ export default {
           concept: this.$t('work.projects[27].concept'),
           client: this.$t('work.projects[27].client'),
           name: this.$t('work.projects[27].name'),
-          layoutType: 5,
+          layoutType: 2,
           content: this.$t('work.projects[27].content'),
           keywords: [
             this.$t('work.projects[27].keywords[0]'),
@@ -785,7 +781,7 @@ export default {
           concept: this.$t('work.projects[28].concept'),
           client: this.$t('work.projects[28].client'),
           name: this.$t('work.projects[28].name'),
-          layoutType: 5,
+          layoutType: 1,
           content: this.$t('work.projects[28].content'),
           keywords: [
             this.$t('work.projects[28].keywords[0]'),

@@ -1,5 +1,5 @@
 <script setup>
-import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.jpg'
+import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import mainImage2 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import mainImage3 from '@/assets/image/work/content/lathe-tech-workshop/0.jpg'
 import mainImage4 from '@/assets/image/work/content/digital-craft-platform/0.png'
