@@ -12,7 +12,7 @@ import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide
 import mainImage11 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import mainImage12 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
 import mainImage14 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
-import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/0.jpg'
+import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import mainImage17 from '@/assets/image/work/system/koko-bot/0.jpg'
 import mainImage18 from '@/assets/image/work/system/koko-scale/0.jpg'
@@ -54,12 +54,45 @@ export default {
       isSelectAll: true,
       workItems: [
         {
-          id: 1,
-          type: 'content',
-          project: 'sustainable-agri-mover',
-          concept: this.$t('work.projects[1].concept'),
-          mainImage: mainImage1,
-          name: this.$t('work.projects[1].name')
+          id: 27,
+          type: 'system',
+          project: 'remote-control-smart-sprayer',
+          concept: this.$t('work.projects[27].concept'),
+          mainImage: mainImage27,
+          name: this.$t('work.projects[27].name')
+        },
+
+        {
+          id: 20,
+          type: 'design',
+          project: 'southern-island-daily-dried-fruit',
+          concept: this.$t('work.projects[20].concept'),
+          mainImage: mainImage20,
+          name: this.$t('work.projects[20].name')
+        },
+        {
+          id: 15,
+          type: 'system',
+          project: 'japan-agri-ecom-logistics',
+          concept: this.$t('work.projects[15].concept'),
+          mainImage: mainImage15,
+          name: this.$t('work.projects[15].name')
+        },
+        {
+          id: 17,
+          type: 'system',
+          project: 'koko-bot',
+          concept: this.$t('work.projects[17].concept'),
+          mainImage: mainImage17,
+          name: this.$t('work.projects[17].name')
+        },
+        {
+          id: 18,
+          type: 'system',
+          project: 'koko-scale',
+          concept: this.$t('work.projects[18].concept'),
+          mainImage: mainImage18,
+          name: this.$t('work.projects[18].name')
         },
         {
           id: 2,
@@ -70,36 +103,20 @@ export default {
           name: this.$t('work.projects[2].name')
         },
         {
-          id: 3,
-          type: 'content',
-          project: 'lathe-tech-workshop',
-          concept: this.$t('work.projects[3].concept'),
-          mainImage: mainImage3,
-          name: this.$t('work.projects[3].name')
+          id: 28,
+          type: 'system',
+          project: 'plant-moisture-data-notification-line-bot',
+          concept: this.$t('work.projects[28].concept'),
+          mainImage: mainImage28,
+          name: this.$t('work.projects[28].name')
         },
         {
-          id: 4,
+          id: 1,
           type: 'content',
-          project: 'digital-craft-platform',
-          concept: this.$t('work.projects[4].concept'),
-          mainImage: mainImage4,
-          name: this.$t('work.projects[4].name')
-        },
-        {
-          id: 5,
-          type: 'content',
-          project: 'ceatec-agri-week',
-          concept: this.$t('work.projects[5].concept'),
-          mainImage: mainImage5,
-          name: this.$t('work.projects[5].name')
-        },
-        {
-          id: 6,
-          type: 'content',
-          project: 'supermarket-japan-station',
-          concept: this.$t('work.projects[6].concept'),
-          mainImage: mainImage6,
-          name: this.$t('work.projects[6].name')
+          project: 'sustainable-agri-mover',
+          concept: this.$t('work.projects[1].concept'),
+          mainImage: mainImage1,
+          name: this.$t('work.projects[1].name')
         },
         {
           id: 7,
@@ -108,6 +125,31 @@ export default {
           concept: this.$t('work.projects[7].concept'),
           mainImage: mainImage7,
           name: this.$t('work.projects[7].name')
+        },
+        {
+          id: 22,
+          type: 'content',
+          project: 'taiwan-banana-japan-tasting-event',
+          concept: this.$t('work.projects[22].concept'),
+          mainImage: mainImage22,
+          name: this.$t('work.projects[22].name')
+        },
+
+        {
+          id: 11,
+          type: 'design',
+          project: 'power-creation-business-card',
+          concept: this.$t('work.projects[11].concept'),
+          mainImage: mainImage11,
+          name: this.$t('work.projects[11].name')
+        },
+        {
+          id: 12,
+          type: 'design',
+          project: 'japan-gov-business-card',
+          concept: this.$t('work.projects[12].concept'),
+          mainImage: mainImage12,
+          name: this.$t('work.projects[12].name')
         },
         {
           id: 8,
@@ -134,20 +176,22 @@ export default {
           name: this.$t('work.projects[10].name')
         },
         {
-          id: 11,
+          id: 21,
           type: 'design',
-          project: 'power-creation-business-card',
-          concept: this.$t('work.projects[11].concept'),
-          mainImage: mainImage11,
-          name: this.$t('work.projects[11].name')
+          project: 'act-japanese-rice-packaging',
+          concept: this.$t('work.projects[21].concept'),
+          mainImage: mainImage21,
+          name: this.$t('work.projects[21].name')
         },
+
+
         {
-          id: 12,
-          type: 'design',
-          project: 'japan-gov-business-card',
-          concept: this.$t('work.projects[12].concept'),
-          mainImage: mainImage12,
-          name: this.$t('work.projects[12].name')
+          id: 4,
+          type: 'content',
+          project: 'digital-craft-platform',
+          concept: this.$t('work.projects[4].concept'),
+          mainImage: mainImage4,
+          name: this.$t('work.projects[4].name')
         },
         {
           id: 14,
@@ -157,14 +201,7 @@ export default {
           mainImage: mainImage14,
           name: this.$t('work.projects[14].name')
         },
-        {
-          id: 15,
-          type: 'system',
-          project: 'japan-agri-ecom-logistics',
-          concept: this.$t('work.projects[15].concept'),
-          mainImage: mainImage15,
-          name: this.$t('work.projects[15].name')
-        },
+
         {
           id: 16,
           type: 'system',
@@ -173,22 +210,7 @@ export default {
           mainImage: mainImage16,
           name: this.$t('work.projects[16].name')
         },
-        {
-          id: 17,
-          type: 'system',
-          project: 'koko-bot',
-          concept: this.$t('work.projects[17].concept'),
-          mainImage: mainImage17,
-          name: this.$t('work.projects[17].name')
-        },
-        {
-          id: 18,
-          type: 'system',
-          project: 'koko-scale',
-          concept: this.$t('work.projects[18].concept'),
-          mainImage: mainImage18,
-          name: this.$t('work.projects[18].name')
-        },
+
         {
           id: 19,
           type: 'design',
@@ -197,30 +219,7 @@ export default {
           mainImage: mainImage19,
           name: this.$t('work.projects[19].name')
         },
-        {
-          id: 20,
-          type: 'design',
-          project: 'southern-island-daily-dried-fruit',
-          concept: this.$t('work.projects[20].concept'),
-          mainImage: mainImage20,
-          name: this.$t('work.projects[20].name')
-        },
-        {
-          id: 21,
-          type: 'design',
-          project: 'act-japanese-rice-packaging',
-          concept: this.$t('work.projects[21].concept'),
-          mainImage: mainImage21,
-          name: this.$t('work.projects[21].name')
-        },
-        {
-          id: 22,
-          type: 'content',
-          project: 'taiwan-banana-japan-tasting-event',
-          concept: this.$t('work.projects[22].concept'),
-          mainImage: mainImage22,
-          name: this.$t('work.projects[22].name')
-        },
+
         {
           id: 23,
           type: 'content',
@@ -254,20 +253,29 @@ export default {
           name: this.$t('work.projects[26].name')
         },
         {
-          id: 27,
-          type: 'system',
-          project: 'remote-control-smart-sprayer',
-          concept: this.$t('work.projects[27].concept'),
-          mainImage: mainImage27,
-          name: this.$t('work.projects[27].name')
+          id: 3,
+          type: 'content',
+          project: 'lathe-tech-workshop',
+          concept: this.$t('work.projects[3].concept'),
+          mainImage: mainImage3,
+          name: this.$t('work.projects[3].name')
+        },
+
+        {
+          id: 5,
+          type: 'content',
+          project: 'ceatec-agri-week',
+          concept: this.$t('work.projects[5].concept'),
+          mainImage: mainImage5,
+          name: this.$t('work.projects[5].name')
         },
         {
-          id: 28,
-          type: 'system',
-          project: 'plant-moisture-data-notification-line-bot',
-          concept: this.$t('work.projects[28].concept'),
-          mainImage: mainImage28,
-          name: this.$t('work.projects[28].name')
+          id: 6,
+          type: 'content',
+          project: 'supermarket-japan-station',
+          concept: this.$t('work.projects[6].concept'),
+          mainImage: mainImage6,
+          name: this.$t('work.projects[6].name')
         }
       ]
     }

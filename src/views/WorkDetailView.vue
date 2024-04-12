@@ -73,20 +73,21 @@ import leek_kimchi_packaging_0 from '@/assets/image/work/design/leek-kimchi-pack
 import leek_kimchi_packaging_1 from '@/assets/image/work/design/leek-kimchi-packaging/1.jpg'
 import leek_kimchi_packaging_2 from '@/assets/image/work/design/leek-kimchi-packaging/2.jpg'
 
-import japan_agri_ecom_logistics_1 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.jpg'
+import japan_agri_ecom_logistics_1 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import japan_agri_ecom_logistics_2 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_2.jpg'
 import japan_agri_ecom_logistics_3 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_3.jpg'
 import japan_agri_ecom_logistics_4 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_4.jpg'
 import japan_agri_ecom_logistics_5 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_5.jpg'
 import japan_agri_ecom_logistics_6 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_6.jpg'
 import japan_agri_ecom_logistics_7 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_7.jpg'
-import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.jpg'
+import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.png'
 import japan_agri_ecom_logistics_9 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_2.jpg'
 import japan_agri_ecom_logistics_10 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_3.jpg'
 import japan_agri_ecom_logistics_11 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_4.jpg'
 import japan_agri_ecom_logistics_12 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_5.jpg'
 import japan_agri_ecom_logistics_13 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_6.jpg'
 import japan_agri_ecom_logistics_14 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_7.jpg'
+import japan_agri_ecom_logistics_15 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_8.jpg'
 
 import auto_robot_control_platform_0 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import auto_robot_control_platform_1 from '@/assets/image/work/system/auto-robot-control-platform/1.jpg'
@@ -110,6 +111,7 @@ import kohaku_business_card_0 from '@/assets/image/work/design/kohaku-business-c
 import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-card/1.jpg'
 
 import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
+import southern_island_1 from '@/assets/image/work/design/southern-island-daily-dried-fruit/1.png'
 
 import rice_packaging_0 from '@/assets/image/work/design/act-japanese-rice-packaging/0.png'
 import rice_packaging_1 from '@/assets/image/work/design/act-japanese-rice-packaging/1.png'
@@ -500,7 +502,7 @@ export default {
           concept: this.$t('work.projects[15].concept'),
           client: this.$t('work.projects[15].client'),
           name: this.$t('work.projects[15].name'),
-          layoutType: 5,
+          layoutType: 3,
           content: this.$t('work.projects[15].content'),
           keywords: [
             this.$t('work.projects[15].keywords[0]'),
@@ -508,20 +510,21 @@ export default {
             this.$t('work.projects[15].keywords[2]')
           ],
           images: [
-            { index: 1, path: japan_agri_ecom_logistics_1, fileName: 'web_1.jpg' },
+            { index: 1, path: japan_agri_ecom_logistics_1, fileName: 'web_1.png' },
             { index: 2, path: japan_agri_ecom_logistics_2, fileName: 'web_2.jpg' },
             { index: 3, path: japan_agri_ecom_logistics_3, fileName: 'web_3.jpg' },
             { index: 4, path: japan_agri_ecom_logistics_4, fileName: 'web_4.jpg' },
             { index: 5, path: japan_agri_ecom_logistics_5, fileName: 'web_5.jpg' },
             { index: 6, path: japan_agri_ecom_logistics_6, fileName: 'web_6.jpg' },
             { index: 7, path: japan_agri_ecom_logistics_7, fileName: 'web_7.jpg' },
-            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'app_1.jpg' },
+            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'app_1.png' },
             { index: 9, path: japan_agri_ecom_logistics_9, fileName: 'app_2.jpg' },
             { index: 10, path: japan_agri_ecom_logistics_10, fileName: 'app_3.jpg' },
             { index: 11, path: japan_agri_ecom_logistics_11, fileName: 'app_4.jpg' },
             { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_5.jpg' },
             { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_6.jpg' },
-            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_7.jpg' }
+            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_7.jpg' },
+            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_8.jpg' },
           ]
         },
         {
@@ -545,7 +548,7 @@ export default {
             { index: 3, path: auto_robot_control_platform_3, fileName: '3.png' },
             { index: 4, path: auto_robot_control_platform_4, fileName: '4.png' },
             { index: 5, path: auto_robot_control_platform_5, fileName: '5.jpg' },
-            { index: 6, path: auto_robot_control_platform_6, fileName: '6.jpg' },
+            { index: 6, path: auto_robot_control_platform_6, fileName: '6.jpg' }
           ]
         },
         {
@@ -614,14 +617,17 @@ export default {
           concept: this.$t('work.projects[20].concept'),
           client: this.$t('work.projects[20].client'),
           name: this.$t('work.projects[20].name'),
-          layoutType: 7,
+          layoutType: 5,
           content: this.$t('work.projects[20].content'),
           keywords: [
             this.$t('work.projects[20].keywords[0]'),
             this.$t('work.projects[20].keywords[1]'),
             this.$t('work.projects[20].keywords[2]')
           ],
-          images: [{ index: 0, path: southern_island_0, fileName: '0.png' }]
+          images: [
+            { index: 0, path: southern_island_0, fileName: '0.png' },
+            { index: 1, path: southern_island_1, fileName: '1.png' }
+          ]
         },
         {
           id: 21,
