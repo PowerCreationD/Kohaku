@@ -1,11 +1,11 @@
 <script setup>
-import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.jpg'
+import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import mainImage2 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import mainImage3 from '@/assets/image/work/content/lathe-tech-workshop/0.jpg'
 import mainImage8 from '@/assets/image/work/design/mu-maison/0.png'
 import mainImage9 from '@/assets/image/work/design/recycled-pottery-furniture/0.jpg'
 import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
-import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/0.jpg'
+import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import mainImage17 from '@/assets/image/work/system/koko-bot/0.jpg'
 
@@ -314,6 +314,7 @@ export default {
                 project: 'japan-agri-ecom-logistics',
                 mainImage: mainImage15,
                 name: this.$t('work.projects[15].name'),
+                concept:this.$t('work.projects[15].concept'),
                 layoutType: 3,
                 content: this.$t('work.projects[15].content'),
                 keywords: [
@@ -328,6 +329,7 @@ export default {
                 project: 'auto-robot-control-platform',
                 mainImage: mainImage16,
                 name: this.$t('work.projects[16].name'),
+                concept:this.$t('work.projects[16].concept'),
                 layoutType: 7,
                 content: this.$t('work.projects[16].content'),
                 keywords: [
@@ -342,6 +344,7 @@ export default {
                 project: 'koko-bot',
                 mainImage: mainImage17,
                 name: this.$t('work.projects[17].name'),
+                concept:this.$t('work.projects[17].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[17].content'),
                 keywords: [
@@ -360,6 +363,7 @@ export default {
                 project: 'mu-maison',
                 mainImage: mainImage8,
                 name: this.$t('work.projects[8].name'),
+                concept:this.$t('work.projects[8].concept'),
                 layoutType: 3,
                 content: this.$t('work.projects[8].content'),
                 keywords: [
@@ -373,6 +377,7 @@ export default {
                 project: 'recycled-pottery-furniture',
                 mainImage: mainImage9,
                 name: this.$t('work.projects[9].name'),
+                concept:this.$t('work.projects[9].concept'),
                 layoutType: 4,
                 content: this.$t('work.projects[9].content'),
                 keywords: [
@@ -388,6 +393,7 @@ export default {
                 project: 'woodworking-craft-tool-guide',
                 mainImage: mainImage10,
                 name: this.$t('work.projects[10].name'),
+                concept:this.$t('work.projects[10].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[10].content'),
                 keywords: [
@@ -407,6 +413,7 @@ export default {
                 project: 'sustainable-agri-mover',
                 mainImage: mainImage1,
                 name: this.$t('work.projects[1].name'),
+                concept:this.$t('work.projects[1].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[1].content'),
                 keywords: [
@@ -421,6 +428,7 @@ export default {
                 project: 'tech-agri-workshop',
                 mainImage: mainImage2,
                 name: this.$t('work.projects[2].name'),
+                concept:this.$t('work.projects[2].concept'),
                 layoutType: 2,
                 content: this.$t('work.projects[2].content'),
                 keywords: [
@@ -436,6 +444,7 @@ export default {
                 project: 'lathe-tech-workshop',
                 mainImage: mainImage3,
                 name: this.$t('work.projects[3].name'),
+                concept:this.$t('work.projects[3].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[3].content'),
                 keywords: [
