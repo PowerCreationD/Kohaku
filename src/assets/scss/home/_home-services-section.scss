@@ -3,6 +3,7 @@
 .services-section {
   background-image: url('@/assets/image/home/image_services-design-web.jpg');
   background-size: cover;
+  background-attachment: fixed;
   color: map-get(var.$color, white);
   padding: 76px max(16px, 10vw, (100vw - 1200px)/2);
   height: 100vh;

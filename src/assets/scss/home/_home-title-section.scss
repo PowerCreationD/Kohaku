@@ -54,6 +54,7 @@
   &__background-image {
     height: calc(100% + 100px);
     top: -100px;
+    position: fixed;
   }
 
   &__geometries {

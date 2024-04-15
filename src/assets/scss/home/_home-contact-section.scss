@@ -5,6 +5,7 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  background-color: map-get(var.$color, white);
   &__photo-container {
     width: 58%;
     position: relative;

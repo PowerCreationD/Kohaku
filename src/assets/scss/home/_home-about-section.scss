@@ -8,6 +8,7 @@
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid map-get(var.$color, grey-2);
+  background-color: map-get(var.$color, white);
 
   @media (max-width: var.$mobile-device-max-width) {
     flex-direction: column;
@@ -44,7 +45,7 @@
     z-index: 1;
     text-align: justify;
     hyphens: auto;
-    -webkit-hyphens:auto;
+    -webkit-hyphens: auto;
   }
   &__background {
     &-amber {
