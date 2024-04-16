@@ -24,6 +24,8 @@ import ceatec_agri_week_0 from '@/assets/image/work/content/ceatec-agri-week/0.j
 import ceatec_agri_week_1 from '@/assets/image/work/content/ceatec-agri-week/1.jpg'
 import ceatec_agri_week_2 from '@/assets/image/work/content/ceatec-agri-week/2.jpg'
 import ceatec_agri_week_3 from '@/assets/image/work/content/ceatec-agri-week/3.jpg'
+import ceatec_agri_week_4 from '@/assets/image/work/content/ceatec-agri-week/4.jpg'
+import ceatec_agri_week_5 from '@/assets/image/work/content/ceatec-agri-week/5.jpg'
 
 import supermarket_japan_station_0 from '@/assets/image/work/content/supermarket-japan-station/0.jpg'
 import supermarket_japan_station_1 from '@/assets/image/work/content/supermarket-japan-station/1.jpg'
@@ -62,6 +64,10 @@ import woodworking_craft_tool_guide_0 from '@/assets/image/work/design/woodworki
 import woodworking_craft_tool_guide_1 from '@/assets/image/work/design/woodworking-craft-tool-guide/1.jpg'
 import woodworking_craft_tool_guide_2 from '@/assets/image/work/design/woodworking-craft-tool-guide/2.jpg'
 import woodworking_craft_tool_guide_3 from '@/assets/image/work/design/woodworking-craft-tool-guide/3.jpg'
+import woodworking_craft_tool_guide_4 from '@/assets/image/work/design/woodworking-craft-tool-guide/4.jpg'
+import woodworking_craft_tool_guide_5 from '@/assets/image/work/design/woodworking-craft-tool-guide/5.jpg'
+import woodworking_craft_tool_guide_6 from '@/assets/image/work/design/woodworking-craft-tool-guide/6.jpg'
+import woodworking_craft_tool_guide_7 from '@/assets/image/work/design/woodworking-craft-tool-guide/7.jpg'
 
 import power_creation_business_card_0 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import power_creation_business_card_1 from '@/assets/image/work/design/power-creation-business-card/1.jpg'
@@ -146,7 +152,10 @@ import daxi_woodworker_3 from '@/assets/image/work/content/daxi-woodworker-surve
 import daxi_woodworker_4 from '@/assets/image/work/content/daxi-woodworker-survey-record/4.jpeg'
 import daxi_woodworker_5 from '@/assets/image/work/content/daxi-woodworker-survey-record/5.jpeg'
 
-import act_rpa_0 from '@/assets/image/work/system/act-rpa-development/0.jpg'
+import act_rpa_0 from '@/assets/image/work/system/act-rpa-development/0.png'
+import act_rpa_1 from '@/assets/image/work/system/act-rpa-development/1.png'
+import act_rpa_2 from '@/assets/image/work/system/act-rpa-development/2.png'
+import act_rpa_3 from '@/assets/image/work/system/act-rpa-development/3.png'
 
 import smart_sprayer_0 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
 import smart_sprayer_1 from '@/assets/image/work/system/remote-control-smart-sprayer/1.jpeg'
@@ -321,7 +330,9 @@ export default {
             { index: 0, path: ceatec_agri_week_0, fileName: '0.jpg' },
             { index: 1, path: ceatec_agri_week_1, fileName: '1.jpg' },
             { index: 2, path: ceatec_agri_week_2, fileName: '2.jpg' },
-            { index: 3, path: ceatec_agri_week_3, fileName: '3.jpg' }
+            { index: 3, path: ceatec_agri_week_3, fileName: '3.jpg' },
+            { index: 4, path: ceatec_agri_week_4, fileName: '4.jpg' },
+            { index: 5, path: ceatec_agri_week_5, fileName: '5.jpg' }
           ]
         },
         {
@@ -437,7 +448,11 @@ export default {
             { index: 0, path: woodworking_craft_tool_guide_0, fileName: '0.jpg' },
             { index: 1, path: woodworking_craft_tool_guide_1, fileName: '1.jpg' },
             { index: 2, path: woodworking_craft_tool_guide_2, fileName: '2.jpg' },
-            { index: 3, path: woodworking_craft_tool_guide_3, fileName: '3.jpg' }
+            { index: 3, path: woodworking_craft_tool_guide_3, fileName: '3.jpg' },
+            { index: 4, path: woodworking_craft_tool_guide_4, fileName: '4.jpg' },
+            { index: 5, path: woodworking_craft_tool_guide_5, fileName: '5.jpg' },
+            { index: 6, path: woodworking_craft_tool_guide_6, fileName: '6.jpg' },
+            { index: 7, path: woodworking_craft_tool_guide_7, fileName: '7.jpg' }
           ]
         },
         {
@@ -524,7 +539,7 @@ export default {
             { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_5.jpg' },
             { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_6.jpg' },
             { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_7.jpg' },
-            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_8.jpg' },
+            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_8.jpg' }
           ]
         },
         {
@@ -657,7 +672,7 @@ export default {
           concept: this.$t('work.projects[22].concept'),
           client: this.$t('work.projects[22].client'),
           name: this.$t('work.projects[22].name'),
-          layoutType: 5,
+          layoutType: 1,
           content: this.$t('work.projects[22].content'),
           keywords: [
             this.$t('work.projects[22].keywords[0]'),
@@ -749,14 +764,19 @@ export default {
           concept: this.$t('work.projects[26].concept'),
           client: this.$t('work.projects[26].client'),
           name: this.$t('work.projects[26].name'),
-          layoutType: 7,
+          layoutType: 5,
           content: this.$t('work.projects[26].content'),
           keywords: [
             this.$t('work.projects[26].keywords[0]'),
             this.$t('work.projects[26].keywords[1]'),
             this.$t('work.projects[26].keywords[2]')
           ],
-          images: [{ index: 0, path: act_rpa_0, fileName: '0.jpg' }]
+          images: [
+            { index: 0, path: act_rpa_0, fileName: '0.png' },
+            { index: 1, path: act_rpa_1, fileName: '1.png' },
+            { index: 2, path: act_rpa_2, fileName: '2.png' },
+            { index: 3, path: act_rpa_3, fileName: '3.png' }
+          ]
         },
         {
           id: 27,
