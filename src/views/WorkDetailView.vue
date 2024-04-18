@@ -86,14 +86,19 @@ import japan_agri_ecom_logistics_4 from '@/assets/image/work/system/japan-agri-e
 import japan_agri_ecom_logistics_5 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_5.jpg'
 import japan_agri_ecom_logistics_6 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_6.jpg'
 import japan_agri_ecom_logistics_7 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_7.jpg'
-import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.png'
-import japan_agri_ecom_logistics_9 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_2.jpg'
-import japan_agri_ecom_logistics_10 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_3.jpg'
-import japan_agri_ecom_logistics_11 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_4.jpg'
-import japan_agri_ecom_logistics_12 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_5.jpg'
-import japan_agri_ecom_logistics_13 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_6.jpg'
-import japan_agri_ecom_logistics_14 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_7.jpg'
-import japan_agri_ecom_logistics_15 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_8.jpg'
+import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_8.jpg'
+import japan_agri_ecom_logistics_9 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_9.jpg'
+import japan_agri_ecom_logistics_10 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_10.jpg'
+import japan_agri_ecom_logistics_11 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.png'
+import japan_agri_ecom_logistics_12 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_2.jpg'
+import japan_agri_ecom_logistics_13 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_3.jpg'
+import japan_agri_ecom_logistics_14 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_4.jpg'
+import japan_agri_ecom_logistics_15 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_5.jpg'
+import japan_agri_ecom_logistics_16 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_6.jpg'
+import japan_agri_ecom_logistics_17 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_7.jpg'
+import japan_agri_ecom_logistics_18 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_8.jpg'
+import japan_agri_ecom_logistics_19 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_9.jpg'
+import japan_agri_ecom_logistics_20 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_10.jpg'
 
 import auto_robot_control_platform_0 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import auto_robot_control_platform_1 from '@/assets/image/work/system/auto-robot-control-platform/1.jpg'
@@ -103,10 +108,10 @@ import auto_robot_control_platform_4 from '@/assets/image/work/system/auto-robot
 import auto_robot_control_platform_5 from '@/assets/image/work/system/auto-robot-control-platform/5.jpg'
 import auto_robot_control_platform_6 from '@/assets/image/work/system/auto-robot-control-platform/6.jpg'
 
-import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.jpg'
-import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.jpg'
-import koko_bot_2 from '@/assets/image/work/system/koko-bot/2.jpg'
-import koko_bot_3 from '@/assets/image/work/system/koko-bot/3.jpg'
+import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.png'
+import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.png'
+import koko_bot_2 from '@/assets/image/work/system/koko-bot/2.png'
+import koko_bot_3 from '@/assets/image/work/system/koko-bot/3.png'
 
 import koko_scale_0 from '@/assets/image/work/system/koko-scale/0.jpg'
 import koko_scale_1 from '@/assets/image/work/system/koko-scale/1.jpg'
@@ -517,7 +522,7 @@ export default {
           concept: this.$t('work.projects[15].concept'),
           client: this.$t('work.projects[15].client'),
           name: this.$t('work.projects[15].name'),
-          layoutType: 3,
+          layoutType: 5,
           content: this.$t('work.projects[15].content'),
           keywords: [
             this.$t('work.projects[15].keywords[0]'),
@@ -532,14 +537,19 @@ export default {
             { index: 5, path: japan_agri_ecom_logistics_5, fileName: 'web_5.jpg' },
             { index: 6, path: japan_agri_ecom_logistics_6, fileName: 'web_6.jpg' },
             { index: 7, path: japan_agri_ecom_logistics_7, fileName: 'web_7.jpg' },
-            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'app_1.png' },
-            { index: 9, path: japan_agri_ecom_logistics_9, fileName: 'app_2.jpg' },
-            { index: 10, path: japan_agri_ecom_logistics_10, fileName: 'app_3.jpg' },
-            { index: 11, path: japan_agri_ecom_logistics_11, fileName: 'app_4.jpg' },
-            { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_5.jpg' },
-            { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_6.jpg' },
-            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_7.jpg' },
-            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_8.jpg' }
+            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'web_8.jpg' },
+            { index: 9, path: japan_agri_ecom_logistics_9, fileName: 'web_9.jpg' },
+            { index: 10, path: japan_agri_ecom_logistics_10, fileName: 'web_10.jpg' },
+            { index: 11, path: japan_agri_ecom_logistics_11, fileName: 'app_1.png' },
+            { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_2.jpg' },
+            { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_3.jpg' },
+            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_4.jpg' },
+            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_5.jpg' },
+            { index: 16, path: japan_agri_ecom_logistics_16, fileName: 'app_6.jpg' },
+            { index: 17, path: japan_agri_ecom_logistics_17, fileName: 'app_7.jpg' },
+            { index: 18, path: japan_agri_ecom_logistics_18, fileName: 'app_8.jpg' },
+            { index: 19, path: japan_agri_ecom_logistics_19, fileName: 'app_9.jpg' },
+            { index: 20, path: japan_agri_ecom_logistics_20, fileName: 'app_10.jpg' },
           ]
         },
         {
