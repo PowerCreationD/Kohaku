@@ -3,6 +3,7 @@ import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-ag
 import sustainable_agri_mover_1 from '@/assets/image/work/content/sustainable-agri-mover/1.png'
 import sustainable_agri_mover_2 from '@/assets/image/work/content/sustainable-agri-mover/2.png'
 import sustainable_agri_mover_3 from '@/assets/image/work/content/sustainable-agri-mover/3.png'
+import sustainable_agri_mover_4 from '@/assets/image/work/content/sustainable-agri-mover/4.png'
 
 import tech_agri_workshop_0 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import tech_agri_workshop_1 from '@/assets/image/work/content/tech-agri-workshop/1.jpg'
@@ -58,7 +59,6 @@ import recycled_pottery_furniture_5 from '@/assets/image/work/design/recycled-po
 import recycled_pottery_furniture_6 from '@/assets/image/work/design/recycled-pottery-furniture/6.jpg'
 import recycled_pottery_furniture_7 from '@/assets/image/work/design/recycled-pottery-furniture/7.jpg'
 import recycled_pottery_furniture_8 from '@/assets/image/work/design/recycled-pottery-furniture/8.jpg'
-import recycled_pottery_furniture_9 from '@/assets/image/work/design/recycled-pottery-furniture/9.jpg'
 
 import woodworking_craft_tool_guide_0 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import woodworking_craft_tool_guide_1 from '@/assets/image/work/design/woodworking-craft-tool-guide/1.jpg'
@@ -136,6 +136,8 @@ import banana_tasting_event_2 from '@/assets/image/work/content/taiwan-banana-ja
 import banana_tasting_event_3 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/3.jpg'
 import banana_tasting_event_4 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/4.jpg'
 import banana_tasting_event_5 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/5.jpg'
+import banana_tasting_event_6 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/6.jpg'
+import banana_tasting_event_7 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/7.jpg'
 
 import circular_economy_workshop_0 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
 import circular_economy_workshop_1 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/1.jpg'
@@ -248,7 +250,8 @@ export default {
             { index: 0, path: sustainable_agri_mover_0, fileName: '0.jpg' },
             { index: 1, path: sustainable_agri_mover_1, fileName: '1.png' },
             { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' },
-            { index: 3, path: sustainable_agri_mover_3, fileName: '3.png' }
+            { index: 3, path: sustainable_agri_mover_3, fileName: '3.png' },
+            { index: 4, path: sustainable_agri_mover_4, fileName: '4.png' },
           ]
         },
         {
@@ -431,8 +434,7 @@ export default {
             { index: 5, path: recycled_pottery_furniture_5, fileName: '5.jpg' },
             { index: 6, path: recycled_pottery_furniture_6, fileName: '6.jpg' },
             { index: 7, path: recycled_pottery_furniture_7, fileName: '7.jpg' },
-            { index: 8, path: recycled_pottery_furniture_8, fileName: '8.jpg' },
-            { index: 9, path: recycled_pottery_furniture_9, fileName: '9.jpg' }
+            { index: 8, path: recycled_pottery_furniture_8, fileName: '8.jpg' }
           ]
         },
         {
@@ -549,7 +551,7 @@ export default {
             { index: 17, path: japan_agri_ecom_logistics_17, fileName: 'app_7.jpg' },
             { index: 18, path: japan_agri_ecom_logistics_18, fileName: 'app_8.jpg' },
             { index: 19, path: japan_agri_ecom_logistics_19, fileName: 'app_9.jpg' },
-            { index: 20, path: japan_agri_ecom_logistics_20, fileName: 'app_10.jpg' },
+            { index: 20, path: japan_agri_ecom_logistics_20, fileName: 'app_10.jpg' }
           ]
         },
         {
@@ -682,7 +684,7 @@ export default {
           concept: this.$t('work.projects[22].concept'),
           client: this.$t('work.projects[22].client'),
           name: this.$t('work.projects[22].name'),
-          layoutType: 1,
+          layoutType: 2,
           content: this.$t('work.projects[22].content'),
           keywords: [
             this.$t('work.projects[22].keywords[0]'),
@@ -693,9 +695,11 @@ export default {
             { index: 0, path: banana_tasting_event_0, fileName: '0.jpg' },
             { index: 1, path: banana_tasting_event_1, fileName: '1.jpg' },
             { index: 2, path: banana_tasting_event_2, fileName: '2.jpg' },
-            { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
-            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
-            { index: 5, path: banana_tasting_event_5, fileName: '5.jpg' }
+            { index: 7, path: banana_tasting_event_7, fileName: '7.jpg' },
+            { index: 6, path: banana_tasting_event_6, fileName: '6.jpg' },
+            // { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
+            // { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
+            // { index: 5, path: banana_tasting_event_5, fileName: '5.jpg' },
           ]
         },
         {
