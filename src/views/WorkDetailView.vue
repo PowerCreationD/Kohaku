@@ -342,7 +342,7 @@ export default {
         },
         {
           id: 6,
-          type: 'content',
+          type: 'design',
           project: 'supermarket-japan-station',
           concept: this.$t('work.projects[6].concept'),
           client: this.$t('work.projects[6].client'),

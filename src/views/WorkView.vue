@@ -271,7 +271,7 @@ export default {
         },
         {
           id: 6,
-          type: 'content',
+          type: 'design',
           project: 'supermarket-japan-station',
           concept: this.$t('work.projects[6].concept'),
           mainImage: mainImage6,
