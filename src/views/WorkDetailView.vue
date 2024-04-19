@@ -112,11 +112,13 @@ import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.png'
 import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.png'
 import koko_bot_2 from '@/assets/image/work/system/koko-bot/2.png'
 import koko_bot_3 from '@/assets/image/work/system/koko-bot/3.png'
+import koko_bot_4 from '@/assets/image/work/system/koko-bot/4.png'
 
 import koko_scale_0 from '@/assets/image/work/system/koko-scale/0.jpg'
 import koko_scale_1 from '@/assets/image/work/system/koko-scale/1.jpg'
 import koko_scale_2 from '@/assets/image/work/system/koko-scale/2.jpg'
 import koko_scale_3 from '@/assets/image/work/system/koko-scale/3.jpg'
+import koko_scale_4 from '@/assets/image/work/system/koko-scale/4.jpg'
 
 import kohaku_business_card_0 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-card/1.jpg'
@@ -135,9 +137,6 @@ import banana_tasting_event_1 from '@/assets/image/work/content/taiwan-banana-ja
 import banana_tasting_event_2 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/2.jpg'
 import banana_tasting_event_3 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/3.jpg'
 import banana_tasting_event_4 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/4.jpg'
-import banana_tasting_event_5 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/5.jpg'
-import banana_tasting_event_6 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/6.jpg'
-import banana_tasting_event_7 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/7.jpg'
 
 import circular_economy_workshop_0 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
 import circular_economy_workshop_1 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/1.jpg'
@@ -585,7 +584,7 @@ export default {
           concept: this.$t('work.projects[17].concept'),
           client: this.$t('work.projects[17].client'),
           name: this.$t('work.projects[17].name'),
-          layoutType: 3,
+          layoutType: 2,
           content: this.$t('work.projects[17].content'),
           keywords: [
             this.$t('work.projects[17].keywords[0]'),
@@ -593,10 +592,11 @@ export default {
             this.$t('work.projects[17].keywords[2]')
           ],
           images: [
-            { index: 0, path: koko_bot_0, fileName: '0.jpg' },
-            { index: 1, path: koko_bot_1, fileName: '1.jpg' },
-            { index: 2, path: koko_bot_2, fileName: '2.jpg' },
-            { index: 3, path: koko_bot_3, fileName: '3.jpg' }
+            { index: 0, path: koko_bot_0, fileName: '0.png' },
+            { index: 1, path: koko_bot_1, fileName: '1.png' },
+            { index: 2, path: koko_bot_2, fileName: '2.png' },
+            { index: 3, path: koko_bot_3, fileName: '3.png' },
+            { index: 4, path: koko_bot_4, fileName: '4.png' },
           ]
         },
         {
@@ -606,7 +606,7 @@ export default {
           concept: this.$t('work.projects[18].concept'),
           client: this.$t('work.projects[18].client'),
           name: this.$t('work.projects[18].name'),
-          layoutType: 3,
+          layoutType: 2,
           content: this.$t('work.projects[18].content'),
           keywords: [
             this.$t('work.projects[18].keywords[0]'),
@@ -616,7 +616,8 @@ export default {
             { index: 0, path: koko_scale_0, fileName: '0.jpg' },
             { index: 1, path: koko_scale_1, fileName: '1.jpg' },
             { index: 2, path: koko_scale_2, fileName: '2.jpg' },
-            { index: 3, path: koko_scale_3, fileName: '3.jpg' }
+            { index: 3, path: koko_scale_3, fileName: '3.jpg' },
+            { index: 4, path: koko_scale_4, fileName: '4.jpg' },
           ]
         },
         {
@@ -695,11 +696,8 @@ export default {
             { index: 0, path: banana_tasting_event_0, fileName: '0.jpg' },
             { index: 1, path: banana_tasting_event_1, fileName: '1.jpg' },
             { index: 2, path: banana_tasting_event_2, fileName: '2.jpg' },
-            { index: 7, path: banana_tasting_event_7, fileName: '7.jpg' },
-            { index: 6, path: banana_tasting_event_6, fileName: '6.jpg' },
-            // { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
-            // { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
-            // { index: 5, path: banana_tasting_event_5, fileName: '5.jpg' },
+            { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
+            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
           ]
         },
         {
