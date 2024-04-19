@@ -7,7 +7,7 @@ import mainImage9 from '@/assets/image/work/design/recycled-pottery-furniture/0.
 import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
-import mainImage17 from '@/assets/image/work/system/koko-bot/0.jpg'
+import mainImage17 from '@/assets/image/work/system/koko-bot/0.png'
 
 import icon_frontend from '@/assets/image/services/icon/icon_frontend.png'
 import icon_backend from '@/assets/image/services/icon/icon_backend.png'
