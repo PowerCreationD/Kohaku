@@ -10,7 +10,7 @@ import imgAmber from '@/assets/image/global/image_amber-line.png'
       <div class="phase" v-for="phase in milestone" :key="phase.year">
         <div class="phase__year-and-title">
           <p class="phase__year font-6">{{ phase.year }}</p>
-          <p class="phase__title font-6">{{ phase.title }}</p>
+          <!-- <p class="phase__title font-6">{{ phase.title }}</p> -->
         </div>
         <div class="phase__contents">
           <template v-for="event in phase.events" :key="event">
