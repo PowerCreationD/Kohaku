@@ -45,6 +45,9 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
       </div>
     </div>
 
+    <!-- * Company Table -->
+    <companyTable></companyTable>
+
     <!-- * Milestone -->
     <milestone class="show-on-scroll"></milestone>
   </div>
@@ -53,8 +56,9 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
 <style src="@/assets/scss/about/about.scss" scoped></style>
 
 <script>
-import milestone from '@/components/about/Milestone.vue'
 import pageTitle from '@/components/global/PageTitle.vue'
+import milestone from '@/components/about/Milestone.vue'
+import companyTable from '@/components/about/CompanyTable.vue'
 export default {
   components: { milestone, pageTitle },
   data() {
