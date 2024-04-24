@@ -143,13 +143,15 @@ import circular_economy_workshop_1 from '@/assets/image/work/content/sustainabil
 import circular_economy_workshop_2 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/2.jpg'
 import circular_economy_workshop_3 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/3.jpg'
 
-import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpeg'
-import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpeg'
-import craft_gene_2 from '@/assets/image/work/content/craft-gene-construction/2.jpeg'
-import craft_gene_3 from '@/assets/image/work/content/craft-gene-construction/3.jpeg'
-import craft_gene_4 from '@/assets/image/work/content/craft-gene-construction/4.jpeg'
-import craft_gene_5 from '@/assets/image/work/content/craft-gene-construction/5.jpeg'
-import craft_gene_6 from '@/assets/image/work/content/craft-gene-construction/6.jpeg'
+import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
+import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpg'
+import craft_gene_2 from '@/assets/image/work/content/craft-gene-construction/2.jpg'
+import craft_gene_3 from '@/assets/image/work/content/craft-gene-construction/3.jpg'
+import craft_gene_4 from '@/assets/image/work/content/craft-gene-construction/4.jpg'
+import craft_gene_5 from '@/assets/image/work/content/craft-gene-construction/5.jpg'
+import craft_gene_6 from '@/assets/image/work/content/craft-gene-construction/6.jpg'
+import craft_gene_7 from '@/assets/image/work/content/craft-gene-construction/7.jpg'
+import craft_gene_8 from '@/assets/image/work/content/craft-gene-construction/8.jpg'
 
 import daxi_woodworker_0 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
 import daxi_woodworker_1 from '@/assets/image/work/content/daxi-woodworker-survey-record/1.jpeg'
@@ -729,7 +731,7 @@ export default {
           concept: this.$t('work.projects[24].concept'),
           client: this.$t('work.projects[24].client'),
           name: this.$t('work.projects[24].name'),
-          layoutType: 2,
+          layoutType: 4,
           content: this.$t('work.projects[24].content'),
           keywords: [
             this.$t('work.projects[24].keywords[0]'),
@@ -737,13 +739,15 @@ export default {
             this.$t('work.projects[24].keywords[2]')
           ],
           images: [
-            { index: 0, path: craft_gene_0, fileName: '0.jpeg' },
-            { index: 1, path: craft_gene_1, fileName: '1.jpeg' },
-            { index: 2, path: craft_gene_2, fileName: '2.jpeg' },
-            { index: 3, path: craft_gene_3, fileName: '3.jpeg' },
-            { index: 4, path: craft_gene_4, fileName: '4.jpeg' },
-            { index: 5, path: craft_gene_5, fileName: '5.jpeg' },
-            { index: 6, path: craft_gene_6, fileName: '6.jpeg' }
+            { index: 0, path: craft_gene_0, fileName: '0.jpg' },
+            { index: 1, path: craft_gene_1, fileName: '1.jpg' },
+            { index: 2, path: craft_gene_2, fileName: '2.jpg' },
+            { index: 3, path: craft_gene_3, fileName: '3.jpg' },
+            { index: 4, path: craft_gene_4, fileName: '4.jpg' },
+            { index: 5, path: craft_gene_5, fileName: '5.jpg' },
+            { index: 6, path: craft_gene_6, fileName: '6.jpg' },
+            { index: 7, path: craft_gene_7, fileName: '7.jpg' },
+            { index: 8, path: craft_gene_8, fileName: '8.jpg' },
           ]
         },
         {

@@ -21,7 +21,7 @@ import mainImage20 from '@/assets/image/work/design/southern-island-daily-dried-
 import mainImage21 from '@/assets/image/work/design/act-japanese-rice-packaging/0.png'
 import mainImage22 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/0.jpg'
 import mainImage23 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
-import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpeg'
+import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
 import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
 import mainImage27 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
