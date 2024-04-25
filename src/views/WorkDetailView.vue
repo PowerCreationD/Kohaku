@@ -252,7 +252,7 @@ export default {
             { index: 1, path: sustainable_agri_mover_1, fileName: '1.png' },
             { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' },
             { index: 3, path: sustainable_agri_mover_3, fileName: '3.png' },
-            { index: 4, path: sustainable_agri_mover_4, fileName: '4.png' },
+            { index: 4, path: sustainable_agri_mover_4, fileName: '4.png' }
           ]
         },
         {
@@ -598,7 +598,7 @@ export default {
             { index: 1, path: koko_bot_1, fileName: '1.png' },
             { index: 2, path: koko_bot_2, fileName: '2.png' },
             { index: 3, path: koko_bot_3, fileName: '3.png' },
-            { index: 4, path: koko_bot_4, fileName: '4.png' },
+            { index: 4, path: koko_bot_4, fileName: '4.png' }
           ]
         },
         {
@@ -619,7 +619,7 @@ export default {
             { index: 1, path: koko_scale_1, fileName: '1.jpg' },
             { index: 2, path: koko_scale_2, fileName: '2.jpg' },
             { index: 3, path: koko_scale_3, fileName: '3.jpg' },
-            { index: 4, path: koko_scale_4, fileName: '4.jpg' },
+            { index: 4, path: koko_scale_4, fileName: '4.jpg' }
           ]
         },
         {
@@ -699,7 +699,7 @@ export default {
             { index: 1, path: banana_tasting_event_1, fileName: '1.jpg' },
             { index: 2, path: banana_tasting_event_2, fileName: '2.jpg' },
             { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
-            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' },
+            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' }
           ]
         },
         {
@@ -747,7 +747,7 @@ export default {
             { index: 5, path: craft_gene_5, fileName: '5.jpg' },
             { index: 6, path: craft_gene_6, fileName: '6.jpg' },
             { index: 7, path: craft_gene_7, fileName: '7.jpg' },
-            { index: 8, path: craft_gene_8, fileName: '8.jpg' },
+            { index: 8, path: craft_gene_8, fileName: '8.jpg' }
           ]
         },
         {
