@@ -2,8 +2,6 @@
 import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import sustainable_agri_mover_1 from '@/assets/image/work/content/sustainable-agri-mover/1.png'
 import sustainable_agri_mover_2 from '@/assets/image/work/content/sustainable-agri-mover/2.png'
-import sustainable_agri_mover_3 from '@/assets/image/work/content/sustainable-agri-mover/3.png'
-import sustainable_agri_mover_4 from '@/assets/image/work/content/sustainable-agri-mover/4.png'
 
 import tech_agri_workshop_0 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import tech_agri_workshop_1 from '@/assets/image/work/content/tech-agri-workshop/1.jpg'
@@ -251,8 +249,6 @@ export default {
             { index: 0, path: sustainable_agri_mover_0, fileName: '0.jpg' },
             { index: 1, path: sustainable_agri_mover_1, fileName: '1.png' },
             { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' },
-            { index: 3, path: sustainable_agri_mover_3, fileName: '3.png' },
-            { index: 4, path: sustainable_agri_mover_4, fileName: '4.png' }
           ]
         },
         {
