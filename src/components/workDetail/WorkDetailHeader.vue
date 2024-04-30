@@ -19,9 +19,9 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
     <div class="work-detail-header-section__content">
       <div class="work-detail-header-section__info">
         <div class="work-detail-header-section__raw">
-          <span class="work-detail-header-section__raw-label font-6">Corporate</span>
+          <span class="work-detail-header-section__raw-label font-6">Collaborator</span>
           <div class="work-detail-header-section__raw-line"></div>
-          <p class="work-detail-header-section__raw-text font-7">{{ client }}</p>
+          <p class="work-detail-header-section__raw-text font-7">{{ collaborator }}</p>
         </div>
 
         <div class="work-detail-header-section__raw">
@@ -56,7 +56,7 @@ export default {
   props: {
     concept: { type: String },
     name: { type: String },
-    client: { type: String },
+    collaborator: { type: String },
     type: { type: String },
     content: { type: String },
     keywords: { type: Array },
