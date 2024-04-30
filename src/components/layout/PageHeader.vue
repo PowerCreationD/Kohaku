@@ -136,10 +136,10 @@ export default {
           text: 'work',
           link: '/work'
         },
-        {
-          text: 'member',
-          link: '/member'
-        },
+        // {
+        //   text: 'member',
+        //   link: '/member'
+        // },
         {
           text: 'contact',
           link: '/contact'
