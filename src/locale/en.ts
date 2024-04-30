@@ -29,7 +29,7 @@ const locale = {
     },
     about: {
       name: '琥白',
-      brand: 'Kohaku Studio',
+      brand: 'Kohaku',
       text: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
             白 represents the concept of margin in design, the freedom of leaving room for all possibilities.
 
@@ -106,7 +106,7 @@ const locale = {
   },
   about: {
     description: {
-      introduction: `Kohaku Studio was founded between 2021 and 2022.
+      introduction: `Kohaku was founded between 2021 and 2022.
             The story began with a group of young people from diverse backgrounds.
             Driven by the desire to return to their original aspirations, they rooted themselves in Taiwan.
             Fuelled by their vision for the future of agriculture, they delved deep into the traditional industries.`,

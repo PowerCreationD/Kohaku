@@ -19,7 +19,7 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
     <div class="work-detail-header-section__content">
       <div class="work-detail-header-section__info">
         <div class="work-detail-header-section__raw">
-          <span class="work-detail-header-section__raw-label font-6">Client</span>
+          <span class="work-detail-header-section__raw-label font-6">Corporate</span>
           <div class="work-detail-header-section__raw-line"></div>
           <p class="work-detail-header-section__raw-text font-7">{{ client }}</p>
         </div>
