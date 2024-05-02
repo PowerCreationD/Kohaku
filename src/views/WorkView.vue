@@ -20,7 +20,7 @@ import mainImage19 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import mainImage20 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
 import mainImage21 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
 import mainImage22 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
-import mainImage23 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
+import mainImage23 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
 import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
 import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
@@ -223,7 +223,7 @@ export default {
         {
           id: 23,
           type: 'content',
-          project: 'sustainability-and-circular-economy-workshop',
+          project: 'circular-economy-and-ai-workshop',
           concept: this.$t('work.projects[23].concept'),
           mainImage: mainImage23,
           name: this.$t('work.projects[23].name')

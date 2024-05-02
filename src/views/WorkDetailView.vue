@@ -147,10 +147,13 @@ import taiwanese_stall_7 from '@/assets/image/work/content/taiwanese-stall/7.jpg
 import taiwanese_stall_8 from '@/assets/image/work/content/taiwanese-stall/8.jpg'
 import taiwanese_stall_9 from '@/assets/image/work/content/taiwanese-stall/9.jpg'
 
-import circular_economy_workshop_0 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
-import circular_economy_workshop_1 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/1.jpg'
-import circular_economy_workshop_2 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/2.jpg'
-import circular_economy_workshop_3 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/3.jpg'
+import circular_economy_workshop_0 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
+import circular_economy_workshop_1 from '@/assets/image/work/content/circular-economy-and-ai-workshop/1.jpg'
+import circular_economy_workshop_2 from '@/assets/image/work/content/circular-economy-and-ai-workshop/2.jpg'
+import circular_economy_workshop_3 from '@/assets/image/work/content/circular-economy-and-ai-workshop/3.jpg'
+import circular_economy_workshop_4 from '@/assets/image/work/content/circular-economy-and-ai-workshop/4.jpg'
+import circular_economy_workshop_5 from '@/assets/image/work/content/circular-economy-and-ai-workshop/5.jpg'
+import circular_economy_workshop_6 from '@/assets/image/work/content/circular-economy-and-ai-workshop/6.jpg'
 
 import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpg'
@@ -728,11 +731,11 @@ export default {
         {
           id: 23,
           type: 'content',
-          project: 'sustainability-and-circular-economy-workshop',
+          project: 'circular-economy-and-ai-workshop',
           concept: this.$t('work.projects[23].concept'),
           collaborator: this.$t('work.projects[23].collaborator'),
           name: this.$t('work.projects[23].name'),
-          layoutType: 6,
+          layoutType: 2,
           content: this.$t('work.projects[23].content'),
           keywords: [
             this.$t('work.projects[23].keywords[0]'),
@@ -745,7 +748,10 @@ export default {
             { index: 0, path: circular_economy_workshop_0, fileName: '0.jpg' },
             { index: 1, path: circular_economy_workshop_1, fileName: '1.jpg' },
             { index: 2, path: circular_economy_workshop_2, fileName: '2.jpg' },
-            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' }
+            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' },
+            { index: 4, path: circular_economy_workshop_4, fileName: '4.jpg' },
+            { index: 5, path: circular_economy_workshop_5, fileName: '5.jpg' },
+            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' },
           ]
         },
         {
