@@ -18,14 +18,15 @@ import mainImage17 from '@/assets/image/work/system/koko-bot/0.png'
 import mainImage18 from '@/assets/image/work/system/koko-scale/0.jpg'
 import mainImage19 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import mainImage20 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
-import mainImage21 from '@/assets/image/work/design/act-japanese-rice-packaging/0.png'
-import mainImage22 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/0.jpg'
+import mainImage21 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
+import mainImage22 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
 import mainImage23 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
 import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
 import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
 import mainImage27 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
 import mainImage28 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/0.png'
+import mainImage29 from '@/assets/image/work/content/sustainable-agri-course/0.jpg'
 </script>
 
 <template>
@@ -129,7 +130,7 @@ export default {
         {
           id: 22,
           type: 'content',
-          project: 'taiwan-banana-japan-tasting-event',
+          project: 'taiwanese-stall',
           concept: this.$t('work.projects[22].concept'),
           mainImage: mainImage22,
           name: this.$t('work.projects[22].name')
@@ -178,12 +179,11 @@ export default {
         {
           id: 21,
           type: 'design',
-          project: 'act-japanese-rice-packaging',
+          project: 'japanese-rice-packaging',
           concept: this.$t('work.projects[21].concept'),
           mainImage: mainImage21,
           name: this.$t('work.projects[21].name')
         },
-
 
         {
           id: 4,
@@ -276,6 +276,14 @@ export default {
           concept: this.$t('work.projects[6].concept'),
           mainImage: mainImage6,
           name: this.$t('work.projects[6].name')
+        },
+        {
+          id: 29,
+          type: 'content',
+          project: 'sustainable-agri-course',
+          concept: this.$t('work.projects[29].concept'),
+          mainImage: mainImage29,
+          name: this.$t('work.projects[29].name')
         }
       ]
     }

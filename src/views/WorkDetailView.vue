@@ -18,6 +18,8 @@ import digital_craft_platform_0 from '@/assets/image/work/content/digital-craft-
 import digital_craft_platform_1 from '@/assets/image/work/content/digital-craft-platform/1.png'
 import digital_craft_platform_2 from '@/assets/image/work/content/digital-craft-platform/2.png'
 import digital_craft_platform_3 from '@/assets/image/work/content/digital-craft-platform/3.png'
+import digital_craft_platform_4 from '@/assets/image/work/content/digital-craft-platform/4.png'
+import digital_craft_platform_5 from '@/assets/image/work/content/digital-craft-platform/5.png'
 
 import ceatec_agri_week_0 from '@/assets/image/work/content/ceatec-agri-week/0.jpg'
 import ceatec_agri_week_1 from '@/assets/image/work/content/ceatec-agri-week/1.jpg'
@@ -40,6 +42,8 @@ import pingtung_pineapple_export_0 from '@/assets/image/work/content/pingtung-pi
 import pingtung_pineapple_export_1 from '@/assets/image/work/content/pingtung-pineapple-export/1.jpg'
 import pingtung_pineapple_export_2 from '@/assets/image/work/content/pingtung-pineapple-export/2.jpg'
 import pingtung_pineapple_export_3 from '@/assets/image/work/content/pingtung-pineapple-export/3.jpg'
+import pingtung_pineapple_export_4 from '@/assets/image/work/content/pingtung-pineapple-export/4.jpg'
+import pingtung_pineapple_export_5 from '@/assets/image/work/content/pingtung-pineapple-export/5.jpg'
 
 import mu_maison_0 from '@/assets/image/work/design/mu-maison/0.png'
 import mu_maison_1 from '@/assets/image/work/design/mu-maison/1.png'
@@ -124,17 +128,24 @@ import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-c
 import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
 import southern_island_1 from '@/assets/image/work/design/southern-island-daily-dried-fruit/1.png'
 
-import rice_packaging_0 from '@/assets/image/work/design/act-japanese-rice-packaging/0.png'
-import rice_packaging_1 from '@/assets/image/work/design/act-japanese-rice-packaging/1.png'
-import rice_packaging_2 from '@/assets/image/work/design/act-japanese-rice-packaging/2.png'
-import rice_packaging_3 from '@/assets/image/work/design/act-japanese-rice-packaging/3.png'
-import rice_packaging_4 from '@/assets/image/work/design/act-japanese-rice-packaging/4.png'
+import rice_packaging_0 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
+import rice_packaging_1 from '@/assets/image/work/design/japanese-rice-packaging/1.png'
+import rice_packaging_2 from '@/assets/image/work/design/japanese-rice-packaging/2.png'
+import rice_packaging_3 from '@/assets/image/work/design/japanese-rice-packaging/3.png'
+import rice_packaging_4 from '@/assets/image/work/design/japanese-rice-packaging/4.png'
+import rice_packaging_5 from '@/assets/image/work/design/japanese-rice-packaging/5.jpg'
+import rice_packaging_6 from '@/assets/image/work/design/japanese-rice-packaging/6.jpg'
 
-import banana_tasting_event_0 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/0.jpg'
-import banana_tasting_event_1 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/1.jpg'
-import banana_tasting_event_2 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/2.jpg'
-import banana_tasting_event_3 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/3.jpg'
-import banana_tasting_event_4 from '@/assets/image/work/content/taiwan-banana-japan-tasting-event/4.jpg'
+import taiwanese_stall_0 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
+import taiwanese_stall_1 from '@/assets/image/work/content/taiwanese-stall/1.jpg'
+import taiwanese_stall_2 from '@/assets/image/work/content/taiwanese-stall/2.jpg'
+import taiwanese_stall_3 from '@/assets/image/work/content/taiwanese-stall/3.jpg'
+import taiwanese_stall_4 from '@/assets/image/work/content/taiwanese-stall/4.jpg'
+import taiwanese_stall_5 from '@/assets/image/work/content/taiwanese-stall/5.jpg'
+import taiwanese_stall_6 from '@/assets/image/work/content/taiwanese-stall/6.jpg'
+import taiwanese_stall_7 from '@/assets/image/work/content/taiwanese-stall/7.jpg'
+import taiwanese_stall_8 from '@/assets/image/work/content/taiwanese-stall/8.jpg'
+import taiwanese_stall_9 from '@/assets/image/work/content/taiwanese-stall/9.jpg'
 
 import circular_economy_workshop_0 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/0.jpg'
 import circular_economy_workshop_1 from '@/assets/image/work/content/sustainability-and-circular-economy-workshop/1.jpg'
@@ -172,6 +183,11 @@ import smart_sprayer_4 from '@/assets/image/work/system/remote-control-smart-spr
 import plant_notification_line_bot_0 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/0.png'
 import plant_notification_line_bot_1 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/1.png'
 import plant_notification_line_bot_2 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/2.png'
+
+import sustainable_agri_course_0 from '@/assets/image/work/content/sustainable-agri-course/0.jpg'
+import sustainable_agri_course_1 from '@/assets/image/work/content/sustainable-agri-course/1.png'
+import sustainable_agri_course_2 from '@/assets/image/work/content/sustainable-agri-course/2.png'
+import sustainable_agri_course_3 from '@/assets/image/work/content/sustainable-agri-course/3.png'
 </script>
 
 <template>
@@ -248,7 +264,7 @@ export default {
           images: [
             { index: 0, path: sustainable_agri_mover_0, fileName: '0.jpg' },
             { index: 1, path: sustainable_agri_mover_1, fileName: '1.png' },
-            { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' },
+            { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' }
           ]
         },
         {
@@ -314,7 +330,9 @@ export default {
             { index: 0, path: digital_craft_platform_0, fileName: '0.png' },
             { index: 1, path: digital_craft_platform_1, fileName: '1.png' },
             { index: 2, path: digital_craft_platform_2, fileName: '2.png' },
-            { index: 3, path: digital_craft_platform_3, fileName: '3.png' }
+            { index: 3, path: digital_craft_platform_3, fileName: '3.png' },
+            { index: 4, path: digital_craft_platform_4, fileName: '4.png' },
+            { index: 5, path: digital_craft_platform_5, fileName: '5.png' }
           ]
         },
         {
@@ -372,7 +390,7 @@ export default {
           concept: this.$t('work.projects[7].concept'),
           collaborator: this.$t('work.projects[7].collaborator'),
           name: this.$t('work.projects[7].name'),
-          layoutType: 6,
+          layoutType: 4,
           content: this.$t('work.projects[7].content'),
           keywords: [
             this.$t('work.projects[7].keywords[0]'),
@@ -382,7 +400,9 @@ export default {
             { index: 0, path: pingtung_pineapple_export_0, fileName: '0.jpg' },
             { index: 1, path: pingtung_pineapple_export_1, fileName: '1.jpg' },
             { index: 2, path: pingtung_pineapple_export_2, fileName: '2.jpg' },
-            { index: 3, path: pingtung_pineapple_export_3, fileName: '3.jpg' }
+            { index: 3, path: pingtung_pineapple_export_3, fileName: '3.jpg' },
+            { index: 4, path: pingtung_pineapple_export_4, fileName: '4.jpg' },
+            { index: 5, path: pingtung_pineapple_export_5, fileName: '5.jpg' }
           ]
         },
         {
@@ -658,7 +678,7 @@ export default {
         {
           id: 21,
           type: 'design',
-          project: 'act-japanese-rice-packaging',
+          project: 'japanese-rice-packaging',
           concept: this.$t('work.projects[21].concept'),
           collaborator: this.$t('work.projects[21].collaborator'),
           name: this.$t('work.projects[21].name'),
@@ -673,13 +693,15 @@ export default {
             { index: 1, path: rice_packaging_1, fileName: '1.png' },
             { index: 2, path: rice_packaging_2, fileName: '2.png' },
             { index: 3, path: rice_packaging_3, fileName: '3.png' },
-            { index: 4, path: rice_packaging_4, fileName: '4.png' }
+            { index: 4, path: rice_packaging_4, fileName: '4.png' },
+            { index: 5, path: rice_packaging_5, fileName: '5.jpg' },
+            { index: 6, path: rice_packaging_6, fileName: '6.jpg' }
           ]
         },
         {
           id: 22,
           type: 'content',
-          project: 'taiwan-banana-japan-tasting-event',
+          project: 'taiwanese-stall',
           concept: this.$t('work.projects[22].concept'),
           collaborator: this.$t('work.projects[22].collaborator'),
           name: this.$t('work.projects[22].name'),
@@ -691,11 +713,16 @@ export default {
             this.$t('work.projects[22].keywords[2]')
           ],
           images: [
-            { index: 0, path: banana_tasting_event_0, fileName: '0.jpg' },
-            { index: 1, path: banana_tasting_event_1, fileName: '1.jpg' },
-            { index: 2, path: banana_tasting_event_2, fileName: '2.jpg' },
-            { index: 3, path: banana_tasting_event_3, fileName: '3.jpg' },
-            { index: 4, path: banana_tasting_event_4, fileName: '4.jpg' }
+            { index: 0, path: taiwanese_stall_0, fileName: '0.jpg' },
+            { index: 1, path: taiwanese_stall_1, fileName: '1.jpg' },
+            { index: 2, path: taiwanese_stall_2, fileName: '2.jpg' },
+            { index: 3, path: taiwanese_stall_3, fileName: '3.jpg' },
+            { index: 4, path: taiwanese_stall_4, fileName: '4.jpg' },
+            { index: 5, path: taiwanese_stall_5, fileName: '5.jpg' },
+            { index: 6, path: taiwanese_stall_6, fileName: '6.jpg' },
+            { index: 7, path: taiwanese_stall_7, fileName: '7.jpg' },
+            { index: 8, path: taiwanese_stall_8, fileName: '8.jpg' },
+            { index: 9, path: taiwanese_stall_9, fileName: '9.jpg' }
           ]
         },
         {
@@ -711,7 +738,8 @@ export default {
             this.$t('work.projects[23].keywords[0]'),
             this.$t('work.projects[23].keywords[1]'),
             this.$t('work.projects[23].keywords[2]'),
-            this.$t('work.projects[23].keywords[3]')
+            this.$t('work.projects[23].keywords[3]'),
+            this.$t('work.projects[23].keywords[4]')
           ],
           images: [
             { index: 0, path: circular_economy_workshop_0, fileName: '0.jpg' },
@@ -830,6 +858,27 @@ export default {
             { index: 0, path: plant_notification_line_bot_0, fileName: '0.png' },
             { index: 1, path: plant_notification_line_bot_1, fileName: '1.png' },
             { index: 2, path: plant_notification_line_bot_2, fileName: '2.png' }
+          ]
+        },
+        {
+          id: 29,
+          type: 'content',
+          project: 'sustainable-agri-course',
+          concept: this.$t('work.projects[29].concept'),
+          collaborator: this.$t('work.projects[29].collaborator'),
+          name: this.$t('work.projects[29].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[29].content'),
+          keywords: [
+            this.$t('work.projects[29].keywords[0]'),
+            this.$t('work.projects[29].keywords[1]'),
+            this.$t('work.projects[29].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: sustainable_agri_course_0, fileName: '0.png' },
+            { index: 1, path: sustainable_agri_course_1, fileName: '1.png' },
+            { index: 2, path: sustainable_agri_course_2, fileName: '2.png' },
+            { index: 3, path: sustainable_agri_course_3, fileName: '3.png' }
           ]
         }
       ]
