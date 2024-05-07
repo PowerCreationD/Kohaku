@@ -183,14 +183,12 @@ import smart_sprayer_2 from '@/assets/image/work/system/remote-control-smart-spr
 import smart_sprayer_3 from '@/assets/image/work/system/remote-control-smart-sprayer/3.jpeg'
 import smart_sprayer_4 from '@/assets/image/work/system/remote-control-smart-sprayer/4.jpeg'
 
-import plant_notification_line_bot_0 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/0.png'
-import plant_notification_line_bot_1 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/1.png'
-import plant_notification_line_bot_2 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/2.png'
-
-import sustainable_agri_course_0 from '@/assets/image/work/content/sustainable-agri-course/0.jpg'
-import sustainable_agri_course_1 from '@/assets/image/work/content/sustainable-agri-course/1.png'
-import sustainable_agri_course_2 from '@/assets/image/work/content/sustainable-agri-course/2.png'
-import sustainable_agri_course_3 from '@/assets/image/work/content/sustainable-agri-course/3.png'
+import sustainable_agri_tech_0 from '@/assets/image/work/content/sustainable-agri-tech/0.png'
+import sustainable_agri_tech_1 from '@/assets/image/work/content/sustainable-agri-tech/1.png'
+import sustainable_agri_tech_2 from '@/assets/image/work/content/sustainable-agri-tech/2.png'
+import sustainable_agri_tech_3 from '@/assets/image/work/content/sustainable-agri-tech/3.jpg'
+import sustainable_agri_tech_4 from '@/assets/image/work/content/sustainable-agri-tech/4.png'
+import sustainable_agri_tech_5 from '@/assets/image/work/content/sustainable-agri-tech/5.png'
 </script>
 
 <template>
@@ -751,7 +749,7 @@ export default {
             { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' },
             { index: 4, path: circular_economy_workshop_4, fileName: '4.jpg' },
             { index: 5, path: circular_economy_workshop_5, fileName: '5.jpg' },
-            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' },
+            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' }
           ]
         },
         {
@@ -848,12 +846,12 @@ export default {
         },
         {
           id: 28,
-          type: 'system',
-          project: 'plant-moisture-data-notification-line-bot',
+          type: 'content',
+          project: 'sustainable-agri-tech',
           concept: this.$t('work.projects[28].concept'),
           collaborator: this.$t('work.projects[28].collaborator'),
           name: this.$t('work.projects[28].name'),
-          layoutType: 1,
+          layoutType: 4,
           content: this.$t('work.projects[28].content'),
           keywords: [
             this.$t('work.projects[28].keywords[0]'),
@@ -861,30 +859,12 @@ export default {
             this.$t('work.projects[28].keywords[2]')
           ],
           images: [
-            { index: 0, path: plant_notification_line_bot_0, fileName: '0.png' },
-            { index: 1, path: plant_notification_line_bot_1, fileName: '1.png' },
-            { index: 2, path: plant_notification_line_bot_2, fileName: '2.png' }
-          ]
-        },
-        {
-          id: 29,
-          type: 'content',
-          project: 'sustainable-agri-course',
-          concept: this.$t('work.projects[29].concept'),
-          collaborator: this.$t('work.projects[29].collaborator'),
-          name: this.$t('work.projects[29].name'),
-          layoutType: 5,
-          content: this.$t('work.projects[29].content'),
-          keywords: [
-            this.$t('work.projects[29].keywords[0]'),
-            this.$t('work.projects[29].keywords[1]'),
-            this.$t('work.projects[29].keywords[2]')
-          ],
-          images: [
-            { index: 0, path: sustainable_agri_course_0, fileName: '0.png' },
-            { index: 1, path: sustainable_agri_course_1, fileName: '1.png' },
-            { index: 2, path: sustainable_agri_course_2, fileName: '2.png' },
-            { index: 3, path: sustainable_agri_course_3, fileName: '3.png' }
+            { index: 0, path: sustainable_agri_tech_0, fileName: '0.png' },
+            { index: 1, path: sustainable_agri_tech_1, fileName: '1.png' },
+            { index: 2, path: sustainable_agri_tech_2, fileName: '2.png' },
+            { index: 3, path: sustainable_agri_tech_3, fileName: '3.jpg' },
+            { index: 4, path: sustainable_agri_tech_4, fileName: '4.png' },
+            { index: 5, path: sustainable_agri_tech_5, fileName: '5.png' },
           ]
         }
       ]

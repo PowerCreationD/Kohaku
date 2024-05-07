@@ -25,8 +25,7 @@ import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.j
 import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
 import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
 import mainImage27 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
-import mainImage28 from '@/assets/image/work/system/plant-moisture-data-notification-line-bot/0.png'
-import mainImage29 from '@/assets/image/work/content/sustainable-agri-course/0.jpg'
+import mainImage28 from '@/assets/image/work/content/sustainable-agri-tech/0.png'
 </script>
 
 <template>
@@ -62,7 +61,6 @@ export default {
           mainImage: mainImage27,
           name: this.$t('work.projects[27].name')
         },
-
         {
           id: 20,
           type: 'design',
@@ -105,8 +103,8 @@ export default {
         },
         {
           id: 28,
-          type: 'system',
-          project: 'plant-moisture-data-notification-line-bot',
+          type: 'content',
+          project: 'sustainable-agri-tech',
           concept: this.$t('work.projects[28].concept'),
           mainImage: mainImage28,
           name: this.$t('work.projects[28].name')
@@ -260,7 +258,6 @@ export default {
           mainImage: mainImage3,
           name: this.$t('work.projects[3].name')
         },
-
         {
           id: 5,
           type: 'content',
@@ -276,14 +273,6 @@ export default {
           concept: this.$t('work.projects[6].concept'),
           mainImage: mainImage6,
           name: this.$t('work.projects[6].name')
-        },
-        {
-          id: 29,
-          type: 'content',
-          project: 'sustainable-agri-course',
-          concept: this.$t('work.projects[29].concept'),
-          mainImage: mainImage29,
-          name: this.$t('work.projects[29].name')
         }
       ]
     }
