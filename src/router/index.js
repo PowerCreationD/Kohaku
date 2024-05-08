@@ -166,6 +166,10 @@ const router = createRouter({
           return `https://kohakustudio.co/contact`
         }
       }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'error'
     }
   ],
   scrollBehavior() {
@@ -174,6 +178,10 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
+  if (to.name === 'error') {
+    next('/')
+  }
+
   // Remove existing canonicalLink
   const prevCanonicalLink = document.querySelector('link[rel="canonical"]')
   if (prevCanonicalLink) {
