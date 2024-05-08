@@ -17,7 +17,7 @@ import videoGif from '@/assets/image/about/animation_radio-move.gif'
         </p>
       </article>
 
-      <img :src="videoGif" alt="kohaku" class="intro__gif scroll-animation-slide-and-fade-in">
+      <img :src="videoGif" alt="kohaku" class="intro__gif scroll-animation-slide-and-fade-in" />
 
       <article class="intro__desc">
         <p class="font-7 scroll-animation-slide-and-fade-in">
@@ -46,7 +46,7 @@ import videoGif from '@/assets/image/about/animation_radio-move.gif'
     </div>
 
     <!-- * Company Table -->
-    <companyTable class="show-on-scroll"></companyTable>
+    <companyTable v-if="isShow" class="show-on-scroll"></companyTable>
 
     <!-- * Milestone -->
     <milestone class="show-on-scroll"></milestone>
@@ -63,6 +63,11 @@ export default {
   components: { milestone, pageTitle },
   data() {
     return {}
+  },
+  computed: {
+    isShow() {
+      return this.$i18n.locale === 'zh'
+    }
   }
 }
 </script>
