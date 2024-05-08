@@ -25,6 +25,7 @@
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    pointer-events: none;
   }
 }
 
