@@ -21,7 +21,15 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
         <div v-if="this.$i18n.locale === 'zh'" class="work-detail-header-section__raw">
           <span class="work-detail-header-section__raw-label font-6">Collaborator</span>
           <div class="work-detail-header-section__raw-line"></div>
-          <p class="work-detail-header-section__raw-text font-7">{{ collaborator }}</p>
+          <div class="work-detail-header-section__raw-container">
+            <p
+              class="work-detail-header-section__raw-text font-7"
+              v-for="item in collaborator"
+              :key="item"
+            >
+              {{ item }}
+            </p>
+          </div>
         </div>
 
         <div class="work-detail-header-section__raw">
