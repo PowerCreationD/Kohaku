@@ -1,5 +1,5 @@
 <script setup>
-import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.jpg'
+import mainImage1 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import mainImage2 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import mainImage3 from '@/assets/image/work/content/lathe-tech-workshop/0.jpg'
 import mainImage4 from '@/assets/image/work/content/digital-craft-platform/0.png'
@@ -11,13 +11,21 @@ import mainImage9 from '@/assets/image/work/design/recycled-pottery-furniture/0.
 import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import mainImage11 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import mainImage12 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
-// import mainImage13 from '@/assets/image/work/design/breakfast-nightshop-branding/0.jpg'
 import mainImage14 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
-import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/0.jpg'
+import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
-import mainImage17 from '@/assets/image/work/system/koko-bot/0.jpg'
+import mainImage17 from '@/assets/image/work/system/koko-bot/0.png'
 import mainImage18 from '@/assets/image/work/system/koko-scale/0.jpg'
 import mainImage19 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
+import mainImage20 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
+import mainImage21 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
+import mainImage22 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
+import mainImage23 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
+import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
+import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
+import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
+import mainImage27 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
+import mainImage28 from '@/assets/image/work/content/sustainable-agri-tech/0.png'
 </script>
 
 <template>
@@ -46,275 +54,242 @@ export default {
       isSelectAll: true,
       workItems: [
         {
-          id: 1,
-          type: 'content',
-          project: 'sustainable-agri-mover',
-          mainImage: mainImage1,
-          name: this.$t('work.projects[1].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[1].content'),
-          keywords: [
-            this.$t('work.projects[1].keywords[0]'),
-            this.$t('work.projects[1].keywords[1]'),
-            this.$t('work.projects[1].keywords[2]')
-          ]
+          id: 27,
+          type: 'system',
+          project: 'remote-control-smart-sprayer',
+          concept: this.$t('work.projects[27].concept'),
+          mainImage: mainImage27,
+          name: this.$t('work.projects[27].name')
         },
         {
-          id: 2,
-          type: 'content',
-          project: 'tech-agri-workshop',
-          mainImage: mainImage2,
-          name: this.$t('work.projects[2].name'),
-          layoutType: 2,
-          content: this.$t('work.projects[2].content'),
-          keywords: [
-            this.$t('work.projects[2].keywords[0]'),
-            this.$t('work.projects[2].keywords[1]'),
-            this.$t('work.projects[2].keywords[2]'),
-            this.$t('work.projects[2].keywords[3]')
-          ]
-        },
-        {
-          id: 3,
-          type: 'content',
-          project: 'lathe-tech-workshop',
-          mainImage: mainImage3,
-          name: this.$t('work.projects[3].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[3].content'),
-          keywords: [
-            this.$t('work.projects[3].keywords[0]'),
-            this.$t('work.projects[3].keywords[1]'),
-            this.$t('work.projects[3].keywords[2]')
-          ]
-        },
-        {
-          id: 4,
-          type: 'content',
-          project: 'digital-craft-platform',
-          mainImage: mainImage4,
-          name: this.$t('work.projects[4].name'),
-          layoutType: 3,
-          content: this.$t('work.projects[4].content'),
-          keywords: [
-            this.$t('work.projects[4].keywords[0]'),
-            this.$t('work.projects[4].keywords[1]'),
-            this.$t('work.projects[4].keywords[2]'),
-            this.$t('work.projects[4].keywords[3]')
-          ]
-        },
-        {
-          id: 5,
-          type: 'content',
-          project: 'ceatec-agri-week',
-          mainImage: mainImage5,
-          name: this.$t('work.projects[5].name'),
-          layoutType: 2,
-          content: this.$t('work.projects[5].content'),
-          keywords: [
-            this.$t('work.projects[5].keywords[0]'),
-            this.$t('work.projects[5].keywords[1]'),
-            this.$t('work.projects[5].keywords[2]')
-          ]
-        },
-        {
-          id: 6,
-          type: 'content',
-          project: 'supermarket-japan-station',
-          mainImage: mainImage6,
-          name: this.$t('work.projects[6].name'),
-          layoutType: 4,
-          content: this.$t('work.projects[6].content'),
-          keywords: [
-            this.$t('work.projects[6].keywords[0]'),
-            this.$t('work.projects[6].keywords[1]')
-          ]
-        },
-        {
-          id: 7,
-          type: 'content',
-          project: 'pingtung-pineapple-export',
-          mainImage: mainImage7,
-          name: this.$t('work.projects[7].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[7].content'),
-          keywords: [
-            this.$t('work.projects[7].keywords[0]'),
-            this.$t('work.projects[7].keywords[1]')
-          ]
-        },
-        {
-          id: 8,
+          id: 20,
           type: 'design',
-          project: 'mu-maison',
-          mainImage: mainImage8,
-          name: this.$t('work.projects[8].name'),
-          layoutType: 3,
-          content: this.$t('work.projects[8].content'),
-          keywords: [
-            this.$t('work.projects[8].keywords[0]'),
-            this.$t('work.projects[8].keywords[1]')
-          ]
-        },
-        {
-          id: 9,
-          type: 'design',
-          project: 'recycled-pottery-furniture',
-          mainImage: mainImage9,
-          name: this.$t('work.projects[9].name'),
-          layoutType: 4,
-          content: this.$t('work.projects[9].content'),
-          keywords: [
-            this.$t('work.projects[9].keywords[0]'),
-            this.$t('work.projects[9].keywords[1]'),
-            this.$t('work.projects[9].keywords[2]'),
-            this.$t('work.projects[9].keywords[3]')
-          ]
-        },
-        {
-          id: 10,
-          type: 'design',
-          project: 'woodworking-craft-tool-guide',
-          mainImage: mainImage10,
-          name: this.$t('work.projects[10].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[10].content'),
-          keywords: [
-            this.$t('work.projects[10].keywords[0]'),
-            this.$t('work.projects[10].keywords[1]'),
-            this.$t('work.projects[10].keywords[2]')
-          ]
-        },
-        {
-          id: 11,
-          type: 'design',
-          project: 'power-creation-business-card',
-          mainImage: mainImage11,
-          name: this.$t('work.projects[11].name'),
-          layoutType: 5,
-          content: this.$t('work.projects[11].content'),
-          keywords: [
-            this.$t('work.projects[11].keywords[0]'),
-            this.$t('work.projects[11].keywords[1]')
-          ]
-        },
-        {
-          id: 12,
-          type: 'design',
-          project: 'japan-gov-business-card',
-          mainImage: mainImage12,
-          name: this.$t('work.projects[12].name'),
-          layoutType: 5,
-          content: this.$t('work.projects[12].content'),
-          keywords: [
-            this.$t('work.projects[12].keywords[0]'),
-            this.$t('work.projects[12].keywords[1]')
-          ]
-        },
-        // {
-        //   id: 13,
-        //   type: 'design',
-        //   project: 'breakfast-nightshop-branding',
-        //   mainImage: mainImage13,
-        //   name: this.$t('work.projects[13].name'),
-        //   layoutType: 3,
-        //   content: this.$t('work.projects[13].content'),
-        //   keywords: [
-        //     this.$t('work.projects[13].keywords[0]'),
-        //     this.$t('work.projects[13].keywords[1]'),
-        //     this.$t('work.projects[13].keywords[2]'),
-        //     this.$t('work.projects[13].keywords[3]')
-        //   ]
-        // },
-        {
-          id: 14,
-          type: 'design',
-          project: 'leek-kimchi-packaging',
-          mainImage: mainImage14,
-          name: this.$t('work.projects[14].name'),
-          layoutType: 6,
-          content: this.$t('work.projects[14].content'),
-          keywords: [
-            this.$t('work.projects[14].keywords[0]'),
-            this.$t('work.projects[14].keywords[1]')
-          ]
+          project: 'southern-island-daily-dried-fruit',
+          concept: this.$t('work.projects[20].concept'),
+          mainImage: mainImage20,
+          name: this.$t('work.projects[20].name')
         },
         {
           id: 15,
           type: 'system',
           project: 'japan-agri-ecom-logistics',
+          concept: this.$t('work.projects[15].concept'),
           mainImage: mainImage15,
-          name: this.$t('work.projects[15].name'),
-          layoutType: 3,
-          content: this.$t('work.projects[15].content'),
-          keywords: [
-            this.$t('work.projects[15].keywords[0]'),
-            this.$t('work.projects[15].keywords[1]'),
-            this.$t('work.projects[15].keywords[2]')
-          ]
-        },
-        {
-          id: 16,
-          type: 'system',
-          project: 'auto-robot-control-platform',
-          mainImage: mainImage16,
-          name: this.$t('work.projects[16].name'),
-          layoutType: 7,
-          content: this.$t('work.projects[16].content'),
-          keywords: [
-            this.$t('work.projects[16].keywords[0]'),
-            this.$t('work.projects[16].keywords[1]'),
-            this.$t('work.projects[16].keywords[2]')
-          ]
+          name: this.$t('work.projects[15].name')
         },
         {
           id: 17,
           type: 'system',
           project: 'koko-bot',
+          concept: this.$t('work.projects[17].concept'),
           mainImage: mainImage17,
-          name: this.$t('work.projects[17].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[17].content'),
-          keywords: [
-            this.$t('work.projects[17].keywords[0]'),
-            this.$t('work.projects[17].keywords[1]')
-          ]
+          name: this.$t('work.projects[17].name')
         },
         {
           id: 18,
           type: 'system',
           project: 'koko-scale',
+          concept: this.$t('work.projects[18].concept'),
           mainImage: mainImage18,
-          name: this.$t('work.projects[18].name'),
-          layoutType: 1,
-          content: this.$t('work.projects[18].content'),
-          keywords: [
-            this.$t('work.projects[18].keywords[0]'),
-            this.$t('work.projects[18].keywords[1]')
-          ]
+          name: this.$t('work.projects[18].name')
         },
+        {
+          id: 2,
+          type: 'content',
+          project: 'tech-agri-workshop',
+          concept: this.$t('work.projects[2].concept'),
+          mainImage: mainImage2,
+          name: this.$t('work.projects[2].name')
+        },
+        {
+          id: 28,
+          type: 'content',
+          project: 'sustainable-agri-tech',
+          concept: this.$t('work.projects[28].concept'),
+          mainImage: mainImage28,
+          name: this.$t('work.projects[28].name')
+        },
+        {
+          id: 1,
+          type: 'content',
+          project: 'sustainable-agri-mover',
+          concept: this.$t('work.projects[1].concept'),
+          mainImage: mainImage1,
+          name: this.$t('work.projects[1].name')
+        },
+        {
+          id: 7,
+          type: 'content',
+          project: 'pingtung-pineapple-export',
+          concept: this.$t('work.projects[7].concept'),
+          mainImage: mainImage7,
+          name: this.$t('work.projects[7].name')
+        },
+        {
+          id: 22,
+          type: 'content',
+          project: 'taiwanese-stall',
+          concept: this.$t('work.projects[22].concept'),
+          mainImage: mainImage22,
+          name: this.$t('work.projects[22].name')
+        },
+
+        {
+          id: 11,
+          type: 'design',
+          project: 'power-creation-business-card',
+          concept: this.$t('work.projects[11].concept'),
+          mainImage: mainImage11,
+          name: this.$t('work.projects[11].name')
+        },
+        {
+          id: 12,
+          type: 'design',
+          project: 'japan-gov-business-card',
+          concept: this.$t('work.projects[12].concept'),
+          mainImage: mainImage12,
+          name: this.$t('work.projects[12].name')
+        },
+        {
+          id: 8,
+          type: 'design',
+          project: 'mu-maison',
+          concept: this.$t('work.projects[8].concept'),
+          mainImage: mainImage8,
+          name: this.$t('work.projects[8].name')
+        },
+        {
+          id: 9,
+          type: 'design',
+          project: 'recycled-pottery-furniture',
+          concept: this.$t('work.projects[9].concept'),
+          mainImage: mainImage9,
+          name: this.$t('work.projects[9].name')
+        },
+        {
+          id: 10,
+          type: 'design',
+          project: 'woodworking-craft-tool-guide',
+          concept: this.$t('work.projects[10].concept'),
+          mainImage: mainImage10,
+          name: this.$t('work.projects[10].name')
+        },
+        {
+          id: 21,
+          type: 'design',
+          project: 'japanese-rice-packaging',
+          concept: this.$t('work.projects[21].concept'),
+          mainImage: mainImage21,
+          name: this.$t('work.projects[21].name')
+        },
+
+        {
+          id: 4,
+          type: 'content',
+          project: 'digital-craft-platform',
+          concept: this.$t('work.projects[4].concept'),
+          mainImage: mainImage4,
+          name: this.$t('work.projects[4].name')
+        },
+        {
+          id: 14,
+          type: 'design',
+          project: 'leek-kimchi-packaging',
+          concept: this.$t('work.projects[14].concept'),
+          mainImage: mainImage14,
+          name: this.$t('work.projects[14].name')
+        },
+
+        {
+          id: 16,
+          type: 'system',
+          project: 'auto-robot-control-platform',
+          concept: this.$t('work.projects[16].concept'),
+          mainImage: mainImage16,
+          name: this.$t('work.projects[16].name')
+        },
+
         {
           id: 19,
           type: 'design',
           project: 'kohaku-business-card',
+          concept: this.$t('work.projects[19].concept'),
           mainImage: mainImage19,
-          name: this.$t('work.projects[19].name'),
-          layoutType: 5,
-          content: this.$t('work.projects[19].content'),
-          keywords: [
-            this.$t('work.projects[19].keywords[0]'),
-            this.$t('work.projects[19].keywords[1]')
-          ]
+          name: this.$t('work.projects[19].name')
+        },
+
+        {
+          id: 23,
+          type: 'content',
+          project: 'circular-economy-and-ai-workshop',
+          concept: this.$t('work.projects[23].concept'),
+          mainImage: mainImage23,
+          name: this.$t('work.projects[23].name')
+        },
+        {
+          id: 24,
+          type: 'content',
+          project: 'craft-gene-construction',
+          concept: this.$t('work.projects[24].concept'),
+          mainImage: mainImage24,
+          name: this.$t('work.projects[24].name')
+        },
+        {
+          id: 25,
+          type: 'content',
+          project: 'daxi-woodworker-survey-record',
+          concept: this.$t('work.projects[25].concept'),
+          mainImage: mainImage25,
+          name: this.$t('work.projects[25].name')
+        },
+        {
+          id: 26,
+          type: 'system',
+          project: 'act-rpa-development',
+          concept: this.$t('work.projects[26].concept'),
+          mainImage: mainImage26,
+          name: this.$t('work.projects[26].name')
+        },
+        {
+          id: 3,
+          type: 'content',
+          project: 'lathe-tech-workshop',
+          concept: this.$t('work.projects[3].concept'),
+          mainImage: mainImage3,
+          name: this.$t('work.projects[3].name')
+        },
+        {
+          id: 5,
+          type: 'content',
+          project: 'ceatec-agri-week',
+          concept: this.$t('work.projects[5].concept'),
+          mainImage: mainImage5,
+          name: this.$t('work.projects[5].name')
+        },
+        {
+          id: 6,
+          type: 'design',
+          project: 'supermarket-japan-station',
+          concept: this.$t('work.projects[6].concept'),
+          mainImage: mainImage6,
+          name: this.$t('work.projects[6].name')
         }
       ]
     }
   },
   computed: {
+    i18nWorks() {
+      const filteredWorkItems = this.workItems.filter((item) => {
+        return !/^work\.projects\[\d+\]\.name$/.test(item.name)
+      })
+
+      return filteredWorkItems
+    },
     filterWorkItems() {
       if (this.isSelectAll) {
-        return this.workItems
+        return this.i18nWorks
       } else {
-        return this.workItems.filter((work) => this.checkedTypes.includes(work.type))
+        return this.i18nWorks.filter((work) => this.checkedTypes.includes(work.type))
       }
     }
   },

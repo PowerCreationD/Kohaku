@@ -8,20 +8,22 @@ import imagKohakuAndSphere from '@/assets/image/home/image_kohaku-and-sphere.png
 <template>
   <CurveWrap>
     <div class="home__section home-title-section">
-      <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title animation-gradient-text">
-          {{ $t('home.title.name') }}
-        </p>
-        <div class="home-title-section__comma animation-fade-in-delay">
-          <CommaIcon color="'white'" />
+      <div class="font-0 home-title-section__title-box">
+        <div class="home-title-section__title-section">
+          <span class="home-title-section__title animation-gradient-text">{{
+            $t('home.title.name')
+          }}</span>
+          <div class="home-title-section__comma animation-fade-in-delay">
+            <CommaIcon color="'white'" />
+          </div>
         </div>
       </div>
       <div class="home-title-section__title-box">
-        <p class="font-0 home-title-section__title animation-gradient-text">
-          {{ $t('home.title.slogan') }}
-        </p>
-        <div class="home-title-section__comma animation-fade-in-delay">
-          <CommaIcon color="'white'" />
+        <div class="font-0 home-title-section__title-section">
+          <span class="animation-gradient-text">{{ $t('home.title.slogan') }}</span>
+          <div class="home-title-section__comma animation-fade-in-delay">
+            <CommaIcon color="'white'" />
+          </div>
         </div>
       </div>
       <p class="font-6 home-title-section__text animation-fade-in-background">

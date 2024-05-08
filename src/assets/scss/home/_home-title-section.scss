@@ -19,22 +19,30 @@
     align-items: flex-end;
     z-index: 10;
   }
-
+  &__title-section {
+    text-wrap: pretty;
+  }
   &__title {
     @media (max-width: var.$mobile-device-max-width) {
       margin-bottom: 8px;
     }
   }
   &__comma {
+    display: inline-block;
     position: relative;
     top: 28px;
     margin-left: 16px;
+    .commaIcon {
+      height: 60px;
+    }
 
     @media (max-width: var.$mobile-device-max-width) {
+      top: 18px;
+      margin-left:0px;
+
       .commaIcon {
-        width: 19px;
+        height: 30px;
       }
-      margin-left: 4px;
     }
   }
 

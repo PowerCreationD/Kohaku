@@ -3,7 +3,7 @@
     <picture class="work-card__image-section"
       ><img loading="lazy" class="work-card__image" :src="work.mainImage" :alt="work.id"
     /></picture>
-    <p class="font-7 work-card__name">{{ work.name }}</p>
+    <p class="font-7 work-card__name">{{ work.concept }}｜{{ work.name }}</p>
   </div>
 </template>
 
