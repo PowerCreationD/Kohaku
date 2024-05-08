@@ -17,7 +17,7 @@ import videoGif from '@/assets/image/about/animation_radio-move.gif'
         </p>
       </article>
 
-      <img :src="videoGif" alt="kohaku" class="intro__gif scroll-animation-slide-and-fade-in">
+      <img :src="videoGif" alt="kohaku" class="intro__gif scroll-animation-slide-and-fade-in" />
 
       <article class="intro__desc">
         <p class="font-7 scroll-animation-slide-and-fade-in">
