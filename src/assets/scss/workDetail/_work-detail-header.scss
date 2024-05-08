@@ -110,9 +110,6 @@
 
     &-label {
       min-width: 100px;
-      @media (max-width: 767px) {
-        min-width: 92px;
-      }
     }
 
     &-line {
