@@ -278,11 +278,18 @@ export default {
     }
   },
   computed: {
+    i18nWorks() {
+      const filteredWorkItems = this.workItems.filter((item) => {
+        return !/^work\.projects\[\d+\]\.name$/.test(item.name)
+      })
+
+      return filteredWorkItems
+    },
     filterWorkItems() {
       if (this.isSelectAll) {
-        return this.workItems
+        return this.i18nWorks
       } else {
-        return this.workItems.filter((work) => this.checkedTypes.includes(work.type))
+        return this.i18nWorks.filter((work) => this.checkedTypes.includes(work.type))
       }
     }
   },

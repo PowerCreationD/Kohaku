@@ -864,7 +864,7 @@ export default {
             { index: 2, path: sustainable_agri_tech_2, fileName: '2.png' },
             { index: 3, path: sustainable_agri_tech_3, fileName: '3.jpg' },
             { index: 4, path: sustainable_agri_tech_4, fileName: '4.png' },
-            { index: 5, path: sustainable_agri_tech_5, fileName: '5.png' },
+            { index: 5, path: sustainable_agri_tech_5, fileName: '5.png' }
           ]
         }
       ]
@@ -895,6 +895,10 @@ export default {
   },
   created() {
     this.workItem = this.findWorkByProject(this.project)
+    const workName = this.workItem.name
+    if (!/^work\.projects\[\d+\]\.name$/.test(workName) === false) {
+      this.$router.push('/work')
+    }
   }
 }
 </script>
