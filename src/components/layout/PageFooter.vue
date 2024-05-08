@@ -99,7 +99,7 @@ export default {
         },
         {
           text: 'services',
-          link: '/services'
+          link: '/services/system'
         },
         {
           text: 'work',
