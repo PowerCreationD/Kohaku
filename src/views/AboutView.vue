@@ -17,7 +17,15 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
         </p>
       </article>
 
-      <video class="intro__video scroll-animation-slide-and-fade-in" width="320" height="240" type="video/mp4" autoplay muted loop>
+      <video
+        class="intro__video scroll-animation-slide-and-fade-in"
+        width="320"
+        height="240"
+        type="video/mp4"
+        autoplay
+        muted
+        loop
+      >
         <source :src="videoSrc" />
       </video>
 
@@ -31,10 +39,12 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
     <!-- * Kohaku -->
     <div class="brand-section show-on-scroll">
       <div class="brand-wrap">
-        <img class="brand-wrap__logo scroll-animation-slide-and-fade-in" :src="imgLogo" alt="kohaku" />
-        <h2 class="brand-wrap__name font-1 scroll-animation-slide-and-fade-in">
-          琥白（Kohaku）
-        </h2>
+        <img
+          class="brand-wrap__logo scroll-animation-slide-and-fade-in"
+          :src="imgLogo"
+          alt="kohaku"
+        />
+        <h2 class="brand-wrap__name font-1 scroll-animation-slide-and-fade-in">琥白（Kohaku）</h2>
         <article class="brand-wrap__desc scroll-animation-slide-and-fade-in">
           <p class="font-7">{{ $t('about.brand.text') }}</p>
         </article>
@@ -46,7 +56,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
     </div>
 
     <!-- * Company Table -->
-    <companyTable></companyTable>
+    <companyTable class="show-on-scroll"></companyTable>
 
     <!-- * Milestone -->
     <milestone class="show-on-scroll"></milestone>
