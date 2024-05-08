@@ -127,6 +127,7 @@ import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-c
 
 import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
 import southern_island_1 from '@/assets/image/work/design/southern-island-daily-dried-fruit/1.png'
+import southern_island_2 from '@/assets/image/work/design/southern-island-daily-dried-fruit/2.jpg'
 
 import rice_packaging_0 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
 import rice_packaging_1 from '@/assets/image/work/design/japanese-rice-packaging/1.png'
@@ -664,7 +665,7 @@ export default {
           concept: this.$t('work.projects[20].concept'),
           collaborator: this.$t('work.projects[20].collaborator'),
           name: this.$t('work.projects[20].name'),
-          layoutType: 5,
+          layoutType: 1,
           content: this.$t('work.projects[20].content'),
           keywords: [
             this.$t('work.projects[20].keywords[0]'),
@@ -673,7 +674,8 @@ export default {
           ],
           images: [
             { index: 0, path: southern_island_0, fileName: '0.png' },
-            { index: 1, path: southern_island_1, fileName: '1.png' }
+            { index: 1, path: southern_island_1, fileName: '1.png' },
+            { index: 2, path: southern_island_2, fileName: '2.jpg' },
           ]
         },
         {
