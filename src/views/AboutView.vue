@@ -1,7 +1,7 @@
 <script setup>
 import imgAmber from '@/assets/image/global/image_amber-circle.png'
 import imgLogo from '@/assets/image/global/logo_kohaku-small-white.png'
-import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
+import videoGif from '@/assets/image/about/animation_radio-move.gif'
 </script>
 
 <template>
@@ -17,17 +17,7 @@ import videoSrc from '@/assets/image/about/animation_radio-move.mp4'
         </p>
       </article>
 
-      <video
-        class="intro__video scroll-animation-slide-and-fade-in"
-        width="320"
-        height="240"
-        type="video/mp4"
-        autoplay
-        muted
-        loop
-      >
-        <source :src="videoSrc" />
-      </video>
+      <img :src="videoGif" alt="kohaku" class="intro__gif scroll-animation-slide-and-fade-in">
 
       <article class="intro__desc">
         <p class="font-7 scroll-animation-slide-and-fade-in">
