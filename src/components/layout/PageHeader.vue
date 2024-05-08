@@ -4,9 +4,7 @@
     ref="header"
     :class="[
       { 'header--transparent-mode': isTransparentMode },
-      {
-        'header--full-screen-mode': $route['name'] === 'home' && scrollPosition == 0 && !sidebarOpen
-      },
+      { 'header--border': isTransparentMode && scrollPosition > 0 },
       { 'header--hidden-mode': isHeaderHidden && !isTransparentMode && !sidebarOpen }
     ]"
   >
@@ -55,15 +53,7 @@
                 v-for="item in navigationLink.subPages"
                 :key="item.link"
                 :to="item.link"
-                class="link link--no-underline link--capitalize font-7 header__navigation-sub-link"
-                :class="
-                  isTransparentMode &&
-                  $route['name'] === 'home' &&
-                  scrollPosition == 0 &&
-                  !sidebarOpen
-                    ? 'link--text-white'
-                    : 'link--text-black'
-                "
+                class="link link--no-underline link--capitalize font-7 header__navigation-sub-link link--text-black"
               >
                 {{ item.text }}
               </router-link>
@@ -146,10 +136,10 @@ export default {
           text: 'work',
           link: '/work'
         },
-        {
-          text: 'member',
-          link: '/member'
-        },
+        // {
+        //   text: 'member',
+        //   link: '/member'
+        // },
         {
           text: 'contact',
           link: '/contact'
@@ -224,22 +214,6 @@ export default {
     },
     handleScroll() {
       const currentScrollPosition = window.scrollY
-
-      if (
-        this.$route['name'] !== 'home' &&
-        (this.currentScrollPosition <= 0 || this.scrollPosition <= 0)
-      ) {
-        this.isHeaderHidden = false
-      } else if (
-        this.$route['name'] == 'home' &&
-        (this.currentScrollPosition <= 0 || this.scrollPosition <= 0)
-      ) {
-        this.isHeaderHidden = true
-      } else if (currentScrollPosition > this.scrollPosition) {
-        this.isHeaderHidden = true
-      } else if (currentScrollPosition < this.scrollPosition) {
-        this.isHeaderHidden = false
-      }
       this.scrollPosition = currentScrollPosition
     }
   },

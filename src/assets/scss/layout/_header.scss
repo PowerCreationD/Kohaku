@@ -31,6 +31,9 @@
   &--transparent-mode {
     background-color: transparent;
     box-shadow: none;
+  }
+
+  &--border {
     &::after {
       content: '';
       width: calc(100% - var.$large-header-padding * 2);
@@ -45,11 +48,6 @@
         width: calc(100% - var.$small-header-padding * 2);
       }
     }
-  }
-
-  &--full-screen-mode {
-    opacity: 0;
-    pointer-events: none;
   }
 
   &--hidden-mode {

@@ -1,8 +1,7 @@
 <script setup>
-import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-agri-mover/0.jpg'
+import sustainable_agri_mover_0 from '@/assets/image/work/content/sustainable-agri-mover/0.png'
 import sustainable_agri_mover_1 from '@/assets/image/work/content/sustainable-agri-mover/1.png'
 import sustainable_agri_mover_2 from '@/assets/image/work/content/sustainable-agri-mover/2.png'
-import sustainable_agri_mover_3 from '@/assets/image/work/content/sustainable-agri-mover/3.png'
 
 import tech_agri_workshop_0 from '@/assets/image/work/content/tech-agri-workshop/0.jpg'
 import tech_agri_workshop_1 from '@/assets/image/work/content/tech-agri-workshop/1.jpg'
@@ -20,11 +19,14 @@ import digital_craft_platform_1 from '@/assets/image/work/content/digital-craft-
 import digital_craft_platform_2 from '@/assets/image/work/content/digital-craft-platform/2.png'
 import digital_craft_platform_3 from '@/assets/image/work/content/digital-craft-platform/3.png'
 import digital_craft_platform_4 from '@/assets/image/work/content/digital-craft-platform/4.png'
+import digital_craft_platform_5 from '@/assets/image/work/content/digital-craft-platform/5.png'
 
 import ceatec_agri_week_0 from '@/assets/image/work/content/ceatec-agri-week/0.jpg'
 import ceatec_agri_week_1 from '@/assets/image/work/content/ceatec-agri-week/1.jpg'
 import ceatec_agri_week_2 from '@/assets/image/work/content/ceatec-agri-week/2.jpg'
 import ceatec_agri_week_3 from '@/assets/image/work/content/ceatec-agri-week/3.jpg'
+import ceatec_agri_week_4 from '@/assets/image/work/content/ceatec-agri-week/4.jpg'
+import ceatec_agri_week_5 from '@/assets/image/work/content/ceatec-agri-week/5.jpg'
 
 import supermarket_japan_station_0 from '@/assets/image/work/content/supermarket-japan-station/0.jpg'
 import supermarket_japan_station_1 from '@/assets/image/work/content/supermarket-japan-station/1.jpg'
@@ -40,6 +42,8 @@ import pingtung_pineapple_export_0 from '@/assets/image/work/content/pingtung-pi
 import pingtung_pineapple_export_1 from '@/assets/image/work/content/pingtung-pineapple-export/1.jpg'
 import pingtung_pineapple_export_2 from '@/assets/image/work/content/pingtung-pineapple-export/2.jpg'
 import pingtung_pineapple_export_3 from '@/assets/image/work/content/pingtung-pineapple-export/3.jpg'
+import pingtung_pineapple_export_4 from '@/assets/image/work/content/pingtung-pineapple-export/4.jpg'
+import pingtung_pineapple_export_5 from '@/assets/image/work/content/pingtung-pineapple-export/5.jpg'
 
 import mu_maison_0 from '@/assets/image/work/design/mu-maison/0.png'
 import mu_maison_1 from '@/assets/image/work/design/mu-maison/1.png'
@@ -57,12 +61,15 @@ import recycled_pottery_furniture_5 from '@/assets/image/work/design/recycled-po
 import recycled_pottery_furniture_6 from '@/assets/image/work/design/recycled-pottery-furniture/6.jpg'
 import recycled_pottery_furniture_7 from '@/assets/image/work/design/recycled-pottery-furniture/7.jpg'
 import recycled_pottery_furniture_8 from '@/assets/image/work/design/recycled-pottery-furniture/8.jpg'
-import recycled_pottery_furniture_9 from '@/assets/image/work/design/recycled-pottery-furniture/9.jpg'
 
 import woodworking_craft_tool_guide_0 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import woodworking_craft_tool_guide_1 from '@/assets/image/work/design/woodworking-craft-tool-guide/1.jpg'
 import woodworking_craft_tool_guide_2 from '@/assets/image/work/design/woodworking-craft-tool-guide/2.jpg'
 import woodworking_craft_tool_guide_3 from '@/assets/image/work/design/woodworking-craft-tool-guide/3.jpg'
+import woodworking_craft_tool_guide_4 from '@/assets/image/work/design/woodworking-craft-tool-guide/4.jpg'
+import woodworking_craft_tool_guide_5 from '@/assets/image/work/design/woodworking-craft-tool-guide/5.jpg'
+import woodworking_craft_tool_guide_6 from '@/assets/image/work/design/woodworking-craft-tool-guide/6.jpg'
+import woodworking_craft_tool_guide_7 from '@/assets/image/work/design/woodworking-craft-tool-guide/7.jpg'
 
 import power_creation_business_card_0 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import power_creation_business_card_1 from '@/assets/image/work/design/power-creation-business-card/1.jpg'
@@ -70,59 +77,131 @@ import power_creation_business_card_1 from '@/assets/image/work/design/power-cre
 import japan_gov_business_card_0 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
 import japan_gov_business_card_1 from '@/assets/image/work/design/japan-gov-business-card/1.jpg'
 
-// import breakfast_nightshop_branding_0 from '@/assets/image/work/design/breakfast-nightshop-branding/0.jpg'
-// import breakfast_nightshop_branding_1 from '@/assets/image/work/design/breakfast-nightshop-branding/1.jpg'
-// import breakfast_nightshop_branding_2 from '@/assets/image/work/design/breakfast-nightshop-branding/2.jpg'
-// import breakfast_nightshop_branding_3 from '@/assets/image/work/design/breakfast-nightshop-branding/3.jpg'
-
 import leek_kimchi_packaging_0 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
 import leek_kimchi_packaging_1 from '@/assets/image/work/design/leek-kimchi-packaging/1.jpg'
 import leek_kimchi_packaging_2 from '@/assets/image/work/design/leek-kimchi-packaging/2.jpg'
 
-import japan_agri_ecom_logistics_1 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.jpg'
+import japan_agri_ecom_logistics_1 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import japan_agri_ecom_logistics_2 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_2.jpg'
 import japan_agri_ecom_logistics_3 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_3.jpg'
 import japan_agri_ecom_logistics_4 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_4.jpg'
 import japan_agri_ecom_logistics_5 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_5.jpg'
 import japan_agri_ecom_logistics_6 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_6.jpg'
 import japan_agri_ecom_logistics_7 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_7.jpg'
-import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.jpg'
-import japan_agri_ecom_logistics_9 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_2.jpg'
-import japan_agri_ecom_logistics_10 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_3.jpg'
-import japan_agri_ecom_logistics_11 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_4.jpg'
-import japan_agri_ecom_logistics_12 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_5.jpg'
-import japan_agri_ecom_logistics_13 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_6.jpg'
-import japan_agri_ecom_logistics_14 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_7.jpg'
+import japan_agri_ecom_logistics_8 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_8.jpg'
+import japan_agri_ecom_logistics_9 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_9.jpg'
+import japan_agri_ecom_logistics_10 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_10.jpg'
+import japan_agri_ecom_logistics_11 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_1.png'
+import japan_agri_ecom_logistics_12 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_2.jpg'
+import japan_agri_ecom_logistics_13 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_3.jpg'
+import japan_agri_ecom_logistics_14 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_4.jpg'
+import japan_agri_ecom_logistics_15 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_5.jpg'
+import japan_agri_ecom_logistics_16 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_6.jpg'
+import japan_agri_ecom_logistics_17 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_7.jpg'
+import japan_agri_ecom_logistics_18 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_8.jpg'
+import japan_agri_ecom_logistics_19 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_9.jpg'
+import japan_agri_ecom_logistics_20 from '@/assets/image/work/system/japan-agri-ecom-logistics/app_10.jpg'
 
 import auto_robot_control_platform_0 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import auto_robot_control_platform_1 from '@/assets/image/work/system/auto-robot-control-platform/1.jpg'
 import auto_robot_control_platform_2 from '@/assets/image/work/system/auto-robot-control-platform/2.png'
 import auto_robot_control_platform_3 from '@/assets/image/work/system/auto-robot-control-platform/3.png'
 import auto_robot_control_platform_4 from '@/assets/image/work/system/auto-robot-control-platform/4.png'
-import auto_robot_control_platform_5 from '@/assets/image/work/system/auto-robot-control-platform/5.png'
+import auto_robot_control_platform_5 from '@/assets/image/work/system/auto-robot-control-platform/5.jpg'
 import auto_robot_control_platform_6 from '@/assets/image/work/system/auto-robot-control-platform/6.jpg'
-import auto_robot_control_platform_7 from '@/assets/image/work/system/auto-robot-control-platform/7.jpg'
 
-import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.jpg'
-import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.jpg'
-import koko_bot_2 from '@/assets/image/work/system/koko-bot/2.jpg'
-import koko_bot_3 from '@/assets/image/work/system/koko-bot/3.jpg'
+import koko_bot_0 from '@/assets/image/work/system/koko-bot/0.png'
+import koko_bot_1 from '@/assets/image/work/system/koko-bot/1.png'
+import koko_bot_2 from '@/assets/image/work/system/koko-bot/2.png'
+import koko_bot_3 from '@/assets/image/work/system/koko-bot/3.png'
+import koko_bot_4 from '@/assets/image/work/system/koko-bot/4.png'
 
 import koko_scale_0 from '@/assets/image/work/system/koko-scale/0.jpg'
 import koko_scale_1 from '@/assets/image/work/system/koko-scale/1.jpg'
 import koko_scale_2 from '@/assets/image/work/system/koko-scale/2.jpg'
 import koko_scale_3 from '@/assets/image/work/system/koko-scale/3.jpg'
+import koko_scale_4 from '@/assets/image/work/system/koko-scale/4.jpg'
 
 import kohaku_business_card_0 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-card/1.jpg'
+
+import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
+import southern_island_1 from '@/assets/image/work/design/southern-island-daily-dried-fruit/1.png'
+import southern_island_2 from '@/assets/image/work/design/southern-island-daily-dried-fruit/2.jpg'
+
+import rice_packaging_0 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
+import rice_packaging_1 from '@/assets/image/work/design/japanese-rice-packaging/1.png'
+import rice_packaging_2 from '@/assets/image/work/design/japanese-rice-packaging/2.png'
+import rice_packaging_3 from '@/assets/image/work/design/japanese-rice-packaging/3.png'
+import rice_packaging_4 from '@/assets/image/work/design/japanese-rice-packaging/4.png'
+import rice_packaging_5 from '@/assets/image/work/design/japanese-rice-packaging/5.jpg'
+import rice_packaging_6 from '@/assets/image/work/design/japanese-rice-packaging/6.jpg'
+
+import taiwanese_stall_0 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
+import taiwanese_stall_1 from '@/assets/image/work/content/taiwanese-stall/1.jpg'
+import taiwanese_stall_2 from '@/assets/image/work/content/taiwanese-stall/2.jpg'
+import taiwanese_stall_3 from '@/assets/image/work/content/taiwanese-stall/3.jpg'
+import taiwanese_stall_4 from '@/assets/image/work/content/taiwanese-stall/4.jpg'
+import taiwanese_stall_5 from '@/assets/image/work/content/taiwanese-stall/5.jpg'
+import taiwanese_stall_6 from '@/assets/image/work/content/taiwanese-stall/6.jpg'
+import taiwanese_stall_7 from '@/assets/image/work/content/taiwanese-stall/7.jpg'
+import taiwanese_stall_8 from '@/assets/image/work/content/taiwanese-stall/8.jpg'
+import taiwanese_stall_9 from '@/assets/image/work/content/taiwanese-stall/9.jpg'
+
+import circular_economy_workshop_0 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
+import circular_economy_workshop_1 from '@/assets/image/work/content/circular-economy-and-ai-workshop/1.jpg'
+import circular_economy_workshop_2 from '@/assets/image/work/content/circular-economy-and-ai-workshop/2.jpg'
+import circular_economy_workshop_3 from '@/assets/image/work/content/circular-economy-and-ai-workshop/3.jpg'
+import circular_economy_workshop_4 from '@/assets/image/work/content/circular-economy-and-ai-workshop/4.jpg'
+import circular_economy_workshop_5 from '@/assets/image/work/content/circular-economy-and-ai-workshop/5.jpg'
+import circular_economy_workshop_6 from '@/assets/image/work/content/circular-economy-and-ai-workshop/6.jpg'
+
+import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
+import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpg'
+import craft_gene_2 from '@/assets/image/work/content/craft-gene-construction/2.jpg'
+import craft_gene_3 from '@/assets/image/work/content/craft-gene-construction/3.jpg'
+import craft_gene_4 from '@/assets/image/work/content/craft-gene-construction/4.jpg'
+import craft_gene_5 from '@/assets/image/work/content/craft-gene-construction/5.jpg'
+import craft_gene_6 from '@/assets/image/work/content/craft-gene-construction/6.jpg'
+import craft_gene_7 from '@/assets/image/work/content/craft-gene-construction/7.jpg'
+import craft_gene_8 from '@/assets/image/work/content/craft-gene-construction/8.jpg'
+
+import daxi_woodworker_0 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
+import daxi_woodworker_1 from '@/assets/image/work/content/daxi-woodworker-survey-record/1.jpeg'
+import daxi_woodworker_2 from '@/assets/image/work/content/daxi-woodworker-survey-record/2.jpeg'
+import daxi_woodworker_3 from '@/assets/image/work/content/daxi-woodworker-survey-record/3.jpeg'
+import daxi_woodworker_4 from '@/assets/image/work/content/daxi-woodworker-survey-record/4.jpeg'
+import daxi_woodworker_5 from '@/assets/image/work/content/daxi-woodworker-survey-record/5.jpeg'
+
+import act_rpa_0 from '@/assets/image/work/system/act-rpa-development/0.png'
+import act_rpa_1 from '@/assets/image/work/system/act-rpa-development/1.png'
+import act_rpa_2 from '@/assets/image/work/system/act-rpa-development/2.png'
+import act_rpa_3 from '@/assets/image/work/system/act-rpa-development/3.png'
+
+import smart_sprayer_0 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
+import smart_sprayer_1 from '@/assets/image/work/system/remote-control-smart-sprayer/1.jpeg'
+import smart_sprayer_2 from '@/assets/image/work/system/remote-control-smart-sprayer/2.jpeg'
+import smart_sprayer_3 from '@/assets/image/work/system/remote-control-smart-sprayer/3.jpeg'
+import smart_sprayer_4 from '@/assets/image/work/system/remote-control-smart-sprayer/4.jpeg'
+
+import sustainable_agri_tech_0 from '@/assets/image/work/content/sustainable-agri-tech/0.png'
+import sustainable_agri_tech_1 from '@/assets/image/work/content/sustainable-agri-tech/1.png'
+import sustainable_agri_tech_2 from '@/assets/image/work/content/sustainable-agri-tech/2.png'
+import sustainable_agri_tech_3 from '@/assets/image/work/content/sustainable-agri-tech/3.jpg'
+import sustainable_agri_tech_4 from '@/assets/image/work/content/sustainable-agri-tech/4.png'
+import sustainable_agri_tech_5 from '@/assets/image/work/content/sustainable-agri-tech/5.png'
 </script>
 
 <template>
   <div class="work-detail">
     <WorkDetailHeader
+      :concept="workItem.concept"
       :name="workItem.name"
+      :collaborator="workItem.collaborator"
+      :type="workItem.type"
       :content="workItem.content"
       :keywords="workItem.keywords"
+      :image="workItem.images[0].path"
     ></WorkDetailHeader>
     <div
       class="work-detail-image-section"
@@ -174,8 +253,10 @@ export default {
           id: 1,
           type: 'content',
           project: 'sustainable-agri-mover',
+          concept: this.$t('work.projects[1].concept'),
+          collaborator: [this.$t('work.projects[1].collaborator[0]')],
           name: this.$t('work.projects[1].name'),
-          layoutType: 1,
+          layoutType: 3,
           content: this.$t('work.projects[1].content'),
           keywords: [
             this.$t('work.projects[1].keywords[0]'),
@@ -185,14 +266,15 @@ export default {
           images: [
             { index: 0, path: sustainable_agri_mover_0, fileName: '0.jpg' },
             { index: 1, path: sustainable_agri_mover_1, fileName: '1.png' },
-            { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' },
-            { index: 3, path: sustainable_agri_mover_3, fileName: '3.png' }
+            { index: 2, path: sustainable_agri_mover_2, fileName: '2.png' }
           ]
         },
         {
           id: 2,
           type: 'content',
           project: 'tech-agri-workshop',
+          concept: this.$t('work.projects[2].concept'),
+          collaborator: [this.$t('work.projects[2].collaborator[0]')],
           name: this.$t('work.projects[2].name'),
           layoutType: 2,
           content: this.$t('work.projects[2].content'),
@@ -214,8 +296,10 @@ export default {
           id: 3,
           type: 'content',
           project: 'lathe-tech-workshop',
+          concept: this.$t('work.projects[3].concept'),
+          collaborator: [this.$t('work.projects[3].collaborator[0]')],
           name: this.$t('work.projects[3].name'),
-          layoutType: 1,
+          layoutType: 6,
           content: this.$t('work.projects[3].content'),
           keywords: [
             this.$t('work.projects[3].keywords[0]'),
@@ -233,6 +317,8 @@ export default {
           id: 4,
           type: 'content',
           project: 'digital-craft-platform',
+          concept: this.$t('work.projects[4].concept'),
+          collaborator: [this.$t('work.projects[4].collaborator[0]')],
           name: this.$t('work.projects[4].name'),
           layoutType: 3,
           content: this.$t('work.projects[4].content'),
@@ -247,15 +333,18 @@ export default {
             { index: 1, path: digital_craft_platform_1, fileName: '1.png' },
             { index: 2, path: digital_craft_platform_2, fileName: '2.png' },
             { index: 3, path: digital_craft_platform_3, fileName: '3.png' },
-            { index: 4, path: digital_craft_platform_4, fileName: '4.png' }
+            { index: 4, path: digital_craft_platform_4, fileName: '4.png' },
+            { index: 5, path: digital_craft_platform_5, fileName: '5.png' }
           ]
         },
         {
           id: 5,
           type: 'content',
           project: 'ceatec-agri-week',
+          concept: this.$t('work.projects[5].concept'),
+          collaborator: [this.$t('work.projects[5].collaborator[0]')],
           name: this.$t('work.projects[5].name'),
-          layoutType: 2,
+          layoutType: 6,
           content: this.$t('work.projects[5].content'),
           keywords: [
             this.$t('work.projects[5].keywords[0]'),
@@ -266,13 +355,20 @@ export default {
             { index: 0, path: ceatec_agri_week_0, fileName: '0.jpg' },
             { index: 1, path: ceatec_agri_week_1, fileName: '1.jpg' },
             { index: 2, path: ceatec_agri_week_2, fileName: '2.jpg' },
-            { index: 3, path: ceatec_agri_week_3, fileName: '3.jpg' }
+            { index: 3, path: ceatec_agri_week_3, fileName: '3.jpg' },
+            { index: 4, path: ceatec_agri_week_4, fileName: '4.jpg' },
+            { index: 5, path: ceatec_agri_week_5, fileName: '5.jpg' }
           ]
         },
         {
           id: 6,
-          type: 'content',
+          type: 'design',
           project: 'supermarket-japan-station',
+          concept: this.$t('work.projects[6].concept'),
+          collaborator: [
+            this.$t('work.projects[6].collaborator[0]'),
+            this.$t('work.projects[6].collaborator[1]')
+          ],
           name: this.$t('work.projects[6].name'),
           layoutType: 4,
           content: this.$t('work.projects[6].content'),
@@ -296,8 +392,13 @@ export default {
           id: 7,
           type: 'content',
           project: 'pingtung-pineapple-export',
+          concept: this.$t('work.projects[7].concept'),
+          collaborator: [
+            this.$t('work.projects[7].collaborator[0]'),
+            this.$t('work.projects[7].collaborator[1]')
+          ],
           name: this.$t('work.projects[7].name'),
-          layoutType: 1,
+          layoutType: 4,
           content: this.$t('work.projects[7].content'),
           keywords: [
             this.$t('work.projects[7].keywords[0]'),
@@ -307,13 +408,17 @@ export default {
             { index: 0, path: pingtung_pineapple_export_0, fileName: '0.jpg' },
             { index: 1, path: pingtung_pineapple_export_1, fileName: '1.jpg' },
             { index: 2, path: pingtung_pineapple_export_2, fileName: '2.jpg' },
-            { index: 3, path: pingtung_pineapple_export_3, fileName: '3.jpg' }
+            { index: 3, path: pingtung_pineapple_export_3, fileName: '3.jpg' },
+            { index: 4, path: pingtung_pineapple_export_4, fileName: '4.jpg' },
+            { index: 5, path: pingtung_pineapple_export_5, fileName: '5.jpg' }
           ]
         },
         {
           id: 8,
           type: 'design',
           project: 'mu-maison',
+          concept: this.$t('work.projects[8].concept'),
+          collaborator: [this.$t('work.projects[8].collaborator[0]')],
           name: this.$t('work.projects[8].name'),
           layoutType: 3,
           content: this.$t('work.projects[8].content'),
@@ -334,6 +439,8 @@ export default {
           id: 9,
           type: 'design',
           project: 'recycled-pottery-furniture',
+          concept: this.$t('work.projects[9].concept'),
+          collaborator: [this.$t('work.projects[9].collaborator[0]')],
           name: this.$t('work.projects[9].name'),
           layoutType: 4,
           content: this.$t('work.projects[9].content'),
@@ -352,16 +459,17 @@ export default {
             { index: 5, path: recycled_pottery_furniture_5, fileName: '5.jpg' },
             { index: 6, path: recycled_pottery_furniture_6, fileName: '6.jpg' },
             { index: 7, path: recycled_pottery_furniture_7, fileName: '7.jpg' },
-            { index: 8, path: recycled_pottery_furniture_8, fileName: '8.jpg' },
-            { index: 9, path: recycled_pottery_furniture_9, fileName: '9.jpg' }
+            { index: 8, path: recycled_pottery_furniture_8, fileName: '8.jpg' }
           ]
         },
         {
           id: 10,
           type: 'design',
           project: 'woodworking-craft-tool-guide',
+          concept: this.$t('work.projects[10].concept'),
+          collaborator: [this.$t('work.projects[10].collaborator[0]')],
           name: this.$t('work.projects[10].name'),
-          layoutType: 1,
+          layoutType: 6,
           content: this.$t('work.projects[10].content'),
           keywords: [
             this.$t('work.projects[10].keywords[0]'),
@@ -372,13 +480,19 @@ export default {
             { index: 0, path: woodworking_craft_tool_guide_0, fileName: '0.jpg' },
             { index: 1, path: woodworking_craft_tool_guide_1, fileName: '1.jpg' },
             { index: 2, path: woodworking_craft_tool_guide_2, fileName: '2.jpg' },
-            { index: 3, path: woodworking_craft_tool_guide_3, fileName: '3.jpg' }
+            { index: 3, path: woodworking_craft_tool_guide_3, fileName: '3.jpg' },
+            { index: 4, path: woodworking_craft_tool_guide_4, fileName: '4.jpg' },
+            { index: 5, path: woodworking_craft_tool_guide_5, fileName: '5.jpg' },
+            { index: 6, path: woodworking_craft_tool_guide_6, fileName: '6.jpg' },
+            { index: 7, path: woodworking_craft_tool_guide_7, fileName: '7.jpg' }
           ]
         },
         {
           id: 11,
           type: 'design',
           project: 'power-creation-business-card',
+          concept: this.$t('work.projects[11].concept'),
+          collaborator: [this.$t('work.projects[11].collaborator[0]')],
           name: this.$t('work.projects[11].name'),
           layoutType: 5,
           content: this.$t('work.projects[11].content'),
@@ -395,6 +509,8 @@ export default {
           id: 12,
           type: 'design',
           project: 'japan-gov-business-card',
+          concept: this.$t('work.projects[12].concept'),
+          collaborator: [this.$t('work.projects[12].collaborator[0]')],
           name: this.$t('work.projects[12].name'),
           layoutType: 5,
           content: this.$t('work.projects[12].content'),
@@ -407,32 +523,14 @@ export default {
             { index: 1, path: japan_gov_business_card_1, fileName: '1.jpg' }
           ]
         },
-        // {
-        //   id: 13,
-        //   type: 'design',
-        //   project: 'breakfast-nightshop-branding',
-        //   name: this.$t('work.projects[13].name'),
-        //   layoutType: 3,
-        //   content: this.$t('work.projects[13].content'),
-        //   keywords: [
-        //     this.$t('work.projects[13].keywords[0]'),
-        //     this.$t('work.projects[13].keywords[1]'),
-        //     this.$t('work.projects[13].keywords[2]'),
-        //     this.$t('work.projects[13].keywords[3]')
-        //   ],
-        //   images: [
-        //     { index: 0, path: breakfast_nightshop_branding_0, fileName: '0.jpg' },
-        //     { index: 1, path: breakfast_nightshop_branding_1, fileName: '1.jpg' },
-        //     { index: 2, path: breakfast_nightshop_branding_2, fileName: '2.jpg' },
-        //     { index: 3, path: breakfast_nightshop_branding_3, fileName: '3.jpg' }
-        //   ]
-        // },
         {
           id: 14,
           type: 'design',
           project: 'leek-kimchi-packaging',
+          concept: this.$t('work.projects[14].concept'),
+          collaborator: [this.$t('work.projects[14].collaborator[0]')],
           name: this.$t('work.projects[14].name'),
-          layoutType: 6,
+          layoutType: 1,
           content: this.$t('work.projects[14].content'),
           keywords: [
             this.$t('work.projects[14].keywords[0]'),
@@ -448,8 +546,10 @@ export default {
           id: 15,
           type: 'system',
           project: 'japan-agri-ecom-logistics',
+          concept: this.$t('work.projects[15].concept'),
+          collaborator: [this.$t('work.projects[15].collaborator[0]')],
           name: this.$t('work.projects[15].name'),
-          layoutType: 3,
+          layoutType: 5,
           content: this.$t('work.projects[15].content'),
           keywords: [
             this.$t('work.projects[15].keywords[0]'),
@@ -457,28 +557,36 @@ export default {
             this.$t('work.projects[15].keywords[2]')
           ],
           images: [
-            { index: 1, path: japan_agri_ecom_logistics_1, fileName: 'web_1.jpg' },
+            { index: 1, path: japan_agri_ecom_logistics_1, fileName: 'web_1.png' },
             { index: 2, path: japan_agri_ecom_logistics_2, fileName: 'web_2.jpg' },
             { index: 3, path: japan_agri_ecom_logistics_3, fileName: 'web_3.jpg' },
             { index: 4, path: japan_agri_ecom_logistics_4, fileName: 'web_4.jpg' },
             { index: 5, path: japan_agri_ecom_logistics_5, fileName: 'web_5.jpg' },
             { index: 6, path: japan_agri_ecom_logistics_6, fileName: 'web_6.jpg' },
             { index: 7, path: japan_agri_ecom_logistics_7, fileName: 'web_7.jpg' },
-            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'app_1.jpg' },
-            { index: 9, path: japan_agri_ecom_logistics_9, fileName: 'app_2.jpg' },
-            { index: 10, path: japan_agri_ecom_logistics_10, fileName: 'app_3.jpg' },
-            { index: 11, path: japan_agri_ecom_logistics_11, fileName: 'app_4.jpg' },
-            { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_5.jpg' },
-            { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_6.jpg' },
-            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_7.jpg' }
+            { index: 8, path: japan_agri_ecom_logistics_8, fileName: 'web_8.jpg' },
+            { index: 9, path: japan_agri_ecom_logistics_9, fileName: 'web_9.jpg' },
+            { index: 10, path: japan_agri_ecom_logistics_10, fileName: 'web_10.jpg' },
+            { index: 11, path: japan_agri_ecom_logistics_11, fileName: 'app_1.png' },
+            { index: 12, path: japan_agri_ecom_logistics_12, fileName: 'app_2.jpg' },
+            { index: 13, path: japan_agri_ecom_logistics_13, fileName: 'app_3.jpg' },
+            { index: 14, path: japan_agri_ecom_logistics_14, fileName: 'app_4.jpg' },
+            { index: 15, path: japan_agri_ecom_logistics_15, fileName: 'app_5.jpg' },
+            { index: 16, path: japan_agri_ecom_logistics_16, fileName: 'app_6.jpg' },
+            { index: 17, path: japan_agri_ecom_logistics_17, fileName: 'app_7.jpg' },
+            { index: 18, path: japan_agri_ecom_logistics_18, fileName: 'app_8.jpg' },
+            { index: 19, path: japan_agri_ecom_logistics_19, fileName: 'app_9.jpg' },
+            { index: 20, path: japan_agri_ecom_logistics_20, fileName: 'app_10.jpg' }
           ]
         },
         {
           id: 16,
           type: 'system',
           project: 'auto-robot-control-platform',
+          concept: this.$t('work.projects[16].concept'),
+          collaborator: [this.$t('work.projects[16].collaborator[0]')],
           name: this.$t('work.projects[16].name'),
-          layoutType: 7,
+          layoutType: 2,
           content: this.$t('work.projects[16].content'),
           keywords: [
             this.$t('work.projects[16].keywords[0]'),
@@ -491,35 +599,40 @@ export default {
             { index: 2, path: auto_robot_control_platform_2, fileName: '2.png' },
             { index: 3, path: auto_robot_control_platform_3, fileName: '3.png' },
             { index: 4, path: auto_robot_control_platform_4, fileName: '4.png' },
-            { index: 5, path: auto_robot_control_platform_5, fileName: '5.png' },
-            { index: 6, path: auto_robot_control_platform_6, fileName: '6.jpg' },
-            { index: 7, path: auto_robot_control_platform_7, fileName: '7.jpg' }
+            { index: 5, path: auto_robot_control_platform_5, fileName: '5.jpg' },
+            { index: 6, path: auto_robot_control_platform_6, fileName: '6.jpg' }
           ]
         },
         {
           id: 17,
           type: 'system',
           project: 'koko-bot',
+          concept: this.$t('work.projects[17].concept'),
+          collaborator: [this.$t('work.projects[17].collaborator[0]')],
           name: this.$t('work.projects[17].name'),
-          layoutType: 1,
+          layoutType: 2,
           content: this.$t('work.projects[17].content'),
           keywords: [
             this.$t('work.projects[17].keywords[0]'),
-            this.$t('work.projects[17].keywords[1]')
+            this.$t('work.projects[17].keywords[1]'),
+            this.$t('work.projects[17].keywords[2]')
           ],
           images: [
-            { index: 0, path: koko_bot_0, fileName: '0.jpg' },
-            { index: 1, path: koko_bot_1, fileName: '1.jpg' },
-            { index: 2, path: koko_bot_2, fileName: '2.jpg' },
-            { index: 3, path: koko_bot_3, fileName: '3.jpg' }
+            { index: 0, path: koko_bot_0, fileName: '0.png' },
+            { index: 1, path: koko_bot_1, fileName: '1.png' },
+            { index: 2, path: koko_bot_2, fileName: '2.png' },
+            { index: 3, path: koko_bot_3, fileName: '3.png' },
+            { index: 4, path: koko_bot_4, fileName: '4.png' }
           ]
         },
         {
           id: 18,
           type: 'system',
           project: 'koko-scale',
+          concept: this.$t('work.projects[18].concept'),
+          collaborator: [this.$t('work.projects[18].collaborator[0]')],
           name: this.$t('work.projects[18].name'),
-          layoutType: 1,
+          layoutType: 2,
           content: this.$t('work.projects[18].content'),
           keywords: [
             this.$t('work.projects[18].keywords[0]'),
@@ -529,13 +642,16 @@ export default {
             { index: 0, path: koko_scale_0, fileName: '0.jpg' },
             { index: 1, path: koko_scale_1, fileName: '1.jpg' },
             { index: 2, path: koko_scale_2, fileName: '2.jpg' },
-            { index: 3, path: koko_scale_3, fileName: '3.jpg' }
+            { index: 3, path: koko_scale_3, fileName: '3.jpg' },
+            { index: 4, path: koko_scale_4, fileName: '4.jpg' }
           ]
         },
         {
           id: 19,
           type: 'design',
           project: 'kohaku-business-card',
+          concept: this.$t('work.projects[19].concept'),
+          collaborator: [this.$t('work.projects[19].collaborator[0]')],
           name: this.$t('work.projects[19].name'),
           layoutType: 5,
           content: this.$t('work.projects[19].content'),
@@ -546,6 +662,229 @@ export default {
           images: [
             { index: 0, path: kohaku_business_card_0, fileName: '0.jpg' },
             { index: 1, path: kohaku_business_card_1, fileName: '1.jpg' }
+          ]
+        },
+        {
+          id: 20,
+          type: 'design',
+          project: 'southern-island-daily-dried-fruit',
+          concept: this.$t('work.projects[20].concept'),
+          collaborator: [
+            this.$t('work.projects[20].collaborator[0]'),
+            this.$t('work.projects[20].collaborator[1]')
+          ],
+          name: this.$t('work.projects[20].name'),
+          layoutType: 1,
+          content: this.$t('work.projects[20].content'),
+          keywords: [
+            this.$t('work.projects[20].keywords[0]'),
+            this.$t('work.projects[20].keywords[1]'),
+            this.$t('work.projects[20].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: southern_island_0, fileName: '0.png' },
+            { index: 1, path: southern_island_1, fileName: '1.png' },
+            { index: 2, path: southern_island_2, fileName: '2.jpg' }
+          ]
+        },
+        {
+          id: 21,
+          type: 'design',
+          project: 'japanese-rice-packaging',
+          concept: this.$t('work.projects[21].concept'),
+          collaborator: [
+            this.$t('work.projects[21].collaborator[0]'),
+            this.$t('work.projects[21].collaborator[1]')
+          ],
+          name: this.$t('work.projects[21].name'),
+          layoutType: 2,
+          content: this.$t('work.projects[21].content'),
+          keywords: [
+            this.$t('work.projects[21].keywords[0]'),
+            this.$t('work.projects[21].keywords[1]')
+          ],
+          images: [
+            { index: 0, path: rice_packaging_0, fileName: '0.png' },
+            { index: 1, path: rice_packaging_1, fileName: '1.png' },
+            { index: 2, path: rice_packaging_2, fileName: '2.png' },
+            { index: 3, path: rice_packaging_3, fileName: '3.png' },
+            { index: 4, path: rice_packaging_4, fileName: '4.png' },
+            { index: 5, path: rice_packaging_5, fileName: '5.jpg' },
+            { index: 6, path: rice_packaging_6, fileName: '6.jpg' }
+          ]
+        },
+        {
+          id: 22,
+          type: 'content',
+          project: 'taiwanese-stall',
+          concept: this.$t('work.projects[22].concept'),
+          collaborator: [this.$t('work.projects[22].collaborator[0]')],
+          name: this.$t('work.projects[22].name'),
+          layoutType: 2,
+          content: this.$t('work.projects[22].content'),
+          keywords: [
+            this.$t('work.projects[22].keywords[0]'),
+            this.$t('work.projects[22].keywords[1]'),
+            this.$t('work.projects[22].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: taiwanese_stall_0, fileName: '0.jpg' },
+            { index: 1, path: taiwanese_stall_1, fileName: '1.jpg' },
+            { index: 2, path: taiwanese_stall_2, fileName: '2.jpg' },
+            { index: 3, path: taiwanese_stall_3, fileName: '3.jpg' },
+            { index: 4, path: taiwanese_stall_4, fileName: '4.jpg' },
+            { index: 5, path: taiwanese_stall_5, fileName: '5.jpg' },
+            { index: 6, path: taiwanese_stall_6, fileName: '6.jpg' },
+            { index: 7, path: taiwanese_stall_7, fileName: '7.jpg' },
+            { index: 8, path: taiwanese_stall_8, fileName: '8.jpg' },
+            { index: 9, path: taiwanese_stall_9, fileName: '9.jpg' }
+          ]
+        },
+        {
+          id: 23,
+          type: 'content',
+          project: 'circular-economy-and-ai-workshop',
+          concept: this.$t('work.projects[23].concept'),
+          collaborator: [this.$t('work.projects[23].collaborator[0]')],
+          name: this.$t('work.projects[23].name'),
+          layoutType: 2,
+          content: this.$t('work.projects[23].content'),
+          keywords: [
+            this.$t('work.projects[23].keywords[0]'),
+            this.$t('work.projects[23].keywords[1]'),
+            this.$t('work.projects[23].keywords[2]'),
+            this.$t('work.projects[23].keywords[3]'),
+            this.$t('work.projects[23].keywords[4]')
+          ],
+          images: [
+            { index: 0, path: circular_economy_workshop_0, fileName: '0.jpg' },
+            { index: 1, path: circular_economy_workshop_1, fileName: '1.jpg' },
+            { index: 2, path: circular_economy_workshop_2, fileName: '2.jpg' },
+            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' },
+            { index: 4, path: circular_economy_workshop_4, fileName: '4.jpg' },
+            { index: 5, path: circular_economy_workshop_5, fileName: '5.jpg' },
+            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' }
+          ]
+        },
+        {
+          id: 24,
+          type: 'content',
+          project: 'craft-gene-construction',
+          concept: this.$t('work.projects[24].concept'),
+          collaborator: [this.$t('work.projects[24].collaborator[0]')],
+          name: this.$t('work.projects[24].name'),
+          layoutType: 4,
+          content: this.$t('work.projects[24].content'),
+          keywords: [
+            this.$t('work.projects[24].keywords[0]'),
+            this.$t('work.projects[24].keywords[1]'),
+            this.$t('work.projects[24].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: craft_gene_0, fileName: '0.jpg' },
+            { index: 1, path: craft_gene_1, fileName: '1.jpg' },
+            { index: 2, path: craft_gene_2, fileName: '2.jpg' },
+            { index: 3, path: craft_gene_3, fileName: '3.jpg' },
+            { index: 4, path: craft_gene_4, fileName: '4.jpg' },
+            { index: 5, path: craft_gene_5, fileName: '5.jpg' },
+            { index: 6, path: craft_gene_6, fileName: '6.jpg' },
+            { index: 7, path: craft_gene_7, fileName: '7.jpg' },
+            { index: 8, path: craft_gene_8, fileName: '8.jpg' }
+          ]
+        },
+        {
+          id: 25,
+          type: 'content',
+          project: 'daxi-woodworker-survey-record',
+          concept: this.$t('work.projects[25].concept'),
+          collaborator: [this.$t('work.projects[25].collaborator[0]')],
+          name: this.$t('work.projects[25].name'),
+          layoutType: 4,
+          content: this.$t('work.projects[25].content'),
+          keywords: [
+            this.$t('work.projects[25].keywords[0]'),
+            this.$t('work.projects[25].keywords[1]'),
+            this.$t('work.projects[25].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: daxi_woodworker_0, fileName: '0.jpeg' },
+            { index: 1, path: daxi_woodworker_1, fileName: '1.jpeg' },
+            { index: 2, path: daxi_woodworker_2, fileName: '2.jpeg' },
+            { index: 3, path: daxi_woodworker_3, fileName: '3.jpeg' },
+            { index: 4, path: daxi_woodworker_4, fileName: '4.jpeg' },
+            { index: 5, path: daxi_woodworker_5, fileName: '5.jpeg' }
+          ]
+        },
+        {
+          id: 26,
+          type: 'system',
+          project: 'act-rpa-development',
+          concept: this.$t('work.projects[26].concept'),
+          collaborator: [this.$t('work.projects[26].collaborator[0]')],
+          name: this.$t('work.projects[26].name'),
+          layoutType: 5,
+          content: this.$t('work.projects[26].content'),
+          keywords: [
+            this.$t('work.projects[26].keywords[0]'),
+            this.$t('work.projects[26].keywords[1]'),
+            this.$t('work.projects[26].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: act_rpa_0, fileName: '0.png' },
+            { index: 1, path: act_rpa_1, fileName: '1.png' },
+            { index: 2, path: act_rpa_2, fileName: '2.png' },
+            { index: 3, path: act_rpa_3, fileName: '3.png' }
+          ]
+        },
+        {
+          id: 27,
+          type: 'system',
+          project: 'remote-control-smart-sprayer',
+          concept: this.$t('work.projects[27].concept'),
+          collaborator: [
+            this.$t('work.projects[27].collaborator[0]'),
+            this.$t('work.projects[27].collaborator[1]')
+          ],
+          name: this.$t('work.projects[27].name'),
+          layoutType: 2,
+          content: this.$t('work.projects[27].content'),
+          keywords: [
+            this.$t('work.projects[27].keywords[0]'),
+            this.$t('work.projects[27].keywords[1]'),
+            this.$t('work.projects[27].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: smart_sprayer_0, fileName: '0.jpeg' },
+            { index: 1, path: smart_sprayer_1, fileName: '1.jpeg' },
+            { index: 2, path: smart_sprayer_2, fileName: '2.jpeg' },
+            { index: 3, path: smart_sprayer_3, fileName: '3.jpeg' },
+            { index: 4, path: smart_sprayer_4, fileName: '4.jpeg' }
+          ]
+        },
+        {
+          id: 28,
+          type: 'content',
+          project: 'sustainable-agri-tech',
+          concept: this.$t('work.projects[28].concept'),
+          collaborator: [
+            this.$t('work.projects[28].collaborator[0]'),
+            this.$t('work.projects[28].collaborator[1]')
+          ],
+          name: this.$t('work.projects[28].name'),
+          layoutType: 4,
+          content: this.$t('work.projects[28].content'),
+          keywords: [
+            this.$t('work.projects[28].keywords[0]'),
+            this.$t('work.projects[28].keywords[1]'),
+            this.$t('work.projects[28].keywords[2]')
+          ],
+          images: [
+            { index: 0, path: sustainable_agri_tech_0, fileName: '0.png' },
+            { index: 1, path: sustainable_agri_tech_1, fileName: '1.png' },
+            { index: 2, path: sustainable_agri_tech_2, fileName: '2.png' },
+            { index: 3, path: sustainable_agri_tech_3, fileName: '3.jpg' },
+            { index: 4, path: sustainable_agri_tech_4, fileName: '4.png' },
+            { index: 5, path: sustainable_agri_tech_5, fileName: '5.png' }
           ]
         }
       ]
@@ -576,6 +915,10 @@ export default {
   },
   created() {
     this.workItem = this.findWorkByProject(this.project)
+    const workName = this.workItem.name
+    if (!/^work\.projects\[\d+\]\.name$/.test(workName) === false) {
+      this.$router.push('/work')
+    }
   }
 }
 </script>

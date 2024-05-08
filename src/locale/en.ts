@@ -29,7 +29,7 @@ const locale = {
     },
     about: {
       name: '琥白',
-      brand: 'Kohaku Studio',
+      brand: 'Kohaku',
       text: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
             白 represents the concept of margin in design, the freedom of leaving room for all possibilities.
 
@@ -106,7 +106,7 @@ const locale = {
   },
   about: {
     description: {
-      introduction: `Kohaku Studio was founded between 2021 and 2022.
+      introduction: `Kohaku was founded between 2021 and 2022.
             The story began with a group of young people from diverse backgrounds.
             Driven by the desire to return to their original aspirations, they rooted themselves in Taiwan.
             Fuelled by their vision for the future of agriculture, they delved deep into the traditional industries.`,
@@ -227,47 +227,56 @@ const locale = {
     },
     projects: {
       1: {
-        name: 'Sustainable and Circular Business Planning｜Small-Scale Agriculture Autonomous Vehicle',
+        name: 'Sustainable and Circular Business Planning｜',
+        concept: 'mall-Scale Agriculture Autonomous Vehicle',
         content: `In collaboration with a Japanese automotive company, we address the issue of aging agricultural labor by proposing a user experience design for a small-scale autonomous agricultural vehicle. The design process takes into account the diverse tasks in agricultural settings, ensuring a simple and intuitive operational workflow and interface for farmers. Additionally, we evaluate the environmental sustainability of hardware consumables.`,
         keywords: ['Experience Design', 'Service Design', 'Corporate Image Positioning']
       },
       2: {
-        name: 'Curriculum and Event Design｜Agricultural Technology Workshop',
+        name: 'Curriculum and Event Design',
+        concept: 'Agricultural Technology Workshop',
         content: `In collaboration with the Southern Taiwan Maker Center (STMC Fablab) of Workforce Development Agency, we partnered to focus on applications in the agricultural field. We planned and executed a month-long series of three major thematic courses, namely “Smart Transactions”, “Smart Management”, and “Smart Production”. The overall event guided participants through a comprehensive journey from design thinking and technical practices to business applications. This initiative achieved the integrated application of hardware and software devices.`,
         keywords: ['Curriculum Design', 'Event Planning', 'Technical Guidance', 'Design Thinking']
       },
       3: {
-        name: 'Curriculum and Event Design｜Lathe Machine Workshop',
+        name: 'Curriculum and Event Design',
+        concept: 'Lathe Machine Workshop',
         content: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered photographs on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`,
         keywords: ['Event Documentation', 'Video Editing', 'Script Planning']
       },
       4: {
-        name: 'Digital Transformation and Reengineering｜Craft Learning Platform',
+        name: 'Digital Transformation and Reengineering',
+        concept: 'Craft Learning Platform',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we collaborated to plan an inclusive and comprehensive craft learning platform. This initiative integrated both online and offline craft learning, exhibition events, and project resources. Throughout the process, considerations were made for the functional permissions of multiple users and the website usage workflow, enabling the intuitive transmission of the essence of craftsmanship.`,
         keywords: ['Service Design', 'Process Planning', 'Interface Design', 'Event Planning']
       },
       5: {
-        name: 'Commercial Space Design｜CEATEC & Agriculture Week',
+        name: 'Commercial Space Design',
+        concept: 'CEATEC & Agriculture Week',
         content: `In 2022, we collaborated with a Japanese company to design exhibition booths at CEATEC, followed by participation in the 2023 Agricultural WEEK exhibition. Our approach involved a clear understanding of the exhibition objectives and a deep comprehension of the showcased products. We strategically pondered on how to capture the attention of visitors in the information-rich exhibition environment, ensuring the accurate communication of the value of participating companies and showcased products.`,
         keywords: ['Commercial Space Design', 'Booth Design', 'Print Design']
       },
       6: {
-        name: 'Commercial Space Design｜Supermarket & Japanese Shinkansen Train Station',
+        name: 'Commercial Space Design',
+        concept: 'Supermarket & Japanese Shinkansen Train Station',
         content: `Establishing unmanned stores at local JR train stations in Western Japan involves comprehensive planning, ensuring consistency from the interior layout, spatial arrangement, to the visual elements within the store. The coordinated approach strikes a balance between comfort and practicality, aiming to achieve a seamless and convenient shopping experience.`,
         keywords: ['Commercial Space Design', 'Visual Design']
       },
       7: {
-        name: `Export of Agricultural Products｜Pingtung's Tainung No. 17 Golden Diamond Pineapples`,
+        name: 'Export of Agricultural Products',
+        concept: `Pingtung's Tainung No. 17 Golden Diamond Pineapples`,
         content: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the premium supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`,
         keywords: ['International Trade', 'Export Services']
       },
       8: {
-        name: 'Mixed Media and Product Design｜Kizuna - Elegant Solid Wood Furniture with Transformable feature',
+        name: 'Mixed Media and Product Design',
+        concept: 'Kizuna - Elegant Solid Wood Furniture with Transformable feature',
         content: `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`,
         keywords: ['Furniture Design', 'Product Design']
       },
       9: {
-        name: 'Mixed Media and Product Design｜Repurposing Ceramic Waste into Tableware Sets and Furniture',
+        name: 'Mixed Media and Product Design',
+        concept: 'Repurposing Ceramic Waste into Tableware Sets and Furniture',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we leverage recycled ceramic waste in a circular fashion, exploring the unique textures and qualities of various ceramic waste material formulations. This has led to the development of “淳次 (Puffer)”, a ceramic coffee filter cup that eliminates the need for paper filters, “沉次 (Paltain)”, vessels ergonomically designed to fit the palm, and “方角 (Posible)”, a series of tables and chairs symbolizing the soft power of circularity. These designs usher in a new era for sustainable materials.`,
         keywords: [
           'Sustainable Design',
@@ -277,52 +286,62 @@ const locale = {
         ]
       },
       10: {
-        name: 'Commercial Visual Design｜Woodworking Craft Tool Handbook',
+        name: 'Commercial Visual Design',
+        concept: 'Woodworking Craft Tool Handbook',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`,
         keywords: ['Bookbinding Design', 'Visual Design', 'Illustration Design']
       },
       11: {
-        name: 'Commercial Visual Design｜Japanese Company Business Card Design',
+        name: 'Commercial Visual Design',
+        concept: 'Japanese Company Business Card Design',
         content: `In collaboration with a Japanese company. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`,
         keywords: ['Business Card Design', 'Visual Design']
       },
       12: {
-        name: 'Commercial Visual Design｜Japanese Regional Office Business Card Design',
+        name: 'Commercial Visual Design',
+        concept: 'Japanese Regional Office Business Card Design',
         content: `Design of official business cards for the Takahata City Regional Office in Yamagata Prefecture, Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`,
         keywords: ['Business Card Design', 'Visual Design']
       },
       13: {
-        name: 'Brand Identity and Recognition｜Graphic Design for Breakfast and Late-Night Snack Shop',
+        name: 'Brand Identity and Recognition',
+        concept: 'Graphic Design for Breakfast and Late-Night Snack Shop',
         content: `Collaborating with local breakfast and late-night snack shops in Kaohsiung, we incorporated the thematic elements of “ingot” and the character “妤” from the shop's name. Adopting an overall style that is “plump” and “distinct”, we present a down-to-earth design concept of “Wealth through Fullness, Goldfish Swimming”. We have developed various application arrangements, considering the diverse needs within the shop.`,
         keywords: ['LOGO Design', 'Menu Design', 'Signage Design', 'Corporate Image Positioning']
       },
       14: {
-        name: 'Brand Identity and Recognition｜Packaging Design for Leek Kimchi',
+        name: 'Brand Identity and Recognition',
+        concept: 'Packaging Design for Leek Kimchi',
         content: `Available in premium Japanese supermarkets, this initiative involves guiding local farmers in leveraging their geographical advantages to develop a specialty product – leek kimchi. We also assist in designing packaging that meets the shelf standards, enhancing the value-added benefits of agricultural processing.`,
         keywords: ['Packaging Design', 'Visual Design']
       },
       15: {
-        name: 'Production and Distribution System Design｜Japanese Agricultural E-commerce and Logistics System',
+        name: 'Production and Distribution System Design',
+        concept: 'Japanese Agricultural E-commerce and Logistics System',
         content: `Collaborating with a Japanese logistics company, we are committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of “Vegibus”, which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
         keywords: ['System Development', 'Frontend Development', 'Web Interface Design']
       },
       16: {
-        name: 'Mechatronics Integration Development｜Autonomous Mobile Robot Control Platform',
+        name: 'Mechatronics Integration Development',
+        concept: 'Autonomous Mobile Robot Control Platform',
         content: `n response to challenges such as the shortage of labor due to the aging workforce in rural areas and the intricate management involved in precision agriculture, smart farming machinery is envisioned as the future solution. Aligned with crop management cycles, it provides comprehensive support for agricultural tasks such as grass pressing, weeding, pesticide application, and harvest transportation. The integration of agricultural machinery and electrical technologies takes into account the construction of farm-specific models, map path analysis, and a user-friendly handheld operating system. The transformational service flow is designed to cater to aging farmers, alleviating the operational burden for farm owners.`,
         keywords: ['Embedded System Development', 'Frontend Development', 'Web Interface Design']
       },
       17: {
-        name: 'Fast Order Capture Tool｜KOKO BOT',
+        name: 'Fast Order Capture Tool',
+        concept: 'KOKO BOT',
         content: `LINE is not just a social communication tool for maintaining connections but also a handy ordering assistant for many fresh produce retailers and restaurants in Taiwan. However, the daily process of ordering through LINE lacks systematic calculation capabilities, leading to additional manual efforts for both parties in terms of “order organization” and “financial settlement”. With KOKO LINE, a one-stop development by Kohaku, these daily tasks are streamlined in three simple steps, saving approximately thirty minutes of daily work!`,
-        keywords: ['Tool Development', 'Interface Design']
+        keywords: ['Tool Development', 'Interface Design', 'LINE Bot']
       },
       18: {
-        name: 'Cloud-Based Production and Sales Tool｜KOKO SCALE',
+        name: 'Cloud-Based Production and Sales Tool',
+        concept: 'KOKO SCALE',
         content: `The traditional scales in the market can only weigh the products and calculate the total amount. Subsequently, there is a need for manual recording, summarizing daily sales information, and printing product labels. It is challenging to have a clear understanding of daily sales records, and during the sales process, each sale needs to be calculated individually for the total sales amount. KOKO SCALE, a one-stop development by Kohaku, integrates cloud and Bluetooth to manage sales data in the market effectively!`,
         keywords: ['Tool Development', 'Interface Design']
       },
       19: {
-        name: 'Commercial Visual Design｜Kohaku Business Card Design',
+        name: 'Commercial Visual Design',
+        concept: 'Kohaku Business Card Design',
         content: `Business cards design for Kohaku Co., Ltd. The glossy contours on a portion of the card symbolize the process of transforming a cube into a sphere, representing the expertise of Kohaku's meticulous polishing. This signifies that, through Kohaku's professional polishing process, the final result will emerge as a brilliant amber-like finish.`,
         keywords: ['Business Card Design', 'Visual Design']
       }

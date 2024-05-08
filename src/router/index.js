@@ -125,27 +125,27 @@ const router = createRouter({
         }
       }
     },
-    {
-      path: '/member',
-      name: 'member',
-      component: () => import('../views/MemberView.vue'),
-      meta: {
-        title: `Member｜${KOHAKU}`,
-        metaTags: [
-          {
-            property: 'og:title',
-            content: `Member｜${KOHAKU}`
-          },
-          {
-            property: 'og:description',
-            content: '琥白的團隊組成從傳產到資訊、設計到科技，提供最全面且獨到的見解'
-          }
-        ],
-        canonicalUrl: () => {
-          return `https://kohakustudio.co/member`
-        }
-      }
-    },
+    // {
+    //   path: '/member',
+    //   name: 'member',
+    //   component: () => import('../views/MemberView.vue'),
+    //   meta: {
+    //     title: `Member｜${KOHAKU}`,
+    //     metaTags: [
+    //       {
+    //         property: 'og:title',
+    //         content: `Member｜${KOHAKU}`
+    //       },
+    //       {
+    //         property: 'og:description',
+    //         content: '琥白的團隊組成從傳產到資訊、設計到科技，提供最全面且獨到的見解'
+    //       }
+    //     ],
+    //     canonicalUrl: () => {
+    //       return `https://kohakustudio.co/member`
+    //     }
+    //   }
+    // },
     {
       path: '/contact',
       name: 'contact',

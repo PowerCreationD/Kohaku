@@ -50,7 +50,7 @@ export default {
   },
   created() {
     if (this.options) {
-      this.selectedOption = this.options[this.defaultIndex]
+      this.resetOption()
     }
   },
   mounted() {
@@ -60,6 +60,9 @@ export default {
     }
   },
   methods: {
+    resetOption() {
+      this.selectedOption = this.options[this.defaultIndex]
+    },
     clickDropdown() {
       this.open = !this.open
     },

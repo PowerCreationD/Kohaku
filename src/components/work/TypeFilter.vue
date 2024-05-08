@@ -35,7 +35,11 @@
   </div>
 
   <div v-show="mobileCheck.value" class="filter-section-mobile">
-    <DropdownComponent @selectOption="addTypeOption" :options="dropdownOptions" />
+    <DropdownComponent
+      ref="dropdownComponent"
+      @selectOption="addTypeOption"
+      :options="dropdownOptions"
+    />
 
     <div class="selected-option-container">
       <div v-for="checkedType in checkedTypes" :key="checkedType" class="selected-option">
@@ -75,7 +79,11 @@ export default {
       this.$emit('update:isSelectAll', this.isSelectAll)
     },
     changeFilter() {
-      this.isSelectAll = false
+      if (this.checkedTypes.length > 0) {
+        this.isSelectAll = false
+      } else {
+        this.isSelectAll = true
+      }
       this.updateFilterWorkItems()
     },
     filterAll() {
@@ -109,12 +117,23 @@ export default {
     },
     removeType(type) {
       this.checkedTypes = this.checkedTypes.filter((item) => item !== type)
+
+      if (this.checkedTypes.length === 0) {
+        this.isSelectAll = true
+        this.$refs.dropdownComponent.resetOption()
+      }
+
       this.updateFilterWorkItems()
     },
     updateRoute() {
       const shouldRemoveTypes = this.checkedTypes.length === 0
       const query = shouldRemoveTypes ? {} : { types: this.checkedTypes.join(',') }
-      this.$router.replace({ path: '/work', query })
+
+      if (Object.keys(query).length == 0) {
+        this.$router.replace({ path: '/work' })
+      } else {
+        this.$router.replace({ path: '/work', query })
+      }
     }
   },
   computed: {

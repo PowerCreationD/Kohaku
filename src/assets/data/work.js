@@ -14,7 +14,7 @@ import mainImage13 from '@/assets/image/work/design/breakfast-nightshop-branding
 import mainImage14 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
 import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/0.jpg'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
-import mainImage17 from '@/assets/image/work/system/koko-bot/0.jpg'
+import mainImage17 from '@/assets/image/work/system/koko-bot/0.png'
 import mainImage18 from '@/assets/image/work/system/koko-scale/0.jpg'
 import mainImage19 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 
