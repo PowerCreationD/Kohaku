@@ -6,9 +6,9 @@
         <div class="company-table__content font-7" v-if="item.name !== 'related_company'">
           {{ item.content }}
         </div>
-        <div v-else class="company-table__related_company font-7">
-          <p v-for="company in item.content" :key="company">
-            {{ company.name }} <br class="mobile">（統編：{{ company.business_id }}）
+        <div v-else class="company-table__related_company">
+          <p v-for="company in item.content" :key="company" class="font-7">
+            {{ company.name }} <br class="mobile" />（統編：{{ company.business_id }}）
           </p>
         </div>
       </div>
