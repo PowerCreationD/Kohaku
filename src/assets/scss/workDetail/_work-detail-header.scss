@@ -40,11 +40,11 @@
   }
   &__image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
     position: fixed;
     left: 0;
-    top: -25%;
   }
   &__light {
     width: 700px;
@@ -52,7 +52,7 @@
     left: -80px;
     bottom: -360px;
     z-index: 2;
-    transition: .2s;
+    transition: 0.2s;
     @media (min-width: 1440px) {
       left: 0;
     }
