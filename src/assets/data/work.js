@@ -146,7 +146,6 @@ const workItems = [
       i18n.global.t('work.projects[9].keywords[2]'),
       i18n.global.t('work.projects[9].keywords[3]')
     ]
-    // keywords: ['永續設計', '循環材料', '產品設計', '產品製作']
   },
   {
     id: 10,

@@ -876,7 +876,8 @@ export default {
           keywords: [
             this.$t('work.projects[28].keywords[0]'),
             this.$t('work.projects[28].keywords[1]'),
-            this.$t('work.projects[28].keywords[2]')
+            this.$t('work.projects[28].keywords[2]'),
+            this.$t('work.projects[28].keywords[3]'),
           ],
           images: [
             { index: 0, path: sustainable_agri_tech_0, fileName: '0.png' },
