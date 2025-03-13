@@ -482,7 +482,7 @@ export default {
                     </p>
                     <p style="font-size:12px; margin:0 0 12px 0;"">
                           <span style=" margin-right: 12px;">Address</span>
-                        <a style="color: #FFFFFF;">高雄市鹽埕區大勇路11號3樓507室</a>
+                        <a style="color: #FFFFFF;">高雄市鹽埕區必信街105號</a>
                     </p>
                     <p style=" font-size:12px; margin:0;">
                         <span style="margin-right: 12px;">Homepage</span>
