@@ -15,7 +15,7 @@ const locale = {
       content: 'Content Design and Event Coordination'
     },
     footer: {
-      address: '3F., No. 11, Dayong Rd., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
+      address: 'No. 105, Bixin St., Yancheng Dist., Kaohsiung City 803 , Taiwan (R.O.C.)'
     }
   },
   home: {
@@ -139,7 +139,6 @@ const locale = {
     milestone: [
       {
         year: 2021,
-        title: 'Energetic Launch',
         events: [
           {
             name: 'Established Power Creation Co., Ltd. with investment from a Japanese entity, emphasizing customized software and hardware system development'
@@ -152,7 +151,6 @@ const locale = {
       },
       {
         year: 2022,
-        title: 'Venturing into Craftsmanship',
         events: [
           {
             name: `Secured funding from Taiwan's largest innovation and entrepreneurship competition, U-Start, leading to the establishment of Kohaku Co., Ltd., with a focus on content and design`
@@ -172,7 +170,6 @@ const locale = {
       },
       {
         year: 2023,
-        title: 'Rooted in Taiwan',
         events: [
           {
             name: 'Repurchased Japanese ownership, making Power Creation Co., Ltd. a fully-owned Taiwanese company'
