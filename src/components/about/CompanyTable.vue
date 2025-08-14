@@ -28,9 +28,9 @@ export default {
     return {
       table: [
         { name: 'company_name', title: '公司名', content: '琥白股份有限公司' },
-        { name: 'address', title: '營業地址', content: '高雄市鹽埕區大勇路11號3樓' },
+        { name: 'address', title: '營業地址', content: '高雄市鹽埕區必信街105號' },
         { name: 'responsible', title: '負責人', content: '林凱元' },
-        { name: 'capital', title: '資本額', content: '新台幣 2,000,000 元整' },
+        { name: 'capital', title: '資本額', content: '新台幣 5,000,000 元整' },
         { name: 'business_id', title: '統編', content: '90349136' },
         { name: 'content', title: '事業內容', content: '軟硬體系統整合開發、內容企劃、商業設計' },
         {

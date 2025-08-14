@@ -125,9 +125,10 @@ import koko_scale_4 from '@/assets/image/work/system/koko-scale/4.jpg'
 import kohaku_business_card_0 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
 import kohaku_business_card_1 from '@/assets/image/work/design/kohaku-business-card/1.jpg'
 
-import southern_island_0 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
-import southern_island_1 from '@/assets/image/work/design/southern-island-daily-dried-fruit/1.png'
-import southern_island_2 from '@/assets/image/work/design/southern-island-daily-dried-fruit/2.jpg'
+import southern_island_0 from '@/assets/image/work/design/dried-fruit/0.png'
+import southern_island_1 from '@/assets/image/work/design/dried-fruit/1.png'
+import southern_island_2 from '@/assets/image/work/design/dried-fruit/2.jpg'
+import southern_island_3 from '@/assets/image/work/design/dried-fruit/3.jpg'
 
 import rice_packaging_0 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
 import rice_packaging_1 from '@/assets/image/work/design/japanese-rice-packaging/1.png'
@@ -148,13 +149,13 @@ import taiwanese_stall_7 from '@/assets/image/work/content/taiwanese-stall/7.jpg
 import taiwanese_stall_8 from '@/assets/image/work/content/taiwanese-stall/8.jpg'
 import taiwanese_stall_9 from '@/assets/image/work/content/taiwanese-stall/9.jpg'
 
-import circular_economy_workshop_0 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
-import circular_economy_workshop_1 from '@/assets/image/work/content/circular-economy-and-ai-workshop/1.jpg'
-import circular_economy_workshop_2 from '@/assets/image/work/content/circular-economy-and-ai-workshop/2.jpg'
-import circular_economy_workshop_3 from '@/assets/image/work/content/circular-economy-and-ai-workshop/3.jpg'
-import circular_economy_workshop_4 from '@/assets/image/work/content/circular-economy-and-ai-workshop/4.jpg'
-import circular_economy_workshop_5 from '@/assets/image/work/content/circular-economy-and-ai-workshop/5.jpg'
-import circular_economy_workshop_6 from '@/assets/image/work/content/circular-economy-and-ai-workshop/6.jpg'
+import circular_economy_workshop_0 from '@/assets/image/work/content/ai-and-circular-economy-workshop/0.jpg'
+import circular_economy_workshop_1 from '@/assets/image/work/content/ai-and-circular-economy-workshop/1.jpg'
+import circular_economy_workshop_2 from '@/assets/image/work/content/ai-and-circular-economy-workshop/2.jpg'
+import circular_economy_workshop_3 from '@/assets/image/work/content/ai-and-circular-economy-workshop/3.jpg'
+import circular_economy_workshop_4 from '@/assets/image/work/content/ai-and-circular-economy-workshop/4.jpg'
+import circular_economy_workshop_5 from '@/assets/image/work/content/ai-and-circular-economy-workshop/5.jpg'
+import circular_economy_workshop_6 from '@/assets/image/work/content/ai-and-circular-economy-workshop/6.jpg'
 
 import craft_gene_0 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import craft_gene_1 from '@/assets/image/work/content/craft-gene-construction/1.jpg'
@@ -173,10 +174,10 @@ import daxi_woodworker_3 from '@/assets/image/work/content/daxi-woodworker-surve
 import daxi_woodworker_4 from '@/assets/image/work/content/daxi-woodworker-survey-record/4.jpeg'
 import daxi_woodworker_5 from '@/assets/image/work/content/daxi-woodworker-survey-record/5.jpeg'
 
-import act_rpa_0 from '@/assets/image/work/system/act-rpa-development/0.png'
-import act_rpa_1 from '@/assets/image/work/system/act-rpa-development/1.png'
-import act_rpa_2 from '@/assets/image/work/system/act-rpa-development/2.png'
-import act_rpa_3 from '@/assets/image/work/system/act-rpa-development/3.png'
+import act_rpa_0 from '@/assets/image/work/system/rpa-development/0.png'
+import act_rpa_1 from '@/assets/image/work/system/rpa-development/1.png'
+import act_rpa_2 from '@/assets/image/work/system/rpa-development/2.png'
+import act_rpa_3 from '@/assets/image/work/system/rpa-development/3.png'
 
 import smart_sprayer_0 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
 import smart_sprayer_1 from '@/assets/image/work/system/remote-control-smart-sprayer/1.jpeg'
@@ -667,14 +668,14 @@ export default {
         {
           id: 20,
           type: 'design',
-          project: 'southern-island-daily-dried-fruit',
+          project: 'dried-fruit',
           concept: this.$t('work.projects[20].concept'),
           collaborator: [
             this.$t('work.projects[20].collaborator[0]'),
             this.$t('work.projects[20].collaborator[1]')
           ],
           name: this.$t('work.projects[20].name'),
-          layoutType: 1,
+          layoutType: 5,
           content: this.$t('work.projects[20].content'),
           keywords: [
             this.$t('work.projects[20].keywords[0]'),
@@ -683,6 +684,7 @@ export default {
           ],
           images: [
             { index: 0, path: southern_island_0, fileName: '0.png' },
+            { index: 3, path: southern_island_3, fileName: '3.jpg' },
             { index: 1, path: southern_island_1, fileName: '1.png' },
             { index: 2, path: southern_island_2, fileName: '2.jpg' }
           ]
@@ -743,27 +745,27 @@ export default {
         {
           id: 23,
           type: 'content',
-          project: 'circular-economy-and-ai-workshop',
+          project: 'ai-and-circular-economy-workshop',
           concept: this.$t('work.projects[23].concept'),
           collaborator: [this.$t('work.projects[23].collaborator[0]')],
           name: this.$t('work.projects[23].name'),
           layoutType: 2,
           content: this.$t('work.projects[23].content'),
           keywords: [
-            this.$t('work.projects[23].keywords[0]'),
             this.$t('work.projects[23].keywords[1]'),
+            this.$t('work.projects[23].keywords[0]'),
             this.$t('work.projects[23].keywords[2]'),
             this.$t('work.projects[23].keywords[3]'),
             this.$t('work.projects[23].keywords[4]')
           ],
           images: [
+            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' },
+            { index: 5, path: circular_economy_workshop_5, fileName: '5.jpg' },
+            { index: 4, path: circular_economy_workshop_4, fileName: '4.jpg' },
             { index: 0, path: circular_economy_workshop_0, fileName: '0.jpg' },
             { index: 1, path: circular_economy_workshop_1, fileName: '1.jpg' },
             { index: 2, path: circular_economy_workshop_2, fileName: '2.jpg' },
-            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' },
-            { index: 4, path: circular_economy_workshop_4, fileName: '4.jpg' },
-            { index: 5, path: circular_economy_workshop_5, fileName: '5.jpg' },
-            { index: 6, path: circular_economy_workshop_6, fileName: '6.jpg' }
+            { index: 3, path: circular_economy_workshop_3, fileName: '3.jpg' }
           ]
         },
         {
@@ -818,7 +820,7 @@ export default {
         {
           id: 26,
           type: 'system',
-          project: 'act-rpa-development',
+          project: 'rpa-development',
           concept: this.$t('work.projects[26].concept'),
           collaborator: [this.$t('work.projects[26].collaborator[0]')],
           name: this.$t('work.projects[26].name'),
@@ -877,7 +879,7 @@ export default {
             this.$t('work.projects[28].keywords[0]'),
             this.$t('work.projects[28].keywords[1]'),
             this.$t('work.projects[28].keywords[2]'),
-            this.$t('work.projects[28].keywords[3]'),
+            this.$t('work.projects[28].keywords[3]')
           ],
           images: [
             { index: 0, path: sustainable_agri_tech_0, fileName: '0.png' },
