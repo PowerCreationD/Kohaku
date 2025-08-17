@@ -116,6 +116,22 @@ const locale = {
 
       在琥白，想像和創造自在流動， 共同野放天馬行空的想法，發展那些大膽的可能。`
     },
+    overview: {
+      company_name: { title: '公司名', content: '琥白股份有限公司' },
+      address: { title: '營業地址', content: '高雄市鹽埕區必信街105號' },
+      responsible: { title: '負責人', content: '林凱元' },
+      capital: { title: '資本額', content: '新台幣 5,000,000 元整' },
+      business_id: { title: '統編', content: '90349136' },
+      content: { title: '事業內容', content: '軟硬體系統整合開發、內容企劃、商業設計' },
+      related_company: {
+        title: '關係企業',
+        id: '統編',
+        content: [
+          { name: '創次方股份有限公司', business_id: '90521327' },
+          { name: '萬屋休閒農場', business_id: '88769287' }
+        ]
+      }
+    },
     milestone: [
       {
         year: 2021,
@@ -163,14 +179,13 @@ const locale = {
           { name: '獲高雄智慧農業補助計畫，設計開發三台除草機' },
           { name: '於成功大學定期辦理AI設計與工程工作坊' },
           { name: '與厚騰實業股份有限公司合作冷凍機台外銷' },
-          { name: '與齊泰和股份有限公司合作無咖啡因花茶品牌' },
+          { name: '與齊泰和股份有限公司合作無咖啡因花茶品牌——斐蘭詩' },
           { name: '獲北海道札幌市政府海外企業補助款' }
         ]
       },
       {
         year: 2025,
         events: [
-          { name: '與齊泰和股份有限公司合作無咖啡因花茶品牌——斐蘭詩' },
           { name: '再度獲北海道札幌市政府海外企業補助款' },
           { name: '加入北海道立総合研究機構之水產供應鏈平台研究開發' },
           { name: '與日商三進金屬工業合作倉儲影像辨識' },
@@ -196,7 +211,7 @@ const locale = {
         keywords: ['體驗設計', '服務設計', '企業形象定位']
       },
       2: {
-        name: ' 科技農業技術工作坊',
+        name: '科技農業技術工作坊',
         concept: '課程與活動設計',
         collaborator: ['泛科知識股份有限公司'],
         content: `與泛科知識合作，鎖定農業場域的應用，規劃暨執行三大主題系列課程「智慧交易」、「智慧管理」、「智慧生產」，整體活動為期一個月，過程引導參與者從設計思考、技術實踐到商業應用的全方位內容，成就軟硬體裝置之整合應用。`,
@@ -322,7 +337,7 @@ const locale = {
         keywords: ['名片設計', '視覺設計']
       },
       20: {
-        name: '萬屋日常果乾品牌設計',
+        name: '萬屋果乾品牌設計',
         concept: '品牌形象識別',
         collaborator: ['琥白自有品牌', '萬屋休閒農場'],
         content: `與萬屋休閒農場共同開發台灣果乾，並為果乾進行品牌設計，以「日常」為核心發想、以「溫暖」為設計基調，為品牌風格塑形，打造系列產品，讓人們可以透過品牌看見南島日常的樣貌。後續並銷售至日本超市與便利商店通路。`,
@@ -364,7 +379,7 @@ const locale = {
         keywords: ['資料整合', '脈絡梳理', '訪談紀錄']
       },
       26: {
-        name: 'RPA開發',
+        name: 'RPA 開發',
         concept: '機器人流程自動化',
         collaborator: ['アクト中食グループ', '株式会社さかもと'],
         content: `協助多家日商企業導入流程自動化與 AI 工具，針對日常作業流程設計最適化解決方案。包含使用 UiPath、Make、Zapier 等低程式碼工具進行自動化串接，也提供 RPA 與 API 的客製化開發，回應高度複雜或特定安全需求。常見應用場景包括：重複性高的資料下載與操作、跨系統的表單審核流程、ERP 資訊整合與報表彙整等，以上皆可透過設計良好的自動化流程大幅提升準確率與工作效率。琥白從業務流程與組織實務出發，打造符合情境的 AI 自動化解決方案，協助企業穩健推動內部數位轉型。`,
@@ -421,82 +436,6 @@ const locale = {
           description:
             '我們協助企業開發可與軟體系統協同運作的控制邏輯與感測應用，將實體環境轉化為可控制、可運算、可管理的資訊互動介面。透過虛實整合的系統設計，即時掌握現場狀況，達成數據分析與決策控制的即時性，讓軟體與硬體真正產生綜效，成為驅動數位轉型的重要支點。\n\n服務內容包含：',
           items: ['控制系統設計與開發', 'IoT 系統設計與整合開發', 'Web 監控平台開發']
-        }
-      ],
-
-      items: [
-        {
-          title: '前端設計開發',
-          list: ['前端框架開發', '前端互動設計', 'RWD 響應式網站']
-        },
-        {
-          title: '後端整合部署',
-          list: [
-            '資料庫設計與規劃',
-            'API 開發 / 第三方 API 串接',
-            '雲端架構設計',
-            'CI / CD',
-            'CMS開發'
-          ]
-        },
-        {
-          title: '應用程式開發',
-          list: ['漸進式網站應用程式 (PWA)', '跨平台 (Hybrid) 應用程式開發']
-        },
-        {
-          title: '商業資料探勘與分析',
-          list: ['商業數據分析與可視化', 'BI 工具導入', '資料收集、轉移與載入自動化']
-        },
-        {
-          title: '軟硬體整合設計',
-          list: ['物聯網裝置開發', '嵌入式系統']
-        }
-      ],
-      tools: [
-        {
-          title: '前端框架',
-          list: ['Vue', 'React', 'jQuery']
-        },
-        {
-          title: '前端 UI 框架',
-          list: ['Vuetify', 'PrimeVue', 'BootstrapVue']
-        },
-        {
-          title: '前端互動及視覺化',
-          list: ['D3.js', 'p5.js', 'Three.js', 'Chart.js']
-        },
-        {
-          title: 'Server端開發工具',
-          list: ['Python', 'Flask', 'Django', 'NodeJS']
-        },
-        {
-          title: '資料庫開發',
-          list: ['MySQL', 'PostgreSQL', 'MongoDB']
-        },
-
-        {
-          title: 'API 開發',
-          list: ['客製化 API 開發', '整合串接 金流/物流 API', '整合串接 ERP/CRM API']
-        },
-        {
-          title: 'APP 開發',
-          list: ['React Native 開發 (Hybrid)', 'Ionic 開發 (Hybrid)']
-        },
-        {
-          title: '雲端架構部署',
-          list: ['Amazon Web Services (AWS)']
-        },
-        {
-          title: '部署工具',
-          list: ['Docker']
-        },
-        {
-          title: '網站數據分析工具',
-          list: ['Google Analytics']
-        },
-        {
-          title: '第三方應用開發',
-          list: ['LINE BOT', 'Google App Script']
         }
       ]
     },

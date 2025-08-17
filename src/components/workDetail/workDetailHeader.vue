@@ -18,7 +18,7 @@ import noiseLight from '@/assets/image/global/accent_noise-light.png'
 
     <div class="work-detail-header-section__content">
       <div class="work-detail-header-section__info">
-        <div v-if="isShow" class="work-detail-header-section__raw">
+        <div class="work-detail-header-section__raw">
           <span class="work-detail-header-section__raw-label font-6">Collaborator</span>
           <div class="work-detail-header-section__raw-line"></div>
           <div class="work-detail-header-section__raw-container">
@@ -79,11 +79,6 @@ export default {
       ]
       const type = types.find((item) => item.id === id)
       return type ? type.text : ''
-    }
-  },
-  computed: {
-    isShow() {
-      return this.$i18n.locale === 'zh'
     }
   }
 }

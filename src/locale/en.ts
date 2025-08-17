@@ -107,27 +107,44 @@ const locale = {
   about: {
     description: {
       introduction: `Kohaku was founded between 2021 and 2022.
-            The story began with a group of young people from diverse backgrounds.
-            Driven by the desire to return to their original aspirations, they rooted themselves in Taiwan.
-            Fuelled by their vision for the future of agriculture, they delved deep into the traditional industries.`,
+            Our story takes many forms—some short, some long.
+            With both precision and warmth,
+            we bring every beautiful vision for the future in the everyday moments where design begins. 
 
-      mission_values: `While retaining the cultural heritage,
-            We still continuously bring new energy and creativity.
-            By combining local and international perspectives,
-            We drive the integration of information and design.
+            From traditional industries to startups,
+            From local communities to the global stage.`,
 
-            From planning to marketing,
-            From design to engineering,
-            From origin to downstream industry,
-            From heritage to innovation.
-
-            With a mindset of interdisciplinary integration,
-            Connect all endpoints.
-            Harnessing the impact of different services,
-            Transform value.
-            `
+      mission_values: `With an interdisciplinary mindset,
+            Kohaku drives technology development and industrial transformation.
+            From Okinawa to Hokkaido,
+            we have long-term, trusted relationships with clients across Japan.
+            We excel in integrating software and hardware, empowered by AI,
+            to create greater possibilities for automation and new ventures.
+            Based in Taiwan, we connect partners around the world.`
     },
-
+    overview: {
+      company_name: { title: 'Company Name', content: 'Kohaku Co., Ltd.' },
+      address: {
+        title: 'Business Address',
+        content: 'No.105, Bixin St., Yancheng Dist., Kaohsiung City, Taiwan'
+      },
+      responsible: { title: 'Representative', content: 'Lin Kai-Yuan' },
+      capital: { title: 'Capital', content: 'NT$ 5,000,000' },
+      business_id: { title: 'Unified Business Number', content: '90349136' },
+      content: {
+        title: 'Business Scope',
+        content:
+          'Software and hardware system integration and development, content planning, business design'
+      },
+      related_company: {
+        title: 'Affiliated Companies',
+        id: 'UBN',
+        content: [
+          { name: 'Power Creation D Co., Ltd.', business_id: '90521327' },
+          { name: 'Wanyu Leisure Farm', business_id: '88769287' }
+        ]
+      }
+    },
     brand: {
       name: '琥白 Kohaku',
       text: `琥白(Kohaku) takes its name from amber, a liquid resin that crystallizes over millions of years, encapsulating ancient life forms and forming captivating time capsules.
@@ -160,11 +177,7 @@ const locale = {
             name: 'Collaborated with Japanese companies スズキ (Suzuki) and エムスクエア・ラボ (M2Labo) to develop small mobile vehicle control software and service design'
           },
           {
-            name: 'Undertook projects with the National Taiwan Craft Research and Development Institute (NTCRI)',
-            detail: [
-              `Published Prof. Huang Jun Jie's "Fundamentals of Woodworking Tools Operation" book`,
-              'Conducted a lathe technology translation research workshop'
-            ]
+            name: 'Undertook projects with the National Taiwan Craft Research and Development Institute (NTCRI)'
           }
         ]
       },
@@ -175,14 +188,12 @@ const locale = {
             name: 'Repurchased Japanese ownership, making Power Creation Co., Ltd. a fully-owned Taiwanese company'
           },
           {
-            name: 'Entrusted by Japanese アグリプロデュース (Agreproduce) for food design business'
-          },
-          {
             name: 'Undertook projects with the National Taiwan Craft Research and Development Institute (NTCRI), working on the establishment of a craft gene database'
           },
           {
             name: 'Collaborated with PanSci Knowledge Co., Ltd., for agricultural innovation course design and technical consultation at National Cheng Kung University (NCKU)'
           },
+
           {
             name: 'Established a "Taiwan Booth" in a Japanese chain supermarket, showcasing selected products from Taiwanese agricultural associations'
           },
@@ -190,25 +201,65 @@ const locale = {
             name: 'Undertook projects for the Daxi Wood Art Ecomuseum in Taoyuan, conducting research and translating the work of woodcraft artists'
           },
           {
-            name: 'Managed overseas marketing for the Taiwan Banana Research Institute, setting up booths in Japanese supermarkets for promotion'
-          },
-          {
             name: 'Received support from the Kaohsiung Smart Agriculture Subsidy Program, developing a mobile robot with sprayer feature'
           },
+
           {
             name: 'Power Creation Co., Ltd. received funding from the Kaohsiung SBIR, conducting early-stage research on sustainable food and agriculture supply chains'
           },
           {
-            name: 'Collaborated with Green 1 Specialized Organic Anana Farm in Taiwan, serving as a contact for innovative pineapple fiber technology applications'
+            name: 'Entrusted by Japanese アグリプロデュース (Agreproduce) for food design business'
+          },
+          { name: 'Undertook system design consulting services for NTT West Japan' }
+        ]
+      },
+      {
+        year: 2024,
+        events: [
+          {
+            name: 'Collaborated with Nisshinbo Holdings Inc. and Japan Radio Co., Ltd. on software and hardware integration for sustainable aquaculture'
           },
           {
-            name: 'Entrusted by Japanese company ユーアイシステムズ (UI Systems) for system design services'
+            name: 'Partnered with NTT Communications to promote digital transformation in the agri-food wholesale market'
           },
           {
-            name: 'Collaborated with Japanese company エムスクエア・ラボ (M2Labo), undertaking system design projects for NTT West Japan'
+            name: 'Undertook system development for factory process automation for Japanese company Sakamoto'
           },
           {
-            name: 'Entered into a comprehensive collaboration with the TAi Group, establishing an office at the TAi Urban Resort in Kaohsiung'
+            name: 'Worked with Japanese company UTS to establish a subsidiary in Taiwan focusing on sustainable agricultural technology'
+          },
+          { name: 'Exhibited at the 2024 Taiwan Smart Agri Week' },
+          {
+            name: 'Received the Kaohsiung Smart Agriculture Subsidy Program to design and develop three weeding machines'
+          },
+          {
+            name: 'Hosted regular AI Design and Engineering workshops at National Cheng Kung University'
+          },
+          {
+            name: 'Collaborated with Houteng Industrial Co., Ltd. on the overseas export of refrigeration machines'
+          },
+          {
+            name: 'Partnered with Chitaihe Co., Ltd. on the caffeine-free herbal tea brand “Félance”'
+          },
+          {
+            name: 'Received overseas enterprise subsidy from the Sapporo City Government in Hokkaido'
+          }
+        ]
+      },
+      {
+        year: 2025,
+        events: [
+          {
+            name: 'Received another overseas enterprise subsidy from the Sapporo City Government in Hokkaido'
+          },
+          {
+            name: 'Joined the Hokkaido Research Organization to participate in the development of a fisheries supply chain platform'
+          },
+          {
+            name: 'Collaborated with Japanese company Sanjin Metal Industry on warehouse image recognition'
+          },
+          {
+            name: 'Worked with the Kasama Taiwan Office in Japan on tourism planning and promotion'
           }
         ]
       }
@@ -224,56 +275,56 @@ const locale = {
     },
     projects: {
       1: {
-        name: 'Sustainable and Circular Business Planning｜',
-        concept: 'mall-Scale Agriculture Autonomous Vehicle',
+        name: 'Small-Scale Agriculture Autonomous Vehicle',
+        concept: 'Sustainable and Circular Business Planning｜',
         content: `In collaboration with a Japanese automotive company, we address the issue of aging agricultural labor by proposing a user experience design for a small-scale autonomous agricultural vehicle. The design process takes into account the diverse tasks in agricultural settings, ensuring a simple and intuitive operational workflow and interface for farmers. Additionally, we evaluate the environmental sustainability of hardware consumables.`,
         keywords: ['Experience Design', 'Service Design', 'Corporate Image Positioning']
       },
       2: {
-        name: 'Curriculum and Event Design',
-        concept: 'Agricultural Technology Workshop',
+        name: 'Agricultural Technology Workshop',
+        concept: 'Curriculum and Event Design',
         content: `In collaboration with the Southern Taiwan Maker Center (STMC Fablab) of Workforce Development Agency, we partnered to focus on applications in the agricultural field. We planned and executed a month-long series of three major thematic courses, namely “Smart Transactions”, “Smart Management”, and “Smart Production”. The overall event guided participants through a comprehensive journey from design thinking and technical practices to business applications. This initiative achieved the integrated application of hardware and software devices.`,
         keywords: ['Curriculum Design', 'Event Planning', 'Technical Guidance', 'Design Thinking']
       },
       3: {
-        name: 'Curriculum and Event Design',
-        concept: 'Lathe Machine Workshop',
+        name: 'Lathe Machine Workshop',
+        concept: 'Curriculum and Event Design',
         content: `Working in partnership with the National Taiwan Craft Research and Development Institute (NTCRI), we gathered photographs on-site and conducted interviews to carefully preserve the essence of craftsmanships developed over 50 years. Through capturing visual records and editing, we created a documentary that was screened on the final day of the event. You can access the documentary of the lathe workshop through the following link: https://youtu.be/fygtvFBfvxU`,
         keywords: ['Event Documentation', 'Video Editing', 'Script Planning']
       },
       4: {
-        name: 'Digital Transformation and Reengineering',
-        concept: 'Craft Learning Platform',
+        name: 'Craft Learning Platform',
+        concept: 'Digital Transformation and Reengineering',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we collaborated to plan an inclusive and comprehensive craft learning platform. This initiative integrated both online and offline craft learning, exhibition events, and project resources. Throughout the process, considerations were made for the functional permissions of multiple users and the website usage workflow, enabling the intuitive transmission of the essence of craftsmanship.`,
         keywords: ['Service Design', 'Process Planning', 'Interface Design', 'Event Planning']
       },
       5: {
-        name: 'Commercial Space Design',
-        concept: 'CEATEC & Agriculture Week',
+        name: 'CEATEC & Agriculture Week',
+        concept: 'Commercial Space Design',
         content: `In 2022, we collaborated with a Japanese company to design exhibition booths at CEATEC, followed by participation in the 2023 Agricultural WEEK exhibition. Our approach involved a clear understanding of the exhibition objectives and a deep comprehension of the showcased products. We strategically pondered on how to capture the attention of visitors in the information-rich exhibition environment, ensuring the accurate communication of the value of participating companies and showcased products.`,
         keywords: ['Commercial Space Design', 'Booth Design', 'Print Design']
       },
       6: {
-        name: 'Commercial Space Design',
-        concept: 'Supermarket & Japanese Shinkansen Train Station',
+        name: 'Supermarket & Japanese Shinkansen Train Station',
+        concept: 'Commercial Space Design',
         content: `Establishing unmanned stores at local JR train stations in Western Japan involves comprehensive planning, ensuring consistency from the interior layout, spatial arrangement, to the visual elements within the store. The coordinated approach strikes a balance between comfort and practicality, aiming to achieve a seamless and convenient shopping experience.`,
         keywords: ['Commercial Space Design', 'Visual Design']
       },
       7: {
-        name: 'Export of Agricultural Products',
-        concept: `Pingtung's Tainung No. 17 Golden Diamond Pineapples`,
-        content: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with Vegibus, a Japanese agricultural distributor, to export Tainung No. 17 Golden Diamond Pineapples directly to the premium supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`,
+        name: `Pingtung's Tainung No. 17 Golden Diamond Pineapples`,
+        concept: 'Export of Agricultural Products',
+        content: `We assisted the Greenland Cooperative from Pingtung county in establishing a partnership with a Japanese agricultural distributor to export Tainung No. 17 Golden Diamond Pineapples directly to the premium supermarket chain in Japan. This initiative represents a grassroots effort to innovate agricultural exports by enabling farmers to deliver their products directly to end consumers, significantly enhancing freshness and price competitiveness. It shortens the export process, increases farmers' income, and allows Japanese consumers to enjoy fresher and more affordable Taiwanese pineapples.`,
         keywords: ['International Trade', 'Export Services']
       },
       8: {
-        name: 'Mixed Media and Product Design',
-        concept: 'Kizuna - Elegant Solid Wood Furniture with Transformable feature',
+        name: 'Kizuna - Elegant Solid Wood Furniture with Transformable feature',
+        concept: 'Mixed Media and Product Design',
         content: `In response to the contemporary demand for flexibility and shared mobility in indoor workspaces, Kizuna streamlines the volume of solid wood furniture by replacing disassembly with a simple process of aligning and folding. Effortlessly folding the table, chairs, and side cabinet, it achieves a graceful and effortless horizontal transition.`,
         keywords: ['Furniture Design', 'Product Design']
       },
       9: {
-        name: 'Mixed Media and Product Design',
-        concept: 'Repurposing Ceramic Waste into Tableware Sets and Furniture',
+        name: 'Repurposing Ceramic Waste into Tableware Sets and Furniture',
+        concept: 'Mixed Media and Product Design',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we leverage recycled ceramic waste in a circular fashion, exploring the unique textures and qualities of various ceramic waste material formulations. This has led to the development of “淳次 (Puffer)”, a ceramic coffee filter cup that eliminates the need for paper filters, “沉次 (Paltain)”, vessels ergonomically designed to fit the palm, and “方角 (Posible)”, a series of tables and chairs symbolizing the soft power of circularity. These designs usher in a new era for sustainable materials.`,
         keywords: [
           'Sustainable Design',
@@ -283,64 +334,158 @@ const locale = {
         ]
       },
       10: {
-        name: 'Commercial Visual Design',
-        concept: 'Woodworking Craft Tool Handbook',
+        name: 'Woodworking Craft Tool Handbook',
+        concept: 'Commercial Visual Design',
         content: `In collaboration with the National Taiwan Craft Research and Development Institute (NTCRI), we conducted on-site photographing and interviews to meticulously preserve the essence of craftsmanship accumulated over 50 years by craftsmans. We then proceeded with editing, printing, and publishing to the national bookstores and included as government publications. Link to the government publications in national bookstores here: https://www.govbooks.com.tw/books/137952`,
         keywords: ['Bookbinding Design', 'Visual Design', 'Illustration Design']
       },
       11: {
-        name: 'Commercial Visual Design',
-        concept: 'Japanese Company Business Card Design',
+        name: 'Japanese Company Business Card Design',
+        concept: 'Commercial Visual Design',
         content: `In collaboration with a Japanese company. The fiery morning sun and evening sun symbolize the Japanese national flag, representing the spirit of the company's continuous improvement, working from sunrise to sunset without ceasing.`,
         keywords: ['Business Card Design', 'Visual Design']
       },
       12: {
-        name: 'Commercial Visual Design',
-        concept: 'Japanese Regional Office Business Card Design',
+        name: 'Japanese Regional Office Business Card Design',
+        concept: 'Commercial Visual Design',
         content: `Design of official business cards for the Takahata City Regional Office in Yamagata Prefecture, Japan. The logo incorporates the local national tangible cultural asset, the "Former Takahata Station," while the elegant texture on the back is inspired by the distinctive local mineral, "Takahata Stone." The attention to local details enhances the connection between the local organization and the community, making the exchange of business cards an opportunity for more delightful conversations.`,
         keywords: ['Business Card Design', 'Visual Design']
       },
       13: {
-        name: 'Brand Identity and Recognition',
-        concept: 'Graphic Design for Breakfast and Late-Night Snack Shop',
+        name: 'Graphic Design for Breakfast and Late-Night Snack Shop',
+        concept: 'Brand Identity and Recognition',
         content: `Collaborating with local breakfast and late-night snack shops in Kaohsiung, we incorporated the thematic elements of “ingot” and the character “妤” from the shop's name. Adopting an overall style that is “plump” and “distinct”, we present a down-to-earth design concept of “Wealth through Fullness, Goldfish Swimming”. We have developed various application arrangements, considering the diverse needs within the shop.`,
         keywords: ['LOGO Design', 'Menu Design', 'Signage Design', 'Corporate Image Positioning']
       },
       14: {
-        name: 'Brand Identity and Recognition',
-        concept: 'Packaging Design for Leek Kimchi',
+        name: 'Packaging Design for Leek Kimchi',
+        concept: 'Brand Identity and Recognition',
         content: `Available in premium Japanese supermarkets, this initiative involves guiding local farmers in leveraging their geographical advantages to develop a specialty product – leek kimchi. We also assist in designing packaging that meets the shelf standards, enhancing the value-added benefits of agricultural processing.`,
         keywords: ['Packaging Design', 'Visual Design']
       },
       15: {
-        name: 'Production and Distribution System Design',
-        concept: 'Japanese Agricultural E-commerce and Logistics System',
-        content: `Collaborating with a Japanese logistics company, we are committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system for the concept of “Vegibus”, which integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. The operation of Vegibus has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
+        name: 'Japanese Agricultural E-commerce and Logistics System',
+        concept: 'Production and Distribution System Design',
+        content: `Collaborating with a Japanese logistics company, we are committed to promoting the sustainable supply of locally produced agricultural products. We have developed an exclusive web-based system that integrates local supply, delivery status, consumer orders, and billing information into a single platform. This system facilitates the complex logistics process of collecting products from multiple farms, consolidating shipments, and distributing them along the routes to customers' homes. It has successfully established local agricultural logistics networks in prefectures such as Shizuoka, Ibaraki, Chiba, and Osaka in Japan. This enables consumers to enjoy low carbon footprint and high freshness fruits and vegetables, while fostering friendly and sustainable relationships within the local food and agriculture community.`,
         keywords: ['System Development', 'Frontend Development', 'Web Interface Design']
       },
       16: {
-        name: 'Mechatronics Integration Development',
-        concept: 'Autonomous Mobile Robot Control Platform',
-        content: `n response to challenges such as the shortage of labor due to the aging workforce in rural areas and the intricate management involved in precision agriculture, smart farming machinery is envisioned as the future solution. Aligned with crop management cycles, it provides comprehensive support for agricultural tasks such as grass pressing, weeding, pesticide application, and harvest transportation. The integration of agricultural machinery and electrical technologies takes into account the construction of farm-specific models, map path analysis, and a user-friendly handheld operating system. The transformational service flow is designed to cater to aging farmers, alleviating the operational burden for farm owners.`,
+        name: 'Autonomous Mobile Robot Control Platform',
+        concept: 'Mechatronics Integration Development',
+        content: `In response to challenges such as the shortage of labor due to the aging workforce in rural areas and the intricate management involved in precision agriculture, smart farming machinery is envisioned as the future solution. Aligned with crop management cycles, it provides comprehensive support for agricultural tasks such as grass pressing, weeding, pesticide application, and harvest transportation. The integration of agricultural machinery and electrical technologies takes into account the construction of farm-specific models, map path analysis, and a user-friendly handheld operating system. The transformational service flow is designed to cater to aging farmers, alleviating the operational burden for farm owners.`,
         keywords: ['Embedded System Development', 'Frontend Development', 'Web Interface Design']
       },
       17: {
-        name: 'Fast Order Capture Tool',
-        concept: 'KOKO BOT',
+        name: 'KOKO BOT',
+        concept: 'Fast Order Capture Tool',
         content: `LINE is not just a social communication tool for maintaining connections but also a handy ordering assistant for many fresh produce retailers and restaurants in Taiwan. However, the daily process of ordering through LINE lacks systematic calculation capabilities, leading to additional manual efforts for both parties in terms of “order organization” and “financial settlement”. With KOKO LINE, a one-stop development by Kohaku, these daily tasks are streamlined in three simple steps, saving approximately thirty minutes of daily work!`,
         keywords: ['Tool Development', 'Interface Design', 'LINE Bot']
       },
       18: {
-        name: 'Cloud-Based Production and Sales Tool',
-        concept: 'KOKO SCALE',
+        name: 'KOKO SCALE',
+        concept: 'Cloud-Based Production and Sales Tool',
         content: `The traditional scales in the market can only weigh the products and calculate the total amount. Subsequently, there is a need for manual recording, summarizing daily sales information, and printing product labels. It is challenging to have a clear understanding of daily sales records, and during the sales process, each sale needs to be calculated individually for the total sales amount. KOKO SCALE, a one-stop development by Kohaku, integrates cloud and Bluetooth to manage sales data in the market effectively!`,
         keywords: ['Tool Development', 'Interface Design']
       },
       19: {
-        name: 'Commercial Visual Design',
-        concept: 'Kohaku Business Card Design',
+        name: 'Kohaku Business Card Design',
+        concept: 'Commercial Visual Design',
         content: `Business cards design for Kohaku Co., Ltd. The glossy contours on a portion of the card symbolize the process of transforming a cube into a sphere, representing the expertise of Kohaku's meticulous polishing. This signifies that, through Kohaku's professional polishing process, the final result will emerge as a brilliant amber-like finish.`,
         keywords: ['Business Card Design', 'Visual Design']
+      },
+      20: {
+        name: 'Manyoya Dried Fruit Brand Design',
+        concept: 'Brand Identity',
+        collaborator: ['Kohaku In-House Brand', 'Manyoya Leisure Farm'],
+        content: `In collaboration with Manyoya Leisure Farm, we developed Taiwanese dried fruit products and created their brand identity. Centered around the concept of “Everyday Life” and grounded in a “Warmth”-oriented design tone, we shaped the brand style and developed a series of products. The goal was to allow people to see the essence of Austronesian daily life through the brand. These products were later distributed to Japanese supermarkets and convenience store channels.`,
+        keywords: ['Brand Design', 'Visual Design', 'Packaging Design']
+      },
+      21: {
+        name: 'Japanese Rice Packaging Design',
+        concept: 'Brand Identity',
+        collaborator: ['ACT Nakashoku Group', 'Dingsan International Enterprise'],
+        content: `In collaboration with a Japanese company, we designed packaging for Japanese rice and assisted in its subsequent sales to premium department stores in Taiwan. Following a Japanese minimalist aesthetic, we carefully selected paper materials and designed visuals emphasizing purity and nature. Every detail was meticulously refined to reflect both high quality and a unique aesthetic, positioning the design as a representation of the rice’s premium quality.`,
+        keywords: ['Packaging Design', 'Visual Design']
+      },
+      22: {
+        name: 'Taiwan Pavilion and Trade Promotion Activities',
+        concept: 'Integrated Marketing Planning',
+        collaborator: ['ACT Nakashoku Group'],
+        content: `In collaboration with a century-old Japanese enterprise, we set up a Taiwan-themed pavilion at supermarkets in Hiroshima, Japan, bringing the everyday flavors of Taiwan to local consumers. In addition, we worked with Taiwanese farmers to execute the “Banana Industry Strategic Alliance Demonstration Project,” hosting promotional exhibitions and sales events for fresh bananas and processed products. These initiatives helped local consumers better understand the characteristics of Taiwanese bananas and promoted the sustainable export of fresh fruits to Japan.`,
+        keywords: ['Event Organization', 'Marketing Promotion', 'Cross-Border Marketing']
+      },
+      23: {
+        name: 'AI Application and Circular Economy Workshops',
+        concept: 'Curriculum and Event Design',
+        collaborator: [
+          'Graduate Institute of Creative Industries Design, National Cheng Kung University',
+          'NCKU Innovation Headquarters – Startup Accelerator Center'
+        ],
+        content: `Kohaku has been regularly invited to collaborate with National Cheng Kung University to design various workshops on design, industry, and technology topics. These workshops support academia and industry in cultivating future talent with both design and digital creativity.  
+  The AI Application Workshop integrates design thinking with practical experiences in AI digital transformation, helping students understand technology trends and apply them in design optimization, creative development, and problem-solving.  
+  The Circular Economy Workshop takes the perspectives of “Business,” “Design,” and “Sustainability,” exploring the holistic concepts behind circular design, while fostering independent critical thinking and systems thinking skills for sustainable challenges.  
+  Kohaku continues to design forward-looking courses on AI, digital transformation, design thinking, and sustainable design for different audiences, offering educational support that promotes long-term co-creation across talent, technology, and society.`,
+        keywords: [
+          'AI Digital Transformation',
+          'Industry-Academia Collaboration',
+          'Curriculum Design',
+          'Sustainable Innovation',
+          'Design Thinking'
+        ]
+      },
+      24: {
+        name: 'Craft Gene Bank Knowledge Construction',
+        concept: 'Knowledge Building and Integration',
+        collaborator: ['National Taiwan Craft Research and Development Institute'],
+        content: `In collaboration with the Taiwan Craft Research and Development Institute, we worked on integrating craft-related knowledge to achieve structural organization. The data scope included deconstructing information from craft books and compiling interview records with artisans. We also contributed to the maintenance of the Craft Gene Bank system database, establishing it as a support system for both industrial and academic craft development.`,
+        keywords: ['Knowledge Deconstruction', 'Data Integration', 'Interview Records']
+      },
+      25: {
+        name: 'Daxi Woodcraft Artisan Research and Documentation Project',
+        concept: 'Knowledge Building and Integration',
+        collaborator: ['Daxi Wood Art Ecomuseum'],
+        content: `In collaboration with the Daxi Wood Art Ecomuseum in Taoyuan, this research focused on master artisan Lin Yi-Yi of Longsheng Woodworks. By exploring his life story and contributions to the Daxi woodcraft industry, we studied the historical context and key factors behind the industry’s prosperity. The project established a research framework to document individual artisans’ experiences and biographies, laying the foundation for future integrated research and resource promotion by the museum.`,
+        keywords: ['Data Integration', 'Contextual Analysis', 'Interview Records']
+      },
+      26: {
+        name: 'RPA Development',
+        concept: 'Robotic Process Automation',
+        collaborator: ['ACT Nakashoku Group', 'Sakamoto Co., Ltd.'],
+        content: `We assisted multiple Japanese enterprises in implementing process automation and AI tools by designing optimized solutions for daily workflows. This included leveraging low-code tools such as UiPath, Make, and Zapier for automation integration, as well as providing customized RPA and API development to address highly complex or specific security requirements.  
+  Common applications include repetitive data downloads and operations, cross-system approval workflows, ERP data integration, and consolidated reporting. By designing well-structured automated processes, we significantly improved accuracy and efficiency.  
+  Kohaku’s approach starts from business processes and organizational practices, creating context-specific AI automation solutions that help companies steadily advance their internal digital transformation.`,
+        keywords: [
+          'System Development',
+          'RPA Development',
+          'AI Workflow Automation',
+          'Business Transformation'
+        ]
+      },
+      27: {
+        name: 'Remote-Control Smart Sprayer Vehicle',
+        concept: 'Mechatronics Integration Development',
+        collaborator: ['Kaohsiung City Government Agriculture Bureau', 'Xinqi Farm'],
+        content: `In collaboration with the Kaohsiung City Government Agriculture Bureau and local farmers, we developed agricultural machinery primarily for pesticide spraying in papaya greenhouse environments. The modular design allows the vehicle to be used for pesticide spraying or converted into a transport cart when detached. It can be operated via remote control or joystick and features three speed levels.  
+  The spraying system integrates a dual pump supply and wide-angle nozzles to improve efficiency and coverage. By introducing smart agricultural machinery at the production stage, we effectively enhance both the efficiency and quality of farmers’ work.  
+  Video link: https://youtu.be/hmpxN4J3Os8?si=Dpjam4J13jXvEPgF`,
+        keywords: [
+          'Smart Agricultural Machinery Development',
+          'Mechatronics Integration',
+          'Modular Design'
+        ]
+      },
+      28: {
+        name: 'Sustainable Agriculture Technology',
+        concept: 'System Development and Curriculum Design',
+        collaborator: ['Womu Co., Ltd.', 'Industrial Technology Research Institute (ITRI)'],
+        content: `In collaboration with Womu Co., Ltd. and the Industrial Technology Research Institute (ITRI), we carried out projects related to sustainable agricultural technology.  
+  One initiative developed a plant moisture monitoring system that enables users to receive real-time measurement data on their mobile devices. Additionally, we participated in civil servant training programs on smart agricultural machinery and service design, introducing international case studies, highlighting innovative ideas relevant to Taiwan, and providing industry development recommendations based on fundamental problem analysis.`,
+        keywords: [
+          'Sustainable Agriculture',
+          'Content Planning',
+          'Technical Guidance',
+          'System Development'
+        ]
       }
     }
   },
@@ -349,95 +494,40 @@ const locale = {
     example_title: 'Work',
     system: {
       title: 'System Design and Full-Stack Development',
-      text: 'Starting from Software as a Service (SaaS), we offer tailored industry system customization and cross-system integration services. We integrate systems and terminal devices, assisting in data collection for decision-making, and optimizing processes to enhance supply and distribution efficiency.',
-      items: [
+      text: 'Using technology and design as a bridge, we build practical, scalable, and integrable digital cores for enterprises.\n\nKohaku assists companies starting from process mapping, tailoring the most optimized system architecture, and through development, integration, and connection, creates digital platforms that grow with the organization. With deep industry knowledge, user-friendly design processes, and reliable technical implementation, Kohaku is a trusted partner for internal transformation and innovation.',
+      contents: [
         {
-          title: 'Frontend Design and Development',
-          list: [
-            'Frontend Framework Development',
-            'Frontend Interaction Design',
-            'Responsive Web Design (RWD)'
+          title: 'AI × Digital Transformation Applications',
+          description:
+            'We help enterprises adopt AI tools and automation logic—from simplifying repetitive workflows to enhancing the quality of business decision-making—making AI a growth engine for efficiency and competitiveness. Beyond tool adoption, we focus on adapting to business contexts and process design, creating AI solutions with scalability and depth of application, truly realizing digital transformation from introduction to implementation.\n\nServices include:',
+          items: [
+            'Custom AI development for enterprises',
+            'Integration of AI with internal systems',
+            'Automation workflow design',
+            'AI consulting and implementation strategy planning'
           ]
         },
         {
-          title: 'Backend Integration and Deployment',
-          list: [
-            'Database Design and Planning',
-            'API Development / Third-Party API Integration',
-            'Cloud Architecture Design',
-            'Continuous Integration / Continuous Deployment (CI/CD)',
-            'Content Management System (CMS) Development'
+          title: 'Enterprise System Design and SaaS Development',
+          description:
+            'From brand websites, membership systems, and e-commerce platforms to ERP and internal operation platforms with multi-role management, we use systems to build digital cores that support both operational processes and customer experiences. Through system design and development that integrates front-end, back-end, databases, and API connections, we construct customizable SaaS architectures that meet enterprise needs at every stage of growth.\n\nServices include:',
+          items: [
+            'Custom system development',
+            'Official websites and brand platforms design',
+            'ERP / CMS / e-commerce back-office development',
+            'API integration (e.g., payment, logistics, LINE, third-party platforms)',
+            'Software product consulting and technical architecture support'
           ]
         },
         {
-          title: 'Application Development',
-          list: [
-            'Progressive Web Applications (PWA)',
-            'Cross-Platform (Hybrid) Application Development'
+          title: 'Software and Hardware Integration Development',
+          description:
+            'We assist companies in developing control logic and sensing applications that work alongside software systems, transforming physical environments into controllable, computable, and manageable interactive information interfaces. Through cyber-physical integrated system design, organizations can monitor site conditions in real time, enabling instant data analysis and decision-making, achieving true synergy between software and hardware as a critical driver of digital transformation.\n\nServices include:',
+          items: [
+            'Control system design and development',
+            'IoT system design and integration',
+            'Web-based monitoring platform development'
           ]
-        },
-        {
-          title: 'Business Data Mining and Analysis',
-          list: [
-            'Business Data Analysis and Visualization',
-            'Business Intelligence (BI) Tool Implementation',
-            'Data Collection, Transfer, and Loading Automation]'
-          ]
-        },
-        {
-          title: 'Software-Hardware Integration Design',
-          list: ['Internet of Things (IoT) Device Development', 'Embedded Systems']
-        }
-      ],
-      tools: [
-        {
-          title: 'Frontend Frameworks',
-          list: ['Vue', 'React', 'jQuery']
-        },
-        {
-          title: 'Frontend UI Frameworks',
-          list: ['Vuetify', 'PrimeVue', 'BootstrapVue']
-        },
-        {
-          title: 'Frontend Interaction and Visualization',
-          list: ['D3.js', 'p5.js', 'Three.js', 'Chart.js']
-        },
-        {
-          title: 'Server-Side Development Tools',
-          list: ['Python', 'Flask', 'Django', 'NodeJS']
-        },
-        {
-          title: 'Database Development',
-          list: ['MySQL', 'PostgreSQL', 'MongoDB']
-        },
-
-        {
-          title: 'API Development',
-          list: [
-            'Custom API Development',
-            'Integration with Payment/Logistics APIs',
-            'Integration with ERP/CRM APIs'
-          ]
-        },
-        {
-          title: 'APP Development',
-          list: ['React Native Development (Hybrid)', 'Ionic Development (Hybrid)']
-        },
-        {
-          title: 'Cloud Architecture Deployment',
-          list: ['Amazon Web Services (AWS)']
-        },
-        {
-          title: 'Deployment Tools',
-          list: ['Docker']
-        },
-        {
-          title: 'Website Data Analysis Tools',
-          list: ['Google Analytics']
-        },
-        {
-          title: 'Third-Party Application Development',
-          list: ['LINE BOT', 'Google App Script']
         }
       ]
     },
