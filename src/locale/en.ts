@@ -223,7 +223,7 @@ const locale = {
             name: 'Partnered with NTT Communications to promote digital transformation in the agri-food wholesale market'
           },
           {
-            name: 'Undertook system development for factory process automation for Japanese company Sakamoto'
+            name: 'Undertook system development on factory process automation for Japanese company Sakamoto'
           },
           {
             name: 'Worked with Japanese company UTS to establish a subsidiary in Taiwan focusing on sustainable agricultural technology'
@@ -239,7 +239,7 @@ const locale = {
             name: 'Collaborated with Houteng Industrial Co., Ltd. on the overseas export of refrigeration machines'
           },
           {
-            name: 'Partnered with Chitaihe Co., Ltd. on the caffeine-free herbal tea brand “Félance”'
+            name: 'Partnered with Chitaihe Co., Ltd. on the caffeine-free herbal tea brand “Balancing”'
           },
           {
             name: 'Received overseas enterprise subsidy from the Sapporo City Government in Hokkaido'
@@ -256,10 +256,10 @@ const locale = {
             name: 'Joined the Hokkaido Research Organization to participate in the development of a fisheries supply chain platform'
           },
           {
-            name: 'Collaborated with Japanese company Sanjin Metal Industry on warehouse image recognition'
+            name: 'Collaborated with Japanese company Sanshin Metal Working Co., Ltd. on warehouse image recognition'
           },
           {
-            name: 'Worked with the Kasama Taiwan Office in Japan on tourism planning and promotion'
+            name: 'Worked with the Representative Taiwan office of Kasama city in Japan on tourism planning and promotion'
           }
         ]
       }
@@ -394,37 +394,37 @@ const locale = {
         keywords: ['Business Card Design', 'Visual Design']
       },
       20: {
-        name: 'Manyoya Dried Fruit Brand Design',
+        name: 'Wanwu Dried Fruit Brand Design',
         concept: 'Brand Identity',
-        collaborator: ['Kohaku In-House Brand', 'Manyoya Leisure Farm'],
-        content: `In collaboration with Manyoya Leisure Farm, we developed Taiwanese dried fruit products and created their brand identity. Centered around the concept of “Everyday Life” and grounded in a “Warmth”-oriented design tone, we shaped the brand style and developed a series of products. The goal was to allow people to see the essence of Austronesian daily life through the brand. These products were later distributed to Japanese supermarkets and convenience store channels.`,
+        collaborator: ['Kohaku In-House Brand', 'Wanwu Leisure Farm'],
+        content: `In collaboration with Wanwu Leisure Farm, we developed Taiwanese dried fruit products and created their brand identity. Centered around the concept of “Everyday Life” and grounded in a “Warmth”-oriented design tone, we shaped the brand style and developed a series of products. The goal was to allow people to see the essence of Austronesian daily life through the brand. These products were later distributed to Japanese supermarkets and convenience store channels.`,
         keywords: ['Brand Design', 'Visual Design', 'Packaging Design']
       },
       21: {
         name: 'Japanese Rice Packaging Design',
         concept: 'Brand Identity',
-        collaborator: ['ACT Nakashoku Group', 'Dingsan International Enterprise'],
+        collaborator: ['ACT Chushoku Group', 'Deysan International Co., Ltd.'],
         content: `In collaboration with a Japanese company, we designed packaging for Japanese rice and assisted in its subsequent sales to premium department stores in Taiwan. Following a Japanese minimalist aesthetic, we carefully selected paper materials and designed visuals emphasizing purity and nature. Every detail was meticulously refined to reflect both high quality and a unique aesthetic, positioning the design as a representation of the rice’s premium quality.`,
         keywords: ['Packaging Design', 'Visual Design']
       },
       22: {
-        name: 'Taiwan Pavilion and Trade Promotion Activities',
+        name: 'Taiwan Booth and Trade Promotion Activities',
         concept: 'Integrated Marketing Planning',
-        collaborator: ['ACT Nakashoku Group'],
-        content: `In collaboration with a century-old Japanese enterprise, we set up a Taiwan-themed pavilion at supermarkets in Hiroshima, Japan, bringing the everyday flavors of Taiwan to local consumers. In addition, we worked with Taiwanese farmers to execute the “Banana Industry Strategic Alliance Demonstration Project,” hosting promotional exhibitions and sales events for fresh bananas and processed products. These initiatives helped local consumers better understand the characteristics of Taiwanese bananas and promoted the sustainable export of fresh fruits to Japan.`,
+        collaborator: ['ACT Chushoku Group'],
+        content: `In collaboration with a century-old Japanese enterprise, we set up a Taiwan-themed booth at supermarkets in Hiroshima, Japan, bringing the everyday flavors of Taiwan to local consumers. In addition, we worked with Taiwanese farmers to execute the “Banana Industry Strategic Alliance Demonstration Project,” hosting promotional exhibitions and sales events for fresh bananas and processed products. These initiatives helped local consumers better understand the characteristics of Taiwanese bananas and promoted the sustainable export of fresh fruits to Japan.`,
         keywords: ['Event Organization', 'Marketing Promotion', 'Cross-Border Marketing']
       },
       23: {
         name: 'AI Application and Circular Economy Workshops',
         concept: 'Curriculum and Event Design',
         collaborator: [
-          'Graduate Institute of Creative Industries Design, National Cheng Kung University',
+          'Institute of Creative Industries Design, National Cheng Kung University',
           'NCKU Innovation Headquarters – Startup Accelerator Center'
         ],
         content: `Kohaku has been regularly invited to collaborate with National Cheng Kung University to design various workshops on design, industry, and technology topics. These workshops support academia and industry in cultivating future talent with both design and digital creativity.  
-  The AI Application Workshop integrates design thinking with practical experiences in AI digital transformation, helping students understand technology trends and apply them in design optimization, creative development, and problem-solving.  
-  The Circular Economy Workshop takes the perspectives of “Business,” “Design,” and “Sustainability,” exploring the holistic concepts behind circular design, while fostering independent critical thinking and systems thinking skills for sustainable challenges.  
-  Kohaku continues to design forward-looking courses on AI, digital transformation, design thinking, and sustainable design for different audiences, offering educational support that promotes long-term co-creation across talent, technology, and society.`,
+The AI Application Workshop integrates design thinking with practical experiences in AI digital transformation, helping students understand technology trends and apply them in design optimization, creative development, and problem-solving.  
+The Circular Economy Workshop takes the perspectives of “Business,” “Design,” and “Sustainability,” exploring the holistic concepts behind circular design, while fostering independent critical thinking and systems thinking skills for sustainable challenges.  
+Kohaku continues to design forward-looking courses on AI, digital transformation, design thinking, and sustainable design for different audiences, offering educational support that promotes long-term co-creation across talent, technology, and society.`,
         keywords: [
           'AI Digital Transformation',
           'Industry-Academia Collaboration',
@@ -434,7 +434,7 @@ const locale = {
         ]
       },
       24: {
-        name: 'Craft Gene Bank Knowledge Construction',
+        name: 'Meta-genetic Construction of Craft',
         concept: 'Knowledge Building and Integration',
         collaborator: ['National Taiwan Craft Research and Development Institute'],
         content: `In collaboration with the Taiwan Craft Research and Development Institute, we worked on integrating craft-related knowledge to achieve structural organization. The data scope included deconstructing information from craft books and compiling interview records with artisans. We also contributed to the maintenance of the Craft Gene Bank system database, establishing it as a support system for both industrial and academic craft development.`,
@@ -450,10 +450,10 @@ const locale = {
       26: {
         name: 'RPA Development',
         concept: 'Robotic Process Automation',
-        collaborator: ['ACT Nakashoku Group', 'Sakamoto Co., Ltd.'],
+        collaborator: ['ACT Chushoku Group', 'Sakamoto Co., Ltd.'],
         content: `We assisted multiple Japanese enterprises in implementing process automation and AI tools by designing optimized solutions for daily workflows. This included leveraging low-code tools such as UiPath, Make, and Zapier for automation integration, as well as providing customized RPA and API development to address highly complex or specific security requirements.  
-  Common applications include repetitive data downloads and operations, cross-system approval workflows, ERP data integration, and consolidated reporting. By designing well-structured automated processes, we significantly improved accuracy and efficiency.  
-  Kohaku’s approach starts from business processes and organizational practices, creating context-specific AI automation solutions that help companies steadily advance their internal digital transformation.`,
+Common applications include repetitive data downloads and operations, cross-system approval workflows, ERP data integration, and consolidated reporting. By designing well-structured automated processes, we significantly improved accuracy and efficiency.  
+Kohaku’s approach starts from business processes and organizational practices, creating context-specific AI automation solutions that help companies steadily advance their internal digital transformation.`,
         keywords: [
           'System Development',
           'RPA Development',
@@ -462,12 +462,12 @@ const locale = {
         ]
       },
       27: {
-        name: 'Remote-Control Smart Sprayer Vehicle',
+        name: 'Remote Control Smart Sprayer Vehicle',
         concept: 'Mechatronics Integration Development',
-        collaborator: ['Kaohsiung City Government Agriculture Bureau', 'Xinqi Farm'],
+        collaborator: ['Kaohsiung City Government Agriculture Bureau', 'Shiny Farm'],
         content: `In collaboration with the Kaohsiung City Government Agriculture Bureau and local farmers, we developed agricultural machinery primarily for pesticide spraying in papaya greenhouse environments. The modular design allows the vehicle to be used for pesticide spraying or converted into a transport cart when detached. It can be operated via remote control or joystick and features three speed levels.  
-  The spraying system integrates a dual pump supply and wide-angle nozzles to improve efficiency and coverage. By introducing smart agricultural machinery at the production stage, we effectively enhance both the efficiency and quality of farmers’ work.  
-  Video link: https://youtu.be/hmpxN4J3Os8?si=Dpjam4J13jXvEPgF`,
+The spraying system integrates a dual pump supply and wide-angle nozzles to improve efficiency and coverage. By introducing smart agricultural machinery at the production stage, we effectively enhance both the efficiency and quality of farmers’ work.  
+Video link: https://youtu.be/hmpxN4J3Os8?si=Dpjam4J13jXvEPgF`,
         keywords: [
           'Smart Agricultural Machinery Development',
           'Mechatronics Integration',
@@ -477,9 +477,9 @@ const locale = {
       28: {
         name: 'Sustainable Agriculture Technology',
         concept: 'System Development and Curriculum Design',
-        collaborator: ['Womu Co., Ltd.', 'Industrial Technology Research Institute (ITRI)'],
-        content: `In collaboration with Womu Co., Ltd. and the Industrial Technology Research Institute (ITRI), we carried out projects related to sustainable agricultural technology.  
-  One initiative developed a plant moisture monitoring system that enables users to receive real-time measurement data on their mobile devices. Additionally, we participated in civil servant training programs on smart agricultural machinery and service design, introducing international case studies, highlighting innovative ideas relevant to Taiwan, and providing industry development recommendations based on fundamental problem analysis.`,
+        collaborator: ['Agriforward Co., Ltd.', 'Industrial Technology Research Institute (ITRI)'],
+        content: `In collaboration with Agriforward Co., Ltd. and the Industrial Technology Research Institute (ITRI), we carried out projects related to sustainable agricultural technology.  
+One initiative developed a plant moisture monitoring system that enables users to receive real-time measurement data on their mobile devices. Additionally, we participated in civil servant training programs on smart agricultural machinery and service design, introducing international case studies, highlighting innovative ideas relevant to Taiwan, and providing industry development recommendations based on fundamental problem analysis.`,
         keywords: [
           'Sustainable Agriculture',
           'Content Planning',
@@ -499,7 +499,7 @@ const locale = {
         {
           title: 'AI × Digital Transformation Applications',
           description:
-            'We help enterprises adopt AI tools and automation logic—from simplifying repetitive workflows to enhancing the quality of business decision-making—making AI a growth engine for efficiency and competitiveness. Beyond tool adoption, we focus on adapting to business contexts and process design, creating AI solutions with scalability and depth of application, truly realizing digital transformation from introduction to implementation.\n\nServices include:',
+            'We help enterprises adopt AI tools and automation logic, from simplifying repetitive workflows to enhancing the quality of business decision-making, making AI a growth engine for efficiency and competitiveness. Beyond tool adoption, we focus on adapting to business contexts and process design, creating AI solutions with scalability and depth of application, truly realizing digital transformation from introduction to implementation.\n\nServices include:',
           items: [
             'Custom AI development for enterprises',
             'Integration of AI with internal systems',
