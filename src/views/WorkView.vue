@@ -11,19 +11,18 @@ import mainImage9 from '@/assets/image/work/design/recycled-pottery-furniture/0.
 import mainImage10 from '@/assets/image/work/design/woodworking-craft-tool-guide/0.jpg'
 import mainImage11 from '@/assets/image/work/design/power-creation-business-card/0.jpg'
 import mainImage12 from '@/assets/image/work/design/japan-gov-business-card/0.jpg'
-import mainImage14 from '@/assets/image/work/design/leek-kimchi-packaging/0.jpg'
 import mainImage15 from '@/assets/image/work/system/japan-agri-ecom-logistics/web_1.png'
 import mainImage16 from '@/assets/image/work/system/auto-robot-control-platform/0.jpg'
 import mainImage17 from '@/assets/image/work/system/koko-bot/0.png'
 import mainImage18 from '@/assets/image/work/system/koko-scale/0.jpg'
 import mainImage19 from '@/assets/image/work/design/kohaku-business-card/0.jpg'
-import mainImage20 from '@/assets/image/work/design/southern-island-daily-dried-fruit/0.png'
+import mainImage20 from '@/assets/image/work/design/dried-fruit/0.png'
 import mainImage21 from '@/assets/image/work/design/japanese-rice-packaging/0.png'
 import mainImage22 from '@/assets/image/work/content/taiwanese-stall/0.jpg'
-import mainImage23 from '@/assets/image/work/content/circular-economy-and-ai-workshop/0.jpg'
+import mainImage23 from '@/assets/image/work/content/ai-and-circular-economy-workshop/6.jpg'
 import mainImage24 from '@/assets/image/work/content/craft-gene-construction/0.jpg'
 import mainImage25 from '@/assets/image/work/content/daxi-woodworker-survey-record/0.jpeg'
-import mainImage26 from '@/assets/image/work/system/act-rpa-development/0.png'
+import mainImage26 from '@/assets/image/work/system/rpa-development/0.png'
 import mainImage27 from '@/assets/image/work/system/remote-control-smart-sprayer/0.jpeg'
 import mainImage28 from '@/assets/image/work/content/sustainable-agri-tech/0.png'
 </script>
@@ -64,7 +63,7 @@ export default {
         {
           id: 20,
           type: 'design',
-          project: 'southern-island-daily-dried-fruit',
+          project: 'dried-fruit',
           concept: this.$t('work.projects[20].concept'),
           mainImage: mainImage20,
           name: this.$t('work.projects[20].name')
@@ -192,15 +191,6 @@ export default {
           name: this.$t('work.projects[4].name')
         },
         {
-          id: 14,
-          type: 'design',
-          project: 'leek-kimchi-packaging',
-          concept: this.$t('work.projects[14].concept'),
-          mainImage: mainImage14,
-          name: this.$t('work.projects[14].name')
-        },
-
-        {
           id: 16,
           type: 'system',
           project: 'auto-robot-control-platform',
@@ -221,7 +211,7 @@ export default {
         {
           id: 23,
           type: 'content',
-          project: 'circular-economy-and-ai-workshop',
+          project: 'ai-and-circular-economy-workshop',
           concept: this.$t('work.projects[23].concept'),
           mainImage: mainImage23,
           name: this.$t('work.projects[23].name')
@@ -245,7 +235,7 @@ export default {
         {
           id: 26,
           type: 'system',
-          project: 'act-rpa-development',
+          project: 'rpa-development',
           concept: this.$t('work.projects[26].concept'),
           mainImage: mainImage26,
           name: this.$t('work.projects[26].name')

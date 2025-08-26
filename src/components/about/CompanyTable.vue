@@ -10,7 +10,9 @@
         </div>
         <div v-else class="company-table__related_company">
           <p v-for="company in item.content" :key="company" class="font-7">
-            {{ company.name }} <br class="mobile" />（統編：{{ company.business_id }}）
+            {{ company.name }} <br class="mobile" />（{{
+              $t('about.overview.related_company.id')
+            }}：{{ company.business_id }}）
           </p>
         </div>
       </div>
@@ -27,18 +29,48 @@ export default {
   data() {
     return {
       table: [
-        { name: 'company_name', title: '公司名', content: '琥白股份有限公司' },
-        { name: 'address', title: '營業地址', content: '高雄市鹽埕區大勇路11號3樓' },
-        { name: 'responsible', title: '負責人', content: '林凱元' },
-        { name: 'capital', title: '資本額', content: '新台幣 2,000,000 元整' },
-        { name: 'business_id', title: '統編', content: '90349136' },
-        { name: 'content', title: '事業內容', content: '軟硬體系統整合開發、內容企劃、商業設計' },
+        {
+          name: 'company_name',
+          title: this.$t('about.overview.company_name.title'),
+          content: this.$t('about.overview.company_name.content')
+        },
+        {
+          name: 'address',
+          title: this.$t('about.overview.address.title'),
+          content: this.$t('about.overview.address.content')
+        },
+        {
+          name: 'responsible',
+          title: this.$t('about.overview.responsible.title'),
+          content: this.$t('about.overview.responsible.content')
+        },
+        {
+          name: 'capital',
+          title: this.$t('about.overview.capital.title'),
+          content: this.$t('about.overview.capital.content')
+        },
+        {
+          name: 'business_id',
+          title: this.$t('about.overview.business_id.title'),
+          content: this.$t('about.overview.business_id.content')
+        },
+        {
+          name: 'content',
+          title: this.$t('about.overview.content.title'),
+          content: this.$t('about.overview.content.content')
+        },
         {
           name: 'related_company',
-          title: '關係企業',
+          title: this.$t('about.overview.related_company.title'),
           content: [
-            { name: '創次方股份有限公司', business_id: '90521327' },
-            { name: '萬屋休閒農場', business_id: '88769287' }
+            {
+              name: this.$t('about.overview.related_company.content[0].name'),
+              business_id: this.$t('about.overview.related_company.content[0].business_id')
+            },
+            {
+              name: this.$t('about.overview.related_company.content[1].name'),
+              business_id: this.$t('about.overview.related_company.content[1].business_id')
+            }
           ]
         }
       ]
