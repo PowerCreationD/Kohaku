@@ -32,8 +32,7 @@ import icon_digital_transformation from '@/assets/image/services/icon/icon_digit
   <div class="services">
     <pageTitle>{{ serviceTitle }}</pageTitle>
     <p class="services-section__text font-7">{{ serviceText }}</p>
-    <servicesItemsSection :serviceItem="serviceItem" />
-    <servicesToolsSection v-if="serviceTool.length" :serviceTool="serviceTool" />
+    <servicesItemsSection :serviceItem="serviceItem" :layoutType="serviceLayoutType" />
     <workExampleSection :workExample="workExample" :workType="workType" />
   </div>
 </template>
@@ -43,146 +42,52 @@ import icon_digital_transformation from '@/assets/image/services/icon/icon_digit
 <script>
 import pageTitle from '@/components/global/PageTitle.vue'
 import servicesItemsSection from '@/components/services/ServicesItemsSection.vue'
-import servicesToolsSection from '@/components/services/ServicesToolsSection.vue'
 import workExampleSection from '@/components/services/WorkExampleSection.vue'
 
 export default {
-  components: { pageTitle, servicesItemsSection, servicesToolsSection, workExampleSection },
+  components: { pageTitle, servicesItemsSection, workExampleSection },
   data() {
     return {
       serviceTitle: undefined,
       serviceText: undefined,
       serviceItem: undefined,
-      serviceTool: undefined,
+      serviceLayout: undefined,
       workExample: undefined,
       workType: undefined,
       servicesItems: {
         system: {
           title: this.$t('services.system.title'),
           text: this.$t('services.system.text'),
+          layoutType: 'text',
           items: [
             {
-              title: this.$t('services.system.items[0].title'),
-              icon: icon_frontend,
+              title: this.$t('services.system.contents[0].title'),
+              description: this.$t('services.system.contents[0].description'),
               list: [
-                this.$t('services.system.items[0].list[0]'),
-                this.$t('services.system.items[0].list[1]'),
-                this.$t('services.system.items[0].list[2]')
+                this.$t('services.system.contents[0].items[0]'),
+                this.$t('services.system.contents[0].items[1]'),
+                this.$t('services.system.contents[0].items[2]'),
+                this.$t('services.system.contents[0].items[3]')
               ]
             },
             {
-              title: this.$t('services.system.items[1].title'),
-              icon: icon_backend,
+              title: this.$t('services.system.contents[1].title'),
+              description: this.$t('services.system.contents[1].description'),
               list: [
-                this.$t('services.system.items[1].list[0]'),
-                this.$t('services.system.items[1].list[1]'),
-                this.$t('services.system.items[1].list[2]'),
-                this.$t('services.system.items[1].list[3]'),
-                this.$t('services.system.items[1].list[4]')
+                this.$t('services.system.contents[1].items[0]'),
+                this.$t('services.system.contents[1].items[1]'),
+                this.$t('services.system.contents[1].items[2]'),
+                this.$t('services.system.contents[1].items[3]'),
+                this.$t('services.system.contents[1].items[4]')
               ]
             },
             {
-              title: this.$t('services.system.items[2].title'),
-              icon: icon_app,
+              title: this.$t('services.system.contents[2].title'),
+              description: this.$t('services.system.contents[2].description'),
               list: [
-                this.$t('services.system.items[2].list[0]'),
-                this.$t('services.system.items[2].list[1]')
-              ]
-            },
-            {
-              title: this.$t('services.system.items[3].title'),
-              icon: icon_data,
-              list: [
-                this.$t('services.system.items[3].list[0]'),
-                this.$t('services.system.items[3].list[1]'),
-                this.$t('services.system.items[3].list[2]')
-              ]
-            },
-            {
-              title: this.$t('services.system.items[4].title'),
-              icon: icon_integration,
-              list: [
-                this.$t('services.system.items[4].list[0]'),
-                this.$t('services.system.items[4].list[1]')
-              ]
-            }
-          ],
-          tools: [
-            {
-              title: this.$t('services.system.tools[0].title'),
-              list: [
-                this.$t('services.system.tools[0].list[0]'),
-                this.$t('services.system.tools[0].list[1]'),
-                this.$t('services.system.tools[0].list[2]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[1].title'),
-              list: [
-                this.$t('services.system.tools[1].list[0]'),
-                this.$t('services.system.tools[1].list[1]'),
-                this.$t('services.system.tools[1].list[2]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[2].title'),
-              list: [
-                this.$t('services.system.tools[2].list[0]'),
-                this.$t('services.system.tools[2].list[1]'),
-                this.$t('services.system.tools[2].list[2]'),
-                this.$t('services.system.tools[2].list[3]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[3].title'),
-              list: [
-                this.$t('services.system.tools[3].list[0]'),
-                this.$t('services.system.tools[3].list[1]'),
-                this.$t('services.system.tools[3].list[2]'),
-                this.$t('services.system.tools[3].list[3]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[4].title'),
-              list: [
-                this.$t('services.system.tools[4].list[0]'),
-                this.$t('services.system.tools[4].list[1]'),
-                this.$t('services.system.tools[4].list[2]')
-              ]
-            },
-
-            {
-              title: this.$t('services.system.tools[5].title'),
-              list: [
-                this.$t('services.system.tools[5].list[0]'),
-                this.$t('services.system.tools[5].list[1]'),
-                this.$t('services.system.tools[5].list[2]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[6].title'),
-              list: [
-                this.$t('services.system.tools[6].list[0]'),
-                this.$t('services.system.tools[6].list[1]')
-              ]
-            },
-            {
-              title: this.$t('services.system.tools[7].title'),
-              list: [this.$t('services.system.tools[7].list[0]')]
-            },
-            {
-              title: this.$t('services.system.tools[8].title'),
-              list: [this.$t('services.system.tools[8].list[0]')]
-            },
-            {
-              title: this.$t('services.system.tools[9].title'),
-              list: [this.$t('services.system.tools[9].list[0]')]
-            },
-            {
-              title: this.$t('services.system.tools[10].title'),
-              list: [
-                this.$t('services.system.tools[10].list[0]'),
-                this.$t('services.system.tools[10].list[1]')
+                this.$t('services.system.contents[2].items[0]'),
+                this.$t('services.system.contents[2].items[1]'),
+                this.$t('services.system.contents[2].items[2]')
               ]
             }
           ]
@@ -190,6 +95,7 @@ export default {
         design: {
           title: this.$t('services.design.title'),
           text: this.$t('services.design.text'),
+          layoutType: 'list',
           items: [
             {
               title: this.$t('services.design.items[0].title'),
@@ -243,6 +149,7 @@ export default {
         content: {
           title: this.$t('services.content.title'),
           text: this.$t('services.content.text'),
+          layoutType: 'list',
           items: [
             {
               title: this.$t('services.content.items[0].title'),
@@ -314,7 +221,7 @@ export default {
                 project: 'japan-agri-ecom-logistics',
                 mainImage: mainImage15,
                 name: this.$t('work.projects[15].name'),
-                concept:this.$t('work.projects[15].concept'),
+                concept: this.$t('work.projects[15].concept'),
                 layoutType: 3,
                 content: this.$t('work.projects[15].content'),
                 keywords: [
@@ -329,7 +236,7 @@ export default {
                 project: 'auto-robot-control-platform',
                 mainImage: mainImage16,
                 name: this.$t('work.projects[16].name'),
-                concept:this.$t('work.projects[16].concept'),
+                concept: this.$t('work.projects[16].concept'),
                 layoutType: 7,
                 content: this.$t('work.projects[16].content'),
                 keywords: [
@@ -344,7 +251,7 @@ export default {
                 project: 'koko-bot',
                 mainImage: mainImage17,
                 name: this.$t('work.projects[17].name'),
-                concept:this.$t('work.projects[17].concept'),
+                concept: this.$t('work.projects[17].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[17].content'),
                 keywords: [
@@ -363,7 +270,7 @@ export default {
                 project: 'mu-maison',
                 mainImage: mainImage8,
                 name: this.$t('work.projects[8].name'),
-                concept:this.$t('work.projects[8].concept'),
+                concept: this.$t('work.projects[8].concept'),
                 layoutType: 3,
                 content: this.$t('work.projects[8].content'),
                 keywords: [
@@ -377,7 +284,7 @@ export default {
                 project: 'recycled-pottery-furniture',
                 mainImage: mainImage9,
                 name: this.$t('work.projects[9].name'),
-                concept:this.$t('work.projects[9].concept'),
+                concept: this.$t('work.projects[9].concept'),
                 layoutType: 4,
                 content: this.$t('work.projects[9].content'),
                 keywords: [
@@ -393,7 +300,7 @@ export default {
                 project: 'woodworking-craft-tool-guide',
                 mainImage: mainImage10,
                 name: this.$t('work.projects[10].name'),
-                concept:this.$t('work.projects[10].concept'),
+                concept: this.$t('work.projects[10].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[10].content'),
                 keywords: [
@@ -413,7 +320,7 @@ export default {
                 project: 'sustainable-agri-mover',
                 mainImage: mainImage1,
                 name: this.$t('work.projects[1].name'),
-                concept:this.$t('work.projects[1].concept'),
+                concept: this.$t('work.projects[1].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[1].content'),
                 keywords: [
@@ -428,7 +335,7 @@ export default {
                 project: 'tech-agri-workshop',
                 mainImage: mainImage2,
                 name: this.$t('work.projects[2].name'),
-                concept:this.$t('work.projects[2].concept'),
+                concept: this.$t('work.projects[2].concept'),
                 layoutType: 2,
                 content: this.$t('work.projects[2].content'),
                 keywords: [
@@ -444,7 +351,7 @@ export default {
                 project: 'lathe-tech-workshop',
                 mainImage: mainImage3,
                 name: this.$t('work.projects[3].name'),
-                concept:this.$t('work.projects[3].concept'),
+                concept: this.$t('work.projects[3].concept'),
                 layoutType: 1,
                 content: this.$t('work.projects[3].content'),
                 keywords: [
@@ -465,7 +372,7 @@ export default {
       this.serviceTitle = service.title
       this.serviceText = service.text
       this.serviceItem = service.items
-      this.serviceTool = service.tools
+      this.serviceLayoutType = service.layoutType
     },
     getServiceItem(type) {
       const serviceItem = this.servicesItems[type]
